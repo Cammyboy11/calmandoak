@@ -1,0 +1,22 @@
+# Working files — do not deploy
+01-brand-assets/
+02-board-covers/
+03-pin-templates/
+04-sample-pins/
+05-products-by-day/
+final pins/
+
+# Documentation — do not deploy
+Lets Get Started.md
+Pin Copy Library*.md
+Product URLs.md
+
+# OS / editor cruft
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Output
+node_modules/
+.cache/

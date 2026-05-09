@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#F7F4EE"/>
+  <!-- Stylized "C&O" oak-leaf mark -->
+  <path d="M32 12c-3 5-7 8-12 9 1.5 3.5 0.5 7.5-3 10 1.5 3.5 5 6 9.5 6.5-1 4 0.5 8 4 10.5L32 52l1.5-4c3.5-2.5 5-6.5 4-10.5 4.5-0.5 8-3 9.5-6.5-3.5-2.5-4.5-6.5-3-10-5-1-9-4-12-9z"
+        fill="none" stroke="#2A2A28" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Center stem -->
+  <line x1="32" y1="20" x2="32" y2="48" stroke="#C97B5C" stroke-width="2" stroke-linecap="round"/>
+</svg>

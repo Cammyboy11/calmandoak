@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://calmandoak.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://calmandoak.com/assets/img/products/day31-pin151-cream-linen-sofa.png</image:loc>
+      <image:title>Calm &amp; Oak — Japandi home decor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Shop hub + 11 pillars (mirrors 10 Pinterest boards + Furniture) -->
+  <url><loc>https://calmandoak.com/shop/</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://calmandoak.com/shop/lighting/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/storage/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/ceramics-tableware/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/textiles/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/furniture/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/bedroom/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/japandi-kitchen/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/office/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/decor-accents/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://calmandoak.com/shop/outdoor-wellness/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Journal -->
+  <url><loc>https://calmandoak.com/journal/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://calmandoak.com/journal/japandi-101/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://calmandoak.com/journal/budget-japandi-bedroom/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Static pages -->
+  <url><loc>https://calmandoak.com/about/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://calmandoak.com/contact/</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://calmandoak.com/disclosures/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://calmandoak.com/privacy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+</urlset>

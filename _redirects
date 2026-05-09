@@ -1,0 +1,24 @@
+# Cloudflare Pages redirects — proper 301s instead of HTML meta refresh
+# These are 100x better for SEO than meta refresh — Google passes link equity through 301s.
+
+/shop/dining/         /shop/ceramics-tableware/    301
+/shop/dining          /shop/ceramics-tableware/    301
+/shop/living-room/    /shop/furniture/             301
+/shop/living-room     /shop/furniture/             301
+
+# Common typos / Pinterest-friendly aliases
+/japandi              /journal/japandi-101/        301
+/bedroom              /shop/bedroom/               301
+/lighting             /shop/lighting/              301
+
+# Catch trailing-slash inconsistencies on shop pages
+/shop/lighting              /shop/lighting/              301
+/shop/storage               /shop/storage/               301
+/shop/ceramics-tableware    /shop/ceramics-tableware/    301
+/shop/textiles              /shop/textiles/              301
+/shop/furniture             /shop/furniture/             301
+/shop/bedroom               /shop/bedroom/               301
+/shop/japandi-kitchen       /shop/japandi-kitchen/       301
+/shop/office                /shop/office/                301
+/shop/decor-accents         /shop/decor-accents/         301
+/shop/outdoor-wellness      /shop/outdoor-wellness/      301
