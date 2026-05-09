@@ -1,0 +1,34 @@
+# Files Cloudflare should NOT publish to the live site.
+# Same idea as .gitignore but for the deployed bundle.
+
+# Git internals (the cause of the deploy failure)
+.git
+.git/**
+.gitignore
+.gitattributes
+
+# Node / build artifacts
+node_modules
+node_modules/**
+.cache
+.cache/**
+.wrangler
+.wrangler/**
+wrangler.jsonc
+wrangler.toml
+
+# Documentation that shouldn't be public-facing
+README.md
+DEPLOY-NOW.md
+GITHUB-PUSH-WALKTHROUGH.md
+3-PLACEHOLDERS-HOW-TO.md
+OPTIMIZATION-NOTES.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# This file itself
+.assetsignore
