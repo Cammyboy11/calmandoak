@@ -501,37 +501,84 @@ article.prose a:hover { color: var(--terracotta); }
 .collection-feature {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap
-/* ---------- Real Japandi photography on hero / pillar / feature placeholders ---------- */
+  gap: clamp(2.4rem, 6vw, 5rem);
+  align-items: center;
+}
+@media (max-width: 880px) {
+  .collection-feature { grid-template-columns: 1fr; }
+}
+.collection-feature .visual {
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-lg);
+  background-color: var(--cream);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 30px 60px -28px rgba(42,42,40,.18);
+  position: relative;
+  overflow: hidden;
+}
+.collection-feature .visual::after { display: none !important; }
+.collection-feature .visual::before { display: none !important; }
+
+/* ---------- Hero art (overrides the placeholder gradient when an inline bg image is set) ---------- */
 .hero-art {
-  background:
-    linear-gradient(180deg, transparent 50%, rgba(42,42,40,0.20)),
-    url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80&auto=format&fit=crop') center/cover, var(--cream) !important;
+  background-color: var(--cream);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 .hero-art::before, .hero-art::after { display: none !important; }
 
-.collection-feature .visual {
-  background:
-    linear-gradient(180deg, transparent 60%, rgba(42,42,40,0.20)),
-    url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900&q=80&auto=format&fit=crop') center/cover, var(--cream) !important;
+/* ---------- TRUST STRIP — japandi-tight grid ---------- */
+.trust {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
 }
-.collection-feature .visual::after { display: none !important; }
-
-.card-img.placeholder--lighting   { background: url('https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(170deg,#EFE8DA,#C97B5C 130%) !important; }
-.card-img.placeholder--storage    { background: url('https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(135deg,#E8DDC9,#A89572 100%) !important; }
-.card-img.placeholder--ceramics   { background: url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(150deg,#EFE8DA,#B0623F 130%) !important; }
-.card-img.placeholder--textiles   { background: url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(160deg,#F2EAD8,#D4B996 100%) !important; }
-.card-img.placeholder--furniture  { background: url('https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(145deg,#EFE8DA,#8C6A48 110%) !important; }
-.card-img.placeholder--bedroom    { background: url('https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(160deg,#F2EBDB,#D4B996 110%) !important; }
-.card-img.placeholder--kitchen    { background: url('https://images.unsplash.com/photo-1556909114-44e3e9699e2b?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(140deg,#F2EAD8,#C9A87C 105%) !important; }
-.card-img.placeholder--office     { background: url('https://images.unsplash.com/photo-1518733057094-95b53143d2a7?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(150deg,#EFE8DA,#B7A88A 110%) !important; }
-.card-img.placeholder--decor      { background: url('https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(140deg,#EFE8DA,#C97B5C 130%) !important; }
-.card-img.placeholder--outdoor    { background: url('https://images.unsplash.com/photo-1574691250077-03a929faece5?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(155deg,#EFE8DA,#8A8472 105%) !important; }
-.card-img.placeholder--journal    { background: url('https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&q=80&auto=format&fit=crop') center/cover, linear-gradient(170deg,#F2EAD8,#C97B5C 140%) !important; }
-
-/* Subtle dark overlay on card images so the white labels stay legible */
-.card-img[class*="placeholder--"]::before {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 55%, rgba(42,42,40,0.30));
-  pointer-events: none;
+.trust .item {
+  padding: 2.4rem 1.8rem;
+  border-right: 1px solid var(--hair);
+  text-align: left;
+  position: relative;
+}
+.trust .item:last-child { border-right: none; }
+.trust .item .icon {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  letter-spacing: 0.18em;
+  color: var(--terracotta);
+  margin-bottom: 0.9rem;
+  display: inline-block;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--terracotta);
+  text-transform: lowercase;
+}
+.trust .item h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--charcoal);
+  margin: 0 0 0.55rem;
+  letter-spacing: -0.005em;
+}
+.trust .item p {
+  font-size: 0.88rem;
+  color: var(--graphite);
+  line-height: 1.55;
+  margin: 0;
+  max-width: 22ch;
+}
+@media (max-width: 880px) {
+  .trust { grid-template-columns: repeat(2, 1fr); }
+  .trust .item { padding: 1.8rem 1.4rem; }
+  .trust .item:nth-child(2) { border-right: none; }
+  .trust .item:nth-child(1), .trust .item:nth-child(2) { border-bottom: 1px solid var(--hair); }
+}
+@media (max-width: 480px) {
+  .trust { grid-template-columns: 1fr; }
+  .trust .item { border-right: none !important; border-bottom: 1px solid var(--hair); }
+  .trust .item:last-child { border-bottom: none; }
 }

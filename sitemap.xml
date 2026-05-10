@@ -30,6 +30,10 @@
   <url><loc>https://calmandoak.com/journal/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://calmandoak.com/journal/japandi-101/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://calmandoak.com/journal/budget-japandi-bedroom/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://calmandoak.com/journal/japandi-color-palette/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://calmandoak.com/journal/layering-textiles/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://calmandoak.com/journal/art-of-negative-space/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://calmandoak.com/journal/wabi-sabi-ceramics/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Static pages -->
   <url><loc>https://calmandoak.com/about/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
