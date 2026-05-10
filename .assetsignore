@@ -24,6 +24,16 @@ GITHUB-PUSH-WALKTHROUGH.md
 3-PLACEHOLDERS-HOW-TO.md
 OPTIMIZATION-NOTES.md
 
+# Uncropped master pin copies — kept in repo as the 1:1 source of truth
+# but never deployed to the live site. Only the cropped versions in
+# /assets/img/products-cropped/ ship.
+assets/img/products
+assets/img/products/**
+
+# Master pin folder (also gitignored, but belt-and-braces)
+final pins
+final pins/**
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
