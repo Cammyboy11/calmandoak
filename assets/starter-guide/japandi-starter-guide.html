@@ -331,6 +331,75 @@
   /* ==== CLOSING ==== */
   .closing { background: var(--cream); }
 
+  /* ==== VISUAL INTERLUDE PAGES ==== */
+  .visual-page { background: var(--offwhite); position: relative; }
+  .visual-hero {
+    width: 100%;
+    height: 6.2in;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--cream);
+    border-bottom: 1px solid var(--terracotta);
+  }
+  .visual-pad {
+    padding: 0.45in 0.75in 0.55in;
+  }
+  .visual-pad .quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22pt;
+    line-height: 1.35;
+    color: var(--charcoal);
+    margin-bottom: 0.2in;
+  }
+  .visual-pad .attribution {
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    margin-bottom: 0.25in;
+  }
+  .visual-pad .caption {
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    line-height: 1.65;
+    color: var(--graphite);
+  }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0; height: 6.2in; }
+  .grid-2 > div { background-size: cover; background-position: center; background-color: var(--cream); }
+  .grid-2 > div:first-child { border-right: 1px solid var(--offwhite); }
+  .grid-3 { display: grid; grid-template-rows: 1fr 1fr 1fr; gap: 0; height: 6.2in; }
+  .grid-3 > div { background-size: cover; background-position: center; background-color: var(--cream); position: relative; }
+  .grid-3 > div + div { border-top: 1px solid var(--offwhite); }
+  .grid-3-label {
+    position: absolute;
+    top: 0.15in;
+    left: 0.25in;
+    background: rgba(247, 244, 238, 0.92);
+    padding: 0.06in 0.18in;
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    border-radius: 2px;
+  }
+  .grid-6 { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 0; height: 6.2in; }
+  .grid-6 > div { background-size: cover; background-position: center; background-color: var(--cream); position: relative; border: 0.5px solid var(--offwhite); }
+  .grid-6-label {
+    position: absolute;
+    bottom: 0.12in;
+    left: 0.15in;
+    background: rgba(42, 42, 40, 0.78);
+    padding: 0.04in 0.12in;
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--offwhite);
+  }
+
   /* ==== ON-SCREEN VIEWING NOTICE ==== */
   .print-instructions {
     position: fixed;
@@ -435,7 +504,18 @@
   <div class="footer-bar"><span>The five principles</span><span class="page-num">04</span></div>
 </section>
 
-<!-- ============ PAGE 5 — PALETTE INTRO ============ -->
+<!-- ============ PAGE 5 — VISUAL: PRINCIPLES IN ACTION ============ -->
+<section class="page visual-page">
+  <div class="visual-hero" style="background-image: url('../img/products-cropped/day31-pin151-cream-linen-sofa.png');"></div>
+  <div class="visual-pad">
+    <div class="attribution">Principle one in practice</div>
+    <p class="quote">Negative space is a material. The room is mostly what you didn't put in it.</p>
+    <p class="caption">A cream linen sofa, an empty wall behind it, the breath of floor in front. The room photographs because of what isn't here — the second sofa, the wall of frames, the second coffee table. Restraint reads as luxury when the materials are honest enough to deserve the attention.</p>
+  </div>
+  <div class="footer-bar"><span>Principles in action</span><span class="page-num">05</span></div>
+</section>
+
+<!-- ============ PAGE 6 — PALETTE INTRO ============ -->
 <section class="page">
   <div class="pad left-vh">
     <div class="eyebrow">Chapter two</div>
@@ -445,7 +525,7 @@
     <p class="body-copy" style="margin-top: 0.3in;">The palette is monochromatic with a single accent. The base — off-white, cream, charcoal, graphite — covers ninety percent of every room. Sand appears as wood, in linen accents, in stoneware glazes. Terracotta is the moment of warmth, used once per room, never twice.</p>
     <p class="body-copy">If a paint chip, a fabric swatch, or a ceramic vessel doesn't fit one of these six tones, leave it on the shelf. The palette is the discipline that keeps the rest of the principles workable.</p>
   </div>
-  <div class="footer-bar"><span>The palette</span><span class="page-num">05</span></div>
+  <div class="footer-bar"><span>The palette</span><span class="page-num">06</span></div>
 </section>
 
 <!-- ============ PAGE 6 — PALETTE SWATCHES ============ -->
@@ -463,10 +543,24 @@
     </div>
     <p class="body-copy" style="margin-top: 0.35in; font-size: 10pt;">Off-white as walls and big bedding. Cream as upholstery and curtain panels. Charcoal as the framing colour — picture frames, lampshades, single accents. Graphite for the in-between. Sand for wood, oat linen, stoneware. Terracotta for the single brass candleholder, the single ceramic vase, the single piece of art. Use it once, never twice in the same room.</p>
   </div>
-  <div class="footer-bar"><span>The palette</span><span class="page-num">06</span></div>
+  <div class="footer-bar"><span>The palette</span><span class="page-num">07</span></div>
 </section>
 
-<!-- ============ PAGE 7 — MATERIALS INTRO ============ -->
+<!-- ============ PAGE 7 — VISUAL: PALETTE IN REAL ROOMS ============ -->
+<section class="page visual-page">
+  <div class="grid-2">
+    <div style="background-image: url('../img/products-cropped/day1-pin5-linen-duvet.png');"></div>
+    <div style="background-image: url('../img/products-cropped/day33-pin161-oak-dresser.png');"></div>
+  </div>
+  <div class="visual-pad">
+    <div class="attribution">The palette translated</div>
+    <p class="quote">Off-white linen on the left. Sand-toned oak on the right. Both rooms, one palette.</p>
+    <p class="caption">The Calm &amp; Oak palette doesn't mean every room looks the same. It means every room shares the same six tones in different proportions. A bedding-led space leans heavier on off-white and cream. A wood-led space leans heavier on sand and graphite. The terracotta accent appears in each, used once.</p>
+  </div>
+  <div class="footer-bar"><span>The palette in action</span><span class="page-num">08</span></div>
+</section>
+
+<!-- ============ PAGE 8 — MATERIALS INTRO ============ -->
 <section class="page">
   <div class="pad left-vh">
     <div class="eyebrow">Chapter three</div>
@@ -475,7 +569,7 @@
     <p class="lead">Japandi is a material practice before it is a visual one. The materials all have something in common: they age, and they age beautifully.</p>
     <p class="body-copy" style="margin-top: 0.3in;">There is no Japandi room built from plastic or polyester or veneer. The materials below are non-negotiable. They cost slightly more upfront, last a decade longer, and improve with use rather than decline. Buying once is cheaper than buying often.</p>
   </div>
-  <div class="footer-bar"><span>The materials</span><span class="page-num">07</span></div>
+  <div class="footer-bar"><span>The materials</span><span class="page-num">09</span></div>
 </section>
 
 <!-- ============ PAGE 8 — MATERIALS GRID ============ -->
@@ -510,10 +604,28 @@
     </div>
     <p class="body-copy" style="margin-top: 0.4in; font-style: italic; color: var(--graphite); font-size: 10pt;">Brass appears as a seventh material — not in volume, but as the single warm metal accent in a room of oak and stoneware.</p>
   </div>
-  <div class="footer-bar"><span>The materials</span><span class="page-num">08</span></div>
+  <div class="footer-bar"><span>The materials</span><span class="page-num">10</span></div>
 </section>
 
-<!-- ============ PAGE 9 — TWO-WOODS RULE ============ -->
+<!-- ============ PAGE 9 — VISUAL: MATERIALS MONTAGE ============ -->
+<section class="page visual-page">
+  <div class="grid-6">
+    <div style="background-image: url('../img/products-cropped/day3-pin15-oak-desk.png');"><span class="grid-6-label">Oak</span></div>
+    <div style="background-image: url('../img/products-cropped/day33-pin161-oak-dresser.png');"><span class="grid-6-label">Walnut</span></div>
+    <div style="background-image: url('../img/products-cropped/day1-pin5-linen-duvet.png');"><span class="grid-6-label">Linen</span></div>
+    <div style="background-image: url('../img/products-cropped/day3-pin13-brown-ribbed-vase.png');"><span class="grid-6-label">Stoneware</span></div>
+    <div style="background-image: url('../img/products-cropped/day4-pin18-rice-paper-pendant.png');"><span class="grid-6-label">Paper</span></div>
+    <div style="background-image: url('../img/products-cropped/day1-pin1-seagrass-baskets.png');"><span class="grid-6-label">Seagrass</span></div>
+  </div>
+  <div class="visual-pad">
+    <div class="attribution">The six materials at a glance</div>
+    <p class="quote">Real wood. Real fibre. Real stone. The honest list.</p>
+    <p class="caption">Every material here ages well. Oak develops a deeper grain. Linen softens with each wash. Stoneware shows tiny chips that read as character. Paper pendants glow warmer with use. Seagrass darkens slightly. None of these materials look the same in year five as they do today — and that's the point.</p>
+  </div>
+  <div class="footer-bar"><span>Materials in use</span><span class="page-num">11</span></div>
+</section>
+
+<!-- ============ PAGE 10 — TWO-WOODS RULE ============ -->
 <section class="page">
   <div class="pad left-vh">
     <div class="eyebrow">A closer look</div>
@@ -530,7 +642,7 @@
       <p>The exception: a single vintage piece in a third wood gets a pass — the inherited mahogany dresser, the estate-sale teak. It reads as "the heirloom." But you only get one. Two is the rule. One vintage exception is the negotiation.</p>
     </div>
   </div>
-  <div class="footer-bar"><span>The two-woods rule</span><span class="page-num">09</span></div>
+  <div class="footer-bar"><span>The two-woods rule</span><span class="page-num">12</span></div>
 </section>
 
 <!-- ============ PAGE 10 — TEXTILE WEIGHTS ============ -->
@@ -547,10 +659,25 @@
       <p>The pattern: from heaviest at the bottom (jute rug) through medium in the middle (linen curtain) to fine at the top (sheer pillow). The eye reads up the room and registers each shift. That's why the room feels layered, even when the palette is monochrome.</p>
     </div>
   </div>
-  <div class="footer-bar"><span>Three textile weights</span><span class="page-num">10</span></div>
+  <div class="footer-bar"><span>Three textile weights</span><span class="page-num">13</span></div>
 </section>
 
-<!-- ============ PAGE 11 — STARTER SHOPPING LIST INTRO ============ -->
+<!-- ============ PAGE 11 — VISUAL: TEXTILE WEIGHTS LAYERED ============ -->
+<section class="page visual-page">
+  <div class="grid-3">
+    <div style="background-image: url('../img/products-cropped/day3-pin14-wool-throw.png');"><span class="grid-3-label">Heavy · wool</span></div>
+    <div style="background-image: url('../img/products-cropped/day10-pin50-linen-curtains.png');"><span class="grid-3-label">Medium · linen</span></div>
+    <div style="background-image: url('../img/products-cropped/day23-pin111-boucle-pillows.png');"><span class="grid-3-label">Fine · boucle</span></div>
+  </div>
+  <div class="visual-pad">
+    <div class="attribution">The three weights side by side</div>
+    <p class="quote">Heavy wool grounds. Medium linen drapes. Fine boucle finishes.</p>
+    <p class="caption">A room with one fabric weight reads flat — even when the colour palette is correct. The three weights together create the layered surface the eye registers as composed. Apply this in every room: heavy on the floor (rug or throw), medium at the windows (linen curtain) or on the bed (linen duvet), fine at the touchpoints (boucle pillow, sheer linen runner).</p>
+  </div>
+  <div class="footer-bar"><span>Textile weights in practice</span><span class="page-num">14</span></div>
+</section>
+
+<!-- ============ PAGE 12 — STARTER SHOPPING LIST INTRO ============ -->
 <section class="page">
   <div class="pad left-vh">
     <div class="eyebrow">Chapter four</div>
@@ -560,7 +687,7 @@
     <p class="body-copy" style="margin-top: 0.3in;">A complete Japandi home isn't built from a single shopping trip. It's built from two phases of five purchases each, each phase costing under three hundred dollars. Phase one handles the soft layers — bedding, ceramics, the tray that pulls a surface together. Phase two handles the larger anchors — the rug, the floor lamp, the side table.</p>
     <p class="body-copy">Each item below is a verified Amazon pick — 4.4★+, 200+ reviews, Prime where applicable. The full list lives on calmandoak.com under the matching pillar page. Tap or search the brand name to find the exact product.</p>
   </div>
-  <div class="footer-bar"><span>The starter list</span><span class="page-num">11</span></div>
+  <div class="footer-bar"><span>The starter list</span><span class="page-num">15</span></div>
 </section>
 
 <!-- ============ PAGE 12 — STARTER LIST ============ -->
@@ -588,7 +715,7 @@
 
     <p class="body-copy" style="margin-top: 0.3in; font-size: 10pt; color: var(--graphite); font-style: italic;">Both phases combined: roughly $525 across all ten pieces. Phase one transforms the bedroom and one shelf in two weekends. Phase two anchors the living room over the following two months.</p>
   </div>
-  <div class="footer-bar"><span>The starter list</span><span class="page-num">12</span></div>
+  <div class="footer-bar"><span>The starter list</span><span class="page-num">16</span></div>
 </section>
 
 <!-- ============ PAGE 13 — 7-DAY PLAN ============ -->
@@ -629,7 +756,7 @@
       </div>
     </div>
   </div>
-  <div class="footer-bar"><span>The seven-day plan</span><span class="page-num">13</span></div>
+  <div class="footer-bar"><span>The seven-day plan</span><span class="page-num">17</span></div>
 </section>
 
 <!-- ============ PAGE 14 — CLOSING ============ -->
