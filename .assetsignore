@@ -1,0 +1,28 @@
+# Cloudflare Workers — files to exclude from the deployed assets bundle
+# Same idea as .gitignore but for the Wrangler asset uploader.
+# Without this, Wrangler tries to upload .git/ and hits the 25 MiB per-file cap.
+
+.git/
+.github/
+node_modules/
+01-brand-assets/
+02-board-covers/
+03-pin-templates/
+04-sample-pins/
+05-products-by-day/
+final pins/
+
+# Source/working files we don't want public
+*.md
+!README.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# Build artifacts
+.cache/
+.wrangler/
+package-lock.json
