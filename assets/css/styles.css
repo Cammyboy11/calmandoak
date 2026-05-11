@@ -466,6 +466,48 @@ article.prose figcaption { font-size: 0.85rem; color: var(--graphite); margin-to
 article.prose a { color: var(--charcoal); border-bottom: 1px solid var(--terracotta); }
 article.prose a:hover { color: var(--terracotta); }
 
+/* ---------- Shop nav (cross-category jump bar at top of each shop page) ---------- */
+.shop-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem 0.55rem;
+  margin: 0 auto 1.6rem;
+  max-width: 920px;
+  padding: 0 1rem;
+}
+.shop-nav a {
+  display: inline-block;
+  padding: 0.55rem 1.05rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  background: var(--paper);
+  border: 1px solid var(--hair);
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+}
+.shop-nav a:hover {
+  background: var(--cream);
+  color: var(--charcoal);
+  border-color: var(--terracotta);
+}
+.shop-nav a.is-current {
+  background: var(--charcoal);
+  color: var(--offwhite);
+  border-color: var(--charcoal);
+  cursor: default;
+}
+.shop-nav a.is-current:hover {
+  background: var(--charcoal);
+  color: var(--offwhite);
+  border-color: var(--charcoal);
+}
+
 /* ---------- Tags (eyebrow pills under hero headlines) ---------- */
 .tags {
   display: flex;
