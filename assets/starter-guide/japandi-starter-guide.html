@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>The Japandi Starter Guide — Calm & Oak</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* ==== PAGE SETUP (US Letter, magazine margins) ==== */
+  @page {
+    size: 8.5in 11in;
+    margin: 0;
+  }
+  /* Always force one section per page (works in print + puppeteer) */
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  /* ==== BRAND ==== */
+  :root {
+    --offwhite: #F7F4EE;
+    --cream: #EFE8DA;
+    --charcoal: #2A2A28;
+    --graphite: #5C5A55;
+    --terracotta: #C97B5C;
+    --sand: #D4B996;
+    --hair: rgba(42,42,40,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #555; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--charcoal); }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    background: var(--offwhite);
+    position: relative;
+    margin: 0.5in auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    overflow: hidden;
+  }
+  @media print {
+    .page { margin: 0; box-shadow: none; }
+  }
+
+  /* ==== TYPOGRAPHY ==== */
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+  .ital { font-style: italic; color: var(--terracotta); }
+
+  h1.title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 64pt;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--charcoal);
+  }
+  h2.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 38pt;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--charcoal);
+    margin-bottom: 0.3in;
+  }
+  h3.sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16pt;
+    color: var(--terracotta);
+    margin-bottom: 0.15in;
+    letter-spacing: 0.01em;
+  }
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    font-weight: 500;
+    margin-bottom: 0.2in;
+  }
+  .body-copy {
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+    line-height: 1.7;
+    color: var(--charcoal);
+    font-weight: 400;
+  }
+  .body-copy p { margin-bottom: 12pt; }
+  .body-copy strong { color: var(--terracotta); font-weight: 500; }
+  .lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16pt;
+    line-height: 1.5;
+    color: var(--graphite);
+    margin-bottom: 0.3in;
+  }
+  .small-caps {
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    font-weight: 500;
+  }
+
+  /* ==== SHARED ELEMENTS ==== */
+  .wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14pt;
+    color: var(--charcoal);
+    font-weight: 400;
+  }
+  .wordmark .amp { color: var(--terracotta); font-style: italic; }
+  .pad-x { padding-left: 0.75in; padding-right: 0.75in; }
+  .pad { padding: 0.75in; }
+  .center-vh { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; }
+  .left-vh { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+
+  hr.divider {
+    border: 0;
+    width: 60px;
+    height: 1px;
+    background: var(--terracotta);
+    margin: 0.25in 0;
+  }
+  .footer-bar {
+    position: absolute;
+    bottom: 0.4in;
+    left: 0.75in;
+    right: 0.75in;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    color: var(--graphite);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .page-num { color: var(--terracotta); }
+
+  /* ==== PAGE 1 — COVER ==== */
+  .cover { background: var(--offwhite); position: relative; }
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0.6in;
+    border: 1px solid var(--terracotta);
+    pointer-events: none;
+  }
+  .cover .top-mark {
+    position: absolute;
+    top: 1.1in;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .cover .center-block {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0 1in;
+  }
+  .cover .center-block .ornament {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18pt;
+    color: var(--terracotta);
+    font-style: italic;
+    margin-bottom: 0.25in;
+  }
+  .cover .bottom-mark {
+    position: absolute;
+    bottom: 1.1in;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .cover-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14pt;
+    color: var(--graphite);
+    margin-top: 0.25in;
+  }
+
+  /* ==== PALETTE PAGE ==== */
+  .swatch-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.4in; margin-top: 0.3in; }
+  .swatch {
+    height: 1.6in;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: inset 0 0 0 1px var(--hair);
+  }
+  .swatch.s1 { background: #F7F4EE; }
+  .swatch.s2 { background: #EFE8DA; }
+  .swatch.s3 { background: #2A2A28; }
+  .swatch.s4 { background: #5C5A55; }
+  .swatch.s5 { background: #C97B5C; }
+  .swatch.s6 { background: #D4B996; }
+  .swatch-label {
+    position: absolute;
+    bottom: 12pt;
+    left: 12pt;
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    color: var(--charcoal);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: rgba(247,244,238,0.9);
+    padding: 4pt 8pt;
+    border-radius: 2px;
+  }
+  .swatch.s3 .swatch-label, .swatch.s4 .swatch-label {
+    color: var(--offwhite);
+    background: rgba(42,42,40,0.7);
+  }
+
+  /* ==== PRINCIPLES ==== */
+  .principle { margin-bottom: 0.35in; }
+  .principle-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 36pt;
+    color: var(--terracotta);
+    line-height: 1;
+    margin-bottom: 4pt;
+    font-weight: 400;
+  }
+  .principle-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18pt;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 6pt;
+  }
+  .principle-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    line-height: 1.65;
+    color: var(--graphite);
+  }
+
+  /* ==== MATERIAL GRID ==== */
+  .material-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3in 0.5in; }
+  .material h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16pt;
+    color: var(--charcoal);
+    margin-bottom: 6pt;
+    font-weight: 500;
+  }
+  .material p {
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    line-height: 1.6;
+    color: var(--graphite);
+  }
+
+  /* ==== SHOPPING LIST ==== */
+  .shop-list { list-style: none; counter-reset: shop; }
+  .shop-list li {
+    counter-increment: shop;
+    padding: 0.2in 0;
+    border-bottom: 1px solid var(--hair);
+    display: flex;
+    align-items: baseline;
+    gap: 0.25in;
+  }
+  .shop-list li::before {
+    content: counter(shop, decimal-leading-zero);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--terracotta);
+    font-size: 14pt;
+    min-width: 0.4in;
+  }
+  .shop-list .item-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14pt;
+    color: var(--charcoal);
+    flex: 1;
+  }
+  .shop-list .item-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    color: var(--graphite);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .shop-list .item-where {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 9pt;
+    color: var(--graphite);
+    width: 100%;
+    margin-top: 4pt;
+    margin-left: 0.65in;
+  }
+
+  /* ==== 7-DAY PLAN ==== */
+  .day-plan { margin-top: 0.3in; }
+  .day-row {
+    display: grid;
+    grid-template-columns: 0.8in 1fr;
+    gap: 0.3in;
+    padding: 0.18in 0;
+    border-bottom: 1px solid var(--hair);
+    align-items: baseline;
+  }
+  .day-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--terracotta);
+    font-size: 13pt;
+  }
+  .day-action {
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+    line-height: 1.55;
+    color: var(--charcoal);
+  }
+
+  /* ==== CLOSING ==== */
+  .closing { background: var(--cream); }
+
+  /* ==== ON-SCREEN VIEWING NOTICE ==== */
+  .print-instructions {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    background: var(--charcoal);
+    color: var(--offwhite);
+    padding: 12px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    z-index: 999;
+    line-height: 1.5;
+    max-width: 230px;
+  }
+  .print-instructions strong { color: var(--terracotta); }
+  @media print { .print-instructions { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="print-instructions">
+  <strong>To save as PDF:</strong><br>
+  Press <strong>Ctrl + P</strong> (or Cmd + P on Mac), set Destination to "Save as PDF," choose Paper size: Letter, Margins: None, Background graphics: ON.
+</div>
+
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="top-mark">
+    <div class="wordmark">Calm <span class="amp">&amp;</span> Oak</div>
+  </div>
+  <div class="center-block">
+    <div class="eyebrow" style="margin-bottom: 0.25in;">A 14-page edition</div>
+    <h1 class="title">The Japandi<br><span class="ital">Starter</span> Guide</h1>
+    <div class="cover-tagline">Quiet rooms,<br>beautifully sourced.</div>
+  </div>
+  <div class="bottom-mark">
+    <div class="small-caps">First edition · 2026</div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — WELCOME ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">A note from us</div>
+    <h2 class="section-title">Welcome.</h2>
+    <hr class="divider" />
+    <div class="body-copy">
+      <p>You probably found us through a Pinterest pin. A linen bedroom, a stoneware vase, an oak shelf — something that made you stop scrolling. The brand started in roughly the same way: a folder of saved images, a slow recognition that the rooms we kept saving had something in common, and a search for what to call that something. The answer was Japandi.</p>
+      <p>Japandi is the meeting of Japanese restraint and Scandinavian warmth. On Pinterest it looks like cream linen and pale oak. In a real home it works as a daily practice: pieces that age instead of date, materials that improve with use, rooms that feel breathed-in rather than decorated.</p>
+      <p>This guide is not exhaustive. It's a starting point — the principles that hold the aesthetic together, the colours and materials that make a room read calm, and the ten purchases that get you 80 percent of the way there.</p>
+      <p>Read it once, then keep it. The hardest part of building a Japandi home is the discipline to stop adding. This guide is also a permission slip to do less.</p>
+      <p style="margin-top: 0.4in; font-style: italic; color: var(--graphite);">— Cameron + the Calm &amp; Oak team</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Welcome</span><span class="page-num">02</span></div>
+</section>
+
+<!-- ============ PAGE 3 — PRINCIPLES INTRO ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Chapter one</div>
+    <h2 class="section-title">The five<br><span class="ital">principles</span>.</h2>
+    <hr class="divider" />
+    <p class="lead">Japandi is built on five principles, in this order. If a room looks "off," it's almost always because one of these is missing. If a room looks finished, all five are quietly working.</p>
+    <p class="body-copy" style="margin-top: 0.3in;">The principles aren't decorative. They're decisions about what to leave out. Each one is a constraint, and the constraints are what make the rooms feel composed instead of crowded. Read them as a checklist when you stand in a room and can't tell why it isn't working.</p>
+  </div>
+  <div class="footer-bar"><span>The five principles</span><span class="page-num">03</span></div>
+</section>
+
+<!-- ============ PAGE 4 — PRINCIPLES LIST ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="principle">
+      <div class="principle-num">i</div>
+      <div class="principle-title">Negative space is a material</div>
+      <div class="principle-body">The most important thing in a Japandi room is what isn't in it. Empty floor. Empty wall. The breath between objects. Treat space the way you'd treat oak or linen — as something you've chosen.</div>
+    </div>
+    <div class="principle">
+      <div class="principle-num">ii</div>
+      <div class="principle-title">Two woods, never more</div>
+      <div class="principle-body">Mix oak and walnut, or oak and ash, or pine and walnut — but pick two and commit. Three woods becomes noise. Two becomes a relationship.</div>
+    </div>
+    <div class="principle">
+      <div class="principle-num">iii</div>
+      <div class="principle-title">Three textile weights</div>
+      <div class="principle-body">Heavy wool throw, medium linen curtain, fine cotton sham. Three weights in every room give the eye something to register that a single weight does not.</div>
+    </div>
+    <div class="principle">
+      <div class="principle-num">iv</div>
+      <div class="principle-title">One muted moment</div>
+      <div class="principle-body">Japandi looks neutral but the rooms that work always have one moment of restrained colour. Sage, ink black, terracotta, or charcoal. Never more than one. Never bright.</div>
+    </div>
+    <div class="principle">
+      <div class="principle-num">v</div>
+      <div class="principle-title">Things that age well</div>
+      <div class="principle-body">A Japandi piece is one you can imagine still owning in twenty years. That's the test. It rules out trend-driven shapes and rules in solid wood, real ceramic, real linen, real metal.</div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The five principles</span><span class="page-num">04</span></div>
+</section>
+
+<!-- ============ PAGE 5 — PALETTE INTRO ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Chapter two</div>
+    <h2 class="section-title">The <span class="ital">palette</span>.</h2>
+    <hr class="divider" />
+    <p class="lead">Six tones. One accent. Used in this proportion, the room reads Japandi from the moment you walk in.</p>
+    <p class="body-copy" style="margin-top: 0.3in;">The palette is monochromatic with a single accent. The base — off-white, cream, charcoal, graphite — covers ninety percent of every room. Sand appears as wood, in linen accents, in stoneware glazes. Terracotta is the moment of warmth, used once per room, never twice.</p>
+    <p class="body-copy">If a paint chip, a fabric swatch, or a ceramic vessel doesn't fit one of these six tones, leave it on the shelf. The palette is the discipline that keeps the rest of the principles workable.</p>
+  </div>
+  <div class="footer-bar"><span>The palette</span><span class="page-num">05</span></div>
+</section>
+
+<!-- ============ PAGE 6 — PALETTE SWATCHES ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Six tones, one accent</div>
+    <h3 class="sub" style="font-style: normal; color: var(--charcoal); font-size: 18pt; margin-bottom: 0.2in;">The Calm &amp; Oak swatches</h3>
+    <div class="swatch-grid">
+      <div class="swatch s1"><span class="swatch-label">Off-white · #F7F4EE</span></div>
+      <div class="swatch s2"><span class="swatch-label">Cream · #EFE8DA</span></div>
+      <div class="swatch s3"><span class="swatch-label">Charcoal · #2A2A28</span></div>
+      <div class="swatch s4"><span class="swatch-label">Graphite · #5C5A55</span></div>
+      <div class="swatch s5"><span class="swatch-label">Terracotta · #C97B5C</span></div>
+      <div class="swatch s6"><span class="swatch-label">Sand · #D4B996</span></div>
+    </div>
+    <p class="body-copy" style="margin-top: 0.35in; font-size: 10pt;">Off-white as walls and big bedding. Cream as upholstery and curtain panels. Charcoal as the framing colour — picture frames, lampshades, single accents. Graphite for the in-between. Sand for wood, oat linen, stoneware. Terracotta for the single brass candleholder, the single ceramic vase, the single piece of art. Use it once, never twice in the same room.</p>
+  </div>
+  <div class="footer-bar"><span>The palette</span><span class="page-num">06</span></div>
+</section>
+
+<!-- ============ PAGE 7 — MATERIALS INTRO ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Chapter three</div>
+    <h2 class="section-title">The <span class="ital">materials</span>.</h2>
+    <hr class="divider" />
+    <p class="lead">Japandi is a material practice before it is a visual one. The materials all have something in common: they age, and they age beautifully.</p>
+    <p class="body-copy" style="margin-top: 0.3in;">There is no Japandi room built from plastic or polyester or veneer. The materials below are non-negotiable. They cost slightly more upfront, last a decade longer, and improve with use rather than decline. Buying once is cheaper than buying often.</p>
+  </div>
+  <div class="footer-bar"><span>The materials</span><span class="page-num">07</span></div>
+</section>
+
+<!-- ============ PAGE 8 — MATERIALS GRID ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <h3 class="sub" style="margin-top: 0;">Six materials that earn their place</h3>
+    <div class="material-grid">
+      <div class="material">
+        <h4>Oak</h4>
+        <p>The Japandi default. Light oak for floors, tables, beds. Solid oak only — veneer reads cheap within five years.</p>
+      </div>
+      <div class="material">
+        <h4>Walnut</h4>
+        <p>The accent wood. Picture frames, side tables, the small pieces. Provides depth where oak alone would feel flat.</p>
+      </div>
+      <div class="material">
+        <h4>Linen</h4>
+        <p>Pre-washed only. Bedding, curtains, upholstery. Wrinkles are the point. Skip ironing forever.</p>
+      </div>
+      <div class="material">
+        <h4>Stoneware</h4>
+        <p>Heavier and more honest than porcelain. Look for visible throw lines and matte glazes. Avoid anything glossy.</p>
+      </div>
+      <div class="material">
+        <h4>Paper</h4>
+        <p>Rice paper pendants, paper lanterns, paper window screens. The single material that makes a room glow at night.</p>
+      </div>
+      <div class="material">
+        <h4>Jute &amp; seagrass</h4>
+        <p>Floor texture and storage texture. Jute under the sofa, seagrass baskets on the bookshelf. Natural fibre always.</p>
+      </div>
+    </div>
+    <p class="body-copy" style="margin-top: 0.4in; font-style: italic; color: var(--graphite); font-size: 10pt;">Brass appears as a seventh material — not in volume, but as the single warm metal accent in a room of oak and stoneware.</p>
+  </div>
+  <div class="footer-bar"><span>The materials</span><span class="page-num">08</span></div>
+</section>
+
+<!-- ============ PAGE 9 — TWO-WOODS RULE ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">A closer look</div>
+    <h2 class="section-title">The <span class="ital">two-woods</span> rule.</h2>
+    <hr class="divider" />
+    <div class="body-copy">
+      <p>The single styling rule that keeps a Japandi room from looking busy. Pick two woods. Commit. Never apologize.</p>
+      <p>Wood is a material with strong personality. Light oak reads Scandinavian. Walnut reads warm and old. Black-stained ash reads modern. Pine reads casual. The eye registers each tone instantly. With three woods, the room becomes a study in inconsistency. With two, it reads as a relationship.</p>
+      <p><strong>The four reliable pairings</strong></p>
+      <p style="padding-left: 0.2in;">→ Light oak + walnut <em>(the easiest, the warmest)</em></p>
+      <p style="padding-left: 0.2in;">→ Light oak + black-stained ash <em>(modern, graphic)</em></p>
+      <p style="padding-left: 0.2in;">→ Pine + walnut <em>(casual, Scandinavian-leaning)</em></p>
+      <p style="padding-left: 0.2in;">→ White oak + teak <em>(low contrast, almost monochrome)</em></p>
+      <p>The exception: a single vintage piece in a third wood gets a pass — the inherited mahogany dresser, the estate-sale teak. It reads as "the heirloom." But you only get one. Two is the rule. One vintage exception is the negotiation.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The two-woods rule</span><span class="page-num">09</span></div>
+</section>
+
+<!-- ============ PAGE 10 — TEXTILE WEIGHTS ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">A closer look</div>
+    <h2 class="section-title">Three textile <span class="ital">weights</span>.</h2>
+    <hr class="divider" />
+    <div class="body-copy">
+      <p>If a room reads flat — even with the right colour palette — it's almost always because the textiles are all the same weight. Three weights is the fix.</p>
+      <p><strong>Heavy</strong> · wool throw, jute rug, linen blanket. Weight on the surfaces — the floor, the foot of the bed, the back of the chair. The heavy weight grounds the room.</p>
+      <p><strong>Medium</strong> · linen curtain, cotton bedding, woven seat. The mid-weight holds the air. Curtains diffuse light. Cotton drapes naturally over a duvet. Woven seats add structural texture.</p>
+      <p><strong>Fine</strong> · silk-and-linen sham, fine cotton, sheer linen. The finest weight is the lightest visual moment. A single fine pillow in front of two heavier shams. A sheer linen runner over an oak dining table.</p>
+      <p>The pattern: from heaviest at the bottom (jute rug) through medium in the middle (linen curtain) to fine at the top (sheer pillow). The eye reads up the room and registers each shift. That's why the room feels layered, even when the palette is monochrome.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Three textile weights</span><span class="page-num">10</span></div>
+</section>
+
+<!-- ============ PAGE 11 — STARTER SHOPPING LIST INTRO ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Chapter four</div>
+    <h2 class="section-title">The <span class="ital">starter</span> list.</h2>
+    <hr class="divider" />
+    <p class="lead">Ten purchases. Under three hundred dollars together. The 80 percent of a Japandi home, sourced.</p>
+    <p class="body-copy" style="margin-top: 0.3in;">A complete Japandi home isn't built from a single shopping trip. It's built from one or two pieces a month over six months. The list below is the order we'd recommend if we were starting from scratch. Each item is the highest-leverage version of its category — the single basket that does the most for the room, the single lamp that changes the most.</p>
+    <p class="body-copy">Where to find each: the matching pillar page on calmandoak.com, with verified Amazon listings and direct links. Numbered the same way for easy lookup.</p>
+  </div>
+  <div class="footer-bar"><span>The starter list</span><span class="page-num">11</span></div>
+</section>
+
+<!-- ============ PAGE 12 — STARTER LIST ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <h3 class="sub" style="margin-top: 0;">The ten essentials</h3>
+    <ol class="shop-list">
+      <li><span class="item-name">A pair of seagrass baskets</span><span class="item-price">~$45</span><span class="item-where">Storage pillar — for the entryway, the throws, the chaos</span></li>
+      <li><span class="item-name">A wood tripod floor lamp</span><span class="item-price">~$80</span><span class="item-where">Lighting pillar — the corner gets a moment</span></li>
+      <li><span class="item-name">A linen duvet cover (queen or king)</span><span class="item-price">~$80</span><span class="item-where">Textiles pillar — the bedroom changes overnight</span></li>
+      <li><span class="item-name">A ribbed stoneware vase</span><span class="item-price">~$25</span><span class="item-where">Ceramics pillar — one branch, three rooms</span></li>
+      <li><span class="item-name">A cream wool throw</span><span class="item-price">~$35</span><span class="item-where">Textiles pillar — the heavy weight, every room</span></li>
+      <li><span class="item-name">A pair of ceramic bedside lamps</span><span class="item-price">~$60</span><span class="item-where">Lighting pillar — never one, always a pair</span></li>
+      <li><span class="item-name">A round oak side table</span><span class="item-price">~$60</span><span class="item-where">Furniture pillar — beside the chair, beside the bed</span></li>
+      <li><span class="item-name">A jute rug (5x7 minimum)</span><span class="item-price">~$70</span><span class="item-where">Textiles pillar — the floor anchor</span></li>
+      <li><span class="item-name">An acacia wood serving tray</span><span class="item-price">~$30</span><span class="item-where">Decor accents — the unifying object</span></li>
+      <li><span class="item-name">A rice paper pendant lamp</span><span class="item-price">~$45</span><span class="item-where">Lighting pillar — overhead, warm, finished</span></li>
+    </ol>
+    <p class="body-copy" style="margin-top: 0.3in; font-size: 10pt; color: var(--graphite); font-style: italic;">Total: roughly $530 across all ten. Build over six months and the spend evens out to under $90 per month.</p>
+  </div>
+  <div class="footer-bar"><span>The starter list</span><span class="page-num">12</span></div>
+</section>
+
+<!-- ============ PAGE 13 — 7-DAY PLAN ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Chapter five</div>
+    <h2 class="section-title">A seven-day<br><span class="ital">plan</span>.</h2>
+    <hr class="divider" />
+    <p class="lead">If you want one week of structured action, use this. Ten minutes a day, seven small wins.</p>
+    <div class="day-plan">
+      <div class="day-row">
+        <div class="day-label">Monday</div>
+        <div class="day-action">Stand in your bedroom. Count the wood tones. If three or more, identify the two you'll keep.</div>
+      </div>
+      <div class="day-row">
+        <div class="day-label">Tuesday</div>
+        <div class="day-action">Clear your nightstand entirely. Place back five objects: lamp, water vessel, book, small dish, single stem.</div>
+      </div>
+      <div class="day-row">
+        <div class="day-label">Wednesday</div>
+        <div class="day-action">Replace one cool-white bulb with a 2700K warm-white. Notice the room shift.</div>
+      </div>
+      <div class="day-row">
+        <div class="day-label">Thursday</div>
+        <div class="day-action">Photograph the corner of your living room you like least. The photo will tell you what's wrong.</div>
+      </div>
+      <div class="day-row">
+        <div class="day-label">Friday</div>
+        <div class="day-action">Browse the Calm &amp; Oak Storage pillar. Order one basket. Decide where it lives before it arrives.</div>
+      </div>
+      <div class="day-row">
+        <div class="day-label">Saturday</div>
+        <div class="day-action">Empty one shelf entirely. Put back three objects only. Step away.</div>
+      </div>
+      <div class="day-row">
+        <div class="day-label">Sunday</div>
+        <div class="day-action">Make a coffee. Sit in a room that has shifted slightly all week. Notice what changed.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The seven-day plan</span><span class="page-num">13</span></div>
+</section>
+
+<!-- ============ PAGE 14 — CLOSING ============ -->
+<section class="page closing">
+  <div class="pad center-vh">
+    <div class="wordmark" style="margin-bottom: 0.5in;">Calm <span class="amp">&amp;</span> Oak</div>
+    <hr class="divider" />
+    <p class="lead" style="text-align: center; max-width: 5in; margin-top: 0.3in;">"A Japandi home isn't built. It's allowed."</p>
+    <div style="margin-top: 0.5in;">
+      <div class="small-caps" style="margin-bottom: 0.2in;">Continue here</div>
+      <div class="serif" style="font-size: 16pt; color: var(--charcoal); margin-bottom: 0.15in;">calmandoak.com</div>
+      <div class="serif" style="font-size: 14pt; font-style: italic; color: var(--terracotta);">@calmandoak on Pinterest</div>
+    </div>
+    <div style="position: absolute; bottom: 1in; left: 0; right: 0; text-align: center;">
+      <div class="small-caps" style="font-size: 7pt;">As an Amazon Associate, Calm &amp; Oak earns from qualifying purchases.</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

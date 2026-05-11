@@ -56,8 +56,8 @@
           if (!res.ok) throw new Error('Subscribe failed');
         }
         if (note) {
-          note.textContent = "Welcome — your free Japandi Starter Guide is on its way.";
-          note.style.color = "var(--terracotta)";
+          note.innerHTML = 'Welcome. Your guide is ready &mdash; <a href="/assets/starter-guide/Japandi-Starter-Guide.pdf" download style="color:var(--terracotta);font-weight:500;border-bottom:1px solid var(--terracotta);">download the PDF here</a>. We&rsquo;ll also email it to you.';
+          note.style.color = "var(--charcoal)";
         }
         form.reset();
         if (button) button.textContent = 'Sent ✓';
