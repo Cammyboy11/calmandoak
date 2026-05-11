@@ -303,7 +303,7 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
 /* ---------- Product cards (shoppable) ---------- */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 .product {
@@ -316,7 +316,7 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
 }
 .product:hover { transform: translateY(-2px); border-color: var(--terracotta); }
 .product-img {
-  aspect-ratio: 1/1;
+  aspect-ratio: 4/5;
   background: var(--cream);
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-display);
@@ -352,6 +352,7 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
   width: 100%; height: 100%;
   position: absolute; inset: 0;
   object-fit: cover;
+  object-position: center;
   background: var(--cream);
   transition: transform .5s var(--ease);
 }
