@@ -465,6 +465,104 @@ article.prose figcaption { font-size: 0.85rem; color: var(--graphite); margin-to
 article.prose a { color: var(--charcoal); border-bottom: 1px solid var(--terracotta); }
 article.prose a:hover { color: var(--terracotta); }
 
+/* ---------- Editorial elements ---------- */
+.deck {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--graphite);
+  line-height: 1.5;
+  margin: 0 0 2.4rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--sand);
+}
+.editorial-aside {
+  background: var(--cream);
+  border-left: 3px solid var(--terracotta);
+  padding: 1.4rem 1.6rem 1.2rem;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-radius: 0 4px 4px 0;
+}
+.editorial-aside .aside-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.editorial-aside p:last-child { margin-bottom: 0; }
+.verdict {
+  background: var(--charcoal);
+  color: var(--offwhite);
+  padding: 1.6rem 1.8rem;
+  margin: 1.5rem 0 2rem;
+  border-radius: 6px;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+.verdict .verdict-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sand);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.verdict strong { color: var(--offwhite); }
+.verdict a {
+  color: var(--offwhite);
+  border-bottom: 1px solid var(--terracotta);
+}
+.verdict p:last-child { margin-bottom: 0; }
+.section-divider {
+  text-align: center;
+  border: 0;
+  margin: 3rem auto;
+  color: var(--graphite);
+  font-size: 0.9rem;
+  letter-spacing: 0.6em;
+  width: 100%;
+}
+.section-divider::before { content: "· · ·"; }
+.editorial-figure { margin: 3rem -1.5rem; }
+.editorial-figure img {
+  width: 100%; height: auto; display: block;
+  border-radius: var(--radius-lg);
+}
+.editorial-figure figcaption {
+  font-size: 0.82rem;
+  color: var(--graphite);
+  margin-top: 0.7rem;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  padding: 0 1.5rem;
+}
+@media (min-width: 760px) {
+  .editorial-figure { margin: 3rem -3rem; }
+}
+.running-total {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--terracotta);
+  font-size: 0.95rem;
+  display: block;
+  margin-top: 0.4rem;
+}
+.editorial-byline {
+  font-size: 0.78rem;
+  color: var(--graphite);
+  letter-spacing: 0.04em;
+  margin-top: 1.2rem;
+  font-style: italic;
+}
+
 /* ---------- Disclosure banner ---------- */
 .disclosure {
   background: var(--charcoal);
