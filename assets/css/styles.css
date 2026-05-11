@@ -466,6 +466,26 @@ article.prose figcaption { font-size: 0.85rem; color: var(--graphite); margin-to
 article.prose a { color: var(--charcoal); border-bottom: 1px solid var(--terracotta); }
 article.prose a:hover { color: var(--terracotta); }
 
+/* ---------- Tags (eyebrow pills under hero headlines) ---------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.7rem;
+  margin: 1.4rem 0 0;
+}
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  background: var(--cream);
+  border-radius: 999px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 /* ---------- Editorial elements ---------- */
 .deck {
   font-family: var(--font-display);
