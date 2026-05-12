@@ -81,6 +81,21 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
 .wrap { width: min(100% - 2.4rem, var(--max-w)); margin-inline: auto; }
 .prose { width: min(100% - 2.4rem, var(--max-w-prose)); margin-inline: auto; }
 .section { padding-block: var(--section-y); }
+/* Two stacked sections shouldn't double their vertical padding. The earlier
+   section's bottom-padding already provides the gap. Only collapses when
+   the background colour doesn't change (so colour-band transitions stay clean). */
+.section + .section { padding-top: 0; }
+.section + .section--cream,
+.section--cream + .section,
+.section + .section--ink,
+.section--ink + .section { padding-top: var(--section-y); }
+
+/* Spacing utility classes used inline throughout the homepage. */
+.center { text-align: center; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }
 .section--cream { background: var(--cream); }
 .section--ink {
   background: var(--charcoal);
