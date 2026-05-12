@@ -372,14 +372,55 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
   width: 100%; height: 100%;
   position: absolute; inset: 0;
   object-fit: cover;
-  /* Most source photos are landscape mood shots; the product (lamp, vase,
-     pendant) sits in the upper portion of the frame. Biasing toward the top
-     keeps the product visible inside the 4/5 portrait card. */
-  object-position: center 25%;
+  /* Default: gentle top-bias because most mood photos have the product in
+     the upper half. Per-image overrides below for ones where the product
+     sits elsewhere in the source frame. Each rule was set after literally
+     looking at the image. */
+  object-position: center 35%;
   background: var(--cream);
   transition: transform .5s var(--ease);
 }
 .product:hover .product-img img { transform: scale(1.04); }
+
+/* --- Per-image object-position overrides (post-audit, 2026-05-12) --- */
+/* Product sits in the upper portion (pendants, headboards, lanterns) */
+.product-img img[src*="day4-pin18-rice-paper-pendant"]   { object-position: center 15%; }
+.product-img img[src*="day42-pin207-bedside-sconces"]    { object-position: center top; }
+.product-img img[src*="day35-pin174-paper-lantern-glow"] { object-position: center 30%; }
+.product-img img[src*="day10-pin46-paper-lanterns"]      { object-position: center 30%; }
+.product-img img[src*="day17-pin81-donabe-rice-pot"]     { object-position: center 30%; }
+.product-img img[src*="day17-pin85-bamboo-monitor-stand"]{ object-position: center 30%; }
+.product-img img[src*="day14-pin66-brass-office-lamp"]   { object-position: center 30%; }
+.product-img img[src*="day36-pin177-brass-desk-lamp"]    { object-position: center 25%; }
+.product-img img[src*="day1-pin2-wooden-hangers"]        { object-position: center 35%; }
+
+/* Product sits in the lower portion (rugs, side tables, beds, dressers,
+   shoe benches, anything floor-anchored) */
+.product-img img[src*="day6-pin29-jute-rug"]             { object-position: center 70%; }
+.product-img img[src*="day23-pin112-jute-runner"]        { object-position: 35% center; }
+.product-img img[src*="day1-pin1-seagrass-baskets"]      { object-position: center 65%; }
+.product-img img[src*="day2-pin6-lidded-seagrass-set"]   { object-position: center 65%; }
+.product-img img[src*="day2-pin7-round-wicker-basket"]   { object-position: 35% 65%; }
+.product-img img[src*="day33-pin162-shoe-bench"]         { object-position: center 65%; }
+.product-img img[src*="day41-pin204-oak-bed-low"]        { object-position: center 60%; }
+.product-img img[src*="day31-pin151-cream-linen-sofa"]   { object-position: center 65%; }
+.product-img img[src*="day39-pin195-meditation-cushion"] { object-position: 35% 65%; }
+.product-img img[src*="day20-pin100-leather-desk-pad"]   { object-position: center 55%; }
+.product-img img[src*="day12-pin58-storage-bench"]       { object-position: center 60%; }
+
+/* Product is on one side, not centered horizontally */
+.product-img img[src*="day10-pin50-linen-curtains"]      { object-position: 60% center; }
+.product-img img[src*="day4-pin19-wooden-serving-tray"]  { object-position: 70% 65%; }
+.product-img img[src*="day3-pin15-oak-desk"]             { object-position: 60% center; }
+.product-img img[src*="day33-pin164-oak-dining-chairs"]  { object-position: 60% center; }
+
+/* Heavily cropped wide bands — show centre, vertical position doesn't matter */
+.product-img img[src*="day2-pin9-oak-floating-shelves"]  { object-position: center; }
+.product-img img[src*="day1-pin4-stoneware-plates"]      { object-position: center; }
+.product-img img[src*="day36-pin179-walnut-cutting-board"]{ object-position: center; }
+.product-img img[src*="day32-pin156-linen-accent-chair"] { object-position: center; }
+.product-img img[src*="day37-pin185-reading-chair-nook"] { object-position: center; }
+.product-img img[src*="day41-pin205-pampas-grass"]       { object-position: center; }
 
 /* ---------- Pillar card hero images (homepage + shop hub) ---------- */
 .card-img.has-photo {
