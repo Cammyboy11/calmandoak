@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://calmandoak.com/sitemap.xml
