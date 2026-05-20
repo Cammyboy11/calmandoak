@@ -648,6 +648,10 @@ article.prose a:hover { color: var(--terracotta); }
   border-bottom: 1px solid var(--terracotta);
 }
 .verdict p:last-child { margin-bottom: 0; }
+/* Override .prose.section p { color: charcoal } for .verdict's dark background.
+   Needs combined-selector specificity (0,3,1) to beat .prose.section p (0,2,1). */
+.prose.section .verdict p,
+.prose.section .verdict { color: var(--offwhite); }
 .section-divider {
   text-align: center;
   border: 0;
