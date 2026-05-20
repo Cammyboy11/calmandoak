@@ -652,6 +652,72 @@ article.prose a:hover { color: var(--terracotta); }
    Needs combined-selector specificity (0,3,1) to beat .prose.section p (0,2,1). */
 .prose.section .verdict p,
 .prose.section .verdict { color: var(--offwhite); }
+
+/* ---------- Section product card (magazine-quality replacement for dark .verdict box) ----------
+   Used in build-guide articles. Each numbered section gets a clickable product photo with
+   subtle hover lift + image zoom (Kinfolk/Cereal pattern). Replaces the verdict callout. */
+.section-product {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin: 1.5rem 0 2rem;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--paper);
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.section-product:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 48px -22px rgba(42, 42, 40, 0.28);
+}
+.section-product-img {
+  margin: 0;
+  overflow: hidden;
+  background: var(--cream);
+}
+.section-product-img img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform .9s var(--ease);
+}
+.section-product:hover .section-product-img img { transform: scale(1.03); }
+.section-product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.95rem 0.15rem 0.1rem;
+}
+.section-product-name {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-style: italic;
+  color: var(--charcoal);
+  line-height: 1.4;
+  font-weight: 400;
+}
+.section-product-cta {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.section-product-cta::after {
+  content: ' →';
+  display: inline-block;
+  transition: transform .25s var(--ease);
+}
+.section-product:hover .section-product-cta::after { transform: translateX(4px); }
+@media (max-width: 560px) {
+  .section-product-meta { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+}
 .section-divider {
   text-align: center;
   border: 0;
