@@ -398,7 +398,7 @@ Three battery-powered paper lanterns at varying heights on a porch railing, glow
 
 ## DAY 1
 
-### 1 | 8 AM | Storage | `day1-pin1-seagrass-baskets.png` | ASIN `B0D31739VD`
+### 1 | 8 AM | Storage | `day1-pin1-seagrass-baskets.jpg` | ASIN `B0D31739VD`
 **Title:** Hide the chaos, keep the calm — woven storage baskets
 **Description:**
 HIDE THE CHAOS, KEEP THE CALM
@@ -409,7 +409,7 @@ A set of three hand-woven seagrass storage baskets with brown leather handles in
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 2 | 12 PM | Bedroom | `day1-pin2-wooden-hangers.png` | ASIN `B0DPW6TCQF`
+### 2 | 12 PM | Bedroom | `day1-pin2-wooden-hangers.jpg` | ASIN `B0DPW6TCQF`
 **Title:** Your closet finally looks like Pinterest — solid wood hangers
 **Description:**
 YOUR CLOSET FINALLY LOOKS LIKE PINTEREST
@@ -420,7 +420,7 @@ The single change that fixed my closet — matching natural birch wood hangers, 
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 3 | 3 PM | Lighting | `day1-pin3-tripod-floor-lamp.png` | ASIN `B0D7BWWVC7`
+### 3 | 3 PM | Lighting | `day1-pin3-tripod-floor-lamp.jpg` | ASIN `B0D7BWWVC7`
 **Title:** The lamp that makes any room expensive — wood tripod floor lamp
 **Description:**
 THE LAMP THAT MAKES ANY ROOM EXPENSIVE
@@ -431,7 +431,7 @@ A wooden tripod floor lamp with a soft fabric shade and a small built-in shelf. 
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 4 | 7 PM | Ceramics & Tableware | `day1-pin4-stoneware-plates.png` | ASIN `B0CJD73LV6`
+### 4 | 7 PM | Ceramics & Tableware | `day1-pin4-stoneware-plates.jpg` | ASIN `B0CJD73LV6`
 **Title:** Stop using IKEA dishes — speckled stoneware dinnerware
 **Description:**
 STOP USING IKEA DISHES
@@ -442,7 +442,7 @@ Handmade reactive-glaze stoneware set, service for 6 (18 pieces). Speckled, impe
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 5 | 10 PM | Textiles | `day1-pin5-linen-duvet.png` | ASIN `B01IMZLNBE` (set Queen)
+### 5 | 10 PM | Textiles | `day1-pin5-linen-duvet.jpg` | ASIN `B01IMZLNBE` (set Queen)
 **Title:** The linen bedding worth the splurge — French washed flax duvet
 **Description:**
 THE LINEN BEDDING WORTH THE SPLURGE
@@ -457,7 +457,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ## DAY 2
 
-### 6 | 8 AM | Storage | `day2-pin6-lidded-seagrass-set.png` | ASIN `B01FU1F9B8`
+### 6 | 8 AM | Storage | `day2-pin6-lidded-seagrass-set.jpg` | ASIN `B01FU1F9B8`
 **Title:** Donate the plastic — three lidded seagrass baskets
 **Description:**
 DONATE THE PLASTIC
@@ -468,7 +468,7 @@ A set of three lidded seagrass baskets with iron wire frames — beautiful enoug
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 7 | 12 PM | Decor accents | `day2-pin7-round-wicker-basket.png` | ASIN `B0CM3YJXZ9`
+### 7 | 12 PM | Decor accents | `day2-pin7-round-wicker-basket.jpg` | ASIN `B0CM3YJXZ9`
 **Title:** The $40 bin that fixed my entryway — round wicker storage
 **Description:**
 THE $40 BIN THAT FIXED MY ENTRYWAY
@@ -479,7 +479,7 @@ One large hand-woven abaca wicker basket — that's the whole solution. Natural 
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 8 | 3 PM | Lighting | `day2-pin8-hyacinth-table-lamp.png` | ASIN `B07T81461V`
+### 8 | 3 PM | Lighting | `day2-pin8-hyacinth-table-lamp.jpg` | ASIN `B07T81461V`
 **Title:** 7 PM in a quiet home — water hyacinth basket lamp
 **Description:**
 7 PM IN A QUIET HOME
@@ -490,7 +490,7 @@ A woven water hyacinth basket-base table lamp with a soft linen drum shade — t
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 9 | 7 PM | Furniture | `day2-pin9-oak-floating-shelves.png` | ASIN `B0DC6S57HV` (set Oak)
+### 9 | 7 PM | Furniture | `day2-pin9-oak-floating-shelves.jpg` | ASIN `B0DC6S57HV` (set Oak)
 **Title:** The oak shelf I'd buy again — solid wood floating shelves
 **Description:**
 THE OAK SHELF I'D BUY AGAIN
@@ -501,7 +501,7 @@ A set of 2 24-inch oak floating shelves with invisible brackets — the kind tha
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 10 | 10 PM | Bedroom | `day2-pin10-ceramic-lamp-pair.png` | ASIN `B0C4SZBN64`
+### 10 | 10 PM | Bedroom | `day2-pin10-ceramic-lamp-pair.jpg` | ASIN `B0C4SZBN64`
 **Title:** This bedside lamp changed my sleep — ceramic lamp pair
 **Description:**
 THIS BEDSIDE LAMP CHANGED MY SLEEP
@@ -516,7 +516,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ## DAY 3
 
-### 11 | 8 AM | Kitchen | `day3-pin11-glass-canisters.png` | ASIN `B0CMWLVJGT`
+### 11 | 8 AM | Kitchen | `day3-pin11-glass-canisters.jpg` | ASIN `B0CMWLVJGT`
 **Title:** Pantry that looks like a magazine — glass + bamboo
 **Description:**
 PANTRY THAT LOOKS LIKE A MAGAZINE
@@ -538,7 +538,7 @@ A small floor cabinet with two drawers and two woven baskets. Slim profile, hide
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 13 | 3 PM | Ceramics & Tableware | `day3-pin13-brown-ribbed-vase.png` | ASIN `B0F9SVL9X4`
+### 13 | 3 PM | Ceramics & Tableware | `day3-pin13-brown-ribbed-vase.jpg` | ASIN `B0F9SVL9X4`
 **Title:** The vase everyone asks about — rustic ceramic pottery
 **Description:**
 THE VASE EVERYONE ASKS ABOUT
@@ -549,7 +549,7 @@ A handmade rustic ceramic vase with whitewashed finish. Pair with dried branches
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 14 | 7 PM | Textiles | `day3-pin14-wool-throw.png` | ASIN `B08F48LR45`
+### 14 | 7 PM | Textiles | `day3-pin14-wool-throw.jpg` | ASIN `B08F48LR45`
 **Title:** Wool throws under $50 — cream cable knit blanket
 **Description:**
 WOOL THROWS UNDER $50
@@ -560,7 +560,7 @@ A cream cable-knit knitted throw blanket — heavy enough to feel real, soft eno
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 15 | 10 PM | Office/Reading Nook | `day3-pin15-oak-desk.png` | ASIN `B0D4RK8PB2`
+### 15 | 10 PM | Office/Reading Nook | `day3-pin15-oak-desk.jpg` | ASIN `B0D4RK8PB2`
 **Title:** Oak desks for small apartments — Walker Edison Coastal Oak
 **Description:**
 OAK DESKS FOR SMALL APARTMENTS
@@ -575,7 +575,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ## DAY 4
 
-### 16 | 8 AM | Kitchen | `day4-pin16-bamboo-drawer-dividers.png` | ASIN `B07HQMZ7HH`
+### 16 | 8 AM | Kitchen | `day4-pin16-bamboo-drawer-dividers.jpg` | ASIN `B07HQMZ7HH`
 **Title:** Kitchen drawer Pinterest dreams — bamboo drawer dividers
 **Description:**
 KITCHEN DRAWER PINTEREST DREAMS
@@ -586,7 +586,7 @@ Adjustable bamboo drawer dividers (4 pcs, spring-loaded) — make every drawer l
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 17 | 12 PM | Storage | `day4-pin17-seagrass-basket-pair.png` | ASIN `B0CM3YJXZ9` (different size than Pin 7)
+### 17 | 12 PM | Storage | `day4-pin17-seagrass-basket-pair.jpg` | ASIN `B0CM3YJXZ9` (different size than Pin 7)
 **Title:** The basket I keep buying more of — round abaca pair
 **Description:**
 THE BASKET I KEEP BUYING MORE OF
@@ -597,7 +597,7 @@ A pair of round abaca wicker storage baskets with leather handles. One for the t
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 18 | 3 PM | Lighting | `day4-pin18-rice-paper-pendant.png` | ASIN `B0C5QMXBXZ`
+### 18 | 3 PM | Lighting | `day4-pin18-rice-paper-pendant.jpg` | ASIN `B0C5QMXBXZ`
 **Title:** Skip overhead lights forever — rice paper pendant lamp
 **Description:**
 SKIP OVERHEAD LIGHTS FOREVER
@@ -608,7 +608,7 @@ A rice paper pendant lamp shade glowing soft golden warm. Amazon's Choice. The w
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 19 | 7 PM | Decor accents | `day4-pin19-wooden-serving-tray.png` | ASIN `B086372L8W`
+### 19 | 7 PM | Decor accents | `day4-pin19-wooden-serving-tray.jpg` | ASIN `B086372L8W`
 **Title:** 5 objects for a coffee table — start with the tray
 **Description:**
 5 OBJECTS FOR A COFFEE TABLE
@@ -619,7 +619,7 @@ The base of every styled coffee table is the tray. An acacia wood serving tray w
 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 
-### 20 | 10 PM | Office/Reading Nook | `day4-pin20-bedroom-reading-corner.png` | ASIN `B07F266PMS`
+### 20 | 10 PM | Office/Reading Nook | `day4-pin20-bedroom-reading-corner.jpg` | ASIN `B07F266PMS`
 **Title:** 6 objects for a bedroom corner — Christopher Knight reading chair
 **Description:**
 6 OBJECTS FOR A BEDROOM CORNER
@@ -646,7 +646,7 @@ Foldable cream linen storage baskets with leather tag handles. Three sizes, soft
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 **Search:** amazon.com/s?k=linen+storage+basket+foldable+leather+handle+set
 
-### 22 | 12 PM | Decor accents | `day5-pin22-woven-bins-bookshelf.png`
+### 22 | 12 PM | Decor accents | `day5-pin22-woven-bins-bookshelf.jpg`
 **Title:** Why your bookshelf looks messy — woven bins fix it
 **Description:**
 WHY YOUR BOOKSHELF LOOKS MESSY
@@ -658,7 +658,7 @@ Three rules: covers facing out, three objects per shelf, woven bins on the botto
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 **Search:** amazon.com/s?k=woven+storage+bin+pair+seagrass
 
-### 23 | 3 PM | Lighting | `day5-pin23-reading-lamp.png`
+### 23 | 3 PM | Lighting | `day5-pin23-reading-lamp.jpg`
 **Title:** Reading nook lighting — articulated arm brass lamp
 **Description:**
 READING NOOK LIGHTING
@@ -734,7 +734,7 @@ A short cream ribbed stoneware vase with imperfect throwing marks. Same shape as
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 **Search:** amazon.com/s?k=cream+ribbed+ceramic+vase+stoneware+short
 
-### 29 | 7 PM | Textiles | `day6-pin29-jute-rug.png`
+### 29 | 7 PM | Textiles | `day6-pin29-jute-rug.jpg`
 **Title:** Jute rug guide — which size for which room
 **Description:**
 JUTE RUG GUIDE
@@ -746,7 +746,7 @@ The single rug that works under every sofa: natural braided jute, 8x10. Add visu
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 **Search:** amazon.com/s?k=jute+area+rug+8x10+natural+braided
 
-### 30 | 10 PM | Kitchen | `day6-pin30-wooden-utensils.png`
+### 30 | 10 PM | Kitchen | `day6-pin30-wooden-utensils.jpg`
 **Title:** Wooden utensils that don't warp — beech + walnut set
 **Description:**
 WOODEN UTENSILS THAT DON'T WARP
@@ -798,7 +798,7 @@ A pair of small bedside table lamps with linen drum shades. Matching pair makes 
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 **Search:** amazon.com/s?k=bedside+table+lamp+set+of+2+linen+shade
 
-### 34 | 7 PM | Furniture | `day7-pin34-round-wood-side-table.png`
+### 34 | 7 PM | Furniture | `day7-pin34-round-wood-side-table.jpg`
 **Title:** Side tables under $100 — round solid oak
 **Description:**
 SIDE TABLES UNDER $100
@@ -810,7 +810,7 @@ A small round solid oak side table — the piece that sits beside the sofa or th
 Affiliate link — I earn a small commission if you buy through this link, at no extra cost to you.
 **Search:** amazon.com/s?k=round+solid+wood+side+table+small
 
-### 35 | 10 PM | Outdoors | `day7-pin35-cast-iron-teapot.png`
+### 35 | 10 PM | Outdoors | `day7-pin35-cast-iron-teapot.jpg`
 **Title:** Tea ritual at home — cast iron Japanese teapot
 **Description:**
 TEA RITUAL AT HOME

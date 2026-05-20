@@ -10,31 +10,31 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 
 ## DAY 31 — Furniture week opens
 
-### Pin 151 | 8 AM | Furniture | `day31-pin151-cream-linen-sofa.png`
+### Pin 151 | 8 AM | Furniture | `day31-pin151-cream-linen-sofa.jpg`
 **Title:** The cream linen sofa worth the wait
 **Desc:** A washed-linen sofa in cream that softens an entire living room. The kind of investment piece that ages instead of dating. Pair it with oak, wool throws, stoneware. Tap to shop.
 `#homedecor #livingroomdecor #linensofa #scandinavianstyle #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 152 | 12 PM | Bedroom | `day31-pin152-oak-nightstand-pair.png`
+### Pin 152 | 12 PM | Bedroom | `day31-pin152-oak-nightstand-pair.jpg`
 **Title:** Oak nightstand pair under $300
 **Desc:** A matching pair of light-oak nightstands with one drawer and an open shelf. The bedside set you don't have to apologize for. Tap to shop.
 `#bedroomdecor #bedroomideas #oakfurniture #scandinavianstyle #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 153 | 3 PM | Lighting | `day31-pin153-brass-table-lamp.png`
+### Pin 153 | 3 PM | Lighting | `day31-pin153-brass-table-lamp.jpg`
 **Title:** The brass table lamp that warms a room
 **Desc:** Aged brass base, ivory linen drum shade, warm 2700K bulb. The lamp that turns a side table into a moment. Tap to shop.
 `#homedecor #lighting #tablelamp #cozyhome #brassdecor`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 154 | 7 PM | Storage | `day31-pin154-five-storage-baskets.png`
+### Pin 154 | 7 PM | Storage | `day31-pin154-five-storage-baskets.jpg`
 **Title:** 5 baskets that finally hide the chaos
 **Desc:** Tall seagrass for blankets, low rectangular for shoes, lidded for the bathroom, round-handled for laundry, woven cube for toys. Five workhorses. Tap each.
 `#homeorganization #storage #organization #neutralhome #homedecor`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 155 | 10 PM | Outdoors | `day31-pin155-teak-patio-table.png`
+### Pin 155 | 10 PM | Outdoors | `day31-pin155-teak-patio-table.jpg`
 **Title:** The teak patio table that ages well
 **Desc:** Solid teak ages to a soft silver-grey if you let it, or stays warm honey if you oil it. Either way it lasts. Tap to shop.
 `#outdoordecor #patiodecor #teakfurniture #outdoorliving #scandinavianstyle`
@@ -44,19 +44,19 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 
 ## DAY 32
 
-### Pin 156 | 8 AM | Furniture | `day32-pin156-linen-accent-chair.png`
+### Pin 156 | 8 AM | Furniture | `day32-pin156-linen-accent-chair.jpg`
 **Title:** The linen accent chair I keep saving
 **Desc:** A low-arm linen-upholstered accent chair in oat. Reads as a sculpture in the room, sits like a daily favorite. Tap to shop.
 `#homedecor #livingroomdecor #linenchair #cozyhome #scandinavianstyle`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 157 | 12 PM | Decor accents | `day32-pin157-gallery-wall.png`
+### Pin 157 | 12 PM | Decor accents | `day32-pin157-gallery-wall.jpg`
 **Title:** Get the look — a quiet gallery wall
 **Desc:** Five framed prints, four wood frames + one black, neutral botanical and abstract subjects, asymmetric arrangement. Tap each frame for the source.
 `#gallerywall #homedecor #wallart #neutralhome #scandinavianstyle`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 158 | 3 PM | Ceramics & Tableware | `day32-pin158-ribbed-vase.png`
+### Pin 158 | 3 PM | Ceramics & Tableware | `day32-pin158-ribbed-vase.jpg`
 **Title:** The ribbed vase, three angles
 **Desc:** Cream stoneware ribbed vase shown empty, with a single dried branch, and styled on a bookshelf. The vase that fits anywhere. Tap to shop.
 `#ceramics #pottery #vase #stoneware #neutralhome`
@@ -78,13 +78,13 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 
 ## DAY 33
 
-### Pin 161 | 8 AM | Furniture | `day33-pin161-oak-dresser.png`
+### Pin 161 | 8 AM | Furniture | `day33-pin161-oak-dresser.jpg`
 **Title:** The oak dresser that fits every room
 **Desc:** Six-drawer light-oak dresser with brushed iron pulls. Bedroom, hallway, dining storage — works in all three. Tap to shop.
 `#oakfurniture #bedroomdecor #homedecor #scandinavianstyle #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 162 | 12 PM | Furniture | `day33-pin162-shoe-bench.png`
+### Pin 162 | 12 PM | Furniture | `day33-pin162-shoe-bench.jpg`
 **Title:** Shoe bench for a calm entryway
 **Desc:** Solid wood shoe bench with woven shelf below, room for four pairs and a sit-down moment. Tap to shop.
 `#entrywaydecor #shoestorage #homedecor #organization #neutralhome`
@@ -96,13 +96,13 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#deskdecor #homeoffice #workspaceinspo #minimalist #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 164 | 7 PM | Furniture | `day33-pin164-oak-dining-chairs.png`
+### Pin 164 | 7 PM | Furniture | `day33-pin164-oak-dining-chairs.jpg`
 **Title:** Oak dining chairs (the set)
 **Desc:** Set of four oak dining chairs with woven rush seats. Sturdy, photogenic, comfortable enough for a long dinner. Tap to shop.
 `#diningroomdecor #oakfurniture #diningchairs #scandinavianstyle #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 165 | 10 PM | Textiles | `day33-pin165-wool-texture.png`
+### Pin 165 | 10 PM | Textiles | `day33-pin165-wool-texture.jpg`
 **Title:** Wool texture, up close
 **Desc:** Macro detail of a chunky cream wool throw against linen. The texture you want against you in the evening. Tap to shop.
 `#wool #textiles #throwblanket #cozyhome #neutralhome`
@@ -124,7 +124,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#kitchendecor #pendantlight #lighting #cozyhome #scandinavianstyle`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 168 | 3 PM | Outdoors | `day34-pin168-morning-patio.png`
+### Pin 168 | 3 PM | Outdoors | `day34-pin168-morning-patio.jpg`
 **Title:** Morning patio routine
 **Desc:** A teak patio table with a stoneware mug, an open book, the slant of early light through trees. Sunday by design. Tap to shop the table.
 `#outdoorliving #patiodecor #morningroutine #slowliving #cozyhome`
@@ -146,13 +146,13 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 
 ## DAY 35
 
-### Pin 171 | 8 AM | Furniture | `day35-pin171-oak-console.png`
+### Pin 171 | 8 AM | Furniture | `day35-pin171-oak-console.jpg`
 **Title:** Oak console table done right
 **Desc:** Slim oak console for the entryway or behind the sofa. One drawer, one shelf, room for a lamp and a basket. Tap to shop.
 `#consoletable #oakfurniture #entrywaydecor #scandinavianstyle #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 172 | 12 PM | Ceramics & Tableware | `day35-pin172-stoneware-bowls.png`
+### Pin 172 | 12 PM | Ceramics & Tableware | `day35-pin172-stoneware-bowls.jpg`
 **Title:** Stoneware serving bowls
 **Desc:** Set of three nesting stoneware serving bowls in oat, cream, and warm grey. Daily use, dinner-party ready. Tap to shop.
 `#ceramics #stoneware #servingbowls #pottery #neutralhome`
@@ -164,13 +164,13 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#homeorganization #shelfdecor #storage #neutralhome #organization`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 174 | 7 PM | Lighting | `day35-pin174-paper-lantern-glow.png`
+### Pin 174 | 7 PM | Lighting | `day35-pin174-paper-lantern-glow.jpg`
 **Title:** Paper lantern glow
 **Desc:** A round paper lantern pendant casts soft warm light across a linen-draped corner. Under-$80 calm. Tap to shop.
 `#lighting #paperlantern #pendantlight #cozyhome #scandinavianstyle`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 175 | 10 PM | Bedroom | `day35-pin175-linen-headboard.png`
+### Pin 175 | 10 PM | Bedroom | `day35-pin175-linen-headboard.jpg`
 **Title:** Linen upholstered headboard
 **Desc:** Tall linen-upholstered headboard in oat, slim profile, modern proportions. The bedroom centerpiece. Tap to shop.
 `#bedroomdecor #headboard #linen #scandinavianstyle #neutralhome`
@@ -180,13 +180,13 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 
 ## DAY 36
 
-### Pin 176 | 8 AM | Textiles | `day36-pin176-linen-sofa-texture.png`
+### Pin 176 | 8 AM | Textiles | `day36-pin176-linen-sofa-texture.jpg`
 **Title:** Linen sofa texture, up close
 **Desc:** Macro detail showing the warp and weft of pre-washed Belgian linen on a cream sofa. The texture worth touching. Tap to shop the cover set.
 `#linen #livingroomdecor #sofa #textiles #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 177 | 12 PM | Office/Reading Nook | `day36-pin177-brass-desk-lamp.png`
+### Pin 177 | 12 PM | Office/Reading Nook | `day36-pin177-brass-desk-lamp.jpg`
 **Title:** Brass desk lamp
 **Desc:** Adjustable brass desk lamp with a small linen drum shade. Warm bulb, no glare across the screen. Tap to shop.
 `#deskdecor #homeoffice #brassdecor #lighting #neutralhome`
@@ -198,13 +198,13 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#outdoorliving #outdoorlighting #patiodecor #cozyhome #lighting`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 179 | 7 PM | Kitchen | `day36-pin179-walnut-cutting-board.png`
+### Pin 179 | 7 PM | Kitchen | `day36-pin179-walnut-cutting-board.jpg`
 **Title:** The walnut cutting board worth keeping out
 **Desc:** Solid walnut, end-grain construction, ages instead of dulling. The board you display, not hide. Tap to shop.
 `#kitchendecor #cuttingboard #walnut #kitchengoals #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 180 | 10 PM | Bedroom | `day36-pin180-linen-shams.png`
+### Pin 180 | 10 PM | Bedroom | `day36-pin180-linen-shams.jpg`
 **Title:** Linen shams in stone
 **Desc:** Pair of pre-washed linen pillow shams in stone grey on a cream bed. Effortless, expensive-looking, $40. Tap to shop.
 `#bedroomdecor #linenbedding #pillowshams #scandinavianstyle #neutralhome`
@@ -238,7 +238,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#kitchenherbs #herbgarden #pottery #kitchendecor #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 185 | 10 PM | Office/Reading Nook | `day37-pin185-reading-chair-nook.png`
+### Pin 185 | 10 PM | Office/Reading Nook | `day37-pin185-reading-chair-nook.jpg`
 **Title:** The reading chair nook
 **Desc:** A linen accent chair, a small oak side table, a brass floor lamp arching over. Three pieces make the corner. Tap each.
 `#readingnook #livingroomdecor #cozyhome #homeoffice #neutralhome`
@@ -254,7 +254,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#bedroomdecor #bedroomideas #bedroominspo #scandinavianstyle #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 187 | 12 PM | Textiles | `day38-pin187-linen-duvet-colors.png`
+### Pin 187 | 12 PM | Textiles | `day38-pin187-linen-duvet-colors.jpg`
 **Title:** 5 linen duvet colors that work in any room
 **Desc:** Oat, stone, cream, warm grey, soft sage. Five neutral-leaning linen duvet covers under $120 each. Tap each color.
 `#bedroomdecor #linenbedding #duvetcover #neutralhome #scandinavianstyle`
@@ -266,7 +266,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#bedroomdecor #lighting #readinglamp #brassdecor #cozyhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 189 | 7 PM | Bedroom | `day38-pin189-five-nightstand-essentials.png`
+### Pin 189 | 7 PM | Bedroom | `day38-pin189-five-nightstand-essentials.jpg`
 **Title:** 5 nightstand essentials
 **Desc:** Lamp, water carafe, book, small dish for jewelry, sleep mask. Everything you need, nothing you don't. Tap each.
 `#bedroomdecor #nightstanddecor #bedroomideas #neutralhome #cozyhome`
@@ -282,7 +282,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 
 ## DAY 39
 
-### Pin 191 | 8 AM | Textiles | `day39-pin191-blackout-curtains.png`
+### Pin 191 | 8 AM | Textiles | `day39-pin191-blackout-curtains.jpg`
 **Title:** Linen-look blackout curtains
 **Desc:** The drape that looks like linen but blocks 95% of light. Stone grey, 96-inch length, machine washable. Tap to shop.
 `#bedroomdecor #curtains #linencurtains #blackoutcurtains #neutralhome`
@@ -306,7 +306,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#bedroomdecor #linenbedding #morningroutine #slowliving #cozyhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 195 | 10 PM | Outdoors | `day39-pin195-meditation-cushion.png`
+### Pin 195 | 10 PM | Outdoors | `day39-pin195-meditation-cushion.jpg`
 **Title:** Linen meditation cushion
 **Desc:** Round buckwheat-filled meditation cushion in oat linen. Five minutes a day, on a quiet rug. Tap to shop.
 `#meditation #wellness #cozyhome #slowliving #neutralhome`
@@ -316,13 +316,13 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 
 ## DAY 40
 
-### Pin 196 | 8 AM | Textiles | `day40-pin196-euro-shams.png`
+### Pin 196 | 8 AM | Textiles | `day40-pin196-euro-shams.jpg`
 **Title:** Linen euro shams
 **Desc:** Pair of 26-inch linen euro shams in stone, the back row that makes any bed look styled. $35 each. Tap to shop.
 `#bedroomdecor #linenbedding #euroshams #pillowshams #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 197 | 12 PM | Furniture | `day40-pin197-oak-bedroom-bench.png`
+### Pin 197 | 12 PM | Furniture | `day40-pin197-oak-bedroom-bench.jpg`
 **Title:** Oak bench at the foot of the bed
 **Desc:** Solid oak bench with a woven cane seat, just deep enough for tomorrow's clothes. Tap to shop.
 `#bedroomdecor #bedroombench #oakfurniture #scandinavianstyle #neutralhome`
@@ -340,7 +340,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#bedroomdecor #lighting #dimmer #cozyhome #homeimprovement`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 200 | 10 PM | Textiles | `day40-pin200-waffle-sheets.png`
+### Pin 200 | 10 PM | Textiles | `day40-pin200-waffle-sheets.jpg`
 **Title:** Waffle sheets, up close
 **Desc:** Macro detail of cotton waffle-weave sheets in cream. Soft like linen, warm like flannel, lightweight. Tap to shop the set.
 `#bedroomdecor #wafflesheets #cottonbedding #cozyhome #neutralhome`
@@ -350,7 +350,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 
 ## DAY 41
 
-### Pin 201 | 8 AM | Bedroom | `day41-pin201-small-bedroom-getthelook.png`
+### Pin 201 | 8 AM | Bedroom | `day41-pin201-small-bedroom-getthelook.jpg`
 **Title:** Get the look — a small calm bedroom
 **Desc:** Low oak bed, single nightstand, plug-in sconce, woven basket, linen curtain. Five pieces for under-150-square-feet. Tap each.
 `#bedroomdecor #smallbedroom #bedroomideas #scandinavianstyle #neutralhome`
@@ -362,19 +362,19 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#bedroomdecor #homeorganization #storage #underbedstorage #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 203 | 3 PM | Bedroom | `day41-pin203-bedroom-reading-chair.png`
+### Pin 203 | 3 PM | Bedroom | `day41-pin203-bedroom-reading-chair.jpg`
 **Title:** The bedroom reading chair
 **Desc:** A small linen accent chair in the corner of the bedroom, brass floor lamp beside it, wool throw draped. Tap each.
 `#bedroomdecor #readingchair #readingnook #cozyhome #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 204 | 7 PM | Furniture | `day41-pin204-oak-bed-low.png`
+### Pin 204 | 7 PM | Furniture | `day41-pin204-oak-bed-low.jpg`
 **Title:** Low oak bed frame
 **Desc:** Low-profile oak bed frame, exposed wood headboard, modern Scandinavian proportions. Reads grown-up. Tap to shop.
 `#bedroomdecor #bedframe #oakfurniture #scandinavianstyle #neutralhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 205 | 10 PM | Decor accents | `day41-pin205-pampas-grass.png`
+### Pin 205 | 10 PM | Decor accents | `day41-pin205-pampas-grass.jpg`
 **Title:** Pampas grass, evening
 **Desc:** Tall stoneware vase of dried pampas grass against a charcoal wall in low evening light. The texture that finishes a room. Tap to shop.
 `#decor #pampasgrass #vase #cozyhome #neutralhome`
@@ -390,7 +390,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#bedroomdecor #sleepwell #digitalwellness #morningroutine #cozyhome`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 207 | 12 PM | Lighting | `day42-pin207-bedside-sconces.png`
+### Pin 207 | 12 PM | Lighting | `day42-pin207-bedside-sconces.jpg`
 **Title:** Plug-in bedside sconces
 **Desc:** Brass plug-in sconces with adjustable arms, mounted above the nightstand. No rewiring, no electrician. Tap to shop the pair.
 `#bedroomdecor #lighting #sconces #brassdecor #cozyhome`
@@ -402,7 +402,7 @@ For each pin: title is the headline, description is 2-3 sentences ending with th
 `#closetorganization #homeorganization #storage #neutralhome #organization`
 (As an Amazon Associate I earn from qualifying purchases.)
 
-### Pin 209 | 7 PM | Ceramics & Tableware | `day42-pin209-water-carafe.png`
+### Pin 209 | 7 PM | Ceramics & Tableware | `day42-pin209-water-carafe.jpg`
 **Title:** Stoneware water carafe
 **Desc:** Hand-thrown stoneware water carafe with matching glass tumbler that doubles as the lid. The bedside upgrade. Tap to shop.
 `#ceramics #stoneware #pottery #bedroomdecor #neutralhome`

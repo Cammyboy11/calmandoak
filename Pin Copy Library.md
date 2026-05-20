@@ -561,7 +561,7 @@ Three battery-powered paper lanterns at varying heights on a porch railing, glow
 
 ### 1 | 8:00 AM | Storage
 **Pin name:** Hide the Chaos
-**File:** `day1-pin1-seagrass-baskets.png` | **ASIN:** `B0D31739VD`
+**File:** `day1-pin1-seagrass-baskets.jpg` | **ASIN:** `B0D31739VD`
 
 **Title:** Hide the chaos, keep the calm — woven storage baskets
 
@@ -578,7 +578,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 2 | 12:00 PM | Bedroom
 **Pin name:** Closet Like Pinterest
-**File:** `day1-pin2-wooden-hangers.png` | **ASIN:** `B0DPW6TCQF`
+**File:** `day1-pin2-wooden-hangers.jpg` | **ASIN:** `B0DPW6TCQF`
 
 **Title:** Your closet finally looks like Pinterest — solid wood hangers
 
@@ -595,7 +595,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 3 | 3:00 PM | Lighting
 **Pin name:** Lamp That Makes a Room Expensive
-**File:** `day1-pin3-tripod-floor-lamp.png` | **ASIN:** `B0D7BWWVC7`
+**File:** `day1-pin3-tripod-floor-lamp.jpg` | **ASIN:** `B0D7BWWVC7`
 
 **Title:** The lamp that makes any room expensive — wood tripod floor lamp
 
@@ -612,7 +612,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 4 | 7:00 PM | Ceramics & Tableware
 **Pin name:** Stop Using IKEA Dishes
-**File:** `day1-pin4-stoneware-plates.png` | **ASIN:** `B0CJD73LV6`
+**File:** `day1-pin4-stoneware-plates.jpg` | **ASIN:** `B0CJD73LV6`
 
 **Title:** Stop using IKEA dishes — speckled stoneware dinnerware
 
@@ -629,7 +629,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 5 | 10:00 PM | Textiles
 **Pin name:** Linen Bedding Worth the Splurge
-**File:** `day1-pin5-linen-duvet.png` | **ASIN:** `B01IMZLNBE` (set Queen)
+**File:** `day1-pin5-linen-duvet.jpg` | **ASIN:** `B01IMZLNBE` (set Queen)
 
 **Title:** The linen bedding worth the splurge — French washed flax duvet
 
@@ -648,7 +648,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 6 | 8:00 AM | Storage
 **Pin name:** Donate the Plastic
-**File:** `day2-pin6-lidded-seagrass-set.png` | **ASIN:** `B01FU1F9B8`
+**File:** `day2-pin6-lidded-seagrass-set.jpg` | **ASIN:** `B01FU1F9B8`
 
 **Title:** Donate the plastic — three lidded seagrass baskets
 
@@ -665,7 +665,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 7 | 12:00 PM | Decor accents
 **Pin name:** $40 Bin That Fixed My Entryway
-**File:** `day2-pin7-round-wicker-basket.png` | **ASIN:** `B0CM3YJXZ9`
+**File:** `day2-pin7-round-wicker-basket.jpg` | **ASIN:** `B0CM3YJXZ9`
 
 **Title:** The $40 bin that fixed my entryway — round wicker storage
 
@@ -682,7 +682,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 8 | 3:00 PM | Lighting
 **Pin name:** 7 PM in a Japandi Home
-**File:** `day2-pin8-hyacinth-table-lamp.png` | **ASIN:** `B07T81461V`
+**File:** `day2-pin8-hyacinth-table-lamp.jpg` | **ASIN:** `B07T81461V`
 
 **Title:** 7 PM in a Japandi home — water hyacinth basket lamp
 
@@ -699,7 +699,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 9 | 7:00 PM | Furniture
 **Pin name:** Oak Shelf I'd Buy Again
-**File:** `day2-pin9-oak-floating-shelves.png` | **ASIN:** `B0DC6S57HV` (set Oak)
+**File:** `day2-pin9-oak-floating-shelves.jpg` | **ASIN:** `B0DC6S57HV` (set Oak)
 
 **Title:** The oak shelf I'd buy again — solid wood floating shelves
 
@@ -716,7 +716,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 10 | 10:00 PM | Bedroom
 **Pin name:** Bedside Lamp That Changed My Sleep
-**File:** `day2-pin10-ceramic-lamp-pair.png` | **ASIN:** `B0C4SZBN64`
+**File:** `day2-pin10-ceramic-lamp-pair.jpg` | **ASIN:** `B0C4SZBN64`
 
 **Title:** This bedside lamp changed my sleep — ceramic lamp pair
 
@@ -735,7 +735,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 11 | 8:00 AM | Kitchen
 **Pin name:** Pantry That Looks Like a Magazine
-**File:** `day3-pin11-glass-canisters.png` | **ASIN:** `B0CMWLVJGT`
+**File:** `day3-pin11-glass-canisters.jpg` | **ASIN:** `B0CMWLVJGT`
 
 **Title:** Pantry that looks like a magazine — glass + bamboo
 
@@ -769,7 +769,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 13 | 3:00 PM | Ceramics & Tableware
 **Pin name:** The Vase Everyone Asks About
-**File:** `day3-pin13-brown-ribbed-vase.png` | **ASIN:** `B0F9SVL9X4`
+**File:** `day3-pin13-brown-ribbed-vase.jpg` | **ASIN:** `B0F9SVL9X4`
 
 **Title:** The vase everyone asks about — rustic ceramic pottery
 
@@ -786,7 +786,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 14 | 7:00 PM | Textiles
 **Pin name:** Wool Throws Under $50
-**File:** `day3-pin14-wool-throw.png` | **ASIN:** `B08F48LR45`
+**File:** `day3-pin14-wool-throw.jpg` | **ASIN:** `B08F48LR45`
 
 **Title:** Wool throws under $50 — cream cable knit blanket
 
@@ -803,7 +803,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 15 | 10:00 PM | Office/Reading Nook
 **Pin name:** Oak Desks for Small Apartments
-**File:** `day3-pin15-oak-desk.png` | **ASIN:** `B0D4RK8PB2`
+**File:** `day3-pin15-oak-desk.jpg` | **ASIN:** `B0D4RK8PB2`
 
 **Title:** Oak desks for small apartments — Walker Edison Coastal Oak
 
@@ -822,7 +822,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 16 | 8:00 AM | Kitchen
 **Pin name:** Kitchen Drawer Pinterest Dreams
-**File:** `day4-pin16-bamboo-drawer-dividers.png` | **ASIN:** `B07HQMZ7HH`
+**File:** `day4-pin16-bamboo-drawer-dividers.jpg` | **ASIN:** `B07HQMZ7HH`
 
 **Title:** Kitchen drawer Pinterest dreams — bamboo drawer dividers
 
@@ -839,7 +839,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 17 | 12:00 PM | Storage
 **Pin name:** The Basket I Keep Buying More Of
-**File:** `day4-pin17-seagrass-basket-pair.png` | **ASIN:** `B0CM3YJXZ9` (different size than Pin 7)
+**File:** `day4-pin17-seagrass-basket-pair.jpg` | **ASIN:** `B0CM3YJXZ9` (different size than Pin 7)
 
 **Title:** The basket I keep buying more of — round abaca pair
 
@@ -856,7 +856,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 18 | 3:00 PM | Lighting
 **Pin name:** Skip Overhead Lights Forever
-**File:** `day4-pin18-rice-paper-pendant.png` | **ASIN:** `B0C5QMXBXZ`
+**File:** `day4-pin18-rice-paper-pendant.jpg` | **ASIN:** `B0C5QMXBXZ`
 
 **Title:** Skip overhead lights forever — rice paper pendant lamp
 
@@ -873,7 +873,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 19 | 7:00 PM | Decor accents
 **Pin name:** 5 Objects for a Coffee Table
-**File:** `day4-pin19-wooden-serving-tray.png` | **ASIN:** `B086372L8W`
+**File:** `day4-pin19-wooden-serving-tray.jpg` | **ASIN:** `B086372L8W`
 
 **Title:** 5 objects for a coffee table — start with the tray
 
@@ -890,7 +890,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 20 | 10:00 PM | Office/Reading Nook
 **Pin name:** 6 Objects for a Bedroom Corner
-**File:** `day4-pin20-bedroom-reading-corner.png` | **ASIN:** `B07F266PMS`
+**File:** `day4-pin20-bedroom-reading-corner.jpg` | **ASIN:** `B07F266PMS`
 
 **Title:** 6 objects for a bedroom corner — Christopher Knight reading chair
 
@@ -927,7 +927,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 22 | 12:00 PM | Decor accents
 **Pin name:** Why Your Bookshelf Looks Messy
-**File:** `day5-pin22-woven-bins-bookshelf.png`
+**File:** `day5-pin22-woven-bins-bookshelf.jpg`
 
 **Title:** Why your bookshelf looks messy — woven bins fix it
 
@@ -945,7 +945,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 23 | 3:00 PM | Lighting
 **Pin name:** Reading Nook Lighting
-**File:** `day5-pin23-reading-lamp.png`
+**File:** `day5-pin23-reading-lamp.jpg`
 
 **Title:** Reading nook lighting — articulated arm brass lamp
 
@@ -1055,7 +1055,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 29 | 7:00 PM | Textiles
 **Pin name:** Jute Rug Guide
-**File:** `day6-pin29-jute-rug.png`
+**File:** `day6-pin29-jute-rug.jpg`
 
 **Title:** Jute rug guide — which size for which room
 
@@ -1073,7 +1073,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 30 | 10:00 PM | Kitchen
 **Pin name:** Wooden Utensils That Don't Warp
-**File:** `day6-pin30-wooden-utensils.png`
+**File:** `day6-pin30-wooden-utensils.jpg`
 
 **Title:** Wooden utensils that don't warp — beech + walnut set
 
@@ -1147,7 +1147,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 34 | 7:00 PM | Furniture
 **Pin name:** Side Tables Under $100
-**File:** `day7-pin34-round-wood-side-table.png`
+**File:** `day7-pin34-round-wood-side-table.jpg`
 
 **Title:** Side tables under $100 — round solid oak
 
@@ -1165,7 +1165,7 @@ Affiliate link — I earn a small commission if you buy through this link, at no
 
 ### 35 | 10:00 PM | Outdoors
 **Pin name:** Tea Ritual at Home
-**File:** `day7-pin35-cast-iron-teapot.png`
+**File:** `day7-pin35-cast-iron-teapot.jpg`
 
 **Title:** Tea ritual at home — cast iron Japanese teapot
 

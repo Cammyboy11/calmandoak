@@ -70,7 +70,7 @@ Affiliate toggle: ON
 
 **Why changed:** User flagged Pin 32 as a duplicate. The Smirly acacia organizer keeps the original Pin 32 narrative ("the drawer that finally has a system") but pivots from bamboo dividers to a full acacia cutlery tray — different product, same systems-mood. Apartment Therapy darling, 4.7★ avg / 7,600+ reviews across variants.
 
-**Image:** ⚠️ DEFERRED — pin image not yet regenerated. The kitchen shop card uses the OLD bamboo-dividers image (`day4-pin16-bamboo-drawer-dividers.png`) as a temporary placeholder until Pin 32 is regenerated with the actual Smirly acacia geometry. When regenerating: view the actual Amazon product photo first (locked-in workflow), then prompt with precise geometry — full-drawer expandable rectangular tray, eight grooved compartments, warm acacia natural grain, expandable side panels visible at the edges.
+**Image:** ⚠️ DEFERRED — pin image not yet regenerated. The kitchen shop card uses the OLD bamboo-dividers image (`day4-pin16-bamboo-drawer-dividers.jpg`) as a temporary placeholder until Pin 32 is regenerated with the actual Smirly acacia geometry. When regenerating: view the actual Amazon product photo first (locked-in workflow), then prompt with precise geometry — full-drawer expandable rectangular tray, eight grooved compartments, warm acacia natural grain, expandable side panels visible at the edges.
 
 **Surfaces updated:**
 - Pinterest pin destination URL: `https://www.amazon.com/dp/B0GFDJCQZ6?tag=calmandoak-20`

@@ -89,7 +89,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ## DAY 1
 
 ### 8:00 AM • Storage • Pin 1
-**Image:** `day1-pin1-seagrass-baskets.png`
+**Image:** `day1-pin1-seagrass-baskets.jpg`
 **Title:** Hide the chaos, keep the calm — woven storage baskets
 **Description:**
 > HIDE THE CHAOS, KEEP THE CALM
@@ -106,7 +106,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 12:00 PM • Bedroom • Pin 2
-**Image:** `day1-pin2-wooden-hangers.png`
+**Image:** `day1-pin2-wooden-hangers.jpg`
 **Title:** Your closet finally looks like Pinterest — solid wood hangers
 **Description:**
 > YOUR CLOSET FINALLY LOOKS LIKE PINTEREST
@@ -123,7 +123,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 3:00 PM • Lighting • Pin 3
-**Image:** `day1-pin3-tripod-floor-lamp.png`
+**Image:** `day1-pin3-tripod-floor-lamp.jpg`
 **Title:** The lamp that makes any room expensive — wood tripod floor lamp
 **Description:**
 > THE LAMP THAT MAKES ANY ROOM EXPENSIVE
@@ -140,7 +140,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 7:00 PM • Ceramics & Tableware • Pin 4
-**Image:** `day1-pin4-stoneware-plates.png`
+**Image:** `day1-pin4-stoneware-plates.jpg`
 **Title:** Stop using IKEA dishes — speckled stoneware dinnerware
 **Description:**
 > STOP USING IKEA DISHES
@@ -157,7 +157,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 10:00 PM • Textiles • Pin 5
-**Image:** `day1-pin5-linen-duvet.png`
+**Image:** `day1-pin5-linen-duvet.jpg`
 **Title:** The linen bedding worth the splurge — French washed flax duvet
 **Description:**
 > THE LINEN BEDDING WORTH THE SPLURGE
@@ -176,7 +176,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ## DAY 2
 
 ### 8:00 AM • Storage • Pin 6
-**Image:** `day2-pin6-lidded-seagrass-set.png`
+**Image:** `day2-pin6-lidded-seagrass-set.jpg`
 **Title:** Donate the plastic — three lidded seagrass baskets
 **Description:**
 > DONATE THE PLASTIC
@@ -193,7 +193,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 12:00 PM • Decor accents • Pin 7
-**Image:** `day2-pin7-round-wicker-basket.png`
+**Image:** `day2-pin7-round-wicker-basket.jpg`
 **Title:** The $40 bin that fixed my entryway — round wicker storage
 **Description:**
 > THE $40 BIN THAT FIXED MY ENTRYWAY
@@ -210,7 +210,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 3:00 PM • Lighting • Pin 8
-**Image:** `day2-pin8-hyacinth-table-lamp.png`
+**Image:** `day2-pin8-hyacinth-table-lamp.jpg`
 **Title:** 7 PM in a quiet home — water hyacinth basket lamp
 **Description:**
 > 7 PM IN A QUIET HOME
@@ -227,7 +227,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 7:00 PM • Furniture • Pin 9
-**Image:** `day2-pin9-oak-floating-shelves.png`
+**Image:** `day2-pin9-oak-floating-shelves.jpg`
 **Title:** The oak shelf I'd buy again — solid wood floating shelves
 **Description:**
 > THE OAK SHELF I'D BUY AGAIN
@@ -244,7 +244,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 10:00 PM • Bedroom • Pin 10
-**Image:** `day2-pin10-ceramic-lamp-pair.png`
+**Image:** `day2-pin10-ceramic-lamp-pair.jpg`
 **Title:** This bedside lamp changed my sleep — ceramic lamp pair
 **Description:**
 > THIS BEDSIDE LAMP CHANGED MY SLEEP
@@ -263,7 +263,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ## DAY 3
 
 ### 8:00 AM • Kitchen • Pin 11
-**Image:** `day3-pin11-glass-canisters.png`
+**Image:** `day3-pin11-glass-canisters.jpg`
 **Title:** Pantry that looks like a magazine — glass + bamboo
 **Description:**
 > PANTRY THAT LOOKS LIKE A MAGAZINE
@@ -297,7 +297,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 3:00 PM • Ceramics & Tableware • Pin 13
-**Image:** `day3-pin13-brown-ribbed-vase.png`
+**Image:** `day3-pin13-brown-ribbed-vase.jpg`
 **Title:** The vase everyone asks about — rustic ceramic pottery
 **Description:**
 > THE VASE EVERYONE ASKS ABOUT
@@ -314,7 +314,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 7:00 PM • Textiles • Pin 14
-**Image:** `day3-pin14-wool-throw.png`
+**Image:** `day3-pin14-wool-throw.jpg`
 **Title:** Wool throws under $50 — cream cable knit blanket
 **Description:**
 > WOOL THROWS UNDER $50
@@ -331,7 +331,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 10:00 PM • Office/Reading Nook • Pin 15
-**Image:** `day3-pin15-oak-desk.png`
+**Image:** `day3-pin15-oak-desk.jpg`
 **Title:** Oak desks for small apartments — Walker Edison Coastal Oak
 **Description:**
 > OAK DESKS FOR SMALL APARTMENTS
@@ -350,7 +350,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ## DAY 4
 
 ### 8:00 AM • Kitchen • Pin 16
-**Image:** `day4-pin16-bamboo-drawer-dividers.png`
+**Image:** `day4-pin16-bamboo-drawer-dividers.jpg`
 **Title:** Kitchen drawer Pinterest dreams — bamboo drawer dividers
 **Description:**
 > KITCHEN DRAWER PINTEREST DREAMS
@@ -367,7 +367,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 12:00 PM • Storage • Pin 17
-**Image:** `day4-pin17-seagrass-basket-pair.png`
+**Image:** `day4-pin17-seagrass-basket-pair.jpg`
 **Title:** The basket I keep buying more of — round abaca pair
 **Description:**
 > THE BASKET I KEEP BUYING MORE OF
@@ -384,7 +384,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 3:00 PM • Lighting • Pin 18
-**Image:** `day4-pin18-rice-paper-pendant.png`
+**Image:** `day4-pin18-rice-paper-pendant.jpg`
 **Title:** Skip overhead lights forever — rice paper pendant lamp
 **Description:**
 > SKIP OVERHEAD LIGHTS FOREVER
@@ -401,7 +401,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 7:00 PM • Decor accents • Pin 19
-**Image:** `day4-pin19-wooden-serving-tray.png`
+**Image:** `day4-pin19-wooden-serving-tray.jpg`
 **Title:** 5 objects for a coffee table — start with the tray
 **Description:**
 > 5 OBJECTS FOR A COFFEE TABLE
@@ -418,7 +418,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 10:00 PM • Office/Reading Nook • Pin 20
-**Image:** `day4-pin20-bedroom-reading-corner.png`
+**Image:** `day4-pin20-bedroom-reading-corner.jpg`
 **Title:** 6 objects for a bedroom corner — Christopher Knight reading chair
 **Description:**
 > 6 OBJECTS FOR A BEDROOM CORNER
@@ -456,7 +456,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 12:00 PM • Decor accents • Pin 22
-**Image:** `day5-pin22-woven-bins-bookshelf.png`
+**Image:** `day5-pin22-woven-bins-bookshelf.jpg`
 **Title:** Why your bookshelf looks messy — woven bins fix it
 **Description:**
 > WHY YOUR BOOKSHELF LOOKS MESSY
@@ -473,7 +473,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 3:00 PM • Lighting • Pin 23
-**Image:** `day5-pin23-reading-lamp.png`
+**Image:** `day5-pin23-reading-lamp.jpg`
 **Title:** Reading nook lighting — articulated arm brass lamp
 **Description:**
 > READING NOOK LIGHTING
@@ -582,7 +582,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 7:00 PM • Textiles • Pin 29
-**Image:** `day6-pin29-jute-rug.png`
+**Image:** `day6-pin29-jute-rug.jpg`
 **Title:** Jute rug guide — which size for which room
 **Description:**
 > JUTE RUG GUIDE
@@ -599,7 +599,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 10:00 PM • Kitchen • Pin 30
-**Image:** `day6-pin30-wooden-utensils.png`
+**Image:** `day6-pin30-wooden-utensils.jpg`
 **Title:** Wooden utensils that don't warp — beech + walnut set
 **Description:**
 > WOODEN UTENSILS THAT DON'T WARP
@@ -675,7 +675,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 7:00 PM • Furniture • Pin 34
-**Image:** `day7-pin34-round-wood-side-table.png`
+**Image:** `day7-pin34-round-wood-side-table.jpg`
 **Title:** Side tables under $100 — round solid oak
 **Description:**
 > SIDE TABLES UNDER $100
@@ -692,7 +692,7 @@ Pick 5 per pin. Vary across pins. Always 1 board-tag + 1 product-tag + 3 lifesty
 ---
 
 ### 10:00 PM • Outdoors • Pin 35
-**Image:** `day7-pin35-cast-iron-teapot.png`
+**Image:** `day7-pin35-cast-iron-teapot.jpg`
 **Title:** Tea ritual at home — cast iron Japanese teapot
 **Description:**
 > TEA RITUAL AT HOME
@@ -729,14 +729,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B08PF3T6TT?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — LiteHistory Dimmable E26 LED Bulb 4W Warm White (4-pack), 4.8★/622 reviews
 
-### 12:00 PM • Decor accents • Pin 37 • `day8-pin37-sculptural-floor-lamp.png`
+### 12:00 PM • Decor accents • Pin 37 • `day8-pin37-sculptural-floor-lamp.jpg`
 **Title:** Floor lamps that double as art — sculptural shapes
 **Description body:** FLOOR LAMPS THAT DOUBLE AS ART — A sculptural floor lamp with curved arc and warm globe bulb. The piece a corner needs to feel finished. Looks like a $500 designer lamp at a fraction.
 **Hashtags:** `#homedecor #lighting #floorlamp #livingroomdecor #moderndecor`
 **Product URL:** https://www.amazon.com/dp/B0D86JWHLC?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — CO-Z 69" Modern Arc Floor Lamp Gold, 4.4★/580 reviews
 
-### 3:00 PM • Lighting • Pin 38 • `day8-pin38-wood-paper-pendant.png`
+### 3:00 PM • Lighting • Pin 38 • `day8-pin38-wood-paper-pendant.jpg`
 **Title:** Pendant lights under $100 — wood + paper
 **Description body:** PENDANT LIGHTS UNDER $100 — A wood and rice-paper pendant lamp that throws golden warm light across a dining table. The single fixture that defines a room.
 **Hashtags:** `#pendantlight #lighting #moodylighting #diningroom #homedecor`
@@ -749,7 +749,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Hashtags:** `#storage #organization #livingroomdecor #neutralhome #homedecor`
 **Product URL:** 🔍 `https://www.amazon.com/s?k=low+woven+basket+pair+rectangular+seagrass`
 
-### 10:00 PM • Ceramics & Tableware • Pin 40 • `day8-pin40-stoneware-coffee-mugs.png`
+### 10:00 PM • Ceramics & Tableware • Pin 40 • `day8-pin40-stoneware-coffee-mugs.jpg`
 **Title:** Stoneware coffee cup set — hand-thrown matte
 **Description body:** STONEWARE COFFEE CUP SET — A set of 4 hand-thrown stoneware mugs in matte cream. Heavy enough to feel real, glazed enough to age beautifully. The mug you display, not hide.
 **Hashtags:** `#ceramics #stoneware #handmade #cozyhome #morningroutine`
@@ -767,7 +767,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0CZ9F57SG?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — ELYONA Wood Tripod Floor Lamp Mid Century, 4.5★/300 reviews
 
-### 12:00 PM • Furniture • Pin 42 • `day9-pin42-rattan-pendant.png`
+### 12:00 PM • Furniture • Pin 42 • `day9-pin42-rattan-pendant.jpg`
 **Title:** Dining room pendant under $150 — rattan dome
 **Description body:** DINING ROOM PENDANT UNDER $150 — A rattan dome pendant light that hangs over the dining table. Warm bulb, organic shape, the room shifts the moment it goes on.
 **Hashtags:** `#diningroom #pendantlight #lighting #scandinavianstyle #cozyhome`
@@ -781,7 +781,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0883FGXFB?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Kira Home Ellis 18" Set of 2 Modern Gold Swing Arm Sconces, 4.4★/301 reviews
 
-### 7:00 PM • Bedroom • Pin 44 • `day9-pin44-brass-bedside-pair.png`
+### 7:00 PM • Bedroom • Pin 44 • `day9-pin44-brass-bedside-pair.jpg`
 **Title:** The bedside lamp pair — brass and ceramic
 **Description body:** THE BEDSIDE LAMP PAIR — A pair of brass-base bedside lamps with linen drum shades. Matching pair makes the bedroom look intentional. Soft warm light, dimmer-compatible.
 **Hashtags:** `#bedroomdecor #lighting #bedsidelamp #brassdecor #cozybedroom`
@@ -799,13 +799,13 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 10
 
-### 8:00 AM • Outdoors • Pin 46 • `day10-pin46-paper-lanterns.png`
+### 8:00 AM • Outdoors • Pin 46 • `day10-pin46-paper-lanterns.jpg`
 **Title:** Outdoor lights that work indoors — battery LED paper lanterns
 **Description body:** OUTDOOR LIGHTS THAT WORK INDOORS — A set of 3 battery-operated LED paper lanterns. Hang on a porch, sit on a shelf, line a table. Warm flicker, no cords.
 **Hashtags:** `#outdoorliving #lighting #paperlantern #stringlights #cozyhome`
 **Product URL:** 🔍 `https://www.amazon.com/s?k=battery+LED+paper+lantern+set+indoor+outdoor`
 
-### 12:00 PM • Lighting • Pin 47 • `day10-pin47-plug-in-sconces.png`
+### 12:00 PM • Lighting • Pin 47 • `day10-pin47-plug-in-sconces.jpg`
 **Title:** Plug-in sconces (no rewiring) — pair with linen shades
 **Description body:** PLUG-IN SCONCES (NO REWIRING) — A pair of plug-in wall sconces with linen drum shades. Mount above the bed or behind a chair. The renter-friendly lighting upgrade.
 **Hashtags:** `#bedroomdecor #lighting #renterfriendly #cozyhome #moodylighting`
@@ -826,7 +826,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0BPM41R5C?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Steviieden Off-White Ceramic Vases Set of 2, 4.8★/535 reviews
 
-### 10:00 PM • Textiles • Pin 50 • `day10-pin50-linen-curtains.png`
+### 10:00 PM • Textiles • Pin 50 • `day10-pin50-linen-curtains.jpg`
 **Title:** Linen curtains under $50 — pre-washed look
 **Description body:** LINEN CURTAINS UNDER $50 — A pre-washed linen-look curtain panel pair, 84 inches. Light filtering, semi-sheer, the soft moment any window needs.
 **Hashtags:** `#linen #curtains #homedecor #cozyhome #neutralhome`
@@ -861,7 +861,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 3. ✓ ASIN `B08F48LR45` (wool throw — same as Pin 14)
 4. ✓ ASIN `B0F9SVL9X4` (ribbed vase — same as Pin 13)
 
-### 7:00 PM • Bedroom • Pin 54 • `day11-pin54-linen-headboard.png`
+### 7:00 PM • Bedroom • Pin 54 • `day11-pin54-linen-headboard.jpg`
 **Title:** Headboard alternatives — upholstered linen tall
 **Description body:** HEADBOARD ALTERNATIVES — A tall linen-upholstered headboard in oat. Slim profile, modern proportions. The bedroom centerpiece that does most of the work.
 **Hashtags:** `#bedroomdecor #headboard #linenbedding #scandinavianstyle #neutralhome`
@@ -892,7 +892,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B074L5KQZM?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Set of 2 Taupe Natural Linen Drum Lamp Shades, 4.7★/394 reviews
 
-### 3:00 PM • Storage • Pin 58 • `day12-pin58-storage-bench.png`
+### 3:00 PM • Storage • Pin 58 • `day12-pin58-storage-bench.jpg`
 **Title:** Entryway bench with hidden storage — woven cane
 **Description body:** ENTRYWAY BENCH WITH HIDDEN STORAGE — A solid wood entryway bench with woven cane top that lifts to reveal storage below. Sit-down, hide-shoes, photogenic in one piece.
 **Hashtags:** `#entrywaydecor #storage #homedecor #organizedhome #neutralhome`
@@ -906,7 +906,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B08ZSYG6D7?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Japanese Style Ceramic Tea Set, 4.6★/312 reviews
 
-### 10:00 PM • Office/Reading Nook • Pin 60 • `day12-pin60-brass-desk-lamp.png`
+### 10:00 PM • Office/Reading Nook • Pin 60 • `day12-pin60-brass-desk-lamp.jpg`
 **Title:** Desk lamp that doesn't ruin your aesthetic — brass + linen
 **Description body:** DESK LAMP THAT DOESN'T RUIN YOUR AESTHETIC — A small brass desk lamp with a linen drum shade. Warm bulb, no glare on screen, looks like a piece you'd buy from a design store.
 **Hashtags:** `#homeoffice #deskdecor #brassdecor #lighting #workfromhome`
@@ -938,7 +938,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B09TW81T7C?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Yusong Upholstered Bench Bedroom End of Bed Piano, 4.6★/446 reviews
 
-### 7:00 PM • Textiles • Pin 64 • `day13-pin64-throw-pillows.png`
+### 7:00 PM • Textiles • Pin 64 • `day13-pin64-throw-pillows.jpg`
 **Title:** 4 textures for a living room — pillows + throws
 **Description body:** 4 TEXTURES FOR A LIVING ROOM — Boucle pillow, linen pillow, wool throw, and a sheer linen runner. Four textures, one color, the layered Japandi sofa moment.
 **Hashtags:** `#throwpillows #textiles #livingroomdecor #cozyhome #homestyling`
@@ -967,7 +967,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 4. ✓ ASIN `B0F8BB3KV2` (Pin 33 small bedside lamp pair)
 5. 🔍 Pin 61 search (brass tapers)
 
-### 12:00 PM • Office/Reading Nook • Pin 66 • `day14-pin66-brass-office-lamp.png`
+### 12:00 PM • Office/Reading Nook • Pin 66 • `day14-pin66-brass-office-lamp.jpg`
 **Title:** The $50 lamp that made my office feel expensive — brass + linen
 **Description body:** THE $50 LAMP THAT MADE MY OFFICE FEEL EXPENSIVE — A small brass desk lamp with a linen drum shade. Warm bulb, articulating arm, the office upgrade no one expects.
 **Hashtags:** `#homeoffice #deskdecor #brassdecor #workfromhome #lighting`
@@ -1006,7 +1006,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0BYVGCYNL?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — LUKA Ceramic Rustic Farmhouse Vase Terracotta, 4.7★/279 reviews
 
-### 12:00 PM • Kitchen • Pin 72 • `day15-pin72-stoneware-mug-set.png`
+### 12:00 PM • Kitchen • Pin 72 • `day15-pin72-stoneware-mug-set.jpg`
 **Title:** Stoneware mugs > regular mugs — speckled set of 6
 **Description body:** STONEWARE MUGS > REGULAR MUGS — A set of six matching speckled stoneware mugs. Hand-thrown look, dishwasher safe, 14oz. The mug your guests will compliment.
 **Hashtags:** `#kitchendecor #ceramics #stoneware #morningroutine #cozyhome`
@@ -1038,7 +1038,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 16
 
-### 8:00 AM • Ceramics & Tableware • Pin 76 • `day16-pin76-stoneware-salad-bowl.png`
+### 8:00 AM • Ceramics & Tableware • Pin 76 • `day16-pin76-stoneware-salad-bowl.jpg`
 **Title:** Salad bowls worth displaying — 12-inch speckled
 **Description body:** SALAD BOWLS WORTH DISPLAYING — A large 12-inch speckled stoneware salad bowl with olive wood servers. The bowl that lives on the counter, not in the cabinet.
 **Hashtags:** `#ceramics #stoneware #tablesetting #handmade #homedecor`
@@ -1075,7 +1075,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 17
 
-### 8:00 AM • Kitchen • Pin 81 • `day17-pin81-donabe-rice-pot.png`
+### 8:00 AM • Kitchen • Pin 81 • `day17-pin81-donabe-rice-pot.jpg`
 **Title:** Donabe rice pot that lives on the counter — Japanese clay
 **Description body:** DONABE RICE POT THAT LIVES ON THE COUNTER — A Japanese donabe clay rice pot, beautiful enough to leave out. Cooks rice perfectly, doubles as a serving piece.
 **Hashtags:** `#kitchendecor #cooking #ceramics #handmade #kitchenstyling`
@@ -1102,7 +1102,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0FLPQMKKC?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — MIULEE Euro Sham Pillow Covers 24x24 Pack of 2 Natural, 4.6★/219 reviews
 
-### 10:00 PM • Office/Reading Nook • Pin 85 • `day17-pin85-bamboo-monitor-stand.png`
+### 10:00 PM • Office/Reading Nook • Pin 85 • `day17-pin85-bamboo-monitor-stand.jpg`
 **Title:** Wooden monitor stand — bamboo with hidden drawer
 **Description body:** WOODEN MONITOR STAND — A bamboo monitor stand with hidden drawer beneath. Storage built in. Lifts your screen to eye level + hides cables and clutter.
 **Hashtags:** `#homeoffice #deskdecor #workfromhome #organization #productivity`
@@ -1113,14 +1113,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 18
 
-### 8:00 AM • Outdoors • Pin 86 • `day18-pin86-tea-set.png`
+### 8:00 AM • Outdoors • Pin 86 • `day18-pin86-tea-set.jpg`
 **Title:** Tea pot + cup set — cast iron tetsubin with stoneware cups
 **Description body:** TEA POT + CUP SET — Cast iron tetsubin with two stoneware tea cups on a bamboo tray. The afternoon ritual upgrade.
 **Hashtags:** `#tearitual #castiron #ceramics #slowliving #wellness`
 **Product URL:** https://www.amazon.com/dp/B07SW5G99B?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Large 11pc Japanese Tea Set "Gashu Black" Cast Iron Teapot, 4.5★/303 reviews
 
-### 12:00 PM • Kitchen • Pin 87 • `day18-pin87-salt-cellar.png`
+### 12:00 PM • Kitchen • Pin 87 • `day18-pin87-salt-cellar.jpg`
 **Title:** Salt cellar > salt shaker — stoneware with wood lid
 **Description body:** SALT CELLAR > SALT SHAKER — A small stoneware salt cellar with wood lid. Counter-displayable, daily-use. The Japandi swap that elevates a kitchen.
 **Hashtags:** `#kitchendecor #ceramics #stoneware #wabisabi #cooking`
@@ -1148,14 +1148,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 19
 
-### 8:00 AM • Ceramics & Tableware • Pin 91 • `day19-pin91-espresso-cups.png`
+### 8:00 AM • Ceramics & Tableware • Pin 91 • `day19-pin91-espresso-cups.jpg`
 **Title:** Espresso cup set — four stoneware with saucers
 **Description body:** ESPRESSO CUP SET — Four matching small stoneware espresso cups with saucers. 3oz size, daily ritual. The morning shift starts here.
 **Hashtags:** `#ceramics #stoneware #morningroutine #cozyhome #handmade`
 **Product URL:** https://www.amazon.com/dp/B09ZJ4MBNT?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — KIVY 3 oz Espresso Cups Set of 4 Thick Walled Stoneware, 4.5★/912 reviews
 
-### 12:00 PM • Outdoors • Pin 92 • `day19-pin92-stoneware-planters.png`
+### 12:00 PM • Outdoors • Pin 92 • `day19-pin92-stoneware-planters.jpg`
 **Title:** Wabi-sabi planter pots — three matching cream stoneware
 **Description body:** WABI-SABI PLANTER POTS — Three matching cream stoneware planter pots with imperfect throwing marks. Drainage holes, drainage saucers. For herbs, succulents, the small things.
 **Hashtags:** `#ceramics #pottery #plantdecor #wabisabi #indoorplants`
@@ -1169,7 +1169,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B09TW81T7C?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Yusong Upholstered Bench (REUSE Pin 63), 4.6★/446 reviews
 
-### 7:00 PM • Textiles • Pin 94 • `day19-pin94-linen-napkins.png`
+### 7:00 PM • Textiles • Pin 94 • `day19-pin94-linen-napkins.jpg`
 **Title:** Linen napkins — six folded cream hemmed
 **Description body:** LINEN NAPKINS — Six folded cream linen napkins, hemmed. Heavyweight, machine washable. The dinner-party detail that costs $30.
 **Hashtags:** `#linen #tablesetting #diningroom #homedecor #neutralhome`
@@ -1211,7 +1211,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0FLQ6SH62?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — MIULEE Euro Sham Pillow Covers 26x26 Set of 2 Natural, 4.6★/219 reviews
 
-### 10:00 PM • Office/Reading Nook • Pin 100 • `day20-pin100-leather-desk-pad.png`
+### 10:00 PM • Office/Reading Nook • Pin 100 • `day20-pin100-leather-desk-pad.jpg`
 **Title:** Leather + wood desk pad — 36-inch tan
 **Description body:** LEATHER + WOOD DESK PAD — A tan leather and wood desk pad, 36 inch. The desk anchor. Defines the workspace, protects the surface, looks intentional.
 **Hashtags:** `#homeoffice #deskdecor #workfromhome #leatheraccessories #productivity`
@@ -1265,7 +1265,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 22
 
-### 8:00 AM • Textiles • Pin 106 • `day22-pin106-linen-sheets.png`
+### 8:00 AM • Textiles • Pin 106 • `day22-pin106-linen-sheets.jpg`
 **Title:** Linen sheet sets under $100 — pre-washed cream
 **Description body:** LINEN SHEET SETS UNDER $100 — A stack of folded cream pre-washed linen sheets. The bedding that gets softer every wash. Queen, king, twin available.
 **Hashtags:** `#linenbedding #linen #bedroomdecor #cozybedroom #homedecor`
@@ -1303,14 +1303,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 23
 
-### 8:00 AM • Furniture • Pin 111 • `day23-pin111-boucle-pillows.png`
+### 8:00 AM • Furniture • Pin 111 • `day23-pin111-boucle-pillows.jpg`
 **Title:** Boucle pillow covers — cream textured trio
 **Description body:** BOUCLE PILLOW COVERS — Three cream boucle textured throw pillow covers on a cream linen sofa. Texture > pattern. The Japandi sofa upgrade.
 **Hashtags:** `#throwpillows #textiles #livingroomdecor #cozyhome #scandinavianstyle`
 **Product URL:** https://www.amazon.com/dp/B0F4KCDWT7?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — MIULEE Boucle Throw Pillow Covers (REUSE Pin 64), 4.5★/349 reviews
 
-### 12:00 PM • Decor accents • Pin 112 • `day23-pin112-jute-runner.png`
+### 12:00 PM • Decor accents • Pin 112 • `day23-pin112-jute-runner.jpg`
 **Title:** Jute rug for the entryway — long natural runner
 **Description body:** JUTE RUG FOR THE ENTRYWAY — A long natural jute runner rug in a calm entryway. Hides the floor, hides the dirt, looks intentional.
 **Hashtags:** `#entrywaydecor #jute #naturalfibers #homedecor #neutralhome`
@@ -1390,7 +1390,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0CF9CHQR5?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Softalker Cream Faux Linen Tablecloth Rectangular, 4.6★/784 reviews
 
-### 12:00 PM • Textiles • Pin 122 • `day25-pin122-waffle-towels.png`
+### 12:00 PM • Textiles • Pin 122 • `day25-pin122-waffle-towels.jpg`
 **Title:** Cotton waffle bath towels — folded stack hotel quality
 **Description body:** COTTON WAFFLE BATH TOWELS — A stack of folded cream cotton waffle weave bath towels. Hotel quality. Lighter, faster-drying, more interesting than terry.
 **Hashtags:** `#bathroomdecor #textiles #spabathroom #cozyhome #homedecor`
@@ -1420,7 +1420,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 26
 
-### 8:00 AM • Textiles • Pin 126 • `day26-pin126-cashmere-throw.png`
+### 8:00 AM • Textiles • Pin 126 • `day26-pin126-cashmere-throw.jpg`
 **Title:** Cashmere throw vs wool throw — when to splurge
 **Description body:** CASHMERE THROW VS WOOL THROW — A cream cashmere throw draped over a linen sofa. When to splurge: bedroom over living room. Cashmere is for the bed, wool is for the couch.
 **Hashtags:** `#cashmere #throwblanket #textiles #cozyhome #bedroomdecor`
@@ -1440,7 +1440,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B09NGZRYTB?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — HOMEFORT Bathroom Storage Cabinet Slim Tall Narrow, 4.3★/423 reviews ⚠️ rating slightly below 4.4
 
-### 7:00 PM • Ceramics & Tableware • Pin 129 • `day26-pin129-stoneware-pitcher.png`
+### 7:00 PM • Ceramics & Tableware • Pin 129 • `day26-pin129-stoneware-pitcher.jpg`
 **Title:** Pitcher worth displaying — large hand-thrown stoneware
 **Description body:** PITCHER WORTH DISPLAYING — Large hand-thrown cream stoneware pitcher. Holds water, holds wine, holds branches. The piece that lives on the counter.
 **Hashtags:** `#ceramics #pottery #stoneware #handmade #homedecor`
@@ -1562,7 +1562,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Hashtags:** `#livingroomdecor #coffeetable #books #vignette #homestyling`
 **Product URL:** 🔍 `https://www.amazon.com/s?k=architecture+design+coffee+table+book+neutral`
 
-### 10:00 PM • Office/Reading Nook • Pin 145 • `day29-pin145-linen-desk-organizer.png`
+### 10:00 PM • Office/Reading Nook • Pin 145 • `day29-pin145-linen-desk-organizer.jpg`
 **Title:** Linen desk organizer — cream linen + bamboo
 **Description body:** LINEN DESK ORGANIZER — Cream linen and bamboo desk organizer holding pens, sticky notes, accessories. The desk reset under $30.
 **Hashtags:** `#homeoffice #deskdecor #linen #organization #workfromhome`
@@ -1626,27 +1626,27 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 31 — Furniture week opens
 
-### 8:00 AM • Furniture • Pin 151 • `day31-pin151-cream-linen-sofa.png`
+### 8:00 AM • Furniture • Pin 151 • `day31-pin151-cream-linen-sofa.jpg`
 **Title:** The cream linen sofa worth the wait
 **Description body:** THE CREAM LINEN SOFA WORTH THE WAIT — A washed-linen sofa in cream that softens an entire living room. The kind of investment piece that ages instead of dating. Pair it with oak, wool throws, stoneware.
 **Hashtags:** `#homedecor #livingroomdecor #linensofa #scandinavianstyle #neutralhome`
 **Product URL:** https://www.amazon.com/dp/B091MJ3CMM?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Easy-Going Stretch Sofa Slipcover 1-Piece Furniture Cover, 4.4★/906 reviews
 
-### 12:00 PM • Bedroom • Pin 152 • `day31-pin152-oak-nightstand-pair.png`
+### 12:00 PM • Bedroom • Pin 152 • `day31-pin152-oak-nightstand-pair.jpg`
 **Title:** Oak nightstand pair under $300
 **Description body:** OAK NIGHTSTAND PAIR UNDER $300 — A matching pair of light-oak nightstands with one drawer and an open shelf. The bedside set you don't have to apologize for.
 **Hashtags:** `#bedroomdecor #bedroomideas #oakfurniture #scandinavianstyle #neutralhome`
 **Product URL:** https://www.amazon.com/dp/B0D2CZYGJ9?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — MECHYIN Night Stand Set of 2 Wood with Charging Station, 4.5★/646 reviews
 
-### 3:00 PM • Lighting • Pin 153 • `day31-pin153-brass-table-lamp.png`
+### 3:00 PM • Lighting • Pin 153 • `day31-pin153-brass-table-lamp.jpg`
 **Title:** The brass table lamp that warms a room
 **Description body:** THE BRASS TABLE LAMP THAT WARMS A ROOM — Aged brass base, ivory linen drum shade, warm 2700K bulb. The lamp that turns a side table into a moment.
 **Hashtags:** `#homedecor #lighting #tablelamp #cozyhome #brassdecor`
 **Product URL:** 🔍 `https://www.amazon.com/s?k=brass+table+lamp+linen+drum+shade`
 
-### 7:00 PM • Storage • Pin 154 • `day31-pin154-five-storage-baskets.png`
+### 7:00 PM • Storage • Pin 154 • `day31-pin154-five-storage-baskets.jpg`
 **Title:** 5 baskets that finally hide the chaos
 **Description body:** 5 BASKETS THAT FINALLY HIDE THE CHAOS — Tall seagrass for blankets, low rectangular for shoes, lidded for the bathroom, round-handled for laundry, woven cube for toys. Five workhorses.
 **Hashtags:** `#homeorganization #storage #organization #neutralhome #homedecor`
@@ -1657,7 +1657,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 4. 🔍 `https://www.amazon.com/s?k=round+laundry+hamper+seagrass+leather+handles`
 5. 🔍 `https://www.amazon.com/s?k=woven+cube+storage+basket+toys`
 
-### 10:00 PM • Outdoors • Pin 155 • `day31-pin155-teak-patio-table.png`
+### 10:00 PM • Outdoors • Pin 155 • `day31-pin155-teak-patio-table.jpg`
 **Title:** The teak patio table that ages well
 **Description body:** THE TEAK PATIO TABLE THAT AGES WELL — Solid teak ages to a soft silver-grey if you let it, or stays warm honey if you oil it. Either way it lasts.
 **Hashtags:** `#outdoordecor #patiodecor #teakfurniture #outdoorliving #scandinavianstyle`
@@ -1668,21 +1668,21 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 32
 
-### 8:00 AM • Furniture • Pin 156 • `day32-pin156-linen-accent-chair.png`
+### 8:00 AM • Furniture • Pin 156 • `day32-pin156-linen-accent-chair.jpg`
 **Title:** The linen accent chair I keep saving
 **Description body:** THE LINEN ACCENT CHAIR I KEEP SAVING — A low-arm linen-upholstered accent chair in oat. Reads as a sculpture in the room, sits like a daily favorite.
 **Hashtags:** `#homedecor #livingroomdecor #linenchair #cozyhome #scandinavianstyle`
 **Product URL:** https://www.amazon.com/dp/B07F266PMS?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Christopher Knight Evelyn Chair (REUSE Pin 20), 4.5★/1727 reviews
 
-### 12:00 PM • Decor accents • Pin 157 • `day32-pin157-gallery-wall.png`
+### 12:00 PM • Decor accents • Pin 157 • `day32-pin157-gallery-wall.jpg`
 **Title:** Get the look — a quiet gallery wall
 **Description body:** GET THE LOOK — A QUIET GALLERY WALL — Five framed prints, four wood frames + one black, neutral botanical and abstract subjects, asymmetric arrangement.
 **Hashtags:** `#gallerywall #homedecor #wallart #neutralhome #scandinavianstyle`
 **Product URL:** https://www.amazon.com/dp/B0BRMHHHV5?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Picture Frame Set 10-Pack Farmhouse Photo Frames Gallery Wall, 4.4★/779 reviews
 
-### 3:00 PM • Ceramics & Tableware • Pin 158 • `day32-pin158-ribbed-vase.png`
+### 3:00 PM • Ceramics & Tableware • Pin 158 • `day32-pin158-ribbed-vase.jpg`
 **Title:** The ribbed vase, three angles
 **Description body:** THE RIBBED VASE, THREE ANGLES — Cream stoneware ribbed vase shown empty, with a single dried branch, and styled on a bookshelf. The vase that fits anywhere.
 **Hashtags:** `#ceramics #pottery #vase #stoneware #neutralhome`
@@ -1706,14 +1706,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 33
 
-### 8:00 AM • Furniture • Pin 161 • `day33-pin161-oak-dresser.png`
+### 8:00 AM • Furniture • Pin 161 • `day33-pin161-oak-dresser.jpg`
 **Title:** The oak dresser that fits every room
 **Description body:** THE OAK DRESSER THAT FITS EVERY ROOM — Six-drawer light-oak dresser with brushed iron pulls. Bedroom, hallway, dining storage — works in all three.
 **Hashtags:** `#oakfurniture #bedroomdecor #homedecor #scandinavianstyle #neutralhome`
 **Product URL:** https://www.amazon.com/dp/B0DLP245LL?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Huuger 63" Long Dresser with 10 Fabric Drawers, 4.3★/494 reviews ⚠️ rating slightly below 4.4
 
-### 12:00 PM • Furniture • Pin 162 • `day33-pin162-shoe-bench.png`
+### 12:00 PM • Furniture • Pin 162 • `day33-pin162-shoe-bench.jpg`
 **Title:** Shoe bench for a calm entryway
 **Description body:** SHOE BENCH FOR A CALM ENTRYWAY — Solid wood shoe bench with woven shelf below, room for four pairs and a sit-down moment.
 **Hashtags:** `#entrywaydecor #shoestorage #homedecor #organization #neutralhome`
@@ -1729,14 +1729,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 2. ✓ ASIN `B0DYNB5K2V` (small ribbed vase — Pin 28)
 3. 🔍 `https://www.amazon.com/s?k=leather+wrapped+notebook+journal`
 
-### 7:00 PM • Furniture • Pin 164 • `day33-pin164-oak-dining-chairs.png`
+### 7:00 PM • Furniture • Pin 164 • `day33-pin164-oak-dining-chairs.jpg`
 **Title:** Oak dining chairs (the set)
 **Description body:** OAK DINING CHAIRS (THE SET) — Set of four oak dining chairs with woven rush seats. Sturdy, photogenic, comfortable enough for a long dinner.
 **Hashtags:** `#diningroomdecor #oakfurniture #diningchairs #scandinavianstyle #neutralhome`
 **Product URL:** https://www.amazon.com/dp/B0D8NWTG51?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — COLAMY Wooden Dining Chairs Set of 4 Modern Upholstered, 4.2★/774 reviews ⚠️ rating below 4.4
 
-### 10:00 PM • Textiles • Pin 165 • `day33-pin165-wool-texture.png`
+### 10:00 PM • Textiles • Pin 165 • `day33-pin165-wool-texture.jpg`
 **Title:** Wool texture, up close
 **Description body:** WOOL TEXTURE, UP CLOSE — Macro detail of a chunky cream wool throw against linen. The texture you want against you in the evening.
 **Hashtags:** `#wool #textiles #throwblanket #cozyhome #neutralhome`
@@ -1764,7 +1764,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0BY5GYZQ5?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Mini Hemp Rope Pendant (REUSE Pin 52), 4.6★/248 reviews
 
-### 3:00 PM • Outdoors • Pin 168 • `day34-pin168-morning-patio.png`
+### 3:00 PM • Outdoors • Pin 168 • `day34-pin168-morning-patio.jpg`
 **Title:** Morning patio routine
 **Description body:** MORNING PATIO ROUTINE — A teak patio table with a stoneware mug, an open book, the slant of early light through trees. Sunday by design.
 **Hashtags:** `#outdoorliving #patiodecor #morningroutine #slowliving #cozyhome`
@@ -1787,14 +1787,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 35
 
-### 8:00 AM • Furniture • Pin 171 • `day35-pin171-oak-console.png`
+### 8:00 AM • Furniture • Pin 171 • `day35-pin171-oak-console.jpg`
 **Title:** Oak console table done right
 **Description body:** OAK CONSOLE TABLE DONE RIGHT — Slim oak console for the entryway or behind the sofa. One drawer, one shelf, room for a lamp and a basket.
 **Hashtags:** `#consoletable #oakfurniture #entrywaydecor #scandinavianstyle #neutralhome`
 **Product URL:** https://www.amazon.com/dp/B0DH21GJ15?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Besiost Small Farmhouse Console (REUSE Pin 78), 4.3★/314 reviews
 
-### 12:00 PM • Ceramics & Tableware • Pin 172 • `day35-pin172-stoneware-bowls.png`
+### 12:00 PM • Ceramics & Tableware • Pin 172 • `day35-pin172-stoneware-bowls.jpg`
 **Title:** Stoneware serving bowls
 **Description body:** STONEWARE SERVING BOWLS — Set of three nesting stoneware serving bowls in oat, cream, and warm grey. Daily use, dinner-party ready.
 **Hashtags:** `#ceramics #stoneware #servingbowls #pottery #neutralhome`
@@ -1811,13 +1811,13 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 3. 🔍 `https://www.amazon.com/s?k=wood+crate+small+pine+storage`
 4. 🔍 `https://www.amazon.com/s?k=lidded+fabric+storage+bin+cream`
 
-### 7:00 PM • Lighting • Pin 174 • `day35-pin174-paper-lantern-glow.png`
+### 7:00 PM • Lighting • Pin 174 • `day35-pin174-paper-lantern-glow.jpg`
 **Title:** Paper lantern glow
 **Description body:** PAPER LANTERN GLOW — A round paper lantern pendant casts soft warm light across a linen-draped corner. Under-$80 calm.
 **Hashtags:** `#lighting #paperlantern #pendantlight #cozyhome #scandinavianstyle`
 **Product URL:** ✓ ASIN `B0C5QMXBXZ` (Henjjras paper pendant — same as Pin 18, verified)
 
-### 10:00 PM • Bedroom • Pin 175 • `day35-pin175-linen-headboard.png`
+### 10:00 PM • Bedroom • Pin 175 • `day35-pin175-linen-headboard.jpg`
 **Title:** Linen upholstered headboard
 **Description body:** LINEN UPHOLSTERED HEADBOARD — Tall linen-upholstered headboard in oat, slim profile, modern proportions. The bedroom centerpiece.
 **Hashtags:** `#bedroomdecor #headboard #linen #scandinavianstyle #neutralhome`
@@ -1827,13 +1827,13 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 36
 
-### 8:00 AM • Textiles • Pin 176 • `day36-pin176-linen-sofa-texture.png`
+### 8:00 AM • Textiles • Pin 176 • `day36-pin176-linen-sofa-texture.jpg`
 **Title:** Linen sofa texture, up close
 **Description body:** LINEN SOFA TEXTURE, UP CLOSE — Macro detail showing the warp and weft of pre-washed Belgian linen on a cream sofa. The texture worth touching.
 **Hashtags:** `#linen #livingroomdecor #sofa #textiles #neutralhome`
 **Product URL:** 🔍 `https://www.amazon.com/s?k=pre+washed+belgian+linen+sofa+cover+cream`
 
-### 12:00 PM • Office/Reading Nook • Pin 177 • `day36-pin177-brass-desk-lamp.png`
+### 12:00 PM • Office/Reading Nook • Pin 177 • `day36-pin177-brass-desk-lamp.jpg`
 **Title:** Brass desk lamp
 **Description body:** BRASS DESK LAMP — Adjustable brass desk lamp with a small linen drum shade. Warm bulb, no glare across the screen.
 **Hashtags:** `#deskdecor #homeoffice #brassdecor #lighting #neutralhome`
@@ -1846,14 +1846,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Hashtags:** `#outdoorliving #outdoorlighting #patiodecor #cozyhome #lighting`
 **Product URL:** 🔍 `https://www.amazon.com/s?k=cordless+rechargeable+patio+table+lamp+LED`
 
-### 7:00 PM • Kitchen • Pin 179 • `day36-pin179-walnut-cutting-board.png`
+### 7:00 PM • Kitchen • Pin 179 • `day36-pin179-walnut-cutting-board.jpg`
 **Title:** The walnut cutting board worth keeping out
 **Description body:** THE WALNUT CUTTING BOARD WORTH KEEPING OUT — Solid walnut, end-grain construction, ages instead of dulling. The board you display, not hide.
 **Hashtags:** `#kitchendecor #cuttingboard #walnut #kitchengoals #neutralhome`
 **Product URL:** https://www.amazon.com/dp/B0CCYWN9MT?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — American Black Walnut Cutting Board 19.7"x12.2", 4.4★/716 reviews
 
-### 10:00 PM • Bedroom • Pin 180 • `day36-pin180-linen-shams.png`
+### 10:00 PM • Bedroom • Pin 180 • `day36-pin180-linen-shams.jpg`
 **Title:** Linen shams in stone
 **Description body:** LINEN SHAMS IN STONE — Pair of pre-washed linen pillow shams in stone grey on a cream bed. Effortless, expensive-looking, $40.
 **Hashtags:** `#bedroomdecor #linenbedding #pillowshams #scandinavianstyle #neutralhome`
@@ -1897,7 +1897,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0CSDH5G26?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — D'vine Dev Herb Garden Planter Set of 3, 4.8★/221 reviews
 
-### 10:00 PM • Office/Reading Nook • Pin 185 • `day37-pin185-reading-chair-nook.png`
+### 10:00 PM • Office/Reading Nook • Pin 185 • `day37-pin185-reading-chair-nook.jpg`
 **Title:** The reading chair nook
 **Description body:** THE READING CHAIR NOOK — A linen accent chair, a small oak side table, a brass floor lamp arching over. Three pieces make the corner.
 **Hashtags:** `#readingnook #livingroomdecor #cozyhome #homeoffice #neutralhome`
@@ -1923,7 +1923,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 4. ✓ ASIN `B0CM3YJXZ9` (woven basket — Pin 7)
 5. 🔍 `https://www.amazon.com/s?k=framed+wall+art+neutral+botanical+set+of+2`
 
-### 12:00 PM • Textiles • Pin 187 • `day38-pin187-linen-duvet-colors.png`
+### 12:00 PM • Textiles • Pin 187 • `day38-pin187-linen-duvet-colors.jpg`
 **Title:** 5 linen duvet colors that work in any room
 **Description body:** 5 LINEN DUVET COLORS THAT WORK IN ANY ROOM — Oat, stone, cream, warm grey, soft sage. Five neutral-leaning linen duvet covers under $120 each.
 **Hashtags:** `#bedroomdecor #linenbedding #duvetcover #neutralhome #scandinavianstyle`
@@ -1936,7 +1936,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0DBMTPTVP?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — O'Bright Nova Adjustable Floor Lamp with Flexible Gooseneck, 4.6★/592 reviews
 
-### 7:00 PM • Bedroom • Pin 189 • `day38-pin189-five-nightstand-essentials.png`
+### 7:00 PM • Bedroom • Pin 189 • `day38-pin189-five-nightstand-essentials.jpg`
 **Title:** 5 nightstand essentials
 **Description body:** 5 NIGHTSTAND ESSENTIALS — Lamp, water carafe, book, small dish for jewelry, sleep mask. Everything you need, nothing you don't.
 **Hashtags:** `#bedroomdecor #nightstanddecor #bedroomideas #neutralhome #cozyhome`
@@ -1957,7 +1957,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 39
 
-### 8:00 AM • Textiles • Pin 191 • `day39-pin191-blackout-curtains.png`
+### 8:00 AM • Textiles • Pin 191 • `day39-pin191-blackout-curtains.jpg`
 **Title:** Linen-look blackout curtains
 **Description body:** LINEN-LOOK BLACKOUT CURTAINS — The drape that looks like linen but blocks 95% of light. Stone grey, 96-inch length, machine washable.
 **Hashtags:** `#bedroomdecor #curtains #linencurtains #blackoutcurtains #neutralhome`
@@ -1985,7 +1985,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Hashtags:** `#bedroomdecor #linenbedding #morningroutine #slowliving #cozyhome`
 **Product URL:** ✓ ASIN `B01IMZLNBE` (linen duvet — Pin 5)
 
-### 10:00 PM • Outdoors • Pin 195 • `day39-pin195-meditation-cushion.png`
+### 10:00 PM • Outdoors • Pin 195 • `day39-pin195-meditation-cushion.jpg`
 **Title:** Linen meditation cushion
 **Description body:** LINEN MEDITATION CUSHION — Round buckwheat-filled meditation cushion in oat linen. Five minutes a day, on a quiet rug.
 **Hashtags:** `#meditation #wellness #cozyhome #slowliving #neutralhome`
@@ -1996,14 +1996,14 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 40
 
-### 8:00 AM • Textiles • Pin 196 • `day40-pin196-euro-shams.png`
+### 8:00 AM • Textiles • Pin 196 • `day40-pin196-euro-shams.jpg`
 **Title:** Linen euro shams
 **Description body:** LINEN EURO SHAMS — Pair of 26-inch linen euro shams in stone, the back row that makes any bed look styled. $35 each.
 **Hashtags:** `#bedroomdecor #linenbedding #euroshams #pillowshams #neutralhome`
 **Product URL:** https://www.amazon.com/dp/B0F1D2HDKV?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — DAPU 100% Linen Euro Shams 26x26 Pack of 2, 4.6★/477 reviews
 
-### 12:00 PM • Furniture • Pin 197 • `day40-pin197-oak-bedroom-bench.png`
+### 12:00 PM • Furniture • Pin 197 • `day40-pin197-oak-bedroom-bench.jpg`
 **Title:** Oak bench at the foot of the bed
 **Description body:** OAK BENCH AT THE FOOT OF THE BED — Solid oak bench with a woven cane seat, just deep enough for tomorrow's clothes.
 **Hashtags:** `#bedroomdecor #bedroombench #oakfurniture #scandinavianstyle #neutralhome`
@@ -2024,7 +2024,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Hashtags:** `#bedroomdecor #lighting #dimmer #cozyhome #homeimprovement`
 **Product URL:** 🔍 Pin 51 search (plug-in inline lamp dimmer)
 
-### 10:00 PM • Textiles • Pin 200 • `day40-pin200-waffle-sheets.png`
+### 10:00 PM • Textiles • Pin 200 • `day40-pin200-waffle-sheets.jpg`
 **Title:** Waffle sheets, up close
 **Description body:** WAFFLE SHEETS, UP CLOSE — Macro detail of cotton waffle-weave sheets in cream. Soft like linen, warm like flannel, lightweight.
 **Hashtags:** `#bedroomdecor #wafflesheets #cottonbedding #cozyhome #neutralhome`
@@ -2035,7 +2035,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 
 ## DAY 41
 
-### 8:00 AM • Bedroom • Pin 201 • `day41-pin201-small-bedroom-getthelook.png`
+### 8:00 AM • Bedroom • Pin 201 • `day41-pin201-small-bedroom-getthelook.jpg`
 **Title:** Get the look — a small calm bedroom
 **Description body:** GET THE LOOK — A SMALL CALM BEDROOM — Low oak bed, single nightstand, plug-in sconce, woven basket, linen curtain. Five pieces for under-150-square-feet.
 **Hashtags:** `#bedroomdecor #smallbedroom #bedroomideas #scandinavianstyle #neutralhome`
@@ -2053,7 +2053,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Product URL:** https://www.amazon.com/dp/B0DLGSHH4Y?tag=calmandoak08-20
 **Status:** ✓ VERIFIED — Bamboo Under Bed Storage Containers with Wheels Pair, 4.2★/302 reviews ⚠️ rating below 4.4
 
-### 3:00 PM • Bedroom • Pin 203 • `day41-pin203-bedroom-reading-chair.png`
+### 3:00 PM • Bedroom • Pin 203 • `day41-pin203-bedroom-reading-chair.jpg`
 **Title:** The bedroom reading chair
 **Description body:** THE BEDROOM READING CHAIR — A small linen accent chair in the corner of the bedroom, brass floor lamp beside it, wool throw draped.
 **Hashtags:** `#bedroomdecor #readingchair #readingnook #cozyhome #neutralhome`
@@ -2062,13 +2062,13 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 2. 🔍 `https://www.amazon.com/s?k=brass+arc+floor+lamp+modern`
 3. ✓ ASIN `B08F48LR45` (wool throw — Pin 14)
 
-### 7:00 PM • Furniture • Pin 204 • `day41-pin204-oak-bed-low.png`
+### 7:00 PM • Furniture • Pin 204 • `day41-pin204-oak-bed-low.jpg`
 **Title:** Low oak bed frame
 **Description body:** LOW OAK BED FRAME — Low-profile oak bed frame, exposed wood headboard, modern Scandinavian proportions. Reads grown-up.
 **Hashtags:** `#bedroomdecor #bedframe #oakfurniture #scandinavianstyle #neutralhome`
 **Product URL:** 🔍 `https://www.amazon.com/s?k=low+oak+bed+frame+scandinavian+platform+queen`
 
-### 10:00 PM • Decor accents • Pin 205 • `day41-pin205-pampas-grass.png`
+### 10:00 PM • Decor accents • Pin 205 • `day41-pin205-pampas-grass.jpg`
 **Title:** Pampas grass, evening
 **Description body:** PAMPAS GRASS, EVENING — Tall stoneware vase of dried pampas grass against a charcoal wall in low evening light. The texture that finishes a room.
 **Hashtags:** `#decor #pampasgrass #vase #cozyhome #neutralhome`
@@ -2085,7 +2085,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 **Hashtags:** `#bedroomdecor #sleepwell #digitalwellness #morningroutine #cozyhome`
 **Product URL:** 🔍 `https://www.amazon.com/s?k=wooden+bedside+alarm+clock+warm+display`
 
-### 12:00 PM • Lighting • Pin 207 • `day42-pin207-bedside-sconces.png`
+### 12:00 PM • Lighting • Pin 207 • `day42-pin207-bedside-sconces.jpg`
 **Title:** Plug-in bedside sconces
 **Description body:** PLUG-IN BEDSIDE SCONCES — Brass plug-in sconces with adjustable arms, mounted above the nightstand. No rewiring, no electrician.
 **Hashtags:** `#bedroomdecor #lighting #sconces #brassdecor #cozyhome`
@@ -2101,7 +2101,7 @@ I've drafted each title + body below. Adjust if you want to A/B test variants.
 2. ✓ ASIN `B0D78P6KBJ` (linen storage cubes — Pin 21)
 3. ✓ ASIN `B08F48LR45` (wool throw — Pin 14)
 
-### 7:00 PM • Ceramics & Tableware • Pin 209 • `day42-pin209-water-carafe.png`
+### 7:00 PM • Ceramics & Tableware • Pin 209 • `day42-pin209-water-carafe.jpg`
 **Title:** Stoneware water carafe
 **Description body:** STONEWARE WATER CARAFE — Hand-thrown stoneware water carafe with matching glass tumbler that doubles as the lid. The bedside upgrade.
 **Hashtags:** `#ceramics #stoneware #pottery #bedroomdecor #neutralhome`
