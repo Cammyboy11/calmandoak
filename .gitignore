@@ -31,3 +31,4 @@ desktop.ini
 .wrangler/
 package-lock.json
 ACTION PLAN*.md.tmp
+.claude/
