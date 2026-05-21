@@ -21,6 +21,46 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-21 — Pin 38 (Lighting) — FIRST TEMPLATE B PIN
+
+**OLD:** Search URL placeholder "wood + paper pendant light fixture complete cord" (no fixed ASIN). Original pin showed an AI-imagined wood-rib UFO/saucer paper pendant — beautiful but had no real Amazon equivalent. Previous candidates (Brightech Parker, Wpplk, Dezaart, Hgrtaegs) all unavailable.
+**NEW:** Yolsunes White Wicker Dome Pendant Lights, Set of Two (`B0C5R7HFRW`) — pair of white-painted open-weave rattan basket pendants, ~12" diameter × 7" tall, E26 base, white cord + canopy
+
+**Why changed:** No verified ASIN existed before. After 3 rounds of out-of-stock candidates, user picked Yolsunes — set-of-two boho-coastal-Japandi wicker domes. Strong affiliate proposition (pair = higher value). Brand new product type in the lineup (no other rattan-basket pendants exist — verified clean against all existing ASINs and brand names).
+
+**Image:** ⭐ FIRST TEMPLATE B PIN. Generated 2026-05-21 via Gemini Google-grounded + image-to-image from `03-pin-templates/template-B-lifestyle-overlay-example.png`. Headline copy: "THE WEAVE / CATCHES / THE LIGHT" — poetic, scene-setting, not transactional. Render captured every Template B element: full-bleed dark plaster background, headline top-left in cream Cormorant, terracotta line below, italic "Calm & Oak" bottom-right (no subtitle), moody single-light-source modeling, pair of pendants throwing warm woven shadows over oak dining table.
+- Pin (full template B): `04-sample-pins/day8-pin38-yolsunes-wicker-pair.jpg`
+- Cropped (product-only, for website): `assets/img/products-cropped/day8-pin38-yolsunes-wicker-pair.jpg` (848×797, Template B-aware crop removes the top 32% headline area + bottom 5% wordmark area, keeps the middle clean photo)
+
+**Surfaces updated:**
+- Pinterest pin destination URL: `https://www.amazon.com/dp/B0C5R7HFRW?tag=calmandoak-20`
+- `shop/lighting/index.html` (added as position 10 in JSON-LD; numberOfItems bumped 9→10; new visible card)
+- Action plan Pin 38 entry (deferred — file locked by Word; will sync next opportunity)
+
+**Pinterest copy for new pin:**
+
+Title: `The weave catches the light — woven wicker pendant pair`
+
+Tagged topics: `japandi, pendant light, dining room, woven decor, kitchen island`
+
+Description block:
+```
+THE WEAVE CATCHES THE LIGHT
+
+A pair of white-painted woven wicker dome pendants — open-basket weave that throws intricate warm-shadow patterns across the oak table below. Hangs in a pair over a dining table or kitchen island. E26 base, warm 2700K bulb. The single fixture pair that quietly defines an evening room.
+
+#pendantlight #lighting #diningroom #japandi #wovenshade #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+
+Destination link: `https://www.amazon.com/dp/B0C5R7HFRW?tag=calmandoak-20`
+
+Board: Lighting
+Affiliate toggle: ON
+
+---
+
 ### 2026-05-21 — Pin 37 (Lighting / Decor Accents)
 
 **OLD:** CO-Z 69" Modern Arc Floor Lamp Gold (`B0D86JWHLC`) — a metal gold arc lamp with hanging shade. Original pin image showed a sculptural curved paper floor lamp with pinched waist and tripod legs — total mismatch (different category of product entirely). The CO-Z was never actually wired into a shop page since it didn't match the pin.
