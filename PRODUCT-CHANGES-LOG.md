@@ -21,6 +21,46 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-21 — Pin 37 (Lighting / Decor Accents)
+
+**OLD:** CO-Z 69" Modern Arc Floor Lamp Gold (`B0D86JWHLC`) — a metal gold arc lamp with hanging shade. Original pin image showed a sculptural curved paper floor lamp with pinched waist and tripod legs — total mismatch (different category of product entirely). The CO-Z was never actually wired into a shop page since it didn't match the pin.
+**NEW:** Nogy Noguchi Akari-style Rice Paper Floor Lamp (`B0DD8CZ28Q`) — squat pumpkin-shaped rice paper lantern shade with signature terracotta accent band at the top, oak wood ring, thin black metal tripod with an integrated small oak shelf
+
+**Why changed:** Original pin's sculptural curved silhouette had no exact Amazon equivalent (most paper floor lamps are classic round Akari, not freeform sculptural). User confirmed Brightech Parker was out of stock. Surfaced 3 better candidates; user picked Nogy as the best Japandi-on-brand match (wood + paper + metal tripod combination explicitly designed for Japandi rooms).
+
+**Image:** new pin generated 2026-05-21 via Gemini Google-grounded, FIRST-TIME-ACCURATE after viewing the actual Amazon product photo (locked-in workflow). Every signature detail rendered correctly: single round pumpkin paper shade with fine horizontal ribbing, terracotta band at top, oak wood ring below, thin black metal tripod with integrated round oak shelf, warm 2700K glow.
+- Pin (full template): `04-sample-pins/day8-pin37-nogy-pumpkin-lantern.jpg`
+- Cropped (product-only, for website): `assets/img/products-cropped/day8-pin37-nogy-pumpkin-lantern.jpg`
+
+**Surfaces updated:**
+- Pinterest pin destination URL: `https://www.amazon.com/dp/B0DD8CZ28Q?tag=calmandoak-20`
+- `shop/lighting/index.html` (added as position 9 in JSON-LD, new visible card; numberOfItems bumped 8→9)
+- Action plan Pin 37 entry (deferred — file locked by Word; will sync next opportunity)
+
+**Pinterest copy for new pin:**
+
+Title: `Floor lamps that double as art — Akari paper lantern`
+
+Tagged topics: `japandi, lighting, akari, paper lantern, floor lamp`
+
+Description block:
+```
+FLOOR LAMPS THAT DOUBLE AS ART
+
+An Akari-style rice paper floor lamp — squat pumpkin shade in handcrafted rice paper, terracotta band at the top, oak wood ring, thin black metal tripod with a small integrated shelf for a mug. The Noguchi tradition, made for a quiet Japandi living room corner. Warm 2700K glow.
+
+#floorlamp #akari #japandi #lighting #noguchi #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+
+Destination link: `https://www.amazon.com/dp/B0DD8CZ28Q?tag=calmandoak-20`
+
+Board: Lighting
+Affiliate toggle: ON
+
+---
+
 ### 2026-05-14 — Pin 34 (Furniture)
 
 **OLD:** Search-URL placeholder for "round solid oak side table, small" (no fixed ASIN). Original pin was a magazine shot of a hollow drum/staved oak pedestal table with the headline "SIDE TABLES UNDER $100."
