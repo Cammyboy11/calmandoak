@@ -21,6 +21,46 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-21 — Pin 39 (Storage)
+
+**OLD:** Search URL placeholder "low woven basket pair rectangular seagrass" (no fixed ASIN). Original pin showed ONE tall round woven basket beside a coffee table, not a pair — copy and product description mismatched the pin.
+**NEW:** Tall woven storage basket (`B0DHG6PMNM`) — single tall round natural-fiber basket with woven handles, holds blankets/magazines, sized for beside-the-sofa storage.
+
+**Why changed:** No verified ASIN existed. User picked B0DHG6PMNM directly. Verified clean: ASIN and product type not duplicated anywhere else on the site. Rewrote copy to match what the pin/product actually is — ONE basket beside a coffee table, not "a pair of low under-table baskets" as the original action-plan draft incorrectly stated.
+
+**Image:** ⏸ NO regeneration — keeping the existing Pin 39 image (`04-sample-pins/day8-pin39-coffee-table-basket.png`) which already shows a single tall woven basket beside an oak coffee table and cream linen sofa. Cropped for shop card to `assets/img/products-cropped/day8-pin39-coffee-table-basket.jpg` (848×885, standard Template A crop — top 18% header band + bottom 12% footer band removed).
+
+**Note:** This is the LAST Template A pin we'll ship to Pinterest. All future pins from here on are Template B per locked-in 2026-05-21 directive. Pin 39 stays as Template A only because the existing image is fine and the user explicitly opted out of regeneration.
+
+**Surfaces updated:**
+- Pinterest pin destination URL: `https://www.amazon.com/dp/B0DHG6PMNM?tag=calmandoak-20`
+- `shop/storage/index.html` (added as position 9 in JSON-LD; numberOfItems bumped 8→9; new visible card)
+- Action plan Pin 39 entry (deferred — file locked by Word; will sync next opportunity)
+
+**Pinterest copy for new pin:**
+
+Title: `The basket that hides the chaos — beside the sofa`
+
+Tagged topics: `japandi, home organization, storage ideas, neutral home, living room decor`
+
+Description block:
+```
+THE BASKET THAT HIDES THE CHAOS
+
+One tall woven basket beside the coffee table — it holds the throw, the spare blanket, the magazine you haven't finished. The room reads composed instead of cluttered. Natural fiber, woven handles, blends into any Japandi-leaning living room.
+
+#storage #organization #livingroomdecor #neutralhome #homedecor #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+
+Destination link: `https://www.amazon.com/dp/B0DHG6PMNM?tag=calmandoak-20`
+
+Board: Storage
+Affiliate toggle: ON
+
+---
+
 ### 2026-05-21 — Pin 38 (Lighting) — FIRST TEMPLATE B PIN
 
 **OLD:** Search URL placeholder "wood + paper pendant light fixture complete cord" (no fixed ASIN). Original pin showed an AI-imagined wood-rib UFO/saucer paper pendant — beautiful but had no real Amazon equivalent. Previous candidates (Brightech Parker, Wpplk, Dezaart, Hgrtaegs) all unavailable.
