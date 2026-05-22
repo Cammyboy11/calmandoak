@@ -21,6 +21,48 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-22 — Pin 46 (Outdoors, Template B, browser-verified)
+
+**OLD:** Battery LED paper lanterns (search-URL placeholder, no verified ASIN) — lighting product in the Outdoors pillar slot. User asked for a genuine standout outdoor piece.
+**NEW:** Christopher Knight Home Teague Outdoor Acacia Wood Dining Chairs, Set of 2, teak finish (`B07DQDMVJ6`)
+
+**Why changed:** Pin 46's slot is the Outdoors pillar (8 AM); the placeholder was just paper lanterns. Pivoted to a real outdoor hero piece. Browser-verified the whole shortlist live — bistro sets (Tangkula 34 reviews + no Canada shipping; HAPPYGRILL 4 reviews; Sunnydaze 37 reviews + no Canada shipping) all failed. Christopher Knight Teague was the only one clearing every bar, and it's an established brand we already trust (their Evelyn chair anchors Furniture).
+
+**Verified live (Claude-in-Chrome):** 4.4★ / 217 reviews / $145.79 / In Stock (ships to Canada) / NO "Frequently returned" badge / Amazon's Choice.
+
+**Image:** Template B, generated 2026-05-22 image-to-image from `03-pin-templates/template-B-lifestyle-overlay-example.png` + Google grounding on the actual Amazon photo (viewed via browser first). Headline "MORNINGS / MOVE OUTSIDE", warm golden-hour patio scene with the pair of slatted acacia armchairs, headline placed over a shadowed plaster area for cream-text legibility.
+- Pin: `04-sample-pins/day10-pin46-acacia-patio-chairs.jpg`
+- Crop: `assets/img/products-cropped/day10-pin46-acacia-patio-chairs.jpg` (848×910)
+
+**Surfaces updated:**
+- Pinterest pin destination URL: `https://www.amazon.com/dp/B07DQDMVJ6?tag=calmandoak-20`
+- `shop/outdoor-wellness/index.html` position 11 (numberOfItems 10→11)
+- Action plan Pin 46 entry (deferred — Word lock)
+
+**Pinterest copy:**
+
+Title: `Mornings move outside — acacia patio chairs`
+
+Tagged topics: `japandi, outdoor living, patio decor, acacia furniture, slow living`
+
+Description block:
+```
+MORNINGS MOVE OUTSIDE
+
+A pair of teak-finish acacia wood chairs — slatted, armrests, weather-ready — that turn a porch corner into where the morning actually happens. Coffee, a dried stem in a stoneware vase, a folded throw. The set that makes outside the best room in the house.
+
+#outdoorliving #patiodecor #acaciafurniture #japandi #slowliving #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+
+Destination link: `https://www.amazon.com/dp/B07DQDMVJ6?tag=calmandoak-20`
+
+Board: Outdoor & Wellness
+Affiliate toggle: ON
+
+---
+
 ### 2026-05-22 — Pin 42 + Pin 44 (Template B, browser-verified)
 
 First products **verified live via Claude-in-Chrome** (Amazon WebFetch was blocked all session; navigating the user's real browser bypasses bot detection and reads true rating / review count / "Frequently returned" badge).
