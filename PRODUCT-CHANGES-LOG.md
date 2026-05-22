@@ -21,6 +21,59 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-22 — Pin 42 + Pin 44 (Template B, browser-verified)
+
+First products **verified live via Claude-in-Chrome** (Amazon WebFetch was blocked all session; navigating the user's real browser bypasses bot detection and reads true rating / review count / "Frequently returned" badge).
+
+**Pin 42 (Lighting) — Dining pendant**
+- OLD: Hemp Rope Woven Pendant (`B0BY5CVQS6`) — the existing Pin 42 link; user wanted a fresh, better fixture
+- NEW: Hchunqjor Woven Bamboo Dome Pendant, 17.8" (`B0C4XTSZYX`) — large natural bamboo open-lattice dome, single, dining-scale
+- Verified live: 4.4★ / 203 reviews / $85.98 / In Stock / NO returns flag
+- Pin: `04-sample-pins/day9-pin42-bamboo-dome-pendant.jpg` (Template B, headline "THE TABLE, AT DUSK")
+- Crop: `assets/img/products-cropped/day9-pin42-bamboo-dome-pendant.jpg` (848×910)
+- Shop: `shop/lighting/index.html` position 11 (numberOfItems 10→11)
+
+**Pin 44 (Bedroom) — Bedside lamp pair**
+- OLD: PoKat small ceramic lamps (`B0F8BB3KV2`, action-plan link) — pin showed brass, product was ceramic = mismatch
+- REJECTED: Oneach brass lamp set of 2 (`B07XNLWZ6R`) — 4.4★/2,908 reviews BUT carries the "Frequently returned item" badge → hard fail (returns reverse commissions). Caught via live browser check.
+- NEW: Qingmiao Gold-Column Table Lamps, Set of 2 (`B093GRTYD9`) — brushed-gold column + cream linen drum shades, matched pair
+- Verified live: 4.6★ / 913 reviews / $59.99 / In Stock / NO returns flag / Amazon's Choice
+- Pin: `04-sample-pins/day9-pin44-gold-lamp-pair.jpg` (Template B, headline "BOTH SIDES OF THE BED")
+- Crop: `assets/img/products-cropped/day9-pin44-gold-lamp-pair.jpg` (848×910)
+- Shop: `shop/bedroom/index.html` position 11 (numberOfItems 10→11). Note: PoKat B0C4SZBN64 left in place (it anchors the Pin 24 Look + Pin 10) — the gold pair is an additional bedside option, not a replacement of that entry.
+
+**Both pins:** Template B (image-to-image from `03-pin-templates/template-B-lifestyle-overlay-example.png` + Google-grounded on the real Amazon photo, which I viewed via the browser first). First-time-right renders.
+
+**Pinterest copy — Pin 42:**
+Title: `The table, at dusk — woven bamboo dome pendant`
+Tagged topics: `japandi, dining room, pendant light, bamboo decor, warm light`
+```
+THE TABLE, AT DUSK
+
+A large woven bamboo dome pendant — open diamond lattice that scatters warm light into dappled shadow across the table below. 17.8 inches of handwoven bamboo over a long oak table. The fixture that turns dinner into a slow hour.
+
+#diningroom #pendantlight #japandi #bamboodecor #lighting #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+Destination: `https://www.amazon.com/dp/B0C4XTSZYX?tag=calmandoak-20` · Board: Lighting
+
+**Pinterest copy — Pin 44:**
+Title: `Both sides of the bed — the gold lamp pair`
+Tagged topics: `japandi, bedroom decor, bedside lamp, brass decor, cozy bedroom`
+```
+BOTH SIDES OF THE BED
+
+A matched pair of brushed-gold column lamps with cream linen drum shades — one for each nightstand, throwing soft symmetrical halos up the wall. The matching pair is what makes a bedroom read intentional instead of assembled. Dimmable, warm light.
+
+#bedroomdecor #bedsidelamp #lighting #brassdecor #japandi #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+Destination: `https://www.amazon.com/dp/B093GRTYD9?tag=calmandoak-20` · Board: Bedroom
+
+---
+
 ### 2026-05-21 — Pin 39 (Storage)
 
 **OLD:** Search URL placeholder "low woven basket pair rectangular seagrass" (no fixed ASIN). Original pin showed ONE tall round woven basket beside a coffee table, not a pair — copy and product description mismatched the pin.
