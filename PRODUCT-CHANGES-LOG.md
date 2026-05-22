@@ -21,6 +21,48 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-22 — Pin 47 (Lighting, Template B, browser-verified)
+
+**OLD:** ENCOMLI Dimmable Plug-in Wall Sconces (`B09NVP7SXN`) — the action-plan link. Still a valid US product (4.5★/560), but CADUKE is a stronger match + metrics.
+**NEW:** CADUKE Plug-in Swing-Arm Wall Sconce, Set of 2, light-brown linen drum shade (`B09BB5MX6B`)
+
+**Why changed:** User asked for a highly-ranked sconce matching the pin (dark swing arm + cream linen drum + plug-in pair). Browser-verified the field live. NOTE: corrected the verification criterion this session — products only need to be readily available to US customers, NOT ship to the Canadian browser address (the user's Amazon session is Ottawa-based, which produced false "cannot ship" negatives). CADUKE chosen: best metrics + clearest pin match + most on-message for the renter-friendly "no rewiring" copy.
+
+**Verified live (Claude-in-Chrome):** 4.5★ / 951 reviews / $39.99 ($20/lamp) / In Stock / Amazon's Choice / NO "Frequently returned" badge. (Rejected: ENCOMLI valid but fewer reviews; SAMTEEN 192 reviews; Yosoan 25 + hardwired; Kira Home single golden sconce not a dark pair.)
+
+**Image:** Template B, generated 2026-05-22 image-to-image from `03-pin-templates/template-B-lifestyle-overlay-example.png` + Google grounding on the actual Amazon photo (viewed via browser first). Headline "EITHER SIDE / OF THE FRAME" — sconce pair flanking framed line-art over an oak console, moody dark plaster, warm light pools, plug-in cords visible.
+- Pin: `04-sample-pins/day10-pin47-caduke-sconce-pair.jpg`
+- Crop: `assets/img/products-cropped/day10-pin47-caduke-sconce-pair.jpg` (848×885)
+
+**Surfaces updated:**
+- Pinterest pin destination URL: `https://www.amazon.com/dp/B09BB5MX6B?tag=calmandoak-20`
+- `shop/lighting/index.html` position 12 (numberOfItems 11→12)
+- Action plan Pin 47 entry (deferred — Word lock)
+
+**Pinterest copy:**
+
+Title: `Either side of the frame — plug-in linen sconces`
+
+Tagged topics: `japandi, lighting ideas, renter friendly, entryway decor, warm light`
+
+Description block:
+```
+EITHER SIDE OF THE FRAME
+
+A pair of plug-in wall sconces — dark metal swing arms, cream linen drum shades — that flank a framed print or a bed without an electrician. Just mount and plug in. The renter-friendly upgrade that makes a wall feel finished.
+
+#lighting #renterfriendly #entrywaydecor #japandi #wallsconce #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+
+Destination link: `https://www.amazon.com/dp/B09BB5MX6B?tag=calmandoak-20`
+
+Board: Lighting
+Affiliate toggle: ON
+
+---
+
 ### 2026-05-22 — Pin 46 (Outdoors, Template B, browser-verified)
 
 **OLD:** Battery LED paper lanterns (search-URL placeholder, no verified ASIN) — lighting product in the Outdoors pillar slot. User asked for a genuine standout outdoor piece.
