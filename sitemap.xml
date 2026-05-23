@@ -37,6 +37,9 @@
   <!-- Gift Guide -->
   <url><loc>https://calmandoak.com/shop/gift-guide/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
 
+  <!-- Print Collection (owned product) -->
+  <url><loc>https://calmandoak.com/shop/prints/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
   <!-- Journal -->
   <url><loc>https://calmandoak.com/journal/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://calmandoak.com/journal/japandi-101/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
