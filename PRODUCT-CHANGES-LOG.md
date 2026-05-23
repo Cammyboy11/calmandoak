@@ -21,6 +21,48 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-23 — Pin 49 (Ceramics & Tableware, Template B, browser-verified)
+
+**OLD:** Vase pair (`B0BPM41R5C`) — the action-plan link, a tall cylinder + round sphere cream pair. User wanted a different ceramics product.
+**NEW:** Whitewashed Neutral Ceramic Vases, Set of 3 (`B0FFMF13MV`, ooit) — matte whitewashed cream bottle vases in three heights, no handles
+
+**Why changed:** User asked for a different ceramics product for the vase-pairing pin. Browser-verified the field live. Picked B0FFMF13MV over two siblings — Vanselia B0FDWPFCDW (4.8★/354) had loop handles + sandy texture (off-brand from the clean pin look); B0DXBR8TYV (4.7★/567) also had handles. The whitewashed ooit set is the cleanest matte-cream match and set-of-3 gives the tall+short height variety the "vase pairing" concept is about.
+
+**Verified live (Claude-in-Chrome):** 4.7★ / 333 reviews / $29.99 / Amazon's Choice / NO "Frequently returned" badge / US-available.
+
+**Image:** Template B, generated 2026-05-23 image-to-image from `03-pin-templates/template-B-lifestyle-overlay-example.png` + Google grounding on the actual Amazon photo (viewed via browser first). Headline "STILL LIFE, / ON A SHELF" — whitewashed cream vase trio on an oak floating shelf against dark plaster, dried botanicals, warm raking light.
+- Pin: `04-sample-pins/day10-pin49-whitewashed-vase-trio.jpg`
+- Crop: `assets/img/products-cropped/day10-pin49-whitewashed-vase-trio.jpg` (848×910)
+
+**Surfaces updated:**
+- Pinterest pin destination URL: `https://www.amazon.com/dp/B0FFMF13MV?tag=calmandoak-20`
+- `shop/ceramics-tableware/index.html` position 9 (numberOfItems 8→9)
+- Action plan Pin 49 entry (deferred — Word lock)
+
+**Pinterest copy:**
+
+Title: `Still life on a shelf — whitewashed vase trio`
+
+Tagged topics: `japandi, ceramics, home styling, shelf decor, wabi sabi`
+
+Description block:
+```
+STILL LIFE, ON A SHELF
+
+A set of three whitewashed ceramic vases in stepped heights — one tall, one medium, one short, each with a single dried stem. The trio that turns an empty shelf into a composed still life. The styling rule that always works: vary the height, repeat the colour, one stem each.
+
+#ceramics #homestyling #shelfdecor #japandi #wabisabi #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+
+Destination link: `https://www.amazon.com/dp/B0FFMF13MV?tag=calmandoak-20`
+
+Board: Ceramics & Tableware
+Affiliate toggle: ON
+
+---
+
 ### 2026-05-22 — Pin 47 (Lighting, Template B, browser-verified)
 
 **OLD:** ENCOMLI Dimmable Plug-in Wall Sconces (`B09NVP7SXN`) — the action-plan link. Still a valid US product (4.5★/560), but CADUKE is a stronger match + metrics.
