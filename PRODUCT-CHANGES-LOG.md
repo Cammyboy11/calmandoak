@@ -21,6 +21,60 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-23 — Pins 53 + 54 (Template B — LIGHT palette variant)
+
+New this session: **light-palette Template B**. Same Template B layout (full-bleed photo, headline top-left, terracotta line, "Calm & Oak" bottom-right) but for bright/airy rooms the scene is sunlit and the headline + wordmark are DEEP CHARCOAL (#2A2724) instead of cream, so they stay readable on the light background. Use the dark-cream version for glowing-product (lighting) pins; use this light-charcoal version for bright bedroom/living-room scenes.
+
+**Pin 54 (Bedroom) — Headboard**
+- OLD: search-URL placeholder "linen upholstered headboard, queen" (bedroom shop position 10)
+- NEW: HAOBO Home Upholstered Headboard, Queen, Oatmeal linen (`B07ZRPL48D`) — tall oat-linen vertical-channel headboard
+- Browser-verified live + SCREENSHOT-confirmed no returns banner: 4.5★ / 704 reviews / $104.97 / US-available
+- (Rejected: Yongchuang B07ZQF8WCR oatmeal looked perfect, 4.4★/482, but had a "Frequently Returned" banner the SCRIPT MISSED — caught in the screenshot. Liiwepo B0FVF4L44G only 155 reviews.)
+- Pin: `04-sample-pins/day11-pin54-haobo-oat-headboard.jpg` (light Template B, "WHERE THE DAY BEGINS", charcoal headline)
+- Crop: `assets/img/products-cropped/day11-pin54-haobo-oat-headboard.jpg`
+- Shop: `shop/bedroom/index.html` position 10 — upgraded placeholder to verified HAOBO product
+
+**Pin 53 (Furniture / Living Room) — Get the Look → new Look page**
+- Pin 53 was a "Get the Look" 4-piece pin (round oak coffee table, cream linen sofa, wool throw, ribbed vase). No single clean solid-oak pedestal coffee table exists on Amazon with 200+ reviews + no returns flag (they're all 2-tier industrial or returns-flagged). So Pin 53 became a **Look page** instead of a single-product pin.
+- Built `shop/looks/quiet-living-room/index.html` — 4 product cards:
+  1. Round oak pedestal coffee table → Amazon search URL (no verified clean single product; the pin shows the aspirational look)
+  2. Cream linen sofa `B091MJ3CMM`
+  3. Longhui cable-knit throw `B08F48LR45`
+  4. Briful brown ribbed vase `B0FT361HDX`
+- Added the Look to `shop/looks/index.html` (now 2 Looks).
+- Pin: `04-sample-pins/day11-pin53-quiet-living-room.jpg` (light Template B, "A QUIET LIVING ROOM", charcoal headline) — doubles as the Look hero.
+- Look hero: `assets/img/looks/quiet-living-room-pin.jpg` · index card: `assets/img/looks/quiet-living-room-card.jpg`
+
+**Pinterest copy — Pin 54:**
+Title: `Where the day begins — oat linen headboard`
+Tagged topics: `japandi, bedroom decor, headboard, linen bedding, neutral home`
+```
+WHERE THE DAY BEGINS
+
+A tall oat-linen upholstered headboard with soft vertical channels — the slim, modern centerpiece that does most of the work in a bedroom. Height-adjustable, no fuss. The bed, dressed up.
+
+#bedroomdecor #headboard #linenbedding #japandi #neutralhome #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+Destination: `https://www.amazon.com/dp/B07ZRPL48D?tag=calmandoak-20` · Board: Bedroom
+
+**Pinterest copy — Pin 53:**
+Title: `A quiet living room — get the look in four pieces`
+Tagged topics: `japandi, living room decor, get the look, oak furniture, slow living`
+```
+A QUIET LIVING ROOM
+
+Four pieces, one calm room: a round oak pedestal coffee table, a cream linen sofa, a cable-knit wool throw, and a ribbed stoneware vase with a few dried branches. The living room that reads composed, not decorated.
+
+#livingroomdecor #getthelook #japandi #oakfurniture #slowliving #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+Destination: `https://calmandoak.com/shop/looks/quiet-living-room/?utm_source=pinterest&utm_medium=pin&utm_campaign=pin-53-getthelook` · Board: Living Room (or Get the Look)
+
+---
+
 ### 2026-05-23 — Pin 49 (Ceramics & Tableware, Template B, browser-verified)
 
 **OLD:** Vase pair (`B0BPM41R5C`) — the action-plan link, a tall cylinder + round sphere cream pair. User wanted a different ceramics product.
