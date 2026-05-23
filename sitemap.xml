@@ -34,6 +34,9 @@
   <url><loc>https://calmandoak.com/shop/looks/the-evening-dining-table/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://calmandoak.com/shop/looks/the-lit-entryway/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
+  <!-- Gift Guide -->
+  <url><loc>https://calmandoak.com/shop/gift-guide/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+
   <!-- Journal -->
   <url><loc>https://calmandoak.com/journal/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://calmandoak.com/journal/japandi-101/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
