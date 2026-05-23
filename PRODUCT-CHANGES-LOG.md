@@ -21,6 +21,68 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-23 — Shop card restyle + 3 new Looks (no new image spend)
+
+**Two things this session, both zero Gemini spend.**
+
+**1. Shop product cards → magazine/editorial format.** CSS-only restyle of `.product` in `assets/css/styles.css` so all 10 shop category pages match the `.section-product` build-guide card aesthetic: borderless cards, softer hover lift + shadow (no terracotta border), italic Cormorant titles, centered meta, terracotta gap-widening CTA. Commit `26be3a8`.
+
+**2. Three new Look pages — built entirely from already-approved products + existing pin images.** No products re-sourced, no pins regenerated. Each Look reuses an existing Template B pin as its hero (resized to 1200×1789, ~120–160KB) and the already-cropped product photos for the cards.
+
+- **The Soft-Lit Reading Nook** (`shop/looks/soft-lit-reading-nook/`) — hero = Pin 37 Nogy floor lamp scene. 5 pieces: Christopher Knight Evelyn chair `B07F266PMS`, fluted oak side table `B0DRHQ1FKP`, Nogy Akari floor lamp `B0DD8CZ28Q`, Longhui throw `B08F48LR45`, Briful vase `B0FT361HDX`.
+- **The Evening Dining Table** (`shop/looks/the-evening-dining-table/`) — hero = Pin 42 bamboo dome pendant scene. 5 pieces: Hchunqjor bamboo dome pendant `B0C4XTSZYX`, solid oak dining chairs (search URL), AmorArc stoneware dinnerware `B0CJD73LV6`, stoneware pitcher `B0FQV1Y3PR`, whitewashed vase trio `B0FFMF13MV`.
+- **The Entryway, Lit** (`shop/looks/the-lit-entryway/`) — hero = Pin 47 CADUKE sconce scene. 5 pieces: CADUKE plug-in sconce pair `B09BB5MX6B`, slim oak console `B0DH21GJ15`, JONATHAN Y hyacinth basket lamp `B07T81461V`, tall woven basket `B0DHG6PMNM`, acacia tray `B086372L8W`.
+
+Each page: BreadcrumbList + ItemList JSON-LD (validated), hero figure, 5 numbered product cards, "want the rest of the room?" cross-sell, signup. New heroes: `assets/img/looks/{soft-lit-reading-nook,the-evening-dining-table,the-lit-entryway}-pin.jpg`. Index-grid cards reuse the existing `products-cropped` pin crops.
+
+**Surfaces updated:**
+- `shop/looks/index.html` — numberOfItems 2→5; 3 new cards.
+- `index.html` homepage "Get the Look" grid — 3 new cards (now 5 total).
+
+**Pinterest copy — The Soft-Lit Reading Nook:**
+Title: `The soft-lit reading nook — get the look in five pieces`
+Tagged topics: `japandi, reading nook, get the look, living room decor, slow living`
+```
+THE SOFT-LIT READING NOOK
+
+Five pieces, one quiet corner: a linen mid-century chair, a fluted oak side table, an Akari-style paper floor lamp, a cable-knit throw, and one ribbed ceramic vase. The corner you actually read in — not the one you just look at.
+
+#readingnook #getthelook #japandi #livingroomdecor #slowliving #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+Destination: `https://calmandoak.com/shop/looks/soft-lit-reading-nook/?utm_source=pinterest&utm_medium=pin&utm_campaign=look-reading-nook` · Board: Get the Look (or Living Room)
+
+**Pinterest copy — The Evening Dining Table:**
+Title: `The evening dining table — get the look in five pieces`
+Tagged topics: `japandi, dining room, get the look, tablescape, slow living`
+```
+THE EVENING DINING TABLE
+
+Five pieces, one slow dinner: a woven bamboo dome pendant, solid oak chairs, speckled stoneware, a hand-thrown pitcher, and a whitewashed vase trio for the centre. The table that turns dinner into an hour.
+
+#diningroom #getthelook #japandi #tablescape #slowliving #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+Destination: `https://calmandoak.com/shop/looks/the-evening-dining-table/?utm_source=pinterest&utm_medium=pin&utm_campaign=look-dining-table` · Board: Get the Look (or Ceramics & Tableware)
+
+**Pinterest copy — The Entryway, Lit:**
+Title: `The entryway, lit — get the look in five pieces`
+Tagged topics: `japandi, entryway decor, get the look, console styling, home organization`
+```
+THE ENTRYWAY, LIT
+
+Five pieces, one warm welcome: a slim oak console, plug-in linen swing-arm sconces, a hyacinth basket lamp, a tall woven basket, and an acacia catch-all tray. The first thing you see, finally finished.
+
+#entryway #getthelook #japandi #consolestyling #homeorganization #affiliate
+
+(As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
+```
+Destination: `https://calmandoak.com/shop/looks/the-lit-entryway/?utm_source=pinterest&utm_medium=pin&utm_campaign=look-entryway` · Board: Get the Look (or Furniture)
+
+---
+
 ### 2026-05-23 — Pins 53 + 54 (Template B — LIGHT palette variant)
 
 New this session: **light-palette Template B**. Same Template B layout (full-bleed photo, headline top-left, terracotta line, "Calm & Oak" bottom-right) but for bright/airy rooms the scene is sunlit and the headline + wordmark are DEEP CHARCOAL (#2A2724) instead of cream, so they stay readable on the light background. Use the dark-cream version for glowing-product (lighting) pins; use this light-charcoal version for bright bedroom/living-room scenes.
