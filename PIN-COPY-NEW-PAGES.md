@@ -6,6 +6,54 @@ UTM is baked into each URL so you can see in analytics which pins work. Pin 2–
 
 ---
 
+## WEEK 7 — Journal Editorial Rebuild pins (new hybrid images, 2026-05-24)
+
+Six new editorial images from the living-room-textiles + bedside rebuild. Two room heroes (anchor Look pins) + four product shots. All point to the new Look pages (content pins). Spread ~3/day.
+
+**W7-1. The Calm Nightstand — Look hero (anchor)**
+- Image: `/assets/img/looks/the-calm-nightstand-hero.jpg`
+- Title: `The calm nightstand — four pieces before sleep`
+- Desc: `A nightstand that earns its place: a warm ceramic lamp, a glass water carafe, a cloud ceramic ring dish, and a single dried stem in a matte donut vase. Get the look in four pieces. #nightstandstyling #bedroomdecor #japandi #calmhome #slowliving #affiliate`
+- URL: `https://calmandoak.com/shop/looks/the-calm-nightstand/?utm_source=pinterest&utm_medium=pin&utm_campaign=look-calm-nightstand`
+- Board: Get the Look (or Bedroom)
+
+**W7-2. The Layered Living Room — Look hero (anchor)**
+- Image: `/assets/img/looks/the-layered-living-room-hero.jpg`
+- Title: `The layered living room — five textiles, no new furniture`
+- Desc: `Warm up the whole room with five textiles: bouclé pillow covers and a long lumbar, a cable-knit wool throw, a jute rug, and oatmeal linen curtains. The layers that turn a room you sit in into a room you sink into. #livingroomdecor #getthelook #japandi #neutralhome #slowliving #affiliate`
+- URL: `https://calmandoak.com/shop/looks/the-layered-living-room/?utm_source=pinterest&utm_medium=pin&utm_campaign=look-layered-living-room`
+- Board: Get the Look (or Living Room)
+
+**W7-3. Matte donut bud vase (product)**
+- Image: `/assets/img/products-cropped/w7-bedside-donut-vase.jpg`
+- Title: `The single-stem rule — a matte donut bud vase`
+- Desc: `One object, one stem. A sculptural matte-cream "hug" donut vase with a single dried pampas stem — the quiet finish for a nightstand or shelf. #budvase #ceramicvase #japandi #wabisabi #shelfdecor #affiliate`
+- URL: `https://calmandoak.com/shop/looks/the-calm-nightstand/?utm_source=pinterest&utm_medium=pin&utm_campaign=w7-donut-vase`
+- Board: Bedroom (or Ceramics & Tableware)
+
+**W7-4. Glass water carafe + tumbler (product)**
+- Image: `/assets/img/products-cropped/w7-bedside-glass-carafe.jpg`
+- Title: `The bedside ritual — a glass carafe + tumbler`
+- Desc: `Swap the plastic cup for a glass carafe with a tumbler lid. On the carafe it reads as one composed object; lift the cup and it's a vase-without-flowers. The small ritual that makes a nightstand intentional. #bedroomdecor #nightstandstyling #japandi #calmhome #affiliate`
+- URL: `https://calmandoak.com/shop/looks/the-calm-nightstand/?utm_source=pinterest&utm_medium=pin&utm_campaign=w7-glass-carafe`
+- Board: Bedroom
+
+**W7-5. Cloud ceramic ring dish (product)**
+- Image: `/assets/img/products-cropped/w7-bedside-ring-dish.jpg`
+- Title: `The bedside catch-all — a cloud ceramic ring dish`
+- Desc: `The ring goes in the dish. The watch goes in the dish. A small cream cloud-shaped ceramic dish is the discipline that keeps the nightstand calm — and the jewellery out of the sheets. #ringdish #ceramics #bedroomdecor #japandi #organizedhome #affiliate`
+- URL: `https://calmandoak.com/shop/looks/the-calm-nightstand/?utm_source=pinterest&utm_medium=pin&utm_campaign=w7-ring-dish`
+- Board: Ceramics & Tableware (or Bedroom)
+
+**W7-6. Cream bouclé lumbar pillow (product)**
+- Image: `/assets/img/products-cropped/w7-livingroom-boucle-lumbar.jpg`
+- Title: `The fine accent — a cream bouclé lumbar`
+- Desc: `One long bouclé lumbar across the sofa is the layer that finishes a linen couch — nubby ivory texture against smooth linen, the contrast that reads made-to-order. #boucle #livingroomdecor #throwpillows #japandi #neutralhome #affiliate`
+- URL: `https://calmandoak.com/shop/looks/the-layered-living-room/?utm_source=pinterest&utm_medium=pin&utm_campaign=w7-boucle-lumbar`
+- Board: Textiles (or Living Room)
+
+---
+
 ## Room pillars
 
 **1. What is Japandi (mega-pillar)**

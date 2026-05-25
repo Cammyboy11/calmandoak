@@ -21,6 +21,70 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-24 — Journal Editorial Rebuild · WEEK 7 sourcing (living-room textiles + bedside)
+
+Per playbook PART 7B. Owner-approved 6 products (≥4.3★/200+/in-stock/returns-flag screenshot-clear):
+- Bouclé pillow covers ×4 → MIULEE `B0F4K9SP6N` (4.5★/359) — image pin111 matches → **link swapped** (`300-living-room-textile` pos1).
+- Oatmeal linen curtains 84" pair → MIULEE `B0DK21FLCK` (4.6★/3,861) — image pin50 matches → **link swapped** in `300-living-room-textile` pos4 **and** `400-small-bedroom` pos5.
+- Bouclé lumbar 14×36 cream → JoraLion `B0DT6V6F33` (4.6★/209) — image (pin64) is square throw pillows, not a lumbar → **render phase** (new product shot).
+- Bedside glass carafe + tumbler → ZILJJ `B09B7989F4` (4.7★/1,101) → render phase (new glass-carafe shot; thumbnail was stoneware).
+- Ceramic ring/trinket dish → CCINPPY `B0CG3Q4H5Q` (4.7★/1,382) → render phase (thumbnail was salt cellar).
+- Bedside accent (replaces unsourceable wooden alarm clock) → Hug Donut matte ceramic vase `B0D6YRJLCP` (4.8★/602) → render phase; matches the donut vase in pin209.
+- Sumi-e print (bedside pos4) → owned Print Collection render (not Amazon).
+
+**COMPLETED (render + place + Looks + pins):**
+- **6 new hybrid images rendered** (Gemini, 2:3, grounded on the real Amazon photos; optimized to 60–240KB via sharp): 4 product shots (`w7-bedside-donut-vase`, `w7-bedside-glass-carafe`, `w7-bedside-ring-dish`, `w7-livingroom-boucle-lumbar` in `assets/img/products-cropped/`) + 2 room heroes (`the-calm-nightstand-hero`, `the-layered-living-room-hero` in `assets/img/looks/`, plus `-card` crops). First-time-right, no regens.
+- **Journal cards updated (link + image):** `250-bedside-refresh` carafe, ring dish, and the alarm-clock card rewritten as the **donut bud vase** (`B0D6YRJLCP`) with new copy + corrected budget math; `300-living-room-textile` lumbar.
+- **2 new Look pages built** (toward the 100-Looks goal): `shop/looks/the-calm-nightstand/` (4 pieces: PoKat lamp, glass carafe, ring dish, donut vase) and `shop/looks/the-layered-living-room/` (5 pieces: bouclé pillows, wool throw, jute rug, oatmeal linen curtains, bouclé lumbar). Both with BreadcrumbList + ItemList JSON-LD, hero scene, product grid, cross-sell, signup.
+- **Looks index** 5→7 (JSON-LD numberOfItems + 2 cards); **sitemap** +2 Look URLs.
+- **Pinterest plan:** 6 pins queued in `PIN-COPY-NEW-PAGES.md` (W7-1…W7-6) — 2 Look hero anchors (Get the Look board) + 4 product pins (Bedroom/Ceramics/Textiles), each with title, description, hashtags, UTM destination to the new Look pages.
+- **Sumi-e print (bedside pos4):** left for the owned Print Collection render (not Amazon).
+- Imaging method confirmed reusable for W8+ (per playbook PART 7B).
+
+---
+
+### 2026-05-24 — Search-URL placeholder grind (COO session, in progress)
+
+**Goal:** replace search-URL placeholder affiliate links with browser-verified `/dp/` products. **Adjusted operating rules this session (user, 2026-05-24):** (1) PICTURE-MATCH is the #1 priority — the product must match the committed pin/card image; (2) bar relaxed to **≥4.3★, ≥200 reviews, in stock**, no "Frequently Returned" badge (screenshot-verified); (3) when NO product matches the picture, do NOT force-swap and do NOT generate a one-off replacement image — set the item aside to be **batched into a magazine-quality Look** (one image covers several products). See [[calm-and-oak-workflow]] memory.
+
+**True scope measured:** 75 unique placeholder products across 123 references in shop + journal + index HTML (the "160" figure counts doc-file duplicates too).
+
+**Verified + swapped this session (browser-confirmed via Claude-in-Chrome, screenshot-checked no returns banner):**
+
+1. **Oak dining chairs** → **East West Furniture GRC-OAK-W "Groton", Slat Back Wooden Seat, Set of 2, Oak** (`B00TV45VXC`). 4.6★ / 495 reviews / $154.52 / In Stock / sold by Amazon.com / Overall Pick / no returns flag. Matches pin164 (natural oak, slat back, solid wood seat). Refs updated: `shop/furniture/` (JSON-LD pos 2 + visible card, renamed, fallback-search removed) and `shop/looks/the-evening-dining-table/` (JSON-LD pos 2 + visible card). **4 references cleared.**
+2. **Tall dried pampas** → **Bannifll 40" 20-Stem Natural Pampas** (`B0CMD7H1NQ`). 4.7★ / 2,712 reviews / $34.98 / In Stock / ships from Amazon / no returns flag. Matches pin205. Refs updated: `shop/bedroom/`, `shop/looks/quiet-japandi-bedroom/`, `shop/outdoor-wellness/` (incl. the "+outdoor" query variant). **6 references cleared.**
+3. **Speckled stoneware bowls** → **LE TAUCI Ceramic Stoneware Bowls, Set of 4** (`B0FFZ61S64`). 4.7★ / 209 reviews / $26.99 / Amazon's Choice / In Stock / ships from Amazon / no returns flag. Reactive speckled-cream glaze + exposed clay rim matches pin172. Ref updated: `shop/decor-accents/` (JSON-LD pos 7 + visible card). **2 references cleared.**
+4. **Waffle tea towels** → **Kitinjoy 100% Cotton Waffle Weave Kitchen Towels, Beige, 4-pack** (`B0866GB57R`). 4.5★ / 6,146 reviews / $16.99 / In Stock / ships from Amazon / no returns flag. Beige waffle weave matches pin122. Ref: `shop/japandi-kitchen/` pos 5 (name corrected "linen"→"cotton"). **2 references cleared.**
+5. **Walnut cutting board** → **CONSDAN Walnut Cutting Board, 20×15, 1" thick** (`B09Y5VVRPT`). 4.5★ / 381 reviews / $64.99 / In Stock / ships from Amazon / no returns flag. Plain rectangular walnut matches pin179 (name corrected — dropped "oval", board is rectangular). Ref: `shop/japandi-kitchen/` pos 6. **2 references cleared.**
+6. **Stoneware espresso/coffee cup + saucer set** → **Gibson Elite Manila Bay 8-Piece Reactive-Glaze Stoneware Set** (`B0GHPWL9GS`). 4.6★ / 4,921 reviews / $23.97 / In Stock / sold by Amazon.com / no returns flag. Reactive earth-tone glaze matches pin91 (name corrected — removed false "hand-thrown" claim). Ref: `shop/japandi-kitchen/` pos 8. **2 references cleared.**
+
+7. **Stacked seagrass storage baskets** → **Nonam Natural Seagrass Bin with Lid, Set of 3** (`B0DQTRHBFY`). 4.5★ / 232 reviews / $35.99 / Amazon's Choice / In Stock / ships from Amazon / no returns flag. Matches the lidded-seagrass-box element in pin154. Ref: `shop/storage/` pos 7 (name corrected "set of 5"→"set of 3"). **2 references cleared.**
+
+8. **Waffle bath towel set (250-bathroom journal)** → **Great Bay Home 100% Cotton 6-Piece Diamond Waffle, Oatmeal** (`B0F4TYC6JY`). 4.3★ / 1,908 reviews / $44.99 / In Stock / ships from Amazon / no returns flag. Matches the (correct) waffle-towels card image. Ref: `journal/250-dollar-bathroom/` pos 1 (name "linen"→"cotton"). **1 reference cleared.**
+
+**Running total: 8 products verified + swapped, 21 references cleared.**
+
+**JOURNAL-PAGE STRUCTURAL FINDING (important):** the journal build-guide product cards mostly use **borrowed/placeholder thumbnail images that do NOT match the product** (e.g. bath-mat card shows a jute runner `day23-pin112-jute-runner.jpg`; reed-diffuser card shows a salt cellar `day18-pin87-salt-cellar.jpg`; robe card shows linen shams). Only the towel-set image was correct. Consequences: (a) a link-only swap on these cards leaves picture≠product, which violates the #1 picture-match rule; (b) commodity items still hit the ≥4.3★/200-review bar inconsistently (e.g. waffle bath mat: best options are 4.7★/30 or 4.1★/426 — no clean match). **Recommendation:** treat the journal build-guides as a dedicated **image + product pass** (or fold their rooms into Looks) rather than link-only grinding. The SHOP pages (outdoor, lighting) still have real matching pin images and remain clean picture-matched swap targets.
+
+**Journal items checked: 250-bathroom** — towel set ✅ (Great Bay Home); bath mat ✗ no ≥4.3★/200+ waffle match (+ wrong image) → image/Look pass; robe, reed diffuser → wrong image, deferred to image pass; marble tray already `/dp/`.
+
+**Confirmed NO qualifying picture-match → LOOK-BATCH candidates (left as honest placeholders; do NOT solo-generate):**
+
+- **Low oak platform bed** (pin204, headboard-free low oak platform): genuine headboard-free oak platforms all <50 reviews; the only high-review option (Plank+Beam 4.3★/1,059) is pecan with a tall panel headboard — wrong silhouette. → feeds a **bedroom Look** (e.g. the Sage Bedroom Look in P2).
+- **Oak writing desk** (pin15, warm oak, tapered legs, thin drawer): matching solid-oak desks are 4.3★ but only 6–17 reviews; the high-review option (Nnewvante 4.5★/555) is bamboo with no drawer. → **home-office Look**.
+- **Upholstered oak-leg entry bench** (pin162, OPEN-leg cream upholstered bench): high-review option (HomePop Malmo 4.6★/1.7K) is a CLOSED storage box (no open under-space, shoes can't tuck under) — fails the picture. → **entryway Look**.
+- **Square linen floor cushion** (pin195, smooth flat cream linen): high-review options (Degrees of Comfort 4.4★/3.5K etc.) are all tufted corduroy — wrong texture. → **Look-batch**.
+- **Framed botanical gallery set** (pin157, multi-print neutral art vignette): exact prints not reproducible on Amazon. → **Look-batch / owned Print Collection** cross-sell.
+- **Stoneware salt cellar w/ wood lid** (pin87, matte speckled-cream ceramic): high-review options are all polished MARBLE (White Marble 4.7★/293) or acacia — pin is rustic stoneware. → **Look-batch** (tabletop Look). Affects `ceramics-tableware` + `japandi-kitchen` (4 refs).
+- **Acacia oval serving tray** (pin19, handle-LESS oval tray): high-review acacia trays all have cut-out handles; handle-less ones are <200 reviews (log flagged this at Pin 19 audit). → **Look-batch**. Affects `decor-accents` + `japandi-kitchen`.
+- **Japanese donabe rice pot** (pin81, natural tan clay donabe): the only real donabe is 3.8★/5 reviews; high-review hits are electric rice cookers (wrong product). → **Look-batch** (or drop from kitchen). Affects `japandi-kitchen`.
+
+**Key finding:** fill rate is highly category-dependent. Abundant-on-Amazon-in-this-exact-aesthetic items (dining chairs, pampas, speckled bowls) picture-match cleanly; clean-minimalist hero pieces (beds, desks, smooth-linen, art) are under-represented at 200+ reviews and are better realized as **Looks** (matches the user's batch-into-Looks strategy). Expect a meaningful share of the remaining ~60 placeholders to be Look-batch rather than swaps.
+
+**Not yet processed (continue next):** decor (botanical art, brown bud vase, acacia oval tray, pampas+vase pos1), outdoor-wellness (acacia tray, paper lanterns, teak bench, outdoor pillow, ceramic planter, single lantern), lighting (paper lanterns ×2), ceramics/kitchen (salt cellar, donabe, tea towels, walnut cutting board, espresso cups, acacia breakfast tray), storage (seagrass nesting baskets), and 11 journal build-guide pages (waffle towels, hangers, baskets, mirrors, etc.).
+
+---
+
 ### 2026-05-23 — Shop card restyle + 3 new Looks (no new image spend)
 
 **Two things this session, both zero Gemini spend.**

@@ -679,7 +679,7 @@ This mix scales without requiring 690 unique image generations.
 
 Before generating any new pin image:
 1. **Have a specific product+ASIN identified first** (no more "AI-generated mood photos for products that don't exist")
-2. **Validate the product is in stock + 4.4★+/200+ reviews**
+2. **Validate the product is in stock + ≥4.3★/200+ reviews** (bar adjusted 2026-05-24; screenshot-verify no "Frequently Returned" badge — the JS text check is unreliable) **and that it matches the committed picture**
 3. **Then prompt the image generator** with that product's actual visual attributes
 
 This reverses the order that broke pins 12/13/18/23/34. Image follows product, not the other way around.
@@ -687,6 +687,51 @@ This reverses the order that broke pins 12/13/18/23/34. Image follows product, n
 ## API budget for image generation
 
 If you generate ~5 new pins per week × 24 weeks = 120 new images. At ~$0.10/image with current generators, ~$12/quarter. Cheap. The cost is your time + product research time, not API spend.
+
+---
+
+# PART 7B — THE JOURNAL EDITORIAL REBUILD (Days 43+) · added 2026-05-24 (COO)
+
+The 13 `$X-room` build-guides are our deepest editorial assets but currently ship with **borrowed placeholder thumbnails** (a jute runner standing in for a bath mat, a salt cellar for a reed diffuser) and **search-URL affiliate links**. This program rebuilds all 13 to editorial standard with correctly-sourced products — and **every image we create doubles as a Pinterest pin.** The per-card error list + product specs are the source of truth in **`PLACEHOLDER-AUDIT.md`** (buckets ♻️ reuse / 🔎 verify / 🖼️ needs-image / 🎨 Look-batch).
+
+## Imaging standard — the HYBRID (COO decision, 2026-05-24)
+We do **not** crop product cards out of one room render (soft, off-angle cards + high multi-product mis-render risk + lower affiliate fidelity). Each journal gets:
+- **1 editorial room-scene** — the magazine hero (full Template-B treatment, the sourced products styled in situ). It's the article's lead image AND the week's anchor Pinterest pin.
+- **Dedicated product shots per card** — each generated image-to-image, grounded on the *actual Amazon photo* (our proven first-time-right method), so every card is hero-lit, sharp, and faithful to the listing.
+- Cards that already carry a correct on-brand crop (~30 of them) are **reused as-is** — efficiency, not a corner-cut.
+
+**Why hybrid beats scene-crop:** card clarity (the product is the hero, full-res), render fidelity (one accurate product per render — packing 5 exact products into one scene is where Gemini drifts and forces re-rolls), and affiliate trust (the card looks like the real listing). Ranking: hybrid > product-shots-only > scene+crops > borrowed thumbnails (today).
+
+**Volume:** ≈**35 new images** — ~13 room heroes + ~22 product shots + ~1 art/Print-Collection render. Bed / desk / art heroes double as shop-page + Look assets, so the spend is shared, not journal-only. At ~$0.10/image that's ~$3.50 in API — the real cost is product-research time.
+
+## Product-first gate (NON-NEGOTIABLE)
+Per room, in order: **source + browser-verify products → OWNER APPROVES the ASINs → render hero + product shots → update the journal cards (links + images) → publish pins → log in `PRODUCT-CHANGES-LOG.md`.** Never render before approval. Bar: **≥4.3★, ≥200 reviews, in stock, no "Frequently Returned" badge (screenshot-verified), product must match the picture.** Where nothing matches → the piece becomes a Look hero, not a forced swap.
+
+## Every image → a pin (the reuse)
+- **Room hero →** "Get the Look" board · destination = the journal page (`/journal/<slug>/?utm_source=pinterest&utm_medium=pin&utm_campaign=rebuild-<slug>`) · copy = the room narrative.
+- **Each product shot →** its category board (Bedroom, Lighting, Storage, Ceramics & Tableware, Outdoor & Wellness…) · destination = the journal page (drive to the *guide*, not straight to Amazon — guides convert better and keep us off Amazon's bare-link radar).
+- **Cadence (Days 43–90):** 3 quality pins/day ≈ 21/week (per `PLAYBOOK-AUDIT-CORRECTIONS.md` — quality over the old 5/day volume). A rebuilt journal yields ~6–8 pins; ~2 journals/week + recrops/seed pins from the PART 7 mix fills each week.
+
+## Schedule — rebuild all 13 in demand order (~2 journals/week, W7–W13 / Days 43–91)
+Demand order from `CONTENT-ROADMAP.md`: living → bedroom → kitchen/dining → storage → entryway → outdoor → office → bathroom.
+
+| Week (days) | Journals rehabbed | New images (hero + product shots) | Pins |
+|---|---|---|---|
+| W7 (43–49) | $300 living-room textiles · $250 bedside refresh | 2 heroes + ~4 (boucle lumbar; ring dish, alarm clock, sumi-art→Print) | ~8 |
+| W8 (50–56) | $400 small bedroom · budget Japandi bedroom | 2 heroes + ~0–1 (mostly reuse; low oak bed → **Sage Bedroom Look** hero) | ~6 + Sage Look |
+| W9 (57–63) | $500 dining set · $300 closet capsule | 2 heroes + ~7 (tablecloth, candle holders; storage cubes, rod organizer, dividers, motion light, shoe rack) | ~11 |
+| W10 (64–70) | $300 entryway · $200 entryway organizer | 2 heroes + ~4 (round mirror [shared], wall hooks, catch-all bowl; acacia tray → Look) | ~8 |
+| W11 (71–77) | $300 Sunday porch · $400 patio dining | 2 heroes + ~3 (cordless lantern [shared], outdoor throw, seat cushions) | ~7 |
+| W12 (78–84) | $400 home office · $400 reading nook | 2 heroes + ~2 (office task chair, faux olive; nook = Evelyn reuse) | ~6 |
+| W13 (85–91) | $250 bathroom · overflow + Print Collection | 1 hero + ~4 (bath mat, marble tray, robe, reed diffuser) + art renders | ~6 |
+
+(Exact per-card product/ASIN + new-vs-reuse: `PLACEHOLDER-AUDIT.md`.)
+
+## Day-43 head start (done this session, 2026-05-24)
+8 journal/shop products already verified + swapped — dining chairs `B00TV45VXC`, pampas `B0CMD7H1NQ`, speckled bowls `B0FFZ61S64`, waffle tea towels `B0866GB57R`, waffle bath towel set `B0F4TYC6JY`, walnut board `B09Y5VVRPT`, espresso set `B0GHPWL9GS`, seagrass baskets `B0DQTRHBFY`. Their products are locked; they need only their hero/product imagery in the relevant week.
+
+## W14+ — resume NEW journals
+After the 13 are editorial-grade, the original theme rotation (mudroom, nursery, wellness corner, craft room…) resumes from **W14**, built to this same hybrid standard from day one (hero scene + grounded product shots, every image a pin).
 
 ---
 
