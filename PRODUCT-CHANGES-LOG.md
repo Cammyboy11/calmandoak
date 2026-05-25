@@ -21,6 +21,20 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-24 — WEEK 8 start: The Sage Bedroom Look + shop additions
+
+**Shop additions (closing the "new products not in shop" gap):** the 6 W7 products are now on the shop CATEGORY pages — `shop/textiles` (added bouclé lumbar `B0DT6V6F33`; consolidated bouclé pillows→`B0F4K9SP6N` + linen curtains→`B0DK21FLCK` so the same image maps to one ASIN sitewide) and `shop/bedroom` (added glass carafe `B09B7989F4`, ring dish `B0CG3Q4H5Q`, donut vase `B0D6YRJLCP`). `shop/gift-guide` bouclé aligned to `B0F4K9SP6N`. Published (commit f965bca).
+
+**The Sage Bedroom Look (8th Look toward 100):**
+- New anchor product **verified**: Bedsure 100% Cotton Muslin Throw, 50×70, Sage Green (`B0CFTXJVPS`) — 4.7★ / 1,528 / $32.99 / In Stock / no returns flag (the owner's original W8 candidate).
+- 2 new hybrid images rendered (grounded, optimized): `assets/img/looks/the-sage-bedroom-hero.jpg` (+ `-card`) and `assets/img/products-cropped/w8-sage-muslin-throw.jpg`.
+- Built `shop/looks/the-sage-bedroom/` — 5 pieces: sage throw `B0CFTXJVPS` (new) + reused verified HAOBO oat headboard `B07ZRPL48D`, linen duvet `B01IMZLNBE`, fluted oak nightstand `B0DRHQ1FKP`, PoKat lamp pair `B0C4SZBN64`. BreadcrumbList + ItemList JSON-LD, hero, grid, cross-sell.
+- Looks index 7→8; sitemap +1; 2 pins queued (W8-1 hero, W8-2 throw).
+
+**Remaining W8 (minor):** small-bedroom tall-basket → reuse `B0DHG6PMNM` (link swap); low oak bed (×2 guides) stays a Look-batch placeholder (now answered by this Sage Bedroom Look); sumi-e art → Print Collection.
+
+---
+
 ### 2026-05-24 — Journal Editorial Rebuild · WEEK 7 sourcing (living-room textiles + bedside)
 
 Per playbook PART 7B. Owner-approved 6 products (≥4.3★/200+/in-stock/returns-flag screenshot-clear):

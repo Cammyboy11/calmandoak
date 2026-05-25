@@ -54,6 +54,24 @@ Six new editorial images from the living-room-textiles + bedside rebuild. Two ro
 
 ---
 
+## WEEK 8 — The Sage Bedroom Look (2026-05-24)
+
+**W8-1. The Sage Bedroom — Look hero (anchor)**
+- Image: `/assets/img/looks/the-sage-bedroom-hero.jpg`
+- Title: `The sage bedroom — get the look in five pieces`
+- Desc: `Sage as the accent, never the theme. One sage muslin throw over an oat-and-oak base — a linen headboard, washed linen bedding, a fluted oak nightstand, a warm ceramic lamp. The calmest way to add colour to a bedroom. #sagebedroom #bedroomdecor #getthelook #japandi #calmhome #affiliate`
+- URL: `https://calmandoak.com/shop/looks/the-sage-bedroom/?utm_source=pinterest&utm_medium=pin&utm_campaign=look-sage-bedroom`
+- Board: Get the Look (or Bedroom)
+
+**W8-2. Bedsure sage muslin throw (product)**
+- Image: `/assets/img/products-cropped/w8-sage-muslin-throw.jpg`
+- Title: `The one note of green — a sage muslin throw`
+- Desc: `A 4-layer cotton muslin gauze throw in soft sage, folded at the foot of the bed. The single piece of colour a calm bedroom needs — sage reads almost neutral against oat and oak. #sagegreen #throwblanket #bedroomdecor #japandi #neutralhome #affiliate`
+- URL: `https://calmandoak.com/shop/looks/the-sage-bedroom/?utm_source=pinterest&utm_medium=pin&utm_campaign=w8-sage-throw`
+- Board: Bedroom (or Textiles)
+
+---
+
 ## Room pillars
 
 **1. What is Japandi (mega-pillar)**
