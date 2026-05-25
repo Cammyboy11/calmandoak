@@ -21,6 +21,30 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-25 — PHASE A COMPLETE: all journal guides intact (outdoor + office + bedroom finish)
+
+Closed out the journal editorial rebuild. Every journal guide now passes: correct-category image on every card, every Amazon link carries `tag=calmandoak-20`, verified `/dp/` where a strong product exists, honest search-link fallback only where no review-bar match exists at the card's budget. Verification script: **175/175 image refs exist on disk; 0 untagged Amazon links.**
+
+**Outdoor guides** (`300-dollar-sunday-porch`, `400-dollar-patio-dining`) — commit `1c4e6fe`:
+- Cordless lantern (both guides) → **uuffoo `B0DG1F9DQ8`** (4.6★ / 513 / $52.99 / Amazon's Choice / in stock / ships from Amazon / no returns flag). New grounded image `day36-cordless-lantern-uuffoo.jpg` replaces a borrowed paper-lantern thumbnail.
+- Patio-dining chairs re-confirmed: **Christopher Knight Teague acacia, set of 2 `B07DQDMVJ6`** (4.4★ / 217 / $145.79 / Amazon's Choice / in stock).
+- Honest fallbacks (no match at budget/look): teak patio table (best ≤3.8★ or pre-order), teak folding chair, outdoor throw, outdoor seat cushions, stoneware planter (Kante is the look-match but $106 each breaks the $30 line). All retain correct-category images.
+
+**Home-office guide** (`400-dollar-home-office`) — commit `894d3c2`:
+- Linen task chair → **Furnimart `B0DPJX1CQL`** (4.5★ / 186 / Overall Pick / $159.99 / in stock / ships from Amazon). 186 reviews = slight relaxed-band exception (was the only cream-linen-task-chair match; Overall Pick). New image `day37-linen-task-chair-furnimart.jpg` (prev image was a wheel-less accent chair).
+- Desk pad → **YSAGi `B0BVVRCP3R`** (4.7★ / 20,770 / $13.99 / Amazon's Choice / khaki neutral).
+- Faux olive → **Briful `B0DGT98XT6`** (4.4★ / 192 / $25.99 / in stock). New image `day37-faux-olive-briful.jpg` (prev image wrongly showed planters).
+- Desk lamp re-confirmed: **Globe Electric x Novogratz `B08GDW5JYF`** (4.4★ / 547 / $52.04 / Amazon's Choice).
+- Oak writing desk remains honest search fallback. `japandi-home-office` is a pillar editorial guide (no product cards) — intact.
+
+**Bedroom guides** (`250-dollar-bedside-refresh`, `budget-japandi-bedroom`) — commit `c1b4cbf`:
+- Sumi-e art (both) → new single-print image `day38-sumi-e-print-framed.jpg` (oak frame, one ink brushstroke) fixing a gallery-wall mismatch vs the "single framed piece" copy. Doubles as **Print Collection hero art for Phase D.** Affiliate search-links retained.
+- Low oak bed (×2) remain honest fallbacks with correct low-oak-bed images (no 200-review Amazon match; Sage Bedroom Look is the curated alternative).
+
+**Next:** Phase B (re-verify all live `/dp/` ASINs sitewide), Phase C (email chain), Phase D (Print Collection + verticals).
+
+---
+
 ### 2026-05-24 — WEEK 8 start: The Sage Bedroom Look + shop additions
 
 **Shop additions (closing the "new products not in shop" gap):** the 6 W7 products are now on the shop CATEGORY pages — `shop/textiles` (added bouclé lumbar `B0DT6V6F33`; consolidated bouclé pillows→`B0F4K9SP6N` + linen curtains→`B0DK21FLCK` so the same image maps to one ASIN sitewide) and `shop/bedroom` (added glass carafe `B09B7989F4`, ring dish `B0CG3Q4H5Q`, donut vase `B0D6YRJLCP`). `shop/gift-guide` bouclé aligned to `B0F4K9SP6N`. Published (commit f965bca).
