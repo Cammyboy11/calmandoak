@@ -21,6 +21,25 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-26 — PHASE B-2 sweep COMPLETE + first fixes shipped (more in PHASE-B2-PUNCH-LIST.md)
+
+**The discovery:** Browser-re-verified all 86 unique ASINs sitewide (Phase B's first pass was static-only and missed product-label drift). **Real failure rate ~33% wrong-product + ~15% label-drift.** A 4-shop-page audit surfaced 20 ASINs that point to a different product than any label suggests, plus 21+ ASINs where one or more shop pages display the wrong name for an otherwise-correct link.
+
+**Why this happened (forensic):** When earlier sessions cloned shop-card structures and swapped only the `<a href>` ASIN, the visible `<h3 class="product-title">` and JSON-LD `name` (which sit OUTSIDE the anchor on shop pages) stayed pointing at the previous product. Journal cards (which wrap the label INSIDE the anchor) stayed mostly clean. Some other ASINs went bad organically — Amazon recycled the listing under a new merchant (B0DLP245LL was almost certainly the HAOBO oat-linen headboard when first sourced; today it shows a Huuger rustic-brown fabric dresser).
+
+**Shipped in this commit:**
+1. `journal/japandi-101/index.html` — corrected the §5 "Things that age well" product callout: link swapped from B0DLP245LL (wrong, fabric dresser) to B07ZRPL48D (the real HAOBO oat-linen headboard).
+2. `shop/bedroom/index.html` — removed the entire B0DLP245LL "Slatted oak dresser" card (real product was the off-brand Huuger fabric dresser). Both JSON-LD ListItem and visible `<article class="product">` deleted. Renumbered subsequent ListItem positions 11→10, 12→11, 13→12, 14→13. `numberOfItems` 14 → 13. Verification: 13/13 positions sequential, 13 visible cards, 0 stale references.
+
+**Created:** `PHASE-B2-PUNCH-LIST.md` — comprehensive remediation backlog organized in three priority tiers:
+- Tier 1: ~21 label-collision fixes across 12 shop pages (relabel only, no sourcing)
+- Tier 2: ~11 right-product-wrong-name relabels  
+- Tier 3: ~13 true wrong-product decisions (3-4 need replacement sourcing, the rest become relabels or honest deletes)
+
+**Status:** Phase B-2 sweep is **complete (data)**; remediation is **scheduled** (~3-5 hours focused work in next session). Until Tier 1 + Tier 2 are done, **no further article rebuilds should ship inline product callouts** — risk of adding more callouts pointing to silently-wrong products. The japandi-bedroom rebuild's Commit 2 (renders + callouts) is paused for exactly this reason.
+
+---
+
 ### 2026-05-26 — PHASE D COMPLETE (code side): Print Collection list-capture + verticals scoped
 
 **Code shipped:**
