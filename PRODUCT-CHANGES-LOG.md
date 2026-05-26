@@ -21,6 +21,24 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-26 — PHASE C COMPLETE (code side): email welcome chain wired + 3 emails drafted in MailerLite
+
+**Code shipped (no owner approval needed):**
+- `assets/js/main.js` — `ENDPOINT` set to the MailerLite classic JSONP URL `https://assets.mailerlite.com/jsonp/2375797/forms/188364767967053815/subscribe`. Submission uses `mode: 'no-cors'` form-urlencoded POST. The success UX (form locks, button → "Sent ✓", note replaces with inline PDF download link) is unchanged, so subscribers always get the PDF immediately even before the welcome email arrives.
+
+**Drafted in MailerLite via API (`update_automation_email`):**
+- Step 1 (immediate on group-join): subject `Your Japandi Starter Guide is here →` — delivers PDF + sets newsletter expectations.
+- Step 2 (day 2): subject `The five principles, and one room to start` — the five Japandi principles + links to the Sage Bedroom guide & Look.
+- Step 3 (day 5): subject `Whole rooms, made shoppable` — Looks page tour, points to 3 starter Looks + the index.
+
+All three pass the MailerLite content validator (subject ≤50 chars, plain text ≤1000 chars, links present, sender domain pre-authenticated). Sender: `hello@calmandoak.com`.
+
+**Created:** `EMAIL-WELCOME-CHAIN.md` — architecture diagram, the 3 drafts in full, and the 7-step **owner activation checklist** (read drafts → build HTML bodies → activate form → send test → real test signup → enable automation → verify deliverability).
+
+**Gated on owner (live-send gate):** the automation is still `enabled: false` and the form is still `active: false`. Until the owner completes the checklist, the form silently captures emails into MailerLite (queued double-opt-in pending) but sends nothing. Safe to deploy.
+
+---
+
 ### 2026-05-26 — PHASE B COMPLETE: infrastructure verification + cross-page sync
 
 **Static audit (4 scripts, all sitewide):**

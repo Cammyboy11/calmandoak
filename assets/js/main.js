@@ -26,13 +26,11 @@
   }
 
   // ----- Email capture -----
-  // To wire this up, set ENDPOINT to one of:
-  //   • Formspree:  https://formspree.io/f/YOUR_FORM_ID
-  //   • Buttondown: https://buttondown.email/api/emails/embed-subscribe/YOUR_USERNAME
-  //   • ConvertKit: https://api.convertkit.com/v3/forms/YOUR_FORM_ID/subscribe
-  //   • MailerLite: https://assets.mailerlite.com/jsonp/.../forms/.../subscribe
-  // While ENDPOINT is null, the form shows a friendly success message but does NOT send the email anywhere.
-  const ENDPOINT = null;
+  // Wired to MailerLite classic embedded form (account 2375797, form 188364767967053815).
+  // Owner must activate the form + enable the "Calm & Oak — Welcome Sequence" automation
+  // in the MailerLite dashboard before submissions trigger live emails. See EMAIL-WELCOME-CHAIN.md.
+  // The classic JSONP endpoint accepts cross-origin POST with form-urlencoded body in no-cors mode.
+  const ENDPOINT = 'https://assets.mailerlite.com/jsonp/2375797/forms/188364767967053815/subscribe';
 
   document.querySelectorAll('form[data-signup]').forEach((form) => {
     form.addEventListener('submit', async (e) => {
@@ -48,12 +46,14 @@
 
       try {
         if (ENDPOINT) {
-          const res = await fetch(ENDPOINT, {
+          // no-cors fire-and-forget: response is opaque, but the request reaches MailerLite.
+          // Failures (network down, endpoint misconfigured) surface as the catch branch.
+          await fetch(ENDPOINT, {
             method: 'POST',
-            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email })
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'fields[email]=' + encodeURIComponent(email) + '&ml-submit=1&anticsrf=true'
           });
-          if (!res.ok) throw new Error('Subscribe failed');
         }
         if (note) {
           note.innerHTML = 'Welcome. Your guide is ready &mdash; <a href="/assets/starter-guide/Japandi-Starter-Guide.pdf" download style="color:var(--terracotta);font-weight:500;border-bottom:1px solid var(--terracotta);">download the PDF here</a>. We&rsquo;ll also email it to you.';
