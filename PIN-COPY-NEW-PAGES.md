@@ -54,6 +54,20 @@ Six new editorial images from the living-room-textiles + bedside rebuild. Two ro
 
 ---
 
+## PIN 58 — ClosetMaid storage bench (2026-05-26)
+
+Pin 58 was orphaned (no HTML refs) because the original render (solid oak + tufted linen + leather-pull bins) had no Amazon match at the 4.3★/200+ bar. Sourced the strongest legitimate match — ClosetMaid 3258 Cubeicals 3-Cube Storage Bench, Natural Gray with Gray Cushion (`B075DQKLV4`, 4.4★/3,559, Overall Pick, $78.36, In Stock, no returns flag) — re-rendered the pin to faithfully show that product, and added the bench to `shop/storage/` (position 10). The pin now points to the storage page where the bench is an active product card.
+
+**Pin 58. The Japandi entryway, in one bench**
+- Image: `/assets/img/products-cropped/day12-pin58-storage-bench.jpg?v=2` (848×1264; full-res source in `Mockups/pin58-closetmaid-3258-storage-bench.jpg` for Pinterest upload)
+- Title: `The Japandi entryway, in one $78 bench`
+- Desc: `A driftwood-grey 3-cube bench with a soft cushion seat. Three open cubbies for the things that don't belong in the calm — daily shoes, the dog lead, a folded throw for cool mornings. Soft to sit on while you tie laces; quiet enough to disappear when you're not. ClosetMaid Cubeicals, 4.4★ / 3.5K reviews, under $80. #japandientryway #entrywaybench #storagebench #cubbystorage #smallentryway #japandi #affiliate`
+- URL: `https://calmandoak.com/shop/storage/?utm_source=pinterest&utm_medium=pin&utm_campaign=pin58-closetmaid-bench`
+- Board: Entryway (alt: Storage / Japandi Home)
+- Destination product (in `/shop/storage/` as position 10): ClosetMaid 3258 Cubeicals 3-Cube Storage Bench, Natural Gray with Gray Cushion · `B075DQKLV4` · 4.4★ / 3,559 reviews · $78.36 · In Stock · ships from Amazon · 30-day refund
+
+---
+
 ## WEEK 8 — The Sage Bedroom Look (2026-05-24)
 
 **W8-1. The Sage Bedroom — Look hero (anchor)**
