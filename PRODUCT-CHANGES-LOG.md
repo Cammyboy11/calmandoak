@@ -21,6 +21,20 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-26 — Pin 58 fix: matched to ClosetMaid 3258 Cubeicals + re-rendered
+
+**Issue:** Pin 58 (`assets/img/products-cropped/day12-pin58-storage-bench.jpg`) showed a premium Japandi entryway storage bench — solid-oak frame, channel-tufted oat-linen padded seat, three linen storage bins with leather pull tabs — that **had no Amazon match at our review bar**. Originally noted in `PLACEHOLDER-AUDIT.md` row 8 ("Slatted oak entryway bench... High-review option HomePop Malmo 4.6/1.7K is a CLOSED storage box; open-leg upholstered = low rev") and deferred to a Look-batch. The asset was orphaned across the site (no HTML refs).
+
+**Sourcing pass (2026-05-26):** Browser-searched Amazon across three queries — "oak entryway storage bench linen seat 3 baskets", "storage bench with cushion seat 3 cubby baskets entryway", "tufted linen entryway bench oak storage bins". Confirmed no direct match for the original premium pin (solid oak + channel-tufted linen + included fabric bins) exists at the ≥4.3★ / ≥200 reviews bar. Strongest legitimate functional match: **ClosetMaid 3258 Cubeicals 3-Cube Storage Bench, Natural Gray with Gray Cushion** (`B075DQKLV4`, 4.4★ / 3,559 reviews, Amazon's "Overall Pick" badge, $78.36, In Stock, ships from Amazon, 30-day refund/replacement, no "Frequently returned" flag).
+
+**Picture-product mismatch on the old render vs the ClosetMaid:** laminate-look driftwood-grey wood (not solid honey oak); flat soft grey cushion (not channel-tufted oat-linen); open cubbies (no fabric bins included). Per the picture-product rule, the pin had to be re-rendered to honestly show the product the reader would receive.
+
+**New render (`pin58-closetmaid-3258-storage-bench.jpg` in Mockups, resized over `day12-pin58-storage-bench.jpg` at 848×1264):** the ClosetMaid 3258 Cubeicals bench accurately depicted — driftwood-grey laminate finish, three open cubbies, flat soft grey cushion seat on top — placed in a Japandi entryway context with light oak floor, plaster wall with wainscoting, a single hand-thrown stoneware vase + eucalyptus sprig on the cushion corner, a folded oat-linen throw draped over one end, a pair of tan leather loafers beside on the floor, linen curtain edge with morning light. Aspirational Japandi styling around an authentically-depicted product.
+
+**Status:** pin 58 now matches ClosetMaid 3258 (`B075DQKLV4`) honestly. Original premium pin (solid oak + tufted linen + bins) retained at `C:\Users\CameronHayes\Pictures\Mockups\day12-pin58-storage-bench.jpg` as portfolio art / inspirational reference, not tied to any product link. Pinterest copy + upload pending (P3 task on the queue).
+
+---
+
 ### 2026-05-26 — PHASE B-2 punch-list execution (6 shop pages cleaned, 5 wrong-product cards removed)
 
 After re-verifying my own audit by spot-reading actual file labels (the inventory script over-reported "label conflicts" — most were script noise from adjacent shop-card markup), the **real cleanup scope is smaller and cleaner than the punch list initially suggested**.
