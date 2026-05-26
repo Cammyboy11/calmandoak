@@ -21,6 +21,31 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-26 — PHASE B-2 punch-list execution (6 shop pages cleaned, 5 wrong-product cards removed)
+
+After re-verifying my own audit by spot-reading actual file labels (the inventory script over-reported "label conflicts" — most were script noise from adjacent shop-card markup), the **real cleanup scope is smaller and cleaner than the punch list initially suggested**.
+
+**Shipped in this commit:**
+1. **shop/bedroom** — relabeled B0DHCYFKY7 from "Stonewashed linen pillowcase pair" to "Bedsure cotton-linen bed sheet set, queen" (the actual product); DELETED B0D2CZYGJ9 card (rattan-nightstand-pair link with an oak-round-nightstand image — irreconcilable picture/product mismatch). Renumbered positions, decremented `numberOfItems` 13 → 12. Verification: 12/12 sequential.
+2. **shop/japandi-kitchen** — relabeled B0FF4RNKM2 from "Stoneware pasta bowls, set of 4" to "AmorArc ceramic nesting mixing bowls, set of 3" (the actual product). Other suspected mismatches on this page (B0866GB57R, B09Y5VVRPT, B0CMWLVJGT, B0DBSKRVNL, B0GHPWL9GS) all verified as **already correctly labeled in-file** — earlier audit script noise.
+3. **shop/ceramics-tableware** — DELETED B08SW6BSKS "Wide speckled stoneware salad bowl" card (link goes to BILL.F acacia wooden salad bowl — material mismatch with the stoneware image and stoneware label). Renumbered, count 9 → 8.
+4. **shop/gift-guide** — DELETED B08SW6BSKS "Wide speckled stoneware salad bowl" card (same as above, second location). Renumbered, count 12 → 11.
+5. **shop/furniture** — DELETED B091MJ3CMM "Pre-washed Belgian linen sofa, cream" card (link goes to a slipcover, not a sofa). Renumbered, count 10 → 9. Shop/looks/quiet-living-room still has this slot — deferred pending real sofa-ASIN sourcing.
+6. **shop/textiles** — DELETED B0GGZF4ZRJ "Wool-jute rug, 5×7 cream" card (link goes to a generic 8×10 abstract rug — wrong size, wrong style). Renumbered, count 9 → 8.
+7. **journal/250-dollar-bathroom** — swapped B07Z6RZ6H5 (Madison Park plush white tufted bath mat) `/dp/` to an honest search-link (`s?k=cotton+waffle+bath+mat+oat+natural`) so readers searching for an oat waffle mat see real options, not the plush white mismatch.
+8. **journal/japandi-living-room** — corrected the KEMA jute braided rug callout from "5×7" to "8×10" (the actual product size).
+
+**Verification across all 6 modified shop pages:** 100% JSON-LD positions sequential, `numberOfItems` matches visible card count, zero stale references.
+
+**Deferred to a focused next session:**
+- `shop/looks/quiet-living-room` sofa slot (B091MJ3CMM) — needs a real Belgian linen sofa ASIN
+- `B0DRHQ1FKP` THKSHOUZ fluted oak pedestal — used in 9 files, 33 reviews, ship-blocked. Needs replacement
+- A handful of low-priority relabels that are not picture-product breaks
+
+**Phase B-2 status:** sweep ✅, critical wrong-product deletions ✅, mass-relabel pass (Tier 2) ✅ where verified. Lower-priority Tier 1 fixes (where audit script falsely flagged collisions) **not needed** based on per-file verification. The catalog is now substantially more honest. Resuming japandi-bedroom Commit 2 next.
+
+---
+
 ### 2026-05-26 — PHASE B-2 sweep COMPLETE + first fixes shipped (more in PHASE-B2-PUNCH-LIST.md)
 
 **The discovery:** Browser-re-verified all 86 unique ASINs sitewide (Phase B's first pass was static-only and missed product-label drift). **Real failure rate ~33% wrong-product + ~15% label-drift.** A 4-shop-page audit surfaced 20 ASINs that point to a different product than any label suggests, plus 21+ ASINs where one or more shop pages display the wrong name for an otherwise-correct link.
