@@ -21,6 +21,28 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-26 — PHASE B COMPLETE: infrastructure verification + cross-page sync
+
+**Static audit (4 scripts, all sitewide):**
+- **Inventory**: 72 HTML files; **86 unique ASINs / 304 `/dp/` link occurrences**; 66 honest `s?k=` search-link fallbacks across 38 unique queries.
+- **Image integrity**: **416/416 image refs sitewide resolve on disk** — zero broken images.
+- **Affiliate-tag integrity**: **219/219 Amazon links carry `tag=calmandoak-20`** — zero untagged.
+- **JSON-LD `ItemList` count integrity**: every shop + Look page has `numberOfItems` equal to `itemListElement.length` — zero drift.
+- **Cross-page ASIN → name conflicts (anchor-scoped)**: **0 true mismatches.** 9 ASINs show benign room-context wording on the same product (e.g., "Stonewashed linen curtain panels, pair" vs "Stonewashed linen curtain panel"; "Briful brown ceramic vase" vs "Briful brown ceramic centerpiece vase") — same product, contextual copy per guide. No swap needed.
+
+**Remaining `s?k=` honest fallbacks (66) — all categorized:**
+- 4× low oak bed, 3× oak writing desk, 2× teak patio table, 1× teak folding chair → no review-bar `/dp/` match exists at budget; Sage Bedroom Look is the curated alternative for beds.
+- 2× framed sumi-e print → routes to Print Collection (Phase D); single-print render already created (`day38-sumi-e-print-framed.jpg`).
+- ~10 outdoor accents (planter, throw, cushions, paper lantern, outdoor pillow, outdoor bench, meditation cushion) → no match at budget; Kante concrete planters look right but $106 break the $30 line.
+- ~6 ceramics / kitchen (salt cellar, donabe, breakfast tray) → category-specific misses already known.
+
+**Cross-page sync** — commit pending:
+- `shop/office`: linen task chair card + JSON-LD now point to **Furnimart `B0DPJX1CQL`** (4.5★/186/Overall Pick) with the new `day37-linen-task-chair-furnimart.jpg` — mirrors the Phase A journal swap.
+
+**Phase B verdict:** infrastructure complete and strong. No data bugs. All future swaps slot into the existing structure cleanly.
+
+---
+
 ### 2026-05-25 — PHASE A COMPLETE: all journal guides intact (outdoor + office + bedroom finish)
 
 Closed out the journal editorial rebuild. Every journal guide now passes: correct-category image on every card, every Amazon link carries `tag=calmandoak-20`, verified `/dp/` where a strong product exists, honest search-link fallback only where no review-bar match exists at the card's budget. Verification script: **175/175 image refs exist on disk; 0 untagged Amazon links.**
