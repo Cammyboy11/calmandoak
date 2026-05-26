@@ -26,11 +26,16 @@
   }
 
   // ----- Email capture -----
-  // Wired to MailerLite classic embedded form (account 2375797, form 188364767967053815).
-  // Owner must activate the form + enable the "Calm & Oak — Welcome Sequence" automation
-  // in the MailerLite dashboard before submissions trigger live emails. See EMAIL-WELCOME-CHAIN.md.
-  // The classic JSONP endpoint accepts cross-origin POST with form-urlencoded body in no-cors mode.
-  const ENDPOINT = 'https://assets.mailerlite.com/jsonp/2375797/forms/188364767967053815/subscribe';
+  // Wired to MailerLite classic embedded forms (account 2375797).
+  // Two lists, routed by the data-signup attribute value on each <form>:
+  //   • default (no value)  → "Calm & Oak — Starter Guide" group (PDF + welcome sequence)
+  //   • data-signup="prints" → "Calm & Oak — Print Launch List" group (launch announcement)
+  // Owner must activate each form + enable the linked automation in MailerLite before live sends.
+  // See EMAIL-WELCOME-CHAIN.md (starter) and PHASE-D-LAUNCH-PLAN.md (prints).
+  const ENDPOINTS = {
+    starter: 'https://assets.mailerlite.com/jsonp/2375797/forms/188364767967053815/subscribe',
+    prints:  'https://assets.mailerlite.com/jsonp/2375797/forms/188519737346491507/subscribe'
+  };
 
   document.querySelectorAll('form[data-signup]').forEach((form) => {
     form.addEventListener('submit', async (e) => {
@@ -41,14 +46,18 @@
       const button = form.querySelector('button');
       if (!email) return;
 
+      // Route by data-signup value: "prints" → print list; everything else → starter guide.
+      const listKey = form.dataset.signup === 'prints' ? 'prints' : 'starter';
+      const endpoint = ENDPOINTS[listKey];
+
       // UI: lock the form
       if (button) { button.disabled = true; button.textContent = 'Sending…'; }
 
       try {
-        if (ENDPOINT) {
+        if (endpoint) {
           // no-cors fire-and-forget: response is opaque, but the request reaches MailerLite.
           // Failures (network down, endpoint misconfigured) surface as the catch branch.
-          await fetch(ENDPOINT, {
+          await fetch(endpoint, {
             method: 'POST',
             mode: 'no-cors',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -56,20 +65,24 @@
           });
         }
         if (note) {
-          note.innerHTML = 'Welcome. Your guide is ready &mdash; <a href="/assets/starter-guide/Japandi-Starter-Guide.pdf" download style="color:var(--terracotta);font-weight:500;border-bottom:1px solid var(--terracotta);">download the PDF here</a>. We&rsquo;ll also email it to you.';
+          if (listKey === 'prints') {
+            note.innerHTML = 'You&rsquo;re on the list. We&rsquo;ll email you the moment the print shop opens &mdash; with a subscriber-only launch discount.';
+          } else {
+            note.innerHTML = 'Welcome. Your guide is ready &mdash; <a href="/assets/starter-guide/Japandi-Starter-Guide.pdf" download style="color:var(--terracotta);font-weight:500;border-bottom:1px solid var(--terracotta);">download the PDF here</a>. We&rsquo;ll also email it to you.';
+          }
           note.style.color = "var(--charcoal)";
         }
         form.reset();
         if (button) button.textContent = 'Sent ✓';
         // Track signup conversion if analytics are present
-        if (typeof window.plausible === 'function') window.plausible('Signup');
-        if (typeof window.gtag === 'function') window.gtag('event', 'signup', { method: 'email' });
+        if (typeof window.plausible === 'function') window.plausible('Signup', { props: { list: listKey } });
+        if (typeof window.gtag === 'function') window.gtag('event', 'signup', { method: 'email', list: listKey });
       } catch (err) {
         if (note) {
           note.textContent = "Something went wrong. Please try again, or email us directly.";
           note.style.color = "#c0392b";
         }
-        if (button) { button.disabled = false; button.textContent = 'Send the guide'; }
+        if (button) { button.disabled = false; button.textContent = listKey === 'prints' ? 'Join the list' : 'Send the guide'; }
       }
     });
   });

@@ -21,6 +21,28 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-05-26 — PHASE D COMPLETE (code side): Print Collection list-capture + verticals scoped
+
+**Code shipped:**
+- New MailerLite group **"Calm & Oak — Print Launch List"** (id `188519699722536376`).
+- New MailerLite embedded form **"Calm & Oak — Print Launch List Signup"** (id `188519737346491507`) linked to that group, double opt-in ON.
+- `assets/js/main.js` — now routes by `data-signup` attribute: default → starter-guide endpoint, `data-signup="prints"` → print-launch endpoint. Different success copy + button label per stream. Analytics events carry a `list` property so the two streams are separable.
+- `shop/prints/index.html` — both signup forms tagged `data-signup="prints"`. Lands subscribers into the new Print Launch List group, not the Starter Guide group.
+
+**Confirmed live (no changes needed):**
+- `/shop/prints/` landing page already complete — "Opening soon" hero, 4 print figures (Ensō, Two Woods, Single Stem, Serene Dawn) with `VisualArtwork` schema, "Made the way we'd want them" copy section, double signup CTA, sitewide footer link. All 4 print images render at magazine quality.
+- Print Collection in sitemap (`<priority>0.8</priority>`, weekly).
+
+**Created:** `PHASE-D-LAUNCH-PLAN.md` — owner playbook for the two Phase D priorities from `VERTICALS.md`:
+1. **Print Collection POD**: Gelato vs Printful vs Printify decision matrix → recommended **Gelato** (Hahnemühle papers, print-near-buyer, Etsy-ready). Pricing model (8×10 $28 → 18×24 $88, ~73% margins). 7-step owner checklist: sign up → upload 300 DPI files → order proofs → choose checkout (Etsy → Snipcart → Shopify in order of effort) → replace "opening soon" hero → build launch automation → send launch email.
+2. **Quiet Wardrobe (affiliate)**: page-build plan from the `/shop/textiles/` template, 8–10 product sourcing slate (linen popovers, linen pants, kimono robes, slippers, wool socks), Awin signup for higher fashion commission rates, journal cross-links, first wardrobe Look ("The Quiet Sunday").
+
+Plus longer-term scope for wellness, nursery, paid playbook, scent line, membership — each tagged with the gating decision.
+
+**Gated on owner (live-launch gate):** Gelato signup, print file uploads, checkout platform choice, Awin signup, wardrobe product approval, MailerLite form/automation activation. Until then, the prints page list-captures silently and the wardrobe vertical is documented but unbuilt.
+
+---
+
 ### 2026-05-26 — PHASE C COMPLETE (code side): email welcome chain wired + 3 emails drafted in MailerLite
 
 **Code shipped (no owner approval needed):**
