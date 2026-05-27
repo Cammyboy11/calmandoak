@@ -110,3 +110,6 @@ This protocol is the cheapest insurance against that failure. Five checks. Five 
 
 ## Revision history
 - 2026-05-26 — Initial protocol after user caught Sec 2/Sec 3 picture-product mismatches in budget-japandi-bedroom and §1 caption mismatch in japandi-outdoor.
+- 2026-05-27 — Added two new checks after overnight audit (see [PHASE-E-AUDIT-REPORT.md](./PHASE-E-AUDIT-REPORT.md)) caught 4 additional issues across japandi-101, japandi-living-room (×2), and japandi-bedroom:
+  - **Check 1a (sub-class):** When the linked product has a distinguishing feature (material, finish, type), verify the image depicts that *specific* feature. "Headboard" is not enough — "upholstered headboard" vs "oak headboard" must match.
+  - **Check 6 (cross-article ASIN consistency):** When the same ASIN appears in multiple articles, the image-product match must hold in each. Don't assume a verified pairing transfers from one article to another.
