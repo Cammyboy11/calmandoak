@@ -32,3 +32,5 @@ desktop.ini
 package-lock.json
 ACTION PLAN*.md.tmp
 .claude/
+_tmp-serve.js
+assets/img/products-raw/
