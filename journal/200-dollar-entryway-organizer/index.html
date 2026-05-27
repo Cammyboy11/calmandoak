@@ -94,13 +94,7 @@
 <style>
 .deck { font-family: var(--font-serif); font-size: 1.1rem; font-style: italic; color: var(--ink-soft); border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2rem; line-height: 1.6; }
 .section-divider { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0 2rem; max-width: 60px; margin-left: 0; }
-.section-product { display: flex; align-items: center; gap: 1rem; background: var(--cream); padding: 0.85rem 1rem; border-radius: var(--radius-md); text-decoration: none; color: inherit; margin: 1.25rem 0; border: 1px solid var(--line); transition: border-color 0.2s; }
-.section-product:hover { border-color: var(--terracotta); }
-.section-product-img { margin: 0; flex-shrink: 0; }
-.section-product-img img { width: 70px; height: 70px; object-fit: cover; border-radius: var(--radius-sm); display:block; }
-.section-product-meta { display: flex; flex-direction: column; gap: 0.15rem; }
-.section-product-name { font-family: var(--font-sans); font-weight: 500; font-size: 0.95rem; color: var(--ink); }
-.section-product-cta { font-family: var(--font-sans); font-size: 0.8rem; color: var(--terracotta); letter-spacing: 0.04em; }
+/* Inline CSS for .section-product intentionally minimal -- inherits .section-product / .section-product-img / .section-product-meta from global stylesheet to render full-width product card with large product image (Kinfolk/Cereal pattern). */
 .editorial-aside { background: #FFFCF6; border-left: 3px solid var(--gold); padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
 .editorial-aside .aside-label { font-family: var(--font-sans); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-deep); display: block; margin-bottom: 0.4rem; }
 .editorial-aside p { margin: 0; font-style: italic; color: var(--ink-soft); }
