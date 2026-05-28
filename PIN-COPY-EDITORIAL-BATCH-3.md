@@ -178,5 +178,6 @@ A single wood tray turns counter clutter into a vignette — oil, salt, a cloth,
 
 ## Notes
 - Same viral treatment as Batch 2 (white serif + terracotta underline). Font: Times New Roman (closest system match to Cormorant Garamond).
+- **Title placement is varied for board rhythm:** most sit bottom-left (the proven viral spot); slow-porch, quiet-nightstand, one-stem and warm-not-full are bottom-centre; right-sofa and wall-rule are top-left. The copy/links are unaffected.
 - All 13 target pages are live and finalized.
 - 13 pins at ~2–3/day covers tomorrow through the weekend.
