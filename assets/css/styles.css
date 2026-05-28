@@ -417,6 +417,9 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
 .shop-filter-empty { text-align: center; color: var(--graphite); margin: 2rem 0; }
 .product-grid .product.is-hidden { display: none; }
 @media (max-width: 640px){ .shop-filter { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; justify-content: flex-start; } .shop-filter::-webkit-scrollbar{ display:none; } }
+/* Featured pick (lead product per category) */
+.product--featured { box-shadow: 0 0 0 2px var(--terracotta); border-radius: var(--radius-lg); overflow: hidden; }
+.product--featured .product-img::after { content: "Our pick"; position: absolute; top: 12px; left: 12px; background: var(--terracotta); color: #fff; font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 5px 11px; border-radius: 999px; font-weight: 600; }
 .product-cta {
   margin-top: auto;
   font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
