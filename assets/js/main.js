@@ -135,11 +135,15 @@
       });
     });
 
-    // Deep-link support: /journal/#room-guides pre-selects that category.
-    const initial = (location.hash || '').replace('#', '');
-    if (initial && chips.some((c) => c.getAttribute('data-filter') === initial)) {
-      apply(initial);
-    }
+    // Deep-link support: /journal/#room-guides pre-selects that category,
+    // both on fresh load and on same-page hash navigation (footer/breadcrumb links).
+    const applyFromHash = () => {
+      const h = (location.hash || '').replace('#', '');
+      if (h && chips.some((c) => c.getAttribute('data-filter') === h)) apply(h);
+      else if (!h) apply('all');
+    };
+    applyFromHash();
+    window.addEventListener('hashchange', applyFromHash);
   }
 
   // ----- Year stamp -----
