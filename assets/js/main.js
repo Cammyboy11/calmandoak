@@ -102,6 +102,46 @@
     }
   });
 
+  // ----- Journal category filter (Phase F) -----
+  // Progressive enhancement: with JS off, every card stays visible.
+  const filterBar = document.querySelector('.journal-filter');
+  const grid = document.getElementById('journal-grid');
+  if (filterBar && grid) {
+    const chips = Array.from(filterBar.querySelectorAll('.chip'));
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    const emptyMsg = document.querySelector('.journal-filter-empty');
+
+    const apply = (filter) => {
+      let shown = 0;
+      cards.forEach((card) => {
+        const match = filter === 'all' || card.getAttribute('data-category') === filter;
+        card.classList.toggle('is-hidden', !match);
+        if (match) shown++;
+      });
+      chips.forEach((c) => {
+        const active = c.getAttribute('data-filter') === filter;
+        c.classList.toggle('is-active', active);
+        c.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      if (emptyMsg) emptyMsg.hidden = shown !== 0;
+    };
+
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const filter = chip.getAttribute('data-filter');
+        apply(filter);
+        const hash = filter === 'all' ? ' ' : '#' + filter;
+        history.replaceState(null, '', hash);
+      });
+    });
+
+    // Deep-link support: /journal/#room-guides pre-selects that category.
+    const initial = (location.hash || '').replace('#', '');
+    if (initial && chips.some((c) => c.getAttribute('data-filter') === initial)) {
+      apply(initial);
+    }
+  }
+
   // ----- Year stamp -----
   const y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
