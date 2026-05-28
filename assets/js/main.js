@@ -146,6 +146,22 @@
     window.addEventListener('hashchange', applyFromHash);
   }
 
+  // ----- Shop category type filter (Phase G Tier 2) -----
+  document.querySelectorAll('.shop-filter').forEach((bar) => {
+    const grid = bar.parentElement.querySelector('.product-grid');
+    if (!grid) return;
+    const chips = Array.from(bar.querySelectorAll('.chip'));
+    const cards = Array.from(grid.querySelectorAll('.product'));
+    const empty = bar.parentElement.querySelector('.shop-filter-empty');
+    const apply = (f) => {
+      let shown = 0;
+      cards.forEach((c) => { const m = f === 'all' || c.getAttribute('data-cat') === f; c.classList.toggle('is-hidden', !m); if (m) shown++; });
+      chips.forEach((c) => { const a = c.getAttribute('data-filter') === f; c.classList.toggle('is-active', a); c.setAttribute('aria-selected', a ? 'true' : 'false'); });
+      if (empty) empty.hidden = shown !== 0;
+    };
+    chips.forEach((c) => c.addEventListener('click', () => apply(c.getAttribute('data-filter'))));
+  });
+
   // ----- Year stamp -----
   const y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();

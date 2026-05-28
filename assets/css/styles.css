@@ -412,6 +412,11 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
 .product-price .tier-note { color: var(--graphite); }
 .product-why { font-size: 0.82rem; color: var(--graphite); line-height: 1.5; margin: 0 0 1rem; }
 .product-why::before { content: "Why we picked it — "; color: var(--terracotta); font-weight: 500; }
+/* Shop category filter (reuses .chip styling) */
+.shop-filter { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin: 0 auto 1.8rem; }
+.shop-filter-empty { text-align: center; color: var(--graphite); margin: 2rem 0; }
+.product-grid .product.is-hidden { display: none; }
+@media (max-width: 640px){ .shop-filter { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; justify-content: flex-start; } .shop-filter::-webkit-scrollbar{ display:none; } }
 .product-cta {
   margin-top: auto;
   font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;

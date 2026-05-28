@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/styles.css?v=10" />
+<link rel="stylesheet" href="/assets/css/styles.css?v=11" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=4" />
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
@@ -277,71 +277,79 @@
         <a href="/shop/looks/">Looks</a>
       </nav>
       <p class="shop-guide" style="text-align:center; margin:1.1rem auto 0; font-size:0.9rem; color:var(--graphite);">Read the guide: <a href="/journal/japandi-bedroom/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">The Japandi bedroom &rarr;</a> &middot; <a href="/journal/budget-japandi-bedroom/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">A bedroom under $500 &rarr;</a></p>
-            <div class="tags" style="justify-content:center;">
-        <span class="tag">Linen</span><span class="tag">Oak</span><span class="tag">Paper</span><span class="tag">Stoneware</span><span class="tag">Boucle</span>
-      </div>
     </div>
   </section>
 
   <section class="section" style="padding-top: 0;">
     <div class="wrap">
+      <div class="shop-filter" role="tablist" aria-label="Filter by material">
+        <button type="button" class="chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="chip-count">12</span></button>
+        <button type="button" class="chip" data-filter="wool" role="tab" aria-selected="false">Wool & Bouclé <span class="chip-count">2</span></button>
+        <button type="button" class="chip" data-filter="ceramic" role="tab" aria-selected="false">Ceramic <span class="chip-count">3</span></button>
+        <button type="button" class="chip" data-filter="botanical" role="tab" aria-selected="false">Botanical <span class="chip-count">1</span></button>
+        <button type="button" class="chip" data-filter="wood" role="tab" aria-selected="false">Wood <span class="chip-count">1</span></button>
+        <button type="button" class="chip" data-filter="linen" role="tab" aria-selected="false">Linen <span class="chip-count">3</span></button>
+        <button type="button" class="chip" data-filter="metal" role="tab" aria-selected="false">Metal <span class="chip-count">1</span></button>
+        <button type="button" class="chip" data-filter="glass" role="tab" aria-selected="false">Glass <span class="chip-count">1</span></button>
+      </div>
+      <p class="shop-filter-empty" hidden>No items in this material.</p>
       <div class="product-grid">
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C58R2VBH.jpg?v=2" alt="Wool jute runner, neutral" loading="lazy" width="848" height="1264" /></div><div class="product-body">
-          <span class="product-cat">Rug · Pin 24 · 1</span><h3 class="product-title">Wool jute runner, neutral</h3><p class="product-price"><span class="tier">$</span></p>
+        <article class="product" data-cat="wool"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C58R2VBH.jpg?v=2" alt="Wool jute runner, neutral" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+          <span class="product-cat">Rug</span><h3 class="product-title">Wool jute runner, neutral</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Warm golden-tan jute — the honest base layer under most Japandi rooms.</p>
           <a href="https://www.amazon.com/dp/B0C58R2VBH?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C4SZBN64.jpg?v=2" alt="PoKat ceramic bedside lamp, pair" loading="lazy" width="848" height="1264" /></div><div class="product-body">
-          <span class="product-cat">Lighting · Pin 24 · 2</span><h3 class="product-title">PoKat ceramic bedside lamp, pair</h3><p class="product-price"><span class="tier">$$</span></p>
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C4SZBN64.jpg?v=2" alt="PoKat ceramic bedside lamp, pair" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+          <span class="product-cat">Lighting</span><h3 class="product-title">PoKat ceramic bedside lamp, pair</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A matched pair, warm 2700K — both nightstands lit at once.</p>
           <a href="https://www.amazon.com/dp/B0C4SZBN64?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B08F48LR45.jpg?v=2" alt="Longhui cream cable-knit throw" loading="lazy" width="848" height="1264" /></div><div class="product-body">
-          <span class="product-cat">Throw · Pin 24 · 3</span><h3 class="product-title">Longhui cream cable-knit throw</h3><p class="product-price"><span class="tier">$</span></p>
+        <article class="product" data-cat="wool"><div class="product-img"><img src="/assets/img/products-cropped/p-B08F48LR45.jpg?v=2" alt="Longhui cream cable-knit throw" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+          <span class="product-cat">Throw</span><h3 class="product-title">Longhui cream cable-knit throw</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Heavy cream cable-knit — warmth on a sofa without adding colour.</p>
           <a href="https://www.amazon.com/dp/B08F48LR45?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CMD7H1NQ.jpg?v=2" alt="Tall dried pampas grass stems in a tall vessel" loading="lazy" width="848" height="1264" /></div><div class="product-body">
-          <span class="product-cat">Botanical · Pin 24 · 4</span><h3 class="product-title">Tall dried pampas, set of 3</h3><p class="product-price"><span class="tier">$</span></p>
+        <article class="product" data-cat="botanical"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CMD7H1NQ.jpg?v=2" alt="Tall dried pampas grass stems in a tall vessel" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+          <span class="product-cat">Botanical</span><h3 class="product-title">Tall dried pampas, set of 3</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">One seasonal gesture that lasts years and never wilts.</p>
           <a href="https://www.amazon.com/dp/B0CMD7H1NQ?tag=calmandoak-20" data-fallback-search="tall dried pampas grass stems set" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day41-pin204-oak-bed-low.jpg?v=4" alt="Low oak platform bed, queen" loading="lazy" width="848" height="1264" /></div><div class="product-body">
-          <span class="product-cat">Bed · Pin 24 · 5</span><h3 class="product-title">Low oak platform bed, queen</h3><p class="product-price"><span class="tier">$$$</span></p>
+        <article class="product" data-cat="wood"><div class="product-img"><img src="/assets/img/products-cropped/day41-pin204-oak-bed-low.jpg?v=4" alt="Low oak platform bed, queen" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+          <span class="product-cat">Bed</span><h3 class="product-title">Low oak platform bed, queen</h3><p class="product-price"><span class="tier">$$$</span></p>
           <p class="product-why">A low solid-oak frame — the calm centre of a Japandi bedroom.</p>
           <a href="https://www.amazon.com/s?k=low+oak+bed+frame+scandinavian+platform+queen&tag=calmandoak-20" data-fallback-search="low oak bed frame scandinavian platform queen" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B01IMZLNBE.jpg?v=2" alt="Simple&Opulence linen duvet cover, queen" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B01IMZLNBE.jpg?v=2" alt="Simple&Opulence linen duvet cover, queen" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Bedding</span><h3 class="product-title">Simple&Opulence linen duvet cover, queen</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Stonewashed European linen that only softens for a decade.</p>
           <a href="https://www.amazon.com/dp/B01IMZLNBE?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DHCYFKY7.jpg?v=2" alt="Bedsure cotton-linen bed sheet set on a styled bed" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DHCYFKY7.jpg?v=2" alt="Bedsure cotton-linen bed sheet set on a styled bed" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Bedding</span><h3 class="product-title">Bedsure cotton-linen bed sheet set, queen</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A cotton-linen weave — crisp in summer, softer after every wash.</p>
           <a href="https://www.amazon.com/dp/B0DHCYFKY7?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B07ZRPL48D.jpg?v=2" alt="HAOBO oat linen upholstered headboard, queen — tall oatmeal vertical-channel headboard on a low oak platform bed in a bright airy bedroom" loading="lazy" width="848" height="936" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B07ZRPL48D.jpg?v=2" alt="HAOBO oat linen upholstered headboard, queen — tall oatmeal vertical-channel headboard on a low oak platform bed in a bright airy bedroom" loading="lazy" width="848" height="936" /></div><div class="product-body">
           <span class="product-cat">Headboard</span><h3 class="product-title">HAOBO oat linen upholstered headboard, queen</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">An oat-linen headboard that ships flat for a low, calm bed.</p>
           <a href="https://www.amazon.com/dp/B07ZRPL48D?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B093GRTYD9.jpg?v=2" alt="Qingmiao gold-column table lamps, set of two — matched pair of brushed-gold column lamps with cream linen drum shades flanking a bed, warm halos on the wall" loading="lazy" width="848" height="910" /></div><div class="product-body">
+        <article class="product" data-cat="metal"><div class="product-img"><img src="/assets/img/products-cropped/p-B093GRTYD9.jpg?v=2" alt="Qingmiao gold-column table lamps, set of two — matched pair of brushed-gold column lamps with cream linen drum shades flanking a bed, warm halos on the wall" loading="lazy" width="848" height="910" /></div><div class="product-body">
           <span class="product-cat">Bedside pair</span><h3 class="product-title">Qingmiao gold-column table lamps, set of two</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A warm-metal pair that lifts a bedside without shouting.</p>
           <a href="https://www.amazon.com/dp/B093GRTYD9?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B09B7989F4.jpg?v=2" alt="A clear glass bedside water carafe with a tumbler resting on top as a lid, on an oak nightstand" loading="lazy" width="848" height="1272" /></div><div class="product-body">
+        <article class="product" data-cat="glass"><div class="product-img"><img src="/assets/img/products-cropped/p-B09B7989F4.jpg?v=2" alt="A clear glass bedside water carafe with a tumbler resting on top as a lid, on an oak nightstand" loading="lazy" width="848" height="1272" /></div><div class="product-body">
           <span class="product-cat">Carafe</span><h3 class="product-title">Glass water carafe with tumbler</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Reads as one object on the nightstand — the small bedtime ritual.</p>
           <a href="https://www.amazon.com/dp/B09B7989F4?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CG3Q4H5Q.jpg?v=2" alt="A cream cloud-shaped ceramic ring dish holding a gold ring on an oak nightstand" loading="lazy" width="848" height="1272" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CG3Q4H5Q.jpg?v=2" alt="A cream cloud-shaped ceramic ring dish holding a gold ring on an oak nightstand" loading="lazy" width="848" height="1272" /></div><div class="product-body">
           <span class="product-cat">Ring dish</span><h3 class="product-title">Cloud ceramic ring dish</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Keeps rings off the sheets and the nightstand calm.</p>
           <a href="https://www.amazon.com/dp/B0CG3Q4H5Q?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0D6YRJLCP.jpg?v=2" alt="A matte cream ceramic hug-donut bud vase holding a single dried pampas stem" loading="lazy" width="848" height="1272" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0D6YRJLCP.jpg?v=2" alt="A matte cream ceramic hug-donut bud vase holding a single dried pampas stem" loading="lazy" width="848" height="1272" /></div><div class="product-body">
           <span class="product-cat">Bud vase</span><h3 class="product-title">Matte ceramic hug-donut bud vase</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A sculptural matte vessel built for a single stem.</p>
           <a href="https://www.amazon.com/dp/B0D6YRJLCP?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
@@ -426,6 +434,6 @@
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>

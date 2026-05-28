@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/styles.css?v=10" />
+<link rel="stylesheet" href="/assets/css/styles.css?v=11" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=4" />
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
@@ -276,69 +276,78 @@
         <a href="/shop/looks/">Looks</a>
       </nav>
       <p class="shop-guide" style="text-align:center; margin:1.1rem auto 0; font-size:0.9rem; color:var(--graphite);">Read the guide: <a href="/journal/lighting-the-five-pm-room/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">The 5pm room: lighting guide &rarr;</a></p>
-            <div class="tags" style="justify-content:center;"><span class="tag">Paper</span><span class="tag">Brass</span><span class="tag">Warm light</span><span class="tag">Linen shade</span></div>
     </div>
   </section>
 
   <section class="section" style="padding-top: 0;">
     <div class="wrap">
+      <div class="shop-filter" role="tablist" aria-label="Filter by material">
+        <button type="button" class="chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="chip-count">12</span></button>
+        <button type="button" class="chip" data-filter="woven" role="tab" aria-selected="false">Woven <span class="chip-count">4</span></button>
+        <button type="button" class="chip" data-filter="other" role="tab" aria-selected="false">Other <span class="chip-count">2</span></button>
+        <button type="button" class="chip" data-filter="ceramic" role="tab" aria-selected="false">Ceramic <span class="chip-count">1</span></button>
+        <button type="button" class="chip" data-filter="metal" role="tab" aria-selected="false">Metal <span class="chip-count">1</span></button>
+        <button type="button" class="chip" data-filter="paper" role="tab" aria-selected="false">Paper <span class="chip-count">3</span></button>
+        <button type="button" class="chip" data-filter="linen" role="tab" aria-selected="false">Linen <span class="chip-count">1</span></button>
+      </div>
+      <p class="shop-filter-empty" hidden>No items in this material.</p>
       <div class="product-grid">
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FXVM8YJ1.jpg?v=2" alt="Booniture 15 inch bamboo pumpkin pendant light with linen inner shade" loading="lazy" width="848" height="885" /></div><div class="product-body">
+        <article class="product" data-cat="woven"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FXVM8YJ1.jpg?v=2" alt="Booniture 15 inch bamboo pumpkin pendant light with linen inner shade" loading="lazy" width="848" height="885" /></div><div class="product-body">
           <span class="product-cat">Pendant</span><h3 class="product-title">Booniture 15" bamboo pumpkin pendant</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A woven pumpkin pendant — warm dappled light over an island.</p>
           <a href="https://www.amazon.com/dp/B0FXVM8YJ1?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0D7BWWVC7.jpg?v=2" alt="LAMSU boho tripod floor lamp" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="other"><div class="product-img"><img src="/assets/img/products-cropped/p-B0D7BWWVC7.jpg?v=2" alt="LAMSU boho tripod floor lamp" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Floor lamp</span><h3 class="product-title">LAMSU boho tripod floor lamp</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Rattan-and-wood tripod — a sculptural reading light.</p>
           <a href="https://www.amazon.com/dp/B0D7BWWVC7?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B07T81461V.jpg?v=2" alt="JONATHAN Y hyacinth basket table lamp" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="woven"><div class="product-img"><img src="/assets/img/products-cropped/p-B07T81461V.jpg?v=2" alt="JONATHAN Y hyacinth basket table lamp" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Table lamp</span><h3 class="product-title">JONATHAN Y hyacinth basket table lamp</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A woven hyacinth base and linen shade — warm light, coastal calm.</p>
           <a href="https://www.amazon.com/dp/B07T81461V?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C4SZBN64.jpg?v=2" alt="PoKat ceramic bedside lamp, pair" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C4SZBN64.jpg?v=2" alt="PoKat ceramic bedside lamp, pair" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Bedside</span><h3 class="product-title">PoKat ceramic bedside lamp, pair</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A matched pair, warm 2700K — both nightstands lit at once.</p>
           <a href="https://www.amazon.com/dp/B0C4SZBN64?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B08GDW5JYF.jpg?v=2" alt="Sculptural brass desk lamp, warm light" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="metal"><div class="product-img"><img src="/assets/img/products-cropped/p-B08GDW5JYF.jpg?v=2" alt="Sculptural brass desk lamp, warm light" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Desk</span><h3 class="product-title">Sculptural brass desk lamp, warm light</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Aged brass, warm bulb — the lamp that makes a desk a moment.</p>
           <a href="https://www.amazon.com/dp/B08GDW5JYF?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day10-pin46-paper-lanterns.jpg?v=4" alt="Battery LED paper lantern, set of 3" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="paper"><div class="product-img"><img src="/assets/img/products-cropped/day10-pin46-paper-lanterns.jpg?v=4" alt="Battery LED paper lantern, set of 3" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Lantern</span><h3 class="product-title">Battery LED paper lantern, set of 3</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Warm paper glow — the softest light a room can hold.</p>
           <a href="https://www.amazon.com/s?k=battery+LED+paper+lantern+set+indoor+outdoor&tag=calmandoak-20" data-fallback-search="battery LED paper lantern set indoor outdoor" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day35-pin174-paper-lantern-glow.jpg?v=8" alt="A single hanging paper lantern with a warm-glow bulb inside" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="paper"><div class="product-img"><img src="/assets/img/products-cropped/day35-pin174-paper-lantern-glow.jpg?v=8" alt="A single hanging paper lantern with a warm-glow bulb inside" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Lantern</span><h3 class="product-title">Hanging paper lantern with warm-glow bulb</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Warm paper glow — the softest light a room can hold.</p>
           <a href="https://www.amazon.com/s?k=hanging+paper+lantern+warm+white+led+bulb&tag=calmandoak-20" data-fallback-search="hanging paper lantern warm white led bulb" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DNZ6Q7CD.jpg?v=2" alt="Plug-in linen wall sconces, set of two — tall half-drum cylinder shades, flush wall mount, warm bilateral glow" loading="lazy" width="848" height="885" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DNZ6Q7CD.jpg?v=2" alt="Plug-in linen wall sconces, set of two — tall half-drum cylinder shades, flush wall mount, warm bilateral glow" loading="lazy" width="848" height="885" /></div><div class="product-body">
           <span class="product-cat">Sconce</span><h3 class="product-title">Plug-in linen wall sconces, set of two</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A plug-in pair that frees the nightstand; warm and dimmable.</p>
           <a href="https://www.amazon.com/dp/B0DNZ6Q7CD?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DD8CZ28Q.jpg?v=2" alt="Nogy Akari-style rice paper floor lamp — pumpkin-shaped lantern shade with terracotta band, oak ring, and black metal tripod with integrated wood shelf" loading="lazy" width="848" height="885" /></div><div class="product-body">
+        <article class="product" data-cat="paper"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DD8CZ28Q.jpg?v=2" alt="Nogy Akari-style rice paper floor lamp — pumpkin-shaped lantern shade with terracotta band, oak ring, and black metal tripod with integrated wood shelf" loading="lazy" width="848" height="885" /></div><div class="product-body">
           <span class="product-cat">Floor lamp</span><h3 class="product-title">Nogy Akari-style rice paper floor lamp</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Akari-style paper — the softest warm pool in any room.</p>
           <a href="https://www.amazon.com/dp/B0DD8CZ28Q?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C5R7HFRW.jpg?v=2" alt="Yolsunes white wicker dome pendant lights, set of two — pair of open-weave rattan basket shades throwing warm woven shadows over an oak dining table" loading="lazy" width="848" height="797" /></div><div class="product-body">
+        <article class="product" data-cat="woven"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C5R7HFRW.jpg?v=2" alt="Yolsunes white wicker dome pendant lights, set of two — pair of open-weave rattan basket shades throwing warm woven shadows over an oak dining table" loading="lazy" width="848" height="797" /></div><div class="product-body">
           <span class="product-cat">Pendant pair</span><h3 class="product-title">Yolsunes white wicker dome pendants, set of two</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A woven pair for an island or a hallway.</p>
           <a href="https://www.amazon.com/dp/B0C5R7HFRW?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C4XTSZYX.jpg?v=2" alt="Hchunqjor woven bamboo dome dining pendant — large natural bamboo open-lattice dome throwing diamond-pattern warm light over an oak dining table" loading="lazy" width="848" height="910" /></div><div class="product-body">
+        <article class="product" data-cat="woven"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C4XTSZYX.jpg?v=2" alt="Hchunqjor woven bamboo dome dining pendant — large natural bamboo open-lattice dome throwing diamond-pattern warm light over an oak dining table" loading="lazy" width="848" height="910" /></div><div class="product-body">
           <span class="product-cat">Dining pendant</span><h3 class="product-title">Hchunqjor woven bamboo dome pendant, 17.8"</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">One woven dome — the dining light that does the work.</p>
           <a href="https://www.amazon.com/dp/B0C4XTSZYX?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B09BB5MX6B.jpg?v=2" alt="CADUKE plug-in swing-arm wall sconces, set of two — dark-metal arms with cream linen drum shades flanking framed art over an oak console" loading="lazy" width="848" height="885" /></div><div class="product-body">
+        <article class="product" data-cat="other"><div class="product-img"><img src="/assets/img/products-cropped/p-B09BB5MX6B.jpg?v=2" alt="CADUKE plug-in swing-arm wall sconces, set of two — dark-metal arms with cream linen drum shades flanking framed art over an oak console" loading="lazy" width="848" height="885" /></div><div class="product-body">
           <span class="product-cat">Plug-in sconce pair</span><h3 class="product-title">CADUKE plug-in swing-arm wall sconces, set of two</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A plug-in swing-arm pair — adjustable warm light, no wiring.</p>
           <a href="https://www.amazon.com/dp/B09BB5MX6B?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
@@ -421,6 +430,6 @@
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>

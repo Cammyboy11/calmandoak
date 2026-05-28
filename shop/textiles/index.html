@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/styles.css?v=10" />
+<link rel="stylesheet" href="/assets/css/styles.css?v=11" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=4" />
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
@@ -220,49 +220,55 @@
         <a href="/shop/looks/">Looks</a>
       </nav>
       <p class="shop-guide" style="text-align:center; margin:1.1rem auto 0; font-size:0.9rem; color:var(--graphite);">Read the guide: <a href="/journal/layering-textiles/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">How to layer textiles &rarr;</a> &middot; <a href="/journal/linen-care/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">Linen care &rarr;</a></p>
-            <div class="tags" style="justify-content:center;"><span class="tag">Linen</span><span class="tag">Wool</span><span class="tag">Jute</span><span class="tag">Boucle</span></div>
     </div>
   </section>
 
   <section class="section" style="padding-top: 0;">
     <div class="wrap">
+      <div class="shop-filter" role="tablist" aria-label="Filter by material">
+        <button type="button" class="chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="chip-count">8</span></button>
+        <button type="button" class="chip" data-filter="linen" role="tab" aria-selected="false">Linen <span class="chip-count">4</span></button>
+        <button type="button" class="chip" data-filter="wool" role="tab" aria-selected="false">Wool & Bouclé <span class="chip-count">3</span></button>
+        <button type="button" class="chip" data-filter="woven" role="tab" aria-selected="false">Woven <span class="chip-count">1</span></button>
+      </div>
+      <p class="shop-filter-empty" hidden>No items in this material.</p>
       <div class="product-grid">
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B01IMZLNBE.jpg?v=2" alt="Simple&Opulence linen duvet cover, queen" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B01IMZLNBE.jpg?v=2" alt="Simple&Opulence linen duvet cover, queen" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Duvet</span><h3 class="product-title">Simple&Opulence linen duvet cover, queen</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Stonewashed European linen that only softens for a decade.</p>
           <a href="https://www.amazon.com/dp/B01IMZLNBE?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FLPQMKKC.jpg?v=2" alt="Stonewashed linen pillowcase pair" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FLPQMKKC.jpg?v=2" alt="Stonewashed linen pillowcase pair" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Sheets</span><h3 class="product-title">Stonewashed linen pillowcase pair</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Stonewashed linen shams — the back layer with depth.</p>
           <a href="https://www.amazon.com/dp/B0FLPQMKKC?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B08F48LR45.jpg?v=2" alt="Longhui cream cable-knit throw" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wool"><div class="product-img"><img src="/assets/img/products-cropped/p-B08F48LR45.jpg?v=2" alt="Longhui cream cable-knit throw" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Throw</span><h3 class="product-title">Longhui cream cable-knit throw</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Heavy cream cable-knit — warmth on a sofa without adding colour.</p>
           <a href="https://www.amazon.com/dp/B08F48LR45?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0F4K9SP6N.jpg?v=2" alt="Boucle cushion cover set, ivory" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wool"><div class="product-img"><img src="/assets/img/products-cropped/p-B0F4K9SP6N.jpg?v=2" alt="Boucle cushion cover set, ivory" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Cushion</span><h3 class="product-title">Boucle cushion cover set, ivory</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Textured ivory bouclé — the fine accent on a linen sofa.</p>
           <a href="https://www.amazon.com/dp/B0F4K9SP6N?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DK21FLCK.jpg?v=2" alt="Pre-washed linen curtain panel pair, 84 inch" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DK21FLCK.jpg?v=2" alt="Pre-washed linen curtain panel pair, 84 inch" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Curtain</span><h3 class="product-title">Pre-washed linen curtain panel pair, 84"</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Oatmeal linen panels that soften the light and the whole room.</p>
           <a href="https://www.amazon.com/dp/B0DK21FLCK?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C58R2VBH.jpg?v=2" alt="Jute runner rug, 2x7 natural" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="woven"><div class="product-img"><img src="/assets/img/products-cropped/p-B0C58R2VBH.jpg?v=2" alt="Jute runner rug, 2x7 natural" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Runner</span><h3 class="product-title">Jute runner rug, 2×7 natural</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Warm golden-tan jute — the honest base layer under most Japandi rooms.</p>
           <a href="https://www.amazon.com/dp/B0C58R2VBH?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0118561IU.jpg?v=2" alt="Waffle linen bath towel set of 6" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B0118561IU.jpg?v=2" alt="Waffle linen bath towel set of 6" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Towel</span><h3 class="product-title">Waffle linen bath towel set of 6</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Quick-dry waffle weave — rental bathroom to small spa.</p>
           <a href="https://www.amazon.com/dp/B0118561IU?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DT6V6F33.jpg?v=2" alt="Cream boucle lumbar pillow on a linen sofa" loading="lazy" width="848" height="1272" /></div><div class="product-body">
+        <article class="product" data-cat="wool"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DT6V6F33.jpg?v=2" alt="Cream boucle lumbar pillow on a linen sofa" loading="lazy" width="848" height="1272" /></div><div class="product-body">
           <span class="product-cat">Lumbar</span><h3 class="product-title">JoraLion cream bouclé lumbar pillow, 14×36</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A cream bouclé lumbar — the finishing accent.</p>
           <a href="https://www.amazon.com/dp/B0DT6V6F33?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
@@ -344,6 +350,6 @@
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>

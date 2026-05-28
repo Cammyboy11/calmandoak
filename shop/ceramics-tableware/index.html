@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/styles.css?v=10" />
+<link rel="stylesheet" href="/assets/css/styles.css?v=11" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=4" />
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
@@ -220,49 +220,54 @@
         <a href="/shop/looks/">Looks</a>
       </nav>
       <p class="shop-guide" style="text-align:center; margin:1.1rem auto 0; font-size:0.9rem; color:var(--graphite);">Read the guide: <a href="/journal/wabi-sabi-ceramics/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">Wabi-sabi ceramics — where to start &rarr;</a></p>
-            <div class="tags" style="justify-content:center;"><span class="tag">Stoneware</span><span class="tag">Hand-thrown</span><span class="tag">Ribbed</span><span class="tag">Matte</span></div>
     </div>
   </section>
 
   <section class="section" style="padding-top: 0;">
     <div class="wrap">
+      <div class="shop-filter" role="tablist" aria-label="Filter by material">
+        <button type="button" class="chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="chip-count">8</span></button>
+        <button type="button" class="chip" data-filter="ceramic" role="tab" aria-selected="false">Ceramic <span class="chip-count">7</span></button>
+        <button type="button" class="chip" data-filter="wood" role="tab" aria-selected="false">Wood <span class="chip-count">1</span></button>
+      </div>
+      <p class="shop-filter-empty" hidden>No items in this material.</p>
       <div class="product-grid">
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CJD73LV6.jpg?v=2" alt="AmorArc stoneware dinnerware, 18-piece" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CJD73LV6.jpg?v=2" alt="AmorArc stoneware dinnerware, 18-piece" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Dinner set</span><h3 class="product-title">AmorArc stoneware dinnerware, 18-piece</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Reactive-glaze stoneware, service for six — worth eating off daily.</p>
           <a href="https://www.amazon.com/dp/B0CJD73LV6?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FT361HDX.jpg?v=2" alt="Briful tall brown ceramic vase with horizontal texture, styled on a wood console with dried oak branches" loading="lazy" width="1696" height="1719" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FT361HDX.jpg?v=2" alt="Briful tall brown ceramic vase with horizontal texture, styled on a wood console with dried oak branches" loading="lazy" width="1696" height="1719" /></div><div class="product-body">
           <span class="product-cat">Vase</span><h3 class="product-title">Briful brown ceramic vase, 9.8" tall textured</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A tall, hand-textured statement vase for a console.</p>
           <a href="https://www.amazon.com/dp/B0FT361HDX?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DYNB5K2V.jpg?v=2" alt="Cream ribbed stoneware bud vase set" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DYNB5K2V.jpg?v=2" alt="Cream ribbed stoneware bud vase set" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Bud vase</span><h3 class="product-title">Cream ribbed stoneware bud vase set</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A trio of cream vessels — the single-stem rule, as a set.</p>
           <a href="https://www.amazon.com/dp/B0DYNB5K2V?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CFF6XKN5.jpg?v=2" alt="Hand-thrown stoneware mug set of 4" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CFF6XKN5.jpg?v=2" alt="Hand-thrown stoneware mug set of 4" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Mugs</span><h3 class="product-title">Hand-thrown stoneware mug set of 4</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Hand-thrown, speckled, four to a set — the everyday mug.</p>
           <a href="https://www.amazon.com/dp/B0CFF6XKN5?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B086372L8W.jpg?v=2" alt="Acacia wood serving tray with handles, 17 inch" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wood"><div class="product-img"><img src="/assets/img/products-cropped/p-B086372L8W.jpg?v=2" alt="Acacia wood serving tray with handles, 17 inch" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Board</span><h3 class="product-title">Acacia wood serving tray with handles, 17"</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">The one object that turns counter clutter into a vignette.</p>
           <a href="https://www.amazon.com/dp/B086372L8W?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FQV1Y3PR.jpg?v=2" alt="Stoneware water pitcher, hand-thrown" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FQV1Y3PR.jpg?v=2" alt="Stoneware water pitcher, hand-thrown" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Pitcher</span><h3 class="product-title">Stoneware water pitcher, hand-thrown</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Hand-thrown cream — a pitcher of eucalyptus is the easiest centrepiece.</p>
           <a href="https://www.amazon.com/dp/B0FQV1Y3PR?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day18-pin87-salt-cellar.jpg?v=4" alt="Stoneware salt cellar with wood spoon" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/day18-pin87-salt-cellar.jpg?v=4" alt="Stoneware salt cellar with wood spoon" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Salt</span><h3 class="product-title">Stoneware salt cellar with wood spoon</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A lidded cellar with a tiny wood spoon — salt, made intentional.</p>
           <a href="https://www.amazon.com/s?k=stoneware+salt+cellar+wood+lid&tag=calmandoak-20" data-fallback-search="stoneware salt cellar wood lid" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FFMF13MV.jpg?v=2" alt="Whitewashed neutral ceramic vases, set of 3 — matte cream bottle vases of different heights on an oak shelf with dried botanicals" loading="lazy" width="848" height="910" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FFMF13MV.jpg?v=2" alt="Whitewashed neutral ceramic vases, set of 3 — matte cream bottle vases of different heights on an oak shelf with dried botanicals" loading="lazy" width="848" height="910" /></div><div class="product-body">
           <span class="product-cat">Vase set</span><h3 class="product-title">Whitewashed neutral ceramic vases, set of 3</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Three matte vases that read as a styled grouping out of the box.</p>
           <a href="https://www.amazon.com/dp/B0FFMF13MV?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
@@ -344,6 +349,6 @@
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>

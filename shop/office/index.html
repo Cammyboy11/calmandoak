@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/styles.css?v=10" />
+<link rel="stylesheet" href="/assets/css/styles.css?v=11" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=4" />
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
@@ -220,51 +220,57 @@
         <a href="/shop/looks/">Looks</a>
       </nav>
       <p class="shop-guide" style="text-align:center; margin:1.1rem auto 0; font-size:0.9rem; color:var(--graphite);">Read the guide: <a href="/journal/japandi-home-office/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">The Japandi home office &rarr;</a></p>
-            <div class="tags" style="justify-content:center;">
-        <span class="tag">Oak</span><span class="tag">Brass</span><span class="tag">Woven</span><span class="tag">Linen</span>
-      </div>
     </div>
   </section>
 
   <section class="section" style="padding-top: 0;">
     <div class="wrap">
+      <div class="shop-filter" role="tablist" aria-label="Filter by material">
+        <button type="button" class="chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="chip-count">8</span></button>
+        <button type="button" class="chip" data-filter="wood" role="tab" aria-selected="false">Wood <span class="chip-count">2</span></button>
+        <button type="button" class="chip" data-filter="linen" role="tab" aria-selected="false">Linen <span class="chip-count">2</span></button>
+        <button type="button" class="chip" data-filter="woven" role="tab" aria-selected="false">Woven <span class="chip-count">2</span></button>
+        <button type="button" class="chip" data-filter="leather" role="tab" aria-selected="false">Leather <span class="chip-count">1</span></button>
+        <button type="button" class="chip" data-filter="ceramic" role="tab" aria-selected="false">Ceramic <span class="chip-count">1</span></button>
+      </div>
+      <p class="shop-filter-empty" hidden>No items in this material.</p>
       <div class="product-grid">
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day3-pin15-oak-desk.jpg?v=4" alt="Walker Edison coastal oak writing desk, 38 inch" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wood"><div class="product-img"><img src="/assets/img/products-cropped/day3-pin15-oak-desk.jpg?v=4" alt="Walker Edison coastal oak writing desk, 38 inch" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Desk</span><h3 class="product-title">Walker Edison coastal oak writing desk, 38"</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A reeded-front oak desk that reads as furniture, not office.</p>
           <a href="https://www.amazon.com/s?k=oak+writing+desk+small+38+inch+solid+wood+japandi&tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DPJX1CQL.jpg?v=2" alt="Furnimart linen-beige upholstered armless task chair with wheels" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DPJX1CQL.jpg?v=2" alt="Furnimart linen-beige upholstered armless task chair with wheels" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Chair</span><h3 class="product-title">Furnimart linen-beige task chair, wheels</h3><p class="product-price"><span class="tier">$$$</span></p>
           <p class="product-why">A soft linen task chair that doesn't read 'office.'</p>
           <a href="https://www.amazon.com/dp/B0DPJX1CQL?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B08GDW5JYF.jpg?v=2" alt="Brass and linen task lamp" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="linen"><div class="product-img"><img src="/assets/img/products-cropped/p-B08GDW5JYF.jpg?v=2" alt="Brass and linen task lamp" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Lighting</span><h3 class="product-title">Brass + linen task lamp</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Aged brass, warm bulb — the lamp that makes a desk a moment.</p>
           <a href="https://www.amazon.com/dp/B08GDW5JYF?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0D31739VD.jpg?v=2" alt="Woven seagrass storage basket" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="woven"><div class="product-img"><img src="/assets/img/products-cropped/p-B0D31739VD.jpg?v=2" alt="Woven seagrass storage basket" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Storage</span><h3 class="product-title">Woven seagrass storage basket</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Graduated seagrass with leather handles — storage as decor.</p>
           <a href="https://www.amazon.com/dp/B0D31739VD?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DC6FQKYR.jpg?v=2" alt="Walnut and leather desk pad, large" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="leather"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DC6FQKYR.jpg?v=2" alt="Walnut and leather desk pad, large" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Stationery</span><h3 class="product-title">Walnut + leather desk pad, large</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Walnut-and-leather — the warm surface that grounds a desk.</p>
           <a href="https://www.amazon.com/dp/B0DC6FQKYR?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DH21GJ15.jpg?v=2" alt="Slim oak floating ladder shelf" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wood"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DH21GJ15.jpg?v=2" alt="Slim oak floating ladder shelf" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Shelving</span><h3 class="product-title">Slim oak floating ladder shelf</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Slim solid wood — for an entryway or behind a sofa.</p>
           <a href="https://www.amazon.com/dp/B0DH21GJ15?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day19-pin92-stoneware-planters.jpg?v=4" alt="Bonsai-style stoneware planter set" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/day19-pin92-stoneware-planters.jpg?v=4" alt="Bonsai-style stoneware planter set" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Greenery</span><h3 class="product-title">Bonsai-style stoneware planter set</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Small stoneware planters for greenery on a desk.</p>
           <a href="https://www.amazon.com/s?k=indoor+bonsai+starter+kit+complete&tag=calmandoak-20" data-fallback-search="indoor bonsai starter kit complete" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B09HKN2ZRT.jpg?v=2" alt="Bamboo monitor stand with drawer" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="woven"><div class="product-img"><img src="/assets/img/products-cropped/p-B09HKN2ZRT.jpg?v=2" alt="Bamboo monitor stand with drawer" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Tech</span><h3 class="product-title">Bamboo monitor stand with drawer</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Raises the screen and hides the clutter underneath.</p>
           <a href="https://www.amazon.com/dp/B09HKN2ZRT?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
@@ -346,6 +352,6 @@
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>

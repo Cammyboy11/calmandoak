@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/styles.css?v=10" />
+<link rel="stylesheet" href="/assets/css/styles.css?v=11" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=4" />
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
@@ -262,64 +262,71 @@
         <a href="/shop/looks/">Looks</a>
       </nav>
       <p class="shop-guide" style="text-align:center; margin:1.1rem auto 0; font-size:0.9rem; color:var(--graphite);">Read the guide: <a href="/journal/sunday-morning-kitchen/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">The Sunday morning kitchen &rarr;</a> &middot; <a href="/journal/why-your-kitchen-needs-a-tray/" style="color:var(--terracotta); border-bottom:1px solid var(--terracotta); white-space:nowrap;">Why your kitchen needs a tray &rarr;</a></p>
-            <div class="tags" style="justify-content:center;"><span class="tag">Stoneware</span><span class="tag">Wood</span><span class="tag">Linen</span><span class="tag">Glass</span></div>
     </div>
   </section>
 
   <section class="section" style="padding-top: 0;">
     <div class="wrap">
+      <div class="shop-filter" role="tablist" aria-label="Filter by material">
+        <button type="button" class="chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="chip-count">11</span></button>
+        <button type="button" class="chip" data-filter="ceramic" role="tab" aria-selected="false">Ceramic <span class="chip-count">5</span></button>
+        <button type="button" class="chip" data-filter="wood" role="tab" aria-selected="false">Wood <span class="chip-count">4</span></button>
+        <button type="button" class="chip" data-filter="cotton" role="tab" aria-selected="false">Cotton <span class="chip-count">1</span></button>
+        <button type="button" class="chip" data-filter="glass" role="tab" aria-selected="false">Glass <span class="chip-count">1</span></button>
+      </div>
+      <p class="shop-filter-empty" hidden>No items in this material.</p>
       <div class="product-grid">
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CJD73LV6.jpg?v=2" alt="AmorArc stoneware dinnerware, 18-piece" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CJD73LV6.jpg?v=2" alt="AmorArc stoneware dinnerware, 18-piece" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Dishes</span><h3 class="product-title">AmorArc stoneware dinnerware, 18-piece</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Reactive-glaze stoneware, service for six — worth eating off daily.</p>
           <a href="https://www.amazon.com/dp/B0CJD73LV6?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FF4RNKM2.jpg?v=2" alt="AmorArc ceramic nesting mixing bowls, set of 3" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0FF4RNKM2.jpg?v=2" alt="AmorArc ceramic nesting mixing bowls, set of 3" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Bowls</span><h3 class="product-title">AmorArc ceramic nesting mixing bowls, set of 3</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Nesting stoneware with a terracotta underside — pretty enough to leave out.</p>
           <a href="https://www.amazon.com/dp/B0FF4RNKM2?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DBSKRVNL.jpg?v=2" alt="Beech wood cooking utensil set in crock" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wood"><div class="product-img"><img src="/assets/img/products-cropped/p-B0DBSKRVNL.jpg?v=2" alt="Beech wood cooking utensil set in crock" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Utensils</span><h3 class="product-title">Beech wood cooking utensil set in crock</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Beech utensils in a crock — the warm-wood swap for the counter.</p>
           <a href="https://www.amazon.com/dp/B0DBSKRVNL?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day17-pin81-donabe-rice-pot.jpg?v=4" alt="A ceramic Japanese donabe rice pot" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/day17-pin81-donabe-rice-pot.jpg?v=4" alt="A ceramic Japanese donabe rice pot" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Donabe</span><h3 class="product-title">Japanese donabe rice pot, ceramic</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A clay donabe — rice the slow, traditional way.</p>
           <a href="https://www.amazon.com/s?k=japanese+donabe+rice+pot+ceramic&tag=calmandoak-20" data-fallback-search="japanese donabe rice pot ceramic" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0866GB57R.jpg?v=2" alt="Waffle cotton tea towels, set of 4" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="cotton"><div class="product-img"><img src="/assets/img/products-cropped/p-B0866GB57R.jpg?v=2" alt="Waffle cotton tea towels, set of 4" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Towels</span><h3 class="product-title">Waffle cotton tea towels, set of 4</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Cotton waffle towels that look as good hung as used.</p>
           <a href="https://www.amazon.com/dp/B0866GB57R?tag=calmandoak-20" data-fallback-search="linen tea towel set of 6 hemmed" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B09Y5VVRPT.jpg?v=2" alt="A large oval walnut cutting board on a counter" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wood"><div class="product-img"><img src="/assets/img/products-cropped/p-B09Y5VVRPT.jpg?v=2" alt="A large oval walnut cutting board on a counter" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Cutting board</span><h3 class="product-title">Walnut cutting board, large</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">A walnut board worth leaving out on the counter.</p>
           <a href="https://www.amazon.com/dp/B09Y5VVRPT?tag=calmandoak-20" data-fallback-search="walnut cutting board large oval wood" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CMWLVJGT.jpg?v=2" alt="CZZGSM glass canisters with 132 labels" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="glass"><div class="product-img"><img src="/assets/img/products-cropped/p-B0CMWLVJGT.jpg?v=2" alt="CZZGSM glass canisters with 132 labels" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Canister</span><h3 class="product-title">CZZGSM glass canisters with 132 labels</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Labeled glass jars that make a pantry shelf read calm.</p>
           <a href="https://www.amazon.com/dp/B0CMWLVJGT?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0GHPWL9GS.jpg?v=2" alt="A set of small stoneware espresso cups" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/p-B0GHPWL9GS.jpg?v=2" alt="A set of small stoneware espresso cups" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Cups</span><h3 class="product-title">Reactive-glaze stoneware cup + saucer set</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">Reactive-glaze cups for tea, coffee, a slow morning.</p>
           <a href="https://www.amazon.com/dp/B0GHPWL9GS?tag=calmandoak-20" data-fallback-search="stoneware espresso cup set handmade" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day4-pin19-wooden-serving-tray.jpg?v=4" alt="An acacia wood breakfast tray with cut-out handles" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wood"><div class="product-img"><img src="/assets/img/products-cropped/day4-pin19-wooden-serving-tray.jpg?v=4" alt="An acacia wood breakfast tray with cut-out handles" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Tray</span><h3 class="product-title">Acacia wood breakfast tray with handles</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">The one object that turns counter clutter into a vignette.</p>
           <a href="https://www.amazon.com/s?k=acacia+wood+breakfast+tray+handles+kitchen&tag=calmandoak-20" data-fallback-search="acacia wood breakfast tray handles kitchen" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/day18-pin87-salt-cellar.jpg?v=4" alt="Stoneware salt + pepper with spoon" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="ceramic"><div class="product-img"><img src="/assets/img/products-cropped/day18-pin87-salt-cellar.jpg?v=4" alt="Stoneware salt + pepper with spoon" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Salt</span><h3 class="product-title">Stoneware salt + pepper with spoon</h3><p class="product-price"><span class="tier">$</span></p>
           <p class="product-why">A lidded cellar with a tiny wood spoon — salt, made intentional.</p>
           <a href="https://www.amazon.com/s?k=stoneware+salt+cellar+wood+lid&tag=calmandoak-20" data-fallback-search="stoneware salt cellar wood lid" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
         </div></article>
-        <article class="product"><div class="product-img"><img src="/assets/img/products-cropped/p-B0GFDJCQZ6.jpg?v=2" alt="Smirly acacia silverware drawer organizer, expandable — placeholder image, awaiting Pin 32 regeneration" loading="lazy" width="848" height="1264" /></div><div class="product-body">
+        <article class="product" data-cat="wood"><div class="product-img"><img src="/assets/img/products-cropped/p-B0GFDJCQZ6.jpg?v=2" alt="Smirly acacia silverware drawer organizer, expandable — placeholder image, awaiting Pin 32 regeneration" loading="lazy" width="848" height="1264" /></div><div class="product-body">
           <span class="product-cat">Drawer</span><h3 class="product-title">Smirly acacia silverware drawer organizer</h3><p class="product-price"><span class="tier">$$</span></p>
           <p class="product-why">Bamboo dividers that turn a junk drawer intentional.</p>
           <a href="https://www.amazon.com/dp/B0GFDJCQZ6?tag=calmandoak-20" rel="sponsored nofollow noopener" class="product-cta">Check price on Amazon →</a>
@@ -401,6 +408,6 @@
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>
