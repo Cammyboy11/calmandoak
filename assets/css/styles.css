@@ -410,6 +410,8 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
 .product-price { font-size: 0.85rem; color: var(--graphite); margin-bottom: 1.1rem; letter-spacing: 0.02em; }
 .product-price .tier { display:inline-block; background: rgba(201,123,92,0.10); color: var(--terracotta); font-weight: 600; letter-spacing: 0.18em; padding: 2px 9px; border-radius: 999px; font-size: 0.8rem; }
 .product-price .tier-note { color: var(--graphite); }
+.product-why { font-size: 0.82rem; color: var(--graphite); line-height: 1.5; margin: 0 0 1rem; }
+.product-why::before { content: "Why we picked it — "; color: var(--terracotta); font-weight: 500; }
 .product-cta {
   margin-top: auto;
   font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
