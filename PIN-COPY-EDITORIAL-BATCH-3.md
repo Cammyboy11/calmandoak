@@ -21,8 +21,8 @@ A low oak frame, oat-linen bedding, a matched pair of nightstands and lamps, one
 ---
 
 ### 2. `eb3-02-long-dinner` • Dining board (or Get the Look)
-- **On-image:** THE LONG / DINNER
-- **Title:** `The long dinner: a calm japandi dining room`
+- **On-image:** A QUIET / TABLE
+- **Title:** `A quiet table: how to set a calm japandi dining room`
 **Description:**
 ```
 A round oak table, two slat-back chairs, one woven pendant glowing low, a stoneware pitcher of eucalyptus. A few honest pieces and one good light — the table that turns dinner into an hour.
@@ -34,8 +34,8 @@ A round oak table, two slat-back chairs, one woven pendant glowing low, a stonew
 ---
 
 ### 3. `eb3-03-slow-porch` • Outdoor board
-- **On-image:** THE SLOW / PORCH
-- **Title:** `The slow porch: a japandi corner for morning coffee`
+- **On-image:** THE MORNING / PORCH
+- **Title:** `The morning porch: a calm japandi corner for coffee`
 **Description:**
 ```
 A teak chair, a low lantern, a wool throw, one potted olive. The room outside that quietly becomes the favourite room — set up for under $300.
@@ -47,8 +47,8 @@ A teak chair, a low lantern, a wool throw, one potted olive. The room outside th
 ---
 
 ### 4. `eb3-04-dinner-outside` • Outdoor board
-- **On-image:** DINNER / OUTSIDE
-- **Title:** `Dinner outside: a japandi patio for summer nights`
+- **On-image:** EVENINGS / OUTSIDE
+- **Title:** `Evenings outside: a japandi patio for summer dinners`
 **Description:**
 ```
 A teak table, two chairs, a linen runner, candle holders, a planter. Outdoor dinner, every Saturday — the patio set up for the long table nights of summer.
@@ -73,8 +73,8 @@ A warm ceramic lamp, a small stack of books, a bud vase, a ring dish, one person
 ---
 
 ### 6. `eb3-06-right-sofa` • Living Room board
-- **On-image:** THE RIGHT / SOFA
-- **Title:** `The sofa that ages well: how to choose the right one`
+- **On-image:** A SOFA / THAT LASTS
+- **Title:** `A sofa that lasts: how to choose one that ages well`
 **Description:**
 ```
 Frame, cushion, fabric, silhouette, legs — the five decisions that separate a sofa you keep for a decade from one you replace in two years.
@@ -112,8 +112,8 @@ One stem in a small vase reads more luxurious than ten in a big one. The Japandi
 ---
 
 ### 9. `eb3-09-wall-rule` • Wall Art board (or Styling)
-- **On-image:** THE WALL / RULE
-- **Title:** `The 30-30-30 rule: how to fix an empty wall`
+- **On-image:** ROOM TO / BREATHE
+- **Title:** `Room to breathe: how to fill an empty wall, the japandi way`
 **Description:**
 ```
 Thirty percent art, thirty percent texture, forty percent breath. The proportional rule that fills a blank wall without crowding it.
@@ -164,8 +164,8 @@ Matching wood hangers, linen storage boxes, drawer dividers, a rod light. The cl
 ---
 
 ### 13. `eb3-13-kitchen-tray` • Japandi Kitchen board (or Styling)
-- **On-image:** THE KITCHEN / TRAY
-- **Title:** `Why your kitchen needs a tray: the one-object fix`
+- **On-image:** ONE GOOD / TRAY
+- **Title:** `One good tray: the japandi fix for kitchen counter clutter`
 **Description:**
 ```
 A single wood tray turns counter clutter into a vignette — oil, salt, a cloth, a sprig, corralled into something intentional. The cheapest styling trick there is.
