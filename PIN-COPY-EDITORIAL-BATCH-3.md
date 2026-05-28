@@ -177,7 +177,10 @@ A single wood tray turns counter clutter into a vignette — oil, salt, a cloth,
 ---
 
 ## Notes
-- Same viral treatment as Batch 2 (white serif + terracotta underline). Font: Times New Roman (closest system match to Cormorant Garamond).
-- **Title placement is varied for board rhythm:** most sit bottom-left (the proven viral spot); slow-porch, quiet-nightstand, one-stem and warm-not-full are bottom-centre; right-sofa and wall-rule are top-left. The copy/links are unaffected.
-- All 13 target pages are live and finalized.
-- 13 pins at ~2–3/day covers tomorrow through the weekend.
+- **Each pin is art-directed to its own photo** (measured the calm/negative-space zone and brightness of every cover), so the board doesn't read as one template:
+  - **Dark serif titles** on the bright, clean-walled scenes (low-bed, dinner-outside, right-sofa, two-woods, wall-rule); **white titles** on the darker/ busier scenes (the rest).
+  - **Placement varied** across top-left / bottom-left / bottom-centre / bottom-right, each chosen for that image's open space.
+  - **Font:** Times New Roman on most; **Bell MT** (our closest match to Cormorant Garamond) on low-bed, right-sofa, two-woods, and one-stem — the latter set in **Bell MT italic** for a softer, hand-styled feel.
+  - **Underline:** terracotta rule on most; dropped on dinner-outside and one-stem for a cleaner look. Sizes range 64–104 to fit each title and its space.
+- The copy and links are identical regardless of styling.
+- All 13 target pages are live and finalized. 13 pins at ~2–3/day covers tomorrow through the weekend.
