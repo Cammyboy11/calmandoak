@@ -34,4 +34,11 @@ ACTION PLAN*.md.tmp
 .claude/
 _tmp-serve.js
 _print-prep.js
+_audit.js
+_gaplist.js
+_sourced.js
+_swap.js
+_dlraw.js
+_asins.json
+_gaplist.json
 assets/img/products-raw/
