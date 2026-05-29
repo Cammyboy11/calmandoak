@@ -33,4 +33,5 @@ package-lock.json
 ACTION PLAN*.md.tmp
 .claude/
 _tmp-serve.js
+_print-prep.js
 assets/img/products-raw/
