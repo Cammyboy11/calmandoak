@@ -50,17 +50,14 @@ It outputs three masters per design into `C:\Users\CameronHayes\Pictures\Calm-Oa
 
 ## 3. What is ready right now
 
-✅ **The 4 launch designs are flat, print-ready, in three sizes each — 12 files, uploadable to Gelato today.** Reconstructed and processed end-to-end; they read as a cohesive gallery-wall set (a quiet ink circle, a wood-grain abstract, a botanical still life, an abstract landscape). In:
+✅ **All 30 designs are flat, print-ready, in three sizes each — 90 files, uploadable to Gelato today.** Reconstructed and processed end-to-end. The set covers all six series: 9 sumi-e (Ensō, Bent Reed, Crane, Mountain Mist, Bamboo, Cherry Branch, Koi, Mountain Stream, Tsuki); 6 botanical line (Single Stem, Eucalyptus, Olive Branch, Pampas, Ginkgo, Wild Grass); 6 landscapes (Serene Dawn, Moon Cycle, Horizon, Dusk, Layers, Moonrise); 3 calligraphy (Shizuka 静, Wa 和, Ma 間); 3 tonal (Two Woods, Warm Earth, Sage & Stone); 3 stills (Balance, Chado, Linen Morning). In:
 ```
 C:\Users\CameronHayes\Pictures\Calm-Oak-Print-Masters\
-  enso_8x10_300dpi.jpg          enso_11x14_300dpi.jpg          enso_16x20_300dpi.jpg
-  two-woods_8x10_300dpi.jpg     two-woods_11x14_300dpi.jpg     two-woods_16x20_300dpi.jpg
-  single-stem_8x10_300dpi.jpg   single-stem_11x14_300dpi.jpg   single-stem_16x20_300dpi.jpg
-  serene-dawn_8x10_300dpi.jpg   serene-dawn_11x14_300dpi.jpg   serene-dawn_16x20_300dpi.jpg
+  <slug>_8x10_300dpi.jpg      <slug>_11x14_300dpi.jpg      <slug>_16x20_300dpi.jpg     × 30 designs = 90 files
 ```
-(Twelve earlier files made directly from the *mockups* are quarantined in `_rejected-mockup-derived/` — do **not** upload those; they contain the wall and frame.)
+File naming matches the website slug for each print (e.g. `enso_*`, `cherry-branch_*`, `shizuka_*`). All masters are 300 DPI, sRGB, JPEG quality 95, 4:4:4 chroma — Cowork can drag-and-drop them into Gelato as-is.
 
-⏳ The other **26 designs** still need Step 1 (flatten) run on them. See §7 — but Option A (these 4) is already done, so you can launch without waiting.
+(Twelve earlier files made directly from the *mockups* are quarantined in `_rejected-mockup-derived/` — do **not** upload those; they contain the wall and frame.)
 
 ---
 
@@ -106,17 +103,9 @@ Base prices are illustrative — verify on the Gelato dashboard at signup. Launc
 
 ---
 
-## 7. The decision I need from you: how many flat masters to make now
+## 7. All 30 masters complete ✅
 
-Reconstructing the flat artwork is the one step that costs Gemini image credits (~1 generation per design, occasionally 2). Three sensible options:
-
-| Option | What I make | Image spend | Best when |
-|---|---|---|---|
-| **A — Lean ✅ DONE** | The **4 cohesive launch designs** (Ensō, Two Woods, Single Stem, Serene Dawn) — all reconstructed and sized, sitting in the masters folder. | already spent (4 gens) | You want to launch + validate demand before investing further. Matches the whole "validate first" plan. |
-| **B — Full collection** | All **30** flat masters, sized. | ~30–45 generations | The waitlist is already converting and you want the whole shop live at once. |
-| **C — Wait** | Nothing yet — drive a little Pinterest traffic to the waitlist first; make masters only for designs people actually want. | $0 now | You'd rather spend zero until the list proves demand. |
-
-**My recommendation: A.** Four print-ready, on-brand designs is a real, launchable collection; the gallery-wall set is the highest-AOV story; and it keeps spend tiny until Etsy shows the prints actually sell. Then scale to the other 26 on demand (the pipeline makes that a one-command job each).
+Originally this section asked whether to lean (4 launch designs) or go full collection (30). **You chose full collection.** All 30 flat masters were reconstructed via Gemini image-to-image and sized through the pipeline — they sit in `Calm-Oak-Print-Masters\` ready for Cowork to upload.
 
 ---
 
