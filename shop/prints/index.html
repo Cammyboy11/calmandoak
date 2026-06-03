@@ -561,13 +561,36 @@
 (function () {
   var SHOP = "https://www.etsy.com/shop/CalmandOak";
   var LISTINGS = {
-    "enso": "", "bent-reed": "", "crane": "", "mountain-mist": "", "bamboo": "",
-    "cherry-branch": "", "koi": "", "mountain-stream": "", "tsuki": "",
-    "single-stem": "", "eucalyptus": "", "olive": "", "pampas": "", "ginkgo": "", "wild-grass": "",
-    "serene-dawn": "", "moon-cycle": "", "horizon-bird": "", "dusk": "", "layers": "", "moonrise": "",
-    "shizuka": "", "wa": "", "ma": "",
-    "two-woods": "", "warm-earth": "", "sage-stone": "",
-    "balance": "", "chado": "", "linen-morning": ""
+    "enso": "https://www.etsy.com/listing/4513671388/sumi-e-enso-print-japandi-wall-art-zen",
+    "bent-reed": "https://www.etsy.com/listing/4514620766/sumi-e-reed-print-japandi-wall-art",
+    "crane": "https://www.etsy.com/listing/4513670279/sumi-e-crane-print-japandi-wall-art",
+    "mountain-mist": "https://www.etsy.com/listing/4514559683/sumi-e-mountain-print-japandi-wall-art",
+    "bamboo": "https://www.etsy.com/listing/4514183382/sumi-e-bamboo-print-japandi-wall-art",
+    "cherry-branch": "https://www.etsy.com/listing/4514185358/sumi-e-cherry-blossom-print-japandi-wall",
+    "koi": "https://www.etsy.com/listing/4513682155/sumi-e-koi-print-japandi-wall-art",
+    "mountain-stream": "https://www.etsy.com/listing/4513717337/sumi-e-waterfall-print-japandi-wall-art",
+    "tsuki": "https://www.etsy.com/listing/4513731734/wabi-sabi-tea-bowl-print-sumi-e-wall-art",
+    "single-stem": "https://www.etsy.com/listing/4514539948/single-stem-print-botanical-line-art",
+    "eucalyptus": "https://www.etsy.com/listing/4513739523/eucalyptus-print-single-line-botanical",
+    "olive": "https://www.etsy.com/listing/4513745265/olive-branch-print-botanical-line-art",
+    "pampas": "https://www.etsy.com/listing/4513753457/pampas-grass-print-boho-botanical-wall",
+    "ginkgo": "https://www.etsy.com/listing/4513763284/ginkgo-leaf-print-japandi-botanical-line",
+    "wild-grass": "https://www.etsy.com/listing/4513771858/wild-grass-print-minimalist-botanical",
+    "serene-dawn": "https://www.etsy.com/listing/4513671801/soft-arch-landscape-print-japandi",
+    "moon-cycle": "https://www.etsy.com/listing/4514733472/moon-phases-print-three-moon-cycle-wall",
+    "horizon-bird": "https://www.etsy.com/listing/4514741847/minimalist-horizon-print-japandi-bird",
+    "dusk": "https://www.etsy.com/listing/4514724482/lone-tree-print-terracotta-sunset",
+    "layers": "https://www.etsy.com/listing/4514689937/color-field-landscape-print-earth-tone",
+    "moonrise": "https://www.etsy.com/listing/4514681587/full-moon-print-minimalist-moon",
+    "shizuka": "https://www.etsy.com/listing/4514669812/japanese-kanji-print-shizuka-stillness",
+    "wa": "",
+    "ma": "https://www.etsy.com/listing/4514768430/japanese-kanji-print-ma-negative-space",
+    "two-woods": "https://www.etsy.com/listing/4513670516/tonal-study-print-oak-walnut-color-field",
+    "warm-earth": "https://www.etsy.com/listing/4514773752/tonal-study-print-terracotta-oat-color",
+    "sage-stone": "",
+    "balance": "",
+    "chado": "",
+    "linen-morning": ""
   };
   document.querySelectorAll('a[aria-label="Shop this print on Etsy"]').forEach(function (a) {
     var img = a.querySelector('img'); if (!img) return;
