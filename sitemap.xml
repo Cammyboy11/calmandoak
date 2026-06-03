@@ -97,4 +97,46 @@
   <url><loc>https://calmandoak.com/disclosures/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://calmandoak.com/privacy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
+  <!-- Acquisition pages -->
+  <url><loc>https://calmandoak.com/begin-here/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://calmandoak.com/calculator/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- Looks (remaining 4) -->
+  <url><loc>https://calmandoak.com/shop/looks/the-japandi-workspace/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://calmandoak.com/shop/looks/the-soft-porch/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://calmandoak.com/shop/looks/the-spa-bathroom/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://calmandoak.com/shop/looks/the-sunday-kitchen/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- Print Collection — 30 individual print pages -->
+  <url><loc>https://calmandoak.com/shop/prints/enso/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/bent-reed/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/crane/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/mountain-mist/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/bamboo/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/cherry-branch/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/koi/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/mountain-stream/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/tsuki/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/single-stem/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/eucalyptus/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/olive/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/pampas/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/ginkgo/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/wild-grass/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/serene-dawn/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/moon-cycle/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/horizon-bird/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/dusk/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/layers/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/moonrise/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/shizuka/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/wa/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/ma/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/two-woods/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/warm-earth/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/sage-stone/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/balance/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/chado/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/shop/prints/linen-morning/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
 </urlset>
