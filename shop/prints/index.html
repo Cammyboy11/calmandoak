@@ -555,6 +555,32 @@
   </div>
 </footer>
 
+<script>
+/* Per-print Etsy deep-links. Fill a slug's value with its etsy.com/listing/... URL as it publishes;
+   any blank slug falls back to the shop home, so unpublished prints still link somewhere valid. */
+(function () {
+  var SHOP = "https://www.etsy.com/shop/CalmandOak";
+  var LISTINGS = {
+    "enso": "", "bent-reed": "", "crane": "", "mountain-mist": "", "bamboo": "",
+    "cherry-branch": "", "koi": "", "mountain-stream": "", "tsuki": "",
+    "single-stem": "", "eucalyptus": "", "olive": "", "pampas": "", "ginkgo": "", "wild-grass": "",
+    "serene-dawn": "", "moon-cycle": "", "horizon-bird": "", "dusk": "", "layers": "", "moonrise": "",
+    "shizuka": "", "wa": "", "ma": "",
+    "two-woods": "", "warm-earth": "", "sage-stone": "",
+    "balance": "", "chado": "", "linen-morning": ""
+  };
+  document.querySelectorAll('a[aria-label="Shop this print on Etsy"]').forEach(function (a) {
+    var img = a.querySelector('img'); if (!img) return;
+    var m = (img.getAttribute('src') || '').match(/\/prints\/([a-z0-9\-]+)\./);
+    var slug = m ? m[1] : null;
+    if (slug) {
+      a.setAttribute('data-print', slug);
+      a.setAttribute('aria-label', slug.replace(/-/g, ' ') + ' — view on Etsy');
+      if (LISTINGS[slug]) a.setAttribute('href', LISTINGS[slug]);
+    }
+  });
+})();
+</script>
 <script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>
