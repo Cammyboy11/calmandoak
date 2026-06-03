@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Calm Home Calculator — Your Japandi Plan | Calm & Oak</title>
+<meta name="description" content="Answer five questions and get a personalised Japandi plan — your palette, your wood pairing, the right rug size, and the exact build guide to start with. Free." />
+<meta name="theme-color" content="#F7F4EE" />
+<link rel="canonical" href="https://calmandoak.com/calculator/" />
+
+<!-- Open Graph (general + Pinterest rich pins) -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Calm & Oak" />
+<meta property="og:title" content="The Calm Home Calculator — Your Japandi Plan" />
+<meta property="og:description" content="Five questions → your palette, your wood pairing, the right rug size, and where to start. Free." />
+<meta property="og:url" content="https://calmandoak.com/calculator/" />
+<meta property="og:image" content="https://calmandoak.com/assets/img/og-image.jpg?v=4" />
+<meta property="og:image:alt" content="A cream linen sofa in a Japandi living room" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Calm Home Calculator — Your Japandi Plan" />
+<meta name="twitter:description" content="Five questions → your palette, your wood pairing, the right rug size, and where to start." />
+<meta name="twitter:image" content="https://calmandoak.com/assets/img/og-image.jpg?v=4" />
+
+<meta name="pinterest-rich-pin" content="true" />
+
+<!-- Fonts (preconnect + display=swap) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="/assets/css/styles.css?v=13" />
+
+<!-- Icons -->
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=4" />
+<link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calmandoak.com/" },
+    { "@type": "ListItem", "position": 2, "name": "The Calm Home Calculator", "item": "https://calmandoak.com/calculator/" }
+  ]
+}
+</script>
+
+<style>
+  /* Calculator-specific UI — built on the brand variables already in styles.css */
+  .calc { max-width: 760px; margin: 0 auto; }
+  .calc-step { margin-bottom: 2.2rem; }
+  .calc-step > .q { font-family: var(--font-display, 'Cormorant Garamond', serif); font-size: 1.5rem; font-style: italic; margin-bottom: 0.9rem; }
+  .calc-step .q .num { font-style: normal; color: var(--terracotta, #C97B5C); font-size: 1rem; letter-spacing: 0.05em; margin-right: 0.5rem; }
+  .opts { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; }
+  .opt { position: relative; }
+  .opt input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+  .opt label { display: block; cursor: pointer; padding: 0.85rem 1rem; border: 1px solid rgba(42,42,40,0.18); border-radius: 12px; background: #fff; font-size: 0.95rem; transition: border-color .15s, background .15s, box-shadow .15s; text-align: center; }
+  .opt input:checked + label { border-color: var(--terracotta, #C97B5C); background: #FBF7F0; box-shadow: inset 0 0 0 1px var(--terracotta, #C97B5C); }
+  .opt input:focus-visible + label { outline: 2px solid var(--terracotta, #C97B5C); outline-offset: 2px; }
+  .calc-actions { text-align: center; margin-top: 1.5rem; }
+  .calc-error { color: #9b3b2f; font-size: 0.9rem; margin-top: 0.8rem; min-height: 1.2rem; text-align: center; }
+  #calc-result { display: none; }
+  .result-card { background: #FBF7F0; border: 1px solid rgba(42,42,40,0.1); border-radius: 16px; padding: 1.6rem 1.6rem; margin-bottom: 1.1rem; }
+  .result-card h3 { margin: 0 0 0.4rem; font-size: 1.35rem; }
+  .result-card p { margin: 0.3rem 0; }
+  .result-card .eyebrow { margin-bottom: 0.5rem; }
+  .swatches { display: flex; gap: 0; border-radius: 10px; overflow: hidden; margin: 0.7rem 0 0.9rem; max-width: 360px; }
+  .swatches span { flex: 1; height: 54px; }
+  .result-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.6rem; }
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  As an Amazon Associate, Calm & Oak earns from qualifying purchases. <a href="/disclosures/">Read our disclosures</a>.
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="Calm & Oak home">
+      Calm <span class="amp">&amp;</span> Oak
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/begin-here/">Begin Here</a></li>
+        <li><a href="/shop/">Shop</a></li>
+        <li><a href="/shop/looks/">Looks</a></li>
+        <li><a href="/journal/">Journal</a></li>
+        <li><a href="/shop/prints/">Prints</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation">Menu</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" style="padding-bottom:1.5rem;">
+    <div class="wrap" style="text-align:center; max-width:680px; margin:0 auto;">
+      <span class="eyebrow">The Calm Home Calculator</span>
+      <h1>Build your room, <span class="ital">the calm way.</span></h1>
+      <p class="lede" style="margin: 0 auto;">Five quick questions. You'll get a personalised plan — your palette, your wood pairing, the right rug size, and the exact guide to start with. No jargon, no upsell.</p>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <form class="calc" id="calc-form" novalidate>
+
+        <div class="calc-step">
+          <div class="q"><span class="num">01</span>Which room are you working on?</div>
+          <div class="opts">
+            <div class="opt"><input type="radio" name="room" id="room-bedroom" value="bedroom" /><label for="room-bedroom">Bedroom</label></div>
+            <div class="opt"><input type="radio" name="room" id="room-living" value="living" /><label for="room-living">Living room</label></div>
+            <div class="opt"><input type="radio" name="room" id="room-dining" value="dining" /><label for="room-dining">Dining room</label></div>
+            <div class="opt"><input type="radio" name="room" id="room-kitchen" value="kitchen" /><label for="room-kitchen">Kitchen</label></div>
+            <div class="opt"><input type="radio" name="room" id="room-bathroom" value="bathroom" /><label for="room-bathroom">Bathroom</label></div>
+            <div class="opt"><input type="radio" name="room" id="room-office" value="office" /><label for="room-office">Home office</label></div>
+            <div class="opt"><input type="radio" name="room" id="room-entryway" value="entryway" /><label for="room-entryway">Entryway</label></div>
+          </div>
+        </div>
+
+        <div class="calc-step">
+          <div class="q"><span class="num">02</span>Which way do the windows face?</div>
+          <div class="opts">
+            <div class="opt"><input type="radio" name="light" id="light-n" value="N" /><label for="light-n">North</label></div>
+            <div class="opt"><input type="radio" name="light" id="light-e" value="E" /><label for="light-e">East</label></div>
+            <div class="opt"><input type="radio" name="light" id="light-s" value="S" /><label for="light-s">South</label></div>
+            <div class="opt"><input type="radio" name="light" id="light-w" value="W" /><label for="light-w">West</label></div>
+            <div class="opt"><input type="radio" name="light" id="light-x" value="X" /><label for="light-x">Not sure</label></div>
+          </div>
+        </div>
+
+        <div class="calc-step">
+          <div class="q"><span class="num">03</span>Your main wood tone right now?</div>
+          <div class="opts">
+            <div class="opt"><input type="radio" name="wood" id="wood-oak" value="oak" /><label for="wood-oak">Light oak / ash</label></div>
+            <div class="opt"><input type="radio" name="wood" id="wood-walnut" value="walnut" /><label for="wood-walnut">Walnut / dark</label></div>
+            <div class="opt"><input type="radio" name="wood" id="wood-mixed" value="mixed" /><label for="wood-mixed">A bit of both</label></div>
+            <div class="opt"><input type="radio" name="wood" id="wood-none" value="none" /><label for="wood-none">Starting fresh</label></div>
+          </div>
+        </div>
+
+        <div class="calc-step">
+          <div class="q"><span class="num">04</span>How big is the room?</div>
+          <div class="opts">
+            <div class="opt"><input type="radio" name="size" id="size-s" value="small" /><label for="size-s">Small <small>(under 120 sq ft)</small></label></div>
+            <div class="opt"><input type="radio" name="size" id="size-m" value="medium" /><label for="size-m">Medium <small>(120&ndash;250)</small></label></div>
+            <div class="opt"><input type="radio" name="size" id="size-l" value="large" /><label for="size-l">Large <small>(250+)</small></label></div>
+          </div>
+        </div>
+
+        <div class="calc-step">
+          <div class="q"><span class="num">05</span>What's your budget for this room?</div>
+          <div class="opts">
+            <div class="opt"><input type="radio" name="budget" id="budget-1" value="low" /><label for="budget-1">Under $250</label></div>
+            <div class="opt"><input type="radio" name="budget" id="budget-2" value="mid" /><label for="budget-2">$250&ndash;400</label></div>
+            <div class="opt"><input type="radio" name="budget" id="budget-3" value="high" /><label for="budget-3">$400&ndash;600</label></div>
+            <div class="opt"><input type="radio" name="budget" id="budget-4" value="open" /><label for="budget-4">$600+</label></div>
+          </div>
+        </div>
+
+        <div class="calc-actions">
+          <button type="submit" class="btn btn--primary">Show my plan <span class="arrow">→</span></button>
+          <div class="calc-error" id="calc-error" role="alert"></div>
+        </div>
+      </form>
+
+      <!-- ============ RESULT ============ -->
+      <div class="calc" id="calc-result" aria-live="polite">
+        <div class="section-head" style="margin-bottom:1.4rem;">
+          <span class="eyebrow">Your calm home plan</span>
+          <h2 id="result-title">Your <span class="italic">personalised plan</span></h2>
+          <hr class="divider" />
+          <p id="result-intro"></p>
+        </div>
+
+        <div class="result-card">
+          <span class="eyebrow">Your palette</span>
+          <h3 id="pal-name"></h3>
+          <div class="swatches" id="pal-swatches" aria-hidden="true"></div>
+          <p id="pal-note"></p>
+          <div class="result-links">
+            <a id="pal-link" class="btn btn--ghost btn--small" href="/journal/japandi-color-palette/">See this palette →</a>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <span class="eyebrow">Your wood pairing</span>
+          <h3>The two-woods rule</h3>
+          <p id="wood-note"></p>
+          <div class="result-links">
+            <a class="btn btn--ghost btn--small" href="/journal/two-woods-rule/">The two-woods rule →</a>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <span class="eyebrow">Where to start</span>
+          <h3 id="start-title">Your build guide</h3>
+          <p id="start-note"></p>
+          <div class="result-links" id="start-links"></div>
+        </div>
+
+        <div class="result-card">
+          <span class="eyebrow">The right rug</span>
+          <h3>Don't size the rug wrong</h3>
+          <p id="rug-note"></p>
+          <div class="result-links">
+            <a class="btn btn--ghost btn--small" href="/journal/rug-sizing/">Rug sizing guide →</a>
+          </div>
+        </div>
+
+        <div class="signup" style="margin-top:1.6rem;">
+          <div class="signup-inner">
+            <span class="eyebrow">Keep your plan</span>
+            <h2>Save this to <span class="italic">your inbox</span></h2>
+            <p class="lede" style="margin: 0 auto;">We'll send your plan plus the free 18-page Japandi Starter Guide — the principles, the shopping list, and the palette rules in one PDF.</p>
+            <form data-signup="calculator">
+              <input type="email" required placeholder="your@email.com" aria-label="Email address" />
+              <button type="submit" class="btn btn--primary btn--small">Send my plan</button>
+            </form>
+            <small class="signup-note">One thoughtful email a fortnight. Unsubscribe whenever.</small>
+          </div>
+        </div>
+
+        <div class="center mt-3">
+          <button type="button" class="btn btn--ghost btn--small" id="calc-restart">↺ Start over</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand" style="color: var(--offwhite); margin-bottom:1rem;">Calm <span class="amp">&amp;</span> Oak</div>
+        <p>Quiet rooms, beautifully sourced. A Japandi home journal, slowly built.</p>
+      </div>
+      <div><h4>Shop</h4><ul>
+        <li><a href="/shop/lighting/">Lighting</a></li>
+        <li><a href="/shop/storage/">Storage</a></li>
+        <li><a href="/shop/ceramics-tableware/">Ceramics &amp; Tableware</a></li>
+        <li><a href="/shop/textiles/">Textiles</a></li>
+        <li><a href="/shop/furniture/">Furniture</a></li>
+        <li><a href="/shop/bedroom/">Bedroom</a></li>
+        <li><a href="/shop/japandi-kitchen/">Japandi Kitchen</a></li>
+        <li><a href="/shop/office/">Office</a></li>
+        <li><a href="/shop/decor-accents/">Decor Accents</a></li>
+        <li><a href="/shop/outdoor-wellness/">Outdoor &amp; Wellness</a></li>
+        <li><a href="/shop/prints/">Print Collection</a></li>
+      </ul></div>
+      <div><h4>Read</h4><ul><li><a href="/journal/">Journal</a></li>
+        <li><a href="/journal/japandi-101/">What is Japandi</a></li><li><a href="/journal/budget-japandi-bedroom/">Bedroom under $500</a></li></ul></div>
+      <div><h4>Calm &amp; Oak</h4><ul><li><a href="/begin-here/">Begin Here</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://www.pinterest.com/calmandoak/">Pinterest</a></li><li><a href="/disclosures/">Disclosures</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Calm &amp; Oak. All rights reserved.</span>
+      <span>As an Amazon Associate, Calm &amp; Oak earns from qualifying purchases.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Palettes — mirrors /journal/japandi-color-palette/ exactly (names, hexes, anchors)
+  var PALETTES = {
+    1: { name: "Oat & oak", tag: "the warm default", anchor: "palette-1",
+         swatches: ["#E8DCC4", "#C9B79A", "#8A7A5C"],
+         note: "The forgiving starting point. Oat linen on light oak reads warm in any light — the palette to choose when you want calm without risk." },
+    2: { name: "Charcoal & cream", tag: "the architectural move", anchor: "palette-2",
+         swatches: ["#3A3936", "#C9C0B0", "#F4EEE2"],
+         note: "High-contrast and graphic. Charcoal anchors against cream and warm wood — confident, a little editorial, best where you have good light to spend." },
+    3: { name: "Stone & sage", tag: "the botanical", anchor: "palette-3",
+         swatches: ["#C9C0B0", "#9DA897", "#F4EEE2"],
+         note: "The most Japanese of the five. Stone-grey linen with one quiet note of sage against walnut — subtle, restful, deeply shibui." },
+    4: { name: "Terracotta accent", tag: "the one warm note", anchor: "palette-4",
+         swatches: ["#C97B5C", "#E8DCC4", "#3A3936"],
+         note: "A neutral base with a single warm note of terracotta — a rug, a vessel, one cushion. Warmth without the room turning loud." },
+    5: { name: "Warm grey monochrome", tag: "the disciplined", anchor: "palette-5",
+         swatches: ["#4A4844", "#9A9388", "#D8D2C6"],
+         note: "Tonal greys, top to bottom, with wood for warmth. The most disciplined palette — quietly expensive when the textures carry it." }
+  };
+
+  // Per-room logic — best/alt palette pulled from the published room-matcher table
+  var ROOMS = {
+    bedroom:  { label: "bedroom",   best: 1, alt: 3, guide: "/journal/japandi-bedroom/",     shop: "/shop/bedroom/",
+                budgets: { low: ["$250 Bedside Refresh", "/journal/250-dollar-bedside-refresh/"], mid: ["$400 Small Bedroom", "/journal/400-dollar-small-bedroom/"], high: ["A Bedroom Under $500", "/journal/budget-japandi-bedroom/"], open: ["A Bedroom Under $500", "/journal/budget-japandi-bedroom/"] } },
+    living:   { label: "living room", best: 1, alt: 5, guide: "/journal/japandi-living-room/", shop: "/shop/furniture/",
+                budgets: { low: ["$300 Living-Room Textile Refresh", "/journal/300-dollar-living-room-textile-refresh/"], mid: ["$300 Living-Room Textile Refresh", "/journal/300-dollar-living-room-textile-refresh/"], high: ["The Sofa Buying Guide", "/journal/sofa-buying-guide/"], open: ["The Sofa Buying Guide", "/journal/sofa-buying-guide/"] } },
+    dining:   { label: "dining room", best: 4, alt: 2, guide: "/journal/japandi-dining-room/", shop: "/shop/ceramics-tableware/",
+                budgets: { low: ["Why Your Kitchen Needs a Tray", "/journal/why-your-kitchen-needs-a-tray/"], mid: ["The $500 Dining Table Set", "/journal/500-dollar-dining-table-set/"], high: ["The $500 Dining Table Set", "/journal/500-dollar-dining-table-set/"], open: ["The $500 Dining Table Set", "/journal/500-dollar-dining-table-set/"] } },
+    kitchen:  { label: "kitchen",   best: 4, alt: 1, guide: "/journal/sunday-morning-kitchen/", shop: "/shop/japandi-kitchen/",
+                budgets: { low: ["Why Your Kitchen Needs a Tray", "/journal/why-your-kitchen-needs-a-tray/"], mid: ["The Sunday-Morning Kitchen", "/journal/sunday-morning-kitchen/"], high: ["The Sunday-Morning Kitchen", "/journal/sunday-morning-kitchen/"], open: ["The Sunday-Morning Kitchen", "/journal/sunday-morning-kitchen/"] } },
+    bathroom: { label: "bathroom",  best: 3, alt: 1, guide: "/journal/japandi-bathroom/",     shop: "/shop/textiles/",
+                budgets: { low: ["The $250 Japandi Bathroom", "/journal/250-dollar-bathroom/"], mid: ["The $250 Japandi Bathroom", "/journal/250-dollar-bathroom/"], high: ["The $250 Japandi Bathroom", "/journal/250-dollar-bathroom/"], open: ["The $250 Japandi Bathroom", "/journal/250-dollar-bathroom/"] } },
+    office:   { label: "home office", best: 2, alt: 5, guide: "/journal/japandi-home-office/", shop: "/shop/office/",
+                budgets: { low: ["The $400 Reading Nook", "/journal/400-dollar-reading-nook/"], mid: ["The $400 Home Office", "/journal/400-dollar-home-office/"], high: ["The $400 Home Office", "/journal/400-dollar-home-office/"], open: ["The $400 Home Office", "/journal/400-dollar-home-office/"] } },
+    entryway: { label: "entryway",  best: 1, alt: 4, guide: "/journal/japandi-entryway/",     shop: "/shop/storage/",
+                budgets: { low: ["The $200 Entryway Organizer", "/journal/200-dollar-entryway-organizer/"], mid: ["The $300 Entryway", "/journal/300-dollar-entryway/"], high: ["The $300 Entryway", "/journal/300-dollar-entryway/"], open: ["The $300 Entryway", "/journal/300-dollar-entryway/"] } }
+  };
+
+  var COOL = [2, 5]; // palettes that can read cold in north light
+
+  function pickPalette(room, light) {
+    var r = ROOMS[room];
+    var p = r.best;
+    // North light is cool/blue — the guide steers cool palettes toward a warmer one
+    if (light === "N" && COOL.indexOf(p) !== -1) {
+      p = r.alt;
+      if (COOL.indexOf(p) !== -1) p = 1; // fall back to the warm default
+    }
+    return p;
+  }
+
+  function woodNote(wood) {
+    switch (wood) {
+      case "oak":    return "You're anchored in light oak. Pair it with one darker note — a walnut tray, a black-stained stool, dark ceramics — so the room has depth instead of reading flat. One light wood, one dark accent: that's the rule.";
+      case "walnut": return "You're anchored in walnut. Lift it with one lighter element — an oak shelf, an ash stool, a pale linen — so the dark wood doesn't swallow the room. Two woods, no more.";
+      case "mixed":  return "You've got both light and dark wood, which is exactly right — as long as you stop at two tones. Pick one to dominate (roughly 70/30) and don't add a third species. Mixed-but-disciplined is the whole look.";
+      default:       return "Starting fresh is the easy case: choose light oak as your dominant wood, then add a single darker accent (walnut or black) for contrast. One light, one dark — never a third.";
+    }
+  }
+
+  function rugNote(size, roomLabel) {
+    switch (size) {
+      case "small":  return "In a small " + roomLabel + ", a 5×8 rug (or a 3×5 runner in a narrow space) keeps the floor feeling open. Float the furniture with just the front legs on the rug.";
+      case "large":  return "In a large " + roomLabel + ", go bigger than feels safe — a 9×12, with the front legs of every seat resting on the rug. A too-small rug is the single most common Japandi mistake.";
+      default:       return "For a medium " + roomLabel + ", an 8×10 rug usually lands right — large enough for the front legs of the furniture to sit on it, which is what visually pulls the room together.";
+    }
+  }
+
+  var form = document.getElementById("calc-form");
+  var result = document.getElementById("calc-result");
+  var errEl = document.getElementById("calc-error");
+
+  function val(name) {
+    var el = form.querySelector('input[name="' + name + '"]:checked');
+    return el ? el.value : null;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var room = val("room"), light = val("light"), wood = val("wood"), size = val("size"), budget = val("budget");
+    if (!room || !light || !wood || !size || !budget) {
+      errEl.textContent = "Please answer all five questions to see your plan.";
+      return;
+    }
+    errEl.textContent = "";
+
+    var r = ROOMS[room];
+    var palId = pickPalette(room, light);
+    var pal = PALETTES[palId];
+
+    // Palette card
+    document.getElementById("result-intro").textContent =
+      "For a " + r.label + " with " + (light === "X" ? "your" : light + "-facing") + " light, here's where we'd start.";
+    document.getElementById("pal-name").textContent = pal.name + " — " + pal.tag;
+    var sw = document.getElementById("pal-swatches");
+    sw.innerHTML = "";
+    pal.swatches.forEach(function (c) { var s = document.createElement("span"); s.style.background = c; sw.appendChild(s); });
+    document.getElementById("pal-note").textContent = pal.note;
+    document.getElementById("pal-link").setAttribute("href", "/journal/japandi-color-palette/#" + pal.anchor);
+
+    // Wood card
+    document.getElementById("wood-note").textContent = woodNote(wood);
+
+    // Where to start card
+    var b = r.budgets[budget];
+    document.getElementById("start-note").textContent =
+      "Based on your budget, start here — then use the full room guide to take it the rest of the way.";
+    var links = document.getElementById("start-links");
+    links.innerHTML = "";
+    function addLink(label, href, primary) {
+      var a = document.createElement("a");
+      a.className = "btn " + (primary ? "btn--primary" : "btn--ghost") + " btn--small";
+      a.setAttribute("href", href);
+      a.textContent = label + " →";
+      links.appendChild(a);
+    }
+    addLink(b[0], b[1], true);
+    addLink("The full " + r.label + " guide", r.guide, false);
+    addLink("Shop the pieces", r.shop, false);
+
+    // Rug card
+    document.getElementById("rug-note").textContent = rugNote(size, r.label);
+
+    // Reveal
+    form.style.display = "none";
+    result.style.display = "block";
+    result.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  document.getElementById("calc-restart").addEventListener("click", function () {
+    form.reset();
+    result.style.display = "none";
+    form.style.display = "block";
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+})();
+</script>
+
+<script src="/assets/js/main.js?v=3" defer></script>
+</body>
+</html>
