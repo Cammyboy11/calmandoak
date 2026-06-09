@@ -49,13 +49,36 @@
 
   /* Direct digital-download checkout URLs (e.g. Payhip product links). Empty = "coming soon". */
   var DIGITAL = {
-    "enso": "", "bent-reed": "", "crane": "", "mountain-mist": "", "bamboo": "",
-    "cherry-branch": "", "koi": "", "mountain-stream": "", "tsuki": "",
-    "single-stem": "", "eucalyptus": "", "olive": "", "pampas": "", "ginkgo": "", "wild-grass": "",
-    "serene-dawn": "", "moon-cycle": "", "horizon-bird": "", "dusk": "", "layers": "", "moonrise": "",
-    "shizuka": "", "wa": "", "ma": "",
-    "two-woods": "", "warm-earth": "", "sage-stone": "",
-    "balance": "", "chado": "", "linen-morning": ""
+    "enso": "https://payhip.com/b/qAzfj",
+    "bent-reed": "https://payhip.com/b/O87Ce",
+    "crane": "https://payhip.com/b/4B5Ug",
+    "mountain-mist": "https://payhip.com/b/dIHs3",
+    "bamboo": "https://payhip.com/b/UjvwL",
+    "cherry-branch": "https://payhip.com/b/I4vLy",
+    "koi": "https://payhip.com/b/yqWc3",
+    "mountain-stream": "https://payhip.com/b/2UIkJ",
+    "tsuki": "https://payhip.com/b/BhtYV",
+    "single-stem": "https://payhip.com/b/cCoS9",
+    "eucalyptus": "https://payhip.com/b/Ofoc3",
+    "olive": "https://payhip.com/b/tBfoe",
+    "pampas": "https://payhip.com/b/G8jBR",
+    "ginkgo": "https://payhip.com/b/wp4uY",
+    "wild-grass": "https://payhip.com/b/oi0Oe",
+    "serene-dawn": "https://payhip.com/b/20uTp",
+    "moon-cycle": "https://payhip.com/b/4djzP",
+    "horizon-bird": "https://payhip.com/b/ZhxjF",
+    "dusk": "https://payhip.com/b/ia92h",
+    "layers": "https://payhip.com/b/vdx6q",
+    "moonrise": "https://payhip.com/b/5Lme6",
+    "shizuka": "https://payhip.com/b/gsoTK",
+    "wa": "https://payhip.com/b/pCZwK",
+    "ma": "https://payhip.com/b/Nzq6E",
+    "two-woods": "https://payhip.com/b/jiARd",
+    "warm-earth": "https://payhip.com/b/qvVYE",
+    "sage-stone": "https://payhip.com/b/Bw5KT",
+    "balance": "https://payhip.com/b/CFme8",
+    "chado": "https://payhip.com/b/bkyPh",
+    "linen-morning": "https://payhip.com/b/UTslO"
   };
 
   function ready(fn) {
