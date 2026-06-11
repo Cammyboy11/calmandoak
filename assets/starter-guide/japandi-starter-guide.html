@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
-<meta name="description" content="The Japandi Starter Guide — an 18-page PDF of the principles, palette, materials, and a starter shopping list. Free with email signup at Calm & Oak." />
+<meta name="description" content="The Japandi Starter Guide — a 20-page PDF of the principles, palette, materials, and a starter shopping list. Free with email signup at Calm & Oak." />
 <title>The Japandi Starter Guide — Calm & Oak</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <style>
@@ -403,6 +403,40 @@
     color: var(--offwhite);
   }
 
+
+  /* ==== v2: linked shopping list with thumbnails ==== */
+  .shop-list2 { list-style: none; }
+  .shop-list2 li {
+    display: flex; align-items: center; gap: 0.22in;
+    padding: 0.13in 0; border-bottom: 1px solid var(--hair);
+  }
+  .shop-list2 .num {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--terracotta); font-size: 14pt; min-width: 0.32in;
+  }
+  .shop-list2 img.thumb {
+    width: 0.78in; height: 0.78in; object-fit: cover;
+    border-radius: 3px; flex: none;
+  }
+  .shop-list2 .info { flex: 1; }
+  .shop-list2 .info a {
+    font-family: 'Cormorant Garamond', serif; font-size: 13.5pt;
+    color: var(--charcoal); text-decoration: none;
+    border-bottom: 1px solid var(--terracotta);
+  }
+  .shop-list2 .meta {
+    font-family: 'Inter', sans-serif; font-size: 8.5pt;
+    color: var(--graphite); margin-top: 3pt; letter-spacing: 0.03em;
+  }
+  .shop-list2 .price {
+    font-family: 'Inter', sans-serif; font-size: 10pt;
+    color: var(--charcoal); white-space: nowrap;
+  }
+  .aff-note {
+    font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--graphite);
+    letter-spacing: 0.06em; margin-top: 0.22in;
+  }
+
   /* ==== ON-SCREEN VIEWING NOTICE ==== */
   .print-instructions {
     position: fixed;
@@ -437,7 +471,7 @@
     <div class="wordmark">Calm <span class="amp">&amp;</span> Oak</div>
   </div>
   <div class="center-block">
-    <div class="eyebrow" style="margin-bottom: 0.25in;">An 18-page edition</div>
+    <div class="eyebrow" style="margin-bottom: 0.25in;">A 20-page edition</div>
     <h1 class="title">The Japandi<br><span class="ital">Starter</span> Guide</h1>
     <div class="cover-tagline">Quiet rooms,<br>beautifully sourced.</div>
   </div>
@@ -688,37 +722,59 @@
     <hr class="divider" />
     <p class="lead">Two phases. Each one under three hundred dollars. The 80 percent of a Japandi home, sourced and verified.</p>
     <p class="body-copy" style="margin-top: 0.3in;">A complete Japandi home isn't built from a single shopping trip. It's built from two phases of five purchases each, each phase costing under three hundred dollars. Phase one handles the soft layers — bedding, ceramics, the tray that pulls a surface together. Phase two handles the larger anchors — the rug, the floor lamp, the side table.</p>
-    <p class="body-copy">Each item below is a verified Amazon pick — 4.4★+, 200+ reviews, Prime where applicable. The full list lives on calmandoak.com under the matching pillar page. Tap or search the brand name to find the exact product.</p>
+    <p class="body-copy">Every item is a verified pick, and every item on the next two pages is a live link — tap the name to open the exact product. Prices drift; the always-current list lives on calmandoak.com under the matching pillar page.</p>
   </div>
   <div class="footer-bar"><span>The starter list</span><span class="page-num">15</span></div>
 </section>
 
-<!-- ============ PAGE 12 — STARTER LIST ============ -->
+<!-- ============ STARTER LIST — PHASE ONE ============ -->
 <section class="page">
-  <div class="pad" style="padding-top: 0.6in; padding-bottom: 0.6in;">
-    <h3 class="sub" style="margin-top: 0; margin-bottom: 0.1in;">Phase one — the soft layers</h3>
-    <p style="font-family:'Inter',sans-serif;font-size:9pt;color:var(--graphite);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.15in;">Five pieces · ~$245 · start here</p>
-    <ol class="shop-list" style="counter-reset: shop;">
-      <li><span class="item-name">Simple&amp;Opulence linen duvet cover, queen</span><span class="item-price">$80</span><span class="item-where">4.6★ · 2,906 reviews · Textiles pillar</span></li>
-      <li><span class="item-name">Vanselia cream ribbed ceramic vase</span><span class="item-price">$25</span><span class="item-where">4.7★ · 809 reviews · Ceramics pillar</span></li>
-      <li><span class="item-name">Longhui cream cable-knit throw</span><span class="item-price">$35</span><span class="item-where">4.7★ · 5,055 reviews · Textiles pillar</span></li>
-      <li><span class="item-name">PoKat ceramic bedside lamp pair</span><span class="item-price">$70</span><span class="item-where">4.6★ · 1,614 reviews · Lighting pillar</span></li>
-      <li><span class="item-name">Acacia wood serving tray, 17"</span><span class="item-price">$35</span><span class="item-where">4.6★ · 4,317 reviews · Decor accents</span></li>
+  <div class="pad" style="padding-top: 0.7in;">
+    <h3 class="sub" style="margin-top: 0; margin-bottom: 0.08in;">Phase one &mdash; the soft layers</h3>
+    <p style="font-family:'Inter',sans-serif;font-size:9pt;color:var(--graphite);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.12in;">Five pieces &middot; ~$245 &middot; start here</p>
+    <ol class="shop-list2">
+      <li><span class="num">01</span><img class="thumb" src="../img/products-cropped/p-B01IMZLNBE.jpg" alt="Simple&amp;Opulence linen duvet cover, queen"/><span class="info"><a href="https://www.amazon.com/dp/B01IMZLNBE?tag=calmandoak-20">Simple&amp;Opulence linen duvet cover, queen</a><div class="meta">4.6&#9733; &middot; 2,906 reviews &middot; Textiles pillar</div></span><span class="price">$80</span></li>
+      <li><span class="num">02</span><img class="thumb" src="../img/products-cropped/p-B0DYNB5K2V.jpg" alt="Cream ribbed stoneware bud vase set"/><span class="info"><a href="https://www.amazon.com/dp/B0DYNB5K2V?tag=calmandoak-20">Cream ribbed stoneware bud vase set</a><div class="meta">Ceramics pillar &middot; live price on the listing</div></span><span class="price">$25</span></li>
+      <li><span class="num">03</span><img class="thumb" src="../img/products-cropped/p-B08F48LR45.jpg" alt="Longhui cream cable-knit throw"/><span class="info"><a href="https://www.amazon.com/dp/B08F48LR45?tag=calmandoak-20">Longhui cream cable-knit throw</a><div class="meta">4.7&#9733; &middot; 5,055 reviews &middot; Textiles pillar</div></span><span class="price">$35</span></li>
+      <li><span class="num">04</span><img class="thumb" src="../img/products-cropped/p-B0C4SZBN64.jpg" alt="PoKat ceramic bedside lamp, pair"/><span class="info"><a href="https://www.amazon.com/dp/B0C4SZBN64?tag=calmandoak-20">PoKat ceramic bedside lamp, pair</a><div class="meta">4.6&#9733; &middot; 1,614 reviews &middot; Lighting pillar</div></span><span class="price">$70</span></li>
+      <li><span class="num">05</span><img class="thumb" src="../img/products-cropped/p-B086372L8W.jpg" alt="Acacia wood serving tray with handles, 17&quot;"/><span class="info"><a href="https://www.amazon.com/dp/B086372L8W?tag=calmandoak-20">Acacia wood serving tray with handles, 17&quot;</a><div class="meta">4.6&#9733; &middot; 4,317 reviews &middot; Decor accents</div></span><span class="price">$35</span></li>
     </ol>
-
-    <h3 class="sub" style="margin-top: 0.4in; margin-bottom: 0.1in;">Phase two — the anchors</h3>
-    <p style="font-family:'Inter',sans-serif;font-size:9pt;color:var(--graphite);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.15in;">Five pieces · ~$280 · over the next quarter</p>
-    <ol class="shop-list" style="counter-reset: shop 5;">
-      <li><span class="item-name">GIB seagrass baskets, set of three</span><span class="item-price">$45</span><span class="item-where">4.9★ · 47 reviews · Storage pillar</span></li>
-      <li><span class="item-name">LAMSU boho tripod floor lamp</span><span class="item-price">$85</span><span class="item-where">4.5★ · 213 reviews · Lighting pillar</span></li>
-      <li><span class="item-name">KEMA jute braided area rug, 5x7</span><span class="item-price">$70</span><span class="item-where">4.5★ · 228 reviews · Textiles pillar</span></li>
-      <li><span class="item-name">Booniture 15" bamboo pumpkin pendant</span><span class="item-price">$—</span><span class="item-where">Lighting pillar · Booniture B0FXVM8YJ1</span></li>
-      <li><span class="item-name">VASAGLE round oak side table</span><span class="item-price">$35</span><span class="item-where">4.6★ · 89 reviews · Furniture pillar</span></li>
-    </ol>
-
-    <p class="body-copy" style="margin-top: 0.3in; font-size: 10pt; color: var(--graphite); font-style: italic;">Both phases combined: roughly $525 across all ten pieces. Phase one transforms the bedroom and one shelf in two weekends. Phase two anchors the living room over the following two months.</p>
+    <p class="body-copy" style="margin-top: 0.25in; font-size: 10pt; color: var(--graphite); font-style: italic;">Phase one transforms the bedroom and one shelf in two weekends. Tap any piece to open it.</p>
+    <p class="aff-note">Every link opens the exact product. As an Amazon Associate, Calm &amp; Oak earns from qualifying purchases &mdash; it never changes your price. Prices shown are at time of writing; the live list stays current at calmandoak.com.</p>
   </div>
   <div class="footer-bar"><span>The starter list</span><span class="page-num">16</span></div>
+</section>
+
+<!-- ============ STARTER LIST — PHASE TWO ============ -->
+<section class="page">
+  <div class="pad" style="padding-top: 0.7in;">
+    <h3 class="sub" style="margin-top: 0; margin-bottom: 0.08in;">Phase two &mdash; the anchors</h3>
+    <p style="font-family:'Inter',sans-serif;font-size:9pt;color:var(--graphite);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.12in;">Five pieces &middot; ~$280 &middot; over the next quarter</p>
+    <ol class="shop-list2">
+      <li><span class="num">06</span><img class="thumb" src="../img/products-cropped/p-B0D31739VD.jpg" alt="GIB seagrass baskets, set of three"/><span class="info"><a href="https://www.amazon.com/dp/B0D31739VD?tag=calmandoak-20">GIB seagrass baskets, set of three</a><div class="meta">4.9&#9733; &middot; 47 reviews &middot; Storage pillar</div></span><span class="price">$45</span></li>
+      <li><span class="num">07</span><img class="thumb" src="../img/products-cropped/p-B0D7BWWVC7.jpg" alt="LAMSU boho tripod floor lamp"/><span class="info"><a href="https://www.amazon.com/dp/B0D7BWWVC7?tag=calmandoak-20">LAMSU boho tripod floor lamp</a><div class="meta">4.5&#9733; &middot; 213 reviews &middot; Lighting pillar</div></span><span class="price">$85</span></li>
+      <li><span class="num">08</span><img class="thumb" src="../img/products-cropped/p-B0C58R2VBH.jpg" alt="Wool jute runner rug, natural"/><span class="info"><a href="https://www.amazon.com/dp/B0C58R2VBH?tag=calmandoak-20">Wool jute runner rug, natural</a><div class="meta">Textiles pillar &middot; live price on the listing</div></span><span class="price">$70</span></li>
+      <li><span class="num">09</span><img class="thumb" src="../img/products-cropped/p-B0FXVM8YJ1.jpg" alt="Booniture 15&quot; bamboo pumpkin pendant"/><span class="info"><a href="https://www.amazon.com/dp/B0FXVM8YJ1?tag=calmandoak-20">Booniture 15&quot; bamboo pumpkin pendant</a><div class="meta">Lighting pillar &middot; the room-maker</div></span><span class="price">$&mdash;</span></li>
+      <li><span class="num">10</span><img class="thumb" src="../img/products-cropped/p-B0DRHQ1FKP.jpg" alt="THKSHOUZ fluted pedestal side table, warm oak"/><span class="info"><a href="https://www.amazon.com/dp/B0DRHQ1FKP?tag=calmandoak-20">THKSHOUZ fluted pedestal side table, warm oak</a><div class="meta">Furniture pillar &middot; live price on the listing</div></span><span class="price">$&mdash;</span></li>
+    </ol>
+    <p class="body-copy" style="margin-top: 0.25in; font-size: 10pt; color: var(--graphite); font-style: italic;">Both phases combined: roughly $525 across ten pieces. Phase two anchors the living room over the following two months.</p>
+    <p class="aff-note">Every link opens the exact product. As an Amazon Associate, Calm &amp; Oak earns from qualifying purchases &mdash; it never changes your price. Prices shown are at time of writing; the live list stays current at calmandoak.com.</p>
+  </div>
+  <div class="footer-bar"><span>The starter list</span><span class="page-num">17</span></div>
+</section>
+
+<!-- ============ PRINT COLLECTION ============ -->
+<section class="page visual-page">
+  <div class="grid-2">
+    <div style="background-image: url('../img/prints/enso.jpg');"></div>
+    <div style="background-image: url('../img/prints/moonrise.jpg');"></div>
+  </div>
+  <div class="visual-pad">
+    <div class="attribution">The walls &mdash; our own print collection</div>
+    <p class="quote">The hardest thing to find in Japandi is wall art that doesn&rsquo;t shout. So we drew our own.</p>
+    <p class="caption">Thirty original prints across six series &mdash; sumi-e ink drawn in single breaths, one-line botanicals, kanji calligraphy, and tonal studies in oak and walnut. Printed to order on 250gsm museum-quality matte paper, warm off-white rather than bright white. Find them at <strong>calmandoak.com/shop/prints</strong> or on Etsy at <strong>calmandoak.etsy.com</strong> &mdash; subscribers receive a quiet 15% note by email this week.</p>
+  </div>
+  <div class="footer-bar"><span>The print collection</span><span class="page-num">18</span></div>
 </section>
 
 <!-- ============ PAGE 13 — 7-DAY PLAN ============ -->
@@ -759,7 +815,7 @@
       </div>
     </div>
   </div>
-  <div class="footer-bar"><span>The seven-day plan</span><span class="page-num">17</span></div>
+  <div class="footer-bar"><span>The seven-day plan</span><span class="page-num">19</span></div>
 </section>
 
 <!-- ============ PAGE 14 — CLOSING ============ -->
