@@ -1,0 +1,496 @@
+{
+  "_version": "v2 — 2026-05-31, post-competitor-research rewrite",
+  "_pricing": {
+    "8x10": 28,
+    "11x14": 42,
+    "16x20": 68,
+    "_note": "tested vs Etsy mid-tier; 16x20 has headroom to $78 if testing premium"
+  },
+  "_gelatoTagsAlreadyAttached": [
+    "japandi wall art",
+    "minimalist wall art",
+    "wabi sabi decor",
+    "calm home decor",
+    "neutral wall decor",
+    "gallery wall print"
+  ],
+  "_tagsToAddPerSeries": {
+    "sumi-e": [
+      "sumi e print",
+      "japanese ink print",
+      "zen wall art",
+      "meditation art",
+      "above bed art",
+      "black and white art",
+      "japanese wall art"
+    ],
+    "botanical": [
+      "botanical line art",
+      "single line drawing",
+      "minimalist botanical",
+      "leaf wall art",
+      "meditation art",
+      "plant lover gift",
+      "above bed art"
+    ],
+    "landscape": [
+      "minimalist landscape",
+      "japandi print",
+      "nature wall art",
+      "soft landscape",
+      "above bed art",
+      "neutral wall art",
+      "horizon wall art"
+    ],
+    "calligraphy": [
+      "japanese kanji art",
+      "calligraphy print",
+      "kanji wall art",
+      "sumi e print",
+      "zen wall art",
+      "japanese wall art",
+      "meditation art"
+    ],
+    "tonal": [
+      "tonal study print",
+      "color field art",
+      "neutral palette art",
+      "minimalist abstract",
+      "earth tone art",
+      "japandi abstract",
+      "above couch art"
+    ],
+    "stills": [
+      "still life print",
+      "japandi still life",
+      "wabi sabi print",
+      "modern still life",
+      "mindful art",
+      "slow living decor",
+      "above bed art"
+    ]
+  },
+  "_editorialNote": "Each title is keyword-first per 2026 Etsy SEO research. Descriptions lead with a 160-char SEO opening for mobile + Google indexing, then the poetic hook, then scannable bullets. Gallery-wall pairings make every listing cross-sell another listing.",
+  "prints": [
+    {
+      "slug": "enso",
+      "name": "Enso",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Sumi-e Enso Print, Japandi Wall Art, Zen Circle Brushstroke, Above-Bed Decor | Enso by Calm & Oak",
+      "titleLen": 97,
+      "description": "Sumi-e Enso wall art — minimalist Japanese ink print on museum-quality 250gsm matte paper. A quiet Japandi piece for bedroom, meditation space, or above-bed gallery wall.\n\n*Enso* — An enso is drawn in a single breath. The opening at the rim is the point — wholeness made visible only because of the gap.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Mountain Mist*, *Bent Reed*, *Crane* to form a four-piece Sumi-e gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Essentials\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for meditation studios, yoga teachers, therapist offices, Japandi bedrooms, and above-bed decor.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Mountain Mist",
+        "Bent Reed",
+        "Crane"
+      ]
+    },
+    {
+      "slug": "bent-reed",
+      "name": "Bent Reed",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Sumi-e Reed Print, Japandi Wall Art, Single Brushstroke Botanical, Minimalist Japanese Ink | Bent Reed by Calm & Oak",
+      "titleLen": 116,
+      "description": "Sumi-e bent reed wall art — minimalist Japanese ink print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, meditation space, or above-bed gallery wall.\n\n*Bent Reed* — A bent reed in sumi-e is the whole autumn in one brushstroke — the season the painter chose not to paint.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Enso*, *Mountain Mist*, *Crane* to form a four-piece Sumi-e gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Botanical\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for meditation studios, yoga teachers, therapist offices, Japandi bedrooms, and slow-living gifts.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Enso",
+        "Mountain Mist",
+        "Crane"
+      ]
+    },
+    {
+      "slug": "crane",
+      "name": "Crane",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Sumi-e Crane Print, Japandi Wall Art, Tsuru Japanese Bird Ink, Longevity Symbol | Crane by Calm & Oak",
+      "titleLen": 101,
+      "description": "Sumi-e crane wall art — minimalist Japanese tsuru ink print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, anniversary gift, or above-bed gallery wall.\n\n*Crane* — The tsuru — Japan’s thousand-year crane — is the symbol of longevity, drawn in one breath in mid-flight.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Enso*, *Bent Reed*, *Mountain Mist* to form a four-piece Sumi-e gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Essentials\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for anniversaries (the crane is the Japanese symbol of marriage), housewarmings, meditation studios, and Japandi bedrooms.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Enso",
+        "Bent Reed",
+        "Mountain Mist"
+      ]
+    },
+    {
+      "slug": "mountain-mist",
+      "name": "Mountain Mist",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Sumi-e Mountain Print, Japandi Wall Art, Minimalist Japanese Ink, Above-Bed Decor | Mountain Mist by Calm & Oak",
+      "titleLen": 111,
+      "description": "Sumi-e mountain wall art — minimalist Japanese ink print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, meditation space, or above-bed gallery wall.\n\n*Mountain Mist* — Sumi-e mountains are never about the mountain; they are about the space the mountain makes in the air.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Enso*, *Bent Reed*, *Crane* to form a four-piece Sumi-e gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Essentials\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for meditation studios, yoga teachers, therapist offices, Japandi bedrooms, and above-bed decor.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Enso",
+        "Bent Reed",
+        "Crane"
+      ]
+    },
+    {
+      "slug": "bamboo",
+      "name": "Three Bamboo",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Sumi-e Bamboo Print, Japandi Wall Art, Three Bamboo Stalks Ink, Japanese Botanical | Three Bamboo by Calm & Oak",
+      "titleLen": 111,
+      "description": "Sumi-e three-bamboo wall art — minimalist Japanese ink print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, dining room, or above-bed gallery wall.\n\n*Three Bamboo* — Three stalks rising at varied heights — the sumi-e odd-number rule, the composition that refuses to be symmetrical.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Cherry Branch*, *Koi*, *Tsuki* to form a four-piece Sumi-e collection (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Botanical\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for dining rooms, Japandi bedrooms, slow-living gifts, and meditation studios.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Cherry Branch",
+        "Koi",
+        "Tsuki"
+      ]
+    },
+    {
+      "slug": "cherry-branch",
+      "name": "Cherry Branch",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Sumi-e Cherry Blossom Print, Japandi Wall Art, Sakura Branch Ink, Japanese Botanical | Cherry Branch by Calm & Oak",
+      "titleLen": 114,
+      "description": "Sumi-e sakura wall art — minimalist Japanese cherry blossom ink print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, anniversary gift, or above-bed gallery wall.\n\n*Cherry Branch* — A single sakura branch with open blossoms and one fallen petal — mono no aware, the gentle sadness of things that don’t last.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Three Bamboo*, *Koi*, *Tsuki* to form a four-piece Sumi-e collection (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Botanical\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for anniversaries, spring gifts, Japandi bedrooms, dining rooms, and slow-living gifts.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Three Bamboo",
+        "Koi",
+        "Tsuki"
+      ]
+    },
+    {
+      "slug": "koi",
+      "name": "Koi",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Sumi-e Koi Print, Japandi Wall Art, Japanese Fish Ink Painting, Vermillion Accent | Koi by Calm & Oak",
+      "titleLen": 101,
+      "description": "Sumi-e koi wall art — minimalist Japanese fish ink print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, office, or above-bed gallery wall.\n\n*Koi* — A single koi crossing still water — the courage piece. In Japanese legend the koi that climbs the waterfall becomes a dragon.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Three Bamboo*, *Cherry Branch*, *Mountain Stream* to form a four-piece Sumi-e collection (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Calm Waters\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for home offices, courage/persistence gifts, Japandi bedrooms, and meditation studios.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Three Bamboo",
+        "Cherry Branch",
+        "Mountain Stream"
+      ]
+    },
+    {
+      "slug": "mountain-stream",
+      "name": "Mountain Stream",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Sumi-e Waterfall Print, Japandi Wall Art, Single Vertical Brushstroke, Minimalist Ink | Mountain Stream by Calm & Oak",
+      "titleLen": 117,
+      "description": "Sumi-e waterfall wall art — minimalist Japanese ink brushstroke print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, meditation space, or above-bed gallery wall.\n\n*Mountain Stream* — A single decisive vertical brushstroke — water as gesture. The whole waterfall in one breath.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Mountain Mist*, *Enso*, *Bent Reed* to form a four-piece Sumi-e gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Calm Waters\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for meditation studios, yoga teachers, therapist offices, Japandi bedrooms, and above-bed decor.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Mountain Mist",
+        "Enso",
+        "Bent Reed"
+      ]
+    },
+    {
+      "slug": "tsuki",
+      "name": "Tsuki",
+      "series": "Sumi-e",
+      "tagSet": "sumi-e",
+      "title": "Wabi-Sabi Tea Bowl Print, Sumi-e Wall Art, Japanese Ceramic Ink, Japandi Decor | Tsuki by Calm & Oak",
+      "titleLen": 100,
+      "description": "Wabi-sabi tea bowl wall art — minimalist Japanese sumi-e ink print on museum-quality 250gsm matte paper. A calm Japandi piece for kitchen, dining room, or tea room.\n\n*Tsuki* — An empty tea bowl, tilted ever so slightly. Wabi-sabi: beauty in the imperfect, the impermanent, the incomplete.\n\nPart of the **Sumi-e** series by Calm & Oak. Pairs with *Chado*, *Balance*, *Enso* to form a four-piece wabi-sabi gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Sumi-e Calm Waters\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for tea rooms, dining rooms, kitchen still-life corners, mindful gifts, and Japandi homes.\n\nJapandi wall art • sumi-e ink painting • minimalist Japanese print • zen wall art • wabi-sabi decor • meditation art • above bed art",
+      "pairs": [
+        "Chado",
+        "Balance",
+        "Enso"
+      ]
+    },
+    {
+      "slug": "single-stem",
+      "name": "Single Stem",
+      "series": "Botanical Line",
+      "tagSet": "botanical",
+      "title": "Single Stem Print, Botanical Line Art, Japandi Bud Vase Wall Art, Minimalist Botanical | Single Stem by Calm & Oak",
+      "titleLen": 114,
+      "description": "Single-stem botanical line wall art — minimalist Japandi print on museum-quality 250gsm matte paper. A quiet piece for kitchen, sunlit corner, or above-bed gallery wall.\n\n*Single Stem* — One dried stem in a stoneware bud vase — the entire Japandi philosophy compressed into a single object.\n\nPart of the **Botanical Line** series by Calm & Oak. Pairs with *Eucalyptus*, *Olive Branch*, *Wild Grass* to form a four-piece Botanical Line gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Botanical Soft\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for kitchens, sunlit corners, plant lovers, slow-living gifts, and Japandi bedrooms.\n\nBotanical line art • single-line drawing • Japandi botanical print • minimalist botanical • zen wall art • neutral wall decor • leaf wall art",
+      "pairs": [
+        "Eucalyptus",
+        "Olive Branch",
+        "Wild Grass"
+      ]
+    },
+    {
+      "slug": "eucalyptus",
+      "name": "Eucalyptus",
+      "series": "Botanical Line",
+      "tagSet": "botanical",
+      "title": "Eucalyptus Print, Single Line Botanical Wall Art, Japandi Botanical Line Drawing, Minimalist Leaf | Eucalyptus by Calm & Oak",
+      "titleLen": 124,
+      "description": "Eucalyptus single-line botanical wall art — minimalist Japandi print on museum-quality 250gsm matte paper. A quiet piece for bathroom, kitchen, or above-bed gallery wall.\n\n*Eucalyptus* — A single eucalyptus stem as one continuous line — the pen never lifts. The whole plant in a single unbroken gesture.\n\nPart of the **Botanical Line** series by Calm & Oak. Pairs with *Olive Branch*, *Single Stem*, *Ginkgo* to form a four-piece Botanical Line gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Botanical Soft\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for bathrooms, kitchens, plant lovers, slow-living gifts, and Japandi bedrooms.\n\nBotanical line art • single-line drawing • Japandi botanical print • minimalist botanical • zen wall art • neutral wall decor • leaf wall art",
+      "pairs": [
+        "Olive Branch",
+        "Single Stem",
+        "Ginkgo"
+      ]
+    },
+    {
+      "slug": "olive",
+      "name": "Olive Branch",
+      "series": "Botanical Line",
+      "tagSet": "botanical",
+      "title": "Olive Branch Print, Botanical Line Art, Japandi Wall Art, Single Line Drawing, Mediterranean Leaf | Olive Branch by Calm & Oak",
+      "titleLen": 126,
+      "description": "Olive branch botanical line wall art — minimalist Japandi print on museum-quality 250gsm matte paper. A quiet piece for kitchen, dining room, or above-bed gallery wall.\n\n*Olive Branch* — An olive branch as a single arched ink line — the Japandi outdoor signature plant, drawn in one breath.\n\nPart of the **Botanical Line** series by Calm & Oak. Pairs with *Eucalyptus*, *Single Stem*, *Ginkgo* to form a four-piece Botanical Line gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Botanical Soft\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for kitchens, dining rooms, Mediterranean-leaning interiors, slow-living gifts, and Japandi bedrooms.\n\nBotanical line art • single-line drawing • Japandi botanical print • minimalist botanical • zen wall art • neutral wall decor • leaf wall art",
+      "pairs": [
+        "Eucalyptus",
+        "Single Stem",
+        "Ginkgo"
+      ]
+    },
+    {
+      "slug": "pampas",
+      "name": "Pampas",
+      "series": "Botanical Line",
+      "tagSet": "botanical",
+      "title": "Pampas Grass Print, Boho Botanical Wall Art, Japandi Beige Decor, Three Plumes | Pampas by Calm & Oak",
+      "titleLen": 101,
+      "description": "Pampas grass wall art — minimalist boho botanical print on museum-quality 250gsm matte paper. A warm Japandi piece for living room, autumn decor, or above-bed gallery wall.\n\n*Pampas* — Three pampas plumes in soft pale-beige — the autumn piece. Texture as the whole composition.\n\nPart of the **Botanical Line** series by Calm & Oak. Pairs with *Wild Grass*, *Single Stem*, *Eucalyptus* to form a four-piece Botanical Line gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Botanical Wild\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for living rooms, autumn decor refreshes, boho-Japandi interiors, slow-living gifts, and bedroom warmth.\n\nBotanical line art • single-line drawing • Japandi botanical print • minimalist botanical • zen wall art • neutral wall decor • leaf wall art",
+      "pairs": [
+        "Wild Grass",
+        "Single Stem",
+        "Eucalyptus"
+      ]
+    },
+    {
+      "slug": "ginkgo",
+      "name": "Ginkgo",
+      "series": "Botanical Line",
+      "tagSet": "botanical",
+      "title": "Ginkgo Leaf Print, Japandi Botanical Line Art, Japanese Leaf Wall Art, Minimalist Botanical | Ginkgo by Calm & Oak",
+      "titleLen": 114,
+      "description": "Ginkgo leaf botanical line wall art — minimalist Japandi print on museum-quality 250gsm matte paper. A quiet piece for kitchen, study, or above-bed gallery wall.\n\n*Ginkgo* — A single fan-shaped ginkgo leaf with radiating veins — the world’s oldest tree species, the most-recognised botanical symbol of stillness.\n\nPart of the **Botanical Line** series by Calm & Oak. Pairs with *Olive Branch*, *Eucalyptus*, *Single Stem* to form a four-piece Botanical Line gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Botanical Wild\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for studies, kitchens, Japandi bedrooms, slow-living gifts, and plant lovers.\n\nBotanical line art • single-line drawing • Japandi botanical print • minimalist botanical • zen wall art • neutral wall decor • leaf wall art",
+      "pairs": [
+        "Olive Branch",
+        "Eucalyptus",
+        "Single Stem"
+      ]
+    },
+    {
+      "slug": "wild-grass",
+      "name": "Wild Grass",
+      "series": "Botanical Line",
+      "tagSet": "botanical",
+      "title": "Wild Grass Print, Minimalist Botanical Line Art, Japandi Wall Art, Quiet Botanical | Wild Grass by Calm & Oak",
+      "titleLen": 109,
+      "description": "Wild grass botanical line wall art — minimalist Japandi print on museum-quality 250gsm matte paper. A quiet piece for nursery, bedside, or above-bed gallery wall.\n\n*Wild Grass* — Three blades of wild grass at varied heights — the smallest botanical in the series, the calmest piece.\n\nPart of the **Botanical Line** series by Calm & Oak. Pairs with *Pampas*, *Single Stem*, *Ginkgo* to form a four-piece Botanical Line gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Botanical Wild\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for nurseries, bedside walls, slow-living gifts, Japandi bedrooms, and meditation studios.\n\nBotanical line art • single-line drawing • Japandi botanical print • minimalist botanical • zen wall art • neutral wall decor • leaf wall art",
+      "pairs": [
+        "Pampas",
+        "Single Stem",
+        "Ginkgo"
+      ]
+    },
+    {
+      "slug": "moon-cycle",
+      "name": "Moon Cycle",
+      "series": "Minimalist Landscape",
+      "tagSet": "landscape",
+      "title": "Moon Phases Print, Three Moon Cycle Wall Art, Japandi Landscape, Lunar Phases Decor | Moon Cycle by Calm & Oak",
+      "titleLen": 110,
+      "description": "Moon phases wall art — minimalist three-moon cycle print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, nursery, or above-bed gallery wall.\n\n*Moon Cycle* — Full, half, crescent — three moon phases descending the page. The patience piece.\n\nPart of the **Minimalist Landscape** series by Calm & Oak. Pairs with *Moonrise*, *Dusk*, *Horizon Bird* to form a four-piece Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Landscape Night\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for bedrooms, nurseries, anniversary or birthday gifts, Japandi interiors, and above-bed decor.\n\nMinimalist landscape print • Japandi landscape • abstract horizon • neutral wall art • nature wall art • soft landscape • above bed art",
+      "pairs": [
+        "Moonrise",
+        "Dusk",
+        "Horizon Bird"
+      ]
+    },
+    {
+      "slug": "horizon-bird",
+      "name": "Horizon Bird",
+      "series": "Minimalist Landscape",
+      "tagSet": "landscape",
+      "title": "Minimalist Horizon Print, Japandi Bird Landscape, Above-Bed Wall Art, Soft Sun Decor | Horizon Bird by Calm & Oak",
+      "titleLen": 113,
+      "description": "Minimalist horizon wall art — Japandi bird-and-sun landscape print on museum-quality 250gsm matte paper. A calm piece for bedroom, living room, or above-bed gallery wall.\n\n*Horizon Bird* — A single horizon stroke, a distant bird, a soft sun — the departure piece. Everything in motion, everything still.\n\nPart of the **Minimalist Landscape** series by Calm & Oak. Pairs with *Serene Dawn*, *Layers*, *Dusk* to form a four-piece Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Landscape Quiet Sky\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for living rooms, Japandi bedrooms, housewarmings, departure or new-chapter gifts, and above-bed decor.\n\nMinimalist landscape print • Japandi landscape • abstract horizon • neutral wall art • nature wall art • soft landscape • above bed art",
+      "pairs": [
+        "Serene Dawn",
+        "Layers",
+        "Dusk"
+      ]
+    },
+    {
+      "slug": "dusk",
+      "name": "Dusk",
+      "series": "Minimalist Landscape",
+      "tagSet": "landscape",
+      "title": "Lone Tree Print, Terracotta Sunset Landscape, Japandi Wall Art, Golden Hour Decor | Dusk by Calm & Oak",
+      "titleLen": 102,
+      "description": "Lone tree at dusk wall art — minimalist terracotta sunset print on museum-quality 250gsm matte paper. A warm Japandi piece for living room, dining room, or above-bed gallery wall.\n\n*Dusk* — A lone tree against a warm terracotta horizon — the golden-hour piece. The minute before the lamps come on.\n\nPart of the **Minimalist Landscape** series by Calm & Oak. Pairs with *Horizon Bird*, *Moonrise*, *Layers* to form a four-piece Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Landscape Night\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for living rooms, dining rooms, warm Japandi interiors, slow-evening gifts, and above-bed decor.\n\nMinimalist landscape print • Japandi landscape • abstract horizon • neutral wall art • nature wall art • soft landscape • above bed art",
+      "pairs": [
+        "Horizon Bird",
+        "Moonrise",
+        "Layers"
+      ]
+    },
+    {
+      "slug": "layers",
+      "name": "Layers",
+      "series": "Minimalist Landscape",
+      "tagSet": "landscape",
+      "title": "Color Field Landscape Print, Earth Tone Bands Wall Art, Japandi Abstract Horizon, Neutral Palette | Layers by Calm & Oak",
+      "titleLen": 120,
+      "description": "Color field landscape wall art — earth-tone horizontal bands on museum-quality 250gsm matte paper. A calm Japandi piece for living room, dining room, or above-couch gallery wall.\n\n*Layers* — Five horizontal bands — cream, grey, sage, honey. The whole Japandi palette compressed into a single landscape.\n\nPart of the **Minimalist Landscape** series by Calm & Oak. Pairs with *Serene Dawn*, *Warm Earth*, *Sage Stone* to form a four-piece Landscape & Tonal gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Landscape Quiet Sky\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for living rooms, dining rooms, designer offices, color-led Japandi interiors, and above-couch decor.\n\nMinimalist landscape print • Japandi landscape • abstract horizon • neutral wall art • nature wall art • soft landscape • above bed art",
+      "pairs": [
+        "Serene Dawn",
+        "Warm Earth",
+        "Sage Stone"
+      ]
+    },
+    {
+      "slug": "moonrise",
+      "name": "Moonrise",
+      "series": "Minimalist Landscape",
+      "tagSet": "landscape",
+      "title": "Full Moon Print, Minimalist Moon Landscape, Japandi Lunar Wall Art, Above-Bed Decor | Moonrise by Calm & Oak",
+      "titleLen": 108,
+      "description": "Full moonrise wall art — minimalist Japandi moon landscape print on museum-quality 250gsm matte paper. A calm piece for bedroom, nursery, or above-bed gallery wall.\n\n*Moonrise* — A luminous full moon over a faint distant hill — the late-evening piece. The hour just before silence.\n\nPart of the **Minimalist Landscape** series by Calm & Oak. Pairs with *Moon Cycle*, *Dusk*, *Horizon Bird* to form a four-piece Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Landscape Night\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for bedrooms, nurseries, anniversary gifts, Japandi interiors, and above-bed decor.\n\nMinimalist landscape print • Japandi landscape • abstract horizon • neutral wall art • nature wall art • soft landscape • above bed art",
+      "pairs": [
+        "Moon Cycle",
+        "Dusk",
+        "Horizon Bird"
+      ]
+    },
+    {
+      "slug": "serene-dawn",
+      "name": "Serene Dawn",
+      "series": "Minimalist Landscape",
+      "tagSet": "landscape",
+      "title": "Soft Arch Landscape Print, Japandi Horizon Wall Art, Sage Oat Terracotta Palette, Above-Bed | Serene Dawn by Calm & Oak",
+      "titleLen": 119,
+      "description": "Serene dawn wall art — soft-arch Japandi horizon print on museum-quality 250gsm matte paper. A calm piece for bedroom, living room, or above-bed gallery wall.\n\n*Serene Dawn* — Soft arches in sage, oat and terracotta — the muted moment between night and morning, drawn as a horizon.\n\nPart of the **Minimalist Landscape** series by Calm & Oak. Pairs with *Layers*, *Horizon Bird*, *Dusk* to form a four-piece Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Landscape Quiet Sky\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for bedrooms, living rooms, slow-morning lovers, Japandi interiors, and above-bed decor.\n\nMinimalist landscape print • Japandi landscape • abstract horizon • neutral wall art • nature wall art • soft landscape • above bed art",
+      "pairs": [
+        "Layers",
+        "Horizon Bird",
+        "Dusk"
+      ]
+    },
+    {
+      "slug": "shizuka",
+      "name": "Shizuka",
+      "series": "Japanese Calligraphy",
+      "tagSet": "calligraphy",
+      "title": "Japanese Kanji Print, Shizuka Stillness Calligraphy, Zen Wall Art, Japandi Decor | Shizuka by Calm & Oak",
+      "titleLen": 104,
+      "description": "Shizuka 静 Japanese calligraphy wall art — kanji for stillness on museum-quality 250gsm matte paper. A quiet Japandi piece for meditation space, study, or above-bed gallery wall.\n\n*Shizuka* — Shizuka 静 — the kanji for stillness. The character that translates the Japandi premise directly into one mark on the wall.\n\nPart of the **Japanese Calligraphy** series by Calm & Oak. Pairs with *Wa*, *Ma*, *Enso* to form a three-piece Japanese Calligraphy triptych (each sold separately).\n\n**Save $28 with the set of three** — see \"Japanese Calligraphy Triptych\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for meditation studios, yoga teachers, gifts for people who love Japan, intentional housewarmings, and Japandi bedrooms.\n\nJapanese calligraphy print • kanji wall art • Japanese wall art • zen wall art • meditation art • Japandi decor • sumi-e print",
+      "pairs": [
+        "Wa",
+        "Ma",
+        "Enso"
+      ]
+    },
+    {
+      "slug": "wa",
+      "name": "Wa",
+      "series": "Japanese Calligraphy",
+      "tagSet": "calligraphy",
+      "title": "Japanese Kanji Print, Wa Harmony Calligraphy, Zen Wall Art, Japandi Decor | Wa by Calm & Oak",
+      "titleLen": 92,
+      "description": "Wa 和 Japanese calligraphy wall art — kanji for harmony on museum-quality 250gsm matte paper. A quiet Japandi piece for living room, meditation space, or above-bed gallery wall.\n\n*Wa* — Wa 和 — harmony. The character at the heart of every Japanese aesthetic discipline, from tea to architecture.\n\nPart of the **Japanese Calligraphy** series by Calm & Oak. Pairs with *Shizuka*, *Ma*, *Enso* to form a three-piece Japanese Calligraphy triptych (each sold separately).\n\n**Save $28 with the set of three** — see \"Japanese Calligraphy Triptych\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for living rooms, dining rooms, wedding or anniversary gifts, intentional housewarmings, and Japandi homes.\n\nJapanese calligraphy print • kanji wall art • Japanese wall art • zen wall art • meditation art • Japandi decor • sumi-e print",
+      "pairs": [
+        "Shizuka",
+        "Ma",
+        "Enso"
+      ]
+    },
+    {
+      "slug": "ma",
+      "name": "Ma",
+      "series": "Japanese Calligraphy",
+      "tagSet": "calligraphy",
+      "title": "Japanese Kanji Print, Ma Negative Space Calligraphy, Zen Wall Art, Japandi Minimalist Decor | Ma by Calm & Oak",
+      "titleLen": 110,
+      "description": "Ma 間 Japanese calligraphy wall art — kanji for negative space on museum-quality 250gsm matte paper. A quiet Japandi piece for designer office, meditation space, or above-bed gallery wall.\n\n*Ma* — Ma 間 — the space between, the pause, the interval. The Japanese principle that an empty wall can be the most considered wall in the room.\n\nPart of the **Japanese Calligraphy** series by Calm & Oak. Pairs with *Shizuka*, *Wa*, *Enso* to form a three-piece Japanese Calligraphy triptych (each sold separately).\n\n**Save $28 with the set of three** — see \"Japanese Calligraphy Triptych\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for designer offices, meditation studios, architects, minimalist interiors, and intentional gifts.\n\nJapanese calligraphy print • kanji wall art • Japanese wall art • zen wall art • meditation art • Japandi decor • sumi-e print",
+      "pairs": [
+        "Shizuka",
+        "Wa",
+        "Enso"
+      ]
+    },
+    {
+      "slug": "two-woods",
+      "name": "Two Woods",
+      "series": "Tonal Study",
+      "tagSet": "tonal",
+      "title": "Tonal Study Print, Oak Walnut Color Field Art, Japandi Abstract Wall Art, Earth Tone Palette | Two Woods by Calm & Oak",
+      "titleLen": 118,
+      "description": "Two-woods tonal study wall art — oak and walnut color field print on museum-quality 250gsm matte paper. A modernist Japandi piece for living room, office, or above-couch wall.\n\n*Two Woods* — Oak and walnut overlapping, with one terracotta line breaking through — the Japandi two-woods rule, made abstract.\n\nPart of the **Tonal Study** series by Calm & Oak. Pairs with *Warm Earth*, *Sage Stone*, *Layers* to form a four-piece Tonal & Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Tonal Study Triptych\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for modernist living rooms, designer offices, architect studios, color-led Japandi interiors, and above-couch decor.\n\nTonal study print • color field art • neutral palette art • Japandi abstract • minimalist abstract • earth tone wall art • above couch art",
+      "pairs": [
+        "Warm Earth",
+        "Sage Stone",
+        "Layers"
+      ]
+    },
+    {
+      "slug": "warm-earth",
+      "name": "Warm Earth",
+      "series": "Tonal Study",
+      "tagSet": "tonal",
+      "title": "Tonal Study Print, Terracotta Oat Color Field, Earth Tone Abstract Art, Warm Japandi Palette | Warm Earth by Calm & Oak",
+      "titleLen": 119,
+      "description": "Warm earth tonal study wall art — terracotta and oat color field print on museum-quality 250gsm matte paper. A warm Japandi piece for living room, dining room, or above-couch wall.\n\n*Warm Earth* — Terracotta, oat, and honey-brown vertical bands — the warm Japandi palette presented as a study.\n\nPart of the **Tonal Study** series by Calm & Oak. Pairs with *Two Woods*, *Sage Stone*, *Layers* to form a four-piece Tonal & Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Tonal Study Triptych\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for living rooms, dining rooms, designer offices, warm-palette Japandi interiors, and above-couch decor.\n\nTonal study print • color field art • neutral palette art • Japandi abstract • minimalist abstract • earth tone wall art • above couch art",
+      "pairs": [
+        "Two Woods",
+        "Sage Stone",
+        "Layers"
+      ]
+    },
+    {
+      "slug": "sage-stone",
+      "name": "Sage Stone",
+      "series": "Tonal Study",
+      "tagSet": "tonal",
+      "title": "Tonal Study Print, Sage Stone Color Field, Biophilic Abstract Wall Art, Cool Japandi Palette | Sage Stone by Calm & Oak",
+      "titleLen": 119,
+      "description": "Sage and stone tonal study wall art — biophilic color field print on museum-quality 250gsm matte paper. A calm Japandi piece for bedroom, study, or above-bed gallery wall.\n\n*Sage Stone* — Stone-grey, warm sage, walnut. The Japandi botanical palette presented as a study.\n\nPart of the **Tonal Study** series by Calm & Oak. Pairs with *Two Woods*, *Warm Earth*, *Layers* to form a four-piece Tonal & Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Tonal Study Triptych\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for bedrooms, studies, designer offices, biophilic Japandi interiors, and above-bed decor.\n\nTonal study print • color field art • neutral palette art • Japandi abstract • minimalist abstract • earth tone wall art • above couch art",
+      "pairs": [
+        "Two Woods",
+        "Warm Earth",
+        "Layers"
+      ]
+    },
+    {
+      "slug": "balance",
+      "name": "Balance",
+      "series": "Wabi-Sabi Still Life",
+      "tagSet": "stills",
+      "title": "Stacked Stones Print, Wabi-Sabi Cairn Wall Art, Japandi Still Life, Mindful Decor | Balance by Calm & Oak",
+      "titleLen": 105,
+      "description": "Stacked stones wall art — wabi-sabi cairn still life on museum-quality 250gsm matte paper. A mindful Japandi piece for meditation space, study, or above-bed gallery wall.\n\n*Balance* — Three stones, stacked. The discipline piece — a small monument to the practice of doing one quiet thing well.\n\nPart of the **Wabi-Sabi Still Life** series by Calm & Oak. Pairs with *Chado*, *Linen Morning*, *Tsuki* to form a four-piece Wabi-Sabi gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Wabi-Sabi Still Life\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for meditation studios, yoga teachers, therapist offices, mindful gifts, and Japandi bedrooms.\n\nWabi-sabi still life • Japandi still life • minimalist still life • mindful wall art • slow-living decor • zen still life • above bed art",
+      "pairs": [
+        "Chado",
+        "Linen Morning",
+        "Tsuki"
+      ]
+    },
+    {
+      "slug": "chado",
+      "name": "Chado",
+      "series": "Wabi-Sabi Still Life",
+      "tagSet": "stills",
+      "title": "Chado Tea Ceremony Print, Japandi Still Life Wall Art, Wabi-Sabi Tea Decor, Kitchen Print | Chado by Calm & Oak",
+      "titleLen": 111,
+      "description": "Chado tea ceremony wall art — wabi-sabi Japandi still life print on museum-quality 250gsm matte paper. A quiet piece for kitchen, dining room, or tea room.\n\n*Chado* — A tetsubin teapot, two cups, a single branch — chadō, the way of tea, drawn as a still life.\n\nPart of the **Wabi-Sabi Still Life** series by Calm & Oak. Pairs with *Balance*, *Linen Morning*, *Tsuki* to form a four-piece Wabi-Sabi gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Wabi-Sabi Still Life\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for kitchens, dining rooms, tea rooms, mindful housewarming gifts, and Japandi homes.\n\nWabi-sabi still life • Japandi still life • minimalist still life • mindful wall art • slow-living decor • zen still life • above bed art",
+      "pairs": [
+        "Balance",
+        "Linen Morning",
+        "Tsuki"
+      ]
+    },
+    {
+      "slug": "linen-morning",
+      "name": "Linen Morning",
+      "series": "Atmospheric Still Life",
+      "tagSet": "stills",
+      "title": "Linen Curtain Print, Slow Morning Still Life, Japandi Wall Art, Atmospheric Bedroom Decor | Linen Morning by Calm & Oak",
+      "titleLen": 119,
+      "description": "Linen morning wall art — atmospheric Japandi still life print on museum-quality 250gsm matte paper. A quiet piece for bedroom, living room, or above-bed gallery wall.\n\n*Linen Morning* — Light through a billowing linen curtain — the slow-morning piece. The shape of a Sunday.\n\nPart of the **Atmospheric Still Life** series by Calm & Oak. Pairs with *Balance*, *Chado*, *Serene Dawn* to form a four-piece Wabi-Sabi & Landscape gallery wall (each sold separately).\n\n**Save $28 with the set of three** — see \"Wabi-Sabi Still Life\" in our shop. The three prints are designed to balance as a single gallery wall.\n\n**Sizes — all fit standard frames**\n• 8×10 in — $28\n• 11×14 in — $42\n• 16×20 in — $68\n\n**Materials**\n• Museum-quality matte fine-art poster, 250 gsm\n• Acid-free, FSC-certified archival paper\n• Warm off-white background — not bright white\n• Original Calm & Oak artwork, drawn in-house\n\n**Made to order.** Printed locally and shipped flat. Allow 3–5 business days before dispatch. Unframed — frame separately for the cleanest look.\n\nA quiet gift for bedrooms, sunlit reading nooks, slow-morning lovers, intentional gifts, and Japandi interiors.\n\nWabi-sabi still life • Japandi still life • minimalist still life • mindful wall art • slow-living decor • zen still life • above bed art",
+      "pairs": [
+        "Balance",
+        "Chado",
+        "Serene Dawn"
+      ]
+    }
+  ]
+}

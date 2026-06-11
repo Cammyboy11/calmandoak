@@ -1,2 +1,6 @@
+# Force www → apex (Google flagged www.calmandoak.com as 5xx in GSC)
+https://www.calmandoak.com/*   https://calmandoak.com/:splat   301!
+
+# Legacy category renames
 /shop/dining/*        /shop/ceramics-tableware/   301
 /shop/living-room/*   /shop/furniture/            301

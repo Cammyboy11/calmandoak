@@ -1,0 +1,57 @@
+{
+  "_pricing": { "8x10": 28, "11x14": 42, "16x20": 68, "_note": "USD, 8x10 / 11x14 / 16x20 — gives ~70% margin on Gelato base costs" },
+  "_descriptionTemplate": "An original Calm & Oak {{series}} print — {{descriptor}}. Designed in-house and printed to order on heavyweight 200 gsm Museum-Quality Matte Paper.\n\nThree sizes (8×10, 11×14, 16×20) sized to drop straight into standard frames. Hahnemühle-grade matte fine-art stock. Ships unframed, flat or rolled.\n\nMade for quiet rooms — pairs naturally with our other Japandi prints as a gallery wall set. Visit calmandoak.com for the full collection.",
+  "_tagsAlreadyInGelato": [
+    "japandi wall art",
+    "minimalist wall art",
+    "wabi sabi decor",
+    "calm home decor",
+    "neutral wall decor",
+    "gallery wall print"
+  ],
+  "_tagsToAdd": {
+    "sumi-e":      ["sumi e print", "japanese ink print", "zen wall art", "washi paper print", "meditation art", "black and white art"],
+    "botanical":   ["botanical line art", "single line drawing", "minimalist botanical", "zen wall art", "meditation art", "leaf wall art"],
+    "landscape":   ["abstract landscape", "minimalist landscape", "neutral wall art", "japandi print", "nature wall art", "soft landscape"],
+    "calligraphy": ["japanese kanji art", "calligraphy print", "kanji wall art", "sumi e print", "zen wall art", "japanese wall art"],
+    "tonal":       ["tonal study print", "color field art", "neutral palette art", "abstract print", "minimalist abstract", "japandi print"],
+    "stills":      ["still life print", "japandi still life", "minimalist still life", "wabi sabi print", "modern still life", "zen wall art"]
+  },
+  "prints": [
+    { "slug": "enso",            "series": "sumi-e ink",            "descriptor": "an incomplete circle, the brushstroke that says the rest", "tagSet": "sumi-e" },
+    { "slug": "bent-reed",       "series": "sumi-e ink",            "descriptor": "a single tall grass arching gracefully, one decisive brushstroke for the whole season", "tagSet": "sumi-e" },
+    { "slug": "crane",           "series": "sumi-e ink",            "descriptor": "tsuru in mid-flight, the Japanese symbol of longevity drawn in one breath", "tagSet": "sumi-e" },
+    { "slug": "mountain-mist",   "series": "sumi-e ink",            "descriptor": "a single mountain peak emerging from soft ink wash — the contemplation piece", "tagSet": "sumi-e" },
+    { "slug": "bamboo",          "series": "sumi-e ink",            "descriptor": "three bamboo stalks rising at varied heights — the odd-number rule, in ink", "tagSet": "sumi-e" },
+    { "slug": "cherry-branch",   "series": "sumi-e ink",            "descriptor": "a single sakura branch with open blossoms and one fallen petal — the transience piece", "tagSet": "sumi-e" },
+    { "slug": "koi",             "series": "sumi-e ink",            "descriptor": "a single koi crossing still water, with two small vermillion accents", "tagSet": "sumi-e" },
+    { "slug": "mountain-stream", "series": "sumi-e ink",            "descriptor": "a single decisive vertical brushstroke down the page — water as gesture", "tagSet": "sumi-e" },
+    { "slug": "tsuki",           "series": "sumi-e ink",            "descriptor": "an empty wabi-sabi tea bowl, tilted ever so slightly — the imperfection rule made visible", "tagSet": "sumi-e" },
+
+    { "slug": "single-stem",     "series": "botanical line",        "descriptor": "one dried stem in a stoneware bud vase — the whole Japandi philosophy in a single object", "tagSet": "botanical" },
+    { "slug": "eucalyptus",      "series": "botanical line",        "descriptor": "a single eucalyptus stem rendered as one continuous line", "tagSet": "botanical" },
+    { "slug": "olive",           "series": "botanical line",        "descriptor": "an olive branch as a single arched ink line — the Japandi outdoor signature plant", "tagSet": "botanical" },
+    { "slug": "pampas",          "series": "botanical line",        "descriptor": "three pampas plumes in soft pale-beige texture — the autumn piece", "tagSet": "botanical" },
+    { "slug": "ginkgo",          "series": "botanical line",        "descriptor": "a single fan-shaped ginkgo leaf with radiating vein lines — the most-recognised symbol of stillness", "tagSet": "botanical" },
+    { "slug": "wild-grass",      "series": "botanical line",        "descriptor": "three blades of wild grass at varied heights — the smallest botanical, the calmest piece", "tagSet": "botanical" },
+
+    { "slug": "moon-cycle",      "series": "minimalist landscape",  "descriptor": "three moon phases descending the page — full, half, crescent — the patience piece", "tagSet": "landscape" },
+    { "slug": "horizon-bird",    "series": "minimalist landscape",  "descriptor": "a single horizon stroke, a distant bird, a soft sun — the departure piece", "tagSet": "landscape" },
+    { "slug": "dusk",            "series": "minimalist landscape",  "descriptor": "a lone tree against a warm terracotta horizon — the golden-hour piece", "tagSet": "landscape" },
+    { "slug": "layers",          "series": "minimalist landscape",  "descriptor": "five horizontal bands in cream, grey, sage and honey — the whole palette as a landscape", "tagSet": "landscape" },
+    { "slug": "moonrise",        "series": "minimalist landscape",  "descriptor": "a luminous full moon over a faint distant hill — the late-evening piece", "tagSet": "landscape" },
+    { "slug": "serene-dawn",     "series": "minimalist landscape",  "descriptor": "soft arches in sage, oat and terracotta — the muted moment, drawn as a horizon", "tagSet": "landscape" },
+
+    { "slug": "shizuka",         "series": "Japanese calligraphy",  "descriptor": "Shizuka 静 — the kanji for stillness, the character that translates the Japandi premise directly", "tagSet": "calligraphy" },
+    { "slug": "wa",              "series": "Japanese calligraphy",  "descriptor": "Wa 和 — harmony, the character at the heart of every Japanese aesthetic discipline", "tagSet": "calligraphy" },
+    { "slug": "ma",              "series": "Japanese calligraphy",  "descriptor": "Ma 間 — the space between, the pause, the interval; the print that earns its empty wall", "tagSet": "calligraphy" },
+
+    { "slug": "two-woods",       "series": "tonal study",           "descriptor": "oak and walnut overlapping, with one terracotta line — the two-woods rule, made abstract", "tagSet": "tonal" },
+    { "slug": "warm-earth",      "series": "tonal study",           "descriptor": "terracotta, oat and honey-brown vertical bands — the warm palette as a study", "tagSet": "tonal" },
+    { "slug": "sage-stone",      "series": "tonal study",           "descriptor": "stone-grey, warm sage and walnut vertical bands — the botanical palette as a study", "tagSet": "tonal" },
+
+    { "slug": "balance",         "series": "wabi-sabi still life",  "descriptor": "a small cairn of three stones — the discipline piece", "tagSet": "stills" },
+    { "slug": "chado",           "series": "wabi-sabi still life",  "descriptor": "a tetsubin teapot, two cups, a single branch — chadō, the way of tea, as a still life", "tagSet": "stills" },
+    { "slug": "linen-morning",   "series": "atmospheric still",     "descriptor": "light through a billowing linen curtain — the slow-morning piece", "tagSet": "stills" }
+  ]
+}
