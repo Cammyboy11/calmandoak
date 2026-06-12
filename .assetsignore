@@ -5,6 +5,9 @@
 .git/
 .github/
 node_modules/
+_tools/
+_*.js
+*.bat
 01-brand-assets/
 02-board-covers/
 03-pin-templates/
