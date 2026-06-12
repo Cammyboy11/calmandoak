@@ -1,5 +1,5 @@
-# Force www → apex (Google flagged www.calmandoak.com as 5xx in GSC)
-https://www.calmandoak.com/*   https://calmandoak.com/:splat   301!
+# www -> apex is handled by the Cloudflare zone-level Single Redirect rule
+# (Workers static assets _redirects only allows relative source URLs)
 
 # Legacy category renames
 /shop/dining/*        /shop/ceramics-tableware/   301
