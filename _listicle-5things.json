@@ -1,0 +1,18 @@
+{
+  "slug": "5things-calm-home",
+  "imageRoot": "C:\\Users\\CameronHayes\\OneDrive - GPWMAD01\\Desktop\\Calm & Oak\\final pins\\07-mixed-stunning-batch",
+  "outDir": "C:\\Users\\CameronHayes\\OneDrive - GPWMAD01\\Desktop\\Calm & Oak\\final pins\\_reels",
+  "durations": { "hook": 2.4, "item": 2.3, "outro": 2.6 },
+  "items": [
+    { "image": "07-27-honest-materials.jpg", "label": "Natural materials" },
+    { "image": "07-24-lighting-five-pm.jpg", "label": "Low, warm light" },
+    { "image": "07-09-bud-vase-set.jpg", "label": "A single stem" },
+    { "image": "07-23-layering-textiles.jpg", "label": "Texture, not colour" },
+    { "image": "07-26-art-of-negative-space.jpg", "label": "Room to breathe" }
+  ],
+  "hooks": [
+    { "id": "A", "image": "07-20-japandi-bedroom.jpg", "line1": "5 THINGS", "line2": "every calm home has" },
+    { "id": "B", "image": "07-25-warmth-without-clutter.jpg", "line1": "why your home", "line2": "never feels calm" }
+  ],
+  "outro": { "image": "07-21-japandi-living-room.jpg", "line1": "CALM & OAK", "line2": "the full guide in bio" }
+}
