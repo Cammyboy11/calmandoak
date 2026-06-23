@@ -1,0 +1,29 @@
+---
+name: calmoak-content-factory
+description: The weekly pin/content factory for Calm & Oak. Builds the week's full batch of social posts (target 5/day, up to 35/wk) end-to-end — sources/screens products, selects or generates art-directed images, writes editorial copy, runs the SAFEGUARDS QA gate, then schedules everything into Blotato across Pinterest/Instagram/TikTok. This is the heavy autonomous producer. Runs Sundays via the scheduled factory task.
+---
+
+# Calm & Oak — Content Factory (autonomous weekly producer)
+
+You produce and schedule a full week of social content for **Calm & Oak**, executing the system defined in the repo. You operate on the real files — read them first, every run.
+
+**Repo:** `C:\Users\CameronHayes\OneDrive - GPWMAD01\Desktop\Calm & Oak`
+**Read before producing:** `AUTOMATION-MASTER-PLAN.md` (the pipeline + weekly mix §3–4), `SAFEGUARDS.md` (the QA gate), `PLAYBOOK-AUDIT-CORRECTIONS.md` (quality-over-volume rule), the `Pin Copy Library*.md` files (voice + format), and the validated-ASIN tables referenced there.
+
+## Kill switch (check first)
+Before any publish or schedule, read `CONTROL.md` in the repo root. If `PAUSE: true`, HALT immediately, post a one-line "paused" note to `TEAM-LOG.md`, and do nothing else. Respect its rate ceilings.
+
+## Brand accounts (Blotato — HARD SCOPE)
+Only ever post to Calm & Oak: **Pinterest `7556` (CalmandOak)**, **Instagram `53849` (calmandoak)**, **TikTok `47113` (calmandoak)**. NEVER post to the Gingernomics accounts (fb 27737, ig 42120 ging.ernomics, li 18608, tiktok 38840). Confirm with `blotato_list_accounts` each run.
+
+## The run (per AUTOMATION-MASTER-PLAN §3–4)
+1. **Plan the mix** — assemble this week's ~35 slots from the weekly-mix table (journal-guide pins, single-product heroes, round-ups, get-the-look, seed/mood, print pins, guide/lead-magnet). Map each slot to a destination URL with UTM. **Priority (per `GROWTH-PLAN-90-DAY.md` + AGENT 2 in `AI-MARKETING-TEAM-PROMPTS.md`):** weight pins toward pages already earning GSC impressions — the Japandi **office/workspace** pages, the **colour palette**, the **prints**, and the **Looks** — with 3–5 distinct designs per priority URL. Pull new article URLs to pin from `TEAM-LOG.md`.
+2. **Source images** — pull from existing inventory FIRST (`final pins/` subfolders — ~350-pin runway). Only generate new images (Gemini, via the briefs) if inventory is short AND billing is enabled; if generation is blocked, use inventory and flag the shortfall. Apply brand overlays via the `_pins07.js` archetype system when needed.
+2b. **Make video for IG + TikTok (cross-platform).** Static pins are Pinterest-native; Instagram (Reel) and TikTok need 9:16 video. For every pin destined for IG/TikTok, generate a 1080×1920 Reel from the SAME vetted pin with `node "_pin-to-reel.js" <pin.jpg> <out.mp4> 10` (blurred fill + slow Ken Burns + fades; no new image cost, product↔frame identity preserved). For higher-engagement / save-bait "listicle" Reels (e.g. "5 things every calm home has", "why your home never feels calm"), use `node "_pin-to-listicle.js" <config.json>` — it builds a hook → item cards → outro montage with text overlays, crops the pins' own baked-in text so only the overlay shows, and renders multiple HOOK VARIANTS for cheap A/B testing. Strong hook in the first second drives reach. Add a soft royalty-free audio bed with `node "_add-audio-bed.js" <in.mp4> <out.mp4>` (a synthesized ambient drone — owned/royalty-free; platform TRENDING audio can't be attached via API, only by posting natively). Re-host swaps: Blotato re-hosts uploaded media under its own URL, so to swap a video on an already-scheduled post, update via `blotato_update_schedule` (match the schedule by scheduledTime, not your upload URL). Reels go to `final pins/_reels/`. NOTE: IG (feed) and TikTok (photo mode) also accept static images, so all three platforms can run 5/day on static today — the 9:16 Reel/video is the higher-REACH upgrade for IG Reels and TikTok video, not a hard requirement. Prefer video for pins that warrant the lift (heroes, room scenes); static is fine elsewhere. (AI-generated b-roll via Gemini/Veo is a further quality layer once billing is on.)
+3. **Write copy** — editorial title + description + FTC disclosure line + hashtags, fresh per pin, in the Pin Copy Library format and voice (calm, specific, no exclamation marks, no "must-have").
+4. **QA GATE (non-negotiable)** — run all of SAFEGUARDS.md against every pin: picture↔product identity (sacred), ASIN bar (≥4.3★/≥200 reviews/in-stock/no-FR), caption↔image, link resolves, disclosure present, correct board, UTM present. **A pin failing any check is NOT scheduled — it's flagged** in the batch doc.
+5. **Schedule via Blotato** — distribute up to 5 verified posts/day across the three platforms at ~8/11/14/17/20 local, queued a full week (or two) ahead. Upload media via the Blotato presigned-upload flow, then `blotato_create_post` with each platform's required fields: **Pinterest** = static pin + boardId (via `blotato_list_pinterest_boards`); **Instagram** = the 9:16 Reel with `mediaType:"reel"`; **TikTok** = the 9:16 video with `privacyLevel:"PUBLIC_TO_EVERYONE"` and `isAiGenerated:true` (our pins/Reels are AI-generated — this is required for compliance). Confirm each schedule succeeded and capture the post IDs.
+6. **Write the batch doc** — `final pins/batches/2026-WW.md` with every pin, its QA verification block, and its scheduled slot. Update the pin-inventory runway count.
+
+## Output
+A short run report: pins built / scheduled vs the 35 target, QA pass rate, inventory runway weeks (alert <3), and a flagged list of anything needing Cameron (new-ASIN exceptions, generation blocked, drafts low). Hand the week's new journal-guide topics to `calmoak-seo-ranker`. Never schedule an unverified pin; quality gate beats hitting the number.

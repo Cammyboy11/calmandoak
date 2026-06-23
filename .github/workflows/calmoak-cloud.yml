@@ -1,0 +1,112 @@
+name: Calm & Oak — Cloud Agents
+
+# Runs the marketing agent fleet 24/7 on GitHub's servers (computer-off).
+# Times are UTC; the comments show the local EDT (UTC-4) equivalent.
+# SAFETY: every job no-ops unless ANTHROPIC_API_KEY is set, so committing this
+# file is inert until you add secrets and enable Actions. Test via "Run workflow"
+# (workflow_dispatch) on a low-risk agent (daily-digest) BEFORE relying on cron.
+
+on:
+  workflow_dispatch:
+    inputs:
+      agent:
+        description: Agent to run (manual test)
+        required: true
+        type: choice
+        options:
+          - calmoak-daily-digest
+          - calmoak-seo-ranker
+          - calmoak-geo-tracker
+          - calmoak-content-factory
+          - calmoak-publisher
+          - calmoak-outreach
+          - calmoak-email
+          - calmoak-monthly-audit
+          - calmoak-marketing-director
+      task:
+        description: Optional task override (blank = scheduled cycle)
+        required: false
+        type: string
+  schedule:
+    - cron: '30 11 * * *'    # daily-digest      07:30 EDT
+    - cron: '5 12 * * *'     # daily-publisher   08:05 EDT
+    - cron: '0 14 * * 1,3'   # seo-ranker        Mon/Wed 10:00 EDT
+    - cron: '0 15 * * 3'     # geo-tracker       Wed 11:00 EDT
+    - cron: '0 15 * * 4'     # outreach          Thu 11:00 EDT
+    - cron: '0 14 * * 5'     # email             Fri 10:00 EDT
+    - cron: '0 18 * * 0'     # content-factory   Sun 14:00 EDT
+    - cron: '0 23 * * 0'     # marketing-director Sun 19:00 EDT
+    - cron: '0 13 1 * *'     # monthly-audit     1st 09:00 EDT
+
+permissions:
+  contents: write   # lets agents commit + push site changes to live
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Guard — require ANTHROPIC_API_KEY
+        id: guard
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+            echo "ANTHROPIC_API_KEY not set — skipping (add secrets to activate)."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Node
+        if: steps.guard.outputs.skip != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        if: steps.guard.outputs.skip != 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Route schedule -> agent, then run
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+        run: |
+          set -euo pipefail
+          git config user.name "calmoak-cloud-agent"
+          git config user.email "noreply@anthropic.com"
+          SCHED="${{ github.event.schedule }}"
+          AGENT="${{ github.event.inputs.agent }}"
+          TASK="${{ github.event.inputs.task }}"
+          if [ -z "$AGENT" ]; then
+            case "$SCHED" in
+              '30 11 * * *')  AGENT=calmoak-daily-digest ;;
+              '5 12 * * *')   AGENT=calmoak-publisher ;;
+              '0 14 * * 1,3') AGENT=calmoak-seo-ranker ;;
+              '0 15 * * 3')   AGENT=calmoak-geo-tracker ;;
+              '0 15 * * 4')   AGENT=calmoak-outreach ;;
+              '0 14 * * 5')   AGENT=calmoak-email ;;
+              '0 18 * * 0')   AGENT=calmoak-content-factory ;;
+              '0 23 * * 0')   AGENT=calmoak-marketing-director ;;
+              '0 13 1 * *')   AGENT=calmoak-monthly-audit ;;
+              *) echo "Unknown schedule '$SCHED'"; exit 1 ;;
+            esac
+          fi
+          if [ -z "$TASK" ]; then
+            TASK="Run your scheduled cycle now. Today is $(date -u +%F). Operate in this repo (current directory, relative paths). Read ./CONTROL.md first and honor PAUSE."
+          fi
+          echo "::notice::Running agent $AGENT"
+          bash cloud/run-agent.sh "$AGENT" "$TASK"
+
+      - name: Commit agent log changes (TEAM-LOG / GEO-LOG)
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          # Agents commit their own code changes; this only sweeps the shared logs.
+          git add TEAM-LOG.md GEO-LOG.md 2>/dev/null || true
+          if ! git diff --cached --quiet 2>/dev/null; then
+            git commit -m "cloud-agent: update team logs [skip ci]" || true
+            git push || true
+          fi

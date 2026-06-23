@@ -4,6 +4,7 @@
 
 .git/
 .github/
+cloud/
 node_modules/
 _tools/
 _*.js

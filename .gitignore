@@ -6,6 +6,9 @@ node_modules/
 .env.*
 !.env.example
 
+# Cloud agent run logs
+cloud/last-*.json
+
 # Working files — do not deploy
 01-brand-assets/
 02-board-covers/
