@@ -1,0 +1,8 @@
+{
+  "_comment": "Calm & Oak Awin publisher (affiliate) ID is 2895187. Fill in each merchant's Awin Advertiser ID (awinmid) AFTER you are approved for their program in Awin (Advertisers -> program -> 'Advertiser ID'). Then `node _awin.js etsy <productUrl>` generates a tracked link. Empty = not joined yet.",
+  "merchants": {
+    "etsy": "",
+    "quince": "",
+    "jennikayne": ""
+  }
+}

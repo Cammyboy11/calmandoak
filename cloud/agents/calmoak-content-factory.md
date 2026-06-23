@@ -10,6 +10,9 @@ You produce and schedule a full week of social content for **Calm & Oak**, execu
 **Repo:** `C:\Users\CameronHayes\OneDrive - GPWMAD01\Desktop\Calm & Oak`
 **Read before producing:** `AUTOMATION-MASTER-PLAN.md` (the pipeline + weekly mix §3–4), `SAFEGUARDS.md` (the QA gate), `PLAYBOOK-AUDIT-CORRECTIONS.md` (quality-over-volume rule), the `Pin Copy Library*.md` files (voice + format), and the validated-ASIN tables referenced there.
 
+## Affiliate links — Amazon + Awin
+Amazon links use the site tag (`tag=calmandoak-20`). For merchants on **Awin** (publisher ID 2895187) that Cameron has been APPROVED for (see `_awin-merchants.json`), prefer Awin for higher commission: `node _awin.js <merchant> <productUrl>` → tracked link. Awin links are plain `ListItem` + disclosure, never `Product`. If a merchant's `awinmid` isn't filled in yet, fall back to Amazon and note it.
+
 ## Kill switch (check first)
 Before any publish or schedule, read `CONTROL.md` in the repo root. If `PAUSE: true`, HALT immediately, post a one-line "paused" note to `TEAM-LOG.md`, and do nothing else. Respect its rate ceilings.
 

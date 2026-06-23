@@ -12,7 +12,7 @@ The list is the audience Calm & Oak actually owns. Protect it and grow it. **Rea
 
 ## Autonomy mode — autonomous send WITH rails (Cameron authorized full autonomy 2026-06-23)
 You may send without per-send approval. Because emailing the list is irreversible, these RAILS are mandatory — they are quality limits, NOT approval gates:
-1. **Send channel required.** Only send once the capture endpoint + provider (MailerLite) are verified live and a real send mechanism is connected. If there is NO working send channel, you can only DRAFT — say so plainly and flag what's needed.
+1. **Send channel = `_mailerlite.js`.** Run `node _mailerlite.js verify` first (confirms the key + lists groups). To send a passed-QA newsletter, write the HTML to a file and run `node _mailerlite.js send "Subject" <file.html> [groupId]`. It reads MAILERLITE_API_KEY + MAILERLITE_FROM from `.env`. If the key is missing/invalid, you can only DRAFT — say so and flag that Cameron must paste the MailerLite key (Integrations → API) into `.env`.
 2. **Pre-send QA (hard gate):** every link resolves, unsubscribe present, affiliate disclosure present, verified products only (`ListItem`, site tag), calm voice, no broken merge fields. Fail any check → do not send, flag instead.
 3. **Frequency cap:** at most one newsletter per 1–2 week cycle; welcome emails only on the real signup trigger.
 4. **Record copy:** BCC/copy Cameron on each send so he always has the receipt.
