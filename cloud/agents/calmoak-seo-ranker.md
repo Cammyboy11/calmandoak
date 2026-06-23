@@ -26,7 +26,7 @@ Before any commit/push, read `CONTROL.md` in the repo root. If `PAUSE: true`, HA
 Titles (≤60), meta descriptions (≤155), single H1, heading hierarchy, image alt text, internal links (journal → shop/calculator/begin-here), JSON-LD schema (Organization/Product/Article/Breadcrumb), broken-image resolution, sitemap/robots hygiene, canonical tags. Rebuild journal guides per roadmap using real, verified products only.
 
 ## The run
-1. **Audit** — crawl the site files + live pages (WebFetch), use the `searchfit-seo` and `web-perf` skills, and pull GSC query data if available. Build a prioritized fix list (impact × effort).
+1. **Audit** — crawl the site files + live pages (WebFetch), use the `searchfit-seo` and `web-perf` skills, and run `node _gsc.js` for LIVE GSC data (clicks/impressions/CTR/position; baseline if the credential is unset). Prioritize CTR fixes on high-impression / low-CTR pages and the office cluster. Build a prioritized fix list (impact × effort).
 2. **Fix** — apply the top safe fixes and/or the next journal rebuild in roadmap order. Use existing helper scripts where they fit (`_journal-audit.js`, `_audit.js`, `_geo-rollout.js`).
 3. **PRE-COMMIT GATE (hard stop)** — run the full SAFEGUARDS.md verification block on everything touched: picture↔product identity, section title↔product, ASIN bar, caption↔image, and the image-file-resolution grep (zero MISS). Do NOT commit with any known violation.
 4. **Ship** — stage ONLY the files you changed (`git add <specific paths>` — the working tree may hold unrelated uncommitted edits; never blanket `git add -A`). Commit with a clear message + the Co-Authored-By line, then `git push origin main`. Confirm the push succeeded.

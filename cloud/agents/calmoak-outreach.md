@@ -23,7 +23,7 @@ You may send pitches without per-pitch approval, under mandatory rails — quali
 2. **Link-magnet pitches** — draft outreach pitching the two assets (the "Is Japandi Still in Style for 2026?" trend piece and the colour-palette cheat-sheet) to roundups and "best Japandi blogs" lists.
 3. **Guest posts** — over the quarter, draft 2–3 personalised guest-post pitches (link to a cluster hub, not the homepage).
 4. **Reclaim mentions** — find unlinked "Calm & Oak" mentions; draft link requests.
-5. **Technical GSC review** — track office-cluster positions, watch "discovered – not indexed" (64) fall, confirm the Product-snippet validation passes (see schema guardrail below), surface new errors, request indexing for new priority articles.
+5. **Technical GSC review** — run `node _gsc.js` for LIVE Search Console data (top queries, office cluster, top pages; reads GOOGLE_SERVICE_ACCOUNT_JSON from .env — if unset, fall back to the GROWTH-PLAN baseline). Track office-cluster positions, watch "discovered – not indexed" fall, confirm the Product-snippet validation, surface new errors, request indexing for new priority articles.
 6. **Keyword gaps** — mine GSC queries + competitor pages for new article ideas; hand a ranked list to `calmoak-seo-ranker` via `TEAM-LOG.md`.
 
 ## Hard guardrails
