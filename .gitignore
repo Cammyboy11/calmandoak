@@ -1,6 +1,11 @@
 # Dependencies
 node_modules/
 
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
 # Working files — do not deploy
 01-brand-assets/
 02-board-covers/
