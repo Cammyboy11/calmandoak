@@ -23,6 +23,9 @@ on:
           - calmoak-email
           - calmoak-monthly-audit
           - calmoak-marketing-director
+          - calmoak-merchandiser
+          - calmoak-monetization
+          - calmoak-cro
       task:
         description: Optional task override (blank = scheduled cycle)
         required: false
@@ -37,6 +40,9 @@ on:
     - cron: '0 18 * * 0'     # content-factory   Sun 14:00 EDT
     - cron: '0 23 * * 0'     # marketing-director Sun 19:00 EDT
     - cron: '0 13 1 * *'     # monthly-audit     1st 09:00 EDT
+    - cron: '0 17 * * 2'     # merchandiser      Tue 13:00 EDT
+    - cron: '0 16 * * 6'     # monetization      Sat 12:00 EDT
+    - cron: '0 18 * * 6'     # cro               Sat 14:00 EDT
 
 permissions:
   contents: write   # lets agents commit + push site changes to live
@@ -94,6 +100,9 @@ jobs:
               '0 18 * * 0')   AGENT=calmoak-content-factory ;;
               '0 23 * * 0')   AGENT=calmoak-marketing-director ;;
               '0 13 1 * *')   AGENT=calmoak-monthly-audit ;;
+              '0 17 * * 2')   AGENT=calmoak-merchandiser ;;
+              '0 16 * * 6')   AGENT=calmoak-monetization ;;
+              '0 18 * * 6')   AGENT=calmoak-cro ;;
               *) echo "Unknown schedule '$SCHED'"; exit 1 ;;
             esac
           fi
