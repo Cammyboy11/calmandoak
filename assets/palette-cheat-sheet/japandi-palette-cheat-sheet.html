@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="description" content="The Japandi Colour Palette Cheat-Sheet — all five signature palettes with exact hex codes, the warm-base / two-woods / one-accent rules, and which palette suits which room. Free with email signup at Calm & Oak." />
+<title>The Japandi Colour Palette Cheat-Sheet — Calm & Oak</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* ==== PAGE SETUP (US Letter, magazine margins) ==== */
+  @page {
+    size: 8.5in 11in;
+    margin: 0;
+  }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  /* ==== BRAND ==== */
+  :root {
+    --offwhite: #F7F4EE;
+    --cream: #EFE8DA;
+    --charcoal: #2A2A28;
+    --graphite: #5C5A55;
+    --terracotta: #C97B5C;
+    --sand: #D4B996;
+    --hair: rgba(42,42,40,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #555; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--charcoal); }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    background: var(--offwhite);
+    position: relative;
+    margin: 0.5in auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    overflow: hidden;
+  }
+  @media print {
+    .page { margin: 0; box-shadow: none; }
+  }
+
+  /* ==== TYPOGRAPHY ==== */
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+  .ital { font-style: italic; color: var(--terracotta); }
+
+  h1.title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 58pt;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--charcoal);
+  }
+  h2.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 34pt;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--charcoal);
+    margin-bottom: 0.25in;
+  }
+  h3.sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16pt;
+    color: var(--terracotta);
+    margin-bottom: 0.15in;
+    letter-spacing: 0.01em;
+  }
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    font-weight: 500;
+    margin-bottom: 0.2in;
+  }
+  .body-copy {
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+    line-height: 1.7;
+    color: var(--charcoal);
+    font-weight: 400;
+  }
+  .body-copy p { margin-bottom: 12pt; }
+  .body-copy strong { color: var(--terracotta); font-weight: 500; }
+  .lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16pt;
+    line-height: 1.5;
+    color: var(--graphite);
+    margin-bottom: 0.3in;
+  }
+  .small-caps {
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    font-weight: 500;
+  }
+
+  /* ==== SHARED ELEMENTS ==== */
+  .wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14pt;
+    color: var(--charcoal);
+    font-weight: 400;
+  }
+  .wordmark .amp { color: var(--terracotta); font-style: italic; }
+  .pad-x { padding-left: 0.75in; padding-right: 0.75in; }
+  .pad { padding: 0.75in; }
+  .center-vh { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; }
+  .left-vh { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+
+  hr.divider {
+    border: 0;
+    width: 60px;
+    height: 1px;
+    background: var(--terracotta);
+    margin: 0.25in 0;
+  }
+  .footer-bar {
+    position: absolute;
+    bottom: 0.4in;
+    left: 0.75in;
+    right: 0.75in;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    color: var(--graphite);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .page-num { color: var(--terracotta); }
+
+  /* ==== PAGE 1 — COVER ==== */
+  .cover { background: var(--offwhite); position: relative; }
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0.6in;
+    border: 1px solid var(--terracotta);
+    pointer-events: none;
+  }
+  .cover .top-mark {
+    position: absolute;
+    top: 1.1in;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .cover .center-block {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0 1in;
+  }
+  .cover-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14pt;
+    color: var(--graphite);
+    margin-top: 0.25in;
+  }
+  .cover .bottom-mark {
+    position: absolute;
+    bottom: 1.1in;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  /* mini swatch strip on the cover */
+  .cover-strip { display: flex; justify-content: center; gap: 0; margin-top: 0.4in; }
+  .cover-strip i { width: 0.52in; height: 0.52in; display: inline-block; box-shadow: inset 0 0 0 1px var(--hair); }
+
+  /* ==== THE THREE RULES ==== */
+  .rule-block { margin-bottom: 0.42in; display: flex; gap: 0.3in; align-items: flex-start; }
+  .rule-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 40pt;
+    color: var(--terracotta);
+    line-height: 0.9;
+    min-width: 0.7in;
+    font-weight: 400;
+  }
+  .rule-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19pt;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 6pt;
+  }
+  .rule-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.65;
+    color: var(--graphite);
+  }
+
+  /* ==== PALETTE PAGE ==== */
+  .palette-block { }
+  .swatch-row { display: flex; gap: 0; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--hair); margin: 0.18in 0 0.22in; }
+  .swatch-row .sw {
+    flex: 1;
+    height: 1.55in;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 0.12in;
+  }
+  .swatch-row .sw .sw-role {
+    position: absolute;
+    top: 0.12in;
+    left: 0.12in;
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.72;
+  }
+  .swatch-row .sw .sw-meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.35;
+  }
+  .swatch-row .sw .sw-name { display: block; font-weight: 500; letter-spacing: 0.02em; }
+  .swatch-row .sw .sw-hex { display: block; font-size: 7.5pt; letter-spacing: 0.08em; opacity: 0.85; }
+  .pal-room {
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    line-height: 1.6;
+    color: var(--graphite);
+  }
+  .pal-room strong { color: var(--terracotta); font-weight: 500; }
+  .pal-head { display: flex; align-items: baseline; gap: 0.18in; }
+  .pal-head .pal-no {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 24pt;
+    color: var(--terracotta);
+    line-height: 1;
+  }
+  .pal-head h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 21pt;
+    color: var(--charcoal);
+  }
+
+  /* ==== ROOM MATCHER TABLE ==== */
+  table.matcher { width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 9.5pt; margin-top: 0.2in; }
+  table.matcher th {
+    text-align: left;
+    padding: 0.1in 0.12in;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 12pt;
+    border-bottom: 1.5px solid var(--terracotta);
+    color: var(--charcoal);
+  }
+  table.matcher th.best { color: var(--terracotta); }
+  table.matcher td { padding: 0.09in 0.12in; border-bottom: 1px solid var(--hair); color: var(--graphite); vertical-align: top; }
+  table.matcher td.room { color: var(--charcoal); font-weight: 500; }
+
+  /* ==== CLOSING ==== */
+  .closing { background: var(--cream); }
+
+  /* ==== ON-SCREEN VIEWING NOTICE ==== */
+  .print-instructions {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    background: var(--charcoal);
+    color: var(--offwhite);
+    padding: 12px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    z-index: 999;
+    line-height: 1.5;
+    max-width: 230px;
+  }
+  .print-instructions strong { color: var(--terracotta); }
+  @media print { .print-instructions { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="print-instructions">
+  <strong>To save as PDF:</strong><br>
+  Press <strong>Ctrl + P</strong> (or Cmd + P on Mac), set Destination to "Save as PDF," choose Paper size: Letter, Margins: None, Background graphics: ON.
+</div>
+
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="top-mark">
+    <div class="wordmark">Calm <span class="amp">&amp;</span> Oak</div>
+  </div>
+  <div class="center-block">
+    <div class="eyebrow" style="margin-bottom: 0.25in;">The free cheat-sheet</div>
+    <h1 class="title">The Japandi<br>Colour <span class="ital">Palette</span></h1>
+    <div class="cover-tagline">Five palettes, every hex code,<br>and which room each one carries.</div>
+    <div class="cover-strip">
+      <i style="background:#F4EEE2"></i><i style="background:#E8DCC4"></i><i style="background:#C9A77C"></i><i style="background:#8A7A5C"></i><i style="background:#C97B5C"></i>
+    </div>
+  </div>
+  <div class="bottom-mark">
+    <div class="small-caps">First edition · 2026 · calmandoak.com</div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — HOW A JAPANDI PALETTE IS BUILT (THE THREE RULES) ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">How a Japandi palette is built</div>
+    <h2 class="section-title">Three rules,<br><span class="ital">five colours</span>.</h2>
+    <hr class="divider" />
+    <p class="lead" style="margin-bottom: 0.35in;">Japandi looks neutral, but the rooms that read calm aren't accidentally beige. They're built on three rules. Hold these three and almost any palette below works.</p>
+
+    <div class="rule-block">
+      <div class="rule-num">i</div>
+      <div>
+        <div class="rule-title">A warm base</div>
+        <div class="rule-body">Start with a warm neutral — oat, cream, or stone — never a cool blue-white. The base is the largest surface in the room (walls, big bedding) and it sets the whole room's temperature. Get this wrong and no accent can rescue it.</div>
+      </div>
+    </div>
+    <div class="rule-block">
+      <div class="rule-num">ii</div>
+      <div>
+        <div class="rule-title">Two woods, no more</div>
+        <div class="rule-body">One light wood (oak, ash) and at most one dark (walnut). Two woods read as a relationship; a third is where rooms start to feel busy. The wood is the foundation and the hardest thing to change — pick the palette that sits calmly on the wood you already own.</div>
+      </div>
+    </div>
+    <div class="rule-block">
+      <div class="rule-num">iii</div>
+      <div>
+        <div class="rule-title">One quiet accent</div>
+        <div class="rule-body">A single restrained note — terracotta, sage, or charcoal — used once or twice, never throughout. One accent keeps a room calm; two make it loud. Painting a whole wall the accent colour is the fastest way to overwhelm the palette.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The three rules</span><span class="page-num">02</span></div>
+</section>
+
+<!-- ============ PAGE 3 — PALETTE 1: OAT & OAK ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="pal-head"><span class="pal-no">01</span><h3>Oat &amp; oak</h3></div>
+    <p class="eyebrow" style="margin-top: 0.08in; margin-bottom: 0;">The warm default</p>
+    <div class="swatch-row">
+      <div class="sw" style="background:#F4EEE2; color:#5B4E3A;"><span class="sw-role">Base</span><span class="sw-meta"><span class="sw-name">Cream</span><span class="sw-hex">#F4EEE2</span></span></div>
+      <div class="sw" style="background:#E8DCC4; color:#5B4E3A;"><span class="sw-role">Neutral</span><span class="sw-meta"><span class="sw-name">Oat</span><span class="sw-hex">#E8DCC4</span></span></div>
+      <div class="sw" style="background:#C9A77C; color:#3E2E1A;"><span class="sw-role">Wood</span><span class="sw-meta"><span class="sw-name">Light oak</span><span class="sw-hex">#C9A77C</span></span></div>
+      <div class="sw" style="background:#8A7A5C; color:#F7F4EE;"><span class="sw-role">Anchor</span><span class="sw-meta"><span class="sw-name">Soft taupe</span><span class="sw-hex">#8A7A5C</span></span></div>
+      <div class="sw" style="background:#C97B5C; color:#F7F4EE;"><span class="sw-role">Accent</span><span class="sw-meta"><span class="sw-name">Terracotta</span><span class="sw-hex">#C97B5C</span></span></div>
+    </div>
+    <p class="pal-room" style="margin-top:0.05in;">Soft oat linen against light oak, with cream walls and a soft-taupe depth in the textile layer. Reads warm in both morning and evening light, photographs beautifully, and forgives almost any natural material near it — jute, stoneware, paper, brass. This is the palette that earns Japandi its "calm but not cold" reputation. Pair with brass, not chrome or black, which throw off the warm temperature.</p>
+    <p class="pal-room" style="margin-top:0.18in;"><strong>Use it in:</strong> bedrooms, living rooms, entryways — anywhere you want the room to feel slept-in rather than styled. The safest bet for north-facing rooms, where its warmth offsets the cool blue light.</p>
+    <p class="pal-room" style="margin-top:0.14in; font-style:italic;">Match against the hex, not the word: off-the-shelf "warm whites" run 4–6% cooler than #F4EEE2.</p>
+  </div>
+  <div class="footer-bar"><span>The five palettes</span><span class="page-num">03</span></div>
+</section>
+
+<!-- ============ PAGE 4 — PALETTE 2: CHARCOAL & CREAM ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="pal-head"><span class="pal-no">02</span><h3>Charcoal &amp; cream</h3></div>
+    <p class="eyebrow" style="margin-top: 0.08in; margin-bottom: 0;">The architectural move</p>
+    <div class="swatch-row">
+      <div class="sw" style="background:#F4EEE2; color:#5B4E3A;"><span class="sw-role">Base</span><span class="sw-meta"><span class="sw-name">Cream</span><span class="sw-hex">#F4EEE2</span></span></div>
+      <div class="sw" style="background:#C9C0B0; color:#3E3528;"><span class="sw-role">Neutral</span><span class="sw-meta"><span class="sw-name">Stone</span><span class="sw-hex">#C9C0B0</span></span></div>
+      <div class="sw" style="background:#A98E6B; color:#3E2E1A;"><span class="sw-role">Wood</span><span class="sw-meta"><span class="sw-name">Walnut</span><span class="sw-hex">#A98E6B</span></span></div>
+      <div class="sw" style="background:#3A3936; color:#F4EEE2;"><span class="sw-role">Anchor</span><span class="sw-meta"><span class="sw-name">Charcoal</span><span class="sw-hex">#3A3936</span></span></div>
+      <div class="sw" style="background:#9DA897; color:#2F3A2A;"><span class="sw-role">Accent</span><span class="sw-meta"><span class="sw-name">Sage</span><span class="sw-hex">#9DA897</span></span></div>
+    </div>
+    <p class="pal-room" style="margin-top:0.05in;">The high-contrast move. A single deep charcoal element — a wall, a lampshade, a stoneware vessel, a framed sumi-e print — against an otherwise cream and stone room, with walnut doing the warming. Reads architectural; the closest Japandi gets to "moody" without sliding into industrial loft. The discipline is one charcoal element per room — two and it reads heavy rather than considered.</p>
+    <p class="pal-room" style="margin-top:0.18in;"><strong>Use it in:</strong> home offices and dining rooms, ideally with good natural light. In a low-light or north-facing room, swap the charcoal for a softer warm-black (#1F1E1B), which holds more warmth.</p>
+    <p class="pal-room" style="margin-top:0.14in; font-style:italic;">Avoid in bedrooms — the charcoal absorbs more light than it gives back and reads gloomy.</p>
+  </div>
+  <div class="footer-bar"><span>The five palettes</span><span class="page-num">04</span></div>
+</section>
+
+<!-- ============ PAGE 5 — PALETTE 3: STONE & SAGE ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="pal-head"><span class="pal-no">03</span><h3>Stone &amp; sage</h3></div>
+    <p class="eyebrow" style="margin-top: 0.08in; margin-bottom: 0;">The botanical</p>
+    <div class="swatch-row">
+      <div class="sw" style="background:#F4EEE2; color:#5B4E3A;"><span class="sw-role">Base</span><span class="sw-meta"><span class="sw-name">Cream</span><span class="sw-hex">#F4EEE2</span></span></div>
+      <div class="sw" style="background:#C9C0B0; color:#3E3528;"><span class="sw-role">Neutral</span><span class="sw-meta"><span class="sw-name">Stone</span><span class="sw-hex">#C9C0B0</span></span></div>
+      <div class="sw" style="background:#8A7A5C; color:#F7F4EE;"><span class="sw-role">Wood</span><span class="sw-meta"><span class="sw-name">Walnut</span><span class="sw-hex">#8A7A5C</span></span></div>
+      <div class="sw" style="background:#44403A; color:#F4EEE2;"><span class="sw-role">Anchor</span><span class="sw-meta"><span class="sw-name">Deep walnut</span><span class="sw-hex">#44403A</span></span></div>
+      <div class="sw" style="background:#9DA897; color:#2F3A2A;"><span class="sw-role">Accent</span><span class="sw-meta"><span class="sw-name">Sage</span><span class="sw-hex">#9DA897</span></span></div>
+    </div>
+    <p class="pal-room" style="margin-top:0.05in;">The most Japanese of the five, pulling from <em>shibui</em> — subtle, profound, deliberately understated. Stone-grey linen with one piece of soft sage (bedding, a single throw, a folded blanket at the foot of the bed) against cream walls and walnut wood. Pairs best with darker woods — the cool undertones in sage need warmth from the wood to balance. Aged brass or matte black hardware, never bright brass.</p>
+    <p class="pal-room" style="margin-top:0.18in;"><strong>Use it in:</strong> bedrooms and bathrooms — the calm, restful rooms. The second-best bedroom palette after oat &amp; oak.</p>
+    <p class="pal-room" style="margin-top:0.14in; font-style:italic;">The hardest tone to get right: real Japandi sage (#9DA897) is the underside of an olive leaf, not the cool blue-green eucalyptus emoji. Match against an actual sage cutting.</p>
+  </div>
+  <div class="footer-bar"><span>The five palettes</span><span class="page-num">05</span></div>
+</section>
+
+<!-- ============ PAGE 6 — PALETTE 4: TERRACOTTA ACCENT ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="pal-head"><span class="pal-no">04</span><h3>Terracotta accent</h3></div>
+    <p class="eyebrow" style="margin-top: 0.08in; margin-bottom: 0;">The one warm note</p>
+    <div class="swatch-row">
+      <div class="sw" style="background:#F7F4EE; color:#5B4E3A;"><span class="sw-role">Base</span><span class="sw-meta"><span class="sw-name">Warm cream</span><span class="sw-hex">#F7F4EE</span></span></div>
+      <div class="sw" style="background:#E8DCC4; color:#5B4E3A;"><span class="sw-role">Neutral</span><span class="sw-meta"><span class="sw-name">Oat</span><span class="sw-hex">#E8DCC4</span></span></div>
+      <div class="sw" style="background:#C9A77C; color:#3E2E1A;"><span class="sw-role">Wood</span><span class="sw-meta"><span class="sw-name">Light oak</span><span class="sw-hex">#C9A77C</span></span></div>
+      <div class="sw" style="background:#3A3936; color:#F4EEE2;"><span class="sw-role">Anchor</span><span class="sw-meta"><span class="sw-name">Soft black</span><span class="sw-hex">#3A3936</span></span></div>
+      <div class="sw" style="background:#C97B5C; color:#F7F4EE;"><span class="sw-role">Accent</span><span class="sw-meta"><span class="sw-name">Terracotta</span><span class="sw-hex">#C97B5C</span></span></div>
+    </div>
+    <p class="pal-room" style="margin-top:0.05in;">If you want one warmer colour, it's terracotta — never coral, never rust, specifically the muted brick-red of unfired clay (#C97B5C). It's the single accent Calm &amp; Oak uses across the whole brand, including the ampersand. Pair with warm cream walls, light oak, and one soft-black grounding element — a lamp base, a picture frame, a ring dish.</p>
+    <p class="pal-room" style="margin-top:0.18in;"><strong>Use it in:</strong> kitchens, dining rooms, entryways. Used sparingly — a single vessel, the spine of one book, the glow of a paper lantern. Two terracotta items in one room is one too many; the colour earns its place by scarcity.</p>
+    <p class="pal-room" style="margin-top:0.14in; font-style:italic;">If your "terracotta" looks orange in afternoon light, it's too warm — the Japandi version keeps grey undertones. Never on the walls.</p>
+  </div>
+  <div class="footer-bar"><span>The five palettes</span><span class="page-num">06</span></div>
+</section>
+
+<!-- ============ PAGE 7 — PALETTE 5: WARM GREY MONOCHROME ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="pal-head"><span class="pal-no">05</span><h3>Warm grey monochrome</h3></div>
+    <p class="eyebrow" style="margin-top: 0.08in; margin-bottom: 0;">The disciplined</p>
+    <div class="swatch-row">
+      <div class="sw" style="background:#D8D2C6; color:#3E3528;"><span class="sw-role">Base</span><span class="sw-meta"><span class="sw-name">Pale grey</span><span class="sw-hex">#D8D2C6</span></span></div>
+      <div class="sw" style="background:#9A9388; color:#F7F4EE;"><span class="sw-role">Neutral</span><span class="sw-meta"><span class="sw-name">Warm grey</span><span class="sw-hex">#9A9388</span></span></div>
+      <div class="sw" style="background:#A98E6B; color:#3E2E1A;"><span class="sw-role">Wood</span><span class="sw-meta"><span class="sw-name">Oak / ash</span><span class="sw-hex">#A98E6B</span></span></div>
+      <div class="sw" style="background:#4A4844; color:#F4EEE2;"><span class="sw-role">Anchor</span><span class="sw-meta"><span class="sw-name">Charcoal</span><span class="sw-hex">#4A4844</span></span></div>
+      <div class="sw" style="background:#7E8B7A; color:#F7F4EE;"><span class="sw-role">Accent</span><span class="sw-meta"><span class="sw-name">Muted sage</span><span class="sw-hex">#7E8B7A</span></span></div>
+    </div>
+    <p class="pal-room" style="margin-top:0.05in;">The most disciplined palette: every colour is a different value of warm grey, layered from pale to charcoal. Sounds bleak on paper; reads like a quiet luxury hotel suite in practice. The whole room sits on one colour axis, which makes texture the entire visual story — layer wool, linen, and stoneware at three weights and it comes alive without a second colour. The wood is the only non-grey element and carries all the warmth.</p>
+    <p class="pal-room" style="margin-top:0.18in;"><strong>Use it in:</strong> living rooms and home offices with several textile layers (sofa plus throw plus rug; bedding plus curtains).</p>
+    <p class="pal-room" style="margin-top:0.14in; font-style:italic;">Avoid in hard-surface rooms like kitchens, where monochrome reads sterile. Break it with a single jute basket, paper lantern, or wool runner.</p>
+  </div>
+  <div class="footer-bar"><span>The five palettes</span><span class="page-num">07</span></div>
+</section>
+
+<!-- ============ PAGE 8 — WHICH PALETTE FOR WHICH ROOM ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">A quick reference</div>
+    <h2 class="section-title">Which palette,<br>which <span class="ital">room</span>.</h2>
+    <hr class="divider" />
+    <p class="body-copy" style="font-size:10.5pt; margin-bottom:0.1in;">Pick one palette per room and live with it for a season before swapping. Japandi is calm because it's consistent — not because the colours are perfect. The "avoid" column saves more rooms than the "best" one.</p>
+    <table class="matcher">
+      <thead>
+        <tr>
+          <th>Room</th>
+          <th class="best">Best palette</th>
+          <th>Second-best</th>
+          <th>Avoid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="room">Bedroom</td><td>1 · Oat &amp; oak</td><td>3 · Stone &amp; sage</td><td>2 · Charcoal (heavy)</td></tr>
+        <tr><td class="room">Living room</td><td>1 · Oat &amp; oak</td><td>5 · Warm grey mono</td><td>4 · Terracotta walls</td></tr>
+        <tr><td class="room">Dining room</td><td>4 · Terracotta accent</td><td>2 · Charcoal &amp; cream</td><td>3 · Stone &amp; sage (cool)</td></tr>
+        <tr><td class="room">Kitchen</td><td>4 · Terracotta accent</td><td>1 · Oat &amp; oak</td><td>5 · Monochrome (sterile)</td></tr>
+        <tr><td class="room">Bathroom</td><td>3 · Stone &amp; sage</td><td>1 · Oat &amp; oak</td><td>2 · Charcoal (dark in steam)</td></tr>
+        <tr><td class="room">Home office</td><td>2 · Charcoal &amp; cream</td><td>5 · Warm grey mono</td><td>4 · Terracotta (distracting)</td></tr>
+        <tr><td class="room">Entryway</td><td>1 · Oat &amp; oak</td><td>4 · Terracotta accent</td><td>5 · Monochrome (cold welcome)</td></tr>
+      </tbody>
+    </table>
+    <p class="body-copy" style="font-size:10pt; color:var(--graphite); font-style:italic; margin-top:0.28in;">Two filters narrow it fast: the wood you already have (light oak → 1 or 4; walnut or ash → 2, 3, or 5), and the light (north-facing wants the warmer 1 or 4; strong south light can carry the cooler 2, 3, or 5).</p>
+  </div>
+  <div class="footer-bar"><span>Which palette, which room</span><span class="page-num">08</span></div>
+</section>
+
+<!-- ============ PAGE 9 — FIVE MISTAKES ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Before you commit</div>
+    <h2 class="section-title">Five palette<br><span class="ital">mistakes</span>.</h2>
+    <hr class="divider" />
+    <div class="body-copy" style="font-size:10.5pt;">
+      <p><strong>1 · Mixing two palettes in one room.</strong> Oat &amp; oak on the bedding, terracotta on the rug, charcoal on the art — three palettes wrestling in one space. The room reads busy even though every piece is muted. Pick one and let the wood be the only crossover.</p>
+      <p><strong>2 · Five different cream tones.</strong> Cream walls, oat duvet, ivory throw, soft-white pillowcases, vanilla curtains — all subtly different, all fighting for the same job. Three committed tones beats five indecisive ones. Match swatches against the hex, not your memory of "cream."</p>
+      <p><strong>3 · Pinterest sage instead of real sage.</strong> Most "sage" skews cool blue-green and reads hospital. Real Japandi sage is warmer (#9DA897) — match against an actual sage cutting before committing.</p>
+      <p><strong>4 · Two of any accent.</strong> Two terracotta vessels, two charcoal lamps, two sage cushions. The single-accent rule is what makes every palette work; the second instance dilutes the first into a pattern rather than a focal point.</p>
+      <p><strong>5 · Painting the walls the accent colour.</strong> Terracotta, sage, or charcoal walls put the accent on the largest surface in the room and overwhelm the palette. Walls stay warm cream or warm white; the accent lives in the textiles, the ceramics, and one piece of art.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Five palette mistakes</span><span class="page-num">09</span></div>
+</section>
+
+<!-- ============ PAGE 10 — CLOSING ============ -->
+<section class="page closing">
+  <div class="pad center-vh">
+    <div class="wordmark" style="margin-bottom: 0.5in;">Calm <span class="amp">&amp;</span> Oak</div>
+    <hr class="divider" />
+    <p class="lead" style="text-align: center; max-width: 5in; margin-top: 0.3in;">"A Japandi palette isn't picked. It's narrowed — to five tones that already agree."</p>
+    <div style="margin-top: 0.5in;">
+      <div class="small-caps" style="margin-bottom: 0.2in;">Keep going</div>
+      <div class="serif" style="font-size: 15pt; color: var(--charcoal); margin-bottom: 0.12in;">The free palette generator · calmandoak.com/palette</div>
+      <div class="serif" style="font-size: 15pt; color: var(--charcoal); margin-bottom: 0.12in;">The 5 palettes, in depth · calmandoak.com/journal/japandi-color-palette</div>
+      <div class="serif" style="font-size: 14pt; font-style: italic; color: var(--terracotta);">@calmandoak on Pinterest</div>
+    </div>
+    <div style="position: absolute; bottom: 1in; left: 0; right: 0; text-align: center;">
+      <div class="small-caps" style="font-size: 7pt;">As an Amazon Associate, Calm &amp; Oak earns from qualifying purchases.</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

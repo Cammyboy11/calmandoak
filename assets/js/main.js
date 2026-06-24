@@ -46,9 +46,14 @@
       const button = form.querySelector('button');
       if (!email) return;
 
-      // Route by data-signup value: "prints" → print list; everything else → starter guide.
-      const listKey = form.dataset.signup === 'prints' ? 'prints' : 'starter';
+      // Route by data-signup value: "prints" → print list; everything else → starter guide list.
+      // The "palette" and "calculator" forms still join the starter list (and the welcome
+      // sequence), but their success note hands over the palette cheat-sheet specifically —
+      // the asset those pages actually promise.
+      const signup = form.dataset.signup;
+      const listKey = signup === 'prints' ? 'prints' : 'starter';
       const endpoint = ENDPOINTS[listKey];
+      const wantsCheatSheet = signup === 'palette' || signup === 'calculator';
 
       // UI: lock the form
       if (button) { button.disabled = true; button.textContent = 'Sending…'; }
@@ -67,6 +72,8 @@
         if (note) {
           if (listKey === 'prints') {
             note.innerHTML = 'You&rsquo;re on the list. We&rsquo;ll email you the moment the print shop opens &mdash; with a subscriber-only launch discount.';
+          } else if (wantsCheatSheet) {
+            note.innerHTML = 'Welcome. Your palette cheat-sheet is ready &mdash; <a href="/assets/palette-cheat-sheet/japandi-palette-cheat-sheet.html" target="_blank" rel="noopener" style="color:var(--terracotta);font-weight:500;border-bottom:1px solid var(--terracotta);">open it here</a> (Ctrl/Cmd&nbsp;+&nbsp;P to save as PDF). We&rsquo;ll also email it to you, with the full Starter Guide.';
           } else {
             note.innerHTML = 'Welcome. Your guide is ready &mdash; <a href="/assets/starter-guide/Japandi-Starter-Guide.pdf" download style="color:var(--terracotta);font-weight:500;border-bottom:1px solid var(--terracotta);">download the PDF here</a>. We&rsquo;ll also email it to you.';
           }
