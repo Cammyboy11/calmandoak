@@ -17,17 +17,21 @@
 const crypto = require('crypto');
 const fs = require('fs');
 
-const SITE = process.env.GSC_SITE_URL || 'sc-domain:calmandoak.com';
+function fromEnv(n) {
+  if (process.env[n]) return process.env[n];
+  try { const m = fs.readFileSync('.env', 'utf8').match(new RegExp('^' + n + '=(.+)$', 'm')); if (m) return m[1].trim(); } catch (e) {}
+  return '';
+}
+const SITE = fromEnv('GSC_SITE_URL') || 'sc-domain:calmandoak.com';
 
 function b64url(buf) {
   return Buffer.from(buf).toString('base64').replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
 }
 
 function loadCreds() {
-  let raw = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
-  if (!raw && process.env.GOOGLE_APPLICATION_CREDENTIALS && fs.existsSync(process.env.GOOGLE_APPLICATION_CREDENTIALS)) {
-    raw = fs.readFileSync(process.env.GOOGLE_APPLICATION_CREDENTIALS, 'utf8');
-  }
+  let raw = fromEnv('GOOGLE_SERVICE_ACCOUNT_JSON');
+  const p = fromEnv('GOOGLE_APPLICATION_CREDENTIALS');
+  if (!raw && p && fs.existsSync(p)) raw = fs.readFileSync(p, 'utf8');
   if (!raw) {
     console.error('GSC: no credential. Set GOOGLE_SERVICE_ACCOUNT_JSON in .env (see GSC-SETUP.md). Use the 90-day-plan baseline instead.');
     process.exit(2);
@@ -79,6 +83,13 @@ function table(rows, dim) {
 
 (async () => {
   const arg = process.argv[2];
+  // No-credential fallback: a manual Search Console export dropped in the repo.
+  if (!fromEnv('GOOGLE_SERVICE_ACCOUNT_JSON') && fs.existsSync('gsc-export.csv')) {
+    const csv = fs.readFileSync('gsc-export.csv', 'utf8');
+    const out = '# GSC (from manual export gsc-export.csv — no API needed)\n\n' + csv.split(/\r?\n/).slice(0, 80).join('\n');
+    console.log(out); try { fs.writeFileSync('gsc-latest.md', out); } catch (e) {}
+    return;
+  }
   const creds = loadCreds();
   const token = await getToken(creds);
 
