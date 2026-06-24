@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="description" content="The Japandi Home Plan — the premium room-by-room plan from Calm & Oak. Palette, two-woods, shopping framework, room budgets and checklists for the whole home." />
+<title>The Japandi Home Plan — Calm & Oak</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* ==== PAGE SETUP (US Letter, magazine margins) ==== */
+  @page { size: 8.5in 11in; margin: 0; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  /* ==== BRAND ==== */
+  :root {
+    --offwhite: #F7F4EE;
+    --cream: #EFE8DA;
+    --charcoal: #2A2A28;
+    --graphite: #5C5A55;
+    --terracotta: #C97B5C;
+    --sand: #D4B996;
+    --sage: #9DA897;
+    --hair: rgba(42,42,40,0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #555; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--charcoal); }
+
+  .page {
+    width: 8.5in; height: 11in; background: var(--offwhite);
+    position: relative; margin: 0.5in auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15); overflow: hidden;
+  }
+  @media print { .page { margin: 0; box-shadow: none; } }
+
+  /* ==== TYPOGRAPHY ==== */
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+  .ital { font-style: italic; color: var(--terracotta); }
+  h1.title { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 56pt; line-height: 1.05; letter-spacing: -0.02em; color: var(--charcoal); }
+  h2.section-title { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 32pt; line-height: 1.1; letter-spacing: -0.015em; color: var(--charcoal); margin-bottom: 0.22in; }
+  h3.sub { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; font-size: 16pt; color: var(--terracotta); margin-bottom: 0.15in; letter-spacing: 0.01em; }
+  .eyebrow { font-family: 'Inter', sans-serif; font-size: 8pt; letter-spacing: 0.28em; text-transform: uppercase; color: var(--graphite); font-weight: 500; margin-bottom: 0.2in; }
+  .body-copy { font-family: 'Inter', sans-serif; font-size: 10.5pt; line-height: 1.7; color: var(--charcoal); font-weight: 400; }
+  .body-copy p { margin-bottom: 11pt; }
+  .body-copy strong { color: var(--terracotta); font-weight: 500; }
+  .lead { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16pt; line-height: 1.5; color: var(--graphite); margin-bottom: 0.28in; }
+  .small-caps { font-family: 'Inter', sans-serif; font-size: 9pt; letter-spacing: 0.18em; text-transform: uppercase; color: var(--graphite); font-weight: 500; }
+
+  /* ==== SHARED ELEMENTS ==== */
+  .wordmark { font-family: 'Cormorant Garamond', serif; font-size: 14pt; color: var(--charcoal); font-weight: 400; }
+  .wordmark .amp { color: var(--terracotta); font-style: italic; }
+  .pad-x { padding-left: 0.75in; padding-right: 0.75in; }
+  .pad { padding: 0.75in; }
+  .pad-tight { padding: 0.6in 0.75in; }
+  .center-vh { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; }
+  .left-vh { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+  hr.divider { border: 0; width: 60px; height: 1px; background: var(--terracotta); margin: 0.25in 0; }
+  .footer-bar { position: absolute; bottom: 0.4in; left: 0.75in; right: 0.75in; display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--graphite); letter-spacing: 0.15em; text-transform: uppercase; }
+  .page-num { color: var(--terracotta); }
+
+  /* ==== COVER ==== */
+  .cover { background: var(--offwhite); position: relative; }
+  .cover::before { content: ''; position: absolute; inset: 0.6in; border: 1px solid var(--terracotta); pointer-events: none; }
+  .cover .top-mark { position: absolute; top: 1.1in; left: 0; right: 0; text-align: center; }
+  .cover .center-block { position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); text-align: center; padding: 0 1in; }
+  .cover-tagline { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14pt; color: var(--graphite); margin-top: 0.25in; }
+  .cover .bottom-mark { position: absolute; bottom: 1.1in; left: 0; right: 0; text-align: center; }
+  .cover-strip { display: flex; justify-content: center; gap: 0; margin-top: 0.4in; }
+  .cover-strip i { width: 0.52in; height: 0.52in; display: inline-block; box-shadow: inset 0 0 0 1px var(--hair); }
+  .premium-badge { display: inline-block; font-family: 'Inter', sans-serif; font-size: 7.5pt; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); border: 1px solid var(--terracotta); border-radius: 2px; padding: 4pt 10pt; margin-bottom: 0.3in; }
+
+  /* ==== CONTENTS ==== */
+  .toc { font-family: 'Inter', sans-serif; }
+  .toc-item { display: flex; align-items: baseline; gap: 0.18in; padding: 0.11in 0; border-bottom: 1px solid var(--hair); }
+  .toc-no { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16pt; color: var(--terracotta); min-width: 0.42in; }
+  .toc-name { font-family: 'Cormorant Garamond', serif; font-size: 15pt; color: var(--charcoal); flex: 1; }
+  .toc-pg { font-size: 9pt; color: var(--graphite); letter-spacing: 0.1em; }
+
+  /* ==== STEP / RULE BLOCKS ==== */
+  .rule-block { margin-bottom: 0.34in; display: flex; gap: 0.3in; align-items: flex-start; }
+  .rule-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 36pt; color: var(--terracotta); line-height: 0.9; min-width: 0.7in; font-weight: 400; }
+  .rule-title { font-family: 'Cormorant Garamond', serif; font-size: 18pt; font-weight: 500; color: var(--charcoal); margin-bottom: 5pt; }
+  .rule-body { font-family: 'Inter', sans-serif; font-size: 10pt; line-height: 1.6; color: var(--graphite); }
+
+  /* ==== SWATCH ROW ==== */
+  .swatch-row { display: flex; gap: 0; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--hair); margin: 0.16in 0 0.18in; }
+  .swatch-row .sw { flex: 1; height: 0.9in; position: relative; display: flex; align-items: flex-end; padding: 0.1in; }
+  .swatch-row .sw .sw-meta { font-family: 'Inter', sans-serif; font-size: 7.5pt; line-height: 1.3; }
+  .swatch-row .sw .sw-name { display: block; font-weight: 500; }
+  .swatch-row .sw .sw-hex { display: block; font-size: 6.8pt; letter-spacing: 0.06em; opacity: 0.85; }
+
+  /* ==== ROOM PAGE ==== */
+  .room-head { display: flex; align-items: baseline; gap: 0.18in; }
+  .room-head .room-no { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22pt; color: var(--terracotta); line-height: 1; }
+  .room-head h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 21pt; color: var(--charcoal); }
+  .room-meta { display: flex; gap: 0.4in; margin: 0.14in 0 0.16in; flex-wrap: wrap; }
+  .room-meta .mb { font-family: 'Inter', sans-serif; }
+  .room-meta .mb .lbl { display: block; font-size: 7pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--graphite); margin-bottom: 2pt; }
+  .room-meta .mb .val { display: block; font-size: 11pt; color: var(--charcoal); font-weight: 500; }
+  .room-meta .mb .val em { font-style: italic; color: var(--terracotta); }
+  .room-copy { font-family: 'Inter', sans-serif; font-size: 9.8pt; line-height: 1.6; color: var(--graphite); margin-bottom: 0.14in; }
+  .room-copy strong { color: var(--terracotta); font-weight: 500; }
+
+  /* ==== CHECKLIST ==== */
+  ul.checklist { list-style: none; margin: 0.1in 0 0; }
+  ul.checklist li { font-family: 'Inter', sans-serif; font-size: 9.6pt; line-height: 1.5; color: var(--charcoal); padding: 0.055in 0 0.055in 0.32in; position: relative; border-bottom: 1px solid var(--hair); }
+  ul.checklist li::before { content: ''; position: absolute; left: 0; top: 0.12in; width: 0.16in; height: 0.16in; border: 1.4px solid var(--terracotta); border-radius: 3px; }
+  ul.checklist li .qty { color: var(--graphite); font-size: 8.5pt; }
+
+  /* ==== BUDGET TABLE ==== */
+  table.budget { width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 9.5pt; margin-top: 0.14in; }
+  table.budget th { text-align: left; padding: 0.09in 0.1in; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 12pt; border-bottom: 1.5px solid var(--terracotta); color: var(--charcoal); }
+  table.budget th.r, table.budget td.r { text-align: right; }
+  table.budget td { padding: 0.075in 0.1in; border-bottom: 1px solid var(--hair); color: var(--graphite); }
+  table.budget td.item { color: var(--charcoal); font-weight: 500; }
+  table.budget tr.total td { border-bottom: 0; border-top: 1.5px solid var(--charcoal); color: var(--charcoal); font-weight: 600; padding-top: 0.1in; }
+
+  /* ==== CALLOUT ==== */
+  .callout { background: var(--cream); border-left: 3px solid var(--terracotta); padding: 0.18in 0.22in; margin: 0.18in 0; }
+  .callout .ct { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13pt; color: var(--charcoal); margin-bottom: 4pt; }
+  .callout p { font-family: 'Inter', sans-serif; font-size: 9.5pt; line-height: 1.55; color: var(--graphite); }
+
+  .closing { background: var(--cream); }
+
+  .print-instructions { position: fixed; top: 12px; right: 12px; background: var(--charcoal); color: var(--offwhite); padding: 12px 18px; font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 4px; z-index: 999; line-height: 1.5; max-width: 230px; }
+  .print-instructions strong { color: var(--terracotta); }
+  @media print { .print-instructions { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="print-instructions">
+  <strong>To save as PDF:</strong><br>
+  Press <strong>Ctrl + P</strong> (or Cmd + P on Mac), set Destination to "Save as PDF," Paper size: Letter, Margins: None, Background graphics: ON.
+</div>
+
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="top-mark"><div class="wordmark">Calm <span class="amp">&amp;</span> Oak</div></div>
+  <div class="center-block">
+    <span class="premium-badge">The premium plan</span>
+    <h1 class="title">The Japandi<br><span class="ital">Home Plan</span></h1>
+    <div class="cover-tagline">Room by room — your palette, your two woods,<br>the shopping order, the budget, the checklist.</div>
+    <div class="cover-strip">
+      <i style="background:#F4EEE2"></i><i style="background:#E8DCC4"></i><i style="background:#C9A77C"></i><i style="background:#8A7A5C"></i><i style="background:#C97B5C"></i>
+    </div>
+  </div>
+  <div class="bottom-mark"><div class="small-caps">First edition · 2026 · calmandoak.com</div></div>
+</section>
+
+<!-- ============ PAGE 2 — HOW TO USE / CONTENTS ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">How to use this plan</div>
+    <h2 class="section-title">A whole home,<br>one room <span class="ital">at a time</span>.</h2>
+    <hr class="divider" />
+    <p class="lead" style="margin-bottom:0.22in;">The free cheat-sheet tells you which palette. This plan tells you what to do with it — the order to buy in, what each room costs, and the exact checklist to work from.</p>
+    <p class="body-copy" style="margin-bottom:0.28in;">Work one room at a time, in the order on the next page. Finish a room before you start the next — a half-done house never reads calm. Each room follows the same four steps: <strong>set the palette</strong>, <strong>fix the two woods</strong>, <strong>buy in the right order</strong>, and <strong>tick the checklist</strong>. The budgets are starting-point ranges in USD; adjust to your own market.</p>
+    <div class="toc">
+      <div class="toc-item"><span class="toc-no">01</span><span class="toc-name">The method — four steps, every room</span><span class="toc-pg">p. 03</span></div>
+      <div class="toc-item"><span class="toc-no">02</span><span class="toc-name">Your palette &amp; your two woods</span><span class="toc-pg">p. 04</span></div>
+      <div class="toc-item"><span class="toc-no">03</span><span class="toc-name">The shopping framework — buy in this order</span><span class="toc-pg">p. 05</span></div>
+      <div class="toc-item"><span class="toc-no">04</span><span class="toc-name">The living room</span><span class="toc-pg">p. 06</span></div>
+      <div class="toc-item"><span class="toc-no">05</span><span class="toc-name">The bedroom</span><span class="toc-pg">p. 07</span></div>
+      <div class="toc-item"><span class="toc-no">06</span><span class="toc-name">The home office</span><span class="toc-pg">p. 08</span></div>
+      <div class="toc-item"><span class="toc-no">07</span><span class="toc-name">The kitchen &amp; dining</span><span class="toc-pg">p. 09</span></div>
+      <div class="toc-item"><span class="toc-no">08</span><span class="toc-name">The entryway &amp; the bathroom</span><span class="toc-pg">p. 10</span></div>
+      <div class="toc-item"><span class="toc-no">09</span><span class="toc-name">The whole-home budget &amp; sequence</span><span class="toc-pg">p. 11</span></div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>How to use this plan</span><span class="page-num">02</span></div>
+</section>
+
+<!-- ============ PAGE 3 — THE METHOD ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">The method</div>
+    <h2 class="section-title">Four steps,<br>every <span class="ital">room</span>.</h2>
+    <hr class="divider" />
+    <div class="rule-block">
+      <div class="rule-num">i</div>
+      <div>
+        <div class="rule-title">Set the palette</div>
+        <div class="rule-body">Pick one palette per room from the five (next page) and commit to it before you buy anything. The base — the largest surface — sets the room's temperature; warm neutral, never a cool blue-white. One room, one palette.</div>
+      </div>
+    </div>
+    <div class="rule-block">
+      <div class="rule-num">ii</div>
+      <div>
+        <div class="rule-title">Fix the two woods</div>
+        <div class="rule-body">One light wood (oak, ash) and at most one dark (walnut). The wood you already own usually decides this for you — match the new pieces to it rather than fighting it. Two woods read as a relationship; a third reads as clutter.</div>
+      </div>
+    </div>
+    <div class="rule-block">
+      <div class="rule-num">iii</div>
+      <div>
+        <div class="rule-title">Buy in the right order</div>
+        <div class="rule-body">Big and structural first (the anchor furniture), soft and textural next (linen, wool, rugs), small and decorative last (ceramics, one print, one plant). Buying the small things first is the most common way a room stalls half-finished.</div>
+      </div>
+    </div>
+    <div class="rule-block">
+      <div class="rule-num">iv</div>
+      <div>
+        <div class="rule-title">Tick the checklist</div>
+        <div class="rule-body">Each room has a numbered checklist — the pieces that, together, make the room read as Japandi rather than just tidy. Don't add beyond it. The discipline of stopping is the whole aesthetic.</div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="ct">The one rule above the four</div>
+      <p>Finish a room before starting the next. A whole house in progress reads as chaos; one finished calm room reads as intention — and teaches you the moves for the rest.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The method</span><span class="page-num">03</span></div>
+</section>
+
+<!-- ============ PAGE 4 — PALETTE & TWO WOODS ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Step one &amp; two</div>
+    <h2 class="section-title">Your palette,<br>your two <span class="ital">woods</span>.</h2>
+    <hr class="divider" />
+    <p class="body-copy" style="margin-bottom:0.1in;">The five signature palettes, condensed. Pick one per room (the matcher is in the free cheat-sheet). The wood row below each is the pairing that sits calmly on it.</p>
+
+    <h3 class="sub" style="margin-top:0.16in;">01 · Oat &amp; oak — the warm default</h3>
+    <div class="swatch-row">
+      <div class="sw" style="background:#F4EEE2; color:#5B4E3A;"><span class="sw-meta"><span class="sw-name">Cream</span><span class="sw-hex">#F4EEE2</span></span></div>
+      <div class="sw" style="background:#E8DCC4; color:#5B4E3A;"><span class="sw-meta"><span class="sw-name">Oat</span><span class="sw-hex">#E8DCC4</span></span></div>
+      <div class="sw" style="background:#C9A77C; color:#3E2E1A;"><span class="sw-meta"><span class="sw-name">Light oak</span><span class="sw-hex">#C9A77C</span></span></div>
+      <div class="sw" style="background:#8A7A5C; color:#F7F4EE;"><span class="sw-meta"><span class="sw-name">Taupe</span><span class="sw-hex">#8A7A5C</span></span></div>
+      <div class="sw" style="background:#C97B5C; color:#F7F4EE;"><span class="sw-meta"><span class="sw-name">Terracotta</span><span class="sw-hex">#C97B5C</span></span></div>
+    </div>
+    <p class="room-copy"><strong>Woods:</strong> light oak as the lead, a touch of walnut for depth. <strong>Best for:</strong> bedrooms, living rooms, north-facing rooms.</p>
+
+    <h3 class="sub" style="margin-top:0.14in;">02 · Charcoal &amp; cream &nbsp;·&nbsp; 03 · Stone &amp; sage</h3>
+    <div class="swatch-row">
+      <div class="sw" style="background:#F4EEE2;"></div>
+      <div class="sw" style="background:#C9C0B0;"></div>
+      <div class="sw" style="background:#A98E6B; color:#3E2E1A;"><span class="sw-meta"><span class="sw-name">Walnut</span></span></div>
+      <div class="sw" style="background:#3A3936; color:#F4EEE2;"><span class="sw-meta"><span class="sw-name">Charcoal</span></span></div>
+      <div class="sw" style="background:#9DA897; color:#2F3A2A;"><span class="sw-meta"><span class="sw-name">Sage</span></span></div>
+    </div>
+    <p class="room-copy"><strong>Woods:</strong> walnut-led, cream and stone around it. <strong>Best for:</strong> offices &amp; dining (charcoal), bedrooms &amp; bathrooms (sage).</p>
+
+    <h3 class="sub" style="margin-top:0.14in;">04 · Terracotta accent &nbsp;·&nbsp; 05 · Warm grey monochrome</h3>
+    <div class="swatch-row">
+      <div class="sw" style="background:#F7F4EE;"></div>
+      <div class="sw" style="background:#D8D2C6;"></div>
+      <div class="sw" style="background:#A98E6B; color:#3E2E1A;"><span class="sw-meta"><span class="sw-name">Oak / ash</span></span></div>
+      <div class="sw" style="background:#4A4844; color:#F4EEE2;"><span class="sw-meta"><span class="sw-name">Charcoal</span></span></div>
+      <div class="sw" style="background:#C97B5C; color:#F7F4EE;"><span class="sw-meta"><span class="sw-name">Accent</span></span></div>
+    </div>
+    <p class="room-copy"><strong>Woods:</strong> light oak / ash, the wood carrying all the warmth. <strong>Best for:</strong> kitchens &amp; entryways (terracotta), layered living rooms &amp; offices (monochrome).</p>
+  </div>
+  <div class="footer-bar"><span>Palette &amp; two woods</span><span class="page-num">04</span></div>
+</section>
+
+<!-- ============ PAGE 5 — SHOPPING FRAMEWORK ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Step three</div>
+    <h2 class="section-title">Buy in <span class="ital">this</span> order.</h2>
+    <hr class="divider" />
+    <p class="body-copy" style="margin-bottom:0.16in;">Every room is built in three waves. Finish each wave before the next — it stops you spending the small budget on cushions while the room still has no anchor.</p>
+
+    <div class="rule-block">
+      <div class="rule-num">1</div>
+      <div>
+        <div class="rule-title">The anchor (50–65% of the budget)</div>
+        <div class="rule-body">One large structural piece in your lead wood — the sofa, the bed frame, the desk, the dining table. Buy this first and buy it well; everything else relates to it. If you only spend on one thing this season, spend here.</div>
+      </div>
+    </div>
+    <div class="rule-block">
+      <div class="rule-num">2</div>
+      <div>
+        <div class="rule-title">The soft layer (25–35%)</div>
+        <div class="rule-body">Linen, wool, and the rug — the texture that makes a Japandi room warm rather than bare. Three weights of the same neutral beats one of five colours. The rug grounds the room; size it so the front legs of the anchor sit on it.</div>
+      </div>
+    </div>
+    <div class="rule-block">
+      <div class="rule-num">3</div>
+      <div>
+        <div class="rule-title">The quiet detail (10–15%)</div>
+        <div class="rule-body">Last, and least: one or two ceramics, one print, one plant, the single accent note. This is where the room comes alive — and where most rooms overshoot. Buy the checklist, then stop.</div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="ct">A note on "buy it well"</div>
+      <p>Japandi rewards fewer, better things. One honest oak table outlasts three trend pieces and costs less over a decade. When the budget is tight, buy the anchor and live with bare-but-good until you can add the soft layer — never the reverse.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The shopping framework</span><span class="page-num">05</span></div>
+</section>
+
+<!-- ============ PAGE 6 — LIVING ROOM ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="room-head"><span class="room-no">04</span><h3>The living room</h3></div>
+    <div class="room-meta">
+      <div class="mb"><span class="lbl">Palette</span><span class="val">01 <em>Oat &amp; oak</em></span></div>
+      <div class="mb"><span class="lbl">Woods</span><span class="val">Light oak + walnut</span></div>
+      <div class="mb"><span class="lbl">Budget range</span><span class="val">$1,400–3,200</span></div>
+    </div>
+    <p class="room-copy">The anchor is the sofa — cream or oat linen, low and unfussy, legs in light oak. Float it on a wool or jute rug large enough that the front legs sit on it; an undersized rug is the single most common living-room mistake. Layer two cushion weights and one throw in the same palette, a low oak coffee table, and stop. One print, one stoneware vessel, one plant. The room should read as <strong>three materials repeated</strong> — wood, linen, stoneware — not as a collection.</p>
+    <ul class="checklist">
+      <li>Linen sofa, cream or oat, oak legs <span class="qty">— the anchor</span></li>
+      <li>Wool or jute rug, sized to the seating <span class="qty">— front legs on the rug</span></li>
+      <li>Low oak coffee table <span class="qty">— one, not a nest</span></li>
+      <li>Two cushions + one throw <span class="qty">— same palette, two weights</span></li>
+      <li>One floor or table lamp, warm bulb <span class="qty">— 2700K, never cool white</span></li>
+      <li>One framed print + one stoneware vessel <span class="qty">— the only decorative pieces</span></li>
+      <li>One plant <span class="qty">— olive, rubber, or a single stem</span></li>
+    </ul>
+  </div>
+  <div class="footer-bar"><span>Room plans · Living room</span><span class="page-num">06</span></div>
+</section>
+
+<!-- ============ PAGE 7 — BEDROOM ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="room-head"><span class="room-no">05</span><h3>The bedroom</h3></div>
+    <div class="room-meta">
+      <div class="mb"><span class="lbl">Palette</span><span class="val">01 <em>Oat &amp; oak</em> / 03 <em>Stone &amp; sage</em></span></div>
+      <div class="mb"><span class="lbl">Woods</span><span class="val">Oak or walnut</span></div>
+      <div class="mb"><span class="lbl">Budget range</span><span class="val">$1,100–2,600</span></div>
+    </div>
+    <p class="room-copy">The bedroom wants the warmest, quietest palette — oat &amp; oak, or stone &amp; sage if you want it cooler and more <em>shibui</em>. The anchor is a low bed frame in oak or walnut; keep it close to the floor. Dress it in three tones of one neutral — fitted sheet, duvet, one folded throw at the foot — never five subtly different creams. Two matching nightstands, two warm lamps, blackout linen curtains that puddle slightly. <strong>Avoid charcoal here</strong> — it absorbs more light than it gives back and reads gloomy in a room you wake up in.</p>
+    <ul class="checklist">
+      <li>Low oak or walnut bed frame <span class="qty">— the anchor, kept low</span></li>
+      <li>Linen bedding in three tones of one neutral <span class="qty">— sheet, duvet, throw</span></li>
+      <li>Two matching nightstands <span class="qty">— symmetry calms a bedroom</span></li>
+      <li>Two warm table lamps <span class="qty">— 2700K, dimmable if possible</span></li>
+      <li>Linen curtains, floor-length <span class="qty">— slight puddle, not pooling</span></li>
+      <li>One wool rug underfoot <span class="qty">— warmth on waking</span></li>
+      <li>One print above the bed + one ceramic <span class="qty">— the only accents</span></li>
+    </ul>
+  </div>
+  <div class="footer-bar"><span>Room plans · Bedroom</span><span class="page-num">07</span></div>
+</section>
+
+<!-- ============ PAGE 8 — HOME OFFICE ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="room-head"><span class="room-no">06</span><h3>The home office</h3></div>
+    <div class="room-meta">
+      <div class="mb"><span class="lbl">Palette</span><span class="val">02 <em>Charcoal &amp; cream</em></span></div>
+      <div class="mb"><span class="lbl">Woods</span><span class="val">Walnut + oak</span></div>
+      <div class="mb"><span class="lbl">Budget range</span><span class="val">$900–2,200</span></div>
+    </div>
+    <p class="room-copy">The office is where Japandi earns its "warm minimalism" — minimal is not empty. The anchor is a solid-wood desk (oak or ash); one darker walnut element — a tray, a shelf, a pen cup — gives it depth. Keep the desktop to a <strong>six-object maximum</strong>: laptop, lamp, one ceramic vessel, a notebook, one plant, one tray to corral the rest. Cable management is part of the aesthetic, not separate from it. One charcoal element in the room — a lampshade, a framed sumi-e print — against cream walls; in low light, swap charcoal for a softer warm-black.</p>
+    <ul class="checklist">
+      <li>Solid oak or ash desk <span class="qty">— the anchor</span></li>
+      <li>One supportive chair, wood or muted upholstery <span class="qty">— comfort over sculpture</span></li>
+      <li>Warm task lamp <span class="qty">— 2700–3000K, adjustable</span></li>
+      <li>One walnut tray or shelf <span class="qty">— the second wood</span></li>
+      <li>Cable management <span class="qty">— hidden is the point</span></li>
+      <li>One charcoal accent — shade or framed print <span class="qty">— just one</span></li>
+      <li>One plant + one ceramic vessel <span class="qty">— the six-object limit</span></li>
+    </ul>
+  </div>
+  <div class="footer-bar"><span>Room plans · Home office</span><span class="page-num">08</span></div>
+</section>
+
+<!-- ============ PAGE 9 — KITCHEN & DINING ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="room-head"><span class="room-no">07</span><h3>The kitchen &amp; dining</h3></div>
+    <div class="room-meta">
+      <div class="mb"><span class="lbl">Palette</span><span class="val">04 <em>Terracotta accent</em></span></div>
+      <div class="mb"><span class="lbl">Woods</span><span class="val">Light oak</span></div>
+      <div class="mb"><span class="lbl">Budget range</span><span class="val">$700–2,000</span></div>
+    </div>
+    <p class="room-copy">Kitchens are mostly hard surfaces, so warmth has to be added deliberately. The terracotta-accent palette does it with one warm note against warm cream and light oak, grounded by a single soft-black element — a lamp base, a faucet, a framed print. The dining anchor is an oak table; pair it with chairs that share its wood or sit quietly against it. Open shelving works only if you keep it to <strong>tonal, repeated stoneware</strong> — mismatched mugs undo a Japandi kitchen instantly. The terracotta lives in one or two pieces — a vessel, a paper lantern — never on the walls.</p>
+    <ul class="checklist">
+      <li>Solid oak dining table <span class="qty">— the anchor</span></li>
+      <li>Chairs in matching or quiet wood <span class="qty">— set of one design</span></li>
+      <li>Tonal stoneware on open shelves <span class="qty">— repeated, not collected</span></li>
+      <li>One soft-black grounding element <span class="qty">— lamp, frame, hardware</span></li>
+      <li>Linen runner or placemats <span class="qty">— texture on the table</span></li>
+      <li>One terracotta vessel or lantern <span class="qty">— the single warm note</span></li>
+      <li>One pendant, warm bulb, over the table <span class="qty">— 2700K</span></li>
+    </ul>
+  </div>
+  <div class="footer-bar"><span>Room plans · Kitchen &amp; dining</span><span class="page-num">09</span></div>
+</section>
+
+<!-- ============ PAGE 10 — ENTRYWAY & BATHROOM ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="room-head"><span class="room-no">08</span><h3>The entryway &amp; the bathroom</h3></div>
+    <div class="room-meta">
+      <div class="mb"><span class="lbl">Palettes</span><span class="val">01 <em>Oat &amp; oak</em> · 03 <em>Stone &amp; sage</em></span></div>
+      <div class="mb"><span class="lbl">Budget range</span><span class="val">$300–900 each</span></div>
+    </div>
+    <p class="room-copy"><strong>The entryway</strong> is the first calm signal — keep it to one oak bench or console, a single hook rail, one mirror, a basket for shoes, and one plant. Warm light, never an overhead glare. <strong>The bathroom</strong> takes stone &amp; sage: stone-grey linen towels, one piece of soft sage, walnut or teak accents that handle damp, and one stoneware tray. Avoid charcoal — it reads dark in steam. Both rooms live or die on <strong>concealment</strong>: a Japandi entry and bath are calm because the clutter is in the basket and the cabinet, not on the surface.</p>
+    <ul class="checklist">
+      <li>Oak bench or console, entry <span class="qty">— one, low</span></li>
+      <li>Hook rail + one mirror, entry <span class="qty">— warm light, no glare</span></li>
+      <li>Basket for shoes / bag <span class="qty">— concealment is the point</span></li>
+      <li>Stone-grey linen towels, bath <span class="qty">— one tonal set</span></li>
+      <li>One sage accent + teak/walnut tray, bath <span class="qty">— damp-tolerant woods</span></li>
+      <li>One stoneware vessel or stool <span class="qty">— per room</span></li>
+      <li>One plant or single stem <span class="qty">— per room</span></li>
+    </ul>
+  </div>
+  <div class="footer-bar"><span>Room plans · Entryway &amp; bathroom</span><span class="page-num">10</span></div>
+</section>
+
+<!-- ============ PAGE 11 — WHOLE-HOME BUDGET & SEQUENCE ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Putting it together</div>
+    <h2 class="section-title">The whole-home<br>budget &amp; <span class="ital">sequence</span>.</h2>
+    <hr class="divider" />
+    <p class="body-copy" style="margin-bottom:0.06in;">A starting-point order of operations. Do the rooms you live in most first — the calm compounds when you feel it daily. Ranges are USD; treat them as relative weights, not quotes.</p>
+    <table class="budget">
+      <thead><tr><th>Order</th><th>Room</th><th>Lead palette</th><th class="r">Budget range</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td class="item">Living room</td><td>Oat &amp; oak</td><td class="r">$1,400–3,200</td></tr>
+        <tr><td>2</td><td class="item">Bedroom</td><td>Oat &amp; oak / Stone &amp; sage</td><td class="r">$1,100–2,600</td></tr>
+        <tr><td>3</td><td class="item">Home office</td><td>Charcoal &amp; cream</td><td class="r">$900–2,200</td></tr>
+        <tr><td>4</td><td class="item">Kitchen &amp; dining</td><td>Terracotta accent</td><td class="r">$700–2,000</td></tr>
+        <tr><td>5</td><td class="item">Entryway</td><td>Oat &amp; oak</td><td class="r">$300–900</td></tr>
+        <tr><td>6</td><td class="item">Bathroom</td><td>Stone &amp; sage</td><td class="r">$300–900</td></tr>
+        <tr class="total"><td></td><td class="item">Whole home</td><td></td><td class="r">$4,700–11,800</td></tr>
+      </tbody>
+    </table>
+    <div class="callout" style="margin-top:0.24in;">
+      <div class="ct">If you do nothing else</div>
+      <p>Finish the living room and the bedroom to the checklist before touching the rest. Two rooms done well change how the whole home feels — and four half-rooms never will. Calm is a finished room, repeated.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The whole-home plan</span><span class="page-num">11</span></div>
+</section>
+
+<!-- ============ PAGE 12 — CLOSING ============ -->
+<section class="page closing">
+  <div class="pad center-vh">
+    <div class="wordmark" style="margin-bottom: 0.5in;">Calm <span class="amp">&amp;</span> Oak</div>
+    <hr class="divider" />
+    <p class="lead" style="text-align: center; max-width: 5in; margin-top: 0.3in;">"A calm home isn't decorated all at once. It's built one finished room at a time — to the same five tones, the same two woods, the same quiet rule."</p>
+    <div style="margin-top: 0.5in;">
+      <div class="small-caps" style="margin-bottom: 0.2in;">Keep going</div>
+      <div class="serif" style="font-size: 15pt; color: var(--charcoal); margin-bottom: 0.12in;">The free palette generator · calmandoak.com/palette</div>
+      <div class="serif" style="font-size: 15pt; color: var(--charcoal); margin-bottom: 0.12in;">The Calm Home Calculator · calmandoak.com/calculator</div>
+      <div class="serif" style="font-size: 14pt; font-style: italic; color: var(--terracotta);">@calmandoak on Pinterest</div>
+    </div>
+    <div style="position: absolute; bottom: 1in; left: 0; right: 0; text-align: center;">
+      <div class="small-caps" style="font-size: 7pt;">© 2026 Calm &amp; Oak · For personal use in your own home. Not licensed for resale.</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

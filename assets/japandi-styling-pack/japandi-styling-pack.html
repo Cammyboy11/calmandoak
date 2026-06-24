@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="description" content="The Japandi Styling Pack — Calm & Oak's premium styling system: shelf and surface formulas, the layering rules, a print-pairing guide and a 30-day calm-home plan." />
+<title>The Japandi Styling Pack — Calm & Oak</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  :root {
+    --offwhite: #F7F4EE; --cream: #EFE8DA; --charcoal: #2A2A28;
+    --graphite: #5C5A55; --terracotta: #C97B5C; --sand: #D4B996;
+    --sage: #9DA897; --hair: rgba(42,42,40,0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #555; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--charcoal); }
+  .page { width: 8.5in; height: 11in; background: var(--offwhite); position: relative; margin: 0.5in auto; box-shadow: 0 8px 32px rgba(0,0,0,0.15); overflow: hidden; }
+  @media print { .page { margin: 0; box-shadow: none; } }
+
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+  .ital { font-style: italic; color: var(--terracotta); }
+  h1.title { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 56pt; line-height: 1.05; letter-spacing: -0.02em; color: var(--charcoal); }
+  h2.section-title { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 32pt; line-height: 1.1; letter-spacing: -0.015em; color: var(--charcoal); margin-bottom: 0.22in; }
+  h3.sub { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; font-size: 16pt; color: var(--terracotta); margin-bottom: 0.12in; letter-spacing: 0.01em; }
+  .eyebrow { font-family: 'Inter', sans-serif; font-size: 8pt; letter-spacing: 0.28em; text-transform: uppercase; color: var(--graphite); font-weight: 500; margin-bottom: 0.2in; }
+  .body-copy { font-family: 'Inter', sans-serif; font-size: 10.5pt; line-height: 1.7; color: var(--charcoal); font-weight: 400; }
+  .body-copy p { margin-bottom: 11pt; }
+  .body-copy strong { color: var(--terracotta); font-weight: 500; }
+  .lead { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16pt; line-height: 1.5; color: var(--graphite); margin-bottom: 0.28in; }
+  .small-caps { font-family: 'Inter', sans-serif; font-size: 9pt; letter-spacing: 0.18em; text-transform: uppercase; color: var(--graphite); font-weight: 500; }
+
+  .wordmark { font-family: 'Cormorant Garamond', serif; font-size: 14pt; color: var(--charcoal); font-weight: 400; }
+  .wordmark .amp { color: var(--terracotta); font-style: italic; }
+  .pad { padding: 0.75in; }
+  .pad-tight { padding: 0.6in 0.75in; }
+  .center-vh { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; }
+  .left-vh { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+  hr.divider { border: 0; width: 60px; height: 1px; background: var(--terracotta); margin: 0.25in 0; }
+  .footer-bar { position: absolute; bottom: 0.4in; left: 0.75in; right: 0.75in; display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--graphite); letter-spacing: 0.15em; text-transform: uppercase; }
+  .page-num { color: var(--terracotta); }
+
+  .cover { background: var(--offwhite); position: relative; }
+  .cover::before { content: ''; position: absolute; inset: 0.6in; border: 1px solid var(--terracotta); pointer-events: none; }
+  .cover .top-mark { position: absolute; top: 1.1in; left: 0; right: 0; text-align: center; }
+  .cover .center-block { position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); text-align: center; padding: 0 1in; }
+  .cover-tagline { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14pt; color: var(--graphite); margin-top: 0.25in; }
+  .cover .bottom-mark { position: absolute; bottom: 1.1in; left: 0; right: 0; text-align: center; }
+  .cover-strip { display: flex; justify-content: center; gap: 0; margin-top: 0.4in; }
+  .cover-strip i { width: 0.52in; height: 0.52in; display: inline-block; box-shadow: inset 0 0 0 1px var(--hair); }
+  .premium-badge { display: inline-block; font-family: 'Inter', sans-serif; font-size: 7.5pt; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); border: 1px solid var(--terracotta); border-radius: 2px; padding: 4pt 10pt; margin-bottom: 0.3in; }
+
+  .toc-item { display: flex; align-items: baseline; gap: 0.18in; padding: 0.1in 0; border-bottom: 1px solid var(--hair); }
+  .toc-no { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16pt; color: var(--terracotta); min-width: 0.42in; }
+  .toc-name { font-family: 'Cormorant Garamond', serif; font-size: 15pt; color: var(--charcoal); flex: 1; }
+  .toc-pg { font-size: 9pt; color: var(--graphite); letter-spacing: 0.1em; }
+
+  .rule-block { margin-bottom: 0.3in; display: flex; gap: 0.3in; align-items: flex-start; }
+  .rule-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 34pt; color: var(--terracotta); line-height: 0.9; min-width: 0.66in; font-weight: 400; }
+  .rule-title { font-family: 'Cormorant Garamond', serif; font-size: 18pt; font-weight: 500; color: var(--charcoal); margin-bottom: 5pt; }
+  .rule-body { font-family: 'Inter', sans-serif; font-size: 10pt; line-height: 1.6; color: var(--graphite); }
+
+  /* formula card */
+  .formula { background: var(--cream); border-radius: 6px; padding: 0.22in 0.26in; margin: 0.16in 0; }
+  .formula .fh { font-family: 'Cormorant Garamond', serif; font-size: 17pt; color: var(--charcoal); margin-bottom: 0.08in; }
+  .formula .fh em { font-style: italic; color: var(--terracotta); }
+  .formula ol { margin: 0.06in 0 0 0.24in; }
+  .formula ol li { font-family: 'Inter', sans-serif; font-size: 9.6pt; line-height: 1.6; color: var(--graphite); padding: 0.02in 0; }
+  .formula ol li strong { color: var(--charcoal); font-weight: 600; }
+
+  .callout { background: var(--cream); border-left: 3px solid var(--terracotta); padding: 0.18in 0.22in; margin: 0.18in 0; }
+  .callout .ct { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13pt; color: var(--charcoal); margin-bottom: 4pt; }
+  .callout p { font-family: 'Inter', sans-serif; font-size: 9.5pt; line-height: 1.55; color: var(--graphite); }
+
+  /* mistakes / do-don't */
+  .dd { display: flex; gap: 0.3in; margin-top: 0.16in; }
+  .dd .col { flex: 1; }
+  .dd .col h4 { font-family: 'Inter', sans-serif; font-size: 8pt; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.1in; }
+  .dd .col.do h4 { color: var(--sage); }
+  .dd .col.dont h4 { color: var(--terracotta); }
+  .dd ul { list-style: none; }
+  .dd ul li { font-family: 'Inter', sans-serif; font-size: 9.3pt; line-height: 1.45; color: var(--graphite); padding: 0.06in 0; border-bottom: 1px solid var(--hair); }
+
+  /* 30-day plan grid */
+  .plan-week { margin-bottom: 0.2in; }
+  .plan-week .wk { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14pt; color: var(--terracotta); margin-bottom: 0.05in; }
+  .plan-week ul { list-style: none; }
+  .plan-week ul li { font-family: 'Inter', sans-serif; font-size: 9.4pt; line-height: 1.5; color: var(--graphite); padding: 0.035in 0 0.035in 0.3in; position: relative; }
+  .plan-week ul li::before { content: ''; position: absolute; left: 0; top: 0.1in; width: 0.13in; height: 0.13in; border: 1.3px solid var(--terracotta); border-radius: 2px; }
+  .plan-week ul li b { color: var(--charcoal); font-weight: 600; }
+
+  .closing { background: var(--cream); }
+
+  .print-instructions { position: fixed; top: 12px; right: 12px; background: var(--charcoal); color: var(--offwhite); padding: 12px 18px; font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 4px; z-index: 999; line-height: 1.5; max-width: 230px; }
+  .print-instructions strong { color: var(--terracotta); }
+  @media print { .print-instructions { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="print-instructions">
+  <strong>To save as PDF:</strong><br>
+  Press <strong>Ctrl + P</strong> (or Cmd + P on Mac), set Destination to "Save as PDF," Paper size: Letter, Margins: None, Background graphics: ON.
+</div>
+
+<!-- ============ COVER ============ -->
+<section class="page cover">
+  <div class="top-mark"><div class="wordmark">Calm <span class="amp">&amp;</span> Oak</div></div>
+  <div class="center-block">
+    <span class="premium-badge">The premium pack</span>
+    <h1 class="title">The Japandi<br><span class="ital">Styling Pack</span></h1>
+    <div class="cover-tagline">The styling formulas — shelves, surfaces, light,<br>and the 30-day plan to a calmer home.</div>
+    <div class="cover-strip">
+      <i style="background:#F4EEE2"></i><i style="background:#E8DCC4"></i><i style="background:#C9A77C"></i><i style="background:#9DA897"></i><i style="background:#C97B5C"></i>
+    </div>
+  </div>
+  <div class="bottom-mark"><div class="small-caps">First edition · 2026 · calmandoak.com</div></div>
+</section>
+
+<!-- ============ CONTENTS ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">What's inside</div>
+    <h2 class="section-title">Styling is a<br><span class="ital">system</span>, not a gift.</h2>
+    <hr class="divider" />
+    <p class="lead" style="margin-bottom:0.22in;">A calm room isn't styled by instinct. It's a handful of repeatable formulas — for the shelf, the surface, the wall, the light — applied with discipline.</p>
+    <p class="body-copy" style="margin-bottom:0.26in;">The free cheat-sheet gives you the colours. This pack gives you the <strong>moves</strong>: how to arrange a shelf so it reads calm, how many objects belong on a surface, how to hang and pair prints, how to light a room so it feels warm at night — and a 30-day plan that turns the whole thing into a habit.</p>
+    <div class="toc">
+      <div class="toc-item"><span class="toc-no">01</span><span class="toc-name">The five styling principles</span><span class="toc-pg">p. 03</span></div>
+      <div class="toc-item"><span class="toc-no">02</span><span class="toc-name">The shelf &amp; surface formulas</span><span class="toc-pg">p. 04</span></div>
+      <div class="toc-item"><span class="toc-no">03</span><span class="toc-name">Layering texture — the three-weight rule</span><span class="toc-pg">p. 05</span></div>
+      <div class="toc-item"><span class="toc-no">04</span><span class="toc-name">Hanging &amp; pairing prints</span><span class="toc-pg">p. 06</span></div>
+      <div class="toc-item"><span class="toc-no">05</span><span class="toc-name">Lighting for calm — warmth, height, layers</span><span class="toc-pg">p. 07</span></div>
+      <div class="toc-item"><span class="toc-no">06</span><span class="toc-name">The ten styling mistakes</span><span class="toc-pg">p. 08</span></div>
+      <div class="toc-item"><span class="toc-no">07</span><span class="toc-name">The 30-day calm-home plan</span><span class="toc-pg">p. 09–10</span></div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>What's inside</span><span class="page-num">02</span></div>
+</section>
+
+<!-- ============ FIVE PRINCIPLES ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">The foundation</div>
+    <h2 class="section-title">Five styling<br><span class="ital">principles</span>.</h2>
+    <hr class="divider" />
+    <div class="rule-block"><div class="rule-num">i</div><div>
+      <div class="rule-title">Negative space is the object</div>
+      <div class="rule-body">In Japandi, the empty space (<em>ma</em>) is as composed as the things. Leave more bare surface than feels comfortable — the calm lives in the gaps. A styled surface is two-thirds empty.</div>
+    </div></div>
+    <div class="rule-block"><div class="rule-num">ii</div><div>
+      <div class="rule-title">Odd numbers, varied heights</div>
+      <div class="rule-body">Group in threes (or ones), never even rows. Vary the height of every cluster — tall, medium, low — so the eye travels. Three objects at the same height read as a line-up; staggered, they read as a still life.</div>
+    </div></div>
+    <div class="rule-block"><div class="rule-num">iii</div><div>
+      <div class="rule-title">Repeat the material, not the object</div>
+      <div class="rule-body">Calm comes from a room saying one thing in many places — stoneware here and there, linen in three weights, wood in two tones. Repetition of material reads intentional; variety of object reads cluttered.</div>
+    </div></div>
+    <div class="rule-block"><div class="rule-num">iv</div><div>
+      <div class="rule-title">One thing should be alive</div>
+      <div class="rule-body">A single plant, branch, or stem per zone. It's the one element allowed to be irregular, and it keeps a disciplined room from feeling clinical. One — not a jungle.</div>
+    </div></div>
+    <div class="rule-block"><div class="rule-num">v</div><div>
+      <div class="rule-title">Style at eye level, then sit down</div>
+      <div class="rule-body">Arrange standing, then sit where you actually live and look again. Most rooms are styled for a photo and lived in from a sofa. Calm is what you see from the chair, not the doorway.</div>
+    </div></div>
+  </div>
+  <div class="footer-bar"><span>The five principles</span><span class="page-num">03</span></div>
+</section>
+
+<!-- ============ SHELF & SURFACE FORMULAS ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="eyebrow">Copy these</div>
+    <h2 class="section-title">Shelf &amp; surface<br><span class="ital">formulas</span>.</h2>
+    <hr class="divider" />
+    <div class="formula">
+      <div class="fh">The open shelf <em>(per shelf)</em></div>
+      <ol>
+        <li><strong>One tall vertical</strong> — a vase, a stacked pair of books on end, a tall jug.</li>
+        <li><strong>One horizontal stack</strong> — 2–4 books lying flat, tonal spines out or pages out.</li>
+        <li><strong>One small object</strong> on the stack — a ceramic dish, a stone, a small bowl.</li>
+        <li><strong>One-third of the shelf left empty.</strong> Always. The gap is the styling.</li>
+      </ol>
+    </div>
+    <div class="formula">
+      <div class="fh">The coffee table <em>(four moves)</em></div>
+      <ol>
+        <li><strong>A tray</strong> to define the zone — wood or stoneware.</li>
+        <li><strong>One stack of two books</strong>, a small object resting on top.</li>
+        <li><strong>One organic element</strong> — a low bowl, a single stem, a stone.</li>
+        <li><strong>Bare wood</strong> for the rest. Never fill the table.</li>
+      </ol>
+    </div>
+    <div class="formula">
+      <div class="fh">The console / sideboard <em>(symmetry + one break)</em></div>
+      <ol>
+        <li><strong>A lamp or large vessel</strong> to one side — the tall anchor.</li>
+        <li><strong>A framed print or mirror</strong> leaning behind, slightly off-centre.</li>
+        <li><strong>One low cluster of three</strong> at varied heights on the other side.</li>
+        <li><strong>A clear centre.</strong> Weight the ends, leave the middle open.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Shelf &amp; surface formulas</span><span class="page-num">04</span></div>
+</section>
+
+<!-- ============ LAYERING TEXTURE ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">Warmth without colour</div>
+    <h2 class="section-title">The three-weight<br><span class="ital">rule</span>.</h2>
+    <hr class="divider" />
+    <p class="body-copy" style="margin-bottom:0.14in;">Japandi rooms stay nearly monochrome, so <strong>texture does the work colour does elsewhere</strong>. The rule: in any zone, layer the same neutral at three different weights and you get depth without a second colour.</p>
+    <div class="formula">
+      <div class="fh">Three weights, one neutral</div>
+      <ol>
+        <li><strong>Fine</strong> — a smooth weave: linen sheeting, a flat-woven runner, a paper shade.</li>
+        <li><strong>Mid</strong> — a visible weave: a wool throw, a slubby linen cushion, a jute mat.</li>
+        <li><strong>Coarse</strong> — a chunky texture: a knitted blanket, a boucle cushion, a rough basket.</li>
+      </ol>
+    </div>
+    <p class="body-copy" style="margin-top:0.1in;">Apply it to the sofa (cushion, throw, rug), the bed (sheet, duvet, blanket), the reading chair (seat, throw, floor). Three weights of oat reads richer than five colours of cushion — and it never dates.</p>
+    <div class="callout">
+      <div class="ct">The test</div>
+      <p>Photograph the zone in black and white. If it still reads as layered and warm with no colour, the texture is doing its job. If it goes flat, add a coarser weight — not another colour.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Layering texture</span><span class="page-num">05</span></div>
+</section>
+
+<!-- ============ PRINTS ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">On the wall</div>
+    <h2 class="section-title">Hanging &amp; pairing<br><span class="ital">prints</span>.</h2>
+    <hr class="divider" />
+    <div class="formula">
+      <div class="fh">Where it hangs</div>
+      <ol>
+        <li><strong>Centre at 57–60 inches</strong> from the floor — gallery height, the eye's natural line.</li>
+        <li><strong>Above furniture:</strong> the art spans about two-thirds of the piece below it, with a hand's-width of breathing room above the back of the sofa or bed.</li>
+        <li><strong>Lean, don't hang,</strong> on a console or shelf for a softer, less permanent calm.</li>
+      </ol>
+    </div>
+    <div class="formula">
+      <div class="fh">Pairing the Calm &amp; Oak prints</div>
+      <ol>
+        <li><strong>One statement, or a quiet pair</strong> — a single ensō, or two botanicals in matching frames. Avoid the busy grid.</li>
+        <li><strong>Match the print to the room's accent</strong> — sumi-e ink for charcoal &amp; cream; botanical line for stone &amp; sage; a tonal study for warm-grey monochrome; a terracotta-toned landscape for the accent palette.</li>
+        <li><strong>Frame in the room's lead wood</strong> — oak frames in an oak room, walnut in a walnut room. Thin profiles, wide mats.</li>
+      </ol>
+    </div>
+    <div class="callout">
+      <div class="ct">The pairing shortcut</div>
+      <p>A diptych of two prints from the same Calm &amp; Oak series (two moons, two botanicals, two tonal studies) is the safest wall in Japandi — related, restrained, never busy. Browse the series at calmandoak.com/shop/prints.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Hanging &amp; pairing prints</span><span class="page-num">06</span></div>
+</section>
+
+<!-- ============ LIGHTING ============ -->
+<section class="page">
+  <div class="pad left-vh">
+    <div class="eyebrow">After dark</div>
+    <h2 class="section-title">Lighting<br>for <span class="ital">calm</span>.</h2>
+    <hr class="divider" />
+    <p class="body-copy" style="margin-bottom:0.14in;">A room can be perfectly styled and still feel cold the moment the overhead light comes on. Calm lighting follows three rules.</p>
+    <div class="rule-block"><div class="rule-num">i</div><div>
+      <div class="rule-title">Warm, always — 2700K</div>
+      <div class="rule-body">Every bulb in a calm room is warm white (2700K), never cool or daylight (4000K+). One cool bulb in a lamp throws off the whole room's temperature. Check the box; "soft white" is usually right, "bright white" is not.</div>
+    </div></div>
+    <div class="rule-block"><div class="rule-num">ii</div><div>
+      <div class="rule-title">Low and layered, not overhead</div>
+      <div class="rule-body">Switch off the ceiling light at night and light the room in pools — a floor lamp, a table lamp, a paper lantern. Three low warm sources read calm; one bright overhead reads like an office.</div>
+    </div></div>
+    <div class="rule-block"><div class="rule-num">iii</div><div>
+      <div class="rule-title">One soft glow per zone</div>
+      <div class="rule-body">Every place you sit or work gets one warm light within reach. A paper or linen shade diffuses it; bare bulbs and glossy shades glare. Dimmers turn a good room into a calm one — add them where you can.</div>
+    </div></div>
+    <div class="callout">
+      <div class="ct">The evening test</div>
+      <p>At night, turn off the overhead and switch on only the lamps. If the room feels warm and you don't reach for the ceiling switch, the lighting is right.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Lighting for calm</span><span class="page-num">07</span></div>
+</section>
+
+<!-- ============ TEN MISTAKES ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="eyebrow">Before you commit</div>
+    <h2 class="section-title">The ten styling<br><span class="ital">mistakes</span>.</h2>
+    <hr class="divider" />
+    <div class="dd">
+      <div class="col do">
+        <h4>Do</h4>
+        <ul>
+          <li>Leave two-thirds of every surface bare.</li>
+          <li>Group in odd numbers at varied heights.</li>
+          <li>Repeat one material across the room.</li>
+          <li>Layer three weights of one neutral.</li>
+          <li>Use warm 2700K light, low and layered.</li>
+          <li>Keep one living element per zone.</li>
+          <li>Hang art at 57–60 inches, centred.</li>
+          <li>Conceal clutter in baskets and closed storage.</li>
+          <li>Style standing, then check from the chair.</li>
+          <li>Stop one piece earlier than feels finished.</li>
+        </ul>
+      </div>
+      <div class="col dont">
+        <h4>Don't</h4>
+        <ul>
+          <li>Fill a shelf or surface edge to edge.</li>
+          <li>Line objects up at one height.</li>
+          <li>Mix many small unrelated decorative objects.</li>
+          <li>Add a second colour to fix a flat room.</li>
+          <li>Rely on the cool overhead light at night.</li>
+          <li>Crowd a corner with several plants.</li>
+          <li>Hang art too high, floating above the sofa.</li>
+          <li>Leave cables, remotes and chargers on show.</li>
+          <li>Style only for the doorway photo.</li>
+          <li>Keep adding "one more" piece.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:0.2in;">
+      <div class="ct">The one that fixes most rooms</div>
+      <p>Remove a quarter of what's on display and put it away for a month. Nine rooms in ten read calmer immediately — Japandi is mostly the discipline of taking away.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The ten styling mistakes</span><span class="page-num">08</span></div>
+</section>
+
+<!-- ============ 30-DAY PLAN p1 ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="eyebrow">Turn it into a habit</div>
+    <h2 class="section-title">The 30-day<br>calm-home <span class="ital">plan</span>.</h2>
+    <hr class="divider" />
+    <p class="body-copy" style="margin-bottom:0.12in;">One small move a day. No room torn apart, no big spend — just a daily edit that compounds into a calmer home by week four.</p>
+    <div class="plan-week">
+      <div class="wk">Week 1 · Clear</div>
+      <ul>
+        <li><b>Day 1–2:</b> Clear every flat surface in one room completely. Live with it bare for a day.</li>
+        <li><b>Day 3–4:</b> Return only what earns its place — a third of what was there.</li>
+        <li><b>Day 5–6:</b> Box up the rest; store it out of sight for the month.</li>
+        <li><b>Day 7:</b> Hide the cables, remotes and chargers in that room.</li>
+      </ul>
+    </div>
+    <div class="plan-week">
+      <div class="wk">Week 2 · Warm</div>
+      <ul>
+        <li><b>Day 8–9:</b> Replace every cool bulb in the room with 2700K warm white.</li>
+        <li><b>Day 10–11:</b> Add or reposition one low lamp; switch off the overhead at night.</li>
+        <li><b>Day 12–13:</b> Layer three weights of one neutral on the main seat or bed.</li>
+        <li><b>Day 14:</b> Sit where you live and re-style from there.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bar"><span>The 30-day plan · week 1–2</span><span class="page-num">09</span></div>
+</section>
+
+<!-- ============ 30-DAY PLAN p2 ============ -->
+<section class="page">
+  <div class="pad-tight left-vh">
+    <div class="plan-week" style="margin-top:0.1in;">
+      <div class="wk">Week 3 · Compose</div>
+      <ul>
+        <li><b>Day 15–16:</b> Style one shelf with the shelf formula — tall, stack, small, gap.</li>
+        <li><b>Day 17–18:</b> Style the coffee table or console with its formula.</li>
+        <li><b>Day 19–20:</b> Hang or lean one print at 57–60 inches; frame in the room's wood.</li>
+        <li><b>Day 21:</b> Add one living element — a stem, a branch, one plant.</li>
+      </ul>
+    </div>
+    <div class="plan-week">
+      <div class="wk">Week 4 · Repeat &amp; refine</div>
+      <ul>
+        <li><b>Day 22–24:</b> Carry the same three moves into a second room.</li>
+        <li><b>Day 25–26:</b> Walk the home; remove anything that breaks the one-material rule.</li>
+        <li><b>Day 27–28:</b> Do the black-and-white photo test on two rooms; add texture, not colour.</li>
+        <li><b>Day 29:</b> The evening light test — lamps only, no overhead.</li>
+        <li><b>Day 30:</b> Stand back. Note the one room that feels calmest and why — that's your template.</li>
+      </ul>
+    </div>
+    <hr class="divider" />
+    <p class="body-copy" style="font-style:italic; color:var(--graphite); font-size:10pt;">Keep the boxed-away pieces stored. After a month you'll keep most of them out of sight for good — and that, more than anything you add, is what makes a home read calm.</p>
+  </div>
+  <div class="footer-bar"><span>The 30-day plan · week 3–4</span><span class="page-num">10</span></div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="page closing">
+  <div class="pad center-vh">
+    <div class="wordmark" style="margin-bottom: 0.5in;">Calm <span class="amp">&amp;</span> Oak</div>
+    <hr class="divider" />
+    <p class="lead" style="text-align: center; max-width: 5in; margin-top: 0.3in;">"Styling isn't adding the right things. It's removing until only the right things are left — then lighting them warmly."</p>
+    <div style="margin-top: 0.5in;">
+      <div class="small-caps" style="margin-bottom: 0.2in;">Keep going</div>
+      <div class="serif" style="font-size: 15pt; color: var(--charcoal); margin-bottom: 0.12in;">The print collection · calmandoak.com/shop/prints</div>
+      <div class="serif" style="font-size: 15pt; color: var(--charcoal); margin-bottom: 0.12in;">The free palette generator · calmandoak.com/palette</div>
+      <div class="serif" style="font-size: 14pt; font-style: italic; color: var(--terracotta);">@calmandoak on Pinterest</div>
+    </div>
+    <div style="position: absolute; bottom: 1in; left: 0; right: 0; text-align: center;">
+      <div class="small-caps" style="font-size: 7pt;">© 2026 Calm &amp; Oak · For personal use in your own home. Not licensed for resale.</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
