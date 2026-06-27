@@ -4,6 +4,9 @@
 
 .git/
 .github/
+.env
+.env.*
+*.env
 cloud/
 node_modules/
 _tools/
