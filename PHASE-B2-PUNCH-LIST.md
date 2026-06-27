@@ -38,7 +38,7 @@ These ASINs link to the right product but the visible `<h3 class="product-title"
 | B0D31739VD | GIB seagrass baskets set of 3 with leather handles | shop/office ("Walnut + leather desk pad, large") | "GIB seagrass baskets set of 3 with leather handles" |
 | B0D6YRJLCP | Hug Donut matte ceramic vase set | shop/bedroom ("Low bed, natural bedding") | "Hug Donut matte ceramic bud vase set" |
 | B0DH21GJ15 | Besiost washed-oak entryway console | shop/furniture, shop/looks/the-lit-entryway, shop/office, shop/storage all have wrong names | "Besiost washed-oak entryway console table, 32"" |
-| B0DHG6PMNM | Round water hyacinth basket | shop/looks/the-lit-entryway ("Acacia wood catch-all tray"), shop/storage ("SONGMICS wooden hangers") | "Round water hyacinth woven storage basket" |
+| ~~B0DHG6PMNM~~ → **B00Q7XUUC2** | Round water hyacinth basket — **ASIN replaced 2026-06-23** (KINGWILLOW B0DHG6PMNM failed bar at 27 rev → Household Essentials ML-4002 B00Q7XUUC2, 4.8★/1,657). Card names already corrected in a later pass. | resolved | "Round water hyacinth woven storage basket" |
 | B0DK21FLCK | MIULEE oatmeal linen curtains 84" pair | shop/looks/the-layered-living-room ("JoraLion boucle lumbar"), shop/textiles ("Jute runner rug") | "MIULEE oatmeal linen curtains, 84" pair" |
 | B0DNZ6Q7CD | Plug-in linen wall sconces pair | shop/lighting ("Nogy Akari rice paper floor lamp") | "Plug-in linen wall sconces, pair" |
 | B0F4K9SP6N | MIULEE boucle pillow covers 4-pack | shop/looks/the-layered-living-room ("Longhui throw"), shop/textiles ("Linen curtain panel pair") | "MIULEE boucle pillow covers, 4-pack" |

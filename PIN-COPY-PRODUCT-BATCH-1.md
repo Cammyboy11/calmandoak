@@ -216,7 +216,8 @@ A full-grain leather desk pad — the warm surface that grounds a wood desk and 
 - **Amazon product URL:** `https://www.amazon.com/dp/B0DC6FQKYR?tag=calmandoak-20`
 
 ### 17. Woven storage that reads as decor
-- **Image:** `final pins/06-product-pins/pp-B0DHG6PMNM.jpg`
+- **Product (updated 2026-06-23):** `B0DHG6PMNM` KINGWILLOW failed the bar (27 reviews) → now **`B00Q7XUUC2` Household Essentials ML-4002 water-hyacinth basket** (4.8★/1,657). See `PRODUCT-CHANGES-LOG.md` 2026-06-23.
+- **Image:** `final pins/06-product-pins/pp-B0DHG6PMNM.jpg` — ⚠️ **flagged for re-shoot** (depicts the old KINGWILLOW silhouette; re-render to the ML-4002 before posting)
 - **Title:** `Woven storage that reads as decor`
 - **Description:**
 ```
@@ -225,8 +226,8 @@ A round water-hyacinth basket with handles — soft enough to hold throws by the
 #japandi #storage #homeorganization #neutralhome #slowliving
 (As an Amazon Associate, Calm & Oak earns from qualifying purchases.)
 ```
-- **Pin destination (recommended):** `https://calmandoak.com/journal/400-dollar-small-bedroom/?utm_source=pinterest&utm_medium=pin&utm_campaign=product-pins-1&utm_content=B0DHG6PMNM`
-- **Amazon product URL:** `https://www.amazon.com/dp/B0DHG6PMNM?tag=calmandoak-20`
+- **Pin destination (recommended):** `https://calmandoak.com/journal/400-dollar-small-bedroom/?utm_source=pinterest&utm_medium=pin&utm_campaign=product-pins-1&utm_content=B00Q7XUUC2`
+- **Amazon product URL:** `https://www.amazon.com/dp/B00Q7XUUC2?tag=calmandoak-20`
 
 ### 18. Stonewashed linen curtains
 - **Image:** `final pins/06-product-pins/pp-B0DK21FLCK.jpg`

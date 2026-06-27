@@ -21,6 +21,32 @@ This file supersedes scattered notes in the action plan. The action plan's per-p
 
 ## Change history
 
+### 2026-06-23 — Pin 39 basket: B0DHG6PMNM (KINGWILLOW, 27 rev) → B00Q7XUUC2 (Household Essentials ML-4002) — FAILED-BAR SWAP + IMAGE RE-SHOOT FLAG
+
+**Issue:** The Pin 39 "tall woven coffee-table basket" affiliate — **KINGWILLOW Round Wicker Storage Basket, Water Hyacinth, with Handles `B0DHG6PMNM`** — was carried as a "verified clean / reuse-now" pick in `PLACEHOLDER-AUDIT.md` and in this log (2026-05-21 + 2026-05-24 entries). It **fails the SAFEGUARDS ASIN bar**: browser-verified live 2026-06-23 at **4.6★ but only 27 reviews** (bar = ≥200; the ≥100 relaxed band is for minor accents only — this basket is a hero piece in the $400 small-bedroom guide, so it does not qualify for the exception). It is in stock, ships from Amazon, no FR badge — the review count alone disqualifies it.
+
+**Replacement (browser-verified live 2026-06-23, Claude-in-Chrome):** **Household Essentials ML-4002 Tall Water Hyacinth Wicker Basket with Handles, Natural** — `B00Q7XUUC2`.
+- **4.8★ / 1,657 reviews** · **Amazon's Choice** · 900+ bought in past month · **no "Frequently Returned" badge**
+- In stock · **Ships from & Sold by Amazon.com** · 30-day refund/replacement
+- **$51.29** deal price (regular $53.99) · Material: **Water Hyacinth** · Shape: **Round** · ~17"H tall (blanket scale)
+- Listing copy: *"Metal frame provides support for holding blankets"* — matches the pin's visible internal metal frame and the site's "throws by the sofa / replaces dresser" use.
+
+**Why this product:** the pin's exact look (round water-hyacinth + two upright twisted-rope loop handles + visible metal frame, blanket scale) is a low-review boutique niche. Across KINGWILLOW, StorageWorks, Goodpick, Household Essentials and others, every close loop-handle match sits under ~130 reviews. The ML-4002 is the only round water-hyacinth basket with handles found clearing ≥200 reviews while keeping all four defining features (water hyacinth · metal frame · two upright woven loop handles · blanket scale). The "water-hyacinth" material claim stays accurate everywhere it appears on the site.
+
+**🖼️ IMAGE RE-SHOOT FLAGGED (not silently swapped):** the existing render `pp-B0DHG6PMNM.jpg` (full pin) and `p-B0DHG6PMNM.jpg` (cropped shop/journal card) depict the KINGWILLOW's *straight-sided cylinder with a fine vertical twist over prominent exterior metal ribs and a cream knit throw*. The ML-4002 is the same **type/material/frame/handle** family but has a **chunkier braided weave and a contoured (scooped) rim**. Per the sacred picture-product rule + SAFEGUARDS Check 1a (sub-class distinguishing feature), the basket image should be **re-rendered to the ML-4002 silhouette** before these pins/cards are (re)posted. Affiliate links were swapped now; the close-match existing image is left in place on the live site so nothing breaks, but it is **flagged for re-shoot**, not accepted as a final match. (Also: `_SCHEDULE.csv` rows 73 / D15S3 and 196 / D40S1 are recycled "Tall woven coffee-table basket" slots that already carried *unrelated* images — `day11-pin53-round-oak-coffee-table.png` and `day29-pin144-coffee-table-books.png` respectively — against this basket link; both need the real basket image.)
+
+**References updated (links only; images pending re-shoot):**
+- `shop/storage/index.html` — JSON-LD pos 9 url + visible card href
+- `shop/looks/the-lit-entryway/index.html` — JSON-LD pos 4 url + visible card href; price tier `$`→`$$`
+- `journal/japandi-entryway/index.html` — the "shoe basket we use" callout link + the §2 section-product card link
+- `journal/400-dollar-small-bedroom/index.html` — §4 card link; price `$30`→`$51` in TOC, the §4 `<h2>`, and the budget line (subtotal `$338`→`$359`, art/vase headroom `$62`→`$41`, total still **$400 / $400**)
+- `final pins/00-SCHEDULED-bulk-post/_SCHEDULE.csv` — rows 41 (D09S1) + 73 (D15S3) + 196 (D40S1) affiliate link
+- `PLACEHOLDER-AUDIT.md` (3 refs), `VALIDATED-ASINS-DAYS-1-4.md` (replacement record appended), `PIN-COPY-PRODUCT-BATCH-1.md` (#17), `PHASE-B2-PUNCH-LIST.md` (row)
+
+**Not scheduled.** Product data + links fixed only; no posting/scheduling performed — per request.
+
+---
+
 ### 2026-05-26 — Pin 58 fix: matched to ClosetMaid 3258 Cubeicals + re-rendered
 
 **Issue:** Pin 58 (`assets/img/products-cropped/day12-pin58-storage-bench.jpg`) showed a premium Japandi entryway storage bench — solid-oak frame, channel-tufted oat-linen padded seat, three linen storage bins with leather pull tabs — that **had no Amazon match at our review bar**. Originally noted in `PLACEHOLDER-AUDIT.md` row 8 ("Slatted oak entryway bench... High-review option HomePop Malmo 4.6/1.7K is a CLOSED storage box; open-leg upholstered = low rev") and deferred to a Look-batch. The asset was orphaned across the site (no HTML refs).

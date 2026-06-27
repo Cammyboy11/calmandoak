@@ -1,0 +1,18 @@
+{
+  "slug": "5things-bedroom",
+  "imageRoot": "C:\\Users\\CameronHayes\\OneDrive - GPWMAD01\\Desktop\\Calm & Oak\\final pins\\07-mixed-stunning-batch",
+  "outDir": "C:\\Users\\CameronHayes\\OneDrive - GPWMAD01\\Desktop\\Calm & Oak\\final pins\\_reels",
+  "durations": { "hook": 2.4, "item": 2.3, "outro": 2.6 },
+  "items": [
+    { "image": "07-20-japandi-bedroom.jpg", "label": "A low oak bed" },
+    { "image": "07-17-linen-duvet.jpg", "label": "Washed linen" },
+    { "image": "07-11-bedside-lamps.jpg", "label": "Warm bedside light" },
+    { "image": "07-09-bud-vase-set.jpg", "label": "One quiet stem" },
+    { "image": "07-06-taupe-throw.jpg", "label": "Layered texture" }
+  ],
+  "hooks": [
+    { "id": "A", "image": "07-01-oak-bed.jpg", "line1": "5 THINGS", "line2": "every calm bedroom has" },
+    { "id": "B", "image": "07-30-sage-bedroom-look.jpg", "line1": "why your bedroom", "line2": "never feels restful" }
+  ],
+  "outro": { "image": "07-25-warmth-without-clutter.jpg", "line1": "CALM & OAK", "line2": "calmandoak.com" }
+}

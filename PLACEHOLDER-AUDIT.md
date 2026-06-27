@@ -105,7 +105,7 @@ Cards use `<a class="section-product">` with a thumbnail + name + search-URL. Im
 - 200-entryway pos3 *slim oak floating shelf* → reuse `B0DC6S57HV` (Fun Memories oak shelves)
 - 300-entryway pos1 *slim oak console* → reuse `B0DH21GJ15` (oak console)
 - 400-reading-nook pos1 *linen accent chair oak legs* → reuse `B07F266PMS` (Christopher Knight Evelyn)
-- 400-small-bedroom pos4 *tall woven basket w/ lid* → reuse `B0DHG6PMNM` (tall woven basket)
+- 400-small-bedroom pos4 *tall woven basket w/ lid* → ~~`B0DHG6PMNM`~~ **replaced 2026-06-23 → `B00Q7XUUC2`** (Household Essentials ML-4002 water-hyacinth basket, 4.8★/1,657; B0DHG6PMNM failed the bar at only 27 reviews)
 
 | Page | Card | Img match? | Proposed fix | Status |
 |---|---|---|---|---|
@@ -154,7 +154,7 @@ Cards use `<a class="section-product">` with a thumbnail + name + search-URL. Im
 | 400-patio-dining | 5 stoneware planter pair | ✅ | verify planter | 🔎 |
 | 400-reading-nook | 1 linen accent chair | ✅ | ♻️ `B07F266PMS` (Evelyn) | 🔎 reuse |
 | 400-small-bedroom | 1 compact low oak bed | ✅img | (Look-batch product) | 🎨 |
-| 400-small-bedroom | 4 tall woven basket w/ lid | ~ | ♻️ `B0DHG6PMNM` | 🔎 reuse |
+| 400-small-bedroom | 4 tall woven basket w/ lid | ~ | `B00Q7XUUC2` (Household Essentials, 4.8★/1,657; replaced `B0DHG6PMNM`/27-rev fail) | ✅ FIXED 2026-06-23 + 🖼️ re-shoot |
 | 400-small-bedroom | 5 linen curtain panel | ✅ | verify (same as livingroom curtains) | 🔎 |
 | budget-bedroom | 2 low oak bed | ✅img | (Look-batch product) | 🎨 |
 | budget-bedroom | 7 sumi ink print | 🎨 (art) | Print Collection | 🎨 |
@@ -185,7 +185,7 @@ $300 living-room textiles + $250 bedside refresh:
 
 **Fix phase — suggested order (highest value / lowest effort first):**
 
-1. **♻️ Reuse-now swaps (zero new sourcing, image already matches)** — 4 journal cards point to products we already verified: oak floating shelf `B0DC6S57HV`, oak console `B0DH21GJ15`, Evelyn chair `B07F266PMS`, tall basket `B0DHG6PMNM`; plus patio chairs reuse Teague `B07DQDMVJ6`. Fast, safe.
+1. **♻️ Reuse-now swaps (zero new sourcing, image already matches)** — 4 journal cards point to products we already verified: oak floating shelf `B0DC6S57HV`, oak console `B0DH21GJ15`, Evelyn chair `B07F266PMS`, tall basket `B00Q7XUUC2` (was `B0DHG6PMNM` — failed bar at 27 rev, swapped 2026-06-23; basket image needs re-shoot); plus patio chairs reuse Teague `B07DQDMVJ6`. Fast, safe.
 2. **🔎 Clean verify-then-swap (image already matches, just need a browser check)** — abaca basket (×2), water carafe, wooden hangers, boucle pillows, linen curtains (×2), linen napkins, stoneware planter (×2), desk pad set, alarm clock, storage cubes, shoe rack, boucle lumbar. Mostly high-review commodity → likely clean.
 3. **🖼️ Needs image + product (thumbnail wrong)** — round mirror (×2), wall hooks, motion rod light, acrylic dividers, hanging rod organizer, faux olive plant, office task chair, brass candle holders, linen tablecloth, outdoor cushions/throw, reed diffuser, robe, bath mat. Do as a **batched image pass** (decide: reuse a generic crop, or one grouped Look render — minimize spend).
 4. **🎨 Look-batch (no clean picture-match → build into Looks, don't solo-generate)** — low oak bed (×3 pages: furniture/bedroom/small-bedroom/budget-bedroom + Sage Bedroom P2), oak desk (×2), upholstered/open-leg entry bench, square linen floor cushion, donabe, acacia handle-less tray (×3), stoneware salt cellar (×2), botanical/sumi art (×3 → owned Print Collection), brown bud vase, round oak pedestal coffee table (living-room Look), teak outdoor furniture (low review at 200+).
