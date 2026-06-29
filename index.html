@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="/assets/css/styles.css?v=14" />
+<link rel="stylesheet" href="/assets/css/styles.css?v=15" />
 
 <!-- Icons -->
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
@@ -73,6 +73,7 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WNCDBXM0FQ');</script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <div class="disclosure">
   As an Amazon Associate, Calm & Oak earns from qualifying purchases. <a href="/disclosures/">Read our disclosures</a>.
@@ -98,7 +99,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <!-- ============ HERO ============ -->
   <section class="hero">
@@ -112,7 +113,7 @@
           <a href="/shop/" class="hero-secondary">or browse the full shop →</a>
         </div>
       </div>
-      <div class="hero-art reveal" aria-hidden="true" style="background-image: url('/assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1');"></div>
+      <img class="hero-art reveal" src="/assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1" alt="A sunlit Japandi living room with a low oatmeal-linen sofa, a round solid-oak coffee table, sheer linen curtains and a leafy potted plant on a jute rug" width="1408" height="768" fetchpriority="high" />
     </div>
   </section>
 
@@ -420,7 +421,8 @@
           <h2>The Japandi <span class="italic">Starter Guide</span></h2>
           <p class="lede" style="margin: 0 auto;">A 20-page PDF: the five principles, a starter shopping list, and the colour and material rules that hold a Japandi room together. Free when you join our (very) quiet newsletter.</p>
           <form data-signup>
-            <input type="email" required placeholder="your@email.com" aria-label="Email address" />
+            <label for="signup-email" class="sr-only">Email address</label>
+            <input id="signup-email" type="email" required placeholder="your@email.com" aria-label="Email address" />
             <button type="submit" class="btn btn--primary btn--small">Send the guide</button>
           </form>
           <small class="signup-note">One thoughtful email a fortnight. Unsubscribe whenever.</small>

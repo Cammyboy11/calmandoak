@@ -997,14 +997,60 @@ article.prose a:hover { color: var(--terracotta); }
   margin: 0;
   max-width: 22ch;
 }
+
 @media (max-width: 880px) {
-  .trust { grid-template-columns: repeat(2, 1fr); }
-  .trust .item { padding: 1.8rem 1.4rem; }
-  .trust .item:nth-child(2) { border-right: none; }
-  .trust .item:nth-child(1), .trust .item:nth-child(2) { border-bottom: 1px solid var(--hair); }
+  .trust { grid-template-columns: repeat(2, 1fr); gap: 1.75rem; }
 }
-@media (max-width: 480px) {
-  .trust { grid-template-columns: 1fr; }
-  .trust .item { border-right: none !important; border-bottom: 1px solid var(--hair); }
-  .trust .item:last-child { border-bottom: none; }
+
+/* ---------- Accessibility upgrades (a11y) ---------- */
+:root { --terracotta-text: #8C4A2C; } /* AA-contrast terracotta for small text on cream */
+
+.eyebrow,
+.section-head .eyebrow { color: var(--terracotta-text); }
+.hero h1 .ital, h1 .ital, .ital { color: var(--terracotta-deep); }
+
+/* Visible keyboard focus on every interactive element */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--terracotta-text);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.signup input[type="email"]:focus-visible {
+  outline: 3px solid var(--terracotta-text);
+  outline-offset: 2px;
+  border-color: var(--terracotta-deep);
+}
+
+/* Skip-to-content link */
+.skip-link {
+  position: absolute; left: 1rem; top: -4rem; z-index: 2000;
+  background: var(--charcoal); color: var(--offwhite);
+  padding: 0.75rem 1.1rem; font-size: 0.85rem; letter-spacing: 0.04em;
+  text-decoration: none; transition: top .2s var(--ease);
+}
+.skip-link:focus { top: 1rem; }
+
+/* Screen-reader-only utility */
+.sr-only {
+  position: absolute !important; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* Hero rendered as a real <img> (better LCP + alt text) */
+img.hero-art { width: 100%; height: auto; object-fit: cover; display: block; }
+
+/* Respect the user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
