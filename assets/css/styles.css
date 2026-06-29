@@ -898,14 +898,27 @@ article.prose a:hover { color: var(--terracotta); }
   /* Same ratio update — the cropped pins are now wider than tall, so 16:10 fits
      better than the original 4:5 portrait aspect. */
   aspect-ratio: 16/10;
-  max-height: 520px;
+  max-height: 620px;
+  min-height: 420px;
   background-color: var(--cream);
   background-size: cover;
   background-position: center;
   overflow: hidden;
   border-radius: var(--radius-lg);
+  box-shadow: 0 30px 60px -28px rgba(42,42,40,.22);
 }
 .hero-art::before, .hero-art::after { display: none !important; }
+/* Hero secondary text link (single-CTA hero: one button + one quiet link) */
+.hero-secondary {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--charcoal);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  opacity: 0.72;
+  transition: opacity .2s var(--ease), color .2s var(--ease);
+}
+.hero-secondary:hover { opacity: 1; color: var(--terracotta); }
 
 /* ---------- Card images on shop hub + homepage pillars ---------- */
 .card-img.has-photo {
