@@ -10,7 +10,7 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
-_(empty — agents append below)_
+- 2026-06-29 · COWORK (Cameron session) · **FRAMES cross-sell is LIVE** at `/shop/frames/` — framing guide + print→frame size-matcher + Etsy print cross-sell, with affiliate *search* links (tag `calmandoak-20`) and FAQ/Breadcrumb schema. **Needs-merchandiser:** upgrade the search links to image product cards — source + verify an Amazon ASIN and crop a `p-<ASIN>.jpg` for each of the 8 frames below, then drop the cards into a `product-grid` on `shop/frames/index.html` (card markup + alt text already written in this session). These are Amazon affiliate, **not Gelato POD**. NOTE: `_gaplist.js` only auto-detects gap cards that are `<article class="product">` with an `amazon.../s?k=` CTA, so the frames need that card form added (currently a table) to enter the worklist. Frames to source (query · tier): light-oak-11x14 `$` · light-oak-8x10 `$` · light-oak-16x20 `$$` · slim-black-metal-11x14 `$` · natural-wood-float-frame `$$` · oak-gallery-wall-set `$$` · 3×-matching-11x14-oak `$$` · white-mat-11x14-for-8x10 `$`. Also shipped same session: prints page `wa` + `sage-stone` Etsy links wired in `print-links.js`, paper-weight corrected to 250gsm, and the size list reconciled to 8×10/11×14/16×20. · live (frames page + prints fixes); needs-merchandiser (8 frame ASINs + images)
 
 ---
 
