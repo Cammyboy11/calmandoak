@@ -37,11 +37,11 @@
     "layers": "https://www.etsy.com/listing/4514689937/color-field-landscape-print-earth-tone",
     "moonrise": "https://www.etsy.com/listing/4514681587/full-moon-print-minimalist-moon",
     "shizuka": "https://www.etsy.com/listing/4514669812/japanese-kanji-print-shizuka-stillness",
-    "wa": "",
+    "wa": "https://www.etsy.com/listing/4520125362/japanese-kanji-print-wa-harmony-calligraphy",
     "ma": "https://www.etsy.com/listing/4514768430/japanese-kanji-print-ma-negative-space",
     "two-woods": "https://www.etsy.com/listing/4513670516/tonal-study-print-oak-walnut-color-field",
     "warm-earth": "https://www.etsy.com/listing/4514773752/tonal-study-print-terracotta-oat-color",
-    "sage-stone": "",
+    "sage-stone": "https://www.etsy.com/listing/4520134683/tonal-study-print-sage-stone-color-field",
     "balance": "",
     "chado": "",
     "linen-morning": ""
