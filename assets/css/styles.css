@@ -185,7 +185,7 @@ em, .italic { font-style: italic; font-family: var(--font-display); font-weight:
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  padding-block: clamp(5rem, 11vw, 9rem);
+  padding-block: clamp(3.25rem, 6vw, 5rem) clamp(2.5rem, 5vw, 4rem);
   overflow: hidden;
 }
 .hero-grid {
@@ -1054,3 +1054,25 @@ img.hero-art { width: 100%; height: auto; object-fit: cover; display: block; }
     scroll-behavior: auto !important;
   }
 }
+
+/* ---------- Print Collection best-seller grid ---------- */
+.print-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1rem, 2.4vw, 1.75rem);
+  margin-top: 1.75rem;
+}
+.print-card { display: block; }
+.print-card img {
+  width: 100%; height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 18px 40px -26px rgba(42,42,40,.30);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.print-card:hover img { transform: translateY(-5px); box-shadow: 0 26px 50px -26px rgba(42,42,40,.38); }
+.print-card span {
+  display: block; text-align: center; margin-top: 0.7rem;
+  font-family: var(--font-display); font-style: italic;
+  font-size: 1.05rem; color: var(--graphite);
+}
+@media (max-width: 720px) { .print-grid { grid-template-columns: repeat(2, 1fr); } }

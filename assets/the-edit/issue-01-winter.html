@@ -41,13 +41,15 @@
   .prod .t{font-family:var(--serif);font-size:16px;color:var(--terracotta);}
   .prod a{color:var(--terracotta);text-decoration:none;font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;}
   .num{font-family:var(--serif);font-style:italic;color:var(--terracotta);font-size:20px;}
+  .brk-scrim{position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(to top,rgba(36,33,30,0.55),rgba(36,33,30,0));}
+  .brk-cap{position:absolute;left:74px;right:74px;bottom:74px;}
   a{color:inherit;}
   @media print{ body{background:#fff;gap:0;padding:0;} .page{box-shadow:none;page-break-after:always;}
     @page{size:Letter;margin:0;} .note{display:none;} }
 </style>
 </head>
 <body>
-<div class="note">Issue One (Winter) — full draft for your review. Real fonts, palette, layout, and live affiliate links (tag <code>calmandoak-20</code>). The cream blocks marked <em>[ image ]</em> are the only places Gemini photography drops in once you sign off the voice and density — nothing generated yet.</div>
+<div class="note">Issue One (Winter) — full 30-page draft, ~24 images + 4 full-page breakers. Real fonts, palette, layout, live affiliate links (tag <code>calmandoak-20</code>). Cream blocks marked <em>[ image ]</em> are where Gemini photography drops in once you sign off — nothing generated yet.</div>
 
 <!-- 1 · COVER -->
 <section class="page" style="padding:62px 72px 54px;">
@@ -64,46 +66,45 @@
 <!-- 2 · CONTENTS -->
 <section class="page">
   <div class="rh"><span>The Calm &amp; Oak Edit</span><span>Issue One — Winter</span></div>
-  <div style="margin-top:54px;"><span class="eyebrow muted">In this issue</span>
-    <h2 class="h2" style="font-size:50px;">Contents</h2></div>
-  <div style="margin-top:40px;font-family:var(--serif);font-size:21px;line-height:2.35;">
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>On the deep cold <span style="color:var(--graphite);font-style:italic;font-size:18px;">— editor's note</span></span><span class="tc">03</span></div>
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>A winter of warm greys <span style="color:var(--graphite);font-style:italic;font-size:18px;">— the palette</span></span><span class="tc">04</span></div>
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Daikan <span style="color:var(--graphite);font-style:italic;font-size:18px;">— the season, in five-day weeks</span></span><span class="tc">06</span></div>
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>A room that holds the dark <span style="color:var(--graphite);font-style:italic;font-size:18px;">— the room</span></span><span class="tc">07</span></div>
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Twelve quiet finds <span style="color:var(--graphite);font-style:italic;font-size:18px;">— the edit</span></span><span class="tc">12</span></div>
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Stillness is designed <span style="color:var(--graphite);font-style:italic;font-size:18px;">— the lesson</span></span><span class="tc">16</span></div>
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>The four o'clock fire <span style="color:var(--graphite);font-style:italic;font-size:18px;">— the ritual</span></span><span class="tc">18</span></div>
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>One room, three budgets <span style="color:var(--graphite);font-style:italic;font-size:18px;">— sourcing</span></span><span class="tc">20</span></div>
-    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Winter, a short list <span style="color:var(--graphite);font-style:italic;font-size:18px;">— print &amp; keep</span></span><span class="tc">22</span></div>
-    <div style="display:flex;justify-content:space-between;"><span>Where to shop · next issue</span><span class="tc">23</span></div>
+  <div style="margin-top:40px;"><span class="eyebrow muted">In this issue</span>
+    <h2 class="h2" style="font-size:46px;">Contents</h2></div>
+  <div style="margin-top:24px;font-family:var(--serif);font-size:19px;line-height:1.95;">
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>On the deep cold <span style="color:var(--graphite);font-style:italic;font-size:16px;">— editor's note</span></span><span class="tc">03</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>A winter of warm greys <span style="color:var(--graphite);font-style:italic;font-size:16px;">— the palette</span></span><span class="tc">04</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Fuyugomori — 冬籠り <span style="color:var(--graphite);font-style:italic;font-size:16px;">— a word</span></span><span class="tc">06</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Daikan <span style="color:var(--graphite);font-style:italic;font-size:16px;">— the season, in five-day weeks</span></span><span class="tc">07</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>A room that holds the dark <span style="color:var(--graphite);font-style:italic;font-size:16px;">— the room</span></span><span class="tc">08</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Twelve quiet finds <span style="color:var(--graphite);font-style:italic;font-size:16px;">— the edit</span></span><span class="tc">13</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Stillness is designed <span style="color:var(--graphite);font-style:italic;font-size:16px;">— the lesson</span></span><span class="tc">19</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>The four o'clock fire <span style="color:var(--graphite);font-style:italic;font-size:16px;">— the ritual</span></span><span class="tc">22</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>One room, three budgets <span style="color:var(--graphite);font-style:italic;font-size:16px;">— sourcing</span></span><span class="tc">25</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>Winter, a short list <span style="color:var(--graphite);font-style:italic;font-size:16px;">— print &amp; keep</span></span><span class="tc">27</span></div>
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>To read, to hear <span style="color:var(--graphite);font-style:italic;font-size:16px;">— this season</span></span><span class="tc">28</span></div>
+    <div style="display:flex;justify-content:space-between;"><span>Where to shop · next issue</span><span class="tc">29</span></div>
   </div>
+  <div class="imgph" style="height:188px;margin-top:22px;"><span>[ image ] &nbsp;a quiet winter still life — a stoneware cup, a folded oat throw, one bare branch; soft side light, no people</span></div>
   <div class="folio"><span class="wm">Calm &amp; Oak</span><span>02</span></div>
 </section>
 
 <!-- 3 · EDITOR'S NOTE -->
 <section class="page">
   <div class="rh"><span>Editor's note</span><span>Issue One — Winter</span></div>
-  <div style="margin-top:48px;"><span class="eyebrow">On the deep cold</span>
-    <h2 class="h2">Winter is not a colour problem.</h2></div>
-  <div class="body" style="margin-top:24px;max-width:610px;">
-    <p>The traditional Japanese calendar does not hand you four seasons. It hands you seventy-two. The year is cut into twenty-four <em>sekki</em>, and each of those into three <em>kō</em> of roughly five days — small, exact, observed. We are writing this during <em>daikan</em>, the great cold: the deepest fold of the year, the week the old almanac marks as <span class="tc">"butterburs bud beneath the snow."</span> Even in the hardest cold, something is already turning.</p>
+  <div style="margin-top:40px;"><span class="eyebrow">On the deep cold</span>
+    <h2 class="h2" style="font-size:40px;">Winter is not a colour problem.</h2></div>
+  <div class="body" style="margin-top:20px;max-width:610px;font-size:17.5px;">
+    <p>The traditional Japanese calendar does not hand you four seasons. It hands you seventy-two. The year is cut into twenty-four <em>sekki</em>, and each of those into three <em>kō</em> of roughly five days — small, exact, observed. We are writing this during <em>daikan</em>, the great cold: the week the old almanac marks as <span class="tc">"butterburs bud beneath the snow."</span> Even in the hardest cold, something is already turning.</p>
     <p>That is the winter instinct worth keeping at home. A cold room is rarely cold because of temperature. It is cold because it was decorated in cool greys and bright whites and left there — clinical, correct, joyless. The fix is not more colour. It is warmer neutrals, fewer of them, and light low enough to forgive the dark.</p>
-    <p>The Danes have a word the design magazines wore out: <em>hygge</em> — older than its candle-and-blanket reputation, rooted in an Old Norse sense of refuge, of being kept. The Japanese have <em>seijaku</em>, the stillness that is composed rather than empty. This issue lives between them. Warmth, held in restraint.</p>
+    <p>The Danes have a word the design magazines wore out: <em>hygge</em> — older than its candle-and-blanket reputation, rooted in an Old Norse sense of refuge. The Japanese have <em>seijaku</em>, the stillness that is composed rather than empty. This issue lives between them. Warmth, held in restraint.</p>
   </div>
-  <hr class="rule-t" />
-  <div class="lede" style="max-width:560px;color:var(--graphite);">Make the shortest days feel like a choice rather than a season to endure.</div>
+  <div class="imgph" style="height:150px;margin-top:16px;"><span>[ image ] &nbsp;a dim, warm-lit winter window at dusk — the blue cold outside, one amber lamp within; no people</span></div>
   <div class="folio"><span class="wm">Calm &amp; Oak</span><span>03</span></div>
 </section>
 
 <!-- BREAKER (opening) -->
 <section class="page" style="padding:0;position:relative;">
   <div class="imgph" style="height:100%;border:0;"><span>[ full-page image ] &nbsp;a wide winter mood plate — bare branches against a pale cold sky, or a dim warm-lit window seen from a snow-quiet exterior; soft cold light; a darker lower band for text; no people</span></div>
-  <div style="position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(to top,rgba(36,33,30,0.55),rgba(36,33,30,0));"></div>
-  <div style="position:absolute;left:74px;right:74px;bottom:74px;">
-    <div class="eyebrow" style="color:#E9CDBF;">Issue One — Winter</div>
-    <div class="disp" style="font-size:42px;color:#F7F4EE;line-height:1.15;margin-top:6px;">"Butterburs bud beneath the snow.<br/>The first green thought of the year."</div>
-  </div>
+  <div class="brk-scrim"></div>
+  <div class="brk-cap"><div class="eyebrow" style="color:#E9CDBF;">Issue One — Winter</div><div class="disp" style="font-size:42px;color:#F7F4EE;line-height:1.15;margin-top:6px;">"Butterburs bud beneath the snow.<br/>The first green thought of the year."</div></div>
 </section>
 
 <!-- 4 · THE PALETTE -->
@@ -129,76 +130,88 @@
 <!-- 5 · PALETTE / how to use -->
 <section class="page">
   <div class="rh"><span>The palette</span><span>Issue One — Winter</span></div>
-  <div style="margin-top:46px;"><span class="eyebrow muted">Using the five</span>
-    <h2 class="h2" style="font-size:38px;">Where each one goes</h2></div>
-  <div class="body" style="margin-top:22px;max-width:620px;">
+  <div style="margin-top:42px;"><span class="eyebrow muted">Using the five</span>
+    <h2 class="h2" style="font-size:36px;">Where each one goes</h2></div>
+  <div class="body" style="margin-top:18px;max-width:620px;font-size:17px;">
     <p><span class="num">—</span> <strong>Warm greige</strong> is the room. Walls, the largest soft surfaces. It is the colour fog would be if fog were warm. It should be doing almost nothing, which is the whole job.</p>
     <p><span class="num">—</span> <strong>Oat</strong> is the cloth. Linen, wool, the curtain, the throw. It is the warmth you feel before you can name it. Layer two weights of it before you reach for a second colour.</p>
     <p><span class="num">—</span> <strong>Walnut</strong> is the structure. One or two pieces of genuinely dark wood keep a pale room from floating away. In a winter room, wood is gravity.</p>
-    <p><span class="num">—</span> <strong>Stone</strong> is the object. A hand-thrown vase, a salt cellar, the matte grey of unglazed clay. It is the texture you want where the eye lands.</p>
-    <p><span class="num">—</span> <strong>Ember</strong> is the held breath. The terracotta appears once — a single vessel, the spine of a book, the seal on a print — and never twice in the same view. One ember in a quiet room is a fire. Two is a theme.</p>
+    <p><span class="num">—</span> <strong>Stone</strong> is the object. A hand-thrown vase, a salt cellar, the matte grey of unglazed clay — the texture you want where the eye lands.</p>
+    <p><span class="num">—</span> <strong>Ember</strong> is the held breath. The terracotta appears once and never twice in the same view. One ember in a quiet room is a fire. Two is a theme.</p>
   </div>
-  <hr class="rule-t" />
-  <div class="lede" style="max-width:560px;color:var(--graphite);">If a sixth colour is asking to come in, it is usually a seventh object that should leave.</div>
+  <div class="imgph" style="height:170px;margin-top:14px;"><span>[ image ] &nbsp;a flat-lay of the five materials side by side — greige plaster, oat linen, walnut, grey stone, a terracotta chip; even soft light</span></div>
   <div class="folio"><span class="wm">Calm &amp; Oak</span><span>05</span></div>
 </section>
 
-<!-- 6 · DAIKAN / microseasons -->
+<!-- 6 · A WORD: FUYUGOMORI -->
+<section class="page">
+  <div class="rh"><span>A word</span><span>Issue One — Winter</span></div>
+  <div style="display:flex;gap:40px;margin-top:48px;align-items:flex-start;">
+    <div style="flex:0 0 210px;text-align:center;"><div class="disp" style="font-size:104px;color:var(--terracotta);line-height:1.0;font-style:normal;">冬籠り</div><div class="cap" style="margin-top:14px;letter-spacing:.16em;">FUYUGOMORI</div></div>
+    <div style="flex:1;">
+      <span class="eyebrow">A word</span>
+      <h2 class="h2" style="font-size:38px;">Fuyugomori</h2>
+      <p class="body" style="margin-top:16px;font-size:17.5px;">"Winter confinement" — the old word for the deliberate drawing-in of the cold months. Not the grim sense of being snowed in, but the chosen one: the bear to its cave, the seed under the soil, the household to its warm centre. A season understood as withdrawal rather than lack.</p>
+      <p class="body" style="font-size:17.5px;">It reframes the whole winter project at home. You are not waiting out the dark; you are keeping a den through it. <em>Fuyugomori</em> gives you permission to make the room smaller, lower, warmer — to close the curtains early, light the corner, and treat the long evening as the point of the season rather than its penalty.</p>
+    </div>
+  </div>
+  <div class="imgph" style="height:228px;margin-top:26px;"><span>[ image ] &nbsp;the den instinct — a deep armchair pulled close to a warm lamp, a wool throw, curtains drawn against the blue dusk; no people</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>06</span></div>
+</section>
+
+<!-- 7 · DAIKAN / microseasons -->
 <section class="page" style="background:var(--cream);">
   <div class="rh" style="border-color:rgba(42,42,40,0.18);"><span>The almanac</span><span>Issue One — Winter</span></div>
-  <div style="margin-top:46px;"><span class="eyebrow">The season, in five-day weeks</span>
-    <h2 class="h2">Daikan — 大寒</h2></div>
-  <p class="lede" style="max-width:600px;margin-top:16px;">Winter's last and coldest <em>sekki</em>, late January. The court astronomer Shibukawa Shunkai rewrote these names in 1685 so they would match the Japanese sky rather than the Chinese one they were borrowed from. Read across its three <em>kō</em> and you can feel the year leaning toward spring.</p>
-  <div style="margin-top:30px;display:flex;flex-direction:column;gap:0;">
-    <div style="display:flex;gap:24px;padding:18px 0;border-top:1px solid rgba(42,42,40,0.18);"><div style="flex:0 0 120px;font-family:var(--serif);font-style:italic;font-size:22px;">First kō</div><div class="body" style="font-size:20px;margin:0;">Butterburs bud beneath the snow. The first green thought of the year, made underground, in the dark, where no one asked it to.</div></div>
-    <div style="display:flex;gap:24px;padding:18px 0;border-top:1px solid rgba(42,42,40,0.18);"><div style="flex:0 0 120px;font-family:var(--serif);font-style:italic;font-size:22px;">Second kō</div><div class="body" style="font-size:20px;margin:0;">Mountain streams freeze solid. The pause — the held note. The week to do less, not more.</div></div>
-    <div style="display:flex;gap:24px;padding:18px 0;border-top:1px solid rgba(42,42,40,0.18);border-bottom:1px solid rgba(42,42,40,0.18);"><div style="flex:0 0 120px;font-family:var(--serif);font-style:italic;font-size:22px;">Third kō</div><div class="body" style="font-size:20px;margin:0;">Hens begin to lay. The turn. <em>Risshun</em>, the beginning of spring, is now five days away — by the old reckoning, not the thermometer's.</div></div>
+  <div style="margin-top:42px;"><span class="eyebrow">The season, in five-day weeks</span>
+    <h2 class="h2" style="font-size:40px;">Daikan — 大寒</h2></div>
+  <p class="lede" style="max-width:600px;margin-top:14px;font-size:19px;">Winter's last and coldest <em>sekki</em>, late January. The court astronomer Shibukawa Shunkai rewrote these names in 1685 so they would match the Japanese sky rather than the Chinese one they were borrowed from. Read across its three <em>kō</em> and you can feel the year leaning toward spring.</p>
+  <div style="margin-top:22px;">
+    <div style="display:flex;gap:24px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><div style="flex:0 0 120px;font-family:var(--serif);font-style:italic;font-size:21px;">First kō</div><div class="body" style="font-size:18px;margin:0;">Butterburs bud beneath the snow. The first green thought of the year, made underground, in the dark, where no one asked it to.</div></div>
+    <div style="display:flex;gap:24px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><div style="flex:0 0 120px;font-family:var(--serif);font-style:italic;font-size:21px;">Second kō</div><div class="body" style="font-size:18px;margin:0;">Mountain streams freeze solid. The pause — the held note. The week to do less, not more.</div></div>
+    <div style="display:flex;gap:24px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);border-bottom:1px solid rgba(42,42,40,0.18);"><div style="flex:0 0 120px;font-family:var(--serif);font-style:italic;font-size:21px;">Third kō</div><div class="body" style="font-size:18px;margin:0;">Hens begin to lay. The turn. <em>Risshun</em>, the beginning of spring, is now five days away — by the old reckoning, not the thermometer's.</div></div>
   </div>
-  <div class="pull" style="margin-top:34px;max-width:560px;">"A calendar of five-day weeks is a calendar that expects you to notice."</div>
-  <div class="folio" style="border-color:rgba(42,42,40,0.18);"><span class="wm">Calm &amp; Oak</span><span>06</span></div>
+  <div class="imgph" style="height:158px;margin-top:18px;border-color:rgba(42,42,40,0.2);"><span>[ image ] &nbsp;butterbur buds breaking frozen ground, or frost on a still stream; macro, cold soft light, no people</span></div>
+  <div class="folio" style="border-color:rgba(42,42,40,0.18);"><span class="wm">Calm &amp; Oak</span><span>07</span></div>
 </section>
 
 <!-- BREAKER A -->
 <section class="page" style="padding:0;position:relative;">
   <div class="imgph" style="height:100%;border:0;"><span>[ full-page image ] &nbsp;a wide winter interior at dusk — one warm lamp deep in a dim oat-and-walnut room, blue snow-light at the window, long shadows; a darker lower band for text; no people</span></div>
-  <div style="position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(to top,rgba(36,33,30,0.58),rgba(36,33,30,0));"></div>
-  <div style="position:absolute;left:74px;right:74px;bottom:74px;">
-    <div class="eyebrow" style="color:#E9CDBF;">Winter — Daikan</div>
-    <div class="disp" style="font-size:42px;color:#F7F4EE;line-height:1.15;margin-top:6px;">"Mountain streams freeze solid.<br/>The week to do less, not more."</div>
-  </div>
+  <div class="brk-scrim"></div>
+  <div class="brk-cap"><div class="eyebrow" style="color:#E9CDBF;">Winter — Daikan</div><div class="disp" style="font-size:42px;color:#F7F4EE;line-height:1.15;margin-top:6px;">"Mountain streams freeze solid.<br/>The week to do less, not more."</div></div>
 </section>
 
-<!-- 7 · THE ROOM (opener) -->
+<!-- 8 · THE ROOM (opener) -->
 <section class="page" style="padding:0;">
   <div class="imgph" style="height:680px;border:0;border-bottom:1px solid var(--line);"><span>[ image ] &nbsp;the hero room — a winter living room held in low warm light: oat linen sofa, walnut side table, one terracotta vessel, a single paper lamp glowing; late-afternoon window light, no people</span></div>
   <div style="padding:40px 74px 0;"><span class="eyebrow">The room</span>
     <h2 class="disp" style="font-size:58px;margin-top:6px;">A room that holds the dark</h2>
     <p class="lede" style="max-width:600px;margin-top:18px;color:var(--graphite);">Not a room that fights the winter evening — one built to agree with it. Three pools of low light, two weights of wool, a single ember, and nothing on the surfaces that isn't earning its place.</p></div>
-  <div class="folio" style="margin:auto 74px 40px;"><span class="wm">Calm &amp; Oak</span><span>07</span></div>
+  <div class="folio" style="margin:auto 74px 40px;"><span class="wm">Calm &amp; Oak</span><span>08</span></div>
 </section>
 
-<!-- 8 · THE ROOM (approach) -->
+<!-- 9 · THE ROOM (approach) -->
 <section class="page">
   <div class="rh"><span>The room</span><span>A room that holds the dark</span></div>
-  <div class="body cols" style="margin-top:46px;">
-    <p>Most living rooms are lit for cleaning, not for living: one bright fixture in the ceiling, flattening everything it touches. A winter room wants the opposite — light brought down to the height of a seated person and broken into three soft pools at different heights. A paper pendant or a floor lamp for the high note, a table lamp at the elbow, a low warm sconce for the corner that would otherwise go black. Put them on 2700-kelvin bulbs, the warmest you can buy, and the evening stops being something to switch on against.</p>
+  <div class="body cols" style="margin-top:44px;font-size:17px;">
+    <p>Most living rooms are lit for cleaning, not for living: one bright fixture in the ceiling, flattening everything it touches. A winter room wants the opposite — light brought down to the height of a seated person and broken into three soft pools at different heights. A paper pendant for the high note, a table lamp at the elbow, a low warm sconce for the corner that would otherwise go black. Put them on 2700-kelvin bulbs, the warmest you can buy, and the evening stops being something to switch on against.</p>
     <p>Then the cloth. Winter comfort is not one expensive throw; it is two cheaper weights of the same colour layered — a flat-woven wool over a chunkier knit, a linen cushion in front of a bouclé one. The eye reads the layering as warmth before the hand confirms it.</p>
     <p>Last, the edit. A winter surface should carry one stone object, one living thing — a branch counts — and nothing else. The temptation in the dark months is to fill the room against the emptiness. Resist it. The empty half of the table is doing the same work as the lamp.</p>
   </div>
-  <div style="display:flex;gap:30px;margin-top:30px;">
-    <div class="imgph" style="flex:1;height:240px;"><span>[ image ] &nbsp;detail — two weights of oat wool layered on a sofa arm, a stoneware mug, low light</span></div>
-    <div class="imgph" style="flex:1;height:240px;"><span>[ image ] &nbsp;detail — a single paper pendant glowing warm against a warm-greige wall</span></div>
+  <div style="display:flex;gap:30px;margin-top:28px;">
+    <div class="imgph" style="flex:1;height:236px;"><span>[ image ] &nbsp;detail — two weights of oat wool layered on a sofa arm, a stoneware mug, low light</span></div>
+    <div class="imgph" style="flex:1;height:236px;"><span>[ image ] &nbsp;detail — a single paper pendant glowing warm against a warm-greige wall</span></div>
   </div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>08</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>09</span></div>
 </section>
 
-<!-- 9 · GET THE LOOK -->
+<!-- 10 · GET THE LOOK -->
 <section class="page">
   <div class="rh"><span>The room</span><span>Get the look</span></div>
-  <div style="margin-top:44px;"><span class="eyebrow">Get the look</span>
-    <h2 class="h2" style="font-size:38px;">The room, in seven pieces</h2></div>
-  <p class="cap" style="margin-top:14px;max-width:560px;">Numbered to the hero photograph. Each is a piece we'd live with — chosen for the aesthetic first, the price second.</p>
-  <div style="margin-top:18px;">
+  <div style="margin-top:40px;"><span class="eyebrow">Get the look</span>
+    <h2 class="h2" style="font-size:36px;">The room, in seven pieces</h2></div>
+  <p class="cap" style="margin-top:12px;max-width:560px;">Numbered to the hero photograph. Each is a piece we'd live with — chosen for the aesthetic first, the price second.</p>
+  <div style="margin-top:14px;">
     <div class="prod"><span class="num">1</span><span class="n">Rice-paper pendant, pair</span><span class="d">The high, soft pool of light. Akari-style, warm, the cheapest gesture that changes a room.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0CRTNWCV9?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
     <div class="prod"><span class="num">2</span><span class="n">Ceramic table lamp, pair</span><span class="d">Warm 2700K at the elbow. Stone-coloured, matte, the object and the light in one.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B0C4SZBN64?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
     <div class="prod"><span class="num">3</span><span class="n">Plug-in linen sconces, pair</span><span class="d">The low corner light, no wiring. Frees the surfaces and lifts the dark out of the corner.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0DNZ6Q7CD?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
@@ -207,10 +220,10 @@
     <div class="prod"><span class="num">6</span><span class="n">Fluted oak pedestal side table</span><span class="d">The gravity. One piece of honest wood at the arm of the sofa.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B0DRHQ1FKP?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
     <div class="prod" style="border-bottom:0;"><span class="num">7</span><span class="n">Briful ribbed ceramic vase</span><span class="d">The single ember — terracotta-brown, textured, with one bare branch and nothing else.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0FT361HDX?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
   </div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>09</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>10</span></div>
 </section>
 
-<!-- 10 · THE ROOM detail study -->
+<!-- 11 · THE ROOM detail study -->
 <section class="page" style="padding:0;">
   <div style="display:flex;height:100%;">
     <div class="imgph" style="flex:1;border:0;border-right:1px solid var(--line);"><span>[ image ] &nbsp;macro — the ribbed glaze of the stone vase, raking side light, the terracotta reading as one warm note</span></div>
@@ -221,203 +234,297 @@
       <div class="pull" style="font-size:25px;margin-top:24px;">"The flaw is the proof a hand was here."</div>
     </div>
   </div>
-  <div class="folio" style="position:absolute;left:52px;right:52px;bottom:36px;"><span class="wm">Calm &amp; Oak</span><span>10</span></div>
+  <div class="folio" style="position:absolute;left:52px;right:52px;bottom:36px;"><span class="wm">Calm &amp; Oak</span><span>11</span></div>
 </section>
 
-<!-- 11 · THE EDIT opener -->
+<!-- 12 · SECOND ROOM — the winter bed -->
 <section class="page">
-  <div class="rh"><span>The edit</span><span>Issue One — Winter</span></div>
-  <div style="margin-top:52px;"><span class="eyebrow">The edit</span>
-    <h2 class="disp" style="font-size:60px;margin-top:6px;">Twelve quiet finds</h2></div>
-  <p class="lede" style="max-width:600px;margin-top:20px;">For warmth without clutter. Grouped the way a winter room is built — the light, then the cloth, then the clay, then the table. Every piece below is one we would own; the link earns us a small commission, the choice earns your trust.</p>
-  <hr class="rule-t" />
-  <div class="lede" style="color:var(--graphite);max-width:520px;">Buy slowly. A Japandi room is not meant to be finished in a weekend; it is meant to be right.</div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>11</span></div>
-</section>
-
-<!-- 12 · THE EDIT — light + cloth -->
-<section class="page">
-  <div class="rh"><span>The edit</span><span>The light · the cloth</span></div>
-  <div style="margin-top:42px;"><span class="eyebrow muted">i — the light</span></div>
-  <div style="margin-top:8px;">
-    <div class="prod"><span class="n">Booniture bamboo pendant</span><span class="d">A woven pumpkin shade — dappled, warm, the dining light that does the work.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0FXVM8YJ1?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
-    <div class="prod"><span class="n">LAMSU rattan tripod floor lamp</span><span class="d">A sculptural reading light for the corner the ceiling forgot.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B0D7BWWVC7?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
-    <div class="prod" style="border-bottom:0;"><span class="n">Hyacinth basket table lamp</span><span class="d">Woven base, linen shade — coastal calm, warm glow.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B07T81461V?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+  <div class="rh"><span>The room</span><span>A second look · the bed</span></div>
+  <div style="margin-top:42px;"><span class="eyebrow muted">A second look</span>
+    <h2 class="h2" style="font-size:36px;">The bed, as the warmest room</h2></div>
+  <div style="display:flex;gap:30px;margin-top:20px;">
+    <div class="imgph" style="flex:0 0 300px;height:300px;"><span>[ image ] &nbsp;a winter bed dressed in layered oat linen and a cable-knit throw, low lamp beside it, one stem on the nightstand; soft morning light, no people</span></div>
+    <div class="body" style="font-size:17px;margin:0;">
+      <p>In <em>fuyugomori</em>, the bed stops being just where the day ends and becomes the warm centre the household draws toward. Dress it the way you'd build the living room: in layers of one warm tone, not a single heavy duvet. Stonewashed linen for the base, a flat wool blanket folded across the foot, a chunkier knit thrown on top — the same two-weights rule that warms a sofa.</p>
+      <p>Keep the nightstand to one lamp, one book, one stem. The bedroom is the easiest room to over-fill and the one that punishes it most: clutter at eye level as you fall asleep is the opposite of the den you're trying to keep. One warm light, low; everything else, away.</p>
+    </div>
   </div>
-  <div style="margin-top:30px;"><span class="eyebrow muted">ii — the cloth</span></div>
-  <div style="margin-top:8px;">
-    <div class="prod"><span class="n">Stonewashed linen duvet cover</span><span class="d">Oat, pre-washed, the rumple already in it. The bed as the warmest room.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B01IMZLNBE?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
-    <div class="prod"><span class="n">Bouclé lumbar cushion</span><span class="d">14×36, ivory — the long low texture across a sofa back.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0DT6V6F33?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
-    <div class="prod" style="border-bottom:0;"><span class="n">Wool-jute runner, neutral</span><span class="d">The floor, warmed. Underfoot texture that grounds a pale room.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0C58R2VBH?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+  <div style="margin-top:18px;">
+    <div class="prod"><span class="n">Stonewashed linen pillowcases</span><span class="d">Oat, pre-softened — the layer your face meets. The cheapest luxury in the house.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0FLPQMKKC?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+    <div class="prod" style="border-bottom:0;"><span class="n">Tan-taupe knit throw</span><span class="d">The top weight across the foot of the bed — warmth you add, not a duvet you swap.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B09BBJ7PVP?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
   </div>
   <div class="folio"><span class="wm">Calm &amp; Oak</span><span>12</span></div>
 </section>
 
-<!-- 13 · THE EDIT — clay + table -->
+<!-- 13 · THE EDIT opener -->
+<section class="page" style="padding:0;">
+  <div class="imgph" style="height:560px;border:0;border-bottom:1px solid var(--line);"><span>[ image ] &nbsp;an opening still life for the edit — the winter finds grouped: a paper lamp unlit, a folded throw, three bud vases, a stoneware mug, the acacia tray; one ember; Kinfolk-quiet side light, no people</span></div>
+  <div style="padding:38px 74px 0;"><span class="eyebrow">The edit</span>
+    <h2 class="disp" style="font-size:56px;margin-top:6px;">Twelve quiet finds</h2>
+    <p class="lede" style="max-width:600px;margin-top:14px;color:var(--graphite);">For warmth without clutter — grouped the way a winter room is built: the light, then the cloth, then the clay, then the table. Every piece is one we'd own; the link earns a small commission, the choice earns your trust.</p></div>
+  <div class="folio" style="margin:auto 74px 38px;"><span class="wm">Calm &amp; Oak</span><span>13</span></div>
+</section>
+
+<!-- 14 · THE EDIT — light + cloth -->
+<section class="page">
+  <div class="rh"><span>The edit</span><span>The light · the cloth</span></div>
+  <div style="margin-top:40px;"><span class="eyebrow muted">i — the light</span></div>
+  <div style="margin-top:6px;">
+    <div class="prod"><span class="n">Booniture bamboo pendant</span><span class="d">A woven pumpkin shade — dappled, warm, the dining light that does the work.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0FXVM8YJ1?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+    <div class="prod"><span class="n">LAMSU rattan tripod floor lamp</span><span class="d">A sculptural reading light for the corner the ceiling forgot.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B0D7BWWVC7?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+    <div class="prod" style="border-bottom:0;"><span class="n">Hyacinth basket table lamp</span><span class="d">Woven base, linen shade — coastal calm, warm glow.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B07T81461V?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+  </div>
+  <div style="margin-top:22px;"><span class="eyebrow muted">ii — the cloth</span></div>
+  <div style="margin-top:6px;">
+    <div class="prod"><span class="n">Stonewashed linen duvet cover</span><span class="d">Oat, pre-washed, the rumple already in it. The bed as the warmest room.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B01IMZLNBE?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+    <div class="prod"><span class="n">Bouclé lumbar cushion</span><span class="d">14×36, ivory — the long low texture across a sofa back.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0DT6V6F33?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+    <div class="prod" style="border-bottom:0;"><span class="n">Wool-jute runner, neutral</span><span class="d">The floor, warmed. Underfoot texture that grounds a pale room.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0C58R2VBH?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+  </div>
+  <div class="imgph" style="height:150px;margin-top:18px;"><span>[ image ] &nbsp;the light-and-cloth group — a lit rattan lamp beside layered oat linen and bouclé; warm low light, no people</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>14</span></div>
+</section>
+
+<!-- 15 · THE EDIT — clay + table -->
 <section class="page">
   <div class="rh"><span>The edit</span><span>The clay · the table</span></div>
-  <div style="margin-top:42px;"><span class="eyebrow muted">iii — the clay</span></div>
-  <div style="margin-top:8px;">
+  <div style="margin-top:40px;"><span class="eyebrow muted">iii — the clay</span></div>
+  <div style="margin-top:6px;">
     <div class="prod"><span class="n">Cream ribbed bud vases, set</span><span class="d">For a single stem each. The odd-number rule — group three, never two.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0DYNB5K2V?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
     <div class="prod"><span class="n">Hand-thrown stoneware mugs, 4</span><span class="d">Reactive glaze, no two alike. The everyday object worth the upgrade.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0CFF6XKN5?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
     <div class="prod" style="border-bottom:0;"><span class="n">Crackle-glaze salt cellar</span><span class="d">Cream, small, hand-finished — the detail that makes a counter feel considered.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0C4GLSHRW?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
   </div>
-  <div style="margin-top:30px;"><span class="eyebrow muted">iv — the table</span></div>
-  <div style="margin-top:8px;">
+  <div style="margin-top:22px;"><span class="eyebrow muted">iv — the table</span></div>
+  <div style="margin-top:6px;">
     <div class="prod"><span class="n">Acacia serving tray, handles</span><span class="d">Corrals the ritual — teapot, two cups, one stem — and lifts it off the wood.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B086372L8W?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
     <div class="prod"><span class="n">Beechwood utensils in a crock</span><span class="d">The kitchen's warm grey, standing up. Wood where plastic was.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0DBSKRVNL?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
     <div class="prod" style="border-bottom:0;"><span class="n">Seagrass baskets, set of three</span><span class="d">Where the winter clutter goes to disappear. Texture and storage at once.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0D31739VD?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
   </div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>13</span></div>
+  <div class="imgph" style="height:150px;margin-top:18px;"><span>[ image ] &nbsp;the clay-and-table group — stoneware mugs, a bud vase, the acacia tray, a seagrass basket; warm side light, no people</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>15</span></div>
 </section>
 
-<!-- 14 · EDIT full-bleed image -->
+<!-- 16 · AN OBJECT — the paper lamp -->
+<section class="page">
+  <div class="rh"><span>The edit</span><span>An object</span></div>
+  <div style="margin-top:42px;"><span class="eyebrow">An object</span>
+    <h2 class="h2" style="font-size:36px;">The paper lamp</h2></div>
+  <div style="display:flex;gap:30px;margin-top:20px;">
+    <div class="body" style="font-size:17px;margin:0;">
+      <p>Winter's object is the one that changes a room for the least money: a rice-paper lamp. The form descends from Isamu Noguchi's <em>Akari</em> light sculptures of the 1950s — washi paper over a bamboo ribcage — but the instinct is older, the soft glow of a shoji screen. Lit, it does not shine so much as become warm; the paper turns the bulb into something closer to the light of a fire than a fixture.</p>
+      <p>It is the perfect first purchase because it teaches the whole winter lesson in one object: that the cure for a cold room is not more light but softer light, lower down. Buy one, set it on the floor or a low table, put a warm bulb in it, and turn the overhead off for good.</p>
+    </div>
+    <div class="imgph" style="flex:0 0 270px;height:330px;"><span>[ image ] &nbsp;a lit rice-paper lamp glowing warm in a dim corner, the ribs faintly visible through the washi; no people</span></div>
+  </div>
+  <div style="margin-top:16px;">
+    <div class="prod" style="border-bottom:0;"><span class="n">Rice-paper pendant / lamp</span><span class="d">Akari-style washi over a bamboo frame — the softest, cheapest light in the house.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B0CRTNWCV9?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
+  </div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>16</span></div>
+</section>
+
+<!-- 17 · EDIT full-bleed image -->
 <section class="page" style="padding:0;">
   <div class="imgph" style="height:100%;border:0;"><span>[ image ] &nbsp;a still life of the edit — three bud vases with single bare stems, a stoneware mug, a folded oat throw, the acacia tray; one terracotta vessel; Kinfolk-quiet, side light, no people</span></div>
-  <div class="folio" style="position:absolute;left:74px;right:74px;bottom:40px;color:var(--cream);border-color:rgba(247,244,238,0.3);"><span class="wm" style="color:var(--cream);">Calm &amp; Oak</span><span>14</span></div>
+  <div class="folio" style="position:absolute;left:74px;right:74px;bottom:40px;color:var(--cream);border-color:rgba(247,244,238,0.3);"><span class="wm" style="color:var(--cream);">Calm &amp; Oak</span><span>17</span></div>
 </section>
 
-<!-- 15 · EDIT closing note -->
+<!-- 18 · EDIT closing note -->
 <section class="page">
   <div class="rh"><span>The edit</span><span>A note on buying</span></div>
-  <div style="margin-top:50px;max-width:600px;"><span class="eyebrow">A note on buying</span>
+  <div style="margin-top:44px;max-width:600px;"><span class="eyebrow">A note on buying</span>
     <h2 class="h2" style="font-size:36px;">One a month, not twelve at once</h2>
-    <p class="body" style="margin-top:20px;">The fastest way to get Japandi wrong is to buy the whole mood board in a weekend. A room assembled at once looks assembled. A room that arrives one considered object a month — the lamp in November, the throw in December, the vase when you find the right one — looks lived in, because it was.</p>
-    <p class="body">So take this edit as a year, not a basket. The light first, because it changes everything for the least money. The cloth next, because winter is asking. The clay and the wood when the right piece appears, and not before.</p>
+    <p class="body" style="margin-top:18px;font-size:17.5px;">The fastest way to get Japandi wrong is to buy the whole mood board in a weekend. A room assembled at once looks assembled. A room that arrives one considered object a month — the lamp in November, the throw in December, the vase when you find the right one — looks lived in, because it was.</p>
+    <p class="body" style="font-size:17.5px;">So take this edit as a year, not a basket. The light first, because it changes everything for the least money. The cloth next, because winter is asking. The clay and the wood when the right piece appears, and not before.</p>
   </div>
-  <div class="pull" style="margin-top:30px;max-width:560px;">"A room you can finish in a weekend is a room you'll redo in a year."</div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>15</span></div>
+  <div class="imgph" style="height:188px;margin-top:18px;"><span>[ image ] &nbsp;a single new object just arrived — one lamp unboxed on a bare floor by a window, nothing else; soft light, no people</span></div>
+  <div class="pull" style="margin-top:18px;max-width:560px;font-size:26px;">"A room you can finish in a weekend is a room you'll redo in a year."</div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>18</span></div>
 </section>
 
 <!-- BREAKER B -->
 <section class="page" style="padding:0;position:relative;">
   <div class="imgph" style="height:100%;border:0;"><span>[ full-page image ] &nbsp;macro texture — two weights of oat wool and a linen weave filling the frame, low raking side light picking out every fibre; a darker lower band for text; no people</span></div>
-  <div style="position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(to top,rgba(36,33,30,0.58),rgba(36,33,30,0));"></div>
-  <div style="position:absolute;left:74px;right:74px;bottom:74px;">
-    <div class="eyebrow" style="color:#E9CDBF;">The lesson</div>
-    <div class="disp" style="font-size:44px;color:#F7F4EE;line-height:1.12;margin-top:6px;">Stillness is designed,<br/>not found.</div>
-  </div>
+  <div class="brk-scrim"></div>
+  <div class="brk-cap"><div class="eyebrow" style="color:#E9CDBF;">The lesson</div><div class="disp" style="font-size:44px;color:#F7F4EE;line-height:1.12;margin-top:6px;">Stillness is designed,<br/>not found.</div></div>
 </section>
 
-<!-- 16 · THE LESSON -->
+<!-- 19 · THE LESSON -->
 <section class="page" style="background:var(--cream);">
   <div class="rh" style="border-color:rgba(42,42,40,0.18);"><span>The lesson</span><span>Issue One — Winter</span></div>
-  <div style="margin-top:48px;"><span class="eyebrow">The styling lesson</span>
-    <h2 class="disp" style="font-size:54px;margin-top:6px;">Stillness is designed,<br/>not found</h2></div>
-  <p class="lede" style="max-width:600px;margin-top:20px;">Of the seven principles behind Japanese Zen aesthetics, the one winter rooms need is <em>seijaku</em> — 静寂 — usually translated as "tranquillity," but closer to an active, energised calm. Not the silence of an empty room. The composure of a room where every element has been decided.</p>
-  <div class="body" style="max-width:600px;margin-top:18px;">
-    <p>You build it with three moves. <strong>Subtract to one focal object per sightline</strong> — the eye should land somewhere on purpose, not be left to wander a busy surface. <strong>Keep the negative space</strong> — <em>ma</em>, the interval — as a designed element, not a gap waiting to be filled; the empty half of the shelf is the reason the full half reads as calm. <strong>And hold the single accent</strong> — one ember, once — so the room has a pulse without a clamour.</p>
+  <div style="margin-top:42px;"><span class="eyebrow">The styling lesson</span>
+    <h2 class="disp" style="font-size:50px;margin-top:6px;">Stillness is designed,<br/>not found</h2></div>
+  <p class="lede" style="max-width:600px;margin-top:18px;font-size:19px;">Of the seven principles behind Japanese Zen aesthetics, the one winter rooms need is <em>seijaku</em> — 静寂 — usually translated as "tranquillity," but closer to an active, energised calm. Not the silence of an empty room. The composure of a room where every element has been decided.</p>
+  <div class="body" style="max-width:600px;margin-top:14px;font-size:17px;">
+    <p>You build it with three moves. <strong>Subtract to one focal object per sightline</strong> — the eye should land somewhere on purpose, not wander a busy surface. <strong>Keep the negative space</strong> — <em>ma</em>, the interval — as a designed element, not a gap waiting to be filled; the empty half of the shelf is the reason the full half reads as calm. <strong>And hold the single accent</strong> — one ember, once — so the room has a pulse without a clamour.</p>
   </div>
-  <div class="pull" style="margin-top:26px;max-width:560px;">"An empty surface is not unfinished. It is the most finished thing in the room."</div>
-  <div class="folio" style="border-color:rgba(42,42,40,0.18);"><span class="wm">Calm &amp; Oak</span><span>16</span></div>
+  <div class="imgph" style="height:150px;margin-top:14px;border-color:rgba(42,42,40,0.2);"><span>[ image ] &nbsp;a near-empty shelf — two objects grouped, two-thirds left as air; the calm of the designed gap; soft light, no people</span></div>
+  <div class="folio" style="border-color:rgba(42,42,40,0.18);"><span class="wm">Calm &amp; Oak</span><span>19</span></div>
 </section>
 
-<!-- 17 · LESSON applied -->
+<!-- 20 · LESSON applied -->
 <section class="page">
   <div class="rh"><span>The lesson</span><span>Seijaku, applied</span></div>
-  <div style="margin-top:46px;"><span class="eyebrow muted">In practice</span>
+  <div style="margin-top:44px;"><span class="eyebrow muted">In practice</span>
     <h2 class="h2" style="font-size:34px;">Three surfaces, corrected</h2></div>
-  <div style="margin-top:24px;display:flex;flex-direction:column;gap:0;">
-    <div style="display:flex;gap:26px;padding:20px 0;border-top:1px solid var(--line);"><div style="flex:0 0 150px;font-family:var(--serif);font-style:italic;font-size:21px;color:var(--terracotta);">The mantel</div><div class="body" style="font-size:18px;margin:0;">Was: five framed photos in a row. Now: one wide print, off-centre, and a stretch of bare wall beside it. The asymmetry — <em>fukinsei</em> — is doing the work the symmetry couldn't.</div></div>
-    <div style="display:flex;gap:26px;padding:20px 0;border-top:1px solid var(--line);"><div style="flex:0 0 150px;font-family:var(--serif);font-style:italic;font-size:21px;color:var(--terracotta);">The coffee table</div><div class="body" style="font-size:18px;margin:0;">Was: a tray, two books, a candle, a coaster set, a small plant. Now: the tray, one book, the branch. The other things weren't wrong. There were just too many right things.</div></div>
-    <div style="display:flex;gap:26px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);"><div style="flex:0 0 150px;font-family:var(--serif);font-style:italic;font-size:21px;color:var(--terracotta);">The shelf</div><div class="body" style="font-size:18px;margin:0;">Was: filled, end to end. Now: two-thirds full, grouped in odd numbers, the last third left as air. The shelf finally looks chosen rather than stocked.</div></div>
+  <div style="margin-top:22px;">
+    <div style="display:flex;gap:26px;padding:18px 0;border-top:1px solid var(--line);"><div style="flex:0 0 150px;font-family:var(--serif);font-style:italic;font-size:21px;color:var(--terracotta);">The mantel</div><div class="body" style="font-size:17px;margin:0;">Was: five framed photos in a row. Now: one wide print, off-centre, and a stretch of bare wall beside it. The asymmetry — <em>fukinsei</em> — does the work the symmetry couldn't.</div></div>
+    <div style="display:flex;gap:26px;padding:18px 0;border-top:1px solid var(--line);"><div style="flex:0 0 150px;font-family:var(--serif);font-style:italic;font-size:21px;color:var(--terracotta);">The coffee table</div><div class="body" style="font-size:17px;margin:0;">Was: a tray, two books, a candle, a coaster set, a small plant. Now: the tray, one book, the branch. The other things weren't wrong. There were just too many right things.</div></div>
+    <div style="display:flex;gap:26px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);"><div style="flex:0 0 150px;font-family:var(--serif);font-style:italic;font-size:21px;color:var(--terracotta);">The shelf</div><div class="body" style="font-size:17px;margin:0;">Was: filled, end to end. Now: two-thirds full, grouped in odd numbers, the last third left as air. The shelf finally looks chosen rather than stocked.</div></div>
   </div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>17</span></div>
+  <div class="imgph" style="height:190px;margin-top:20px;"><span>[ image ] &nbsp;a corrected mantel — one wide print hung off-centre, a single stem, bare wall beside it; soft light, no people</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>20</span></div>
+</section>
+
+<!-- 21 · LESSON quote spread -->
+<section class="page" style="padding:0;position:relative;">
+  <div class="imgph" style="height:100%;border:0;"><span>[ image ] &nbsp;a quiet winter corner at dusk — one lamp, a deep shadow, a single object catching the last light; the beauty of the designed dark; no people</span></div>
+  <div style="position:absolute;left:74px;right:74px;top:50%;transform:translateY(-50%);text-align:center;">
+    <div class="disp" style="font-size:40px;color:#fff;text-shadow:0 1px 20px rgba(42,42,40,0.55);">"An empty surface is not<br/>unfinished. It is the most<br/>finished thing in the room."</div>
+  </div>
+  <div class="folio" style="position:absolute;left:74px;right:74px;bottom:40px;color:var(--cream);border-color:rgba(247,244,238,0.3);"><span class="wm" style="color:var(--cream);">Calm &amp; Oak</span><span>21</span></div>
 </section>
 
 <!-- BREAKER (ritual) -->
 <section class="page" style="padding:0;position:relative;">
   <div class="imgph" style="height:100%;border:0;"><span>[ full-page image ] &nbsp;a winter dusk plate — the last grey light at a window, a single warm lamp just lit, long shadows across an oat-and-walnut room; a darker lower band for text; no people</span></div>
-  <div style="position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(to top,rgba(36,33,30,0.55),rgba(36,33,30,0));"></div>
-  <div style="position:absolute;left:74px;right:74px;bottom:74px;">
-    <div class="eyebrow" style="color:#E9CDBF;">The ritual</div>
-    <div class="disp" style="font-size:44px;color:#F7F4EE;line-height:1.12;margin-top:6px;">When the light fails at four,<br/>meet it.</div>
-  </div>
+  <div class="brk-scrim"></div>
+  <div class="brk-cap"><div class="eyebrow" style="color:#E9CDBF;">The ritual</div><div class="disp" style="font-size:44px;color:#F7F4EE;line-height:1.12;margin-top:6px;">When the light fails at four,<br/>meet it.</div></div>
 </section>
 
-<!-- 18 · THE RITUAL -->
+<!-- 22 · THE RITUAL -->
 <section class="page" style="padding:0;">
   <div class="imgph" style="height:560px;border:0;border-bottom:1px solid var(--line);"><span>[ image ] &nbsp;the ritual — a cast-iron tetsubin and two stoneware cups on an acacia tray, steam, low four o'clock light through linen; no people</span></div>
   <div style="padding:38px 74px 0;"><span class="eyebrow">The ritual</span>
     <h2 class="disp" style="font-size:54px;margin-top:6px;">The four o'clock fire</h2>
     <p class="lede" style="max-width:600px;margin-top:16px;color:var(--graphite);">In deep winter the light fails at four. Rather than fight it with brightness, the slow-living move is to meet it — to make the failing of the light a small daily ceremony rather than a defeat.</p></div>
-  <div class="folio" style="margin:auto 74px 38px;"><span class="wm">Calm &amp; Oak</span><span>18</span></div>
+  <div class="folio" style="margin:auto 74px 38px;"><span class="wm">Calm &amp; Oak</span><span>22</span></div>
 </section>
 
-<!-- 19 · RITUAL how-to -->
+<!-- 23 · RITUAL how-to -->
 <section class="page">
   <div class="rh"><span>The ritual</span><span>The four o'clock fire</span></div>
-  <div class="body cols" style="margin-top:46px;">
+  <div class="body cols" style="margin-top:44px;font-size:17px;">
     <p>The Japanese word is <em>chadō</em> — the way of tea — and at its formal height it is a discipline of years. At home, in winter, you can keep only its instinct: that making a hot drink slowly, with attention, is a way of marking the turn of the day. The point is not the tea. The point is the five minutes you give it.</p>
     <p>Boil the water just off the rolling boil. Warm the pot first — a cast-iron <em>tetsubin</em> holds the heat through a long sit. Pour for two even if you are one; the second cup is for the room. Carry it on a tray to the lowest, warmest light you own, and turn off the overhead on the way. Do not bring your phone. Watch the window go from grey to blue to black.</p>
     <p>This is <em>datsuzoku</em>, the sixth Zen principle — a small, deliberate break from routine. Five minutes that belong to no task. By the time the cup is empty the light has gone, and you have, for once, watched it go rather than resented it.</p>
   </div>
-  <div style="margin-top:26px;">
+  <div style="margin-top:22px;">
     <div class="prod"><span class="n">Cast-iron tetsubin teapot</span><span class="d">Holds the heat through a long sit. The object the whole ritual turns on.</span><span class="t">$$</span><a href="https://www.amazon.com/dp/B07SW5G99B?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
     <div class="prod" style="border-bottom:0;"><span class="n">Stoneware tea cups, set of four</span><span class="d">With saucers — pour for two even when you're one.</span><span class="t">$</span><a href="https://www.amazon.com/dp/B08ZSYG6D7?tag=calmandoak-20" rel="sponsored nofollow noopener">Shop&nbsp;→</a></div>
   </div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>19</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>23</span></div>
 </section>
 
-<!-- 20 · THREE BUDGETS -->
+<!-- 24 · RITUAL — the second cup -->
+<section class="page" style="background:var(--cream);">
+  <div class="rh" style="border-color:rgba(42,42,40,0.18);"><span>The ritual</span><span>The second cup</span></div>
+  <div style="margin-top:42px;"><span class="eyebrow muted">The second cup</span>
+    <h2 class="h2" style="font-size:34px;">What to drink in the dark</h2></div>
+  <div style="display:flex;gap:40px;margin-top:22px;align-items:center;">
+    <div class="imgph" style="flex:0 0 280px;height:300px;border-color:rgba(42,42,40,0.2);"><span>[ image ] &nbsp;a cup of roasted hojicha or genmaicha poured from a tetsubin, warm amber liquor, steam, low winter light; no people</span></div>
+    <div class="body" style="font-size:17px;margin:0;">
+      <p>Winter wants a darker cup than the bright green teas of spring. Reach for the roasted ones: <em>hōjicha</em>, bancha fired over charcoal until it turns amber and toasty, almost no caffeine — the right thing for four o'clock, when you want warmth without keeping yourself up. Or <em>genmaicha</em>, green tea cut with roasted brown rice, nutty and forgiving and impossible to brew bitter.</p>
+      <p>Both are cheap, both are gentle, and both reward the slow pour. Keep a tin of one by the tetsubin through the cold months. The ritual is the same; the season just changes what's in the pot.</p>
+    </div>
+  </div>
+  <div class="pull" style="margin-top:24px;max-width:560px;font-size:26px;">"A roasted cup for the dark months. Warmth without keeping yourself awake."</div>
+  <div class="folio" style="border-color:rgba(42,42,40,0.18);"><span class="wm">Calm &amp; Oak</span><span>24</span></div>
+</section>
+
+<!-- 25 · THREE BUDGETS -->
 <section class="page">
   <div class="rh"><span>Sourcing</span><span>One room, three budgets</span></div>
-  <div style="margin-top:44px;"><span class="eyebrow">One room, three budgets</span>
+  <div style="margin-top:42px;"><span class="eyebrow">One room, three budgets</span>
     <h2 class="h2" style="font-size:36px;">A calm winter living room</h2></div>
-  <p class="cap" style="margin-top:14px;max-width:560px;">The same room — three pools of light, two weights of wool, one ember — assembled at three budgets. Start anywhere on the ladder; the principles don't change with the price.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px;">
+  <p class="cap" style="margin-top:12px;max-width:560px;">The same room — three pools of light, two weights of wool, one ember — assembled at three budgets. Start anywhere on the ladder; the principles don't change with the price.</p>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:24px;">
     <div><div class="eyebrow" style="color:var(--terracotta);">The starter · $</div><div class="body" style="font-size:16.5px;margin-top:10px;">Rice-paper pendant, a cable-knit throw, three bud vases, the seagrass baskets. Under a hundred, and the room already turns warm.</div></div>
     <div><div class="eyebrow" style="color:var(--terracotta);">The considered · $$</div><div class="body" style="font-size:16.5px;margin-top:10px;">Add the ceramic lamp pair, the linen duvet, the fluted oak side table, the tetsubin. The room gains its gravity and its glow.</div></div>
     <div><div class="eyebrow" style="color:var(--terracotta);">The heirloom · $$$</div><div class="body" style="font-size:16.5px;margin-top:10px;">A solid-oak piece you'll keep for decades, hand-thrown stoneware throughout, a single commissioned print. Bought once, kept for good.</div></div>
   </div>
-  <div class="imgph" style="height:210px;margin-top:30px;"><span>[ image ] &nbsp;the same corner styled simply vs. fully — a quiet before-and-after of restraint, not clutter</span></div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>20</span></div>
+  <div class="imgph" style="height:218px;margin-top:26px;"><span>[ image ] &nbsp;the same corner styled simply vs. fully — a quiet before-and-after of restraint, not clutter; soft light, no people</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>25</span></div>
 </section>
 
-<!-- 21 · CHECKLIST -->
+<!-- 26 · SECOND SOURCING — print & frame -->
+<section class="page">
+  <div class="rh"><span>Sourcing</span><span>The wall, in winter</span></div>
+  <div style="margin-top:44px;max-width:600px;"><span class="eyebrow muted">The wall, in winter</span>
+    <h2 class="h2" style="font-size:34px;">One print, warmly framed</h2>
+    <p class="body" style="margin-top:18px;font-size:17.5px;">A winter wall wants one quiet thing, not a gallery. The tonal and sumi-e prints in the Calm &amp; Oak Collection — a single ink branch, a warm-earth colour field — give a pale room its one point of focus without raising the volume. Hung off-centre, with bare wall beside it, a single print does more than five.</p>
+    <p class="body" style="font-size:17.5px;">For the print, the Collection. For the frame, the Frames guide — which standard size fits, oak or black, and whether a mat lifts it to gallery-grade. Warm oak framing suits the winter palette; keep the mount generous and the glass non-reflective.</p>
+  </div>
+  <div class="imgph" style="height:210px;margin-top:18px;"><span>[ image ] &nbsp;a single sumi-e branch print in a warm oak frame on a greige wall, one stem on the console below; soft light, no people</span></div>
+  <div style="margin-top:16px;font-family:var(--serif);font-size:19px;line-height:1.9;">
+    <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>The Print Collection</span><span class="tc">calmandoak.com/shop/prints</span></div>
+    <div style="display:flex;justify-content:space-between;"><span>Which frame fits</span><span class="tc">calmandoak.com/shop/frames</span></div>
+  </div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>26</span></div>
+</section>
+
+<!-- 27 · CHECKLIST -->
 <section class="page" style="background:var(--cream);">
   <div class="rh" style="border-color:rgba(42,42,40,0.18);"><span>Print &amp; keep</span><span>Issue One — Winter</span></div>
-  <div style="margin-top:46px;"><span class="eyebrow">Winter, a short list</span>
+  <div style="margin-top:44px;"><span class="eyebrow">Winter, a short list</span>
     <h2 class="h2" style="font-size:38px;">Eight small moves</h2></div>
-  <p class="cap" style="margin-top:12px;max-width:520px;">No purchase required for most of it. Tear this page out, or don't.</p>
-  <div style="margin-top:22px;font-family:var(--serif);font-size:20px;line-height:1;color:var(--charcoal);">
-    <div style="display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Swap one cool-white bulb for warm 2700K. Tonight.</span></div>
-    <div style="display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Turn off the overhead; light from three low points instead.</span></div>
-    <div style="display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Layer two weights of the same-colour wool, don't buy one new throw.</span></div>
-    <div style="display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Clear one surface back to a single object plus one branch.</span></div>
-    <div style="display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Move the brightest thing in the room out of the main sightline.</span></div>
-    <div style="display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Group small objects in odd numbers — three, not two or four.</span></div>
-    <div style="display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Keep one ember of terracotta; remove the second one.</span></div>
-    <div style="display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(42,42,40,0.18);border-bottom:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Make tea slowly, once, at four o'clock. Phone in another room.</span></div>
+  <p class="cap" style="margin-top:10px;max-width:520px;">No purchase required for most of it. Tear this page out, or don't.</p>
+  <div style="margin-top:18px;font-family:var(--serif);font-size:19px;line-height:1;color:var(--charcoal);">
+    <div style="display:flex;gap:16px;padding:13px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Swap one cool-white bulb for warm 2700K. Tonight.</span></div>
+    <div style="display:flex;gap:16px;padding:13px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Turn off the overhead; light from three low points instead.</span></div>
+    <div style="display:flex;gap:16px;padding:13px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Layer two weights of the same-colour wool, don't buy one new throw.</span></div>
+    <div style="display:flex;gap:16px;padding:13px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Clear one surface back to a single object plus one branch.</span></div>
+    <div style="display:flex;gap:16px;padding:13px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Move the brightest thing in the room out of the main sightline.</span></div>
+    <div style="display:flex;gap:16px;padding:13px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Group small objects in odd numbers — three, not two or four.</span></div>
+    <div style="display:flex;gap:16px;padding:13px 0;border-top:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Keep one ember of terracotta; remove the second one.</span></div>
+    <div style="display:flex;gap:16px;padding:13px 0;border-top:1px solid rgba(42,42,40,0.18);border-bottom:1px solid rgba(42,42,40,0.18);"><span class="tc">○</span><span>Make tea slowly, once, at four o'clock. Phone in another room.</span></div>
   </div>
-  <div class="folio" style="border-color:rgba(42,42,40,0.18);"><span class="wm">Calm &amp; Oak</span><span>21</span></div>
+  <div class="folio" style="border-color:rgba(42,42,40,0.18);"><span class="wm">Calm &amp; Oak</span><span>27</span></div>
 </section>
 
-<!-- 22 · WHERE TO SHOP + disclosure -->
+<!-- 28 · TO READ, TO HEAR -->
+<section class="page">
+  <div class="rh"><span>This season</span><span>To read, to hear</span></div>
+  <div style="margin-top:42px;"><span class="eyebrow muted">This season</span>
+    <h2 class="h2" style="font-size:36px;">To read, to hear, to make</h2></div>
+  <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:30px;">
+    <div class="body" style="font-size:16.5px;margin:0;">
+      <p><strong>To read.</strong> <em>In Praise of Shadows</em> by Jun'ichirō Tanizaki — the 1933 essay on why Japanese aesthetics prize dim light, patina and shadow over brightness and gloss. There is no better forty pages for understanding why a winter room should be lit low. The founding text behind everything in this issue.</p>
+      <p><strong>Also.</strong> <em>The Little Book of Hygge</em> by Meik Wiking — the Danish case for warmth, candlelight and the gathered indoors, read past its cosy reputation.</p>
+    </div>
+    <div class="body" style="font-size:16.5px;margin:0;">
+      <p><strong>To make.</strong> A single foraged branch in the ember vase — bare, asymmetric, one line. The whole of <em>ikebana</em>'s instinct in thirty seconds.</p>
+      <p><strong>To notice.</strong> The exact hour the light fails, written down once a week. By <em>risshun</em> it will be visibly later — proof, in your own hand, that the year has turned while you weren't watching.</p>
+    </div>
+  </div>
+  <div class="imgph" style="height:200px;margin-top:18px;"><span>[ image ] &nbsp;a book face-down beside a low lamp and a cup, deep shadow at the edges; the pleasure of dim light; no people</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>28</span></div>
+</section>
+
+<!-- 29 · WHERE TO SHOP + disclosure -->
 <section class="page">
   <div class="rh"><span>Where to shop</span><span>Issue One — Winter</span></div>
-  <div style="margin-top:46px;"><span class="eyebrow muted">Where to shop</span>
+  <div style="margin-top:44px;"><span class="eyebrow muted">Where to shop</span>
     <h2 class="h2" style="font-size:34px;">Every piece in this issue</h2></div>
-  <p class="body" style="margin-top:16px;max-width:600px;">Each find in this issue links to where we'd buy it. We choose for the aesthetic first and the price second, and we only point you to pieces we would live with ourselves. Where a link leads to a shop, Calm &amp; Oak may earn a small commission if you buy — at no extra cost to you. It never changes what we choose, only whether the lights here stay on.</p>
-  <p class="body" style="max-width:600px;">For the full, always-current edit by room — lighting, storage, ceramics, textiles, furniture and more — visit the shop. For the prints on these walls, the Print Collection. For the frames to hold them, the new Frames guide.</p>
-  <div style="margin-top:24px;font-family:var(--serif);font-size:20px;line-height:2.1;">
+  <p class="body" style="margin-top:16px;max-width:600px;font-size:17.5px;">Each find in this issue links to where we'd buy it. We choose for the aesthetic first and the price second, and we only point you to pieces we would live with ourselves. Where a link leads to a shop, Calm &amp; Oak may earn a small commission if you buy — at no extra cost to you. It never changes what we choose, only whether the lights here stay on.</p>
+  <p class="body" style="max-width:600px;font-size:17.5px;">For the full, always-current edit by room — lighting, storage, ceramics, textiles, furniture and more — visit the shop. For the prints on these walls, the Print Collection. For the frames to hold them, the Frames guide.</p>
+  <div style="margin-top:22px;font-family:var(--serif);font-size:19px;line-height:2.0;">
     <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>The shop, by room</span><span class="tc">calmandoak.com/shop</span></div>
     <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);"><span>The Print Collection</span><span class="tc">calmandoak.com/shop/prints</span></div>
     <div style="display:flex;justify-content:space-between;"><span>Frames for your prints</span><span class="tc">calmandoak.com/shop/frames</span></div>
   </div>
-  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>22</span></div>
+  <div class="imgph" style="height:180px;margin-top:20px;"><span>[ image ] &nbsp;a closing winter still life — the tetsubin, a folded throw, one branch in the ember vase, low light; no people</span></div>
+  <div class="folio"><span class="wm">Calm &amp; Oak</span><span>29</span></div>
 </section>
 
-<!-- 23 · NEXT ISSUE -->
+<!-- 30 · NEXT ISSUE -->
 <section class="page" style="padding:0;display:flex;flex-direction:column;">
-  <div class="imgph" style="height:560px;border:0;border-bottom:1px solid var(--line);"><span>[ image ] &nbsp;a spring teaser — a single branch in bud against a pale wall, soft white light; the first green after the cold</span></div>
+  <div class="imgph" style="height:560px;border:0;border-bottom:1px solid var(--line);"><span>[ image ] &nbsp;a spring teaser — a single branch in bud against a pale wall, soft white light; the first green after the cold; no people</span></div>
   <div style="padding:42px 74px 0;text-align:center;">
     <span class="eyebrow">Next issue</span>
     <h2 class="disp" style="font-size:56px;margin-top:8px;">Spring — First Light</h2>
     <p class="lede" style="max-width:560px;margin:16px auto 0;color:var(--graphite);">The pale palette, the seasonal clear-out, a single branch and the art of <em>ikebana</em>, and the principle of <em>kanso</em>: simplicity that means something. Free to the list, the day it lands.</p>
     <div style="margin-top:22px;font-family:var(--serif);font-size:19px;">The complete <em>Volume One</em> — all four seasons — at <span class="tc">calmandoak.com</span></div>
   </div>
-  <div class="folio" style="margin:auto 74px 38px;"><span class="wm">Calm &amp; Oak</span><span>23</span></div>
+  <div class="folio" style="margin:auto 74px 38px;"><span class="wm">Calm &amp; Oak</span><span>30</span></div>
 </section>
 
 </body>
