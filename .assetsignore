@@ -10,8 +10,10 @@
 cloud/
 node_modules/
 _tools/
+tools/
 _*.js
 *.bat
+*.mjs
 01-brand-assets/
 02-board-covers/
 03-pin-templates/

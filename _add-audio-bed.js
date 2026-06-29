@@ -23,21 +23,22 @@ const dur = parseFloat(durArg) || 16.3;
 const fadeOut = Math.max(0, dur - 2.5).toFixed(2);
 
 const af = [
-  '[1][2][3]amix=inputs=3:normalize=0',
-  'volume=0.22',
-  'vibrato=f=3.5:d=0.18',
-  'aecho=0.8:0.9:900:0.35',
-  'lowpass=f=1600',
-  'tremolo=f=0.15:d=0.6',
-  'afade=t=in:st=0:d=2.5',
-  `afade=t=out:st=${fadeOut}:d=2.5`,
+  '[1][2][3][4]amix=inputs=4:normalize=0',
+  'volume=0.5',
+  'vibrato=f=3:d=0.14',
+  'aecho=0.8:0.9:880:0.3',
+  'lowpass=f=2600',
+  'tremolo=f=0.18:d=0.5',
+  'afade=t=in:st=0:d=2.0',
+  `afade=t=out:st=${fadeOut}:d=2.0`,
 ].join(',') + '[a]';
 
 const args = [
   '-y', '-i', input,
   '-f', 'lavfi', '-i', 'sine=frequency=110:sample_rate=44100',
-  '-f', 'lavfi', '-i', 'sine=frequency=164.81:sample_rate=44100',
   '-f', 'lavfi', '-i', 'sine=frequency=220:sample_rate=44100',
+  '-f', 'lavfi', '-i', 'sine=frequency=277.18:sample_rate=44100',
+  '-f', 'lavfi', '-i', 'sine=frequency=329.63:sample_rate=44100',
   '-filter_complex', af,
   '-map', '0:v', '-map', '[a]',
   '-c:v', 'copy', '-c:a', 'aac', '-b:a', '128k', '-shortest', '-movflags', '+faststart',
