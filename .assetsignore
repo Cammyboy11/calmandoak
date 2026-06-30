@@ -35,3 +35,6 @@ desktop.ini
 .cache/
 .wrangler/
 package-lock.json
+package.json
+# Oversized downloadable bundles — exceed CF 25MiB asset cap, cannot be served
+*.zip
