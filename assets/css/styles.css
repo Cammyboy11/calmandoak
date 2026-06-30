@@ -1076,3 +1076,13 @@ img.hero-art { width: 100%; height: auto; object-fit: cover; display: block; }
   font-size: 1.05rem; color: var(--graphite);
 }
 @media (max-width: 720px) { .print-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- Hero reassurance + signup proof microcopy ---------- */
+.hero-note {
+  font-size: 0.8rem; color: var(--graphite);
+  letter-spacing: 0.02em; margin: 0.9rem 0 0;
+}
+.signup-proof {
+  font-size: 0.82rem; color: var(--graphite);
+  margin: 0.9rem auto 0; max-width: 50ch; line-height: 1.55;
+}
