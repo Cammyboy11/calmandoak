@@ -29,7 +29,9 @@
 <!-- Fonts (preconnect + display=swap) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" /></noscript>
 
 <link rel="stylesheet" href="/assets/css/styles.css?v=17" />
 
@@ -39,7 +41,7 @@
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
 
 <!-- Preload hero image (above-the-fold) for LCP improvement -->
-<link rel="preload" as="image" href="/assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1" />
+<link rel="preload" as="image" href="/assets/img/journal-covers/gen/home-hero-living-room-760.jpg?v=1" imagesrcset="/assets/img/journal-covers/gen/home-hero-living-room-760.jpg?v=1 760w, /assets/img/journal-covers/gen/home-hero-living-room-1100.jpg?v=1 1100w, /assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1 1408w" imagesizes="(max-width:880px) 92vw, 560px" />
 
 <!-- Cloudflare Web Analytics (privacy-respecting, no cookies) -->
 <!-- TODO: paste your Cloudflare beacon token after deploying. Free at dash.cloudflare.com → Analytics & Logs → Web Analytics → Add a site -->
@@ -114,7 +116,7 @@
         </div>
         <p class="hero-note">Free 20-page PDF · one calm email a fortnight · unsubscribe anytime.</p>
       </div>
-      <img class="hero-art reveal" src="/assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1" alt="A sunlit Japandi living room with a low oatmeal-linen sofa, a round solid-oak coffee table, sheer linen curtains and a leafy potted plant on a jute rug" width="1408" height="768" fetchpriority="high" />
+      <img class="hero-art reveal" src="/assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1" srcset="/assets/img/journal-covers/gen/home-hero-living-room-760.jpg?v=1 760w, /assets/img/journal-covers/gen/home-hero-living-room-1100.jpg?v=1 1100w, /assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1 1408w" sizes="(max-width:880px) 92vw, 560px" alt="A sunlit Japandi living room with a low oatmeal-linen sofa, a round solid-oak coffee table, sheer linen curtains and a leafy potted plant on a jute rug" width="1408" height="768" fetchpriority="high" />
     </div>
   </section>
 
@@ -481,4 +483,17 @@
         <li><a href="/shop/outdoor-wellness/">Outdoor &amp; Wellness</a></li>
         <li><a href="/shop/prints/">Print Collection</a></li>
       </ul></div>
-      <div><h4>Read</h4><ul><li><a href="/j
+      <div><h4>Read</h4><ul><li><a href="/journal/">Journal</a></li>
+        <li><a href="/journal/japandi-101/">What is Japandi</a></li><li><a href="/journal/budget-japandi-bedroom/">Bedroom under $500</a></li></ul></div>
+      <div><h4>Calm &amp; Oak</h4><ul><li><a href="/begin-here/">Begin Here</a></li><li><a href="/calculator/">Calm Home Calculator</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://www.pinterest.com/calmandoak/">Pinterest</a></li><li><a href="/disclosures/">Disclosures</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Calm &amp; Oak. All rights reserved.</span>
+      <span>As an Amazon Associate, Calm & Oak earns from qualifying purchases.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js?v=3" defer></script>
+</body>
+</html>
