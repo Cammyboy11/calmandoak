@@ -1,5 +1,10 @@
 // Calm & Oak — minimal interactions
 (function () {
+  // ----- Retire "Frames" from the top nav site-wide -----
+  document.querySelectorAll('.nav-links a[href="/shop/frames/"], .nav-links a[href="/shop/frames"]').forEach((a) => {
+    (a.closest('li') || a).remove();
+  });
+
   // ----- Mobile nav toggle -----
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
