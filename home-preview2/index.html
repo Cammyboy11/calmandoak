@@ -108,7 +108,7 @@
 /* failsafe: never let a fade-in element stay invisible (e.g. fast scroll) */
 @keyframes coRevealSafe{to{opacity:1;transform:none;}}
 .reveal{animation:coRevealSafe .5s ease 1.3s forwards;}
-@media(prefers-reduced-motion:reduce){.vhero__bg{display:none;}.vhero{background:#2A2A28 url('/assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1') center/cover;}.reveal{animation:none;opacity:1;transform:none;}}
+@media(prefers-reduced-motion:reduce){.vhero__bg{display:none;}.vhero{background:#2A2A28 url('/assets/video/japandi-hero-poster.jpg?v=1') center/cover;}.reveal{animation:none;opacity:1;transform:none;}}
 </style>
 </head>
 <body>
@@ -142,7 +142,7 @@
 
   <!-- ============ HERO (redesigned video) ============ -->
   <section class="vhero">
-    <video class="vhero__bg" autoplay muted loop playsinline preload="metadata" poster="/assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1" aria-hidden="true">
+    <video class="vhero__bg" autoplay muted loop playsinline preload="auto" poster="/assets/video/japandi-hero-poster.jpg?v=1" aria-hidden="true">
       <source src="/assets/video/japandi-hero.mp4" type="video/mp4" />
     </video>
     <div class="vhero__scrim"></div>
