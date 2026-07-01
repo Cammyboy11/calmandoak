@@ -73,6 +73,43 @@
 <!-- Google Analytics 4 (Calm & Oak) — replace G-WNCDBXM0FQ with your Measurement ID -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNCDBXM0FQ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WNCDBXM0FQ');</script>
+
+<style>
+/* ===== Redesigned video hero + quick nav (preview) ===== */
+.vhero{position:relative;min-height:84vh;display:flex;align-items:center;overflow:hidden;background:#2A2A28;}
+.vhero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.vhero__scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,19,16,.66),rgba(22,19,16,.34) 52%,rgba(22,19,16,.14));}
+.vhero__inner{position:relative;color:#F7F4EE;padding-block:clamp(3rem,9vh,6.5rem);max-width:640px;}
+.vhero__eyebrow{font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:#E9CDBF;}
+.vhero__title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2.7rem,6.2vw,4.8rem);line-height:1.01;margin:.5rem 0 0;color:#fff;}
+.vhero__title .ital{font-style:italic;color:#E9CDBF;}
+.vhero__lede{font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,2.3vw,1.55rem);max-width:38ch;margin:1.1rem 0 1.7rem;color:rgba(247,244,238,.92);line-height:1.5;}
+.vhero__note{font-family:'Inter',sans-serif;font-size:.78rem;color:rgba(247,244,238,.7);margin-top:1.1rem;}
+.vhero__socials{display:flex;gap:.7rem;margin-top:1.7rem;}
+.vhero__socials a{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(247,244,238,.45);border-radius:50%;color:#F7F4EE;transition:.22s ease;}
+.vhero__socials a:hover{background:#F7F4EE;color:#2A2A28;transform:translateY(-2px);}
+.vhero__socials svg{width:19px;height:19px;fill:currentColor;}
+/* quick-nav tiles */
+.vtiles{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(42,42,40,.08);border-bottom:1px solid rgba(42,42,40,.08);}
+.vtile{position:relative;background:var(--offwhite,#F7F4EE);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:.4rem;padding:1.9rem 1rem 1.7rem;text-decoration:none;color:var(--charcoal,#2A2A28);transition:transform .3s cubic-bezier(.2,.7,.2,1),background .3s ease,box-shadow .3s ease;text-align:center;overflow:hidden;}
+.vtile::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--terracotta,#C97B5C);transform:scaleX(0);transition:transform .3s ease;}
+.vtile:hover{background:var(--cream,#EFE8DA);transform:translateY(-5px);box-shadow:0 16px 32px -20px rgba(42,42,40,.5);}
+.vtile:hover::after{transform:scaleX(1);}
+.vtile__ic{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:rgba(201,123,92,.10);transition:background .3s ease,transform .3s ease;}
+.vtile:hover .vtile__ic{background:var(--terracotta,#C97B5C);transform:scale(1.07);}
+.vtile svg{width:24px;height:24px;stroke:var(--terracotta,#C97B5C);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s ease;}
+.vtile:hover svg{stroke:#fff;}
+.vtile__label{display:inline-flex;align-items:center;gap:.35rem;font-family:'Inter',sans-serif;font-size:.9rem;letter-spacing:.03em;font-weight:600;margin-top:.3rem;}
+.vtile__label .arw{opacity:0;transform:translateX(-5px);transition:.3s ease;color:var(--terracotta,#C97B5C);}
+.vtile:hover .vtile__label .arw{opacity:1;transform:translateX(0);}
+.vtile__desc{font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.01em;color:var(--graphite,#5C5A55);line-height:1.3;}
+@media(max-width:820px){.vtiles{grid-template-columns:repeat(3,1fr);} .vhero{min-height:74vh;}}
+@media(max-width:480px){.vtiles{grid-template-columns:repeat(2,1fr);} .vtile{padding:1.4rem .6rem 1.3rem;} .vtile__desc{display:none;}}
+/* failsafe: never let a fade-in element stay invisible (e.g. fast scroll) */
+@keyframes coRevealSafe{to{opacity:1;transform:none;}}
+.reveal{animation:coRevealSafe .5s ease 1.3s forwards;}
+@media(prefers-reduced-motion:reduce){.vhero__bg{display:none;}.vhero{background:#2A2A28 url('/assets/video/japandi-hero-poster.jpg?v=1') center/cover;}.reveal{animation:none;opacity:1;transform:none;}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -91,9 +128,9 @@
         <li><a href="/begin-here/">Begin Here</a></li>
         <li><a href="/shop/">Shop</a></li>
         <li><a href="/shop/looks/">Looks</a></li>
+        <li><a href="/the-edit/">Magazine</a></li>
         <li><a href="/journal/">Journal</a></li>
         <li><a href="/shop/prints/">Prints</a></li>
-        <li><a href="/shop/frames/">Frames</a></li>
         <li><a href="/about/">About</a></li>
       </ul>
       <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation">Menu</button>
@@ -103,50 +140,35 @@
 
 <main id="main">
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="reveal">
-        <span class="eyebrow">Japandi · Slow Home</span>
-        <h1>Curated finds for <span class="ital">warm, intentional homes.</span></h1>
-        <p class="lede">Scandinavian warmth, Japanese restraint — and an Amazon-shoppable list behind every piece. Start with our free guide: the five principles, the palette, and a starter shopping list.</p>
-        <div class="mt-2" style="display:flex; gap:1.1rem; flex-wrap:wrap; align-items:center;">
-          <a href="#starter-guide" class="btn btn--primary">Get the free Japandi Starter Guide <span class="arrow">→</span></a>
-          <a href="/shop/" class="hero-secondary">or browse the full shop →</a>
-        </div>
-        <p class="hero-note">Free 20-page PDF · one calm email a fortnight · unsubscribe anytime.</p>
+  <!-- ============ HERO (redesigned video) ============ -->
+  <section class="vhero">
+    <video class="vhero__bg" autoplay muted loop playsinline preload="auto" poster="/assets/video/japandi-hero-poster.jpg?v=1" aria-hidden="true">
+      <source src="/assets/video/japandi-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="vhero__scrim"></div>
+    <div class="wrap vhero__inner reveal">
+      <span class="vhero__eyebrow">Japandi &middot; Slow Home</span>
+      <h1 class="vhero__title">Warm, intentional <span class="ital">homes.</span></h1>
+      <p class="vhero__lede">Scandinavian warmth, Japanese restraint &mdash; every piece shoppable, nothing that dates. Start with our free guide.</p>
+      <div><a href="#starter-guide" class="btn btn--primary">Get the free Japandi Starter Guide <span class="arrow">&rarr;</span></a></div>
+      <p class="vhero__note">Free 20-page PDF &middot; one calm email a fortnight &middot; unsubscribe anytime.</p>
+      <div class="vhero__socials" aria-label="Follow Calm &amp; Oak">
+        <a href="https://www.pinterest.com/calmandoak/" target="_blank" rel="noopener" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2C6.9 2 4 5.4 4 8.9c0 1.9 1 3.6 2.6 4.2.3.1.5 0 .5-.2 0-.1.1-.5.2-.9.1-.2 0-.3-.1-.5-.5-.6-.8-1.3-.8-2.3 0-2.9 2.2-5.5 5.7-5.5 3.1 0 4.8 1.9 4.8 4.4 0 3.3-1.5 6.1-3.6 6.1-1.2 0-2-1-1.8-2.2.3-1.4 1-3 1-4 0-.9-.5-1.7-1.5-1.7-1.2 0-2.1 1.2-2.1 2.9 0 1.1.4 1.8.4 1.8s-1.3 5.4-1.5 6.3c-.3 1.2-.1 2.7 0 3 .1.2.3.2.4.1.1-.1 1.6-2 2.1-3.8.1-.5.7-2.9.7-2.9.4.7 1.4 1.3 2.5 1.3 3.4 0 5.7-3.1 5.7-7.2C21 5.1 17.9 2 12 2z"/></svg></a>
+        <a href="https://www.instagram.com/calmandoak/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1M12 0C8.7 0 8.3 0 7 .1 5.7.1 4.9.3 4.1.6c-.8.3-1.4.7-2.1 1.4C1.3 2.7.9 3.3.6 4.1.3 4.9.1 5.7.1 7 0 8.3 0 8.7 0 12s0 3.7.1 5c0 1.3.2 2.1.5 2.9.3.8.7 1.4 1.4 2.1.7.7 1.3 1.1 2.1 1.4.8.3 1.6.5 2.9.5 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3 0 2.1-.2 2.9-.5.8-.3 1.4-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.8.5-1.6.5-2.9.1-1.3.1-1.7.1-5s0-3.7-.1-5c0-1.3-.2-2.1-.5-2.9-.3-.8-.7-1.4-1.4-2.1-.7-.7-1.3-1.1-2.1-1.4-.8-.3-1.6-.5-2.9-.5C15.7 0 15.3 0 12 0z"/><path d="M12 5.8A6.2 6.2 0 1 0 18.2 12 6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/><circle cx="18.4" cy="5.6" r="1.44"/></svg></a>
+        <a href="https://www.tiktok.com/@calmandoak" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 2c.3 2.1 1.5 3.7 3.5 4v2.8c-1.2 0-2.4-.3-3.5-.9v6c0 3.4-2.7 6.1-6.1 6.1S4.3 17.3 4.3 13.9 7 7.8 10.4 7.8c.3 0 .6 0 .9.1v2.9c-.3-.1-.6-.1-.9-.1a3.2 3.2 0 1 0 3.2 3.2V2h2.9z"/></svg></a>
       </div>
-      <img class="hero-art reveal" src="/assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1" srcset="/assets/img/journal-covers/gen/home-hero-living-room-760.jpg?v=1 760w, /assets/img/journal-covers/gen/home-hero-living-room-1100.jpg?v=1 1100w, /assets/img/journal-covers/gen/home-hero-living-room.jpg?v=1 1408w" sizes="(max-width:880px) 92vw, 560px" alt="A sunlit Japandi living room with a low oatmeal-linen sofa, a round solid-oak coffee table, sheer linen curtains and a leafy potted plant on a jute rug" width="1408" height="768" fetchpriority="high" />
     </div>
   </section>
 
-  <!-- ============ TRUST STRIP ============ -->
-  <section class="section" style="padding-block: 3rem;">
-    <div class="wrap">
-      <div class="trust">
-        <div class="item reveal">
-          <div class="icon">i</div>
-          <h4>Scandinavian warmth, Japanese calm</h4>
-          <p>Two traditions, one quiet home — warmth without the clutter.</p>
-        </div>
-        <div class="item reveal">
-          <div class="icon">ii</div>
-          <h4>Natural materials, built to last</h4>
-          <p>Solid wood, real ceramic, real linen — pieces you'd keep for twenty years.</p>
-        </div>
-        <div class="item reveal">
-          <div class="icon">iii</div>
-          <h4>Independently chosen</h4>
-          <p>No paid placements. Every piece earns its spot.</p>
-        </div>
-        <div class="item reveal">
-          <div class="icon">iv</div>
-          <h4>Beautiful, for less</h4>
-          <p>Considered Japandi without the design-store price tag.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- quick-nav tiles: where do I go? -->
+  <nav class="vtiles" aria-label="Explore Calm & Oak">
+    <a class="vtile" href="/shop/looks/"><span class="vtile__ic"><svg viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></span><span class="vtile__label">Shop the Look <span class="arw">&rarr;</span></span><span class="vtile__desc">Curated rooms to shop</span></a>
+    <a class="vtile" href="/journal/"><span class="vtile__ic"><svg viewBox="0 0 24 24"><path d="M12 6C10.4 5 8 4.6 5 5v13c3-.6 5.4-.2 7 1 1.6-1.2 4-1.6 7-1V5c-3-.6-5.4-.2-7 1z"/><path d="M12 6v13"/></svg></span><span class="vtile__label">Journal <span class="arw">&rarr;</span></span><span class="vtile__desc">Slow-living notes</span></a>
+    <a class="vtile" href="/the-edit/"><span class="vtile__ic"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><span class="vtile__label">Magazine <span class="arw">&rarr;</span></span><span class="vtile__desc">The seasonal Edit</span></a>
+    <a class="vtile" href="/shop/"><span class="vtile__ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/><path d="M3 4h2l2.2 11h10L19 7H6"/></svg></span><span class="vtile__label">Amazon Picks <span class="arw">&rarr;</span></span><span class="vtile__desc">Everyday finds we love</span></a>
+    <a class="vtile" href="/shop/prints/"><span class="vtile__ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M5 18l4-4 3 3 3-3 4 4"/></svg></span><span class="vtile__label">Prints <span class="arw">&rarr;</span></span><span class="vtile__desc">Wall art &amp; posters</span></a>
+  </nav>
+
 
   <!-- ============ GET THE LOOK ============ -->
   <section class="section section--cream">
@@ -231,94 +253,8 @@
     </div>
   </section>
 
-  <!-- ============ JOURNAL PREVIEW ============ -->
+  <!-- ============ PILLARS (shop by category) ============ -->
   <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">From the journal</span>
-        <h2>Notes on slow living</h2>
-        <hr class="divider" />
-      </div>
-
-      <div class="collection-grid">
-        <a href="/journal/japandi-101/" class="card reveal">
-          <div class="card-img has-photo">
-            <img src="/assets/img/products-cropped/day35-pin175-linen-headboard.jpg?v=4" alt="What is Japandi guide" loading="lazy"  width="832" height="474" />
-            <span class="card-img-label">Guide</span>
-          </div>
-          <div class="card-body">
-            <h3>What is Japandi, really?</h3>
-            <p>The five principles that turn a Pinterest mood board into a real, livable home.</p>
-            <span class="card-cta">Read →</span>
-          </div>
-        </a>
-        <a href="/journal/japandi-color-palette/" class="card reveal">
-          <div class="card-img has-photo">
-            <img src="/assets/img/products-cropped/day40-pin196-euro-shams.jpg?v=4" alt="Japandi color palette" loading="lazy"  width="832" height="474" />
-            <span class="card-img-label">Palette</span>
-          </div>
-          <div class="card-body">
-            <h3>5 Japandi color combinations</h3>
-            <p>Five reliable palettes that read calm in every room — oat-on-oak, charcoal-on-cream, and three more.</p>
-            <span class="card-cta">Read →</span>
-          </div>
-        </a>
-        <a href="/journal/art-of-negative-space/" class="card reveal">
-          <div class="card-img has-photo">
-            <img src="/assets/img/products-cropped/day35-pin171-oak-console.jpg?v=4" alt="The art of negative space" loading="lazy"  width="832" height="474" />
-            <span class="card-img-label">Principle</span>
-          </div>
-          <div class="card-body">
-            <h3>The art of negative space</h3>
-            <p>The most important thing in a Japandi room is what isn't in it. The 60% rule, explained.</p>
-            <span class="card-cta">Read →</span>
-          </div>
-        </a>
-      </div>
-      <p style="text-align:center; margin-top:2rem;"><a href="/journal/" class="btn btn--ghost btn--small">All journal posts →</a></p>
-    </div>
-  </section>
-
-  <!-- ============ CALM HOME CALCULATOR ============ -->
-  <section class="section section--cream">
-    <div class="wrap">
-      <div class="collection-feature">
-        <div class="reveal">
-          <span class="eyebrow">Free &amp; interactive</span>
-          <h2>Take the <span class="italic">Calm Home Calculator</span></h2>
-          <hr class="divider divider--left" />
-          <p class="lede">Five questions &mdash; your room, your light, your budget &mdash; and we&apos;ll hand you a personalised plan: the right palette, the right wood pairing, the right rug size, and the exact guide to begin with.</p>
-          <a href="/calculator/" class="btn btn--primary mt-2">Build my plan <span class="arrow">&rarr;</span></a>
-        </div>
-        <div class="visual reveal" aria-hidden="true" style="background-image: url('/assets/img/journal-covers/gen/home-hero-reading-corner.jpg?v=1');"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PRINT COLLECTION TEASER ============ -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">New · made in-house</span>
-        <h2>The <span class="italic">Print Collection</span></h2>
-        <hr class="divider" />
-        <p>Thirty original Japandi prints designed entirely by Calm &amp; Oak — sumi-e ink, botanical line, calligraphy and tonal studies. Instant digital downloads or printed to order.</p>
-      </div>
-      <p class="center" style="margin:0 0 0.4rem;"><span class="eyebrow" style="margin:0;">Best sellers</span></p>
-      <div class="print-grid reveal">
-        <a href="/shop/prints/" class="print-card"><img src="/assets/img/prints/enso.jpg" alt="Ensō — a single sumi-e ink brushstroke circle, a best-selling Japandi print" loading="lazy" width="1000" height="1241" /><span>Ensō</span></a>
-        <a href="/shop/prints/" class="print-card"><img src="/assets/img/prints/koi.jpg" alt="Koi — minimal ink koi fish, a best-selling Japandi print" loading="lazy" width="1000" height="1241" /><span>Koi</span></a>
-        <a href="/shop/prints/" class="print-card"><img src="/assets/img/prints/ginkgo.jpg" alt="Ginkgo — botanical line study, a best-selling Japandi print" loading="lazy" width="1000" height="1241" /><span>Ginkgo</span></a>
-        <a href="/shop/prints/" class="print-card"><img src="/assets/img/prints/cherry-branch.jpg" alt="Cherry Branch — soft botanical ink study, a best-selling Japandi print" loading="lazy" width="1000" height="1241" /><span>Cherry Branch</span></a>
-      </div>
-      <div class="center mt-4">
-        <a href="/shop/prints/" class="btn btn--primary btn--small">See all 30 prints →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PILLARS (mirrors the 10 Pinterest boards + Furniture) ============ -->
-  <section class="section section--cream">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">The pillars</span>
@@ -400,47 +336,147 @@
     </div>
   </section>
 
-  <!-- ============ FEATURED COLLECTION ============ -->
+  <!-- ============ THE MAGAZINE (The Calm & Oak Edit) ============ -->
+  <section class="section" style="background:var(--cream,#EFE8DA);">
+    <div class="wrap" style="text-align:center;">
+      <span class="eyebrow">New · The Calm &amp; Oak Edit</span>
+      <h2>A seasonal journal of quiet homes.</h2>
+      <p class="lede" style="max-width:640px;margin-inline:auto;">Four issues a year, built around the Japanese calendar of seventy-two microseasons — the palette, the room, the ritual, and the considered things that make a season feel like a choice. Volume One is here.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.2rem;margin:2.2rem auto;max-width:760px;">
+        <a href="/the-edit/"><img src="/assets/the-edit/covers/winter-cover.jpg" alt="Issue One — Winter, The Quiet Months" loading="lazy" style="width:100%;border-radius:4px;box-shadow:0 12px 30px rgba(42,42,40,.16);" /></a>
+        <a href="/the-edit/"><img src="/assets/the-edit/covers/spring-cover.jpg" alt="Issue Two — Spring, First Light" loading="lazy" style="width:100%;border-radius:4px;box-shadow:0 12px 30px rgba(42,42,40,.16);" /></a>
+        <a href="/the-edit/"><img src="/assets/the-edit/covers/summer-cover.jpg" alt="Issue Three — Summer, Slow Mornings" loading="lazy" style="width:100%;border-radius:4px;box-shadow:0 12px 30px rgba(42,42,40,.16);" /></a>
+        <a href="/the-edit/"><img src="/assets/the-edit/covers/autumn-cover.jpg" alt="Issue Four — Autumn, Golden Hour" loading="lazy" style="width:100%;border-radius:4px;box-shadow:0 12px 30px rgba(42,42,40,.16);" /></a>
+      </div>
+      <div style="display:flex;gap:1.1rem;flex-wrap:wrap;align-items:center;justify-content:center;">
+        <a href="/the-edit/" class="btn btn--primary">Explore the Magazine <span class="arrow">→</span></a>
+        <a href="https://payhip.com/b/REM9Q" class="hero-secondary">or read Issue One free →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNAL PREVIEW ============ -->
   <section class="section">
     <div class="wrap">
-      <div class="collection-feature">
-        <div class="visual reveal" aria-hidden="true" style="background-image: url('/assets/img/journal-covers/gen/home-office-featured.jpg?v=1');"></div>
-        <div class="reveal">
-          <span class="eyebrow">Featured guide</span>
-          <h2>The Japandi <span class="italic">Home Office</span></h2>
-          <p class="lede">A calm desk setup that doesn't take over the room — a solid-oak desk, a chair that reads as furniture, warm task light, and the small things that keep it tidy. Every piece linked, in order.</p>
-          <a href="/journal/japandi-home-office/" class="btn btn--primary mt-2">See the home office <span class="arrow">→</span></a>
+      <div class="section-head reveal">
+        <span class="eyebrow">From the journal</span>
+        <h2>Notes on slow living</h2>
+        <hr class="divider" />
+      </div>
+
+      <div class="collection-grid">
+        <a href="/journal/japandi-101/" class="card reveal">
+          <div class="card-img has-photo">
+            <img src="/assets/img/products-cropped/day35-pin175-linen-headboard.jpg?v=4" alt="What is Japandi guide" loading="lazy"  width="832" height="474" />
+            <span class="card-img-label">Guide</span>
+          </div>
+          <div class="card-body">
+            <h3>What is Japandi, really?</h3>
+            <p>The five principles that turn a Pinterest mood board into a real, livable home.</p>
+            <span class="card-cta">Read →</span>
+          </div>
+        </a>
+        <a href="/journal/japandi-color-palette/" class="card reveal">
+          <div class="card-img has-photo">
+            <img src="/assets/img/products-cropped/day40-pin196-euro-shams.jpg?v=4" alt="Japandi color palette" loading="lazy"  width="832" height="474" />
+            <span class="card-img-label">Palette</span>
+          </div>
+          <div class="card-body">
+            <h3>5 Japandi color combinations</h3>
+            <p>Five reliable palettes that read calm in every room — oat-on-oak, charcoal-on-cream, and three more.</p>
+            <span class="card-cta">Read →</span>
+          </div>
+        </a>
+        <a href="/journal/art-of-negative-space/" class="card reveal">
+          <div class="card-img has-photo">
+            <img src="/assets/img/products-cropped/day35-pin171-oak-console.jpg?v=4" alt="The art of negative space" loading="lazy"  width="832" height="474" />
+            <span class="card-img-label">Principle</span>
+          </div>
+          <div class="card-body">
+            <h3>The art of negative space</h3>
+            <p>The most important thing in a Japandi room is what isn't in it. The 60% rule, explained.</p>
+            <span class="card-cta">Read →</span>
+          </div>
+        </a>
+      </div>
+      <div class="reveal" style="margin-top:2.6rem; padding-top:2rem; border-top:1px solid rgba(42,42,40,.1); text-align:center;">
+        <span class="eyebrow" style="margin-bottom:.9rem; display:block;">Guides by room</span>
+        <div style="display:flex; flex-wrap:wrap; gap:0.55rem; justify-content:center;">
+          <a href="/journal/japandi-living-room/" class="btn btn--ghost btn--small">Living room</a>
+          <a href="/journal/japandi-bedroom/" class="btn btn--ghost btn--small">Bedroom</a>
+          <a href="/journal/japandi-dining-room/" class="btn btn--ghost btn--small">Dining room</a>
+          <a href="/journal/japandi-entryway/" class="btn btn--ghost btn--small">Entryway</a>
+          <a href="/journal/japandi-home-office/" class="btn btn--ghost btn--small">Home office</a>
+          <a href="/journal/japandi-bathroom/" class="btn btn--ghost btn--small">Bathroom</a>
+          <a href="/journal/japandi-outdoor/" class="btn btn--ghost btn--small">Outdoor</a>
+          <a href="/journal/" class="btn btn--ghost btn--small">All posts →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ ROOM-BY-ROOM GUIDES ============ -->
+  <!-- ============ WHERE TO START (Calculator + Home Office) ============ -->
   <section class="section section--cream">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Room by room</span>
-        <h2>Start with <span class="italic">your room</span></h2>
+        <span class="eyebrow">Where to start</span>
+        <h2>Two easy ways <span class="italic">in</span></h2>
         <hr class="divider" />
-        <p>Complete Japandi guides for every room — what to choose, what to skip, and the pieces that pull it together.</p>
+        <p>Answer five questions for a room plan built to you — or borrow our most-loved setup, ready to shop.</p>
       </div>
-      <div class="center mt-3" style="display:flex; flex-wrap:wrap; gap:0.6rem; justify-content:center;">
-        <a href="/journal/japandi-living-room/" class="btn btn--ghost btn--small">Living room</a>
-        <a href="/journal/japandi-bedroom/" class="btn btn--ghost btn--small">Bedroom</a>
-        <a href="/journal/japandi-dining-room/" class="btn btn--ghost btn--small">Dining room</a>
-        <a href="/journal/japandi-entryway/" class="btn btn--ghost btn--small">Entryway</a>
-        <a href="/journal/japandi-home-office/" class="btn btn--ghost btn--small">Home office</a>
-        <a href="/journal/japandi-bathroom/" class="btn btn--ghost btn--small">Bathroom</a>
-        <a href="/journal/japandi-outdoor/" class="btn btn--ghost btn--small">Outdoor</a>
+      <div class="collection-feature">
+        <div class="reveal">
+          <span class="eyebrow">Free &amp; interactive</span>
+          <h2>The <span class="italic">Calm Home Calculator</span></h2>
+          <hr class="divider divider--left" />
+          <p class="lede">Five questions — your room, your light, your budget — and we'll hand you a personalised plan: the right palette, the right wood pairing, the right rug size, and the exact guide to begin with.</p>
+          <a href="/calculator/" class="btn btn--primary mt-2">Build my plan <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="visual reveal" aria-hidden="true" style="background-image: url('/assets/img/journal-covers/gen/home-hero-reading-corner.jpg?v=1');"></div>
+      </div>
+      <div class="collection-feature" style="margin-top:2.5rem;">
+        <div class="visual reveal" aria-hidden="true" style="background-image: url('/assets/img/journal-covers/gen/home-office-featured.jpg?v=1');"></div>
+        <div class="reveal">
+          <span class="eyebrow">Featured guide</span>
+          <h2>The Japandi <span class="italic">Home Office</span></h2>
+          <p class="lede">A calm desk setup that doesn't take over the room — a solid-oak desk, a chair that reads as furniture, warm task light, and the small things that keep it tidy. Every piece linked, in order.</p>
+          <a href="/journal/japandi-home-office/" class="btn btn--primary mt-2">See the home office <span class="arrow">&rarr;</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ GUIDE REMINDER (second email touchpoint) ============ -->
-  <section class="section section--ink" style="padding-block: clamp(2.5rem, 5vw, 3.5rem); text-align:center;">
+  <!-- ============ PRINT COLLECTION TEASER ============ -->
+  <section class="section">
     <div class="wrap">
-      <p class="lede" style="color:var(--offwhite); max-width:48ch; margin:0 auto 1.3rem;">New to Japandi? Start with the five room rules, the palette, and a starter shopping list — free.</p>
-      <a href="#starter-guide" class="btn btn--primary btn--small" style="background:var(--offwhite); color:var(--charcoal);">Get the free Starter Guide →</a>
+      <div class="section-head reveal">
+        <span class="eyebrow">New · made in-house</span>
+        <h2>The <span class="italic">Print Collection</span></h2>
+        <hr class="divider" />
+        <p>Thirty original Japandi prints designed entirely by Calm &amp; Oak — sumi-e ink, botanical line, calligraphy and tonal studies. Instant digital downloads or printed to order.</p>
+      </div>
+      <p class="center" style="margin:0 0 0.4rem;"><span class="eyebrow" style="margin:0;">Best sellers</span></p>
+      <div class="print-grid reveal">
+        <a href="/shop/prints/" class="print-card"><img src="/assets/img/prints/enso.jpg" alt="Ensō — a single sumi-e ink brushstroke circle, a best-selling Japandi print" loading="lazy" width="1000" height="1241" /><span>Ensō</span></a>
+        <a href="/shop/prints/" class="print-card"><img src="/assets/img/prints/koi.jpg" alt="Koi — minimal ink koi fish, a best-selling Japandi print" loading="lazy" width="1000" height="1241" /><span>Koi</span></a>
+        <a href="/shop/prints/" class="print-card"><img src="/assets/img/prints/ginkgo.jpg" alt="Ginkgo — botanical line study, a best-selling Japandi print" loading="lazy" width="1000" height="1241" /><span>Ginkgo</span></a>
+        <a href="/shop/prints/" class="print-card"><img src="/assets/img/prints/cherry-branch.jpg" alt="Cherry Branch — soft botanical ink study, a best-selling Japandi print" loading="lazy" width="1000" height="1241" /><span>Cherry Branch</span></a>
+      </div>
+      <div class="center mt-4">
+        <a href="/shop/prints/" class="btn btn--primary btn--small">See all 30 prints →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GIFT GUIDE (slim band) ============ -->
+  <section class="section section--cream" style="padding-block: clamp(2rem,4vw,2.8rem);">
+    <div class="wrap" style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:1.1rem;">
+      <div class="reveal" style="max-width:52ch;">
+        <span class="eyebrow">New</span>
+        <h2 style="margin:.2rem 0 .4rem;">The Japandi <span class="italic">Gift Guide</span></h2>
+        <p style="margin:0 auto;">Calm gifts for the quiet home — ceramics, linen, and warm light, grouped by who you're buying for. Useful, beautiful, never clutter.</p>
+      </div>
+      <a href="/shop/gift-guide/" class="btn btn--primary btn--small reveal">See the gift guide &rarr;</a>
     </div>
   </section>
 
@@ -464,65 +500,11 @@
     </div>
   </section>
 
-  <!-- ============ GIFT GUIDE ============ -->
-  <section class="section section--cream">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">New</span>
-        <h2>The Japandi <span class="italic">Gift Guide</span></h2>
-        <hr class="divider" />
-        <p>Calm gifts for the quiet home — ceramics, linen, and warm light, grouped by who you're buying for. Useful, beautiful, never clutter.</p>
-      </div>
-      <div class="center mt-3">
-        <a href="/shop/gift-guide/" class="btn btn--primary btn--small">See the gift guide →</a>
-      </div>
-    </div>
-  </section>
-
-    <!-- ============ ABOUT TEASER ============ -->
+  <!-- ============ ABOUT TEASER ============ -->
   <section class="section">
     <div class="wrap" style="text-align:center; max-width:680px; margin:0 auto;">
       <span class="eyebrow">About</span>
       <h2 class="reveal">A small home journal, slowly built.</h2>
-      <p class="lede reveal" style="margin: 0 auto 2rem;">Calm &amp; Oak began as a Pinterest board — quiet rooms, warm wood, the kind of homes that feel breathed-in rather than decorated. The site is the same idea, with the products tagged so you can actually have them.</p>
-      <a href="/about/" class="btn btn--ghost btn--small">Read the story</a>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand" style="color: var(--offwhite); margin-bottom:1rem;">Calm <span class="amp">&amp;</span> Oak</div>
-        <p>Quiet rooms, beautifully sourced. A Japandi home journal, slowly built.</p>
-      </div>
-      <div><h4>Shop</h4><ul>
-        <li><a href="/shop/lighting/">Lighting</a></li>
-        <li><a href="/shop/storage/">Storage</a></li>
-        <li><a href="/shop/ceramics-tableware/">Ceramics &amp; Tableware</a></li>
-        <li><a href="/shop/textiles/">Textiles</a></li>
-        <li><a href="/shop/furniture/">Furniture</a></li>
-        <li><a href="/shop/bedroom/">Bedroom</a></li>
-        <li><a href="/shop/japandi-kitchen/">Japandi Kitchen</a></li>
-        <li><a href="/shop/office/">Office</a></li>
-        <li><a href="/shop/decor-accents/">Decor Accents</a></li>
-        <li><a href="/shop/outdoor-wellness/">Outdoor &amp; Wellness</a></li>
-        <li><a href="/shop/prints/">Print Collection</a></li>
-      </ul></div>
-      <div><h4>Read</h4><ul><li><a href="/journal/">Journal</a></li>
-        <li><a href="/journal/japandi-101/">What is Japandi</a></li><li><a href="/journal/budget-japandi-bedroom/">Bedroom under $500</a></li></ul></div>
-      <div><h4>Calm &amp; Oak</h4><ul><li><a href="/begin-here/">Begin Here</a></li><li><a href="/calculator/">Calm Home Calculator</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://www.pinterest.com/calmandoak/">Pinterest</a></li><li><a href="/disclosures/">Disclosures</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; <span data-year>2026</span> Calm &amp; Oak. All rights reserved.</span>
-      <span>As an Amazon Associate, Calm & Oak earns from qualifying purchases.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="/assets/js/main.js?v=3" defer></script>
-</body>
-</html>
+      <p class="lede reveal" style="margin:0 auto 1.6rem;">Calm &amp; Oak is a one-person Japandi journal. We source and vet every piece to a simple bar — natural materials, quiet design, honest value — photograph the rooms, and share the guides for free. No paid placements, ever.</p>
+      <a href="/about/" class="btn btn--ghost btn--small reveal">Read our story &rarr;</a>
+      <p class="lede 
