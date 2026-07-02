@@ -1,0 +1,25 @@
+# Normalize line endings — stops OneDrive/Windows CRLF churn that bloated commits.
+* text=auto eol=lf
+
+# Treat binary assets as binary (never touch/normalize them).
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
+
+# Text assets
+*.svg  text
+*.css  text
+*.js   text
+*.html text
+*.md   text
+*.csv  text
+*.json text
+*.xml  text
