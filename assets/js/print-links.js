@@ -106,9 +106,4 @@
         el.setAttribute("aria-disabled", "true");
         el.style.opacity = "0.55";
         el.style.cursor = "default";
-        if (el.hasAttribute("data-digital-label")) el.textContent = "Digital download — coming soon";
-        el.addEventListener("click", function (e) { e.preventDefault(); });
-      }
-    });
-  });
-})();
+        if (el.hasAttribute("data-digital-lab

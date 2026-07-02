@@ -79,17 +79,4 @@ Why it lands: answers a high-volume small-space angle; ties to /shop/looks/the-j
 10. **wabi-sabi decor** → "Wabi-Sabi Decor: 12 Imperfect Pieces for a Calm Home" — broadens wabi-sabi ceramics (47 impr); ties cluster to existing /journal/wabi-sabi-ceramics/. (Tier-1 #6)
 
 
-- 2026-06-22 · GEO · Baseline 0/5 in AI answers; tickets T1–T5 in GEO-LOG.md (comparison guide = highest citation odds). · live
-- 2026-06-22 · FACTORY · Week-1 social: 10 Pinterest pins (6/23–6/24) + IG Reel + TikTok scheduled; "5 things" listicle Reel A/B test (6/24–6/25) with audio bed. · live
-
-## 2026-06-24 — Prints "first dollar" batch SHIPPED (main session, autonomous)
-- **Email capture deployed:** 8 journal guides gained the Starter-Guide capture block + 5 top pages got the "A 20-page" copy fix. Committed (4b59c9f) and pushed to main → Cloudflare live. Turns organic journal traffic into owned MailerLite subscribers.
-- **15 prints pins SCHEDULED** to Pinterest board "Wall Art" (1107111589588494865) via Blotato acct 7556, 3/day from 2026-06-25 to 06-29 at 15/18/21 UTC. Each → /shop/prints/<slug>/ with utm_campaign=prints. (Board names in final pins/batches/2026-26.md were placeholders — corrected to the real "Wall Art" board here.)
-- **NOTE for future runs:** Blotato acct 7556 has NO posting-schedule configured (useNextFreeSlot returned "no slot in 9 months"); used explicit UTC scheduledTime instead. Configure posting slots in Blotato to re-enable next-free-slot.
-- Picture↔product identity clean (print render = the product). No affiliate disclosure needed (owned Payhip products).
-
-## 2026-06-30 — Socials leveled up: IG + TikTok activated with video (main session)
-- Found Instagram (@calmandoak, 53849) and TikTok (@calmandoak, 47113) connected to Blotato but DORMANT — only Pinterest was running. Activated both with calm vertical Reels.
-- Built reusable pipeline: assets/video/make-reels.js (ffmpeg Ken Burns reels from print art) + SOCIAL-VIDEO-PLAYBOOK.md.
-- Pilot: 4 reels (serene-dawn, moon-cycle, single-stem, dusk) generated, uploaded to Blotato, scheduled 1/day/platform to IG Reels + TikTok, Jul 1–4. 8 posts scheduled.
-- Notes for future runs: IG caps hashtags at 5; TikTok needs autoAddMusic + privacy/brand flags; same mp4s can also post as Pinterest video pins (board Wall Art). TODO: fold a weekly reels step into calmoak-content-factory.
+- 2026-06-22 · GEO · Baseline 0/5 in AI answers; ticke

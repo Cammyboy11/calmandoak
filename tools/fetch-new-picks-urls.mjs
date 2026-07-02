@@ -40,6 +40,4 @@ for (const row of rows) {
     console.log("  ok", asin, `(${Math.round(buf.length / 1024)} KB)`);
     ok++;
   } catch (e) { console.error("  X", asin, e.message); fail++; }
-  await sleep(400);
-}
-console.log(`\nDone. ${ok} downloaded, ${fail} failed.\n`);
+  await sleep
