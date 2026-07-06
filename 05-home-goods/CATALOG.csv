@@ -5,30 +5,53 @@ CO-ENS-ART,Ensō,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/en
 CO-INK-ART,Ink Brush,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/inkbrush-print.png,draft (Gelato/Etsy),
 CO-MUD-ART,Neutral Mudcloth,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
 CO-SHB-ART,Indigo Shibori,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/shibori-print.png,draft (Gelato/Etsy),
-CO-HIL-ART,Layered Hills,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/hills-print.png,draft (Gelato/Etsy),
+CO-HIL-ART,Layered Hills,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/hills-print.png,live,https://www.etsy.com/listing/4531654012
 CO-SUN-ART,Sun Arcs,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
-CO-HIL-CNV,Layered Hills,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/hills-print.png,draft (Gelato/Etsy),
+CO-HIL-CNV,Layered Hills,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/hills-print.png,live,https://www.etsy.com/listing/4532238248
 CO-SEI-CNV,Seigaiha,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/seigaiha-print.png,draft (Gelato/Etsy),
 CO-SUN-CNV,Sun Arcs,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
 CO-ENS-CNV,Ensō,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/enso-print.png,draft (Gelato/Etsy),
 CO-INK-CNV,Ink Brush,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/inkbrush-print.png,draft (Gelato/Etsy),
 CO-MUD-CNV,Neutral Mudcloth,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
 CO-SHB-CNV,Indigo Shibori,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/shibori-print.png,draft (Gelato/Etsy),
-CO-HIL-FRM,Layered Hills,Framed print,Gelato,30,84,54,05-home-goods/print-ready/hills-print.png,draft (Gelato/Etsy),
+CO-HIL-FRM,Layered Hills,Framed print,Gelato,30,84,54,05-home-goods/print-ready/hills-print.png,live,https://www.etsy.com/listing/4532246830
 CO-SEI-FRM,Seigaiha,Framed print,Gelato,30,84,54,05-home-goods/print-ready/seigaiha-print.png,draft (Gelato/Etsy),
 CO-SUN-FRM,Sun Arcs,Framed print,Gelato,30,84,54,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
 CO-ENS-FRM,Ensō,Framed print,Gelato,30,84,54,05-home-goods/print-ready/enso-print.png,draft (Gelato/Etsy),
 CO-INK-FRM,Ink Brush,Framed print,Gelato,30,84,54,05-home-goods/print-ready/inkbrush-print.png,draft (Gelato/Etsy),
 CO-MUD-FRM,Neutral Mudcloth,Framed print,Gelato,30,84,54,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
-CO-SEI-MUG,Seigaiha,Mug 11oz,Gelato,8,19,11,05-home-goods/print-ready/seigaiha-print.png,draft (Gelato/Etsy),
-CO-SUN-MUG,Sun Arcs,Mug 11oz,Gelato,8,19,11,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
-CO-ENS-MUG,Ensō,Mug 11oz,Gelato,8,19,11,05-home-goods/print-ready/enso-print.png,draft (Gelato/Etsy),
-CO-MUD-MUG,Neutral Mudcloth,Mug 11oz,Gelato,8,19,11,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
-CO-SEI-TOT,Seigaiha,Tote bag,Gelato,11,28,17,05-home-goods/print-ready/seigaiha-print.png,draft (Gelato/Etsy),
-CO-ENS-TOT,Ensō,Tote bag,Gelato,11,28,17,05-home-goods/print-ready/enso-print.png,draft (Gelato/Etsy),
-CO-INK-TOT,Ink Brush,Tote bag,Gelato,11,28,17,05-home-goods/print-ready/inkbrush-print.png,draft (Gelato/Etsy),
-CO-MUD-TOT,Neutral Mudcloth,Tote bag,Gelato,11,28,17,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
+CO-SEI-MUG,Seigaiha,Mug 11oz,Gelato,8,19,11,05-home-goods/print-ready/seigaiha-print.png,live,https://www.etsy.com/listing/4532093853
+CO-SUN-MUG,Sun Arcs,Mug 11oz,Gelato,8,19,11,05-home-goods/print-ready/sunarcs-print.png,live,https://www.etsy.com/listing/4532098709
+CO-ENS-MUG,Ensō,Mug 11oz,Gelato,8,19,11,05-home-goods/print-ready/enso-print.png,live,https://www.etsy.com/listing/4532110660
+CO-MUD-MUG,Neutral Mudcloth,Mug 11oz,Gelato,8,19,11,05-home-goods/print-ready/mudcloth-print.png,live,https://www.etsy.com/listing/4532110720
+CO-SEI-TOT,Seigaiha,Tote bag,Gelato,11,28,17,05-home-goods/print-ready/seigaiha-print.png,live,https://www.etsy.com/listing/4532115528
+CO-ENS-TOT,Ensō,Tote bag,Gelato,11,28,17,05-home-goods/print-ready/enso-print.png,live,https://www.etsy.com/listing/4532107905
+CO-INK-TOT,Ink Brush,Tote bag,Gelato,11,28,17,05-home-goods/print-ready/inkbrush-print.png,live,https://www.etsy.com/listing/4532120144
+CO-MUD-TOT,Neutral Mudcloth,Tote bag,Gelato,11,28,17,05-home-goods/print-ready/mudcloth-print.png,live,https://www.etsy.com/listing/4532120614
 CO-SEI-NBK,Seigaiha,Notebook,Gelato,8,19,11,05-home-goods/print-ready/seigaiha-print.png,draft (Gelato/Etsy),
 CO-SUN-NBK,Sun Arcs,Notebook,Gelato,8,19,11,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
 CO-ENS-NBK,Ensō,Notebook,Gelato,8,19,11,05-home-goods/print-ready/enso-print.png,draft (Gelato/Etsy),
 CO-MUD-NBK,Neutral Mudcloth,Notebook,Gelato,8,19,11,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
+CO-RSU-ART,Rising Sun,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-rising-sun.png,live,https://www.etsy.com/listing/4531644671
+CO-THZ-ART,Tonal Horizon,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-tonal-horizon.png,live,https://www.etsy.com/listing/4531654536
+CO-MTN-ART,Mountain,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-mountain.png,live,https://www.etsy.com/listing/4531668124
+CO-MPH-ART,Moon Phases,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-moon-phases.png,live,https://www.etsy.com/listing/4531674028
+CO-SNM-ART,Sun and Moon,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-sun-moon.png,live,https://www.etsy.com/listing/4532165682
+CO-ARC-ART,Arch,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-arch.png,live,https://www.etsy.com/listing/4531660859
+CO-BAL-ART,Balance,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-balance.png,live,https://www.etsy.com/listing/4531662908
+CO-VES-ART,Vessel,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-vessel.png,live,https://www.etsy.com/listing/4531661987
+CO-IHZ-ART,Ink Horizon,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-ink-horizon.png,live,https://www.etsy.com/listing/4531643673
+CO-SST-ART,Single Stem,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-single-stem.png,live,https://www.etsy.com/listing/4531676170
+CO-PAM-ART,Pampas,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-pampas.png,live,https://www.etsy.com/listing/4531675906
+CO-HIL-DIG,Layered Hills,Digital download,Etsy,0,16,16,assets/img/print-files/poster-layered-hills.png,live,https://www.etsy.com/listing/4533284058
+CO-RSU-DIG,Rising Sun,Digital download,Etsy,0,16,16,assets/img/print-files/poster-rising-sun.png,live,https://www.etsy.com/listing/4533287232
+CO-THZ-DIG,Tonal Horizon,Digital download,Etsy,0,16,16,assets/img/print-files/poster-tonal-horizon.png,live,https://www.etsy.com/listing/4533274503
+CO-MTN-DIG,Mountain,Digital download,Etsy,0,16,16,assets/img/print-files/poster-mountain.png,live,https://www.etsy.com/listing/4533275069
+CO-MPH-DIG,Moon Phases,Digital download,Etsy,0,16,16,assets/img/print-files/poster-moon-phases.png,live,https://www.etsy.com/listing/4533275691
+CO-SNM-DIG,Sun and Moon,Digital download,Etsy,0,16,16,assets/img/print-files/poster-sun-moon.png,live,https://www.etsy.com/listing/4533276279
+CO-ARC-DIG,Arch,Digital download,Etsy,0,16,16,assets/img/print-files/poster-arch.png,live,https://www.etsy.com/listing/4533290390
+CO-BAL-DIG,Balance,Digital download,Etsy,0,16,16,assets/img/print-files/poster-balance.png,live,https://www.etsy.com/listing/4533290938
+CO-VES-DIG,Vessel,Digital download,Etsy,0,16,16,assets/img/print-files/poster-vessel.png,live,https://www.etsy.com/listing/4533277953
+CO-IHZ-DIG,Ink Horizon,Digital download,Etsy,0,16,16,assets/img/print-files/poster-ink-horizon.png,live,https://www.etsy.com/listing/4533278497
+CO-SST-DIG,Single Stem,Digital download,Etsy,0,16,16,assets/img/print-files/poster-single-stem.png,live,https://www.etsy.com/listing/4533292622
+CO-PAM-DIG,Pampas,Digital download,Etsy,0,16,16,assets/img/print-files/poster-pampas.png,live,https://www.etsy.com/listing/4533279861
