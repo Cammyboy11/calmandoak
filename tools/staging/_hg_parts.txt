@@ -1,0 +1,118 @@
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531654012" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-01-layered-hills.jpg" alt="Layered Hills — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Layered Hills</h3>
+            <p>An abstract calm landscape — the collection's statement piece.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532238248" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532246830" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533284058" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531644671" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-02-rising-sun.jpg" alt="Rising Sun — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Rising Sun</h3>
+            <p>Concentric warm arcs — the boho-Japandi favourite.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532253510" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532249255" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533287232" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531654536" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-03-tonal-horizon.jpg" alt="Tonal Horizon — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Tonal Horizon</h3>
+            <p>A minimalist colour-field landscape.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532253734" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532247979" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533274503" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531668124" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-04-mountain.jpg" alt="Mountain — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Mountain</h3>
+            <p>Layered peaks under a low sun.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532252384" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532262046" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533275069" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531674028" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-05-moon-phases.jpg" alt="Moon Phases — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Moon Phases</h3>
+            <p>Five phases in quiet negative space.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532252802" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532248551" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533275691" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4532165682" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-06-sun-and-moon.jpg" alt="Sun and Moon — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Sun &amp; Moon</h3>
+            <p>A warm sun and a quiet crescent.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532241205" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532247339" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533276279" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531660859" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-07-arch.jpg" alt="Arch — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Arch</h3>
+            <p>A single modern arch — architectural calm.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532241141" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532259814" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533290390" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531662908" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-08-balance.jpg" alt="Balance — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Balance</h3>
+            <p>Stacked stones — the discipline piece.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532252842" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532249119" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533290938" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531661987" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-09-vessel.jpg" alt="Vessel — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Vessel</h3>
+            <p>A stoneware vase and a single stem.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532241071" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532261194" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533277953" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531643673" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-10-ink-horizon.jpg" alt="Ink Horizon — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Ink Horizon</h3>
+            <p>One sumi brushstroke and a small sun.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532239869" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532259756" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533278497" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531676170" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-11-single-stem.jpg" alt="Single Stem — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Single Stem</h3>
+            <p>One botanical line in open space.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532240897" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532248429" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533292622" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+        <article class="hg-card">
+          <a class="hg-main" href="https://www.etsy.com/listing/4531675906" target="_blank" rel="noopener">
+            <div class="hg-card-img"><img src="/assets/img/home-goods/scenes/scene-12-pampas.jpg" alt="Pampas — original Japandi design framed and styled in a calm room" loading="lazy" /><span class="hg-card-label">Art Print</span></div>
+            <h3>Pampas</h3>
+            <p>Tall plumes — warm and autumnal.</p>
+            <span class="hg-cta">Shop the print &rarr;</span>
+          </a>
+          <p class="hg-alt">Also as <a href="https://www.etsy.com/listing/4532242041" target="_blank" rel="noopener">canvas</a> · <a href="https://www.etsy.com/listing/4532261908" target="_blank" rel="noopener">framed</a> · <a href="https://www.etsy.com/listing/4533279861" target="_blank" rel="noopener">digital $16</a></p>
+        </article>
+@@@MUGS@@@
+        <a href="https://www.etsy.com/listing/4532093853" target="_blank" rel="noopener" class="hg-card hg-card--object"><div class="hg-card-img"><img src="/assets/img/home-goods/scenes/mug-seigaiha-1.jpg" alt="Seigaiha Mug — Calm & Oak Japandi design" loading="lazy" /><span class="hg-card-label">Mug</span></div><h3>Seigaiha Mug</h3><p>The classic wave pattern on an 11oz mug.</p><span class="hg-cta">Shop on Etsy &rarr;</span></a>
+        <a href="https://www.etsy.com/listing/4532098709" target="_blank" rel="noopener" class="hg-card hg-card--object"><div class="hg-card-img"><img src="/assets/img/home-goods/scenes/mug-sunarch-1.jpg" alt="Sun Arch Mug — Calm & Oak Japandi design" loading="lazy" /><span class="hg-card-label">Mug</span></div><h3>Sun Arch Mug</h3><p>Warm terracotta arcs for slow mornings.</p><span class="hg-cta">Shop on Etsy &rarr;</span></a>
+        <a href="https://www.etsy.com/listing/4532110660" target="_blank" rel="noopener" class="hg-card hg-card--object"><div class="hg-card-img"><img src="/assets/img/home-goods/scenes/mug-enso-1.jpg" alt="Ensō Mug — Calm & Oak Japandi design" loading="lazy" /><span class="hg-card-label">Mug</span></div><h3>Ensō Mug</h3><p>One brushstroke, one quiet morning.</p><span class="hg-cta">Shop on Etsy &rarr;</span></a>
+        <a href="https://www.etsy.com/listing/4532110720" target="_blank" rel="noopener" class="hg-card hg-card--object"><div class="hg-card-img"><img src="/assets/img/home-goods/scenes/mug-mudcloth-1.jpg" alt="Mudcloth Mug — Calm & Oak Japandi design" loading="lazy" /><span class="hg-card-label">Mug</span></div><h3>Mudcloth Mug</h3><p>A quiet geometric in warm neutrals.</p><span class="hg-cta">Shop on Etsy &rarr;</span></a>
+@@@TOTES@@@
+        <a href="https://www.etsy.com/listing/4532115528" target="_blank" rel="noopener" class="hg-card hg-card--object"><div class="hg-card-img"><img src="/assets/img/home-goods/seigaiha-tote.jpg" alt="Seigaiha Tote — Calm & Oak Japandi design" loading="lazy" /><span class="hg-card-label">Tote</span></div><h3>Seigaiha Tote</h3><p>The wave pattern on natural canvas.</p><span class="hg-cta">Shop on Etsy &rarr;</span></a>
+        <a href="https://www.etsy.com/listing/4532107905" target="_blank" rel="noopener" class="hg-card hg-card--object"><div class="hg-card-img"><img src="/assets/img/home-goods/scenes/tote-enso-1.jpg" alt="Ensō Tote — Calm & Oak Japandi design" loading="lazy" /><span class="hg-card-label">Tote</span></div><h3>Ensō Tote</h3><p>One brushstroke, carried everywhere.</p><span class="hg-cta">Shop on Etsy &rarr;</span></a>
+        <a href="https://www.etsy.com/listing/4532120144" target="_blank" rel="noopener" class="hg-card hg-card--object"><div class="hg-card-img"><img src="/assets/img/home-goods/scenes/tote-inkbrush-1.jpg" alt="Ink Brush Tote — Calm & Oak Japandi design" loading="lazy" /><span class="hg-card-label">Tote</span></div><h3>Ink Brush Tote</h3><p>Sumi stripes on a quiet everyday carry.</p><span class="hg-cta">Shop on Etsy &rarr;</span></a>
+        <a href="https://www.etsy.com/listing/4532120614" target="_blank" rel="noopener" class="hg-card hg-card--object"><div class="hg-card-img"><img src="/assets/img/home-goods/mudcloth-tote.jpg" alt="Mudcloth Tote — Calm & Oak Japandi design" loading="lazy" /><span class="hg-card-label">Tote</span></div><h3>Mudcloth Tote</h3><p>A calm geometric in natural canvas.</p><span class="hg-cta">Shop on Etsy &rarr;</span></a>

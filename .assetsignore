@@ -38,3 +38,10 @@ package-lock.json
 package.json
 # Oversized downloadable bundles — exceed CF 25MiB asset cap, cannot be served
 *.zip
+
+05-home-goods/
+*.xlsx
+*.docx
+Cameron_Hayes*
+TFSA*
+error-log-*.txt

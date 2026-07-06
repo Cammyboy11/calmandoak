@@ -166,3 +166,119 @@ live-listing-urls.csv (all 56). Homepage now ends </html> with footer; sitemap v
 - Stationery card removed from shop page (notebooks have no live listings yet).
 - Step 1D videos day 2+ still pending (11 posters, then canvas/framed/mugs/totes).
 - Consider sitewide truncated-footer audit + adding the Home Collection nav link to the other ~130 pages.
+
+---
+## PHASE 2 COMPLETE (2026-07-06) — except videos
+All 56 listings LIVE on Etsy (≥10 photos each, $11.20 fees), 7 sections assigned,
+site wired + deployed + indexing requested. Remaining: Step 1D videos — 1/56 done
+(Layered Hills), Veo daily cap = ~1-few/day. Continue daily: generate per runbook prompt
++ "slow cinematic camera push-in, 8 seconds, no people, no text", download (lands in
+assets/the-edit/img), attach via listing editor video slot, Save draft→publishes change.
+Order: posters (11 left) → canvas → framed → mugs → totes → digital (optional for digital).
+tached (poster drafts, saved as DRAFTS):
+1. Layered Hills 4531654012 ✅ — video attached to the video slot ("Featured", 1 video slot
+   remaining), Save draft confirmed ("Your listing has been successfully updated", editor exited).
+   File staged: 05-home-goods/mockups/gemini-scenes/video-01-layered-hills.mp4 (2.6 MB, 16:9, ~8s).
+
+Remaining for 1D (day 2+, in order): Rising Sun 4531644671, Tonal Horizon 4531654536,
+Mountain 4531668124, Moon Phases 4531674028, Sun and Moon 4532165682, Arch 4531660859,
+Balance 4531662908, Vessel 4531661987, Ink Horizon 4531643673, Single Stem 4531676170,
+Pampas 4531675906 — then canvas, framed, mugs, totes.
+
+PROVEN VIDEO RECIPE (day 1):
+- Gemini sidebar → "Videos" (opens "Create videos" surface, composer says "Describe your video";
+  dismiss the one-time "Create with Omni" onboarding modal via "Try it"). Landscape 16:9 default.
+- Prompt = runbook scene prompt + ", slow cinematic camera push-in, 8 seconds, no people, no text"
+  (dropped "4:5" for video). Submit = blue arrow coordinate click (find "Send message" is flaky
+  on this surface); verify user-query count + URL gets a chat id. Each video prompt starts a NEW
+  chat — follow-up prompts in the same chat also work but land in a new conversation anyway.
+- Generation ≈ 2 min → "Your video is ready!". If the stream wedges, reload chat URL; if chat
+  loads blank, click it in sidebar Recents (in-app navigation renders it).
+- Download: hover over player → download icon top-right (1112,384-ish) → toast "Downloading
+  video..." → lands in assets/the-edit/img as Photorealistic_interior_Japan.mp4 (prompt-derived
+  name — MOVE/RENAME IMMEDIATELY, every poster prompt yields the same filename → collision).
+- Etsy attach: listing-editor/edit/<id>#media → the 2 file inputs (name=listing-media-upload,
+  accept includes video/mp4) — tag input[0] with aria-label via JS → find → file_upload the mp4
+  → ~70s processing (video tile appears with play button) → scroll to bottom bar ("1 unsaved
+  change. You changed: Video.") → click Save draft → editor exits + green success toast.
+
+### Photo count verification + digital top-up — DONE ✅ (2026-07-06, session "Phase 2 photo counts")
+
+**Part 1 — canvas/framed verification (24 listings): ALL at exactly 10 photos, none <10, nothing changed.**
+- Canvas (10/10 photos each): Layered Hills 4532238248, Rising Sun 4532253510, Tonal Horizon 4532253734,
+  Mountain 4532252384, Moon Phases 4532252802, Sun and Moon 4532241205, Arch 4532241141,
+  Balance 4532252842, Vessel 4532241071, Ink Horizon 4532239869, Single Stem 4532240897, Pampas 4532242041.
+- Framed (10/10 photos each): Layered Hills 4532246830, Rising Sun 4532249255, Tonal Horizon 4532247979,
+  Mountain 4532262046, Moon Phases 4532248551, Sun and Moon 4532247339, Arch 4532259814,
+  Balance 4532249119, Vessel 4532261194, Ink Horizon 4532259756, Single Stem 4532248429, Pampas 4532261908.
+- Count method: editor #media page, photos = 20 − N from the "Add photos … N remaining" counter.
+  ⚠ Regex must anchor on "Add photos" — the VIDEO slot's "2 remaining" appears FIRST in innerText.
+
+**Part 2 — digital listings topped up 2 → 10 photos, saved as DRAFTS (verified "10 remaining" after save,
+fresh reload, still Draft, "You have no unsaved changes"). All 12:**
+4533284058 LH, 4533287232 RS, 4533274503 TH, 4533275069 MT, 4533275691 MP, 4533276279 SM,
+4533290390 AR, 4533290938 BA, 4533277953 VE, 4533278497 IH, 4533292622 SS, 4533279861 PA.
+
+Method used: Etsy-CDN photo reuse was NOT possible (in-page fetch of i.etsystatic.com blocked by the
+automation security filter — "[BLOCKED: Cookie/query string data]"), so per the fallback plan generated
+8 local PIL derivatives per design from assets/img/print-files/poster-<slug>.png (3000x4000) into
+**05-home-goods/mockups/digital-extras/<slug>-01..08.jpg** (jpg q92, warm bg #faf6f0):
+01 full-art card, 02-04 detail crops (top-left/center/bottom), 05 square crop, 06 4x5 crop,
+07 size-guide card, 08 two-up (art + 50% copy). Script: session outputs/make_digital_extras.py.
+Upload recipe (worked 12/12): #media → tag file inputs via JS → find → file_upload 8 jpgs to
+input[1] (input[0]=video slot) → wait ~40s → screenshot → Save draft click at **(1237,707)**
+(button moved from the old 1201,741) → editor exits + "successfully updated".
+
+⚠ REVIEW, Cameron: size-guide card (image 07) says "Print up to 24 x 36 in • 300 DPI" (wording from
+the brief). The actual file is 3000x4000 px = 10x13.3 in at 300 DPI (3:4 ratio; 24x36 is 2:3 and would
+print at ~111 DPI). If you want strictly accurate copy, regenerate 07 with adjusted text.
+Nothing published; no physical listings modified.
+
+### Steps 3+4 publish + sections — DONE ✅ (2026-07-06, session "Steps 3+4")
+
+**PUBLISHED: all 56 collection listings, in 6 query-filtered batches on the drafts grid**
+(select-all + Publish + fee dialog confirm; Cameron pre-approved $0.20/listing):
+- Posters ×12 (query "Wall Art Print"), Canvas ×12, Framed ×12, Mugs ×4, Totes ×4,
+  Digital ×12 (query "Printable"). Every batch got "Huzzah! You've published N listings!".
+- Total renewal fees: **$11.20** (56 × $0.20). New expiration for all: Nov 6, 2026.
+- Verified after: shop-wide **Draft = 0, Active = 117** (61 pre-existing + 56 new).
+- **Junk draft ("Museum-Quality Matte Paper Poster 13x18cm/5x7"): not found anywhere** —
+  Draft/Expired/Inactive all 0 before AND after my batches; every batch count matched the
+  expected group size exactly, so it was NOT published by us. It appears to have been
+  deleted before this session.
+- No listings failed to publish.
+
+**SECTIONS created (7 new, shop now uses 12 of 20):** Art Prints, Canvas, Framed, Mugs,
+Totes, Digital Downloads, Originals. Section IDs: Art Prints 59272935, Canvas 59272947,
+Framed 59256280, Mugs 59272973, Totes 59272987, Digital Downloads 59256328, Originals 59273011.
+
+**ASSIGNMENTS (all 56 done, verified via sidebar Sections filter counts):**
+posters→Art Prints (12), canvas→Canvas (12), framed→Framed (12), mugs→Mugs (4),
+totes→Totes (4), digital→Digital Downloads (12). "No Section" filter shows 0.
+- ⚠ Query gotcha: on ACTIVE listings Etsy's query matching is fuzzy — "Wall Art Print"
+  matched 60 pre-existing actives and "Printable" matched 29 (tags), so for those two groups
+  the selection was done by LISTING ID via JS checkbox clicks (350 ms pacing), not select-all.
+  Canvas/Framed/Mug/Tote queries were clean (0 pre-existing matches) → plain select-all.
+- **"Originals" left EMPTY (deliberate):** the 61 pre-existing active listings turned out to
+  already be organized into the 5 older thematic sections — Sumi-e Ink (21), Botanical Line (13),
+  Minimalist Landscapes (13), Japanese Calligraphy (7), Tonal Studies (7) = 61 exactly.
+  (The Manage Sections modal misleadingly showed "0" next to each — the sidebar filter has the
+  real counts.) Re-assigning them to "Originals" would have destroyed that curation, so skipped.
+  Cameron: delete the empty "Originals" section or repurpose as you like.
+
+**LIVE URLS:** full type,design,listing_id,url mapping for all 56 saved to
+`05-home-goods/live-listing-urls.csv`. Spot-checked 3 public pages live with correct titles:
+poster Layered Hills 4531654012, mug Ensō 4532110660, digital Pampas 4533279861.
+
+**Recipe notes:** Change-section dialog = Editing options → "Change section" (find ref; a
+coordinate click there once hit "Change return & exchange policies" — cancelled, nothing applied).
+The dialog's `#section-select` is a native select: set value via HTMLSelectElement prototype
+setter + dispatch change event, then click Apply (find ref). Bulk-publish select-all checkbox
+at (309,211); fee-dialog Publish at (975,571). Throttled-tab screenshots time out constantly —
+just wait 4s and re-screenshot; clicks still land.
+
+**Remaining:** Step 1D videos day 2+ (11 posters, then canvas/framed/mugs/totes), Step 5 site wiring.
+
+### Photo brand spec + reorder recipe (2026-07-06, session "Brand photo spec") — see **BRAND-PHOTO-SPEC.md**
+Older-listing photo formula documented + gap analysis of new listings; reorder PROVEN on Layered Hills
+poster 4531654012 (Gemini scene now Featured photo #1, published, public page verified). Recipe: editor #media, flexWrap='nowrap' on tile container, JS focus tile, trusted keys Return/Left×N/Return, Publish changes.

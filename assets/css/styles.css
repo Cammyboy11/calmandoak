@@ -1084,4 +1084,5 @@ img.hero-art { width: 100%; height: auto; object-fit: cover; display: block; }
 }
 .signup-proof {
   font-size: 0.82rem; color: var(--graphite);
-  margin: 0.9rem aut
+  margin: 0.9rem auto 0; max-width: 50ch; line-height: 1.55;
+}

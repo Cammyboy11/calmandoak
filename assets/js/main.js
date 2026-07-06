@@ -171,4 +171,10 @@
       chips.forEach((c) => { const a = c.getAttribute('data-filter') === f; c.classList.toggle('is-active', a); c.setAttribute('aria-selected', a ? 'true' : 'false'); });
       if (empty) empty.hidden = shown !== 0;
     };
-    chips.forEach((c
+    chips.forEach((c) => c.addEventListener('click', () => apply(c.getAttribute('data-filter'))));
+  });
+
+  // ----- Year stamp -----
+  const y = document.querySelector('[data-year]');
+  if (y) y.textContent = new Date().getFullYear();
+})();

@@ -48,4 +48,4 @@ console.log('Muxing ambient bed into ' + output + ' ...');
 const r = spawnSync(ffmpeg, args, { stdio: ['ignore', 'ignore', 'inherit'] });
 if (r.status === 0 && fs.existsSync(output)) {
   console.log('OK -> ' + output + ' (' + Math.round(fs.statSync(output).size / 1024) + ' KB)');
-} else { console.e
+} else { console.error('mux failed (status ' + r.status + ')'); process.exit(1); }
