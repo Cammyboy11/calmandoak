@@ -4,7 +4,7 @@
 # Installed at .git/hooks/pre-push. Bypass once with: git push --no-verify
 cd "$(git rev-parse --show-toplevel)" || exit 0
 tmp_refs=$(mktemp); tmp_tracked=$(mktemp)
-git ls-files -z -- '*.html' | xargs -0 grep -hoE '(src|srcset|href)="/assets/[^"? ]+' 2>/dev/null \
+git ls-files -z -- '*.html' | xargs -0 grep -ahoE '(src|srcset|href)="/assets/[^"? ]+' 2>/dev/null \
   | sed -E 's/^(src|srcset|href)="\///' | sort -u > "$tmp_refs"
 git ls-files -- assets | sort -u > "$tmp_tracked"
 missing=$(comm -23 "$tmp_refs" "$tmp_tracked")
