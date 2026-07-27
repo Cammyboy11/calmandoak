@@ -5,16 +5,16 @@ CO-ENS-ART,Ensō,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/en
 CO-INK-ART,Ink Brush,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/inkbrush-print.png,draft (Gelato/Etsy),
 CO-MUD-ART,Neutral Mudcloth,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
 CO-SHB-ART,Indigo Shibori,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/shibori-print.png,draft (Gelato/Etsy),
-CO-HIL-ART,Layered Hills,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/hills-print.png,live,https://www.etsy.com/listing/4531654012
+CO-HIL-ART,Koi Falls (v2; ex Layered Hills),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-koi-falls_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531654012
 CO-SUN-ART,Sun Arcs,Art print / poster,Gelato,10,32,22,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
-CO-HIL-CNV,Layered Hills,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/hills-print.png,live,https://www.etsy.com/listing/4532238248
+CO-HIL-CNV,Koi Falls (v2; ex Layered Hills),Canvas print,Gelato,26,72,46,assets/img/print-files/v2/v2-koi-falls_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4532238248
 CO-SEI-CNV,Seigaiha,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/seigaiha-print.png,draft (Gelato/Etsy),
 CO-SUN-CNV,Sun Arcs,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
 CO-ENS-CNV,Ensō,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/enso-print.png,draft (Gelato/Etsy),
 CO-INK-CNV,Ink Brush,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/inkbrush-print.png,draft (Gelato/Etsy),
 CO-MUD-CNV,Neutral Mudcloth,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
 CO-SHB-CNV,Indigo Shibori,Canvas print,Gelato,26,72,46,05-home-goods/print-ready/shibori-print.png,draft (Gelato/Etsy),
-CO-HIL-FRM,Layered Hills,Framed print,Gelato,30,84,54,05-home-goods/print-ready/hills-print.png,live,https://www.etsy.com/listing/4532246830
+CO-HIL-FRM,Koi Falls (v2; ex Layered Hills),Framed print,Gelato,30,84,54,assets/img/print-files/v2/v2-koi-falls_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4532246830
 CO-SEI-FRM,Seigaiha,Framed print,Gelato,30,84,54,05-home-goods/print-ready/seigaiha-print.png,draft (Gelato/Etsy),
 CO-SUN-FRM,Sun Arcs,Framed print,Gelato,30,84,54,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
 CO-ENS-FRM,Ensō,Framed print,Gelato,30,84,54,05-home-goods/print-ready/enso-print.png,draft (Gelato/Etsy),
@@ -32,26 +32,26 @@ CO-SEI-NBK,Seigaiha,Notebook,Gelato,8,19,11,05-home-goods/print-ready/seigaiha-p
 CO-SUN-NBK,Sun Arcs,Notebook,Gelato,8,19,11,05-home-goods/print-ready/sunarcs-print.png,draft (Gelato/Etsy),
 CO-ENS-NBK,Ensō,Notebook,Gelato,8,19,11,05-home-goods/print-ready/enso-print.png,draft (Gelato/Etsy),
 CO-MUD-NBK,Neutral Mudcloth,Notebook,Gelato,8,19,11,05-home-goods/print-ready/mudcloth-print.png,draft (Gelato/Etsy),
-CO-RSU-ART,Rising Sun,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-rising-sun.png,live,https://www.etsy.com/listing/4531644671
-CO-THZ-ART,Tonal Horizon,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-tonal-horizon.png,live,https://www.etsy.com/listing/4531654536
-CO-MTN-ART,Mountain,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-mountain.png,live,https://www.etsy.com/listing/4531668124
-CO-MPH-ART,Moon Phases,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-moon-phases.png,live,https://www.etsy.com/listing/4531674028
-CO-SNM-ART,Sun and Moon,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-sun-moon.png,live,https://www.etsy.com/listing/4532165682
-CO-ARC-ART,Arch,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-arch.png,live,https://www.etsy.com/listing/4531660859
-CO-BAL-ART,Balance,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-balance.png,live,https://www.etsy.com/listing/4531662908
-CO-VES-ART,Vessel,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-vessel.png,live,https://www.etsy.com/listing/4531661987
-CO-IHZ-ART,Ink Horizon,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-ink-horizon.png,live,https://www.etsy.com/listing/4531643673
-CO-SST-ART,Single Stem,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-single-stem.png,live,https://www.etsy.com/listing/4531676170
-CO-PAM-ART,Pampas,Art print / poster,Gelato,10,32,22,assets/img/print-files/poster-pampas.png,live,https://www.etsy.com/listing/4531675906
-CO-HIL-DIG,Layered Hills,Digital download,Etsy,0,16,16,assets/img/print-files/poster-layered-hills.png,live,https://www.etsy.com/listing/4533284058
-CO-RSU-DIG,Rising Sun,Digital download,Etsy,0,16,16,assets/img/print-files/poster-rising-sun.png,live,https://www.etsy.com/listing/4533287232
-CO-THZ-DIG,Tonal Horizon,Digital download,Etsy,0,16,16,assets/img/print-files/poster-tonal-horizon.png,live,https://www.etsy.com/listing/4533274503
-CO-MTN-DIG,Mountain,Digital download,Etsy,0,16,16,assets/img/print-files/poster-mountain.png,live,https://www.etsy.com/listing/4533275069
-CO-MPH-DIG,Moon Phases,Digital download,Etsy,0,16,16,assets/img/print-files/poster-moon-phases.png,live,https://www.etsy.com/listing/4533275691
-CO-SNM-DIG,Sun and Moon,Digital download,Etsy,0,16,16,assets/img/print-files/poster-sun-moon.png,live,https://www.etsy.com/listing/4533276279
-CO-ARC-DIG,Arch,Digital download,Etsy,0,16,16,assets/img/print-files/poster-arch.png,live,https://www.etsy.com/listing/4533290390
-CO-BAL-DIG,Balance,Digital download,Etsy,0,16,16,assets/img/print-files/poster-balance.png,live,https://www.etsy.com/listing/4533290938
-CO-VES-DIG,Vessel,Digital download,Etsy,0,16,16,assets/img/print-files/poster-vessel.png,live,https://www.etsy.com/listing/4533277953
-CO-IHZ-DIG,Ink Horizon,Digital download,Etsy,0,16,16,assets/img/print-files/poster-ink-horizon.png,live,https://www.etsy.com/listing/4533278497
-CO-SST-DIG,Single Stem,Digital download,Etsy,0,16,16,assets/img/print-files/poster-single-stem.png,live,https://www.etsy.com/listing/4533292622
-CO-PAM-DIG,Pampas,Digital download,Etsy,0,16,16,assets/img/print-files/poster-pampas.png,live,https://www.etsy.com/listing/4533279861
+CO-RSU-ART,Kintsugi Seam (v2; ex Rising Sun),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-kintsugi-seam_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531644671
+CO-THZ-ART,Washi Horizon (v2; ex Tonal Horizon),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-washi-horizon_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531654536
+CO-MTN-ART,Onsen Mist (v2; ex Mountain),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-onsen-mist_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531668124
+CO-MPH-ART,Raked Garden (v2; ex Moon Phases),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-raked-garden_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531674028
+CO-SNM-ART,Koi Pair (v2; ex Sun and Moon),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-koi-pair_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4532165682
+CO-ARC-ART,Clay Arch (v2; ex Arch),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-clay-arch_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531660859
+CO-BAL-ART,Stacked Stones (v2; ex Balance),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-stacked-stones_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531662908
+CO-VES-ART,Kintsugi Vessel (v2; ex Vessel),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-kintsugi-vessel_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531661987
+CO-IHZ-ART,Still Pond (v2; ex Ink Horizon),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-still-pond_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531643673
+CO-SST-ART,Branch Shadow (v2; ex Single Stem),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-branch-shadow_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531676170
+CO-PAM-ART,Boro Indigo (v2; ex Pampas),Art print / poster,Gelato,10,32,22,assets/img/print-files/v2/v2-boro-indigo_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4531675906
+CO-HIL-DIG,Koi Falls (v2; ex Layered Hills),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-koi-falls_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533284058
+CO-RSU-DIG,Kintsugi Seam (v2; ex Rising Sun),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-kintsugi-seam_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533287232
+CO-THZ-DIG,Washi Horizon (v2; ex Tonal Horizon),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-washi-horizon_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533274503
+CO-MTN-DIG,Onsen Mist (v2; ex Mountain),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-onsen-mist_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533275069
+CO-MPH-DIG,Raked Garden (v2; ex Moon Phases),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-raked-garden_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533275691
+CO-SNM-DIG,Koi Pair (v2; ex Sun and Moon),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-koi-pair_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533276279
+CO-ARC-DIG,Clay Arch (v2; ex Arch),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-clay-arch_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533290390
+CO-BAL-DIG,Stacked Stones (v2; ex Balance),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-stacked-stones_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533290938
+CO-VES-DIG,Kintsugi Vessel (v2; ex Vessel),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-kintsugi-vessel_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533277953
+CO-IHZ-DIG,Still Pond (v2; ex Ink Horizon),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-still-pond_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533278497
+CO-SST-DIG,Branch Shadow (v2; ex Single Stem),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-branch-shadow_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533292622
+CO-PAM-DIG,Boro Indigo (v2; ex Pampas),Digital download,Etsy,0,14,14,assets/img/print-files/v2/v2-boro-indigo_16x20_300dpi.jpg,live,https://www.etsy.com/listing/4533279861
