@@ -4,3 +4,7 @@
 # Legacy category renames
 /shop/dining/*        /shop/ceramics-tableware/   301
 /shop/living-room/*   /shop/furniture/            301
+
+# Pin slug typos (recovery-plan.json used wrong slugs; pins live Jul 30)
+/shop/prints/three-bamboo/*    /shop/prints/bamboo/       301
+/shop/prints/sage-and-stone/*  /shop/prints/sage-stone/   301
