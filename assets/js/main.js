@@ -171,4 +171,52 @@
       chips.forEach((c) => { const a = c.getAttribute('data-filter') === f; c.classList.toggle('is-active', a); c.setAttribute('aria-selected', a ? 'true' : 'false'); });
       if (empty) empty.hidden = shown !== 0;
     };
-    chips.forEach((c
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => apply(chip.getAttribute('data-filter')));
+    });
+    apply('all');
+  });
+
+  // ----- Amazon storefront links (Calm & Oak Influencer storefront) -----
+  var STOREFRONT_URL = 'https://www.amazon.com/shop/calmandoak';
+
+  // (1) Low-key "Amazon Storefront" link in the footer "Shop" column, site-wide.
+  document.querySelectorAll('.site-footer h4').forEach((h) => {
+    if (h.textContent.trim().toLowerCase() !== 'shop') return;
+    const ul = h.nextElementSibling;
+    if (!ul || ul.tagName !== 'UL' || ul.querySelector('a[data-amz-storefront]')) return;
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = STOREFRONT_URL;
+    a.target = '_blank';
+    a.rel = 'noopener nofollow sponsored';
+    a.textContent = 'Amazon Storefront';
+    a.setAttribute('data-amz-storefront', '');
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+
+  // (2) A single tasteful "shop on Amazon" band above the footer, only on journal
+  //     articles and Looks pages — where a reader is already picturing a room.
+  //     No pop-ups, no sticky bars, no repeated mid-article nags.
+  (function () {
+    const p = location.pathname;
+    const isArticle = /^\/journal\/.+/.test(p) && p !== '/journal/';
+    const isLook = /^\/shop\/looks(\/|$)/.test(p);
+    if (!isArticle && !isLook) return;
+    const footer = document.querySelector('.site-footer');
+    if (!footer || document.querySelector('.amz-storefront-band')) return;
+    const sec = document.createElement('section');
+    sec.className = 'amz-storefront-band';
+    sec.setAttribute('aria-label', 'Shop on Amazon');
+    sec.style.cssText = 'background:var(--cream,#EFE8DA);border-top:1px solid rgba(42,42,40,.08);';
+    sec.innerHTML =
+      '<div style="max-width:720px;margin:0 auto;padding:2.6rem 1.2rem;text-align:center;">'
+      + '<p style="font-family:var(--serif,\'Cormorant Garamond\',Georgia,serif);font-size:1.55rem;color:var(--charcoal,#2A2A28);margin:0 0 .5rem;">Prefer to shop on Amazon?</p>'
+      + '<p style="color:var(--charcoal,#2A2A28);opacity:.82;margin:0 0 1.3rem;line-height:1.65;">Browse the pieces we love in our Amazon storefront &mdash; hand-picked for quiet materials and natural texture, organised room by room.</p>'
+      + '<a href="' + STOREFRONT_URL + '" target="_blank" rel="noopener nofollow sponsored" style="display:inline-block;padding:.8rem 1.7rem;border:1px solid var(--charcoal,#2A2A28);border-radius:2px;color:var(--charcoal,#2A2A28);text-decoration:none;letter-spacing:.05em;font-size:.8rem;text-transform:uppercase;">Visit our Amazon storefront &rarr;</a>'
+      + '</div>';
+    footer.parentNode.insertBefore(sec, footer);
+  })();
+
+})();
