@@ -24,27 +24,27 @@
     "koi": "https://www.etsy.com/listing/4513682155/sumi-e-koi-print-japandi-wall-art",
     "mountain-stream": "https://www.etsy.com/listing/4513717337/sumi-e-waterfall-print-japandi-wall-art",
     "tsuki": "https://www.etsy.com/listing/4513731734/wabi-sabi-tea-bowl-print-sumi-e-wall-art",
-    "single-stem": "https://www.etsy.com/listing/4514539948/single-stem-print-botanical-line-art",
-    "eucalyptus": "https://www.etsy.com/listing/4513739523/eucalyptus-print-single-line-botanical",
-    "olive": "https://www.etsy.com/listing/4513745265/olive-branch-print-botanical-line-art",
-    "pampas": "https://www.etsy.com/listing/4513753457/pampas-grass-print-boho-botanical-wall",
-    "ginkgo": "https://www.etsy.com/listing/4513763284/ginkgo-leaf-print-japandi-botanical-line",
-    "wild-grass": "https://www.etsy.com/listing/4513771858/wild-grass-print-minimalist-botanical",
-    "serene-dawn": "https://www.etsy.com/listing/4513671801/soft-arch-landscape-print-japandi",
-    "moon-cycle": "https://www.etsy.com/listing/4514733472/moon-phases-print-three-moon-cycle-wall",
-    "horizon-bird": "https://www.etsy.com/listing/4514741847/minimalist-horizon-print-japandi-bird",
-    "dusk": "https://www.etsy.com/listing/4514724482/lone-tree-print-terracotta-sunset",
-    "layers": "https://www.etsy.com/listing/4514689937/color-field-landscape-print-earth-tone",
-    "moonrise": "https://www.etsy.com/listing/4514681587/full-moon-print-minimalist-moon",
+    "single-stem": "https://www.etsy.com/listing/4560568137/single-stem-print-botanical-line-art",
+    "eucalyptus": "https://www.etsy.com/listing/4560540847/eucalyptus-print-single-line-botanical",
+    "olive": "https://www.etsy.com/listing/4560564475/olive-branch-print-botanical-line-art",
+    "pampas": "https://www.etsy.com/listing/4560062774/pampas-japandi-fine-wall-art",
+    "ginkgo": "https://www.etsy.com/listing/4560580880/ginkgo-leaf-print-japandi-botanical-line",
+    "wild-grass": "https://www.etsy.com/listing/4560561033/wild-grass-print-minimalist-botanical",
+    "serene-dawn": "https://www.etsy.com/listing/4560039057/soft-arch-landscape-print-japandi",
+    "moon-cycle": "https://www.etsy.com/listing/4560573803/moon-phases-print-three-moon-cycle-wall",
+    "horizon-bird": "https://www.etsy.com/listing/4560323934/a-quiet-crossing-minimalist-horizon",
+    "dusk": "https://www.etsy.com/listing/4560571019/lone-tree-print-terracotta-sunset",
+    "layers": "https://www.etsy.com/listing/4560300071/layers-earth-tone-abstract-art-japandi",
+    "moonrise": "https://www.etsy.com/listing/4560577589/full-moon-print-minimalist-moon",
     "shizuka": "https://www.etsy.com/listing/4514669812/japanese-kanji-print-shizuka-stillness",
     "wa": "https://www.etsy.com/listing/4520125362/japanese-kanji-print-wa-harmony-calligraphy",
     "ma": "https://www.etsy.com/listing/4514768430/japanese-kanji-print-ma-negative-space",
     "two-woods": "https://www.etsy.com/listing/4513670516/tonal-study-print-oak-walnut-color-field",
-    "warm-earth": "https://www.etsy.com/listing/4514773752/tonal-study-print-terracotta-oat-color",
-    "sage-stone": "https://www.etsy.com/listing/4520134683/tonal-study-print-sage-stone-color-field",
-    "balance": "",
-    "chado": "",
-    "linen-morning": ""
+    "warm-earth": "https://www.etsy.com/listing/4560356620/warm-earth-tearcotta-japandi-palette",
+    "sage-stone": "https://www.etsy.com/listing/4559433320/sage-stone-japandi-tonal-wall-art",
+    "balance": "https://calmandoak.com/shop/prints/",
+    "chado": "https://calmandoak.com/shop/prints/",
+    "linen-morning": "https://calmandoak.com/shop/prints/"
   };
 
   /* Direct digital-download checkout URLs (e.g. Payhip product links). Empty = "coming soon". */
@@ -106,4 +106,9 @@
         el.setAttribute("aria-disabled", "true");
         el.style.opacity = "0.55";
         el.style.cursor = "default";
-        if (el.hasAttribute("data-digital-lab
+        if (el.hasAttribute("data-digital-label")) el.textContent = "Digital download — coming soon";
+        el.addEventListener("click", function (e) { e.preventDefault(); });
+      }
+    });
+  });
+})();
