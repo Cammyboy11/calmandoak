@@ -3,7 +3,7 @@
 <channel>
   <title>Calm &amp; Oak — Home Collection (Physical)</title>
   <link>https://calmandoak.com/shop/home-goods/</link>
-  <description>Made-to-order physical home goods from Calm &amp; Oak: textured Japandi wall art (poster, canvas, framed), stoneware mugs and cotton tote bags. Checkout completes on calmandoak.com.</description>
+  <description>Made-to-order physical home goods from Calm &amp; Oak: textured Japandi wall art (paper art prints), stoneware mugs and cotton tote bags. Checkout completes on calmandoak.com.</description>
   <item>
     <g:id>co-koi-pair-poster</g:id>
     <g:title>Koi Pair — Textured Japandi Art Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
@@ -16,42 +16,6 @@
     <g:brand>Calm &amp; Oak</g:brand>
     <g:google_product_category>500044</g:google_product_category>
     <g:product_type>Home Decor &gt; Wall Art &gt; Art Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-koi-pair-canvas</g:id>
-    <g:title>Koi Pair — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Koi Pair — two koi circling in still water, one clay-red, one ink-grey, on warm oat linen. Sun and moon, redrawn. An original Calm &amp; Oak design in textured mineral paint with the depth of a handmade wabi-sabi original. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-koi-pair.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-koi-pair-framed</g:id>
-    <g:title>Koi Pair — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Koi Pair — two koi circling in still water, one clay-red, one ink-grey, on warm oat linen. Sun and moon, redrawn. An original Calm &amp; Oak design in textured mineral paint with the depth of a handmade wabi-sabi original. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-koi-pair.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
     <g:identifier_exists>no</g:identifier_exists>
     <g:shipping>
       <g:country>US</g:country>
@@ -77,42 +41,6 @@
     </g:shipping>
   </item>
   <item>
-    <g:id>co-koi-falls-canvas</g:id>
-    <g:title>Koi Falls — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Koi Falls — a single rust-red koi climbing a waterfall of thick, pale strokes. The old legend says the one that reaches the top becomes a dragon; this one is still climbing. Textured mineral paint on linen with the presence of a plaster original. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-koi-falls.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-koi-falls-framed</g:id>
-    <g:title>Koi Falls — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Koi Falls — a single rust-red koi climbing a waterfall of thick, pale strokes. The old legend says the one that reaches the top becomes a dragon; this one is still climbing. Textured mineral paint on linen with the presence of a plaster original. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-koi-falls.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
     <g:id>co-still-pond-poster</g:id>
     <g:title>Still Pond — Textured Japandi Art Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
     <g:description>Still Pond — one dark stone, and every ring it ever made, in sage and clay on raw linen. The quietest thing in the room. An original Calm &amp; Oak design in textured mineral paint, wabi-sabi warmth. Printed to order on museum-quality matte poster paper with giclée archival inks. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
@@ -124,42 +52,6 @@
     <g:brand>Calm &amp; Oak</g:brand>
     <g:google_product_category>500044</g:google_product_category>
     <g:product_type>Home Decor &gt; Wall Art &gt; Art Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-still-pond-canvas</g:id>
-    <g:title>Still Pond — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Still Pond — one dark stone, and every ring it ever made, in sage and clay on raw linen. The quietest thing in the room. An original Calm &amp; Oak design in textured mineral paint, wabi-sabi warmth. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-still-pond.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-still-pond-framed</g:id>
-    <g:title>Still Pond — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Still Pond — one dark stone, and every ring it ever made, in sage and clay on raw linen. The quietest thing in the room. An original Calm &amp; Oak design in textured mineral paint, wabi-sabi warmth. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-still-pond.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
     <g:identifier_exists>no</g:identifier_exists>
     <g:shipping>
       <g:country>US</g:country>
@@ -185,42 +77,6 @@
     </g:shipping>
   </item>
   <item>
-    <g:id>co-kintsugi-seam-canvas</g:id>
-    <g:title>Kintsugi Seam — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Kintsugi Seam — a field of clay, sage and stone, held together by one thread of gold. The repair is the point: what breaks and is mended becomes more, not less. Textured mineral paint on linen. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-kintsugi-seam.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-kintsugi-seam-framed</g:id>
-    <g:title>Kintsugi Seam — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Kintsugi Seam — a field of clay, sage and stone, held together by one thread of gold. The repair is the point: what breaks and is mended becomes more, not less. Textured mineral paint on linen. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-kintsugi-seam.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
     <g:id>co-kintsugi-vessel-poster</g:id>
     <g:title>Kintsugi Vessel — Textured Japandi Art Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
     <g:description>Kintsugi Vessel — a tea bowl, broken once, mended in gold, standing quietly on warm linen. A whole philosophy in one object: honour the crack. An original Calm &amp; Oak design in textured mineral paint. Printed to order on museum-quality matte poster paper with giclée archival inks. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
@@ -232,42 +88,6 @@
     <g:brand>Calm &amp; Oak</g:brand>
     <g:google_product_category>500044</g:google_product_category>
     <g:product_type>Home Decor &gt; Wall Art &gt; Art Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-kintsugi-vessel-canvas</g:id>
-    <g:title>Kintsugi Vessel — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Kintsugi Vessel — a tea bowl, broken once, mended in gold, standing quietly on warm linen. A whole philosophy in one object: honour the crack. An original Calm &amp; Oak design in textured mineral paint. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-kintsugi-vessel.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-kintsugi-vessel-framed</g:id>
-    <g:title>Kintsugi Vessel — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Kintsugi Vessel — a tea bowl, broken once, mended in gold, standing quietly on warm linen. A whole philosophy in one object: honour the crack. An original Calm &amp; Oak design in textured mineral paint. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-kintsugi-vessel.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
     <g:identifier_exists>no</g:identifier_exists>
     <g:shipping>
       <g:country>US</g:country>
@@ -293,42 +113,6 @@
     </g:shipping>
   </item>
   <item>
-    <g:id>co-raked-garden-canvas</g:id>
-    <g:title>Raked Garden — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Raked Garden — two mossy stones and the patient lines drawn around them, in real raised texture you can almost rake with a fingertip. Stillness, practised daily. Textured mineral paint on linen. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-raked-garden.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-raked-garden-framed</g:id>
-    <g:title>Raked Garden — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Raked Garden — two mossy stones and the patient lines drawn around them, in real raised texture you can almost rake with a fingertip. Stillness, practised daily. Textured mineral paint on linen. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-raked-garden.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
     <g:id>co-onsen-mist-poster</g:id>
     <g:title>Onsen Mist — Textured Japandi Art Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
     <g:description>Onsen Mist — steam rising off warm water, three smooth stones at the edge, everything in oat and stone. A hot spring at dawn, remembered rather than photographed. An original Calm &amp; Oak design in textured mineral paint. Printed to order on museum-quality matte poster paper with giclée archival inks. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
@@ -340,42 +124,6 @@
     <g:brand>Calm &amp; Oak</g:brand>
     <g:google_product_category>500044</g:google_product_category>
     <g:product_type>Home Decor &gt; Wall Art &gt; Art Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-onsen-mist-canvas</g:id>
-    <g:title>Onsen Mist — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Onsen Mist — steam rising off warm water, three smooth stones at the edge, everything in oat and stone. A hot spring at dawn, remembered rather than photographed. An original Calm &amp; Oak design in textured mineral paint. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-onsen-mist.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-onsen-mist-framed</g:id>
-    <g:title>Onsen Mist — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Onsen Mist — steam rising off warm water, three smooth stones at the edge, everything in oat and stone. A hot spring at dawn, remembered rather than photographed. An original Calm &amp; Oak design in textured mineral paint. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-onsen-mist.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
     <g:identifier_exists>no</g:identifier_exists>
     <g:shipping>
       <g:country>US</g:country>
@@ -401,42 +149,6 @@
     </g:shipping>
   </item>
   <item>
-    <g:id>co-boro-indigo-canvas</g:id>
-    <g:title>Boro Indigo — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Boro Indigo — patched indigo cloth and rows of pale sashiko stitches on raw linen. Boro is the Japanese art of mending until the mending becomes the beauty; the one deep colour in the collection. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-boro-indigo.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-boro-indigo-framed</g:id>
-    <g:title>Boro Indigo — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Boro Indigo — patched indigo cloth and rows of pale sashiko stitches on raw linen. Boro is the Japanese art of mending until the mending becomes the beauty; the one deep colour in the collection. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-boro-indigo.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
     <g:id>co-clay-arch-poster</g:id>
     <g:title>Clay Arch — Textured Japandi Art Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
     <g:description>Clay Arch — one terracotta arch, brushed rough over thick plaster, sheltering a single grey stone. The doorway and the thing it protects. An original Calm &amp; Oak design in textured mineral paint. Printed to order on museum-quality matte poster paper with giclée archival inks. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
@@ -448,42 +160,6 @@
     <g:brand>Calm &amp; Oak</g:brand>
     <g:google_product_category>500044</g:google_product_category>
     <g:product_type>Home Decor &gt; Wall Art &gt; Art Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-clay-arch-canvas</g:id>
-    <g:title>Clay Arch — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Clay Arch — one terracotta arch, brushed rough over thick plaster, sheltering a single grey stone. The doorway and the thing it protects. An original Calm &amp; Oak design in textured mineral paint. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-clay-arch.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-clay-arch-framed</g:id>
-    <g:title>Clay Arch — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Clay Arch — one terracotta arch, brushed rough over thick plaster, sheltering a single grey stone. The doorway and the thing it protects. An original Calm &amp; Oak design in textured mineral paint. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-clay-arch.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
     <g:identifier_exists>no</g:identifier_exists>
     <g:shipping>
       <g:country>US</g:country>
@@ -509,42 +185,6 @@
     </g:shipping>
   </item>
   <item>
-    <g:id>co-stacked-stones-canvas</g:id>
-    <g:title>Stacked Stones — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Stacked Stones — charcoal on grey on warm taupe, three stones holding their breath. Balance is not stillness; it is constant, quiet work. An original Calm &amp; Oak design in textured mineral paint on linen. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-stacked-stones.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-stacked-stones-framed</g:id>
-    <g:title>Stacked Stones — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Stacked Stones — charcoal on grey on warm taupe, three stones holding their breath. Balance is not stillness; it is constant, quiet work. An original Calm &amp; Oak design in textured mineral paint on linen. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-stacked-stones.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
     <g:id>co-washi-horizon-poster</g:id>
     <g:title>Washi Horizon — Textured Japandi Art Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
     <g:description>Washi Horizon — a landscape built from torn layers of handmade paper: oat, sage, clay, a thread of slate. Every deckled edge is a ridgeline. The tactile depth of collaged washi. Printed to order on museum-quality matte poster paper with giclée archival inks. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
@@ -563,42 +203,6 @@
     </g:shipping>
   </item>
   <item>
-    <g:id>co-washi-horizon-canvas</g:id>
-    <g:title>Washi Horizon — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Washi Horizon — a landscape built from torn layers of handmade paper: oat, sage, clay, a thread of slate. Every deckled edge is a ridgeline. The tactile depth of collaged washi. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-washi-horizon.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-washi-horizon-framed</g:id>
-    <g:title>Washi Horizon — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Washi Horizon — a landscape built from torn layers of handmade paper: oat, sage, clay, a thread of slate. Every deckled edge is a ridgeline. The tactile depth of collaged washi. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-washi-horizon.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
     <g:id>co-branch-shadow-poster</g:id>
     <g:title>Branch Shadow — Textured Japandi Art Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
     <g:description>Branch Shadow — afternoon light throwing a eucalyptus branch across a linen curtain. Not the branch: its shadow. The gentlest botanical we make. An original Calm &amp; Oak design in soft mineral tones. Printed to order on museum-quality matte poster paper with giclée archival inks. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
@@ -610,42 +214,6 @@
     <g:brand>Calm &amp; Oak</g:brand>
     <g:google_product_category>500044</g:google_product_category>
     <g:product_type>Home Decor &gt; Wall Art &gt; Art Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-branch-shadow-canvas</g:id>
-    <g:title>Branch Shadow — Textured Japandi Canvas Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Branch Shadow — afternoon light throwing a eucalyptus branch across a linen curtain. Not the branch: its shadow. The gentlest botanical we make. An original Calm &amp; Oak design in soft mineral tones. Printed to order on gallery-wrapped stretched canvas, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-branch-shadow.jpg</g:image_link>
-    <g:price>72.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Canvas Print</g:product_type>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>US</g:country>
-      <g:price>0 USD</g:price>
-    </g:shipping>
-  </item>
-  <item>
-    <g:id>co-branch-shadow-framed</g:id>
-    <g:title>Branch Shadow — Textured Japandi Framed Print, Wabi-Sabi Neutral | Calm &amp; Oak</g:title>
-    <g:description>Branch Shadow — afternoon light throwing a eucalyptus branch across a linen curtain. Not the branch: its shadow. The gentlest botanical we make. An original Calm &amp; Oak design in soft mineral tones. Printed to order and supplied in a slim oak-tone frame, ready to hang. Made to order, so nothing is wasted. Ships worldwide from Calm &amp; Oak.</g:description>
-    <g:link>https://calmandoak.com/shop/home-goods/#wall-art</g:link>
-    <g:image_link>https://calmandoak.com/assets/img/home-goods/editorial-v2/card-branch-shadow.jpg</g:image_link>
-    <g:price>84.00 USD</g:price>
-    <g:availability>in_stock</g:availability>
-    <g:condition>new</g:condition>
-    <g:brand>Calm &amp; Oak</g:brand>
-    <g:google_product_category>500044</g:google_product_category>
-    <g:product_type>Home Decor &gt; Wall Art &gt; Framed Print</g:product_type>
     <g:identifier_exists>no</g:identifier_exists>
     <g:shipping>
       <g:country>US</g:country>
