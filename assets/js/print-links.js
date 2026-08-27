@@ -42,9 +42,20 @@
     "two-woods": "https://www.etsy.com/listing/4513670516/tonal-study-print-oak-walnut-color-field",
     "warm-earth": "https://www.etsy.com/listing/4560356620/warm-earth-tearcotta-japandi-palette",
     "sage-stone": "https://www.etsy.com/listing/4559433320/sage-stone-japandi-tonal-wall-art",
-    "balance": "https://calmandoak.com/shop/prints/",
-    "chado": "https://calmandoak.com/shop/prints/",
-    "linen-morning": "https://calmandoak.com/shop/prints/"
+    "balance": "https://www.etsy.com/listing/4554443210/",
+    "chado": "https://www.etsy.com/listing/4563689549/",
+    "linen-morning": "https://www.etsy.com/listing/4561608188/",
+    "boro-indigo": "https://www.etsy.com/listing/4551702149/",
+    "tonal-horizon": "https://www.etsy.com/listing/4531654536/",
+    "koi-pair": "https://www.etsy.com/listing/4563474166/",
+    "kintsugi-vessel": "https://www.etsy.com/listing/4563479080/",
+    "raked-garden": "https://www.etsy.com/listing/4563480720/",
+    "clay-arch": "https://www.etsy.com/listing/4563528875/",
+    "still-pond": "https://www.etsy.com/listing/4562844388/",
+    "koi-falls": "https://www.etsy.com/listing/4563469899/",
+    "branch-shadow": "https://www.etsy.com/listing/4563471769/",
+    "onsen-mist": "https://www.etsy.com/listing/4563473051/",
+    "kintsugi-seam": "https://www.etsy.com/listing/4563530375/"
   };
 
   /* Direct digital-download checkout URLs (e.g. Payhip product links). Empty = "coming soon". */
