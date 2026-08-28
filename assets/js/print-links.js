@@ -89,7 +89,18 @@
     "sage-stone": "https://payhip.com/b/Bw5KT",
     "balance": "https://payhip.com/b/CFme8",
     "chado": "https://payhip.com/b/bkyPh",
-    "linen-morning": "https://payhip.com/b/UTslO"
+    "linen-morning": "https://payhip.com/b/UTslO",
+    "boro-indigo": "https://payhip.com/b/701wy",
+    "tonal-horizon": "https://payhip.com/b/XpcWl",
+    "koi-pair": "https://payhip.com/b/NG4d5",
+    "kintsugi-vessel": "https://payhip.com/b/ZYAdg",
+    "raked-garden": "https://payhip.com/b/JClLe",
+    "clay-arch": "https://payhip.com/b/JVNfb",
+    "still-pond": "https://payhip.com/b/6PoqC",
+    "koi-falls": "https://payhip.com/b/BTtx7",
+    "branch-shadow": "https://payhip.com/b/ngUkM",
+    "onsen-mist": "https://payhip.com/b/4YFEz",
+    "kintsugi-seam": "https://payhip.com/b/Vvjze"
   };
 
   function ready(fn) {
