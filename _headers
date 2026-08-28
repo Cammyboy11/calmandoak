@@ -5,7 +5,37 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
-/assets/*
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/video/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/japandi-home-plan/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/japandi-styling-pack/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/palette-cheat-sheet/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/starter-guide/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/the-edit/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/main.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/bio-links.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/guide-links.js
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/js/print-links.js
