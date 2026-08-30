@@ -55,7 +55,17 @@
     "koi-falls": "https://www.etsy.com/listing/4563469899/",
     "branch-shadow": "https://www.etsy.com/listing/4563471769/",
     "onsen-mist": "https://www.etsy.com/listing/4563473051/",
-    "kintsugi-seam": "https://www.etsy.com/listing/4563530375/"
+    "kintsugi-seam": "https://www.etsy.com/listing/4563530375/",
+    "sumi-e-essentials": "https://www.etsy.com/listing/4549413511/",
+    "sumi-e-botanical": "https://www.etsy.com/listing/4550278893/",
+    "calm-waters": "https://www.etsy.com/listing/4531660859/",
+    "zen-kanji": "https://www.etsy.com/listing/4549166306/",
+    "landscape-night": "https://www.etsy.com/listing/4532259756/",
+    "quiet-sky": "https://www.etsy.com/listing/4532249255/",
+    "tonal-study": "https://www.etsy.com/listing/4532248429/",
+    "botanical-wild": "https://www.etsy.com/listing/4532247339/",
+    "botanical-soft": "https://www.etsy.com/listing/4532246830/",
+    "wabi-sabi": "https://www.etsy.com/listing/4532242041/"
   };
 
   /* Direct digital-download checkout URLs (e.g. Payhip product links). Empty = "coming soon". */
@@ -100,7 +110,15 @@
     "koi-falls": "https://payhip.com/b/BTtx7",
     "branch-shadow": "https://payhip.com/b/ngUkM",
     "onsen-mist": "https://payhip.com/b/4YFEz",
-    "kintsugi-seam": "https://payhip.com/b/Vvjze"
+    "kintsugi-seam": "https://payhip.com/b/Vvjze",
+    "sumi-e-botanical": "https://payhip.com/b/V3RDX",
+    "calm-waters": "https://payhip.com/b/xDe4V",
+    "zen-kanji": "https://payhip.com/b/gqjPG",
+    "landscape-night": "https://payhip.com/b/93eON",
+    "quiet-sky": "https://payhip.com/b/JkI5Y",
+    "tonal-study": "https://payhip.com/b/xdRje",
+    "botanical-wild": "https://payhip.com/b/x3JCU",
+    "wabi-sabi": "https://payhip.com/b/5iEJ0"
   };
 
   function ready(fn) {
