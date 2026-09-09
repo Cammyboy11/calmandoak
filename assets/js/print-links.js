@@ -121,6 +121,52 @@
     "wabi-sabi": "https://payhip.com/b/5iEJ0"
   };
 
+  /* Physical (printed-to-order) Payhip product codes, keyed by slug.
+     Product URL = https://payhip.com/b/<code>. Sizes 8x10 $28 / 11x14 $38 / 16x20 $52, flat $6 US shipping. */
+  var PHYSICAL = {
+    "enso": "54H9q",
+    "bent-reed": "gO3Vj",
+    "crane": "n5XfK",
+    "mountain-mist": "bCGhB",
+    "bamboo": "X0qMc",
+    "cherry-branch": "HbSfO",
+    "koi": "U6TdW",
+    "mountain-stream": "ElHux",
+    "tsuki": "CXHDI",
+    "single-stem": "b6CA5",
+    "eucalyptus": "AUT3p",
+    "olive": "LXKwq",
+    "pampas": "rnsBE",
+    "ginkgo": "zxdXO",
+    "wild-grass": "hFHlA",
+    "serene-dawn": "efs73",
+    "moon-cycle": "VqKht",
+    "horizon-bird": "0Kim3",
+    "dusk": "kJafy",
+    "layers": "WC8Qb",
+    "moonrise": "1l7FZ",
+    "shizuka": "9IBE1",
+    "wa": "NJTW3",
+    "ma": "52ieb",
+    "two-woods": "F5UH6",
+    "warm-earth": "mj8z2",
+    "sage-stone": "KC1vP",
+    "balance": "tDBEl",
+    "chado": "F0jkR",
+    "linen-morning": "m3Cco",
+    "boro-indigo": "eJckh",
+    "tonal-horizon": "GFDts",
+    "koi-pair": "oe1aY",
+    "kintsugi-vessel": "YjVp0",
+    "raked-garden": "4yU6o",
+    "clay-arch": "uKD2y",
+    "still-pond": "Hp8WA",
+    "koi-falls": "gdL1K",
+    "branch-shadow": "3ivpT",
+    "onsen-mist": "EmcCB",
+    "kintsugi-seam": "oJGHa"
+  };
+
   function ready(fn) {
     if (document.readyState !== "loading") fn();
     else document.addEventListener("DOMContentLoaded", fn);
@@ -149,6 +195,24 @@
         if (el.hasAttribute("data-digital-label")) el.textContent = "Digital download — coming soon";
         el.addEventListener("click", function (e) { e.preventDefault(); });
       }
+    });
+
+    // Physical "Buy printed" button — injected beside the digital buy button on each print story page.
+    document.querySelectorAll("[data-digital][data-digital-label]").forEach(function (el) {
+      var slug = el.getAttribute("data-digital");
+      var code = PHYSICAL[slug];
+      if (!code) return;
+      if (el.parentNode && el.parentNode.querySelector("[data-print-physical]")) return;
+      var a = document.createElement("a");
+      a.className = "btn btn--primary payhip-buy-button";
+      a.setAttribute("data-print-physical", slug);
+      a.setAttribute("data-product", code);
+      a.setAttribute("href", "https://payhip.com/b/" + code);
+      a.setAttribute("target", "_blank");
+      a.setAttribute("rel", "noopener");
+      a.textContent = "Buy printed — from $28";
+      if (el.nextSibling) el.parentNode.insertBefore(a, el.nextSibling);
+      else el.parentNode.appendChild(a);
     });
   });
 })();
