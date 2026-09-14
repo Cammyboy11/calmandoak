@@ -1,0 +1,38 @@
+---
+updated: 2026-09-14
+note: Structured, append-only record of things the org has learned. Not a narrative log (that's TEAM-LOG.md) — every entry here is a candidate rule, tracked until it's either confirmed and promoted somewhere durable, or dropped as noise.
+---
+
+# Lessons Ledger
+
+## How to use this file
+**Any agent, any run:** if you observe something real — a mistake, a pattern, a fix that worked —
+append an entry below in the schema. Don't promote it yourself; that's the CEO's job during its
+monthly consolidation (see `LEARNING-LOOP.md`), so patterns get confirmed across multiple
+instances before they become a permanent rule, not baked in off one data point.
+
+**Schema (one line per entry, newest at top):**
+`YYYY-MM-DD · agent · observation · evidence · verdict (raw / confirmed / promoted / dropped) · promoted-to (once applicable)`
+
+A `raw` entry is a single instance. It becomes `confirmed` once the CEO finds ≥2–3 independent
+instances of the same pattern. `promoted` means it's now a durable rule somewhere (SAFEGUARDS.md,
+CONTROL.md, an agent's own spec, a strategy doc) — cite exactly where. `dropped` means it turned
+out to be noise or a one-off; keep the entry for the record, don't delete history.
+
+---
+
+## Entries
+
+- 2026-09-14 · CEO (build session) · **The published README/ORG-CHART cited a YouTube strategy in the vault, but a first vault-only search found nothing — the docs actually live in the repo root, not the vault.** · Confirmed on a second, wider search: `YOUTUBE-STRATEGY-2026.md`, `YOUTUBE-CONTENT-SYSTEM-SOP.md`, `YOUTUBE-CALENDAR-Q4-2026.md` all exist at the repo root. · raw · **candidate rule:** any "does X exist" check must search the repo root AND the vault, not just the vault — a vault-only search produces false negatives for anything Cowork sessions wrote directly to the repo.
+
+- 2026-09-10 · CEO (build session) · **A stale `.git/index.lock` (dated 2026-09-09, no process holding it) silently blocked every local commit in the repo for at least a day.** · Found via `ls -la .git/index.lock` + `tasklist | grep git` (no process running) before clearing it. · confirmed (this is a known git failure mode, not speculative) · **candidate rule:** any agent whose commit fails should check for and report a stale lock before assuming a different cause, and the CEO's execution-integrity check should include "was a lock ever the blocker" as a diagnostic step, not just "did commits happen."
+
+- 2026-09-10 · CEO (build session) · **`main` (local) and `cleanup-2026-09` (checked-out branch) looked diverged from a first read, but local `main` turned out to be a stale ancestor — the real divergence was `cleanup-2026-09` vs `origin/main` (the remote).** · Confirmed via `git merge-base` + `git diff --stat` against the actual remote ref, not the local branch name. · confirmed · **candidate rule:** branch-divergence checks must diff against `origin/<branch>` after a fresh `git fetch`, never a local branch ref alone — local refs go stale silently.
+
+- 2026-09-10 · CEO (build session) · **`CONTROL.md` said `TIKTOK: PAUSED` while Blotato showed TikTok actively publishing 3–5 posts/day, live, with 36 more scheduled.** · Cross-checked CONTROL.md's flag directly against `blotato_list_posts` real data, same run. · confirmed · **candidate rule:** promoted — this is now Standing Job #1, check 3 in `CEO-OPERATING-BRIEF.md` ("CONTROL.md consistency"), run every time, not just discovered once.
+
+- 2026-09-10 · CEO (build session) · **Gemini image-generation credits are exhausted (`429 RESOURCE_EXHAUSTED`, per `OWN-BRAND-PLAN-2026-09.md`), so the "Gemini editorial mockup" function is fully specced and skill-documented but not actually running.** · Cited directly from the vault's own dated note. · confirmed · **candidate rule:** "a skill exists and is documented" is not evidence "it's running" — the execution-integrity check should extend to per-capability fuel/quota checks (billing, credits, API keys), not just trigger/commit evidence, wherever a vault note already documents a known blocker.
+
+- 2026-09-10 · CEO (build session) · **`daily-digest` is referenced everywhere (README, ORG-CHART, TEAM-LOG entries) as if it's a full agent, but no persona file exists for it at `~/.claude/agents/` — only a scheduled-task skill stub.** · Confirmed by directly listing `~/.claude/agents/*.md` and finding no `calmoak-daily-digest.md`. · confirmed · **candidate rule:** a role being named in docs is not evidence it was actually built — verify by listing the actual agent-file directory, every time a roster is audited.
+
+*(Ledger starts here — these six are backfilled from the 2026-09-10/14 build session because they're real, already-confirmed findings, not hypothetical seed data. Going forward, new entries land at the top as they happen.)*

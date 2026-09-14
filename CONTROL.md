@@ -21,3 +21,11 @@ concrete specifics over adjectives. Never hype, exclamation marks, "must-have", 
 
 ## Always escalate (never auto-do)
 DNS / redirects / hosting, account or provider settings, anything that spends money, anything destructive.
+
+## Learning loop (added 2026-09-14)
+If you observe something real this run — a mistake, a pattern, a fix that worked — append one
+line to `CEO-BRIEF/LESSONS-LEDGER.md` (schema is in that file). You don't need to act on it beyond
+logging it; the CEO consolidates confirmed patterns into real rules monthly (see
+`CEO-BRIEF/LEARNING-LOOP.md`). Exception: disclosure requirements, the ASIN quality bar, brand
+voice, and everything in "Always escalate" above are never subject to this loop — no observed
+metric improvement justifies loosening them; that requires Cameron directly.
