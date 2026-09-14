@@ -1,8 +1,12 @@
 {
-  "_comment": "Calm & Oak Awin publisher (affiliate) ID is 2895187. Fill in each merchant's Awin Advertiser ID (awinmid) AFTER you are approved for their program in Awin (Advertisers -> program -> 'Advertiser ID'). Then `node _awin.js etsy <productUrl>` generates a tracked link. Empty = not joined yet.",
+  "_comment": "Calm & Oak Awin publisher (affiliate) ID is 2895187. Fill in each merchant's Awin Advertiser ID (awinmid) AFTER you are approved for their program in Awin (Advertisers -> program -> 'Advertiser ID'). Then `node _awin.js <merchant> <productUrl>` generates a tracked link. Empty = not joined yet. joydeco/monvane added 2026-09-14 -- confirmed live via real awin1.com/cread.php links already in production use (06 Content/Pin Queue/_Blotato-Push-Plan.md), not just a claim. lumary/kingkoil are UNVERIFIED -- a 2026-09-01 note claimed 4 merchants joined but only these 2 have real evidence; do not trust lumary/kingkoil until confirmed against the live Awin dashboard.",
   "merchants": {
     "etsy": "",
     "quince": "",
-    "jennikayne": ""
+    "jennikayne": "",
+    "joydeco": "119863",
+    "monvane": "127859",
+    "lumary": "",
+    "kingkoil": ""
   }
 }
