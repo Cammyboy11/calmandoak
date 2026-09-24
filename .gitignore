@@ -63,3 +63,29 @@ _cardlegacyfix.js
 _asins.json
 _gaplist.json
 assets/img/products-raw/
+_reels/
+
+# Vault (the brain) — kept local/OneDrive, not part of the deployed public site
+Calm & Oak HQ/
+
+# Product/image staging — not deployed (removed from tracking on Cameron machine per FOLDER-MAP-AND-CLEANUP)
+etsy-products/
+05-home-goods/
+05-products-by-day/
+home-preview/
+home-preview2/
+videos-from-gemini/
+DIGITAL-DOWNLOADS/
+_DIGITAL-DOWNLOADS/
+etsy-final-sets/
+etsy-videos/
+etsy-digital-fix/
+etsy-cards/
+etsy-cards-v2/
+etsy-sets/
+_qa/
+_whiten-work/
+_WHITE-for-gelato/
+_shop-cleanup/
+_claude_tmp/
+_to_delete/

@@ -38,3 +38,42 @@ package-lock.json
 package.json
 # Oversized downloadable bundles — exceed CF 25MiB asset cap, cannot be served
 *.zip
+
+05-home-goods/
+*.xlsx
+*.docx
+Cameron_Hayes*
+TFSA*
+error-log-*.txt
+_pre-redesign-backup-2026-09/
+_build_tmp/
+_claude_tmp/
+_affiliate-handoff-2026-09/
+assets/the-edit/_pdf/
+*.exe
+*.bin
+assets/img/print-files/
+etsy-products/
+assets/the-edit/img/
+05-home-goods/print-ready/
+Calm & Oak HQ/
+_to_delete/
+_whiten-work/
+_reels/
+_qa/
+_carousels/
+_WHITE-for-gelato/
+etsy-final-sets/
+etsy-videos/
+etsy-sets/
+etsy-cards/
+etsy-cards-v2/
+etsy-digital-fix/
+videos-from-gemini/
+DIGITAL-DOWNLOADS/
+PHYSICAL-MASTERS/
+_reshoot-batch2/
+_audit-tmp/
+
+# Working folders (2026-09-24)
+Digital Art Test/
