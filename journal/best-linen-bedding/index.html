@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/styles.css?v=19" />
+<link rel="stylesheet" href="/assets/css/co-nav.css?v=2" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?r=8" />
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
@@ -93,22 +94,15 @@
   As an Amazon Associate, Calm &amp; Oak earns from qualifying purchases. <a href="/disclosures/">Read our disclosures</a>.
 </div>
 
-<header class="site-header">
-  <div class="wrap nav">
-    <a href="/" class="brand">Calm <span class="amp">&amp;</span> Oak</a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="/begin-here/">Begin Here</a></li>
-        <li><a href="/shop/">Shop</a></li>
-        <li><a href="/shop/looks/">Looks</a></li>
-        <li><a href="/journal/">Journal</a></li>
-        <li><a href="/shop/prints/">Prints</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-      <button class="nav-toggle">Menu</button>
-    </nav>
-  </div>
-</header>
+<header class="topbar"><div class="wrap topbar__in">
+  <a class="brand" href="/">Calm <span class="amp">&amp;</span> Oak</a>
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__links">
+      <a href="/">Home</a><a class="nav__shop" href="https://shop.calmandoak.com/">Shop</a><a href="/shop/looks/">Rooms &amp; picks</a><a href="/journal/">Journal</a><a href="/the-edit/">Magazine</a><a href="/toolkit/">Tools</a><a href="/#free">Free print</a><a href="/partner/">Partner</a><a href="/about/">About</a>
+    </div>
+    <a class="btn btn--primary btn--sm" href="https://shop.calmandoak.com/">Shop the collection</a>
+  </nav>
+</div></header>
 
 <main>
   <section class="article-hero">
@@ -136,7 +130,7 @@
 
     <aside class="quick-answer" style="background: var(--cream); border: 1px solid rgba(201,123,92,0.25); border-radius: 8px; padding: 1.5rem 1.75rem; margin: 2.5rem 0;">
       <p style="font-family: var(--font-display); font-style: italic; font-size: 1.05rem; margin: 0 0 0.6rem; color: var(--charcoal);">In short</p>
-      <p style="margin: 0;"><strong>Start with the duvet, because it sets the whole room. A <a href="https://www.amazon.com/dp/B01IMZLNBE?tag=calmandoak-20" rel="sponsored nofollow noopener">stonewashed 100% linen duvet cover</a> is the anchor; a <a href="https://www.amazon.com/dp/B0GGB15KZ3?tag=calmandoak-20" rel="sponsored nofollow noopener">cotton waffle-weave cover</a> is the softer, cheaper alternative.</strong> Underneath, choose <a href="https://www.amazon.com/dp/B0BVVVXLN6?tag=calmandoak-20" rel="sponsored nofollow noopener">washed cotton sheets</a> on a budget or <a href="https://www.amazon.com/dp/B073WD5KPX?tag=calmandoak-20" rel="sponsored nofollow noopener">pure French-linen sheets</a> for the real thing. Then layer a <a href="https://www.amazon.com/dp/B0FLPQMKKC?tag=calmandoak-20" rel="sponsored nofollow noopener">textured linen euro sham</a>, a <a href="https://www.amazon.com/dp/B08F48LR45?tag=calmandoak-20" rel="sponsored nofollow noopener">cream knitted throw</a> and <a href="https://www.amazon.com/dp/B0DK21FLCK?tag=calmandoak-20" rel="sponsored nofollow noopener">oatmeal linen curtains</a>. Keep every colour in the oat-to-stone range.</p>
+      <p style="margin: 0;"><strong>Start with the duvet, because it sets the whole room. A <a href="https://www.amazon.com/dp/B01IMZLNBE?tag=calmandoak-20" rel="sponsored nofollow noopener">stonewashed 100% linen duvet cover</a> is the anchor; a <a href="https://www.amazon.com/dp/B0GGB15KZ3?tag=calmandoak-20" rel="sponsored nofollow noopener">cotton waffle-weave cover</a> is the softer, cheaper alternative.</strong> Underneath, choose <a href="https://www.amazon.com/dp/B0BVVVXLN6?tag=calmandoak-20" rel="sponsored nofollow noopener">washed cotton sheets</a> on a budget or <a href="https://www.amazon.com/dp/B073WD5KPX?tag=calmandoak-20" rel="sponsored nofollow noopener">pure French-linen sheets</a> for the real thing. Then layer a <a href="https://www.amazon.com/dp/B0FLPQMKKC?tag=calmandoak-20" rel="sponsored nofollow noopener">textured linen euro sham</a>, a <a href="https://www.amazon.com/dp/B0C61MWTJV?tag=calmandoak-20" rel="sponsored nofollow noopener">cream knitted throw</a> and <a href="https://www.amazon.com/dp/B0DK21FLCK?tag=calmandoak-20" rel="sponsored nofollow noopener">oatmeal linen curtains</a>. Keep every colour in the oat-to-stone range.</p>
     </aside>
 
     <aside class="article-toc" style="background: var(--cream); border-left: 3px solid var(--terracotta); padding: 1.5rem 1.75rem; margin: 2.5rem 0 3rem; border-radius: 4px;">
@@ -201,9 +195,9 @@
 
     <h3>6. Cream knitted throw — the fold at the foot</h3>
     <p>A single throw folded at the foot of the bed is the last soft layer, and a cream knitted cotton throw is the most-reviewed pick in the whole guide: 4.7 stars across more than 5,000 reviews. It is 100% cotton, knitted in a soft cream that reads as warm and natural, machine-washable, and sized to drape across the foot of a bed or over a reading chair. The honest note is that, knitted loosely, it can catch on jewellery or rough surfaces, so it is happiest folded on the bed rather than dragged around — but as the textural, tonal final layer, it is exactly the quiet warmth a Japandi bed wants, and remarkably inexpensive for how much it adds.</p>
-    <a href="https://www.amazon.com/dp/B08F48LR45?tag=calmandoak-20" class="section-product" rel="sponsored nofollow noopener">
-      <figure class="section-product-img"><picture><source type="image/webp" srcset="/assets/img/products-cropped/p-B08F48LR45.webp?r=8"><img src="/assets/img/products-cropped/p-B08F48LR45.jpg?r=8" alt="Longhui cream knitted cotton throw blanket folded at the foot of a bed" loading="lazy" width="800" height="800" /></picture></figure>
-      <div class="section-product-meta"><span class="section-product-name">Cream knitted throw blanket</span><span class="section-product-cta">Shop on Amazon</span></div>
+    <a href="https://www.amazon.com/dp/B0C61MWTJV?tag=calmandoak-20" class="section-product" rel="sponsored nofollow noopener">
+      <figure class="section-product-img"><picture><source type="image/webp" srcset="/assets/img/products-cropped/p-B0C61MWTJV.webp?r=8"><img src="/assets/img/products-cropped/p-B0C61MWTJV.jpg?r=8" alt="Carriediosa Chunky Knit Throw Blanket 60x80, Cream White" loading="lazy" width="800" height="800" /></picture></figure>
+      <div class="section-product-meta"><span class="section-product-name">Carriediosa Chunky Knit Throw Blanket 60x80, Cream White</span><span class="section-product-cta">Shop on Amazon</span></div>
     </a>
 
     <h3>7. Oatmeal linen curtains — the light, softened</h3>
@@ -231,7 +225,7 @@
           <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);"><td style="padding: 0.75rem 1rem; font-weight:500;">Material</td><td style="padding: 0.75rem 1rem;">100% washed cotton</td><td style="padding: 0.75rem 1rem;">100% cotton waffle</td><td style="padding: 0.75rem 1rem;">100% washed linen</td></tr>
           <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);"><td style="padding: 0.75rem 1rem; font-weight:500;">Feel</td><td style="padding: 0.75rem 1rem;">Soft, light, linen-look</td><td style="padding: 0.75rem 1rem;">Textured, breathable</td><td style="padding: 0.75rem 1rem;">Draping, lived-in</td></tr>
           <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);"><td style="padding: 0.75rem 1rem; font-weight:500;">Why this tier</td><td style="padding: 0.75rem 1rem;">Cheapest natural base</td><td style="padding: 0.75rem 1rem;">Texture, low upkeep</td><td style="padding: 0.75rem 1rem;">The genuine linen bed</td></tr>
-          <tr><td style="padding: 0.75rem 1rem; font-weight:500;">Also consider</td><td style="padding: 0.75rem 1rem;"><a href="https://www.amazon.com/dp/B08F48LR45?tag=calmandoak-20" rel="sponsored nofollow noopener">Cream knitted throw</a></td><td style="padding: 0.75rem 1rem;"><a href="https://www.amazon.com/dp/B0FLPQMKKC?tag=calmandoak-20" rel="sponsored nofollow noopener">Linen euro sham pair</a></td><td style="padding: 0.75rem 1rem;"><a href="https://www.amazon.com/dp/B073WD5KPX?tag=calmandoak-20" rel="sponsored nofollow noopener">Pure linen sheets</a></td></tr>
+          <tr><td style="padding: 0.75rem 1rem; font-weight:500;">Also consider</td><td style="padding: 0.75rem 1rem;"><a href="https://www.amazon.com/dp/B0C61MWTJV?tag=calmandoak-20" rel="sponsored nofollow noopener">Cream knitted throw</a></td><td style="padding: 0.75rem 1rem;"><a href="https://www.amazon.com/dp/B0FLPQMKKC?tag=calmandoak-20" rel="sponsored nofollow noopener">Linen euro sham pair</a></td><td style="padding: 0.75rem 1rem;"><a href="https://www.amazon.com/dp/B073WD5KPX?tag=calmandoak-20" rel="sponsored nofollow noopener">Pure linen sheets</a></td></tr>
         </tbody>
       </table>
     </div>
@@ -321,6 +315,6 @@
   </div>
 </footer>
 
-<script src="/assets/js/main.js?v=3" defer></script>
+<script src="/assets/js/main.js?v=4" defer></script>
 </body>
 </html>

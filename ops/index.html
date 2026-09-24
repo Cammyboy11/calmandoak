@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Calm &amp; Oak — Live Ops</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<style>
+:root{color-scheme:light;--bg:#F4EDE1;--card:#fff;--ink:#2E3A2F;--ink2:#5b6b5d;--copper:#B0673C;--line:#e4ddcf;--sage:#7d8a72;--green:#3a7d44;--amber:#c8892f;--red:#b23b3b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5}
+.wrap{max-width:1120px;margin:0 auto;padding:18px 16px 70px}
+h1{font-family:Georgia,serif;font-size:28px;margin:0;font-weight:600}
+.sub{color:var(--ink2);margin:2px 0 14px;font-size:12.5px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:5;border-bottom:1px solid var(--line)}
+.tab{padding:7px 13px;border:1px solid var(--line);border-radius:20px;background:#fff;cursor:pointer;font-size:12.5px;font-weight:600;color:var(--ink2)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{display:none;padding-top:14px}.panel.on{display:block}
+h2{font-size:14px;letter-spacing:.03em;text-transform:uppercase;color:var(--copper);margin:20px 0 10px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;position:relative}
+.stat .n{font-size:25px;font-weight:700;font-family:Georgia,serif}.stat .l{color:var(--ink2);font-size:11.5px;margin-top:2px}
+.stat .src{position:absolute;top:10px;right:10px;width:8px;height:8px;border-radius:50%;background:#ccc}
+.stat .src.live{background:var(--green)}.stat .src.off{background:#d9cdb6}.stat .src.err{background:var(--red)}
+.row{display:flex;flex-wrap:wrap;gap:12px}.col{flex:1;min-width:280px}
+.a{color:var(--copper);text-decoration:none;font-weight:600}.a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--ink);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:600;cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn.sm{padding:4px 9px;font-size:11.5px}
+input{padding:6px;border:1px solid var(--line);border-radius:7px;font-size:13px;font-family:inherit;background:#fff}
+label{font-size:11px;color:var(--ink2);display:block;margin-bottom:2px}
+.fld{display:flex;gap:8px;flex-wrap:wrap;align-items:end}
+.chartbox{position:relative;height:190px;margin-top:10px}
+.muted{color:var(--ink2);font-size:12px}
+.bar{height:9px;border-radius:6px;background:#eadfca;overflow:hidden;margin-top:5px}.bar>span{display:block;height:100%;background:var(--copper)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--ink2);font-size:11px;text-transform:uppercase}
+td.num,th.num{text-align:right}
+.note{background:#fbf6ec;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12.5px;color:var(--ink2)}
+.pill{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;color:#fff}
+.p-live{background:var(--green)}.p-off{background:#b8ac93}.p-err{background:var(--red)}
+.geobar{display:flex;align-items:center;gap:8px;margin:4px 0}
+.geobar .lab{width:120px;font-size:12px}.geobar .track{flex:1;height:8px;background:#eadfca;border-radius:6px;overflow:hidden}.geobar .track>span{display:block;height:100%;background:var(--sage)}
+.geobar .v{width:52px;text-align:right;font-size:12px;font-weight:600}
+#setup{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.links a{display:inline-block;margin:0 12px 8px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Calm &amp; Oak — Live Ops</h1>
+  <p class="sub">Live from your services. <span id="updated" class="muted"></span> <a href="#" class="a" id="refresh">Refresh ↻</a></p>
+
+  <div id="setup" style="display:none">
+    <strong>One-time setup</strong>
+    <p class="muted" style="margin:6px 0">Paste the URL your <code>calmandoak-metrics</code> Worker printed on deploy, and the dashboard token if you set one. Stored only in this browser.</p>
+    <div class="fld">
+      <div style="flex:1;min-width:260px"><label>Metrics API URL</label><input id="cfg-url" style="width:100%" placeholder="https://calmandoak-metrics.xxxx.workers.dev"></div>
+      <div><label>Token (optional)</label><input id="cfg-tok" placeholder="DASH_TOKEN"></div>
+      <button class="btn" id="cfg-save">Save &amp; load</button>
+    </div>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+
+  <!-- LIVE -->
+  <div class="panel on" data-p="live">
+    <div class="stats">
+      <div class="stat"><span class="src" id="src-gsc"></span><div class="n" id="s-clicks">…</div><div class="l">GSC clicks (28d)</div></div>
+      <div class="stat"><span class="src" id="src-cf"></span><div class="n" id="s-visits">…</div><div class="l">Website visits (7d)</div></div>
+      <div class="stat"><span class="src" id="src-ml"></span><div class="n" id="s-subs">…</div><div class="l">Email subscribers</div></div>
+      <div class="stat"><span class="src" id="src-awin"></span><div class="n" id="s-awin">…</div><div class="l">Awin commission (MTD)</div></div>
+      <div class="stat"><span class="src off"></span><div class="n" id="s-amz">$—</div><div class="l">Amazon est. (manual)</div></div>
+      <div class="stat"><span class="src" id="src-bl"></span><div class="n" id="s-queue">…</div><div class="l">Posts queued</div></div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h2>Search — trending queries</h2>
+        <div class="card"><table id="t-queries"><tr><th>Query</th><th class="num">Clicks</th><th class="num">Impr.</th><th class="num">Pos.</th></tr></table></div>
+      </div>
+      <div class="col">
+        <h2>Search — top pages</h2>
+        <div class="card"><table id="t-pages"><tr><th>Page</th><th class="num">Clicks</th><th class="num">Pos.</th></tr></table></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h2>Visitors — where from</h2>
+        <div class="card"><div id="geo"><span class="muted">…</span></div></div>
+      </div>
+      <div class="col">
+        <h2>Visitors — last 7 days</h2>
+        <div class="card"><div class="chartbox" style="height:170px"><canvas id="c-visits"></canvas></div></div>
+      </div>
+    </div>
+
+    <h2>Next posts out (Blotato)</h2>
+    <div class="card"><div id="posts"><span class="muted">…</span></div></div>
+
+    <div id="errors"></div>
+  </div>
+
+  <!-- AFFILIATE / AMAZON -->
+  <div class="panel" data-p="affiliate">
+    <h2>Awin (live)</h2>
+    <div class="card"><div id="awin-detail"><span class="muted">…</span></div></div>
+    <h2>Amazon Associates (manual — no API exists)</h2>
+    <div class="card">
+      <p class="muted">Amazon has no reporting API, so log the figures from your Associates dashboard here to keep them beside everything else.</p>
+      <div class="fld">
+        <div><label>Month</label><input type="month" id="amz-month"></div>
+        <div><label>Clicks</label><input type="number" id="amz-clicks" style="width:90px"></div>
+        <div><label>Earnings $</label><input type="number" id="amz-earn" style="width:100px"></div>
+        <button class="btn" id="amz-save">Save</button>
+        <a class="btn ghost" href="https://affiliate-program.amazon.com/home/reports" target="_blank" rel="noopener">Open Associates ↗</a>
+      </div>
+      <table id="amz-table" style="margin-top:10px"></table>
+    </div>
+  </div>
+
+  <!-- PROGRESS vs PLAN (projections) -->
+  <div class="panel" data-p="plan">
+    <div class="note">Targets from <strong>REVENUE-MODEL.md / GROWTH-PLAN</strong> — the yardstick, kept separate from the live numbers above.</div>
+    <h2>Revenue vs plan</h2>
+    <div class="card">
+      <div class="fld" style="margin-bottom:8px">
+        <div><label>Month</label><input type="month" id="rv-month"></div>
+        <div><label>Etsy $</label><input type="number" id="rv-etsy" style="width:80px"></div>
+        <div><label>Payhip $</label><input type="number" id="rv-payhip" style="width:80px"></div>
+        <div><label>Affiliate $</label><input type="number" id="rv-aff" style="width:80px"></div>
+        <button class="btn" id="rv-save">Save month</button>
+      </div>
+      <div class="chartbox" style="height:210px"><canvas id="c-rev"></canvas></div>
+      <table id="rev-table" style="margin-top:8px"></table>
+      <p class="muted">Target curve: Jun $450 · Jul $1.45k · Aug $3.5k · Sep $6.5k · Oct $11k · Nov $17k+. Annual run-rate goal: $2M across 6 streams.</p>
+    </div>
+    <h2>6-month milestones</h2>
+    <div class="card" id="milestones"></div>
+  </div>
+
+  <!-- LINKS -->
+  <div class="panel" data-p="links">
+    <div class="card links">
+      <a class="a" href="https://calmandoak.com" target="_blank" rel="noopener">Website ↗</a>
+      <a class="a" href="https://www.etsy.com/your/shops/me/stats" target="_blank" rel="noopener">Etsy Stats ↗</a>
+      <a class="a" href="https://affiliate-program.amazon.com/home/reports" target="_blank" rel="noopener">Amazon Associates ↗</a>
+      <a class="a" href="https://ui.awin.com/" target="_blank" rel="noopener">Awin ↗</a>
+      <a class="a" href="https://search.google.com/search-console?resource_id=sc-domain:calmandoak.com" target="_blank" rel="noopener">Search Console ↗</a>
+      <a class="a" href="https://dashboard.mailerlite.com" target="_blank" rel="noopener">MailerLite ↗</a>
+      <a class="a" href="https://my.blotato.com/queue/calendar" target="_blank" rel="noopener">Blotato ↗</a>
+      <a class="a" href="https://dash.cloudflare.com" target="_blank" rel="noopener">Cloudflare ↗</a>
+    </div>
+    <div class="card">
+      <strong>Source status</strong>
+      <div id="statuslist" style="margin-top:8px"></div>
+      <p class="muted" style="margin-top:8px">Green = live · grey = key not added yet · red = configured but erroring.</p>
+      <button class="btn ghost sm" id="reconfig">Change API URL / token</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const TABS=[['live','Live'],['affiliate','Affiliate'],['plan','Progress vs Plan'],['links','Links & status']];
+const tabsEl=document.getElementById('tabs');
+TABS.forEach(([k,l],i)=>{const b=document.createElement('div');b.className='tab'+(i===0?' on':'');b.textContent=l;b.onclick=()=>show(k,b);tabsEl.appendChild(b);});
+function show(k,btn){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));btn.classList.add('on');
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.dataset.p===k));
+  if(k==='plan'){renderRev();renderMilestones();}}
+
+/* ---------- local store ---------- */
+function db(){try{return JSON.parse(localStorage.getItem('co_ops2')||'{}')}catch(e){return{}}}
+function save(d){localStorage.setItem('co_ops2',JSON.stringify(d))}
+function g(k,def){const d=db();return d[k]!==undefined?d[k]:def}
+function set(k,v){const d=db();d[k]=v;save(d)}
+
+/* ---------- config ---------- */
+function cfg(){return {url:g('apiUrl',''),tok:g('apiTok','')};}
+function needSetup(){return !cfg().url;}
+document.getElementById('cfg-save').onclick=()=>{
+  set('apiUrl',(document.getElementById('cfg-url').value||'').trim().replace(/\/+$/,''));
+  set('apiTok',(document.getElementById('cfg-tok').value||'').trim());
+  document.getElementById('setup').style.display='none';loadLive();};
+document.getElementById('reconfig').onclick=()=>{const s=document.getElementById('setup');s.style.display='block';
+  document.getElementById('cfg-url').value=cfg().url;document.getElementById('cfg-tok').value=cfg().tok;window.scrollTo(0,0);};
+document.getElementById('refresh').onclick=(e)=>{e.preventDefault();loadLive(true);};
+
+/* ---------- live load ---------- */
+function dot(id,state){const el=document.getElementById(id);if(el)el.className='src '+state;}
+let visChart;
+async function loadLive(fresh){
+  if(needSetup()){document.getElementById('setup').style.display='block';return;}
+  const {url,tok}=cfg();const q=(tok?('key='+encodeURIComponent(tok)+'&'):'')+(fresh?'fresh=1':'');
+  let data;
+  try{
+    const r=await fetch(url+'/?'+q,{cache:'no-store'});
+    data=await r.json();
+  }catch(e){document.getElementById('errors').innerHTML='<div class="note">Could not reach the metrics API. Check the URL/token in Links &amp; status. ('+(e.message||e)+')</div>';return;}
+  const s=data.sources||{};
+  renderStatus(s);
+  // GSC
+  if(s.gsc&&s.gsc.ok){dot('src-gsc','live');document.getElementById('s-clicks').textContent=s.gsc.clicks;
+    fillQueries(s.gsc.topQueries||[]);fillPages(s.gsc.topPages||[]);}
+  else{dot('src-gsc',s.gsc&&s.gsc.reason&&/not set/.test(s.gsc.reason)?'off':'err');document.getElementById('s-clicks').textContent='—';}
+  // Cloudflare
+  if(s.cloudflare&&s.cloudflare.ok){dot('src-cf','live');document.getElementById('s-visits').textContent=fmt(s.cloudflare.visits);
+    renderGeo(s.cloudflare.byCountry||[]);renderVisChart(s.cloudflare.byDay||[]);}
+  else{dot('src-cf',offOrErr(s.cloudflare));document.getElementById('s-visits').textContent='—';
+    document.getElementById('geo').innerHTML='<span class="muted">'+reason(s.cloudflare)+'</span>';}
+  // MailerLite
+  if(s.mailerlite&&s.mailerlite.ok){dot('src-ml','live');document.getElementById('s-subs').textContent=fmt(s.mailerlite.subscribers);}
+  else{dot('src-ml',offOrErr(s.mailerlite));document.getElementById('s-subs').textContent='—';}
+  // Awin
+  if(s.awin&&s.awin.ok){dot('src-awin','live');document.getElementById('s-awin').textContent=cur(s.awin.commission,s.awin.currency);renderAwin(s.awin);}
+  else{dot('src-awin',offOrErr(s.awin));document.getElementById('s-awin').textContent='—';
+    document.getElementById('awin-detail').innerHTML='<span class="muted">'+reason(s.awin)+'</span>';}
+  // Blotato
+  if(s.blotato&&s.blotato.ok){dot('src-bl','live');document.getElementById('s-queue').textContent=s.blotato.queued;renderPosts(s.blotato.upcoming||[]);}
+  else{dot('src-bl',offOrErr(s.blotato));document.getElementById('s-queue').textContent='—';
+    document.getElementById('posts').innerHTML='<span class="muted">'+reason(s.blotato)+' — posts stay live in the pinned app dashboard.</span>';}
+  document.getElementById('updated').textContent='· '+new Date().toLocaleString();
+  renderTopStats();
+}
+function offOrErr(o){return (o&&o.reason&&/not set|not all set/.test(o.reason))?'off':'err';}
+function reason(o){return o&&o.reason?o.reason:'no data';}
+function fmt(n){return (n==null)?'—':Number(n).toLocaleString();}
+function cur(n,c){if(n==null)return '—';const sym={GBP:'£',USD:'$',EUR:'€'}[c]||'';return sym+Number(n).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});}
+
+function fillQueries(rows){let t='<tr><th>Query</th><th class="num">Clicks</th><th class="num">Impr.</th><th class="num">Pos.</th></tr>';
+  rows.forEach(r=>t+='<tr><td>'+esc(r.query)+'</td><td class="num">'+r.clicks+'</td><td class="num">'+r.impressions+'</td><td class="num">'+r.position+'</td></tr>');
+  document.getElementById('t-queries').innerHTML=t||'';if(!rows.length)document.getElementById('t-queries').innerHTML+='<tr><td colspan=4 class="muted">no data</td></tr>';}
+function fillPages(rows){let t='<tr><th>Page</th><th class="num">Clicks</th><th class="num">Pos.</th></tr>';
+  rows.forEach(r=>{const p=(r.page||'').replace(/^https?:\/\/[^/]+/,'')||'/';t+='<tr><td>'+esc(p)+'</td><td class="num">'+r.clicks+'</td><td class="num">'+r.position+'</td></tr>';});
+  document.getElementById('t-pages').innerHTML=t;}
+function renderGeo(rows){const max=Math.max(1,...rows.map(r=>r.pageviews));
+  document.getElementById('geo').innerHTML=rows.slice(0,10).map(r=>'<div class="geobar"><span class="lab">'+esc(r.country||'—')+'</span><span class="track"><span style="width:'+Math.round(r.pageviews/max*100)+'%"></span></span><span class="v">'+r.pageviews+'</span></div>').join('')||'<span class="muted">no data</span>';}
+function renderVisChart(rows){const ctx=document.getElementById('c-visits');if(!ctx)return;if(visChart)visChart.destroy();
+  visChart=new Chart(ctx,{type:'line',data:{labels:rows.map(r=>r.date.slice(5)),datasets:[{label:'Pageviews',data:rows.map(r=>r.pageviews),borderColor:'#B0673C',backgroundColor:'#B0673C22',fill:true,tension:.3,pointRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});}
+function renderPosts(rows){document.getElementById('posts').innerHTML=rows.slice(0,12).map(p=>'<div style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid var(--line)"><span class="pill p-live" style="background:#7d8a72">'+esc(p.platform)+'</span><span style="flex:1">'+esc((p.text||'').slice(0,90))+'</span><span class="muted">'+new Date(p.postTime).toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+'</span></div>').join('')||'<span class="muted">queue empty</span>';}
+function renderAwin(a){document.getElementById('awin-detail').innerHTML='<div class="stats"><div class="stat"><div class="n">'+a.clicks+'</div><div class="l">Clicks (MTD)</div></div><div class="stat"><div class="n">'+cur(a.commission,a.currency)+'</div><div class="l">Commission</div></div><div class="stat"><div class="n">'+a.sales+'</div><div class="l">Transactions</div></div><div class="stat"><div class="n">'+cur(a.saleAmount,a.currency)+'</div><div class="l">Sale value</div></div></div><p class="muted">'+a.advertisers+' advertiser program(s) · '+a.period.start+' → '+a.period.end+'</p>';}
+
+function renderStatus(s){const map=[['GSC','gsc'],['Cloudflare visitors','cloudflare'],['MailerLite','mailerlite'],['Awin','awin'],['Blotato','blotato']];
+  document.getElementById('statuslist').innerHTML=map.map(([label,k])=>{const o=s[k]||{};const cls=o.ok?'p-live':(o.reason&&/not set|not all set/.test(o.reason)?'p-off':'p-err');const txt=o.ok?'live':(o.reason||'off');return '<div style="margin:5px 0"><span class="pill '+cls+'">'+(o.ok?'LIVE':(cls==='p-off'?'ADD KEY':'ERROR'))+'</span> <strong>'+label+'</strong> <span class="muted">'+esc(txt)+'</span></div>';}).join('')
+    +'<div style="margin:5px 0"><span class="pill p-off">MANUAL</span> <strong>Amazon Associates</strong> <span class="muted">no API — enter on the Affiliate tab</span></div>';}
+function renderTopStats(){const a=g('amz',{});const mk=new Date().toISOString().slice(0,7);document.getElementById('s-amz').textContent=a[mk]?('$'+a[mk].earn):'$—';}
+
+/* ---------- Amazon manual ---------- */
+document.getElementById('amz-save').onclick=()=>{const m=document.getElementById('amz-month').value;if(!m)return;const a=g('amz',{});
+  a[m]={clicks:+document.getElementById('amz-clicks').value||0,earn:+document.getElementById('amz-earn').value||0};set('amz',a);renderAmz();renderTopStats();};
+function renderAmz(){const a=g('amz',{});let t='<tr><th>Month</th><th class="num">Clicks</th><th class="num">Earnings</th></tr>';
+  Object.keys(a).sort().reverse().forEach(m=>t+='<tr><td>'+m+'</td><td class="num">'+a[m].clicks+'</td><td class="num">$'+a[m].earn+'</td></tr>');
+  document.getElementById('amz-table').innerHTML=t;}
+
+/* ---------- revenue vs plan ---------- */
+const TGT={'2026-06':450,'2026-07':1450,'2026-08':3500,'2026-09':6500,'2026-10':11000,'2026-11':17000};
+document.getElementById('rv-save').onclick=()=>{const m=document.getElementById('rv-month').value;if(!m)return;const rev=g('rev',{});
+  rev[m]={etsy:+document.getElementById('rv-etsy').value||0,payhip:+document.getElementById('rv-payhip').value||0,aff:+document.getElementById('rv-aff').value||0};set('rev',rev);renderRev();};
+function mtot(o){return o?(o.etsy+o.payhip+o.aff):0}
+let revChart;
+function renderRev(){const rev=g('rev',{});const months=Object.keys(TGT);const ctx=document.getElementById('c-rev');if(!ctx)return;if(revChart)revChart.destroy();
+  revChart=new Chart(ctx,{data:{labels:months.map(m=>m.slice(5)),datasets:[{type:'bar',label:'Actual $',data:months.map(m=>mtot(rev[m])),backgroundColor:'#B0673C'},{type:'line',label:'Target $',data:months.map(m=>TGT[m]),borderColor:'#2E3A2F',tension:.3,pointRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{boxWidth:10,font:{size:10}}}},scales:{y:{beginAtZero:true}}}});
+  let t='<tr><th>Month</th><th class="num">Etsy</th><th class="num">Payhip</th><th class="num">Affiliate</th><th class="num">Total</th><th class="num">vs target</th></tr>';
+  months.forEach(m=>{const o=rev[m];const tot=mtot(o);t+='<tr><td>'+m+'</td><td class="num">$'+(o?o.etsy:0)+'</td><td class="num">$'+(o?o.payhip:0)+'</td><td class="num">$'+(o?o.aff:0)+'</td><td class="num"><strong>$'+tot+'</strong></td><td class="num muted">'+Math.round(tot/TGT[m]*100)+'%</td></tr>';});
+  document.getElementById('rev-table').innerHTML=t;}
+function renderMilestones(){const items=[['Indexed pages',g('indexed',0),90],['Monthly GSC clicks',document.getElementById('s-clicks').textContent.replace('—','0')|0,300],['Email subscribers',document.getElementById('s-subs').textContent.replace(/[^\d]/g,'')|0,250],['Quality backlinks',g('backlinks',0),5],['Fresh pins / mo',g('pins',0),100]];
+  document.getElementById('milestones').innerHTML=items.map(([l,v,t])=>{const pct=Math.min(100,Math.round(v/t*100));return '<div style="margin:8px 0"><div style="display:flex;justify-content:space-between"><span>'+l+' → '+t+'</span><strong>'+v+'</strong></div><div class="bar"><span style="width:'+pct+'%"></span></div></div>';}).join('');}
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+/* init */
+document.getElementById('rv-month').value=new Date().toISOString().slice(0,7);
+document.getElementById('amz-month').value=new Date().toISOString().slice(0,7);
+renderAmz();renderRev();renderTopStats();
+if(needSetup())document.getElementById('setup').style.display='block';else loadLive();
+</script>
+</body>
+</html>

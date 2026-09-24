@@ -21,6 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/styles.css?v=19" />
+<link rel="stylesheet" href="/assets/css/co-nav.css?v=2" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?r=8" />
 <link rel="mask-icon" href="/assets/img/favicon.svg" color="#C97B5C" />
@@ -60,23 +61,15 @@
   As an Amazon Associate, Calm & Oak earns from qualifying purchases. <a href="/disclosures/">Read our disclosures</a>.
 </div>
 
-<header class="site-header">
-  <div class="wrap nav">
-    <a href="/" class="brand" aria-label="Calm & Oak home">Calm <span class="amp">&amp;</span> Oak</a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="/begin-here/">Begin Here</a></li>
-        <li><a href="/shop/">Shop</a></li>
-        <li><a href="/shop/looks/">Looks</a></li>
-        <li><a href="/journal/">Journal</a></li>
-        <li><a href="/shop/prints/">Prints</a></li>
-        <li><a href="/shop/frames/">Frames</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation">Menu</button>
-    </nav>
-  </div>
-</header>
+<header class="topbar"><div class="wrap topbar__in">
+  <a class="brand" href="/">Calm <span class="amp">&amp;</span> Oak</a>
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__links">
+      <a href="/">Home</a><a class="nav__shop" href="https://shop.calmandoak.com/">Shop</a><a href="/shop/looks/">Rooms &amp; picks</a><a href="/journal/">Journal</a><a href="/the-edit/">Magazine</a><a href="/toolkit/">Tools</a><a href="/#free">Free print</a><a href="/partner/">Partner</a><a href="/about/">About</a>
+    </div>
+    <a class="btn btn--primary btn--sm" href="https://shop.calmandoak.com/">Shop the collection</a>
+  </nav>
+</div></header>
 
 <main>
   <article class="section">
@@ -102,7 +95,7 @@
         <p>Buy the instant <strong>digital download</strong> and print it yourself at home or at any print shop — or order it <strong>printed to order</strong> on heavyweight museum-matte paper, shipped to your door.</p>
         <div style="display:flex; flex-wrap:wrap; gap:0.7rem; margin: 1.4rem 0 0.6rem;">
           <a class="btn btn--primary payhip-buy-button" data-digital="layers" data-product="vdx6q" data-digital-label href="https://payhip.com/b/vdx6q">Buy digital download — $14</a>
-          <a class="btn btn--ghost" data-etsy-print="layers" href="https://www.etsy.com/listing/4514689937/color-field-landscape-print-earth-tone">Shop the print on Etsy <span class="arrow">→</span></a>
+          <a class="btn btn--ghost" data-etsy-print="layers" href="https://www.etsy.com/listing/4560300071/layers-earth-tone-abstract-art-japandi">Shop the print on Etsy <span class="arrow">→</span></a>
         </div>
         <small style="color:var(--graphite);">Digital files are for personal use. Physical prints are fulfilled and shipped via our print partner.</small>
 
@@ -165,8 +158,8 @@
   </div>
 </footer>
 
-<script src="/assets/js/print-links.js?v=3" defer></script>
-<script src="/assets/js/main.js?v=3" defer></script>
+<script src="/assets/js/print-links.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=4" defer></script>
 <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
 </body>
 </html>

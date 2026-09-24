@@ -171,52 +171,101 @@
       chips.forEach((c) => { const a = c.getAttribute('data-filter') === f; c.classList.toggle('is-active', a); c.setAttribute('aria-selected', a ? 'true' : 'false'); });
       if (empty) empty.hidden = shown !== 0;
     };
-    chips.forEach((chip) => {
-      chip.addEventListener('click', () => apply(chip.getAttribute('data-filter')));
-    });
-    apply('all');
+    chips.forEach((c) => c.addEventListener('click', () => apply(c.getAttribute('data-filter'))));
   });
 
-  // ----- Amazon storefront links (Calm & Oak Influencer storefront) -----
+  // ----- Year stamp -----
+  const y = document.querySelector('[data-year]');
+  if (y) y.textContent = new Date().getFullYear();
+})();
+
+/* ---- Amazon room Idea List deep-links (Calm & Oak, added 2026-08) ---- */
+(function () {
   var STOREFRONT_URL = 'https://www.amazon.com/shop/calmandoak';
-
-  // (1) Low-key "Amazon Storefront" link in the footer "Shop" column, site-wide.
-  document.querySelectorAll('.site-footer h4').forEach((h) => {
-    if (h.textContent.trim().toLowerCase() !== 'shop') return;
-    const ul = h.nextElementSibling;
-    if (!ul || ul.tagName !== 'UL' || ul.querySelector('a[data-amz-storefront]')) return;
-    const li = document.createElement('li');
-    const a = document.createElement('a');
-    a.href = STOREFRONT_URL;
-    a.target = '_blank';
-    a.rel = 'noopener nofollow sponsored';
-    a.textContent = 'Amazon Storefront';
-    a.setAttribute('data-amz-storefront', '');
-    li.appendChild(a);
-    ul.appendChild(li);
-  });
-
-  // (2) A single tasteful "shop on Amazon" band above the footer, only on journal
-  //     articles and Looks pages — where a reader is already picturing a room.
-  //     No pop-ups, no sticky bars, no repeated mid-article nags.
-  (function () {
-    const p = location.pathname;
-    const isArticle = /^\/journal\/.+/.test(p) && p !== '/journal/';
-    const isLook = /^\/shop\/looks(\/|$)/.test(p);
-    if (!isArticle && !isLook) return;
-    const footer = document.querySelector('.site-footer');
-    if (!footer || document.querySelector('.amz-storefront-band')) return;
-    const sec = document.createElement('section');
-    sec.className = 'amz-storefront-band';
-    sec.setAttribute('aria-label', 'Shop on Amazon');
-    sec.style.cssText = 'background:var(--cream,#EFE8DA);border-top:1px solid rgba(42,42,40,.08);';
-    sec.innerHTML =
-      '<div style="max-width:720px;margin:0 auto;padding:2.6rem 1.2rem;text-align:center;">'
-      + '<p style="font-family:var(--serif,\'Cormorant Garamond\',Georgia,serif);font-size:1.55rem;color:var(--charcoal,#2A2A28);margin:0 0 .5rem;">Prefer to shop on Amazon?</p>'
-      + '<p style="color:var(--charcoal,#2A2A28);opacity:.82;margin:0 0 1.3rem;line-height:1.65;">Browse the pieces we love in our Amazon storefront &mdash; hand-picked for quiet materials and natural texture, organised room by room.</p>'
-      + '<a href="' + STOREFRONT_URL + '" target="_blank" rel="noopener nofollow sponsored" style="display:inline-block;padding:.8rem 1.7rem;border:1px solid var(--charcoal,#2A2A28);border-radius:2px;color:var(--charcoal,#2A2A28);text-decoration:none;letter-spacing:.05em;font-size:.8rem;text-transform:uppercase;">Visit our Amazon storefront &rarr;</a>'
-      + '</div>';
-    footer.parentNode.insertBefore(sec, footer);
-  })();
-
+  var LIST_BASE = 'https://www.amazon.com/shop/calmandoak/list/';
+  var ROOM_LISTS = {
+    office:   { id: '1ZRH5KN0IUVFY', label: 'home office' },
+    bedroom:  { id: '2QNFB861X8Y6T', label: 'bedroom' },
+    dining:   { id: '25BKRYU1SFKDV', label: 'dining table' },
+    living:   { id: '1XG2XCLNPEM51', label: 'living room' },
+    entryway: { id: '1RR1LNCW2G32F', label: 'entryway' },
+    kitchen:  { id: '3VH3UVNQCJEZK', label: 'kitchen' },
+    bathroom: { id: '3VM7YK73QZ5US', label: 'bathroom' }
+  };
+  var PAGE_ROOM = {
+    '/journal/japandi-home-office': 'office',
+    '/journal/400-dollar-home-office': 'office',
+    '/journal/japandi-desk': 'office',
+    '/journal/best-japandi-desks': 'office',
+    '/journal/best-japandi-desk-accessories': 'office',
+    '/journal/best-japandi-office-chairs': 'office',
+    '/journal/japandi-bedroom': 'bedroom',
+    '/journal/budget-japandi-bedroom': 'bedroom',
+    '/journal/400-dollar-small-bedroom': 'bedroom',
+    '/journal/best-japandi-bed-frames': 'bedroom',
+    '/journal/best-japandi-nightstands': 'bedroom',
+    '/journal/nightstand-styling': 'bedroom',
+    '/journal/250-dollar-bedside-refresh': 'bedroom',
+    '/journal/best-linen-bedding': 'bedroom',
+    '/journal/300-dollar-closet-capsule': 'bedroom',
+    '/journal/quiet-wardrobe': 'bedroom',
+    '/journal/japandi-dining-room': 'dining',
+    '/journal/500-dollar-dining-table-set': 'dining',
+    '/journal/japandi-living-room': 'living',
+    '/journal/300-dollar-living-room-textile-refresh': 'living',
+    '/journal/sofa-buying-guide': 'living',
+    '/journal/best-japandi-sofa-coffee-table': 'living',
+    '/journal/400-dollar-reading-nook': 'living',
+    '/journal/japandi-entryway': 'entryway',
+    '/journal/200-dollar-entryway-organizer': 'entryway',
+    '/journal/300-dollar-entryway': 'entryway',
+    '/journal/sunday-morning-kitchen': 'kitchen',
+    '/journal/why-your-kitchen-needs-a-tray': 'kitchen',
+    '/journal/japandi-bathroom': 'bathroom',
+    '/journal/250-dollar-bathroom': 'bathroom',
+    '/shop/looks/the-japandi-workspace': 'office',
+    '/shop/looks/quiet-japandi-bedroom': 'bedroom',
+    '/shop/looks/the-sage-bedroom': 'bedroom',
+    '/shop/looks/the-calm-nightstand': 'bedroom',
+    '/shop/looks/the-evening-dining-table': 'dining',
+    '/shop/looks/quiet-living-room': 'living',
+    '/shop/looks/the-layered-living-room': 'living',
+    '/shop/looks/soft-lit-reading-nook': 'living',
+    '/shop/looks/the-lit-entryway': 'entryway',
+    '/shop/looks/the-sunday-kitchen': 'kitchen',
+    '/shop/looks/the-spa-bathroom': 'bathroom',
+    '/shop/office': 'office',
+    '/shop/bedroom': 'bedroom',
+    '/shop/dining': 'dining',
+    '/shop/ceramics-tableware': 'dining',
+    '/shop/japandi-kitchen': 'kitchen',
+    '/shop/living-room': 'living'
+  };
+  var p = location.pathname.replace(/\/+$/, '');
+  if (p === '') p = '/';
+  var isArticle = /^\/journal\/.+/.test(p);
+  var isLook = /^\/shop\/looks\/.+/.test(p);
+  var roomKey = PAGE_ROOM[p] || null;
+  var isRoomShop = !!roomKey && /^\/shop\//.test(p) && !isLook;
+  if (!isArticle && !isLook && !isRoomShop) return;
+  var footer = document.querySelector('.site-footer');
+  if (!footer || document.querySelector('.amz-storefront-band')) return;
+  var room = roomKey ? ROOM_LISTS[roomKey] : null;
+  var href = room ? (LIST_BASE + room.id + '?tag=calmandoak-20') : STOREFRONT_URL;
+  var heading = room ? ('Shop this ' + room.label + ' on Amazon') : 'Prefer to shop on Amazon?';
+  var body = room
+    ? ('Every piece in this ' + room.label + ' &mdash; hand-picked for quiet materials and natural texture &mdash; gathered in one Amazon list.')
+    : 'Browse the pieces we love in our Amazon storefront &mdash; hand-picked for quiet materials and natural texture, organised room by room.';
+  var cta = room ? ('Shop the ' + room.label + ' &rarr;') : 'Visit our Amazon storefront &rarr;';
+  var sec = document.createElement('section');
+  sec.className = 'amz-storefront-band';
+  sec.setAttribute('aria-label', 'Shop on Amazon');
+  sec.style.cssText = 'background:var(--cream,#EFE8DA);border-top:1px solid rgba(42,42,40,.08);';
+  sec.innerHTML =
+    '<div style="max-width:720px;margin:0 auto;padding:2.6rem 1.2rem;text-align:center;">'
+    + '<p style="font-family:var(--serif,\'Cormorant Garamond\',Georgia,serif);font-size:1.55rem;color:var(--charcoal,#2A2A28);margin:0 0 .5rem;">' + heading + '</p>'
+    + '<p style="color:var(--charcoal,#2A2A28);opacity:.82;margin:0 0 1.3rem;line-height:1.65;">' + body + '</p>'
+    + '<a href="' + href + '" target="_blank" rel="noopener nofollow sponsored" style="display:inline-block;padding:.8rem 1.7rem;border:1px solid var(--charcoal,#2A2A28);border-radius:2px;color:var(--charcoal,#2A2A28);text-decoration:none;letter-spacing:.05em;font-size:.8rem;text-transform:uppercase;">' + cta + '</a>'
+    + '</div>';
+  footer.parentNode.insertBefore(sec, footer);
 })();

@@ -96,6 +96,9 @@
   <url><loc>https://calmandoak.com/shop/looks/the-soft-porch/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://calmandoak.com/shop/looks/the-spa-bathroom/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://calmandoak.com/shop/looks/the-sunday-kitchen/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://calmandoak.com/shop/looks/the-rattan-hour/</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://calmandoak.com/shop/looks/the-considered-bar-cart/</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://calmandoak.com/shop/looks/warm-minimal-living-room/</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://calmandoak.com/shop/prints/enso/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://calmandoak.com/shop/prints/bent-reed/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://calmandoak.com/shop/prints/crane/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -137,9 +140,6 @@
   <url><loc>https://calmandoak.com/journal/where-to-buy-wabi-sabi-ceramics/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://calmandoak.com/journal/best-japandi-lighting/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://calmandoak.com/journal/best-linen-bedding/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://calmandoak.com/journal/best-japandi-sofa-coffee-table/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://calmandoak.com/journal/best-japandi-nightstands/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://calmandoak.com/journal/best-japandi-bed-frames/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://calmandoak.com/journal/japandi-desk/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://calmandoak.com/shop/frames/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://calmandoak.com/shop/guides/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
@@ -158,4 +158,9 @@
   <url><loc>https://calmandoak.com/shop/sets/zen-kanji/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://calmandoak.com/palette-cheat-sheet/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://calmandoak.com/the-edit/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://calmandoak.com/journal/best-japandi-sofa-coffee-table/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://calmandoak.com/journal/best-japandi-nightstands/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://calmandoak.com/journal/best-japandi-bed-frames/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://calmandoak.com/partner/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://calmandoak.com/toolkit/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
