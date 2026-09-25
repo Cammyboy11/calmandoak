@@ -20,16 +20,13 @@ concrete specifics over adjectives. Never hype, exclamation marks, "must-have", 
 - **Site:** new articles ship through the SAFEGUARDS gate only; never blanket `git add -A`.
 
 ## Platform pauses (skip these platforms until Cameron flips the flag)
-- **TIKTOK: status unclear — Cameron decision needed (restored 2026-09-14).** This whole section
-  was silently dropped from this file on `main` by an unrelated commit (`b7c4a572`, 2026-08-10)
-  and never restored — meaning every cloud routine since then (they clone `main`, not the local
-  checkout) has seen NO pause flag at all, while the local checkout still read `TIKTOK: PAUSED`
-  from the 2026-07-18 zero-views verdict. **That's the real cause of the "TikTok posting despite
-  being paused" contradiction flagged repeatedly since 2026-09-10** — a silently lost line, not
-  agents ignoring a real flag. Since then, a genuine TikTok strategy now exists
-  (`TIKTOK-STRATEGY-2026.md`, 2026-09-05) and TikTok has been posting successfully for weeks.
-  Cameron: pick one — `TIKTOK: active` to formally adopt the new strategy, or `TIKTOK: PAUSED` to
-  actually stop it. Leaving this line unset is exactly what produced this mess.
+- **TIKTOK: active (resolved 2026-09-25).** Was unresolved for 11 days after this whole section
+  got silently dropped from `main` by an unrelated commit (`b7c4a572`, 2026-08-10) — see
+  `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-09-14/24 entries for the full history. Cameron confirmed
+  2026-09-25 ("I think is active but I am not sure") — treated as a real decision, not a shrug:
+  TikTok has in fact been posting successfully and continuously since the 2026-09-05 strategy
+  (`TIKTOK-STRATEGY-2026.md`) replaced the original 2026-07-18 zero-views verdict, so `active`
+  matches both his lean and the actual evidence. Reversible any time by flipping this to `PAUSED`.
 - **PINTEREST: active** (primary revenue lever — protect the cadence)
 - **INSTAGRAM: active**
 
