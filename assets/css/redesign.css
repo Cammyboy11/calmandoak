@@ -1,4 +1,7 @@
 /* Calm & Oak — redesign design system (ported from approved prototype 2026-09) */
+/* FTC disclosure banner — restored 2026-09-25, dropped sitewide by the September redesign */
+.disclosure{background:var(--dark);color:var(--ground);font-size:.72rem;text-align:center;padding:.55rem var(--s2);letter-spacing:.02em;}
+.disclosure a{color:var(--ground);text-decoration:underline;text-underline-offset:2px;}
 :root{
   --ground:#F4F1EA; --ground-2:#EBE6DA; --panel:#FBF9F3; --ink:#1C1A17; --muted:#6A6459; --faint:#948C7F;
   --line:rgba(28,26,23,.14); --line-soft:rgba(28,26,23,.07);
