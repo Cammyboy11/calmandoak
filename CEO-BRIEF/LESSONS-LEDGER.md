@@ -23,6 +23,41 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-09-27 · CONTENT-FACTORY (weekly cloud run) · **Two independent, still-open content-factory
+  branches (`content-factory/2026-09-20` and this run's `content-factory/2026-09-27`) turned out to
+  propose the exact same ASIN (B08G46J76G, IOTXY walnut writing desk) as a piece in each batch —
+  found only by chance, because this run happened to read the 09-20 branch's manifest while
+  cross-checking a different question, not because anything flagged the overlap automatically.**
+  Confirmed via `git show origin/content-factory/2026-09-20:"final pins/batches/2026-09-20/MANIFEST.md"`
+  — its piece #6 lists the identical ASIN this run independently sourced from the same live journal
+  article (`journal/best-japandi-desks/index.html`), since both runs reused the site's own
+  already-verified image↔ASIN pairing rather than inventing one, and neither run had visibility
+  into the other's still-open branch. Flagged in both branches' manifests/TEAM-LOG rather than
+  resolved (closing another run's open branch is outside a single content-factory run's authority).
+  · raw · **candidate rule:** a content-factory run should check open `content-factory/*` branches
+  (not just the live Blotato queue) for ASIN overlap before finalizing a batch — the current
+  process only cross-checks against what's already scheduled/published, not against what a
+  different unmerged branch is also proposing. Also surfaces the cost of the standing "confirm safe
+  to close" recommendation (first made 2026-09-25) sitting unanswered for a week: a stale open
+  branch isn't just clutter, it can silently collide with a new run's independent work.
+
+- 2026-09-27 · CONTENT-FACTORY (weekly cloud run) · **This session's fresh clone had an empty
+  `node_modules/` despite `ffmpeg-static` being a listed `package.json` dependency — `_pin-to-reel.js`
+  and `_add-audio-bed.js` would have failed on first run with `Cannot find module 'ffmpeg-static'`
+  had it not been caught before use.** `npm install ffmpeg-static --no-save` resolved it cleanly in
+  ~15s, no egress issue for the npm registry itself (a genuinely different host/policy than the
+  `database.blotato.io`/`www.amazon.com` blocks logged 2026-09-14/15). Separately: the tracked
+  fallback product photos (`assets/img/products-cropped/*`) are 4:5 (800×1000), not the 2:3
+  (1000×1500) pin canvas `_pin-to-reel.js` assumes as input — feeding one straight in would stretch
+  and visibly distort the product. Built an ad hoc ffmpeg blur-fill+contain step this run to produce
+  a proper 2:3 pin first (see `final pins/batches/2026-09-27/manifest.md` for the exact filter). ·
+  raw · **candidate rule:** (1) a content-factory run should treat "does `node_modules` actually
+  have the pipeline's dependencies" as its own pre-flight check, same tier as syntax-checking the
+  `_*.js` scripts themselves (2026-09-14 ledger entry) — a clean fresh clone has neither installed
+  by default. (2) the 4:5-vs-2:3 mismatch should be fixed once as a real `_asin-to-pin.js` helper
+  committed to the repo, rather than every cloud run (this is at least the second, after 09-14's
+  "built from tracked assets" batch) re-deriving the same fix inline.
+
 - 2026-09-27 · CEO (daily briefing #13) · **The daily Pinterest scheduler's repeated undocumented disable/enable history (flagged raw on 2026-09-14, -16, -25/26) now has a machine-readable root cause instead of no explanation at all: it auto-suspends with `suspension_reason: "device_absent"` whenever a required local device connection isn't present, and re-enables on its own once reconnected — it is not being manually toggled in the dark.** Confirmed via `get_trigger` on `trig_0144Cg9HoKeXhET21YLSDVbk`: `enabled: false`, `suspension_reason: "device_absent"`, `updated_at: 2026-09-27T06:15:30Z` (disabled again this morning, after its last successful run 2026-09-26T09:37–09:47 UTC) — this is the first time a disable event on this trigger has carried an actual reason field, not just a silent state change. This reframes every prior "who disabled this and why didn't they log it" instance as very likely the same automatic cause each time (a local device/vault connection dropping), not a person forgetting to leave a note. Practical effect unchanged: Pinterest's queue (healthy, scheduled through 2026-10-29 as of this run) will stop growing until the device reconnects. · raw · **candidate rule:** once Cameron confirms this reading, promote it into `ORG-CHART.md`'s Pinterest-scheduler entry as documented, expected behavior ("auto-suspends when the linked device disconnects, self-resumes when it reconnects — not a bug, not an undocumented human action") so future execution-integrity checks stop re-flagging each occurrence as a fresh mystery and instead just report current state + whether the device is back.
 
 - 2026-09-27 · CEO (daily briefing #13) · **A previously undocumented recurring trigger, "Two Seats to Quiet — seat counter (hourly)" (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`, fires hourly at :32, updates Shopify metafields for the live "Two Seats to Quiet" sweepstakes' public seat counter on `shop.calmandoak.com`), exists with zero TEAM-LOG/ORG-CHART trace — same undocumented-automation pattern as the three "Calm oak..." triggers found 2026-09-26 — and its most recent run failed.** Confirmed via `list_triggers`/`get_trigger`: `enabled: true`, `last_run.status: FAILED`, `fired_at: 2026-09-27T06:32:41Z`, `finished_at: 2026-09-27T06:32:49Z` (an 8-second failure, not a timeout). Because this trigger's entire job is keeping a number publicly visible on a live, real-money promotion — itself already an unresolved CONTROL.md "always escalate" item per the 2026-09-25 briefing — a failed run plausibly means the seat count shown to real visitors is now stale or wrong, not just an internal metrics gap; not independently verified live from this sandbox. · raw · **candidate rule:** same as the 2026-09-26 finding — any trigger touching customer-facing state should get a TEAM-LOG line when it's created, and a failed run on anything customer-facing warrants same-day flagging rather than waiting to be noticed in the next scheduled review.
