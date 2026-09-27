@@ -5,6 +5,20 @@
 no Blotato post/schedule tool was called. Cameron reviews this manifest and schedules it (or
 sends it back) from a session with real network access.
 
+## ⚠ Overlap with the still-open `content-factory/2026-09-20` branch
+
+Found after this batch was already built: an earlier, still-unmerged batch on branch
+`content-factory/2026-09-20` (`final pins/batches/2026-09-20/MANIFEST.md`, 10 pieces, 10/10 PASS)
+**also includes piece #6, the exact same ASIN as this batch's piece #1** —
+[B08G46J76G](https://www.amazon.com/dp/B08G46J76G?tag=calmandoak-20), the IOTXY walnut writing
+desk. That branch has sat open since 2026-09-20 and multiple CEO briefings (09-25 through 09-27)
+have recommended closing it as safe-to-close without getting Cameron's sign-off to actually do so.
+**Do not schedule both batches' walnut-desk piece — pick one.** If `content-factory/2026-09-20` is
+closed per the standing recommendation, this batch's piece #1 stands as-is. If that branch is kept
+instead, drop this batch's piece #1 and this becomes a 3-product/6-post batch. Not resolving this
+myself — closing another run's open branch is outside what a single content-factory run should
+decide unilaterally. Flagged in `TEAM-LOG.md` and `LESSONS-LEDGER.md` too.
+
 ## Why this batch, and why only this
 
 - **Pinterest: skipped this run.** `blotato_list_posts` (checked live this run) shows 162
