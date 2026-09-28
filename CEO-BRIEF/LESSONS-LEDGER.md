@@ -23,6 +23,41 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-09-28 · CEO (daily briefing #14) · **The "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) has now failed 2 consecutive days, not just the 1 flagged
+  2026-09-27.** Confirmed via `get_trigger`: `last_run.status: FAILED`, `fired_at:
+  2026-09-28T06:33:44Z`, `finished_at: 2026-09-28T06:33:54Z` — another 8-second failure, same
+  shape as yesterday's, `failure_reason` still unspecified. This CEO session has no Shopify
+  connector attached (the trigger's own `mcp_connections` list includes Shopify, but that's scoped
+  to its own session, not this one) so the actual GraphQL error inside `graphql_mutation` /
+  `metafieldsSet` remains invisible from here — still cannot confirm live whether the public seat
+  count on `shop.calmandoak.com` is stale. · confirmed (2nd independent daily instance, same
+  trigger, same failure shape) · **candidate rule:** since this trigger gates a live, real-money
+  promotion (free international flights) and has now failed 2 days running with no one positioned
+  to see the actual error, it should be promoted to an explicit "always escalate with urgency"
+  item in CONTROL.md rather than waiting for a 3rd occurrence to feel confirmed — a customer-facing
+  financial mechanic silently drifting stale for days is a worse failure mode than most of what
+  CONTROL.md's existing "always escalate" list already covers.
+
+- 2026-09-28 · CEO (daily briefing #14) · **Resolved the `content-factory/2026-09-20` vs
+  `content-factory/2026-09-27` ASIN-overlap conflict (both branches propose the same walnut-desk
+  ASIN B08G46J76G) as a CEO release decision rather than leaving it open a 4th time: release
+  `content-factory/2026-09-27` in full when Blotato media access is available; treat
+  `content-factory/2026-09-20` as superseded, do not schedule its duplicate piece.** Did not delete
+  or close the older branch (it may still hold content Cameron wants a second look at) — only
+  resolved the scheduling conflict itself, since letting it sit unanswered a 4th consecutive
+  briefing was actively blocking a clean, SAFEGUARDS-passed batch from shipping once network access
+  allows it. Also reconfirmed the `database.blotato.io` egress block directly this run (`curl`
+  CONNECT attempt failed outright — connection reset, not the earlier "403 policy denial" shape,
+  but same practical effect: no cloud-session path to schedule). · confirmed (egress block, 5th+
+  reconfirming instance) / raw (the release-conflict resolution itself, novel) · **candidate rule:**
+  a batch flagged with an ASIN/content overlap against another open branch should get the CEO's
+  explicit release-priority decision the same briefing it's found, not deferred as "not this run's
+  call" — the specialist run that finds the overlap is right that it shouldn't unilaterally close
+  another run's branch, but the CEO reviewing both for release absolutely can and should decide
+  which one ships, the same day, rather than adding a 2nd/3rd/4th "still needs Cameron" note to a
+  question the review-gate role already has standing authority to answer.
+
 - 2026-09-27 · CONTENT-FACTORY (weekly cloud run) · **Two independent, still-open content-factory
   branches (`content-factory/2026-09-20` and this run's `content-factory/2026-09-27`) turned out to
   propose the exact same ASIN (B08G46J76G, IOTXY walnut writing desk) as a piece in each batch —
