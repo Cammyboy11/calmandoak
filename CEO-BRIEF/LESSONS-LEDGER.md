@@ -23,6 +23,45 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-09-29 · CEO (daily briefing #15) · **The "Two Seats to Quiet" seat-counter trigger has now
+  failed 3 consecutive days.** Confirmed via `get_trigger`: `last_run.status: FAILED`,
+  `fired_at: 2026-09-29T06:32:48Z`, `finished_at: 2026-09-29T06:32:56Z` — same 8-second failure
+  shape as 09-27 and 09-28, `failure_reason` still unspecified. Still no Shopify connector attached
+  to this session, so the actual `metafieldsSet` error remains invisible from here and the live
+  public seat count on `shop.calmandoak.com` still cannot be independently confirmed current. ·
+  confirmed (3rd independent daily instance, same trigger, same failure shape) · **promoted:**
+  given a live, real-money promotion (free international flights) silently failing to update for 3
+  days running, with no cloud session positioned to see the actual error, added an explicit line to
+  `CONTROL.md`'s "Always escalate" list naming this trigger by ID — out-of-cycle from the normal
+  monthly consolidation pass (only ~15 days since the ledger's last consolidation, short of the
+  ~30-day trigger), because this is a safety-tightening addition (not a loosened guardrail) backed
+  by 3 independent same-shape instances, not a single noisy data point — see CONTROL.md's
+  "Always escalate" section for the added line.
+
+- 2026-09-29 · CEO (daily briefing #15) · **The two "Calm oak" local-deploy triggers that
+  structurally bypass the public-facing review gate (first found undocumented 2026-09-26) actually
+  fired and succeeded for the first time yesterday — "Calm oak weekly seo post" (a full
+  write-and-publish pipeline with no PR step) and "Calm oak daily deploy" (`npx wrangler deploy`
+  straight to production) both show `last_run.status: SUCCEEDED`, `fired_at: 2026-09-28T09:37Z`,
+  in the same ~5-minute window the daily Pinterest scheduler also successfully fired — meaning
+  Cameron's local device was briefly connected around 2026-09-28T09:37 UTC and all three
+  device-dependent triggers ran.** Until now "weekly seo post" had never fired since its
+  2026-09-25 creation, so this is the first real (not just designed) instance of a full article
+  possibly publishing straight to `calmandoak.com` with zero CEO/PR review. **Could not verify what
+  either trigger actually shipped:** tried fetching `calmandoak.com` directly (both via `WebFetch`
+  and a direct `curl` CONNECT test) and found it now also blocked by this sandbox's egress policy —
+  `connect_rejected`, gateway 403, same policy-denial shape as the long-standing
+  `database.blotato.io` and `www.amazon.com` blocks, confirmed via the proxy status endpoint's
+  `recentRelayFailures`. No prior CEO session log shows ever having successfully fetched the live
+  site directly either (every prior audit worked from git-tracked files only), so this may not be a
+  new regression, just a newly-attempted check that found a real blind spot. Git shows no new
+  journal article or commit from either trigger (expected — neither touches GitHub by design), so
+  there is no way from this sandbox to confirm or rule out unreviewed content going live. · raw ·
+  **candidate rule:** the public-facing review gate's execution-integrity check should add "attempt
+  to fetch the live site directly, not just git state" as its own sub-check whenever a
+  known-bypass trigger (per the 2026-09-26 finding) shows a fresh successful fire — git-clean does
+  not mean production-clean when a shipping path exists outside git.
+
 - 2026-09-28 · CEO (daily briefing #14) · **The "Two Seats to Quiet" seat-counter trigger
   (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) has now failed 2 consecutive days, not just the 1 flagged
   2026-09-27.** Confirmed via `get_trigger`: `last_run.status: FAILED`, `fired_at:

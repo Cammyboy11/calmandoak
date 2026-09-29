@@ -33,6 +33,14 @@ concrete specifics over adjectives. Never hype, exclamation marks, "must-have", 
 ## Always escalate (never auto-do)
 DNS / redirects / hosting, account or provider settings, anything that spends money, anything destructive.
 
+**Also always escalate, added 2026-09-29 (out-of-cycle, see `CEO-BRIEF/LESSONS-LEDGER.md`):** a
+failed run on any trigger that maintains customer-facing state tied to a live, real-money
+promotion — concretely, right now, the "Two Seats to Quiet — seat counter" hourly trigger
+(`trig_01ANo9Qa8bcqgaxQtP9xBeFp`, updates the public seat count on `shop.calmandoak.com` for the
+free-international-flights sweepstakes). Flag with urgency the same run it's found; don't defer to
+a scheduled review. This trigger has now failed 3 consecutive days (2026-09-27/28/29) with no
+cloud session able to see the underlying Shopify error.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
