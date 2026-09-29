@@ -23,6 +23,24 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-09-29 · SEO-RANKER · **A degraded ASIN that SAFEGUARDS.md itself names as the canonical
+  bad example (`B0DRHQ1FKP` — Canada ship-block + 33 reviews) had been shipping live on 6 files
+  (8 locations) across the site for an unknown period, undetected by every prior SEO-ranker
+  audit run, because those audits check broken images/sitemap gaps/new-article SAFEGUARDS
+  compliance but never re-grep the whole site for previously-flagged-bad ASINs.** Found via a
+  direct `grep -rn "B0DRHQ1FKP"` across the full repo this run (prompted by cross-referencing
+  SAFEGUARDS.md's own example while sourcing a replacement side-table ASIN) — turned up
+  `journal/400-dollar-reading-nook`, `shop/looks/the-sage-bedroom`, `shop/looks/soft-lit-reading-nook`,
+  `shop/furniture`, both `assets/the-edit/issue-0{1,2}` magazine issues, and the starter-guide PDF
+  source, none of which any prior audit's file list (which centers on `journal/`) would have
+  caught. Fixed this run (see TEAM-LOG 2026-09-29 entry / PR #6). · raw (first time this specific
+  check — a sitewide grep for named-bad ASINs, not just new-article compliance — has been run) ·
+  **candidate rule:** add "grep the whole site (including `assets/the-edit/` and
+  `assets/starter-guide/`, not just `journal/`) for every ASIN SAFEGUARDS.md names as degraded" as
+  its own line item in the standard audit checklist, run periodically even when no new article is
+  being written — a bad ASIN found once and fixed once can still be shipping elsewhere the fix
+  never touched.
+
 - 2026-09-29 · CEO (daily briefing #15) · **The "Two Seats to Quiet" seat-counter trigger has now
   failed 3 consecutive days.** Confirmed via `get_trigger`: `last_run.status: FAILED`,
   `fired_at: 2026-09-29T06:32:48Z`, `finished_at: 2026-09-29T06:32:56Z` — same 8-second failure
