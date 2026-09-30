@@ -10,6 +10,49 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-09-29 · SEO-RANKER · **Sitewide degraded-ASIN cleanup (SAFEGUARDS violation found across 6
+  files) + new journal article, staged as a PR (public-facing review gate — not pushed to main).**
+  Read CONTROL.md (PAUSE: false; also re-read the 2026-09-14 review-gate section) and
+  CEO-BRIEF/LESSONS-LEDGER.md in full first — noted the 3-day seat-counter failure and the
+  local-deploy-trigger review-gate-bypass findings are both already escalated in CONTROL.md and
+  outside SEO-ranker's remit (no Shopify/local-deploy access from here); did not duplicate that
+  escalation. Checked for a stale `.git/index.lock` before committing (per the 2026-09-10 ledger
+  lesson) — none present. **Pages audited:** full sitewide crawl (journal/ 62 articles + shop/ +
+  assets/the-edit/ + assets/starter-guide/) for broken `/assets/img/` refs (0 MISS), sitemap-vs-disk
+  gaps (none), journal-hub orphans (none), duplicate `<title>`s (only the known noindexed redirect
+  stubs), and any remaining reference to `B0DRHQ1FKP` — SAFEGUARDS.md's own named example of a
+  degraded ASIN (Canada ship-block, 33 reviews). **Found it was still live in 6 files, 8 locations**
+  (`journal/400-dollar-reading-nook`, `shop/looks/the-sage-bedroom`, `shop/looks/soft-lit-reading-nook`,
+  `shop/furniture`, both `assets/the-edit/issue-0{1,2}` magazine issues, and the starter-guide PDF
+  source) — a real, live SAFEGUARDS violation that had shipped and sat undetected through every prior
+  run's audits. Fixed all 8 by swapping in `B0B18NB7ZF` (VASAGLE MAEZO round side table), an
+  already-verified ASIN with 2,900+ reviews already live in 3 other articles as the same product
+  class, reusing its existing image/alt pairing rather than inventing a new one — no new Amazon
+  sourcing needed (`amazon.com` egress still blocked from this sandbox, confirmed again this run).
+  `shop/furniture/index.html` had the degraded card duplicated against an already-existing VASAGLE
+  card; removed the duplicate instead of re-adding it, which also fixed a pre-existing stale
+  ItemList/filter-count bug in that file (declared 9/15 vs. actual 14 cards — now correctly 8/13).
+  **Shipped article:** `journal/best-japandi-furniture-brands/` (GROWTH-PLAN Tier-4 link-magnet slot
+  #20) — 12 real furniture brands grouped by budget tier, for the anchor-furniture categories
+  (sofas, beds, dining tables) where Amazon marketplace search is weakest. Zero Amazon ASIN links by
+  design (independent, unmonetized reference list, disclosed as such in-article) — no new-sourcing
+  risk. ~2,030 words. Added to `journal/index.html` (card + ItemList + filter counts, now 63/14/21/13/8/7,
+  reconciled) and `sitemap.xml`, plus one reciprocal cross-link each in `sofa-buying-guide` and
+  `honest-materials`. **Roadmap check:** GROWTH-PLAN's #1 priority (office cluster) remains fully
+  built, 8 live articles confirmed via directory listing — no new office-cluster gaps this run; also
+  noted the existing `journal/japandi-color-palette/` article already substantially covers
+  GROWTH-PLAN Tier-1 #4 ("Japandi Wall Colours") under its own `#wall-colours` section, so did not
+  write a separate wall-colours article to avoid cannibalizing that page's existing ranking. **PR:**
+  https://github.com/Cammyboy11/calmandoak/pull/6 (branch
+  `seo-ranker/furniture-brands-asin-fix-2026-09-29`), staged only the 12 touched files (`git status`
+  confirmed no stray changes before commit), subscribed to PR activity. **SAFEGUARDS gate:** full
+  detail posted in the PR body — degraded-ASIN fix all 6 checks PASS across all 4 articles now using
+  B0B18NB7ZF; new article Checks 1-4 N/A (zero `/dp/` links), Check 5 0 MISS, all 6 TOC anchors
+  resolve, all 3 JSON-LD blocks valid. **Needs-Cameron:** review/merge PR #6. Separately (not this
+  run's fix, just re-surfacing): the seat-counter trigger and local-deploy review-gate-bypass items
+  already flagged in CONTROL.md remain open and are outside this agent's access. · staged (PR #6
+  open, needs-Cameron review)
+
 - 2026-09-27 · CONTENT-FACTORY (weekly cloud run) · **Staged an 8-post IG/TikTok refill batch (4
   products × 2 platforms) at `final pins/batches/2026-09-27/`, committed + pushed to branch
   `content-factory/2026-09-27` — not merged, not scheduled, per the 2026-09-14 public-facing
