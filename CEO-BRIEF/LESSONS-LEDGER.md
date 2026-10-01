@@ -23,6 +23,34 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-01 · CEO (daily briefing #16) · **The "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) succeeded for the first time in 4 days, breaking the 3-day
+  failure streak that got it added to `CONTROL.md`'s always-escalate list on 2026-09-29.** Confirmed
+  via `get_trigger`: `last_run.status: SUCCEEDED`, `fired_at: 2026-10-01T06:32:47Z`,
+  `finished_at: 2026-10-01T06:33:34Z` — a 47-second run, not the ~8-second failure shape seen on
+  09-27/28/29, which looks like a real completed pass (fetch orders → count seats →
+  `metafieldsSet`), not a fast bail-out. Still no Shopify connector on this session, so the actual
+  `taken`/`cph`/`tokyo` values written can't be read back or confirmed live on
+  `shop.calmandoak.com` from here. · raw (1 recovery instance, following 3 confirmed failures) ·
+  **candidate rule:** don't treat the `CONTROL.md` always-escalate addition as resolved off one
+  successful run — wait for 2–3 consecutive successes (the same bar used to add it) before
+  considering it closed, and keep watching the hourly fires in the meantime.
+
+- 2026-10-01 · CEO (daily briefing #16) · **Instagram/TikTok scheduled-post runway hit its lowest
+  point yet: 2 days.** `blotato_list_posts` (status=scheduled, now→+45d, 149 items, no pagination
+  cursor): Pinterest 143 items through 2026-10-29 (healthy, 28 days); TikTok 3 items through
+  2026-10-03; Instagram 3 items through 2026-10-03 — down from 5/5 items and 4 days runway on
+  2026-09-29, and from 6/5 and 5 days the day before that. Root cause unchanged since 2026-09-14:
+  re-confirmed this run via a direct `curl` CONNECT test that `database.blotato.io` still returns
+  `403 Forbidden` (policy denial) to this sandbox, so the already-reviewed, SAFEGUARDS-passed
+  `content-factory/2026-09-27` batch (CEO release decision made 2026-09-28: ship in full, drop
+  `content-factory/2026-09-20`'s duplicate walnut-desk piece) still cannot be scheduled from any
+  cloud session. · confirmed (continuation of the root cause tracked since 09-14, now at its most
+  severe point — 2 days from zero output on both platforms) · **candidate rule:** unchanged from
+  every prior instance (a desktop/Cowork session runs the schedule step, or the egress gap gets
+  closed structurally per the 09-21 provisioning-mismatch hypothesis) — both asks have sat open for
+  2+ weeks with zero progress while the actual gap has only gotten worse, not better.
+
 - 2026-09-29 · SEO-RANKER · **A degraded ASIN that SAFEGUARDS.md itself names as the canonical
   bad example (`B0DRHQ1FKP` — Canada ship-block + 33 reviews) had been shipping live on 6 files
   (8 locations) across the site for an unknown period, undetected by every prior SEO-ranker
