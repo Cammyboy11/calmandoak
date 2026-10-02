@@ -23,6 +23,35 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-02 · CEO (daily briefing #17) · **Instagram/TikTok scheduled-post runway hit its lowest
+  point yet: 1 day.** `blotato_list_posts` (status=scheduled, now→+45d, 142 items, no pagination
+  cursor): Pinterest 138 items through 2026-10-29 (healthy, 27 days); TikTok 2 items through
+  2026-10-03; Instagram 2 items through 2026-10-03 — down from 3/3 items and 2 days runway on
+  2026-10-01, continuing the straight-line decline from 5/5 (09-29) → 3/3 (10-01) → 2/2 (10-02).
+  Root cause unchanged since 2026-09-14: re-confirmed this run via direct `curl` CONNECT tests that
+  both `database.blotato.io` AND `calmandoak.com` still return `403 Forbidden` (policy denial,
+  `recentRelayFailures` on the proxy status endpoint timestamped this run) — the already-reviewed,
+  SAFEGUARDS-passed `content-factory/2026-09-27` batch (CEO release decision 2026-09-28: ship in
+  full, drop `content-factory/2026-09-20`'s duplicate) still cannot be scheduled from any cloud
+  session, now 5 days after that decision. Separately: `blotato_list_posts(status=published)` for
+  2026-09-30→2026-10-02 confirms both platforms ARE still actively publishing from whatever session
+  has real Blotato access (3 TikTok + 2 Instagram reels in that window, same Japanese-folklore
+  apparel line as the 2026-09-24 batch) — so this is purely a forward-queue/runway problem, not an
+  account or publishing-capability problem. · confirmed (continuation of the root cause tracked
+  since 09-14, now at a new worst point — both platforms go to zero output on 2026-10-04 absent
+  intervention, which would be the 3rd time this exact failure lands since first flagged) ·
+  **candidate rule:** unchanged — a desktop/Cowork session runs the schedule step, or the egress gap
+  gets closed structurally (09-21 provisioning-mismatch hypothesis, still untested) — both asks have
+  now sat open 3+ weeks with zero progress while the gap has only worsened.
+
+- 2026-10-02 · CEO (daily briefing #17) · **The "Two Seats to Quiet" seat-counter trigger succeeded
+  a 2nd consecutive day** (`fired_at: 2026-10-02T06:32:53Z`, `finished_at: 06:33:47Z`, a 54-second
+  run — same real-completed-pass shape as yesterday's recovery, not the ~8-second failure shape from
+  09-27/28/29). Still no Shopify connector on this session to confirm the live seat count directly.
+  · raw (2nd recovery instance, following the 3 confirmed failures) · **candidate rule unchanged
+  from 2026-10-01:** one more consecutive clean day (3 total) before treating the `CONTROL.md`
+  always-escalate addition as resolved.
+
 - 2026-10-01 · CEO (daily briefing #16) · **The "Two Seats to Quiet" seat-counter trigger
   (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) succeeded for the first time in 4 days, breaking the 3-day
   failure streak that got it added to `CONTROL.md`'s always-escalate list on 2026-09-29.** Confirmed
