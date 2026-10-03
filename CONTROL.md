@@ -33,13 +33,18 @@ concrete specifics over adjectives. Never hype, exclamation marks, "must-have", 
 ## Always escalate (never auto-do)
 DNS / redirects / hosting, account or provider settings, anything that spends money, anything destructive.
 
-**Also always escalate, added 2026-09-29 (out-of-cycle, see `CEO-BRIEF/LESSONS-LEDGER.md`):** a
-failed run on any trigger that maintains customer-facing state tied to a live, real-money
-promotion — concretely, right now, the "Two Seats to Quiet — seat counter" hourly trigger
-(`trig_01ANo9Qa8bcqgaxQtP9xBeFp`, updates the public seat count on `shop.calmandoak.com` for the
-free-international-flights sweepstakes). Flag with urgency the same run it's found; don't defer to
-a scheduled review. This trigger has now failed 3 consecutive days (2026-09-27/28/29) with no
-cloud session able to see the underlying Shopify error.
+**Standing rule (added 2026-09-29 out-of-cycle, see `CEO-BRIEF/LESSONS-LEDGER.md`):** a failed run
+on any trigger that maintains customer-facing state tied to a live, real-money promotion is always
+an escalate-same-run item, never deferred to a scheduled review.
+
+*Resolved 2026-10-03:* the trigger that prompted this rule — the "Two Seats to Quiet — seat
+counter" hourly trigger (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`, updates the public seat count on
+`shop.calmandoak.com` for the free-international-flights sweepstakes) — failed 3 consecutive days
+(2026-09-27/28/29), then ran clean 3 consecutive days in a row (2026-10-01/02/03, each a ~50–60s
+completed-pass run, not the ~8s failure shape), meeting the same 2–3-instance bar used to add it.
+No longer named individually as an always-escalate item; the general rule above stays standing for
+whatever trips it next. Still unverifiable live (no Shopify connector on this session) — if it
+fails again, re-escalate immediately rather than waiting for a new 3-day streak.
 
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier

@@ -23,6 +23,55 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-03 · CEO (daily briefing #18) · **The "Two Seats to Quiet" seat-counter trigger has now
+  run clean 3 consecutive days (2026-10-01/02/03), meeting the ledger's own stated bar for treating
+  the 2026-09-29 CONTROL.md escalation as resolved.** Confirmed via `list_triggers`:
+  `fired_at: 2026-10-03T06:32:21Z`, `finished_at: 06:33:17Z` — a 56-second run, the same
+  real-completed-pass shape as the two prior clean days, not the ~8-second failure shape from
+  09-27/28/29. Still no Shopify connector on this session to confirm the live seat count on
+  `shop.calmandoak.com` directly. · confirmed (3rd consecutive clean-run instance, following 3
+  confirmed failures) · **promoted:** `CONTROL.md`'s "Always escalate" section updated — the seat
+  counter is no longer named individually; the general rule (any failed run on customer-facing
+  state tied to a live money promotion escalates same-run) stays standing for whatever trips it
+  next.
+
+- 2026-10-03 · CEO (daily briefing #18) · **The Instagram/TikTok scheduled-post runway, in
+  straight-line decline since 2026-09-14 (5/5 → 3/3 → 2/2 → 1/1 → today), has reached its actual
+  floor: the last scheduled post on each platform is today, 2026-10-03 (TikTok 17:00 UTC, Instagram
+  16:00 UTC, both the "cranes" piece) — `blotato_list_posts` (status=scheduled, 2026-10-03→+45d,
+  135 items) returns zero Instagram/TikTok items after those two, anywhere in the forward window.
+  Pinterest unaffected (133 items through 2026-10-29, healthy).** This means 2026-10-04 is the
+  first calendar day in this tracked decline with a confirmed, concrete zero scheduled posts on
+  either platform — not a forecast. Root cause unchanged and re-confirmed directly this run via
+  `curl` CONNECT: `database.blotato.io` → `403 Forbidden` (`connect_rejected`, logged in the proxy's
+  `recentRelayFailures` timestamped this run); `calmandoak.com` also still `403 Forbidden` from this
+  sandbox, same as every attempt since 09-29. The reviewed, SAFEGUARDS-4/4-passed
+  `content-factory/2026-09-27` batch (CEO release decision 2026-09-28) remains staged on its branch,
+  unscheduled, now 6 days after that decision — this run still cannot schedule it either, for the
+  identical network reason. · confirmed (continuation of the root cause tracked since 09-14, now at
+  its first fully-landed zero-output day, not a projection) · **candidate rule:** unchanged — a
+  desktop/Cowork session runs the schedule step, or the egress gap gets closed structurally (the
+  09-21 provisioning-mismatch hypothesis, still untested 12+ days after being proposed) — this is
+  now the 3rd time the predicted cliff has actually landed (after 09-19 and 09-22), with both
+  standing fixes still unbuilt.
+
+- 2026-10-03 · CEO (daily briefing #18) · **A previously undocumented trigger, "Calm oak weekly
+  influencer outreach" (`trig_019bmXoFPymiu6greSvAThiB`, weekly Wed 08:00 Europe/Paris, created
+  2026-09-25, first flagged in the 2026-09-26 ledger entry as a live instance of the "Brand &
+  Influencer Partnerships" planned role), has never actually fired — `last_run` is absent entirely,
+  not just old, despite at least one due date (2026-09-30, a Wednesday) having already passed since
+  its creation.** Confirmed via `list_triggers`: `enabled: true`, no `last_run` field at all (the
+  tool's own semantics: absent = never recorded a run), unlike every other enabled Calm & Oak
+  trigger, which all show at least one real `last_run`. Lower stakes than the IG/TikTok gap (this
+  role only drafts, never sends, per the 09-26 finding) but it is a real instance of exactly what
+  Standing Job #1 exists to catch — a role everyone assumed was running, quietly not running at all.
+  · raw · **candidate rule:** the execution-integrity check's trigger-health pass should flag a
+  missing `last_run` on any *enabled, cron-recurring* trigger whose first due date has already
+  passed, the same tier as a stale/failing `last_run` — "never recorded a run" is a stronger signal
+  than "hasn't run in N days," not a weaker one, and was almost missed here because every prior
+  review focused on last_run's *content* (status/timing) rather than checking for its *absence* on
+  a trigger that should be due.
+
 - 2026-10-02 · SEO-RANKER · **Systematic check of every still-open GROWTH-PLAN-90-DAY.md /
   CONTENT-ROADMAP.md content candidate shows the easy backlog is more exhausted than the docs
   reflect — most remaining items are either already substantively covered under a different title
