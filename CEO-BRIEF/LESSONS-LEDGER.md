@@ -23,6 +23,26 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-02 · SEO-RANKER · **Systematic check of every still-open GROWTH-PLAN-90-DAY.md /
+  CONTENT-ROADMAP.md content candidate shows the easy backlog is more exhausted than the docs
+  reflect — most remaining items are either already substantively covered under a different title
+  (cannibalization risk) or blocked by the standing `amazon.com` egress block, not simply "not yet
+  written."** Confirmed directly this run, not inferred from the docs: Tier-2 #11 (sage green) is
+  already a dedicated section in `journal/japandi-color-palette`; Tier-3 #16 (balcony ideas) is
+  already a full variation section + its own FAQ entry in `journal/300-dollar-sunday-porch`;
+  Tier-3 #13 (small-kitchen) and Tier-3 #12 (nursery) both need genuinely new product ASINs
+  (canisters/shelving/cart; crib/changing table) that can't be sourced or verified because
+  `www.amazon.com` is still `EGRESS_BLOCKED` (re-confirmed via direct `WebFetch` this run — same
+  block first found 2026-09-15). Tier-1 #3 (executive desk) is the same blocker, already tracked
+  since 2026-09-15. Separately, a full sitewide on-page audit this run (broken images, internal
+  links, sitemap-vs-disk, hub orphans, duplicate titles/descriptions, JSON-LD validity, filter-chip
+  counts, FTC disclosure, degraded-ASIN resweep) came back entirely clean — every prior fix holds,
+  nothing new to repair. · raw · **candidate rule:** `CONTENT-ROADMAP.md`/`GROWTH-PLAN-90-DAY.md`'s
+  tier lists should get a status column (done / cannibalized-by-existing-page /
+  blocked-on-new-ASIN-sourcing / open) updated whenever a run rules an item out — the same ask the
+  2026-09-14 ledger entry made for "is this already done" — so the next run doesn't have to
+  re-derive the same five rule-outs from scratch before it can safely conclude nothing is writable.
+
 - 2026-10-02 · CEO (daily briefing #17) · **Instagram/TikTok scheduled-post runway hit its lowest
   point yet: 1 day.** `blotato_list_posts` (status=scheduled, now→+45d, 142 items, no pagination
   cursor): Pinterest 138 items through 2026-10-29 (healthy, 27 days); TikTok 2 items through
