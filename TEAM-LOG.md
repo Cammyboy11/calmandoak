@@ -10,6 +10,57 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-10-04 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-post IG/TikTok refill batch (5
+  products × 2 platforms) at `final pins/batches/2026-10-04/`, committed + pushed to branch
+  `content-factory/2026-10-04` — not merged, not scheduled, per the 2026-09-14 public-facing
+  review gate.** Read CONTROL.md (PAUSE: false), `LESSONS-LEDGER.md` in full (including the four
+  2026-09-14 lessons flagged for this role: gitignored local assets, the blocked
+  `database.blotato.io` upload, `_add-audio-bed.js`'s past issues, and the missing-disclosure
+  finding), and SAFEGUARDS.md first.
+  **Checked real Blotato data before building anything:** `blotato_list_accounts` confirms all
+  three platforms connected and live (instagram id 53849, tiktok id 47113, pinterest id 7556) —
+  no contradiction with CONTROL.md's "all three active" flags. `blotato_list_posts`
+  (status=scheduled, 2026-10-04→2026-11-18, 127 items, no pagination cursor): **Pinterest 127
+  items through 2026-10-29 (full — skipped, per this week's "don't rebuild a full channel"
+  instruction); Instagram 0, TikTok 0 — a true zero, not a forecast.** Cross-checked
+  `blotato_list_posts(status=published, 2026-09-28→2026-10-04)`: both platforms published daily
+  through 2026-10-03 (real post URLs confirmed) — this is a pure forward-queue gap, not an
+  account/capability problem. Matches the CEO's 2026-10-04 ledger entry exactly.
+  **Built from tracked assets only** (`final pins/`, `01-brand-assets/`…`05-products-by-day/`,
+  `Pin Copy Library*.md` all still absent from this cloud checkout, confirmed again) — sourced 5
+  real, already-live ASINs from `.section-product` cards in `journal/why-your-kitchen-needs-a-tray`,
+  `journal/500-dollar-dining-table-set`, `journal/250-dollar-bathroom`,
+  `journal/300-dollar-closet-capsule`, and `journal/300-dollar-living-room-textile-refresh`
+  (stoneware salt cellar, brass candlestick holders, reed diffuser, hanging closet organizer,
+  boucle pillow covers) — five categories with **zero ASIN overlap** against either still-open
+  earlier branch (`content-factory/2026-09-20`, `content-factory/2026-09-27`), checked directly
+  against both branches' manifests before building.
+  **Promoted the 09-27 batch's one-off ffmpeg pin-canvas step into a real `_asin-to-pin.js`
+  helper** (new file, committed) — tracked product crops are 4:5 (800×1000), not the 2:3
+  (1000×1500) `_pin-to-reel.js` expects; the helper does the blur-fill-background +
+  contain-fit-product conversion generically now. `node_modules` was empty at session start
+  (same finding as 09-27) — `npm install ffmpeg-static --no-save` worked fine, no egress issue for
+  npm itself. Both `_pin-to-reel.js`/`_add-audio-bed.js` syntax-checked clean and smoke-tested
+  this run. **Audio-bed output verified, not assumed:** `ffprobe` confirms an AAC/44.1kHz stream
+  on all 5 final reels (not just a sample), and `volumedetect` on the smallest and largest files
+  both read mean −26.9dB / max −14.0dB — audible, matching the 09-27 batch's levels, not silent.
+  Full SAFEGUARDS QA gate run on all 5 pieces (picture-product match, ASIN inherited-verified,
+  caption-image match, file resolution) — **5/5 PASS.** Every caption carries the sitewide
+  disclosure sentence + `#affiliate`, per the 2026-09-14 ledger finding — did not repeat that gap.
+  **Found and flagged (not fixed) a pre-existing site content issue:** the live
+  `journal/500-dollar-dining-table-set` candle-holder product card is named "pair" but its own
+  image shows 6 graduated holders — this batch's caption describes what the image actually shows
+  rather than repeating the site's wording, keeping this batch's own Check 4 honest; the
+  underlying site mismatch is unresolved and logged for SEO-ranker. **This batch is additive, not
+  a replacement** for the still-open 09-20/09-27 branches — proposed schedule (10-08 through
+  10-12) picks up after 09-27's proposed window so the two don't collide if both ship.
+  **Note on the gitignore pattern:** `final pins/` is normally gitignored; this run force-added
+  (`git add -f`) the manifest + built media for this commit, same pattern as 09-27, so the batch is
+  reviewable from a cloud CEO session. **SAFEGUARDS gate:** full detail in the manifest linked
+  above. **Needs-Cameron:** review/schedule this batch (or send it back); decide what to do with
+  the two earlier still-open content-factory branches; optionally task SEO-ranker with the
+  candle-holder product-card fix. · staged (branch pushed, needs-Cameron review)
+
 - 2026-10-02 · SEO-RANKER · **Full sitewide on-page audit — zero issues found; no new article
   shipped this run, with reasons logged.** Read CONTROL.md (PAUSE: false; re-read the 2026-09-14
   public-facing review gate section) and CEO-BRIEF/LESSONS-LEDGER.md in full first; checked for a

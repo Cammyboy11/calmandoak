@@ -23,6 +23,37 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-04 · CONTENT-FACTORY (weekly cloud run) · **Promoted the 2026-09-27 batch's one-off
+  ffmpeg "4:5 product crop → 2:3 pin canvas" step into a real, reusable `_asin-to-pin.js` helper,
+  closing the candidate rule that batch's manifest raised.** Confirmed this run: tracked
+  `assets/img/products-cropped/p-<ASIN>.jpg` files are still 4:5 (800×1000, verified via `ffprobe`
+  on 5 fresh files), not the 2:3 (1000×1500) canvas `_pin-to-reel.js` expects — the mismatch isn't
+  a one-off from 09-27, it's the standing shape of every tracked product crop, so every future
+  content-factory run would have hit it. Built `_asin-to-pin.js` (blur-fill-cover background +
+  contain-fit product, same visual approach as the inline 09-27 step, now `node --check` clean and
+  callable as `node _asin-to-pin.js <in.jpg> <out.jpg>`), used it to build all 5 pins this run,
+  visually spot-checked each output before proceeding to video. · confirmed (2nd instance of the
+  same mismatch, now fixed structurally instead of re-solved inline) · **promoted:** `_asin-to-pin.js`
+  added to the repo root as a standing pipeline step; the next content-factory run should use it
+  directly rather than re-deriving the ffmpeg filter.
+
+- 2026-10-04 · CONTENT-FACTORY (weekly cloud run) · **Found a live SAFEGUARDS-adjacent content
+  mismatch while sourcing this run's batch: `journal/500-dollar-dining-table-set`'s "candle holder
+  pair + tapers" product card (ASIN B0CRRKDKVT) names the product "pair" in both the card's
+  `<span class="section-product-name">` and the image `alt` text, but the card's own image shows
+  **six** graduated-height brass holders, not two.** Found while verifying the picture-product
+  match for this run's own reuse of the same ASIN+image pairing (Check 1) — not something this run
+  introduced, and not fixed here (out of scope for content-factory; this is a SEO-ranker-owned
+  file). Worked around it for this run's own caption by describing "graduated heights" rather than
+  repeating "pair," so this batch's own Check 4 stays honest regardless of the underlying site
+  copy. · raw (first instance found; no prior audit flagged this specific card) · **candidate
+  rule:** when a content-factory run reuses an already-shipped `.section-product` card's
+  image+ASIN pairing, re-check that the card's own *name/alt text* also matches the image before
+  assuming the whole card is "inherited-verified" — a prior SAFEGUARDS pass on the article may have
+  checked image-vs-linked-product-type (Check 1) without separately checking the product's stated
+  count/variant against what's pictured. Worth folding into SEO-ranker's periodic audit sweep
+  alongside the existing degraded-ASIN sitewide grep.
+
 - 2026-10-04 · CEO (daily briefing #19) · **The Instagram/TikTok scheduled-post runway, in
   straight-line decline since 2026-09-14, has reached a true zero day: `blotato_list_posts`
   (status=scheduled, 2026-10-04→2026-11-18, 128 items, no pagination cursor) returns zero
