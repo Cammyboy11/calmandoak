@@ -23,6 +23,62 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-04 · CEO (daily briefing #19) · **The Instagram/TikTok scheduled-post runway, in
+  straight-line decline since 2026-09-14, has reached a true zero day: `blotato_list_posts`
+  (status=scheduled, 2026-10-04→2026-11-18, 128 items, no pagination cursor) returns zero
+  Instagram and zero TikTok items anywhere in the forward window — not "one post left today," but
+  genuinely none, the first time this has been confirmed rather than forecast. Pinterest unaffected
+  (128 items through 2026-10-29, 25 days). Cross-checked `blotato_list_posts(status=published)`
+  for 2026-09-28→2026-10-04: both platforms published daily right up to 2026-10-03, so this is a
+  pure forward-queue gap, not an account/capability problem; `blotato_get_credits` confirms 3,735
+  credits remaining, same account. · confirmed (continuation of the root cause tracked since
+  09-14, now at its first fully-confirmed zero-anywhere-in-window day) · **candidate rule:**
+  unchanged — a desktop/Cowork session runs the schedule step, or the egress gap gets closed
+  structurally; now asked 6+ times since 09-20 with zero structural progress.
+
+- 2026-10-04 · CEO (daily briefing #19) · **For the first time, the CEO's own session (holding the
+  release key, having already made the 2026-09-28 ship decision) tried to actually execute the fix
+  for the IG/TikTok gap — not just re-cite the blocker — and found the exact failure point: posting
+  a local file requires `blotato_create_presigned_upload_url` followed by a direct `curl -X PUT`
+  from this session to the returned `database.blotato.io` URL, and that PUT is the step this
+  sandbox's network egress blocks (confirmed via a fresh direct `curl` CONNECT test this run,
+  `403`/`connect_rejected`, same as `calmandoak.com`).** This rules out "the CEO review step just
+  hasn't tried" as an explanation for the standing gap — the release-and-schedule authority this
+  role has is real, but the one network-bound step inside it (uploading new local media to
+  Blotato) is categorically unreachable from any session running under this sandbox's policy, not
+  just inconvenient. · confirmed (direct mechanism-level test this run, not inferred from a prior
+  curl log) · **candidate rule:** the CEO's own operating brief should note explicitly that
+  "you have the connector" (per its own "Where you run" section) means read/list/schedule-against-
+  already-public-URL access, not upload access — the presigned-upload byte-PUT step is a distinct,
+  separately-blocked capability, so a future run shouldn't re-discover this by trying, the way this
+  run just did.
+
+- 2026-10-04 · CEO (daily briefing #19) · **"Calm oak weekly influencer outreach"
+  (`trig_019bmXoFPymiu6greSvAThiB`) still has never fired, now re-checked on a 2nd independent day
+  since the 2026-10-03 finding.** `list_triggers` again shows `last_run` entirely absent — one due
+  Wednesday (2026-09-30) has passed since its 2026-09-25 creation; the next isn't until 2026-10-07,
+  so no new due date has been missed since yesterday, but the absence itself is now confirmed on a
+  2nd separate check, not a single read. · raw (2nd independent same-finding check, 1 instance away
+  from the ledger's own 2–3-instance confirmation bar) · **candidate rule unchanged from
+  2026-10-03:** flag a missing `last_run` on any enabled, cron-recurring trigger past its first due
+  date at the same tier as a stale/failing one; worth a direct look at the trigger's configuration
+  rather than waiting for a 3rd check to feel "confirmed."
+
+- 2026-10-04 · CEO (daily briefing #19) · **`calmoak-monthly-audit`'s "1st of the month, 09:00"
+  cadence has now had a concrete due date pass with literally no trigger in existence to fire it:**
+  2026-10-01 (a Thursday) came and went 3 days before this run, confirmed via `list_triggers`
+  returning 11 total triggers for this account, none named monthly-audit or matching its stated
+  cadence. The role's absence from the real automation inventory is not new (ORG-CHART.md has
+  flagged it as undocumented/unbuilt since 2026-09-10), but every prior mention was "no trigger
+  exists," a standing-state claim; this is the first time an actual missed calendar date can be
+  cited — concretely, nobody has re-verified live ASINs, affiliate links, or disclosures in October
+  yet, the exact gap this role exists to close. · raw (first dated-miss instance of a previously
+  state-only finding) · **candidate rule:** once a planned-but-unbuilt role's stated cadence
+  produces its first missed real due date (not just "no trigger exists yet"), the execution-
+  integrity check should name the specific missed date, the same tier of evidence used for every
+  other trigger-health finding — a generic "not built yet" note doesn't convey that a real
+  oversight window has already passed.
+
 - 2026-10-03 · CEO (daily briefing #18) · **The "Two Seats to Quiet" seat-counter trigger has now
   run clean 3 consecutive days (2026-10-01/02/03), meeting the ledger's own stated bar for treating
   the 2026-09-29 CONTROL.md escalation as resolved.** Confirmed via `list_triggers`:
