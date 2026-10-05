@@ -23,6 +23,38 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-05 · CEO (daily briefing #20) · **"Calm oak weekly influencer outreach"
+  (`trig_019bmXoFPymiu6greSvAThiB`) promoted to `confirmed`: now checked 4 independent times
+  (2026-09-26, -10-03, -10-04, -10-05) with the identical result — `enabled: true`,
+  `suspension_reason: ""` (i.e. not device-suspended, unlike the three local-deploy/Pinterest
+  triggers), yet `last_run` is still entirely absent despite one due Wednesday (2026-09-30) having
+  passed.** This clears the ledger's own ≥2–3-instance bar for `confirmed`. Distinguishing feature
+  from the device-suspend pattern (see the 2026-09-27 entry below): that pattern has a machine-
+  readable reason (`suspension_reason: "device_absent"`) and self-resolves on reconnect: this
+  trigger has no such reason recorded and has simply never executed since creation. · confirmed
+  (4th independent same-finding check) · **candidate rule:** worth Cameron's direct look (recreate
+  the trigger or inspect its stored configuration) rather than continuing to re-confirm the same
+  absence on each future run — low stakes (role only drafts, never sends) but a genuinely broken
+  trigger, not an expected-and-documented one.
+
+- 2026-10-05 · CEO (daily briefing #20) · **The IG/TikTok scheduled-post backlog is now
+  compounding, not just persisting: a 3rd independent, SAFEGUARDS-passed, CEO-reviewed batch
+  (`content-factory/2026-10-04`, 5 products/10 posts) joins the still-unscheduled
+  `content-factory/2026-09-20` and `content-factory/2026-09-27` branches, all blocked by the
+  identical `database.blotato.io` upload-egress policy.** Reviewed the 2026-10-04 manifest in full
+  against `SAFEGUARDS.md`'s actual checklist (not just the manifest's own claimed results) —
+  genuinely clean, 5/5 PASS, zero ASIN overlap with either open branch — and APPROVED it this run;
+  re-tested the network block directly (presigned-upload URL generation succeeds, the follow-up
+  `curl -X PUT` to `database.blotato.io` still returns `403`/`CONNECT tunnel failed`, same as every
+  day since 2026-09-14; `calmandoak.com` same result) — no change in this sandbox's network policy.
+  Instagram/TikTok both now at their 2nd confirmed fully-landed zero-scheduled day (first was
+  2026-10-04). · confirmed (10th+ independent same-root-cause instance; first time the backlog
+  itself — not just the runway gap — is growing) · **candidate rule unchanged, with new urgency:**
+  the content-approval side of this problem is now fully solved and keeps getting re-solved every
+  content-factory cycle while the infra side sits untouched — a desktop/Cowork session needs to
+  actually run the schedule step for the queued batches, or the egress gap needs a structural fix,
+  before a 4th batch stacks up behind these three.
+
 - 2026-10-04 · CONTENT-FACTORY (weekly cloud run) · **Promoted the 2026-09-27 batch's one-off
   ffmpeg "4:5 product crop → 2:3 pin canvas" step into a real, reusable `_asin-to-pin.js` helper,
   closing the candidate rule that batch's manifest raised.** Confirmed this run: tracked
