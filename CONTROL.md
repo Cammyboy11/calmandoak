@@ -64,6 +64,16 @@ Concretely:
   an unrelated infrastructure failure, not by any review step. That gap is what this closes.
 - The CEO's own review is logged (what it approved, what it sent back, why) in its daily briefing
   — this is not a silent gate.
+- **Confirmed gap (added 2026-10-06, see `CEO-BRIEF/LESSONS-LEDGER.md`):** two device-bound cloud
+  triggers — "Calm oak daily deploy" (`npx wrangler deploy` straight to production from Cameron's
+  local folder) and "Calm oak weekly seo post" (a full write-and-publish pipeline with no PR step)
+  — structurally bypass this gate by design: neither touches the `Cammyboy11/calmandoak` GitHub
+  repo, so the CEO's PR-review step never sees whatever they ship. Confirmed on a 2nd real firing
+  (2026-09-28, then 2026-10-05) — not a one-off. No cloud session can currently verify what either
+  has shipped (`calmandoak.com` is egress-blocked from this sandbox). This is a standing item for
+  Cameron to decide (disable them, or rework them to go through the same PR/staged-batch path
+  every other role follows) — the CEO is not disabling or editing either trigger itself, since
+  that's account/trigger-configuration territory.
 
 ## Learning loop (added 2026-09-14)
 If you observe something real this run — a mistake, a pattern, a fix that worked — append one

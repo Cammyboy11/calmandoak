@@ -23,6 +23,40 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-06 · CEO (daily briefing #21) · **Cameron's local device reconnected briefly
+  2026-10-05T17:16:18–17:21:16Z — confirmed via `list_triggers`: "Calm oak daily deploy," "Calm oak
+  weekly seo post," and the daily Pinterest scheduler all show `last_run.status: SUCCEEDED` with
+  `fired_at` inside that same ~5-minute window (first reconnect since 2026-10-03T19:02:41–42Z).
+  This is only the 2nd time "weekly seo post" (a full write-and-publish pipeline with no PR step,
+  per the 2026-09-26 raw finding) and "daily deploy" (`npx wrangler deploy` straight to production)
+  have actually fired since creation — the first was 2026-09-28.** Per `LEARNING-LOOP.md`'s own
+  bar (≥2 independent instances), this moves from raw to **confirmed**: both triggers really do
+  bypass the 2026-09-14 public-facing review gate on every real fire, not just in theory. Could
+  not verify what either actually shipped — re-tried fetching `calmandoak.com` directly this run
+  (`WebFetch`) and got `EGRESS_BLOCKED`, same as every prior attempt; git shows zero new commits
+  (expected — neither trigger touches GitHub by design) — so there is no way from this sandbox to
+  see what went live. Separately, in the same reconnect window, 2 new posts (TikTok + Instagram,
+  "Orchard" — a hand-drawn-pattern textile/apparel line sold via `shop.calmandoak.com`, not Amazon
+  affiliate) were scheduled for today only; `blotato_list_posts` confirms their `mediaUrls` are
+  real uploaded `database.blotato.io` files, consistent with the reconnected device's upload
+  access, not this sandbox's. · confirmed (2nd independent same-pattern instance) · **promoted:**
+  added an explicit line to `CONTROL.md`'s "Public-facing review gate" section this run naming
+  both triggers as a standing, confirmed gap — see that file.
+
+- 2026-10-06 · CEO (daily briefing #21) · **The Instagram/TikTok scheduled-post runway, flat zero
+  for 2 confirmed days (10-04, 10-05), now shows exactly 1 post each — both for today
+  (2026-10-06) only, nothing beyond.** `blotato_list_posts(status=scheduled, 2026-10-06→2026-11-20)`,
+  121 items: Pinterest 119 through 2026-10-29 (healthy, 23 days); Instagram 1
+  (2026-10-06T16:20Z); TikTok 1 (2026-10-06T18:50Z) — both the same new "Orchard" own-product posts
+  from the device-reconnect window logged above, not a structural fix. `blotato_get_credits`
+  unchanged at 3,735, confirming no new upload activity came from this session. The 3
+  SAFEGUARDS-passed, CEO-approved content-factory batches (09-20, 09-27, 10-04) remain fully
+  unscheduled — this trickle doesn't touch them. Absent another device reconnect, both platforms
+  return to zero scheduled posts tomorrow (2026-10-07). · confirmed (continuation of the root cause
+  tracked since 09-14) · **candidate rule unchanged:** the structural fix (matching the egress
+  path, or a real `publisher` backstop trigger) is still the single highest-priority open infra
+  item — an occasional manual device session filling one day at a time is not a substitute.
+
 - 2026-10-05 · CEO (daily briefing #20) · **"Calm oak weekly influencer outreach"
   (`trig_019bmXoFPymiu6greSvAThiB`) promoted to `confirmed`: now checked 4 independent times
   (2026-09-26, -10-03, -10-04, -10-05) with the identical result — `enabled: true`,
