@@ -10,6 +10,38 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-10-06 · SEO-RANKER · **Fixed a live SAFEGUARDS picture-product mismatch
+  (`journal/500-dollar-dining-table-set`, ASIN B0CRRKDKVT) and opened a PR — not pushed to main,
+  per the 2026-09-14 review gate.** Read CONTROL.md (PAUSE: false) and `CEO-BRIEF/LESSONS-LEDGER.md`
+  in full first; checked for a stale `.git/index.lock` before touching anything — none present
+  (also found and fixed a real git-state issue: the session started in a detached HEAD one commit
+  ahead of local `main`, which turned out to already be pushed to `origin/main` — just a stale local
+  ref, resolved via `git fetch` + `git merge --ff-only`, no force/reset needed).
+  **The fix:** the 2026-10-04 content-factory ledger entry flagged (raw, unfixed) that section 4's
+  "candle holder pair" card names/alt-text/FAQ/JSON-LD all call the product a pair, but the linked
+  image (`p-B0CRRKDKVT.jpg`) shows six graduated-height brass holders. Pulled the image directly,
+  confirmed the mismatch, corrected every "pair" reference to "set of six" (h2, TOC, alt text,
+  product-card name, JSON-LD description, 2 FAQ answers, math table row) while keeping the actual
+  styling advice (2 lit nightly, 4 in reserve) intact. Also caught and fixed two downstream
+  budget-math errors the old "pair" framing had introduced in the variations section ("Frequent
+  host" $640→$690, "Small table" $440→$475 — both now sum correctly against their own stated line
+  items). Bumped `dateModified` to 2026-10-06.
+  **Audited the rest of the site** for other safe fixes / the office-cluster article (GROWTH-PLAN's
+  #1 priority): broken `/assets/img/` refs sitewide (2,933 checked, 0 MISS, unchanged from the
+  2026-10-02 baseline), journal sitemap-vs-disk (63/63), JSON-LD parse check (63/63 articles, 0
+  errors), duplicate title/meta check (0 dupes), degraded-ASIN `B0DRHQ1FKP` resweep (0 hits, PR #6's
+  fix holds) — all clean, nothing else to fix. **No new article shipped:** the office cluster is
+  already fully built (7 live articles, confirmed again this run) except Executive Desk, and every
+  other open roadmap candidate needs new Amazon ASINs — `www.amazon.com` is still `EGRESS_BLOCKED`
+  from this sandbox (re-confirmed via direct `curl`, same block since 2026-09-15).
+  **SAFEGUARDS gate: full verification block run, all 5 checks PASS** (detail in the PR description
+  — Check 3/ASIN-brand-bar N/A since no ASIN was added or swapped, only descriptive text corrected
+  around an already-verified product). **PR:** https://github.com/Cammyboy11/calmandoak/pull/8
+  (branch `seo-ranker/candle-set-accuracy-2026-10-06`), subscribed for CI/review activity.
+  **Needs-Cameron:** review/merge PR #8; the standing `amazon.com` egress block remains the single
+  thing blocking new office-cluster/roadmap articles from any cloud session. · staged (PR open,
+  needs-Cameron review)
+
 - 2026-10-04 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-post IG/TikTok refill batch (5
   products × 2 platforms) at `final pins/batches/2026-10-04/`, committed + pushed to branch
   `content-factory/2026-10-04` — not merged, not scheduled, per the 2026-09-14 public-facing

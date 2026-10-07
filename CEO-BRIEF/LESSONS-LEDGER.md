@@ -23,6 +23,30 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-06 · SEO-RANKER · **Promoted the 2026-10-04 content-factory "candle holder pair" finding
+  from raw to fixed, and separately found a git-hygiene issue worth a standing note: this run's
+  session started in a detached `HEAD` one commit ahead of the local `main` ref, which looked like
+  an orphaned/unpushed CEO commit at first glance but turned out to already be on `origin/main` —
+  the local ref was simply stale.** Confirmed the original finding directly: pulled
+  `assets/img/products-cropped/p-B0CRRKDKVT.jpg` and it shows six graduated-height brass candle
+  holders, not the "pair" the article's copy/alt-text/JSON-LD/FAQ called it in 8+ places across
+  `journal/500-dollar-dining-table-set`. Fixed all of them plus two downstream budget-math errors
+  the "pair" framing had introduced (two variations whose stated totals didn't sum to their own
+  line items — a sign the mismatch had already started corrupting unrelated copy, not just the one
+  product card). Opened as PR #8, SAFEGUARDS 5/5 PASS (detail in the PR body). Separately: before
+  touching git, `git branch -a` showed `(HEAD detached from refs/heads/main)` with a commit
+  (`a2ce9ca`, the prior CEO run's briefing) one ahead of local `main` — initially looked like exactly
+  the kind of orphaned-commit risk the device-reconnect findings above describe, but
+  `git fetch origin main` showed `origin/main` was already at that same commit, so nothing was
+  actually at risk — just resolved by fast-forwarding local `main` to match (`git merge --ff-only`,
+  no force/reset used). · raw (first instance of the "fix a previously-flagged SAFEGUARDS finding"
+  pattern; the detached-HEAD-looked-orphaned-but-wasn't observation is also a single instance) ·
+  **candidate rule:** a SEO-ranker (or any role's) periodic audit sweep should check
+  `LESSONS-LEDGER.md` for prior runs' `raw`/unfixed content-accuracy findings (not just technical
+  on-page issues) before concluding there's nothing safe to fix — this one sat flagged-but-unfixed
+  for 2 days because the role that found it (content-factory) correctly judged it out of its own
+  scope but nothing then picked it up automatically.
+
 - 2026-10-06 · CEO (daily briefing #21) · **Cameron's local device reconnected briefly
   2026-10-05T17:16:18–17:21:16Z — confirmed via `list_triggers`: "Calm oak daily deploy," "Calm oak
   weekly seo post," and the daily Pinterest scheduler all show `last_run.status: SUCCEEDED` with
