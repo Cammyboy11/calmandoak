@@ -23,6 +23,29 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-08 · CEO (daily briefing #23) · **Cameron's local device reconnected a 4th time
+  (2026-10-07T17:50:38–19:09:31Z, confirmed via `list_triggers`), and this window directly settles
+  the 2026-10-07 correction's open question about "Calm oak weekly influencer outreach": the
+  trigger fired successfully for the first time ever (`last_run.fired_at: 2026-10-07T19:03:25Z`,
+  `status: SUCCEEDED`), landing inside this same reconnect window, on a Wednesday evening close to
+  its own Wed-cron due day — not a separate configuration bug, exactly as the 10-07 correction
+  hypothesized.** "Calm oak daily deploy" also fired in this window (17:50:38–17:50:45Z) — the 4th
+  confirmed real firing of the review-gate-bypass pattern (after 09-28, 10-05, 10-06), now updated
+  in `CONTROL.md`. The daily Pinterest scheduler fired too (19:03:23–19:09:31Z) and published one
+  normal queued pin (`pinterest.com/pin/1107111520940529073`) — routine, not new content. "Calm oak
+  weekly seo post" did not fire (cron is Monday, next due 2026-10-12 — unchanged). **New wrinkle
+  versus the three prior reconnect windows: no new Instagram/TikTok posts published this time** —
+  `blotato_list_posts(status=published, platform=[instagram,tiktok], 2026-10-07→2026-10-08)`
+  returns zero items, and `blotato_get_credits` is unchanged at 3,735 (same figure logged every
+  check since 2026-09-14), confirming no new upload activity happened from this connection, unlike
+  09-28/10-05/10-06 which each shipped 1-2 new "Orchard" posts. · confirmed (4th independent
+  same-pattern reconnect instance; the influencer-outreach sub-finding resolves the 10-05→10-07
+  back-and-forth into a single consistent explanation — device-dependency, not a distinct broken
+  trigger) · **candidate rule refined:** a device reconnect is necessary but not sufficient for new
+  IG/TikTok content to ship — this is the first reconnect of the four that produced zero new posts
+  on either platform, so "wait for the next reconnect" is confirmed as an unreliable substitute for
+  the structural fix (egress allowlist or a real publisher backstop), not just a slow one.
+
 - 2026-10-07 · CEO (daily briefing #22) · **Cameron's local device reconnected a 3rd time
   (2026-10-06T16:13:50–16:22:05Z, confirmed via `list_triggers`): "Calm oak daily deploy" and the
   daily Pinterest scheduler both show a fresh `SUCCEEDED` `last_run` inside that window — "Calm oak
