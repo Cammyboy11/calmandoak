@@ -23,6 +23,50 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-11 · CEO (daily briefing #24) · **Three different cloud triggers across two different
+  brand accounts failed with the identical `ACCESS_DENIED` failure reason within a 36-hour window:
+  Calm & Oak's device-bound daily Pinterest scheduler (`trig_0144Cg9HoKeXhET21YLSDVbk`, fired
+  2026-10-08T21:03:19Z), Calm & Oak's real seo-ranker trigger (`trig_01DPEbTj1zEnSnhcxqPLydxb`,
+  fired 2026-10-09T08:04:43Z), and Gingernomics' morning-post trigger
+  (`trig_01Uc5cdfaDf9xZJYgtQGdqMt`, fired 2026-10-10T08:06:24Z — a sibling brand's account, outside
+  Calm & Oak entirely).** All three show `ROUTINE_RUN_FAILURE_REASON_ACCESS_DENIED` and all failed
+  within seconds of starting (12-17s total run time), not mid-task after real work began. This
+  isn't a single broken trigger or a single account outage: Gingernomics' own evening-post trigger
+  fired clean later the same day (2026-10-10T18:04:31Z, SUCCEEDED), and Calm & Oak's device-bound
+  "daily deploy" trigger succeeded in the exact same window as the failed Pinterest scheduler
+  (2026-10-08T21:03:20Z vs. 21:03:19Z). Confirmed by reading the full `list_triggers` result this
+  run (paginated past the first page) rather than only spot-checking the handful of named
+  device-bound triggers prior briefings tracked. · confirmed (3 independent same-failure-shape
+  instances within 36 hours, spanning 2 brand accounts and both the device-bound and cloud-native
+  trigger types — meets the ledger's own 2-3-instance bar) · **candidate rule:** this points at
+  something session/account/connector-level (a Claude_Code_Remote auth or quota hiccup, not a
+  per-trigger misconfiguration) — worth Cameron's direct attention, since no cloud session can
+  diagnose or fix an access-denial on its own trigger infrastructure from inside that same
+  infrastructure. Not promoting to CONTROL.md yet — this is a report-it-to-Cameron infra signal,
+  not a process rule this loop governs.
+
+- 2026-10-11 · CEO (daily briefing #24) · **A real, previously-under-tracked recurring cloud
+  trigger for `calmoak-seo-ranker` ("Calm & Oak — SEO Ranker (Tue + Fri)",
+  `trig_01DPEbTj1zEnSnhcxqPLydxb`, created 2026-09-14, cron Tue/Fri 08:00 UTC) — which has been
+  real and firing since creation, producing PRs #2/#3/#4/#6/#8 over the past month — failed its
+  most recent scheduled fire with `ACCESS_DENIED`.** `list_triggers` shows
+  `last_run.status: ROUTINE_RUN_STATUS_FAILED`, `fired_at: 2026-10-09T08:04:43Z`,
+  `finished_at: 08:05:00Z` (a 17-second run, consistent with an access failure before any real work
+  started) — no PR, no commit, no `TEAM-LOG.md` entry resulted; its next due date isn't until Tue
+  2026-10-13, so no further due date has been missed yet. This also means `ORG-CHART.md`'s "Real
+  automation inventory" section (dated 2026-09-10, written before this trigger's 2026-09-14
+  creation) is now stale where it says "No recurring cloud routine exists for any of the 12
+  agents" — this trigger and the Content-Factory weekly trigger
+  (`trig_01XzLKbetL8Rk1SWbBPb21av`, also created 2026-09-14, last success 2026-10-04, matches its
+  own TEAM-LOG entry) are both real, named, firing RemoteTriggers for 2 of the 12 documented roles.
+  · raw (1st instance of this specific trigger failing) · **candidate rule:** (1) the
+  execution-integrity trigger-health check should read the FULL `list_triggers` result (paginate
+  past the first page) every run, not just the previously-tracked device-bound triggers — this
+  failure, and the real seo-ranker/content-factory triggers themselves, would otherwise stay
+  invisible; (2) `ORG-CHART.md`'s "Real automation inventory" section needs a direct factual
+  correction next time a CEO run has bandwidth to edit it (not through this loop — it's an update,
+  not a confirmed behavioral pattern).
+
 - 2026-10-08 · CEO (daily briefing #23) · **Cameron's local device reconnected a 4th time
   (2026-10-07T17:50:38–19:09:31Z, confirmed via `list_triggers`), and this window directly settles
   the 2026-10-07 correction's open question about "Calm oak weekly influencer outreach": the
