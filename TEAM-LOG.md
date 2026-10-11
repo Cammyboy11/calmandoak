@@ -10,6 +10,48 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-10-11 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-post IG/TikTok refill batch (5
+  products × 2 platforms) at `final pins/batches/2026-10-11/`, committed + pushed to branch
+  `content-factory/2026-10-11` — not merged, not scheduled, per the 2026-09-14 public-facing
+  review gate.** Read CONTROL.md (PAUSE: false) and `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-09-14
+  entries in full first (gitignored local assets, the blocked `database.blotato.io` upload,
+  `_add-audio-bed.js`'s past issues, the missing-disclosure finding — all four re-confirmed or
+  re-applied this run, detail below).
+  **Checked real Blotato data before building anything:** `blotato_list_accounts` confirms all
+  three platforms connected and live (instagram id 53849, tiktok id 47113, pinterest id 7556) — no
+  contradiction with CONTROL.md's "all three active" flags. `blotato_list_posts`
+  (status=scheduled, 2026-10-11→2026-11-25): **Pinterest 100+ items through 2026-10-29 (full —
+  skipped, per this week's "don't rebuild a full channel" instruction); Instagram 0, TikTok 0 — a
+  true zero, unchanged since 2026-10-04.** Cross-checked `blotato_list_posts(status=published,
+  2026-10-04→2026-10-11)`: only one IG + one TikTok post published in that window (both "Orchard,"
+  2026-10-06, via a Cameron device reconnect per the ledger) — nothing else since 2026-10-03,
+  confirming none of the three open content-factory branches (09-20, 09-27, 10-04) have shipped.
+  **Built:** 5 new products sourced from tracked `assets/img/products-cropped/*` matched to real,
+  already-live ASINs grepped from journal/shop pages' own product cards — round teak patio table,
+  wicker floor basket (entryway), linen accent chair w/ oak legs (reading nook), cotton
+  waffle-weave duvet cover (bedding), rice paper pendant lamp set of 2 (lighting). Five new
+  categories, zero ASIN overlap with any of the three open branches (checked directly against
+  each branch's manifest). Every image visually opened and compared against its linked product's
+  name/alt text before use, not just grepped (SAFEGUARDS Check 1) — one ASIN (`B07F266PMS`)
+  carried an old `PRODUCT-CHANGES-LOG.md` "verify product photo" flag from 2026-05-14, re-checked
+  directly and cleared (image clearly matches "linen accent chair with oak legs").
+  **Pipeline:** `npm install ffmpeg-static --no-save` succeeded (no registry egress issue, same as
+  every prior run). Re-pulled `_asin-to-pin.js` from `origin/content-factory/2026-10-04` — the
+  2026-10-04 manifest's "promoted to a standing helper" claim didn't actually persist, since
+  content-factory batch branches never get merged to `main` (unlike seo-ranker's PR-gated
+  commits), so the file only ever existed on that one batch branch. Re-added it to this batch for
+  now; flagged in the manifest and ledger as needing a real home on `main`. `_pin-to-reel.js` and
+  `_add-audio-bed.js` both `node --check` clean. All 5 reels' audio verified present via `ffprobe`
+  (`aac`, 44.1kHz) on every file, plus `volumedetect` on the smallest/largest (mean −26.9dB / max
+  −14.0dB, matching the 2026-10-04 batch's confirmed-audible level) — not assumed.
+  **SAFEGUARDS gate: 5/5 pieces PASS**, every caption carries the FTC disclosure sentence +
+  `#affiliate`. Full detail, QA blocks and captions in
+  `final pins/batches/2026-10-11/manifest.md`.
+  **Needs-Cameron:** schedule or reject this batch (and decide what to do about the three still-open
+  earlier branches, now four total unshipped batches); give `_asin-to-pin.js` a real home on
+  `main`; close the old `B07F266PMS` pending-audit row in `PRODUCT-CHANGES-LOG.md`. · staged
+  (branch pushed, needs-Cameron review)
+
 - 2026-10-06 · SEO-RANKER · **Fixed a live SAFEGUARDS picture-product mismatch
   (`journal/500-dollar-dining-table-set`, ASIN B0CRRKDKVT) and opened a PR — not pushed to main,
   per the 2026-09-14 review gate.** Read CONTROL.md (PAUSE: false) and `CEO-BRIEF/LESSONS-LEDGER.md`

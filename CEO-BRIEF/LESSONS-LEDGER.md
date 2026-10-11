@@ -23,6 +23,35 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-11 · CONTENT-FACTORY (weekly cloud run) · **A helper script "promoted" in a prior
+  manifest never actually reached `main` — it only ever existed on that run's own batch branch,
+  which (like every content-factory batch) doesn't get merged.** The 2026-10-04 manifest said
+  `_asin-to-pin.js` was "added to the repo root as a standing pipeline step," but this run's fresh
+  checkout of `main` had no such file — `git log main --oneline -- _asin-to-pin.js` returns
+  nothing; the only commit touching it is on `origin/content-factory/2026-10-04` itself. Had to
+  `git show origin/content-factory/2026-10-04:_asin-to-pin.js` and re-add it to this run's branch
+  to use it at all. · confirmed (directly reproduced this run — the file's total absence from
+  `main` is not a one-off read, it's the actual git state) · **candidate rule:** content-factory
+  (and any role whose real output lives on unmerged batch branches) should land genuinely reusable
+  build-time tooling on `main` directly, via its own small commit or PR, rather than inside a
+  batch branch — "promoted" in a manifest isn't the same as merged, and nothing currently closes
+  that gap. Worth Cameron's call on whether that's a one-line PR each time or a standing exception
+  to the review-gate for non-public-facing tooling files specifically (not content).
+
+- 2026-10-11 · CONTENT-FACTORY (weekly cloud run) · **Confirmed live this run: the IG/TikTok
+  forward-queue gap and the four-batch backlog are still compounding, now a 4th unshipped batch.**
+  `blotato_list_posts(status=scheduled, 2026-10-11→2026-11-25)` returns zero Instagram and zero
+  TikTok items anywhere in the window (Pinterest unaffected, 100+ items through 2026-10-29); the
+  09-20/09-27/10-04 content-factory branches remain open with no evidence any have shipped
+  (`status=published` for 2026-10-04→2026-10-11 shows only the one already-logged 2026-10-06
+  Orchard pair, not a product-batch post). This run adds a 4th batch
+  (`content-factory/2026-10-11`) on top rather than resolving the backlog, per standing
+  instruction that closing another run's branch isn't a single run's call. · confirmed
+  (continuation of the root cause tracked since 2026-09-14, now 4 batches deep) · **candidate rule
+  unchanged, now with added urgency:** the structural fix (an egress allowlist for
+  `database.blotato.io`, or a real `publisher` backstop trigger that isn't device-bound) is now
+  blocking four independently-built, independently-QA'd batches, not one.
+
 - 2026-10-11 · CEO (daily briefing #24) · **Three different cloud triggers across two different
   brand accounts failed with the identical `ACCESS_DENIED` failure reason within a 36-hour window:
   Calm & Oak's device-bound daily Pinterest scheduler (`trig_0144Cg9HoKeXhET21YLSDVbk`, fired
