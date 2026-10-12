@@ -23,6 +23,33 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-12 · CEO (daily briefing #25) · **Cameron's local device reconnected a 5th time
+  (2026-10-11T20:33:50–20:40:16Z, confirmed via `list_triggers`): "Calm oak daily deploy" (fired
+  20:34:28Z, `SUCCEEDED`) and the daily Pinterest scheduler (fired 20:34:18Z–20:40:16Z,
+  `SUCCEEDED`) both show a fresh clean run inside that window; "Calm oak weekly influencer
+  outreach" and "Calm oak weekly seo post" did not fire (their crons don't overlap this evening
+  UTC window). This is the 2nd confirmed instance (after 2026-10-08) of a reconnect producing
+  zero new Instagram/TikTok content** — `blotato_list_posts(status=published,
+  2026-10-05→2026-10-12)` shows only Pinterest on its normal cadence plus the already-logged
+  2026-10-06 Orchard TikTok+Instagram pair; nothing new from this window. `blotato_get_credits`
+  unchanged at 3,735. Separately: "Calm oak weekly seo post" was due today (Monday 2026-10-12
+  08:00 Europe/Paris) but remained `enabled: false` / `suspension_reason: device_absent` at
+  trigger-check time (re-suspended again at 06:01 UTC this morning, shortly after the device
+  dropped) — a real missed due date, not just a standing absence. Re-confirmed
+  `database.blotato.io`/`www.amazon.com`/`calmandoak.com` all still `connect_rejected`/403 from
+  this sandbox via direct `curl` — no change in this sandbox's network policy. · confirmed (2nd
+  independent instance of the "reconnect without shipping" sub-finding, clearing the ledger's own
+  bar) · **candidate rule:** "reconnect produces zero new IG/TikTok content" is now 2-for-2 on the
+  most recent reconnects (vs. earlier ones — 09-28, 10-05, 10-06, 10-07 — which each shipped 1-2
+  new Orchard posts) — the device-reconnect workaround looks to be degrading, not merely
+  unreliable, strengthening the case for the structural fix (an egress allowlist for
+  `database.blotato.io`, or a real `publisher` backstop trigger that isn't device-bound) over
+  continuing to wait for the next reconnect. **Also worth flagging:** `LESSONS-LEDGER.md`'s own
+  header still reads "updated: 2026-09-14" with no consolidation ever recorded — 28 days have now
+  passed since creation, approaching but not yet past the `LEARNING-LOOP.md` ~30-day trigger; next
+  run due on/after 2026-10-14 should run the first monthly consolidation pass if no earlier run
+  does.
+
 - 2026-10-11 · CONTENT-FACTORY (weekly cloud run) · **A helper script "promoted" in a prior
   manifest never actually reached `main` — it only ever existed on that run's own batch branch,
   which (like every content-factory batch) doesn't get merged.** The 2026-10-04 manifest said
