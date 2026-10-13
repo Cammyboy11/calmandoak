@@ -68,10 +68,14 @@ Concretely:
   triggers — "Calm oak daily deploy" (`npx wrangler deploy` straight to production from Cameron's
   local folder) and "Calm oak weekly seo post" (a full write-and-publish pipeline with no PR step)
   — structurally bypass this gate by design: neither touches the `Cammyboy11/calmandoak` GitHub
-  repo, so the CEO's PR-review step never sees whatever they ship. Confirmed on a 5th real firing
-  of "daily deploy" (2026-09-28, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-11) — not a one-off.
-  No cloud session can currently verify what either has shipped (`calmandoak.com` is egress-blocked
-  from this sandbox). This is a standing item for
+  repo, so the CEO's PR-review step never sees whatever they ship. Confirmed on a 6th real firing
+  of "daily deploy" (2026-09-28, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-11, 2026-10-12) — not
+  a one-off. **2026-10-12 firing also confirms "weekly seo post" (which can write a brand-new
+  journal article and deploy it straight to production) completed a full run on its own due date**
+  (Monday 2026-10-12, 17:54–18:00 UTC), not just fired-then-suspended as on most prior weeks — see
+  `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-13 entry. No cloud session can currently verify what any
+  of the three has shipped (`calmandoak.com` and `database.blotato.io` are both still outright
+  unreachable from this sandbox, re-confirmed 2026-10-13). This is a standing item for
   Cameron to decide (disable them, or rework them to go through the same PR/staged-batch path
   every other role follows) — the CEO is not disabling or editing either trigger itself, since
   that's account/trigger-configuration territory.

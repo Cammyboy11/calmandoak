@@ -23,6 +23,39 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-13 · CEO (daily briefing #26) · **A 6th device reconnect, distinct from the one logged
+  2026-10-12 (that one covered 2026-10-11T20:33–20:40Z; this one is 2026-10-12T17:54:06–18:00:09Z,
+  confirmed via `list_triggers`), and for the first time "Calm oak weekly seo post" — the full
+  write-and-publish pipeline with no PR step — actually completed a run on its own due date
+  (Monday 2026-10-12) instead of being suspended at its 06:00 Europe/Paris due hour.** All three
+  device-bound triggers fired in this window and show fresh `SUCCEEDED` `last_run`: "Calm oak daily
+  deploy" (17:54:17–17:54:25Z), "Calm oak weekly seo post" (17:54:06–17:54:16Z), and the daily
+  Pinterest scheduler (17:54:06–18:00:09Z, a real 6-minute scheduling run, not just a check). The
+  Pinterest scheduler was re-suspended again this morning (`suspension_reason: device_absent`,
+  `updated_at: 2026-10-13T06:14:53Z`) — the device is gone again as of this run. **This is the
+  7th confirmed real firing of the review-gate-bypass pattern** (after 09-28, 10-05, 10-06, 10-07,
+  10-11, and now 10-11-evening/10-12-evening as two separate windows) — now explicitly including, for
+  the first time, direct evidence that "weekly seo post" (which can write a brand-new journal
+  article AND deploy it straight to production via `wrangler deploy`, entirely outside the
+  `Cammyboy11/calmandoak` GitHub repo) actually ran to completion on schedule, not just fired. No
+  git commit resulted (expected — this trigger never touches GitHub by design;
+  confirmed `origin/main` unchanged since yesterday's briefing commit via `git merge-base
+  --is-ancestor`). Re-tested direct egress this run: `curl` to both `calmandoak.com` and
+  `database.blotato.io` both return outright connection failure (curl exit code / HTTP 000), same
+  as every check since 2026-09-14/15 — so there is still no way for any cloud session to see what
+  "weekly seo post" actually wrote or deployed Monday. **Separately: zero new Instagram/TikTok
+  content resulted from this reconnect either** — `blotato_list_posts(status=published,
+  2026-10-06→2026-10-13)` shows the last IG/TikTok activity is still the 2026-10-06 Orchard pair;
+  `blotato_get_credits` unchanged at 3,735 — a 3rd instance (after 10-08, 10-11) of this specific
+  degrading sub-pattern (reconnect without new IG/TikTok content), now spanning essentially every
+  reconnect since 10-07. · confirmed (7th independent same-pattern instance on the bypass itself;
+  3rd on the IG/TikTok-sub-pattern; 1st direct evidence that "weekly seo post" specifically
+  completes, not just fires) · **promoted:** added this firing + the "weekly seo post completed"
+  detail to `CONTROL.md`'s standing gap note. **Also unresolved, no new evidence either way:** the
+  real cloud `calmoak-seo-ranker` trigger's last confirmed fire (2026-10-09, Friday) failed
+  `ACCESS_DENIED`; today's due fire (Tue 2026-10-13, 08:03 UTC) had not yet happened as of this
+  07:07 UTC run — tomorrow's briefing should check whether it ran clean today.
+
 - 2026-10-12 · CEO (daily briefing #25) · **Cameron's local device reconnected a 5th time
   (2026-10-11T20:33:50–20:40:16Z, confirmed via `list_triggers`): "Calm oak daily deploy" (fired
   20:34:28Z, `SUCCEEDED`) and the daily Pinterest scheduler (fired 20:34:18Z–20:40:16Z,
