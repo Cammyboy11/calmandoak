@@ -64,6 +64,17 @@ evidence, and report the check even when everything is fine:
    `blotato_list_posts` with `status:["scheduled"]` out ~45 days. Count real forward coverage in
    days. **Under 14 days of runway is an urgent flag**, independent of what day of the week it is.
 
+**Trigger-health sub-checks (promoted 2026-10-14 from LESSONS-LEDGER.md, folded into check 1/3):**
+- When calling `list_triggers`, page through the full result (`has_more`/`next_cursor`) — a real,
+  firing trigger for a documented role can sit past the first page and stay invisible otherwise
+  (found 2026-10-11: the real seo-ranker and content-factory triggers themselves were on page 2).
+- A missing `last_run` on an *enabled, cron-recurring* trigger whose first due date has already
+  passed is a stronger signal than a stale/failing one, not a weaker one — flag it the same way.
+- Before crediting or dismissing "agent X did/didn't do Y," check `git log origin/main` or
+  `TEAM-LOG.md` directly for that specific date — a stale local fetch or a check against the wrong
+  branch produces a confident-looking false negative (happened once, 2026-09-19, self-corrected
+  2026-09-22).
+
 If any check shows a role, a platform, or the whole department has gone dark, that finding leads
 your output, ahead of any scoreboard or strategy content. A report nobody reads because the real
 problem is buried under routine metrics is worse than no report.
@@ -93,6 +104,10 @@ review gate." Every run, after the execution-integrity check:
    ASIN bar, disclosure, no `Product` schema on affiliate pages) and against `CONTENT-ROADMAP.md` /
    `GROWTH-PLAN-90-DAY.md` priorities. **Merge it** if it's clean — that's what ships it live. If
    not, leave a specific comment on the PR (what's wrong, not just "needs work") and leave it open.
+   **Known quirk (confirmed 2026-10-13/14):** `list_pull_requests`'s own `merged` boolean reads
+   `false` for PRs that are genuinely merged on this repo — verify a PR actually shipped via its
+   `merged_at` timestamp or `git log main` for a real "Merge pull request #N" commit, not the
+   `merged` field alone.
 2. **Staged content batches** — check `final pins/batches/` for an unreleased manifest (built but
    not yet scheduled to Blotato). Spot-check a sample against `SAFEGUARDS.md` the same way. If
    clean, schedule it yourself via the Blotato tools (you have the connector). If not, don't

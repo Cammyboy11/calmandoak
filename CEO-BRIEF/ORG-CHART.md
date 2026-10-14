@@ -49,9 +49,32 @@ assumed — the CEO re-verifies it every run** (see `CEO-OPERATING-BRIEF.md`).
 ## Real automation inventory (as of 2026-09-10 — the CEO should re-check this, not trust it)
 - **Cloud routines that actually exist and fire (RemoteTrigger, verified via `list`):**
   - `Calm & Oak — daily Pinterest scheduler (approved pins → Blotato)` — daily 06:00 UTC, enabled, created 2026-09-05. This is NOT one of the 12 agents above; it's a narrow standalone routine.
+    **Documented behavior (promoted 2026-10-14, see LESSONS-LEDGER.md):** this trigger is
+    device-bound — it auto-suspends with `suspension_reason: "device_absent"` whenever Cameron's
+    local device disconnects, and auto-resumes on its own once reconnected. This is expected,
+    machine-logged behavior, not an undocumented manual toggle or a bug — confirmed 2026-09-27 and
+    re-observed on every subsequent reconnect since. An execution-integrity check should report its
+    *current* enabled/suspended state and whether the device is back, not re-flag each occurrence
+    as a fresh mystery.
+  - `Calm & Oak — SEO Ranker (Tue + Fri)` (`trig_01DPEbTj1zEnSnhcxqPLydxb`, created 2026-09-14, cron
+    Tue/Fri 08:00 UTC) — real and firing since creation, producing PRs #2/#3/#4/#6/#8/#9. One
+    isolated `ACCESS_DENIED` failure 2026-10-09; its next fire (2026-10-13) succeeded clean.
+  - `Calm & Oak — Content Factory (weekly)` (`trig_01XzLKbetL8Rk1SWbBPb21av`, created 2026-09-14,
+    cron Sun 12:00 UTC) — real and firing since creation, staging a batch to a `content-factory/*`
+    branch each week (4 open/unscheduled as of 2026-10-14, blocked on the `database.blotato.io`
+    upload-egress policy, not on content-factory itself).
+  - `Calm & Oak — CEO Daily Briefing` (`trig_01V6STzAy79zfw1xMnS74RGu`, created 2026-09-14, daily
+    07:00 UTC) — this routine.
   - A handful of one-off, already-fired retry/resume routines (print-kit builds, tote mockups) — not recurring.
-  - For comparison: Gingernomics (Cameron's other brand) has 2 recurring routines that have fired reliably twice daily since 2026-04-18 — proof the cloud-routine mechanism itself is sound.
-- **No recurring cloud routine exists for any of the 12 agents above.** `~/.claude/scheduled-tasks/*/SKILL.md` files exist locally for all of them, but no tool available to this org can confirm they were ever wired to a real unattended trigger, and the evidence (TEAM-LOG silent since 2026-07-18, git commits collapsed ~10x from July to August) says they weren't running unattended.
+  - For comparison: Gingernomics (Cameron's other brand) has recurring routines that have fired reliably since 2026-04-18 — proof the cloud-routine mechanism itself is sound.
+- **Corrected 2026-10-14 (per `LESSONS-LEDGER.md`'s 2026-10-11 finding):** this section previously
+  said "no recurring cloud routine exists for any of the 12 agents above" — stale since 2026-09-14,
+  when the SEO Ranker and Content Factory triggers above were created. Of the 12 documented roles,
+  2 (seo-ranker, content-factory) have real, confirmed-firing cloud triggers; the rest
+  (marketing-director, publisher, geo-tracker, outreach, merchandiser, monetization, cro, email,
+  monthly-audit, daily-digest, moltbook) still have no confirmed recurring trigger — `list_triggers`
+  returns no entry matching their name or stated cadence as of this date. Re-verify this list each
+  consolidation pass rather than trusting it stale.
 
 ## Planned — real gaps, not yet built
 Sequenced one at a time after the CEO, per Cameron's decision 2026-09-10. `REVENUE-MODEL.md`

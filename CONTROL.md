@@ -80,6 +80,31 @@ Concretely:
   every other role follows) — the CEO is not disabling or editing either trigger itself, since
   that's account/trigger-configuration territory.
 
+## Trigger-change logging (promoted 2026-10-14, see LESSONS-LEDGER.md)
+Any session that creates, enables, disables, or otherwise materially changes a recurring cloud
+trigger logs it (TEAM-LOG.md or ORG-CHART.md) in the same session. Confirmed as a recurring gap
+across 4+ independent instances (2026-09-14, -16, -25/26, -27) — triggers appearing, disappearing,
+or changing state with zero paper trail, discovered cold by the next day's execution-integrity
+check instead of being explained in advance. **Known exception, not a bug:** the daily Pinterest
+scheduler (`trig_0144Cg9HoKeXhET21YLSDVbk`) auto-suspends with `suspension_reason: "device_absent"`
+whenever Cameron's local device disconnects, and auto-resumes when it reconnects — this is expected,
+machine-logged behavior (confirmed 2026-09-27, repeatedly re-observed since), not an undocumented
+manual toggle, and does not need a TEAM-LOG line each time it happens.
+
+## Content-factory pipeline notes (promoted 2026-10-14, see LESSONS-LEDGER.md)
+- **Pre-flight:** `node_modules/` is gitignored and absent on a fresh clone even though
+  `ffmpeg-static` is a listed `package.json` dependency — run `npm install ffmpeg-static --no-save`
+  before using `_pin-to-reel.js`/`_add-audio-bed.js` (no registry egress issue, confirmed working
+  every time since 2026-09-27).
+- **Branch ASIN overlap:** before finalizing a batch, check every other open `content-factory/*`
+  branch's manifest for ASIN overlap, not just the live Blotato queue — two independently-built
+  batches (09-20, 09-27) shipped the same ASIN before anyone checked (found 2026-09-27).
+- **Reusable tooling lands on `main`, not a batch branch:** a batch branch's "promoted to a standing
+  helper" claim (e.g. `_asin-to-pin.js`) does not actually reach `main` unless merged — content-factory
+  batch branches never get merged, only reviewed and scheduled. A genuinely reusable pipeline script
+  should ship via its own small PR directly, the same review path seo-ranker already uses for code,
+  not get silently re-added to every new batch branch (confirmed recurring 2026-10-04, 2026-10-11).
+
 ## Learning loop (added 2026-09-14)
 If you observe something real this run — a mistake, a pattern, a fix that worked — append one
 line to `CEO-BRIEF/LESSONS-LEDGER.md` (schema is in that file). You don't need to act on it beyond

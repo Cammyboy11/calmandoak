@@ -57,6 +57,31 @@ done | sort | uniq -c
 ```
 Expected output: only `OK` lines. Any `MISS` line is a broken image and must be fixed before commit.
 
+### 7. FTC disclosure presence (promoted 2026-10-14, see LESSONS-LEDGER.md)
+Every page carrying an Amazon/Awin affiliate link, and every monetized social post, must carry the
+disclosure sentence ("As an Amazon Associate, Calm & Oak earns from qualifying purchases." or the
+post equivalent + `#affiliate`). This was previously documented only in `PLAYBOOK-AUDIT-CORRECTIONS.md`,
+a one-off audit doc — found missing at scale 6 independent times (2026-09-14 through 2026-09-19,
+~20-60 already-scheduled posts sampled, 0 carried it) before the gap was closed. Grep for it
+explicitly before shipping any new page or batch; don't assume a template carries it forward — the
+2026-09-24 redesign silently dropped the banner site-wide by replacing the stylesheet the old
+`.disclosure` CSS class depended on, so the markup alone wasn't enough to verify (fixed in PR #5).
+
+### 8. Sitewide degraded-ASIN resweep (promoted 2026-10-14, practice-validated across 5+ runs)
+Before or after any article edit, grep the **whole repo** (not just `journal/` — also
+`shop/`, `assets/the-edit/`, `assets/starter-guide/`) for every ASIN this file names as degraded
+(e.g. `B0DRHQ1FKP`). A bad ASIN fixed in one article can still be shipping unnoticed in another —
+found live in 6 files/8 locations on 2026-09-29, undetected by every narrower audit before it. Run
+this on every periodic audit sweep, even when no new article is being written.
+
+### 9. Hub reconciliation + filter-chip counts (promoted 2026-10-14)
+Any run that touches `journal/index.html` (or `shop/looks/index.html`) should verify, not assume:
+(a) every sitemap-listed journal URL has a real card + inbound link from the hub page itself — a
+page can be live, in the sitemap, and still be orphaned from on-site navigation (found twice,
+2026-09-22); (b) filter-chip category counts are **recomputed from the actual `data-category`
+attributes in the grid**, never incremented by the delta of just this run's own change — a stale
+count can drift silently for weeks (found at a 14-card gap, 2026-09-22).
+
 ---
 
 ## The verification block (paste into the article work before every commit)
@@ -113,3 +138,4 @@ This protocol is the cheapest insurance against that failure. Five checks. Five 
 - 2026-05-27 — Added two new checks after overnight audit (see [PHASE-E-AUDIT-REPORT.md](./PHASE-E-AUDIT-REPORT.md)) caught 4 additional issues across japandi-101, japandi-living-room (×2), and japandi-bedroom:
   - **Check 1a (sub-class):** When the linked product has a distinguishing feature (material, finish, type), verify the image depicts that *specific* feature. "Headboard" is not enough — "upholstered headboard" vs "oak headboard" must match.
   - **Check 6 (cross-article ASIN consistency):** When the same ASIN appears in multiple articles, the image-product match must hold in each. Don't assume a verified pairing transfers from one article to another.
+- 2026-10-14 — First monthly learning-loop consolidation (see `CEO-BRIEF/LESSONS-LEDGER.md` and `CEO-BRIEF/LEARNING-LOOP.md`). Added Checks 7-9 above (disclosure presence, sitewide degraded-ASIN resweep, hub reconciliation/filter-chip counts) — each already practiced ad hoc by SEO-ranker for 3-6+ runs; this pass makes them the written gate instead of tribal knowledge.
