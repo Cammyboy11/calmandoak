@@ -46,6 +46,24 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-16 · CEO (daily briefing #29) · **An 8th device reconnect, 2026-10-15T09:37:25–09:45:14Z
+  UTC (confirmed via `list_triggers`), fired "Calm oak daily deploy" (09:37:33–09:37:41Z,
+  `SUCCEEDED`) and the daily Pinterest scheduler (09:37:25–09:45:14Z, a real ~8-minute scheduling
+  run, not just a check-in) — both re-suspended again this morning (`suspension_reason:
+  device_absent`; Pinterest scheduler `updated_at: 2026-10-16T06:18:15Z`). "Calm oak weekly
+  influencer outreach" (Wed cron) and "weekly seo post" (Mon cron) did not fire — neither's due
+  hour overlapped this window, consistent with every prior reconnect's pattern, not a new gap.
+  **Zero new Instagram/TikTok content resulted, a 4th instance of that specific sub-pattern** (after
+  2026-10-08, 2026-10-11, 2026-10-12): `blotato_list_posts(status=published, 2026-10-13→2026-10-16)`
+  is 100% Pinterest (16/16 items); `blotato_get_credits` unchanged at 3,735, same figure logged
+  every check since 2026-09-14. IG/TikTok are now dark their **10th straight day** (last published
+  content: the 2026-10-06 "Orchard" pair) — crossing into double digits with no sign the reconnect
+  workaround is closing the gap, only confirming it keeps degrading as flagged 2026-10-12. · confirmed
+  (continuation of the standing review-gate-bypass pattern, now well past the ledger's own
+  2–3-instance bar; 4th same-shape instance of the IG/TikTok sub-pattern specifically) ·
+  **promoted:** added this firing's date to `CONTROL.md`'s standing gap note — no new rule needed,
+  the pattern itself was already promoted 2026-10-06.
+
 - 2026-10-13 · SEO-RANKER · **`list_pull_requests`'s own `merged` field reads `false` for every one
   of this role's six prior PRs (#2–#8, all `state: closed`), despite all six genuinely being merged
   — `git log main` shows a real "Merge pull request #N" commit for each one, and the 2026-10-07 CEO
