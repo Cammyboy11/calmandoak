@@ -1,98 +1,16 @@
 # www -> apex is handled by the Cloudflare zone-level Single Redirect rule
 # (Workers static assets _redirects only allows relative source URLs)
+# Cloudflare limit: 100 dynamic rules. Keep this file short; specific rules before wildcards.
 
 # Legacy category renames
 /shop/dining/*        /shop/ceramics-tableware/   301
 /shop/living-room/*   /shop/furniture/            301
 
-# Pin slug typos (recovery-plan.json used wrong slugs; pins live Jul 30)
-/shop/prints/three-bamboo/*    /shop/prints/bamboo/       301
-/shop/prints/sage-and-stone/*  /shop/prints/sage-stone/   301
-
-# 2026-10-16: the art shop moved to Shopify. Static print/set pages duplicated shop.calmandoak.com
-# (Search Console: 50+ of these sat in 'Discovered - currently not indexed'). 301 everything to the store.
-/shop/prints/balance/  https://shop.calmandoak.com/products/balance  301
-/shop/prints/balance  https://shop.calmandoak.com/products/balance  301
-/shop/prints/bamboo/  https://shop.calmandoak.com/products/bamboo  301
-/shop/prints/bamboo  https://shop.calmandoak.com/products/bamboo  301
-/shop/prints/bent-reed/  https://shop.calmandoak.com/products/bent-reed  301
-/shop/prints/bent-reed  https://shop.calmandoak.com/products/bent-reed  301
-/shop/prints/boro-indigo/  https://shop.calmandoak.com/products/boro-indigo  301
-/shop/prints/boro-indigo  https://shop.calmandoak.com/products/boro-indigo  301
-/shop/prints/branch-shadow/  https://shop.calmandoak.com/products/branch-shadow  301
-/shop/prints/branch-shadow  https://shop.calmandoak.com/products/branch-shadow  301
-/shop/prints/chado/  https://shop.calmandoak.com/products/chado  301
-/shop/prints/chado  https://shop.calmandoak.com/products/chado  301
-/shop/prints/cherry-branch/  https://shop.calmandoak.com/products/cherry-branch  301
-/shop/prints/cherry-branch  https://shop.calmandoak.com/products/cherry-branch  301
-/shop/prints/clay-arch/  https://shop.calmandoak.com/products/clay-arch  301
-/shop/prints/clay-arch  https://shop.calmandoak.com/products/clay-arch  301
-/shop/prints/crane/  https://shop.calmandoak.com/products/crane  301
-/shop/prints/crane  https://shop.calmandoak.com/products/crane  301
-/shop/prints/dusk/  https://shop.calmandoak.com/products/dusk  301
-/shop/prints/dusk  https://shop.calmandoak.com/products/dusk  301
-/shop/prints/enso/  https://shop.calmandoak.com/products/enso  301
-/shop/prints/enso  https://shop.calmandoak.com/products/enso  301
-/shop/prints/eucalyptus/  https://shop.calmandoak.com/products/eucalyptus  301
-/shop/prints/eucalyptus  https://shop.calmandoak.com/products/eucalyptus  301
-/shop/prints/ginkgo/  https://shop.calmandoak.com/products/ginkgo  301
-/shop/prints/ginkgo  https://shop.calmandoak.com/products/ginkgo  301
-/shop/prints/horizon-bird/  https://shop.calmandoak.com/products/horizon-bird  301
-/shop/prints/horizon-bird  https://shop.calmandoak.com/products/horizon-bird  301
-/shop/prints/kintsugi-seam/  https://shop.calmandoak.com/products/kintsugi-seam  301
-/shop/prints/kintsugi-seam  https://shop.calmandoak.com/products/kintsugi-seam  301
-/shop/prints/kintsugi-vessel/  https://shop.calmandoak.com/products/kintsugi-vessel  301
-/shop/prints/kintsugi-vessel  https://shop.calmandoak.com/products/kintsugi-vessel  301
-/shop/prints/koi/  https://shop.calmandoak.com/products/koi  301
-/shop/prints/koi  https://shop.calmandoak.com/products/koi  301
-/shop/prints/koi-falls/  https://shop.calmandoak.com/products/koi-falls  301
-/shop/prints/koi-falls  https://shop.calmandoak.com/products/koi-falls  301
-/shop/prints/koi-pair/  https://shop.calmandoak.com/products/koi-pair  301
-/shop/prints/koi-pair  https://shop.calmandoak.com/products/koi-pair  301
-/shop/prints/layers/  https://shop.calmandoak.com/products/layers  301
-/shop/prints/layers  https://shop.calmandoak.com/products/layers  301
-/shop/prints/linen-morning/  https://shop.calmandoak.com/products/linen-morning  301
-/shop/prints/linen-morning  https://shop.calmandoak.com/products/linen-morning  301
-/shop/prints/ma/  https://shop.calmandoak.com/products/ma  301
-/shop/prints/ma  https://shop.calmandoak.com/products/ma  301
-/shop/prints/moon-cycle/  https://shop.calmandoak.com/products/moon-cycle  301
-/shop/prints/moon-cycle  https://shop.calmandoak.com/products/moon-cycle  301
-/shop/prints/moonrise/  https://shop.calmandoak.com/products/moonrise  301
-/shop/prints/moonrise  https://shop.calmandoak.com/products/moonrise  301
-/shop/prints/mountain-mist/  https://shop.calmandoak.com/products/mountain-mist  301
-/shop/prints/mountain-mist  https://shop.calmandoak.com/products/mountain-mist  301
-/shop/prints/mountain-stream/  https://shop.calmandoak.com/products/mountain-stream  301
-/shop/prints/mountain-stream  https://shop.calmandoak.com/products/mountain-stream  301
-/shop/prints/olive/  https://shop.calmandoak.com/products/olive  301
-/shop/prints/olive  https://shop.calmandoak.com/products/olive  301
-/shop/prints/onsen-mist/  https://shop.calmandoak.com/products/onsen-mist  301
-/shop/prints/onsen-mist  https://shop.calmandoak.com/products/onsen-mist  301
-/shop/prints/pampas/  https://shop.calmandoak.com/products/pampas  301
-/shop/prints/pampas  https://shop.calmandoak.com/products/pampas  301
-/shop/prints/raked-garden/  https://shop.calmandoak.com/products/raked-garden  301
-/shop/prints/raked-garden  https://shop.calmandoak.com/products/raked-garden  301
-/shop/prints/sage-stone/  https://shop.calmandoak.com/products/sage-stone  301
-/shop/prints/sage-stone  https://shop.calmandoak.com/products/sage-stone  301
-/shop/prints/serene-dawn/  https://shop.calmandoak.com/products/serene-dawn  301
-/shop/prints/serene-dawn  https://shop.calmandoak.com/products/serene-dawn  301
-/shop/prints/shizuka/  https://shop.calmandoak.com/products/shizuka  301
-/shop/prints/shizuka  https://shop.calmandoak.com/products/shizuka  301
-/shop/prints/single-stem/  https://shop.calmandoak.com/products/single-stem  301
-/shop/prints/single-stem  https://shop.calmandoak.com/products/single-stem  301
-/shop/prints/still-pond/  https://shop.calmandoak.com/products/still-pond  301
-/shop/prints/still-pond  https://shop.calmandoak.com/products/still-pond  301
-/shop/prints/tonal-horizon/  https://shop.calmandoak.com/products/tonal-horizon  301
-/shop/prints/tonal-horizon  https://shop.calmandoak.com/products/tonal-horizon  301
-/shop/prints/tsuki/  https://shop.calmandoak.com/products/tsuki  301
-/shop/prints/tsuki  https://shop.calmandoak.com/products/tsuki  301
-/shop/prints/two-woods/  https://shop.calmandoak.com/products/two-woods  301
-/shop/prints/two-woods  https://shop.calmandoak.com/products/two-woods  301
-/shop/prints/wa/  https://shop.calmandoak.com/products/wa  301
-/shop/prints/wa  https://shop.calmandoak.com/products/wa  301
-/shop/prints/warm-earth/  https://shop.calmandoak.com/products/warm-earth  301
-/shop/prints/warm-earth  https://shop.calmandoak.com/products/warm-earth  301
-/shop/prints/wild-grass/  https://shop.calmandoak.com/products/wild-grass  301
-/shop/prints/wild-grass  https://shop.calmandoak.com/products/wild-grass  301
+# 2026-10-17: the art shop moved to Shopify. Static print/set pages 301 to the store.
+# Old pin slug typos
+/shop/prints/three-bamboo/*    https://shop.calmandoak.com/products/bamboo       301
+/shop/prints/sage-and-stone/*  https://shop.calmandoak.com/products/sage-stone   301
+# Gallery sets (Shopify handle = set-<slug>)
 /shop/sets/botanical-soft/  https://shop.calmandoak.com/products/set-botanical-soft  301
 /shop/sets/botanical-soft  https://shop.calmandoak.com/products/set-botanical-soft  301
 /shop/sets/botanical-wild/  https://shop.calmandoak.com/products/set-botanical-wild  301
@@ -111,5 +29,11 @@
 /shop/sets/tonal-study  https://shop.calmandoak.com/products/set-tonal-study  301
 /shop/sets/wabi-sabi/  https://shop.calmandoak.com/products/set-wabi-sabi  301
 /shop/sets/wabi-sabi  https://shop.calmandoak.com/products/set-wabi-sabi  301
+/shop/sets/zen-kanji/  https://shop.calmandoak.com/products/set-zen-kanji  301
+/shop/sets/zen-kanji  https://shop.calmandoak.com/products/set-zen-kanji  301
+# Single prints: same slug on Shopify
+/shop/prints/:slug/  https://shop.calmandoak.com/products/:slug  301
+/shop/prints/:slug   https://shop.calmandoak.com/products/:slug  301
+# Anything else under the old paths
 /shop/prints/*  https://shop.calmandoak.com/collections/art  301
 /shop/sets/*  https://shop.calmandoak.com/collections/gallery-sets  301
