@@ -46,6 +46,61 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-17 · CEO (daily briefing #30) · **A 9th device reconnect, 2026-10-16T08:42:55–08:50:24Z
+  UTC (confirmed via `list_triggers`) — distinct from, and roughly 9 hours before, the separate
+  direct-push session logged in the next entry below.** "Calm oak daily deploy" fired and
+  `SUCCEEDED` (08:43:01–08:43:08Z, ~7s — consistent with "no changes yet, skip deploy," since
+  Cameron's own site work hadn't happened yet at that point in the day); the daily Pinterest
+  scheduler fired a real ~7.5-minute scheduling run (08:42:55–08:50:24Z) and published its normal
+  cadence since. Both re-suspended again by this morning's check (`suspension_reason:
+  device_absent`; Pinterest scheduler `updated_at: 2026-10-17T06:14:08Z`) — the usual cycle. "Calm
+  oak weekly seo post" (last fire still 2026-10-12, next due Mon 2026-10-19) and "Calm oak weekly
+  influencer outreach" (last fire still 2026-10-07, `enabled: false`/`suspension_reason:
+  device_absent`, unchanged) did not fire — neither's due day overlapped this Friday-morning window.
+  **Zero new Instagram/TikTok content resulted, a 5th instance of that sub-pattern** (after
+  2026-10-08, -11, -12, -15): `blotato_list_posts(status=published, 2026-10-13→2026-10-17)` is 100%
+  Pinterest; `blotato_get_credits` unchanged at 3,735. IG/TikTok are now dark their **11th straight
+  day** (last published content: the 2026-10-06 "Orchard" pair). · confirmed (continuation of the
+  standing pattern, well past the ledger's 2–3-instance bar) · **promoted:** added this firing's
+  date to `CONTROL.md`'s standing gap note (8th confirmed "daily deploy" firing).
+
+- 2026-10-17 · CEO (daily briefing #30) · **Cameron did a substantial amount of direct, non-trigger
+  work on the site himself on 2026-10-16 (17:25–19:23 UTC) — 5 commits authored `Cameron Hayes
+  <cameronhayes11@hotmail.com>`, co-authored "Claude Fable 5.1" (session
+  `01AjRB6YBz4AZqsgwH1uX7PB`), pushed directly to `main` via git, not through any specialist agent's
+  PR path and not through either of the two already-flagged device-bound triggers (those deploy via
+  `wrangler`/the local pipeline and never touch GitHub — this did).** Shipped: (1) `shop/prints/*`
+  and `shop/sets/*` (50+ static print/set pages) 301-redirected to `shop.calmandoak.com` and dropped
+  from `sitemap.xml` — commit message states the reason: these sat in GSC as "Discovered - currently
+  not indexed," duplicating the Shopify store's own product pages; (2) exact-match redirect fix so
+  the new rules beat the old wildcard; (3) **53 new `shop/looks/*` "shop-the-room" pages** — each a
+  room built from Calm & Oak's own Shopify textiles/art (UTM-tagged) plus 4 Amazon finds and,
+  where relevant, a JoyDeco/Monvane Awin pick; `shop/looks/index.html` updated to 68 rooms; (4) a
+  Cloudflare retrigger commit (git-triggered builds are documented as unreliable, hence the manual
+  retrigger); (5) a "From our studio" cross-sell block added to all 64 journal guides, linking 3
+  Calm & Oak Shopify products each. **Spot-checked 3 of the 53 new Looks pages plus the new "From
+  our studio" block for SAFEGUARDS-style compliance** (not an exhaustive 53-page sweep): disclosure
+  block present (`As an Amazon Associate and Awin partner...`), Amazon links carry
+  `tag=calmandoak-20` + `rel="sponsored nofollow noopener"`, Shopify links carry UTM params, and a
+  grep of the new article's own image `src` attributes against the checkout found zero missing
+  files. Test-merged `origin/main`'s then-5 trailing commits against open PR #10's branch locally
+  (`git merge --no-commit --no-ff`) — auto-merged clean, zero conflicts, confirming this work didn't
+  collide with SEO-ranker's own in-flight PR despite both touching `journal/index.html` and several
+  shared journal articles. **The real finding: this shipped with zero `TEAM-LOG.md` entry** — found
+  only by reading `git log origin/main` directly during this run's execution-integrity check, not
+  from any handoff note. Content itself looks sound and the stated business reason (clearing a GSC
+  duplicate-content flag by consolidating onto the Shopify storefront) is sensible, so this is not
+  escalated as a problem — but the next SEO-ranker run needs to know `shop/prints/*`/`shop/sets/*`
+  are now redirects (not pages to "fix" or recreate), and a full SAFEGUARDS pass over the 53 new
+  Looks pages (this run only sampled 3) is worth doing on a future pass since no specialist agent's
+  own QA gate ran on them. · raw (1st instance of this specific shape — Cameron's own direct,
+  non-trigger push shipping public-facing monetized content with no TEAM-LOG entry; distinct from
+  the already-confirmed device-bound-trigger bypass pattern, which never touches GitHub) ·
+  **candidate rule:** extend the existing "trigger-change logging" convention (`CONTROL.md`) to
+  cover Cameron's own direct site commits too — a one-line TEAM-LOG entry when he ships something
+  himself would have saved this run the git-log archaeology and given SEO-ranker/content-factory
+  advance notice instead of discovering it cold. Needs ≥1 more instance before promoting.
+
 - 2026-10-16 · SEO-RANKER · **`CONTENT-ROADMAP.md`'s unchecked checkboxes are stale and should not be read as an accurate "what's missing" list — both Sprint-3 cluster pillars it lists as unchecked (`japandi-materials-palette`, `japandi-styling-rules`) already exist, fully built (2,700+ words each, well cross-linked).** Confirmed by reading each file directly and grepping its internal links before concluding what to write next this run — the roadmap document itself was never updated as the site grew from ~32 to 65 articles. Also independently re-confirmed the task's own hint that the office cluster (GROWTH-PLAN's #1 priority) is fully built: 6 interlinked articles, every spoke linking back to the hub. Both checks together meant the real next gap was neither office nor the Sprint-3 pillars, but a genuinely unshipped item further down GROWTH-PLAN's Tier-5 list (Christmas/holiday styling) — found only by checking actual `journal/` directory contents against the plan's titles rather than trusting either doc's own checkboxes. · raw (1st instance of naming this specific staleness; the general "check what already exists before writing" practice is already well-established in prior entries, e.g. 2026-09-22, 2026-10-06, but this is the first time a planning doc's checkboxes specifically were shown to lag the actual site state by two full sprints) · **candidate rule:** a periodic audit sweep (any role) should treat `CONTENT-ROADMAP.md`'s checkboxes as directional, not authoritative — always cross-check against the real `journal/` listing before concluding an item is unbuilt. Possibly worth a one-time pass to re-check all of Sprint 1-3 against actual file state and update the checkboxes, rather than re-discovering this gap piecemeal each run.
 
 - 2026-10-16 · CEO (daily briefing #29) · **An 8th device reconnect, 2026-10-15T09:37:25–09:45:14Z

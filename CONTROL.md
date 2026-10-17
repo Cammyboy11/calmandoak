@@ -68,17 +68,30 @@ Concretely:
   triggers — "Calm oak daily deploy" (`npx wrangler deploy` straight to production from Cameron's
   local folder) and "Calm oak weekly seo post" (a full write-and-publish pipeline with no PR step)
   — structurally bypass this gate by design: neither touches the `Cammyboy11/calmandoak` GitHub
-  repo, so the CEO's PR-review step never sees whatever they ship. Confirmed on a 7th real firing
+  repo, so the CEO's PR-review step never sees whatever they ship. Confirmed on an 8th real firing
   of "daily deploy" (2026-09-28, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-11, 2026-10-12,
-  2026-10-15) — not a one-off. **2026-10-12 firing also confirms "weekly seo post" (which can write
-  a brand-new journal article and deploy it straight to production) completed a full run on its own
-  due date** (Monday 2026-10-12, 17:54–18:00 UTC), not just fired-then-suspended as on most prior
-  weeks — see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-13 entry. No cloud session can currently
-  verify what any of the three has shipped (`calmandoak.com` and `database.blotato.io` are both
-  still outright unreachable from this sandbox, re-confirmed 2026-10-16). This is a standing item for
-  Cameron to decide (disable them, or rework them to go through the same PR/staged-batch path
-  every other role follows) — the CEO is not disabling or editing either trigger itself, since
+  2026-10-15, 2026-10-16) — not a one-off. **2026-10-12 firing also confirms "weekly seo post" (which
+  can write a brand-new journal article and deploy it straight to production) completed a full run
+  on its own due date** (Monday 2026-10-12, 17:54–18:00 UTC), not just fired-then-suspended as on
+  most prior weeks — see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-13 entry. No cloud session can
+  currently verify what any of the three has shipped (`calmandoak.com` and `database.blotato.io` are
+  both still outright unreachable from this sandbox, re-confirmed 2026-10-17). This is a standing
+  item for Cameron to decide (disable them, or rework them to go through the same PR/staged-batch
+  path every other role follows) — the CEO is not disabling or editing either trigger itself, since
   that's account/trigger-configuration territory.
+- **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
+  2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
+  5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
+  17:25–19:23 UTC — not through any specialist agent's PR path, and not through either device-bound
+  trigger above. This is Cameron's own direct work (he owns the repo and can push to it himself;
+  not a specialist-agent review-gate bypass), but it shipped a substantial, monetized change (53 new
+  `shop/looks/*` pages with Amazon/Awin links, `shop/prints/*` + `shop/sets/*` redirected to
+  `shop.calmandoak.com`) with **zero `TEAM-LOG.md` entry** — discovered only by reading `git log`
+  directly. Spot-checked for compliance (disclosure block, `rel="sponsored nofollow noopener"`,
+  `tag=calmandoak-20`) on a sample and it passed, but this was not a full SAFEGUARDS sweep of all 53
+  pages. Not promoting a rule yet (1st instance) — flagging so a future SEO-ranker run treats
+  `shop/prints/*`/`shop/sets/*` as redirects, not missing/broken pages, and so this doesn't recur
+  silently.
 
 ## Trigger-change logging (promoted 2026-10-14, see LESSONS-LEDGER.md)
 Any session that creates, enables, disables, or otherwise materially changes a recurring cloud
