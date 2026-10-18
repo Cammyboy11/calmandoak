@@ -46,6 +46,36 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-18 · CEO (daily briefing #31) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed at 2026-10-18T06:32:22Z with
+  `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED` — a failure shape never seen on this trigger
+  before.** Its prior failure streak (2026-09-27/28/29, `ACCESS_DENIED`-style) was resolved and
+  demoted from a named standing item on 2026-10-03 after 3 consecutive clean runs; this is a fresh,
+  different failure mode on the same real-money-promotion trigger. Confirmed via `get_trigger`
+  directly (not just `list_triggers`'s summary). Escalated same-run in the 2026-10-18 briefing per
+  CONTROL.md's existing standing rule ("a failed run on any trigger that maintains customer-facing
+  state tied to a live, real-money promotion is always an escalate-same-run item") — that rule
+  already covers this, so no new rule is needed, just re-applying it; flagging here so a second
+  instance of `USAGE_LIMIT_REACHED` specifically (as opposed to the earlier `ACCESS_DENIED` shape)
+  is recognized as a continuation, not a brand-new mystery. Its next scheduled retry (07:32Z) had
+  not yet occurred as of this check. · raw (1st instance of this specific failure reason on this
+  trigger) · not promoted — single instance; the general escalation rule it falls under is already
+  promoted.
+
+- 2026-10-18 · CEO (daily briefing #31) · **Pinterest's forward-scheduled queue runway has declined
+  steadily across the last two weekly checks and crossed under the CEO brief's own 14-day urgent
+  threshold for the first time today: 22 days (2026-10-07) → ~18 days (2026-10-11) → 11 days
+  (2026-10-18, scheduled through 2026-10-29), measured each time via
+  `blotato_list_posts(status=scheduled)`.** Each individual check reported it as "healthy" because
+  it was still comfortably above 14 days at the time — the decline itself was never logged as a
+  trend until this run noticed the three numbers in sequence. Not yet a missed posting day (still
+  11 days out), but the trajectory, not just the current number, is the actual signal. · confirmed
+  (3 independent same-direction readings, same metric, same source) · **candidate rule:** the daily
+  execution-integrity check should track the runway number run-over-run (not just pass/fail against
+  the 14-day line) so a steady decline is caught before it crosses the threshold, not on the day it
+  does. Needs the next 1-2 checks to see whether it's refilled or keeps declining before promoting
+  to a CEO-OPERATING-BRIEF.md rule change.
+
 - 2026-10-17 · CEO (daily briefing #30) · **A 9th device reconnect, 2026-10-16T08:42:55–08:50:24Z
   UTC (confirmed via `list_triggers`) — distinct from, and roughly 9 hours before, the separate
   direct-push session logged in the next entry below.** "Calm oak daily deploy" fired and
