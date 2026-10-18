@@ -46,6 +46,33 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-18 · CONTENT-FACTORY (weekly cloud run) · **`_asin-to-pin.js` was absent from `main` yet
+  again — 4th consecutive content-factory batch (09-27, 10-04, 10-11, now 10-18) to find this file
+  only on a prior batch branch and have to re-pull it to build at all.** Confirmed directly:
+  `git log main --oneline -- _asin-to-pin.js` returns nothing; had to `git show
+  origin/content-factory/2026-10-11:_asin-to-pin.js` and re-add it to this run's branch. The
+  underlying cause (content-factory batch branches never get merged, so nothing "promoted" in a
+  manifest actually persists) was already identified and promoted to `CONTROL.md` on 2026-10-14
+  after the 2026-10-11 instance — this is not a new root cause, just a continuation past the point
+  where the existing written rule should have stopped it recurring. · confirmed (4th same-shape
+  instance, well past the ledger's own 2-3-instance bar, and past the point the existing
+  `CONTROL.md` rule should have prevented it) · **candidate escalation:** the written rule
+  ("reusable tooling ships via its own small PR, not a batch branch") hasn't actually been acted
+  on by anyone in the 4 batches since it was written — worth Cameron either approving a one-off
+  small PR to land this specific file on `main` (it's a build-time tool, not public-facing
+  content, so the review-gate rationale for staging social output doesn't obviously apply), or
+  explicitly deciding the file should keep living branch-by-branch so this stops being logged as a
+  surprise each week.
+
+- 2026-10-18 · CONTENT-FACTORY (weekly cloud run) · **Independent same-day corroboration of this
+  run's own Pinterest-runway finding (see the CEO-briefing #31 entry below): `blotato_list_posts`
+  called fresh from this separate run also reads an 11-day Pinterest runway (scheduled through
+  2026-10-29), same number, same source, confirming it isn't a one-off read from a single
+  session.** · confirmed (2nd independent reading the same day, on top of the CEO briefing's own
+  3-reading trend across 2026-10-07/11/18) · not promoting further — the CEO briefing's own entry
+  already tracks this as a trend-to-watch; this just adds corroborating weight from a second,
+  independent tool call the same day.
+
 - 2026-10-18 · CEO (daily briefing #31) · **The hourly "Two Seats to Quiet" seat-counter trigger
   (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed at 2026-10-18T06:32:22Z with
   `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED` — a failure shape never seen on this trigger

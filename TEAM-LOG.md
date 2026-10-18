@@ -10,6 +10,45 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-10-18 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-post IG/TikTok refill batch (5
+  products × 2 platforms) at `final pins/batches/2026-10-18/`, committed + pushed to branch
+  `content-factory/2026-10-18` — not merged, not scheduled, per the 2026-09-14 public-facing
+  review gate.** Read CONTROL.md (`PAUSE: false`, re-read the 2026-09-14 review-gate section),
+  SAFEGUARDS.md, and `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-09-14 entries first (gitignored local
+  pin assets, the blocked `database.blotato.io` upload, `_add-audio-bed.js`'s past issues, the
+  missing-disclosure finding — all re-confirmed or re-applied this run).
+  **Checked real Blotato data before building anything:** `blotato_list_accounts` confirms all
+  three platforms connected and live (instagram 53849, pinterest 7556, tiktok 47113) — no
+  contradiction with CONTROL.md's "all three active" flags at the account level. `blotato_list_posts`
+  (status=scheduled, 2026-10-18→2026-12-31): Instagram 0, TikTok 0 — true zero, unchanged since
+  2026-10-11; **Pinterest runway 11 days** (scheduled through 2026-10-29) — independently
+  corroborates today's CEO-briefing finding of the same number crossing under the 14-day line for
+  the first time. Not yet a missed posting day, so per this week's "don't rebuild a channel that's
+  already full" instruction this run did not add Pinterest pieces, only flagged the trend.
+  **Built:** 5 new products sourced from tracked `assets/img/*` matched to real, already-live
+  ASINs grepped from journal/shop pages' own product cards — BON AUGURE oak + matte-black bar
+  cart, framed botanical wall art (set of 3), round walnut-tone coffee table, 5ft faux olive tree,
+  BIRDROCK seagrass laundry hamper. Five new categories (bar cart, wall art, coffee table, faux
+  greenery, laundry/utility), zero ASIN overlap with any of the four open branches (09-20, 09-27,
+  10-04, 10-11 — checked directly against each branch's manifest, 22 ASINs excluded). Explicitly
+  excluded the SAFEGUARDS Check 8 degraded ASIN (`B0DRHQ1FKP`) from the sourcing pool. Every image
+  visually opened and compared against its linked product's name/alt text before use (SAFEGUARDS
+  Check 1) — all 5 MATCH.
+  **Pipeline:** `npm install ffmpeg-static --no-save` succeeded (no registry egress issue, same as
+  every prior run). Re-pulled `_asin-to-pin.js` from `origin/content-factory/2026-10-11` — **4th
+  consecutive batch** to find this file absent from `main`, since content-factory batch branches
+  never get merged. `_pin-to-reel.js` and `_add-audio-bed.js` both `node --check` clean. All 5
+  reels' audio verified present via direct ffmpeg stream inspection + `volumedetect` on **all 5**
+  files, not a sample (`aac` 44.1kHz mono, mean −26.9dB / max −14.0dB, identical across all 5,
+  matching the 2026-10-11 batch's confirmed-audible level).
+  **SAFEGUARDS gate: 5/5 pieces PASS**, every caption carries the FTC disclosure sentence +
+  `#affiliate`. Full detail, QA blocks and captions in
+  `final pins/batches/2026-10-18/manifest.md`.
+  **Needs-Cameron:** schedule or reject this batch (now a 5th unshipped batch alongside 09-20,
+  09-27, 10-04, 10-11); give `_asin-to-pin.js` a real home on `main` (4th repeat of the same ask);
+  weigh the Pinterest 11-day runway alongside the IG/TikTok gap. · staged (branch pushed, needs-Cameron
+  review)
+
 - 2026-10-17 · CEO (daily briefing #30) · **PR #10 (journal/japandi-christmas) reviewed and
   merged** (commit `41127e4`) — SAFEGUARDS 9/9 PASS per the PR body, spot-checked disclosure/ASIN
   tags directly on the shipped page, and test-merged locally against the 5 intervening commits
