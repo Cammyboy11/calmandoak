@@ -46,6 +46,49 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-19 · CEO (daily briefing #32) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed a 2nd consecutive day with the same failure reason,
+  `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`** (2026-10-19T06:32:40Z, following
+  2026-10-18T06:32:22Z). Confirmed directly via `list_triggers`. This specific failure mode
+  (distinct from the earlier `ACCESS_DENIED`-style streak resolved 2026-10-03) now has 2
+  independent same-shape instances on consecutive days, clearing the ledger's own 2-3-instance bar
+  for "confirmed." Escalated same-run in the briefing per CONTROL.md's existing standing rule — no
+  new rule needed, just flagging that this has moved from "single instance, watch the retry" to "a
+  real recurring problem" in one day. · confirmed (2nd same-shape instance, consecutive days) · not
+  promoted — the general escalation rule it falls under is already promoted; nothing new to write
+  into CONTROL.md beyond what's already there.
+
+- 2026-10-19 · CEO (daily briefing #32) · **`blotato_get_credits` changed for the first time since
+  tracking began: 3,735 → 4,985 credits (+1,250).** Every prior check since 2026-09-14 (at least 8
+  independent readings across multiple CEO briefings and content-factory runs, all logged in this
+  file) read a flat 3,735 with no change. No activity visible from any cloud session this run or
+  last would explain a credit increase — no Blotato post/schedule/upload tool has been callable
+  (successfully) by any cloud session since the 2026-09-14 review-gate change, and content-factory
+  only stages batches, never calls Blotato's publish tools. Most likely an account-level top-up or
+  plan change Cameron made directly, but not confirmable from this session — flagged to him in the
+  briefing rather than guessed at. · raw (1st instance of any change to this previously-flat
+  metric) · not promoted — needs Cameron's confirmation of the cause before this is actionable as
+  a pattern; if the balance moves again without an obvious cause, treat as confirmed and escalate
+  harder.
+
+- 2026-10-19 · CEO (daily briefing #32) · **Pinterest's forward-scheduled runway continued its
+  decline a 4th consecutive check, now 2 consecutive days under the CEO brief's 14-day urgent
+  line: 22 days (10-07) → ~18 days (10-11) → 11 days (10-18) → ~10.4 days (10-19),** measured each
+  time via `blotato_list_posts(status=scheduled)`. Still not a missed posting day, but the decline
+  has not slowed or reversed since first crossing the threshold yesterday. · confirmed (continuation
+  of the 2026-10-18 entry's already-confirmed trend, now with a 4th data point) · not promoted
+  further — the 2026-10-18 entry already covers the candidate rule (track run-over-run, not just
+  pass/fail); this just adds the next data point showing the decline hasn't stopped.
+
+- 2026-10-19 · CONTENT-FACTORY (via 2026-10-18 batch, reviewed this run) · **`_asin-to-pin.js` is
+  now a 5th consecutive batch (09-27 "promoted" it, then 10-04, 10-11, 10-18) to find it missing
+  from `main` and re-pull it from a prior unmerged batch branch**, despite the written rule in
+  `CONTROL.md` since 2026-10-14 saying this kind of reusable tooling should ship via its own PR.
+  Escalated to Cameron directly in this run's briefing (Decisions Needed #4) since the written rule
+  has now gone unacted-on for 4 full batches. · confirmed (5th same-shape instance, well past the
+  ledger's own bar) · candidate escalation unchanged from 2026-10-18's entry, now with one more
+  recurrence — re-surfacing, not a new finding.
+
 - 2026-10-18 · CONTENT-FACTORY (weekly cloud run) · **`_asin-to-pin.js` was absent from `main` yet
   again — 4th consecutive content-factory batch (09-27, 10-04, 10-11, now 10-18) to find this file
   only on a prior batch branch and have to re-pull it to build at all.** Confirmed directly:
