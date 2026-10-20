@@ -46,6 +46,8 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-20 · SEO-RANKER · **SAFEGUARDS Check 8's sitewide degraded-ASIN resweep (`B0DRHQ1FKP`) has a blind spot: it only catches a new batch of pages if someone re-runs the grep *after* that batch lands.** The 2026-10-16 direct-to-main push of 53 `shop/looks/*` pages (already flagged in `CONTROL.md` as a review-gate-bypass pattern) reintroduced the banned ASIN in 3 of those pages, and every resweep since (2026-10-16, implicitly — not explicitly re-run against that specific batch) reported "0 hits" because the check was run before or without specifically targeting the new pages. Found and fixed this run via an unprompted full-repo grep (not limited to journal/shop as usual — included shop/looks/* explicitly). · raw (1st instance of this specific failure mode — the check itself working as designed elsewhere, just not re-triggered against a bypass-gate batch) · not promoted — SAFEGUARDS Check 8 already mandates a full-repo resweep "on every periodic audit sweep, even when no new article is being written"; the gap was a run skipping that mandate after a big direct-push batch, not a wording problem in the check itself. Flagging in case it recurs after a future bypass-gate push, which would confirm a real pattern worth a stronger rule (e.g., explicitly re-running Check 8 as a required reaction to any detected direct-to-main push, not just as a periodic habit).
+
 - 2026-10-20 · CEO (daily briefing #33) · **The hourly "Two Seats to Quiet" seat-counter trigger
   (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed a 3rd consecutive day with the same failure reason,
   `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`** (2026-10-20T06:32:58Z, following
