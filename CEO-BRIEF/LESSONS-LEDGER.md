@@ -46,6 +46,45 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-20 · CEO (daily briefing #33) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed a 3rd consecutive day with the same failure reason,
+  `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`** (2026-10-20T06:32:58Z, following
+  2026-10-19T06:32:40Z and 2026-10-18T06:32:22Z). Confirmed directly via `get_trigger`. This is now
+  3-for-3 on consecutive days with the identical failure shape — well past the ledger's own
+  2-3-instance bar, and the longest same-shape streak this trigger has shown (the earlier
+  `ACCESS_DENIED` streak in late September ran 3 days then self-resolved; this one has not yet shown
+  a clean run at all). Its 07:32 UTC retry had not yet occurred as of this check (07:15 UTC). Per
+  CONTROL.md's standing rule this is a same-run escalate regardless — leading this briefing's
+  Decisions Needed, as it did yesterday. · confirmed (3rd same-shape instance, consecutive days,
+  longest streak observed) · not promoted — the general escalation rule it falls under is already
+  promoted; what's new is severity (3 days, no clean run), not a new pattern needing a new rule.
+
+- 2026-10-20 · CEO (daily briefing #33) · **A new device reconnect, 2026-10-19T12:04:02–12:08:34Z
+  UTC (confirmed via `list_triggers`/`get_trigger` — this window postdates the 2026-10-19 07:15 UTC
+  briefing, so it's new, not a re-read of an already-logged event).** "Calm oak daily deploy" fired
+  and `SUCCEEDED` (12:08:26–12:08:34Z, ~8s, consistent with "no changes — skip deploy" since no new
+  `main` commits exist between this window and the prior day). "Calm oak weekly seo post" also fired
+  and `SUCCEEDED` (12:05:04–12:05:18Z, ~14s) — this lands on its actual Monday cron due date
+  (2026-10-19 was a Monday), the same "completes on its own due date when the device happens to be
+  connected" shape first confirmed 2026-10-12. "Calm oak weekly influencer outreach" did not fire
+  (Wednesday cron, not due in this window). **Zero new Instagram/TikTok content resulted, continuing
+  the sub-pattern**: `blotato_list_posts(status=published, 2026-10-13→2026-10-20)` is 100% Pinterest
+  (40+ items checked); `blotato_get_credits` reads 4,985, unchanged since the 2026-10-19 jump (no
+  further movement). IG/TikTok are now dark their **14th straight day** (last published content: the
+  2026-10-06 "Orchard" pair). · confirmed (continuation of the standing device-bound-bypass pattern,
+  well past the ledger's own bar) · **promoted:** added this firing's date (2026-10-19) to
+  `CONTROL.md`'s standing gap note.
+
+- 2026-10-20 · CEO (daily briefing #33) · **Pinterest's forward-scheduled runway continued its
+  decline a 5th consecutive check, now a 3rd consecutive day under the CEO brief's 14-day urgent
+  line: 11 days (10-18) → ~10.4 days (10-19) → ~9.5 days (10-20, scheduled through 2026-10-29T18:05Z,
+  48 items),** measured via `blotato_list_posts(status=scheduled)`. Still not a missed posting day —
+  the daily Pinterest scheduler fired clean again this morning (2026-10-20T06:09–06:14Z) — but the
+  decline has not slowed across 5 straight checks. · confirmed (continuation of the already-confirmed
+  trend, 5th data point) · not promoted further — same candidate rule as 2026-10-18's entry (track
+  run-over-run, not just pass/fail); this adds the next data point, still declining, no refill seen
+  yet.
+
 - 2026-10-19 · CEO (daily briefing #32) · **The hourly "Two Seats to Quiet" seat-counter trigger
   (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed a 2nd consecutive day with the same failure reason,
   `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`** (2026-10-19T06:32:40Z, following
