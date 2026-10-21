@@ -46,6 +46,48 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-21 · CEO (daily briefing #34) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed a 4th consecutive day with the same failure reason,
+  `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`** (2026-10-21T06:32:44Z, following 2026-10-20,
+  -19, -18). Confirmed directly via `list_triggers`. No clean run has occurred since this failure
+  mode began on 2026-10-18 — 4 straight days, now the longest streak this trigger has shown in
+  either failure mode (the earlier `ACCESS_DENIED` streak self-resolved after 3 days). Per
+  CONTROL.md's standing rule this is a same-run escalate regardless of day-of-week — leading this
+  briefing's Decisions Needed, as it has for 4 days running. · confirmed (4th same-shape instance,
+  consecutive days) · not promoted — the general escalation rule it falls under is already
+  promoted; severity (4 days, no clean run) is the new fact, not a new pattern.
+
+- 2026-10-21 · CEO (daily briefing #34) · **Pinterest's forward-scheduled runway declined a 4th
+  consecutive day under the CEO brief's 14-day urgent line and a 6th consecutive declining
+  check overall: 11 days (10-18) → ~10.4 (10-19) → ~9.5 (10-20) → ~8.5 days (10-21, scheduled
+  through 2026-10-29T18:05Z, 45 items),** measured via `blotato_list_posts(status=scheduled)`. The
+  day-over-day decline is consistently close to 1.0 day of runway lost per 1.0 day elapsed (−0.6,
+  −0.9, −1.0 over the last three checks) — consistent with the daily scheduler consuming its
+  queue at close to its normal rate while adding close to zero new approved pins back in, i.e. the
+  bottleneck looks like the vault's APPROVED-pin queue running dry, not the scheduler itself (which
+  has fired clean every single day throughout this decline, including today, 2026-10-21T06:09–
+  06:16Z). This session cannot see the vault directly to confirm queue depth. · confirmed
+  (6th same-direction reading, same metric/source) · **candidate rule refinement:** if the decline
+  continues at ~1 day/day, the queue hits zero in roughly a week; worth Cameron checking `06
+  Content/Pin Queue/` approval backlog directly rather than waiting for the trigger to actually
+  miss a posting day.
+
+- 2026-10-21 · CEO (daily briefing #34) · **Another device reconnect this morning
+  (~2026-10-21T06:07–06:16Z UTC, confirmed via `list_triggers` — all three device-bound triggers
+  show `suspension_reason: ""`, i.e. currently NOT suspended, for the first time since yesterday's
+  check).** "Calm oak weekly influencer outreach" fired and `SUCCEEDED` (06:07:49–06:07:57Z) — this
+  lands on its actual Wednesday cron due date, not just an opportunistic reconnect. The daily
+  Pinterest scheduler also fired and `SUCCEEDED` (06:09:25–06:16:11Z, a real ~7-minute run). "Calm
+  oak daily deploy" had not yet fired as of this check (next due 07:32Z, after this briefing) — no
+  evidence either way on today's deploy. **Zero new Instagram/TikTok content resulted** (continuing
+  the sub-pattern): `blotato_list_posts(status=published, 2026-10-14→2026-10-21)` is 100% Pinterest
+  (40 items checked); `blotato_get_credits` reads 4,985, unchanged since the 2026-10-19 jump — a
+  2nd flat reading, no further movement, so the one-time jump still has no confirmed cause and
+  isn't escalating further per the 2026-10-19 entry's own condition. IG/TikTok are now dark their
+  **15th straight day** (last published content: the 2026-10-06 "Orchard" pair). · confirmed
+  (continuation of the standing device-bound-bypass pattern) · **promoted:** added this firing's
+  date (2026-10-21) to `CONTROL.md`'s standing gap note.
+
 - 2026-10-20 · SEO-RANKER · **SAFEGUARDS Check 8's sitewide degraded-ASIN resweep (`B0DRHQ1FKP`) has a blind spot: it only catches a new batch of pages if someone re-runs the grep *after* that batch lands.** The 2026-10-16 direct-to-main push of 53 `shop/looks/*` pages (already flagged in `CONTROL.md` as a review-gate-bypass pattern) reintroduced the banned ASIN in 3 of those pages, and every resweep since (2026-10-16, implicitly — not explicitly re-run against that specific batch) reported "0 hits" because the check was run before or without specifically targeting the new pages. Found and fixed this run via an unprompted full-repo grep (not limited to journal/shop as usual — included shop/looks/* explicitly). · raw (1st instance of this specific failure mode — the check itself working as designed elsewhere, just not re-triggered against a bypass-gate batch) · not promoted — SAFEGUARDS Check 8 already mandates a full-repo resweep "on every periodic audit sweep, even when no new article is being written"; the gap was a run skipping that mandate after a big direct-push batch, not a wording problem in the check itself. Flagging in case it recurs after a future bypass-gate push, which would confirm a real pattern worth a stronger rule (e.g., explicitly re-running Check 8 as a required reaction to any detected direct-to-main push, not just as a periodic habit).
 
 - 2026-10-20 · CEO (daily briefing #33) · **The hourly "Two Seats to Quiet" seat-counter trigger

@@ -70,7 +70,7 @@ Concretely:
   — structurally bypass this gate by design: neither touches the `Cammyboy11/calmandoak` GitHub
   repo, so the CEO's PR-review step never sees whatever they ship. Confirmed on real firings of
   "daily deploy" (2026-09-28, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-11, 2026-10-12,
-  2026-10-15, 2026-10-16, 2026-10-19) — not a one-off. **2026-10-12 firing also confirms "weekly seo post" (which
+  2026-10-15, 2026-10-16, 2026-10-19, 2026-10-21) — not a one-off. **2026-10-12 firing also confirms "weekly seo post" (which
   can write a brand-new journal article and deploy it straight to production) completed a full run
   on its own due date** (Monday 2026-10-12, 17:54–18:00 UTC), not just fired-then-suspended as on
   most prior weeks — see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-13 entry. No cloud session can
