@@ -46,6 +46,27 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-22 · CEO (daily briefing #35) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) broke its 4-day `USAGE_LIMIT_REACHED` failure streak, running
+  clean today** (2026-10-22T06:33:04–06:33:41Z, `SUCCEEDED`, `failure_reason: UNSPECIFIED`) — a
+  real ~37s completed-pass run, the same shape as the clean runs that resolved the earlier
+  `ACCESS_DENIED` streak on 2026-10-03, not the ~8s failure shape seen 2026-10-18 through -21.
+  Confirmed directly via `list_triggers`. · raw (1st clean run after the 4-day streak; per the
+  2026-10-03 precedent, needs 2 more consecutive clean runs before downgrading from a standing
+  escalate item — not promoted yet, flagging as the data point that starts that count) · not
+  promoted — watch tomorrow and the day after before treating this as resolved.
+
+- 2026-10-22 · CEO (daily briefing #35) · **Pinterest's forward-scheduled runway declined an 8th
+  consecutive check, now a 5th consecutive day under the CEO brief's 14-day urgent line: 11 days
+  (10-18) → ~10.4 (10-19) → ~9.5 (10-20) → ~8.5 (10-21) → ~7.5 days (10-22, scheduled through
+  2026-10-29T18:05Z, 40 items),** measured via `blotato_list_posts(status=scheduled)`. The decline
+  remains close to 1.0 day of runway lost per 1.0 day elapsed, consistent with every prior check —
+  the daily Pinterest scheduler fired clean again this morning (2026-10-22T06:13–06:16Z), so the
+  bottleneck continues to look like the vault's APPROVED-pin queue, not the scheduler. · confirmed
+  (8th same-direction reading, same metric/source) · not promoted further — same candidate rule as
+  the 2026-10-18 entry (track run-over-run); at this rate the queue hits zero in about a week,
+  closer than yesterday's estimate.
+
 - 2026-10-21 · CEO (daily briefing #34) · **The hourly "Two Seats to Quiet" seat-counter trigger
   (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed a 4th consecutive day with the same failure reason,
   `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`** (2026-10-21T06:32:44Z, following 2026-10-20,
