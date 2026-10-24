@@ -46,6 +46,45 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-24 · CEO (daily briefing #37) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) ran clean a 3rd consecutive day** (2026-10-24T06:32:26–
+  06:33:31Z, `SUCCEEDED`, `failure_reason: ROUTINE_RUN_FAILURE_REASON_UNSPECIFIED`), following
+  2026-10-22 and 2026-10-23's clean runs, after the 4-day `USAGE_LIMIT_REACHED` streak
+  (2026-10-18–21). Confirmed via `list_triggers`. This meets the exact bar that resolved the
+  earlier `ACCESS_DENIED` streak on 2026-10-03 (3 consecutive clean completed-pass runs). · confirmed
+  (3rd consecutive clean run, meets the 2026-10-03 precedent bar) · **promoted:** added a
+  "Resolved 2026-10-24" note to `CONTROL.md`'s seat-counter entry, same pattern as the 2026-10-03
+  resolution — no longer named individually as a standing escalate item; the general rule stays
+  standing for whatever trips it next.
+
+- 2026-10-24 · CEO (daily briefing #37) · **Pinterest post-level analytics remain flat-zero on a
+  2nd independent day of checking** — of the published posts in the 2026-10-17→2026-10-24 window,
+  all but one show a completely flat-zero snapshot across clicks/impressions/saves/follows/
+  profile-visits/reactions; the sole exception is the same single post already flagged yesterday
+  (2026-10-17's "One tall vase..." pin, `impressionsCount: 1`, unchanged). No newly-populated
+  nonzero reading appeared on any of the posts published since yesterday's check, and the 5 most
+  recently published posts (2026-10-23 21:05 through 2026-10-24 00:05) still show `analytics: null`
+  (not yet fetched by Blotato), consistent with a reporting lag on the newest items but not
+  explaining why posts from a week ago are still all-zero. Per yesterday's briefing's own stated
+  condition ("if they're still flat zero after another day, that tips the balance toward a real
+  engagement problem rather than a reporting lag, and should be escalated harder") — this is that
+  2nd day, confirming the pattern rather than resolving it. · confirmed (2nd independent same-direction
+  reading, same metric/source, meets the ledger's own 2-instance bar) · not promoted to a rule —
+  this needs Cameron's direct Pinterest Business Hub (or Blotato dashboard) confirmation before any
+  rule can be written; escalated harder in this briefing's Decisions Needed per the stated
+  condition.
+
+- 2026-10-24 · CEO (daily briefing #37) · **Pinterest's forward-scheduled runway declined a 10th
+  consecutive check, now a 7th consecutive day under the CEO brief's 14-day urgent line: ~6.4 days
+  (10-23) → ~5.4 days (10-24, scheduled through 2026-10-29T18:05Z, 28 items),** measured via
+  `blotato_list_posts(status=scheduled)`. Still almost exactly 1 day of runway lost per day
+  elapsed — the daily scheduler fired and completed clean again this morning, confirming the
+  bottleneck remains the vault's APPROVED-pin queue, not the scheduler. At this rate the queue runs
+  dry within the coming week, now inside 6 days. · confirmed (10th same-direction reading, same
+  metric/source) · not promoted further — same candidate rule as the 2026-10-18 entry (track
+  run-over-run); this adds the next data point, decline unchanged in rate, now closer to an actual
+  missed posting day than any prior check.
+
 - 2026-10-23 · SEO-RANKER · **Meta-description length was never part of any prior audit sweep, and found at scale once checked: 22 of 65 journal pages (~34%) carried `<meta name="description">` tags between 176–294 characters — well past Google's ~155–165 char SERP truncation point — with no prior ledger entry or SAFEGUARDS check ever having measured this field.** Confirmed by scripting a length check across every `journal/*/index.html` (none of the other 43 were flagged, so this isn't a template-wide default issue, just organic growth of individual descriptions over time). Fixed all 22 this run, staged as PR #12. · raw (1st instance this specific check has been run sitewide) · not promoted yet — needs one more periodic-audit run to confirm new pages don't reintroduce this (i.e. whether it's a one-time backlog or a recurring habit) before it's worth a SAFEGUARDS check of its own; if a future audit finds new pages shipping with over-length descriptions, that would confirm the pattern and justify adding a Check 10 (meta-description length, 150–165 chars) to `SAFEGUARDS.md`.
 
 - 2026-10-23 · CEO (daily briefing #36) · **New observation: inspecting `blotato_list_posts(status=published)` analytics fields directly for the first time (rather than just counts/platform mix), nearly every Pinterest post published 2026-10-16→2026-10-23 (34 items checked) shows a flat-zero analytics snapshot across `clicksCount`/`impressionsCount`/`savesCount`/`followsCount`/`profileVisitsCount`/`pinterestReactionsCount` — only one post (the 2026-10-16 "round oak table" pin) shows any nonzero reading at all (`impressionsCount: 1`).** This is either a real near-total engagement collapse on Pinterest — the business's stated primary revenue lever per `CONTROL.md` — or a Blotato analytics-population lag/bug; this session cannot distinguish the two from the API alone, and no prior ledger entry has checked this specific field. · raw (1st instance this specific check has been run) · not promoted — needs Cameron (or a session with direct Pinterest Business Hub access) to confirm whether this is a reporting artifact or a real engagement problem before any rule is written.

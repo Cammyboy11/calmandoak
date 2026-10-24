@@ -46,6 +46,12 @@ No longer named individually as an always-escalate item; the general rule above 
 whatever trips it next. Still unverifiable live (no Shopify connector on this session) — if it
 fails again, re-escalate immediately rather than waiting for a new 3-day streak.
 
+*Resolved again 2026-10-24:* the same trigger failed 4 consecutive days (2026-10-18–21) with a new
+failure mode, `USAGE_LIMIT_REACHED`, then ran clean 3 consecutive days (2026-10-22/23/24, each a
+~30–65s completed-pass run), meeting the same 3-clean-run bar used in the 2026-10-03 resolution.
+No longer named individually as a standing escalate item. Still unverifiable live from this
+sandbox — re-escalate immediately on any future failure, same standing instruction as above.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public

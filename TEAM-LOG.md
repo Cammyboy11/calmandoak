@@ -10,6 +10,19 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-10-24 · CEO (daily briefing #37) · **Reviewed and merged PR #12** (commit `6aa9ea18`) —
+  read the actual diff (not just the PR body): confirmed all 22 changes are single-line
+  `<meta name="description">` trims, each landing in the stated 152–164 char range, with no body
+  copy, links, images, captions, ASINs, titles, or `og:`/`twitter:` tags touched in any of the 22
+  files. Clean, metadata-only, no SAFEGUARDS risk. Merged. Separately: re-tested
+  `database.blotato.io` and `www.amazon.com` egress directly this run (`curl` → `CONNECT tunnel
+  failed, 403` and `connect_rejected` respectively) — both still blocked, unchanged since
+  2026-09-14/15, so none of the 5 staged content-factory batches (09-20, 09-27, 10-04, 10-11,
+  10-18 — all 5 branches confirmed still present via `git branch -r`) could be reviewed/scheduled
+  from this session this run either. Full detail in today's briefing and
+  `CEO-BRIEF/LESSONS-LEDGER.md`. · live (PR #12 merged); staged (5 content-factory batches,
+  needs-Cameron, unchanged)
+
 - 2026-10-23 · SEO-RANKER · **On-page SEO audit + fix, staged as a PR (public-facing review gate — not pushed to main).** Read `CONTROL.md` first (`PAUSE: false`), `SAFEGUARDS.md`, `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`, and `CEO-BRIEF/LESSONS-LEDGER.md`. Checked for a stale `.git/index.lock` before touching anything — none present; session started one commit behind `origin/main` detached-HEAD, resolved with plain `git checkout main` (already up to date after that). **Checked the office cluster first** (GROWTH-PLAN's #1 priority) before writing anything: confirmed via the hub page's own internal links it's still fully built and well cross-linked (`japandi-home-office`, `japandi-desk`→`six-object-rule`, `small-japandi-office`, `best-japandi-desks`, `best-japandi-office-chairs`, `best-japandi-desk-accessories`, `400-dollar-home-office`) — consistent with the 2026-10-20 ledger entry, no new gap found. "Japandi Executive Desk" stays the one open item, still blocked on `www.amazon.com` egress. Ran a full on-page audit instead of forcing a thin article: sitewide degraded-ASIN resweep (0 hits), journal hub reconciliation (66=66=66, unchanged), image-resolution check (0 MISS), and a meta-description length pass across all 65 journal articles — **found 22 pages with descriptions 176–294 chars, well past Google's ~155–165 char SERP truncation point**, cutting off the differentiating detail in search snippets for zero benefit. **Shipped:** trimmed all 22 to 152–164 chars, keyword and differentiator preserved, nothing else touched (no body copy, links, images, captions, ASINs, titles, or og/twitter tags). **PR:** https://github.com/Cammyboy11/calmandoak/pull/12 (branch `seo-ranker/meta-description-trim-2026-10-23`), staged only the 22 touched files (`git status` confirmed clean before/after staging), subscribed to PR activity. **SAFEGUARDS gate:** Checks 1/2/4 N/A (metadata-only change); Check 5 re-run sitewide post-edit (0 MISS); Check 8 resweep 0 hits repo-wide; Check 9 hub counts reconciled 66=66=66; every new description verified 152–164 chars, `git diff --stat` confirmed exactly 1 line changed per file. All PASS, detail posted in the PR body. **Needs-Cameron:** review/merge PR #12. · staged (PR #12 open, needs-Cameron review)
 
 - 2026-10-21 · CEO (daily briefing #34) · **Reviewed and merged PR #11** (commit `6461658b`) — read
