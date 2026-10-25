@@ -46,6 +46,50 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-25 · CEO (daily briefing #38) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed again the morning immediately after being demoted from
+  a standing escalate item** — 3 consecutive clean days (10-22/23/24) led the 2026-10-24 briefing
+  to resolve it per the exact bar that resolved the earlier streak on 2026-10-03, and then it
+  failed the very next scheduled run (2026-10-25T06:32:22–06:32:32Z, `ROUTINE_RUN_FAILURE_REASON_
+  USAGE_LIMIT_REACHED`, ~10s — the short failure shape, not the ~30–65s clean-run shape). Confirmed
+  directly via `list_triggers`. Re-escalated same-run per `CONTROL.md`'s standing rule and its own
+  "re-escalate immediately on any future failure" instruction; re-added as a named standing
+  escalate item in `CONTROL.md`. · confirmed (this is the 2nd time the exact same 3-clean-day bar
+  has been met and then broken within 24 hours — first on an earlier streak, now again here) ·
+  **candidate rule refinement:** 3 consecutive clean runs is not actually a reliable resolution
+  threshold for this specific trigger/failure-mode pair — it has now been met and broken twice.
+  Worth considering a longer bar (e.g. 7 consecutive clean days) before demoting this specific
+  trigger from standing-escalate status again, rather than reusing the 3-day bar a third time. Not
+  promoted to `CONTROL.md` yet — flagging for the next consolidation pass to decide, since changing
+  the bar itself is a rule change, not just a data point.
+
+- 2026-10-25 · CEO (daily briefing #38) · **Pinterest's forward-scheduled runway declined an 11th
+  consecutive check, now an 8th consecutive day under the CEO brief's 14-day urgent line and the
+  first time under 5 days: ~5.4 days (10-24) → ~4.5 days (10-25, 23 items scheduled, running through
+  2026-10-29T18:05Z),** measured via `blotato_list_posts(status=scheduled)`. Still losing almost
+  exactly 1 day of runway per day elapsed — the daily scheduler fired and completed clean again this
+  morning (06:08:49–06:16:23Z), confirming the bottleneck remains the vault's APPROVED-pin queue,
+  not the scheduler. At this rate the queue could run dry within 4-5 days, the closest this has
+  ever been to an actual missed Pinterest posting day. · confirmed (11th same-direction reading,
+  same metric/source) · not promoted further — same candidate rule as the 2026-10-18 entry (track
+  run-over-run); this is the sharpest version of that same finding yet and should be treated as
+  imminent, not a trend to watch, in this briefing's Decisions Needed.
+
+- 2026-10-25 · CEO (daily briefing #38) · **Pinterest post-level analytics flat-zero pattern holds a
+  3rd independent day of checking** — of 35 published posts in the 2026-10-18→2026-10-25 window, 4
+  of the most recent show `analytics: null` (not yet fetched) and the remaining 31 are completely
+  flat-zero except a single outlier (the oldest post in this window, 2026-10-18's "plaster mantel"
+  pin, `impressionsCount: 1`) — the same shape as the 2026-10-23 and 2026-10-24 findings. Notably
+  this run's single nonzero post is a **different specific pin** than the one flagged on 2026-10-23/
+  24 (that was 2026-10-17's "one tall vase" pin, which has since rolled out of this run's 7-day
+  lookback window) — suggesting the lone "1 impression" reading isn't sticking to one specific post
+  but recurring on whichever post is oldest in the lookback window, consistent with a near-universal
+  very-low (not literally zero) baseline rather than one anomalous pin. · confirmed (3rd independent
+  same-direction reading, same metric/source, meets and exceeds the ledger's own 2-instance bar) ·
+  not promoted to a rule — still needs Cameron's direct Pinterest Business Hub confirmation before
+  any rule is written; this run's refinement (the outlier moves with the window) is new information
+  worth relaying to him alongside the standing escalation.
+
 - 2026-10-24 · CEO (daily briefing #37) · **The hourly "Two Seats to Quiet" seat-counter trigger
   (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) ran clean a 3rd consecutive day** (2026-10-24T06:32:26–
   06:33:31Z, `SUCCEEDED`, `failure_reason: ROUTINE_RUN_FAILURE_REASON_UNSPECIFIED`), following

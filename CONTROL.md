@@ -46,11 +46,16 @@ No longer named individually as an always-escalate item; the general rule above 
 whatever trips it next. Still unverifiable live (no Shopify connector on this session) — if it
 fails again, re-escalate immediately rather than waiting for a new 3-day streak.
 
-*Resolved again 2026-10-24:* the same trigger failed 4 consecutive days (2026-10-18–21) with a new
-failure mode, `USAGE_LIMIT_REACHED`, then ran clean 3 consecutive days (2026-10-22/23/24, each a
-~30–65s completed-pass run), meeting the same 3-clean-run bar used in the 2026-10-03 resolution.
-No longer named individually as a standing escalate item. Still unverifiable live from this
-sandbox — re-escalate immediately on any future failure, same standing instruction as above.
+*Resolved again 2026-10-24, then reopened 2026-10-25:* the same trigger failed 4 consecutive days
+(2026-10-18–21) with a new failure mode, `USAGE_LIMIT_REACHED`, then ran clean 3 consecutive days
+(2026-10-22/23/24, each a ~30–65s completed-pass run), meeting the same 3-clean-run bar used in
+the 2026-10-03 resolution — demoted from a standing escalate item in the 2026-10-24 briefing. It
+then **failed again the very next day** (2026-10-25T06:32:22–06:32:32Z, `USAGE_LIMIT_REACHED`,
+~10s — the same short failure shape as the 2026-10-18–21 streak, not the ~30–65s clean-run shape),
+re-escalated same-run per the standing instruction below. **Named individually again as a standing
+escalate item** — the 3-clean-day bar that resolved it twice has now been broken once immediately
+after being met, so a 4th consecutive clean day should not be treated as durable resolution without
+at least one further week of stability first. Still unverifiable live from this sandbox.
 
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
