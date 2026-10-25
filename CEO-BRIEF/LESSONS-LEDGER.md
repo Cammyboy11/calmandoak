@@ -46,6 +46,41 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-25 · CONTENT-FACTORY (weekly cloud run) · **The degraded ASIN `B0DRHQ1FKP` (THKSHOUZ
+  fluted-oak pedestal — Canada ship-block + 33 reviews) is live inside 3 downloadable PDF assets,
+  not just HTML pages: `assets/the-edit/_pdf/issue-01-winter.pdf`, `issue-02-spring.pdf`, and
+  `the-calm-and-oak-edit-volume-one.pdf`, each embedding `amazon.com/dp/B0DRHQ1FKP?tag=calmandoak-20`
+  as a clickable URI.** Confirmed via `strings <file>.pdf | grep B0DRHQ1FKP` on all three. SAFEGUARDS
+  Check 8 mandates a sitewide resweep across `journal/`, `shop/`, `assets/the-edit/`,
+  `assets/starter-guide/` — this run's grep covered those same directories but, for the first time,
+  matched inside binary PDF content rather than just HTML markup. Every prior Check 8 entry in this
+  ledger (2026-09-29, 2026-10-20) only ever discusses HTML pages; none mention checking the PDFs that
+  live under those same directories. Not fixed this run — no PDF-rebuild tool exists in this repo,
+  and editing PDF binaries directly is outside `content-factory`'s scope/tooling. · raw (1st instance
+  this specific binary-asset angle has been checked) · **candidate rule:** SAFEGUARDS Check 8's
+  written instruction should explicitly name PDF/binary assets under `assets/the-edit/` (and
+  anywhere else downloadable PDFs live), not just HTML, since a `grep -rl` without `strings` first
+  would silently skip binary files entirely depending on how it's invoked — worth testing whether a
+  plain-text grep against PDFs actually works reliably (it did here) before promoting, and worth
+  Cameron re-exporting these 3 PDFs with a verified-clean ASIN regardless.
+
+- 2026-10-25 · CONTENT-FACTORY (weekly cloud run) · **First content-factory run to build Pinterest
+  content instead of skipping it as "already full" — triggered by Pinterest's queue crossing under
+  5 days' runway for the first time (confirmed live via `blotato_list_posts`, matching the same-day
+  CEO-briefing #38 finding exactly: ~4.5 days, 23 items through 2026-10-29T18:05Z).** Built 10
+  Pinterest stills (6 shared with an IG/TikTok reel build, 4 Pinterest-only) proposed to extend the
+  runway ~2 more days, continuing the live queue's own observed cadence (5 posts/day at
+  `00:05/12:05/15:05/18:05/21:05 UTC`, matching `CONTROL.md`'s stated per-platform ceiling exactly)
+  rather than inventing a new schedule. Every prior batch (09-20 through 10-18) built IG/TikTok only
+  and explicitly reasoned that Pinterest didn't need new content because its runway, while
+  declining, was still comfortably positive. · raw (1st instance this specific pivot — "build the
+  platform that's actually running low, not just the one that's always empty" — has been made) ·
+  **candidate rule:** content-factory's build-priority logic should weight actual runway/urgency per
+  platform, not default to "always refill IG/TikTok, always skip Pinterest" — that default held for
+  5 consecutive batches only because Pinterest stayed comfortably full until this week. Needs at
+  least one more low-runway instance before promoting a rule like "if any platform drops under N
+  days' runway, prioritize building for it regardless of past batch pattern."
+
 - 2026-10-25 · CEO (daily briefing #38) · **The hourly "Two Seats to Quiet" seat-counter trigger
   (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed again the morning immediately after being demoted from
   a standing escalate item** — 3 consecutive clean days (10-22/23/24) led the 2026-10-24 briefing

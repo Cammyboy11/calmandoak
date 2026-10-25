@@ -10,6 +10,51 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-10-25 · CONTENT-FACTORY (weekly cloud run) · **Staged a 22-post batch (10 Pinterest stills,
+  6 Instagram reels, 6 TikTok reels — 10 unique products) at `final pins/batches/2026-10-25/`,
+  committed + pushed to branch `content-factory/2026-10-25` — not merged, not scheduled, per the
+  2026-09-14 public-facing review gate.** Read `CONTROL.md` (`PAUSE: false`, re-read the
+  2026-09-14 review-gate section), `SAFEGUARDS.md`, and `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-09-14
+  entries first — all re-confirmed or re-applied this run (gitignored local pin assets absent from
+  this fresh clone, `database.blotato.io` still egress-blocked, `_add-audio-bed.js`/`_pin-to-reel.js`
+  both `node --check` clean before use).
+  **First content-factory run to build Pinterest content rather than skip it.** Live
+  `blotato_list_accounts`: all three platforms connected (instagram 53849, pinterest 7556, tiktok
+  47113) — no contradiction with `CONTROL.md`'s platform-pause flags at the account level. Live
+  `blotato_list_posts(status=scheduled)`: 23 items, 100% Pinterest, zero IG/TikTok (unchanged
+  standing gap), Pinterest queue running **2026-10-25T15:05Z → 2026-10-29T18:05Z — ~4.5 days,
+  the lowest ever, first time under 5 days** — matches today's CEO-briefing #38 finding exactly.
+  Cadence read directly off the live queue: 5 posts/day at `00:05/12:05/15:05/18:05/21:05 UTC`,
+  already at `CONTROL.md`'s stated ceiling. Per this week's "don't rebuild a full channel"
+  instruction — Pinterest is not full, it's the priority build.
+  **Built:** 10 products sourced from tracked `assets/img/*` matched to real, already-live ASINs
+  grepped from journal/shop product cards (rattan pendant light, tatami floor cushion, linen duvet,
+  stoneware dinnerware, bamboo tray, jute runner rug — full 3-platform; oak console, seagrass
+  baskets, tripod floor lamp, ceramic bud vase — Pinterest-only, matching the live queue's
+  stills-only format). Zero ASIN overlap with any of the five open branches (checked all five
+  manifests directly, 26 ASINs + the degraded one excluded). Every image visually opened and
+  compared against its linked product before use (SAFEGUARDS Check 1) — all 10 MATCH.
+  **Pipeline:** `npm install ffmpeg-static --no-save` succeeded. Re-pulled `_asin-to-pin.js` from
+  `origin/content-factory/2026-10-18` — **5th consecutive batch** to find it absent from `main`.
+  All 6 reels' audio verified present via direct ffmpeg stream inspection + `volumedetect` on all 6
+  files (not a sample) — `aac` 44.1kHz mono, mean −26.9dB / max −14.0dB, identical across all 6,
+  matching the 2026-10-18 batch's confirmed-audible level.
+  **SAFEGUARDS gate: 10/10 pieces PASS**, every one of the 22 captions carries the FTC disclosure
+  sentence + `#affiliate` (verified programmatically, not just by eye).
+  **New finding, not fixed:** the degraded ASIN `B0DRHQ1FKP` is live inside 3 downloadable PDF
+  assets (`assets/the-edit/_pdf/issue-01-winter.pdf`, `issue-02-spring.pdf`,
+  `the-calm-and-oak-edit-volume-one.pdf`), confirmed via `strings | grep`. Every prior Check 8
+  resweep checked HTML only — this is the first time PDFs were checked and the first time this was
+  found. Out of this run's tooling/scope to fix (binary PDF edit). Logged to
+  `CEO-BRIEF/LESSONS-LEDGER.md`.
+  Full detail, QA blocks and captions in `final pins/batches/2026-10-25/manifest.md`.
+  **Needs-Cameron:** schedule or reject this batch (6th unshipped batch alongside 09-20, 09-27,
+  10-04, 10-11, 10-18); re-export the 3 PDFs with the degraded ASIN swapped; give
+  `_asin-to-pin.js` a real home on `main` (5th repeat of the same ask); decide whether new
+  Pinterest captions' disclosure sentence/`#affiliate` should match the already-scheduled queue's
+  plain-text style (see manifest open question #2); weigh the Pinterest runway finding alongside
+  the 3-day-running analytics flat-zero pattern. · staged (branch pushed, needs-Cameron review)
+
 - 2026-10-24 · CEO (daily briefing #37) · **Reviewed and merged PR #12** (commit `6aa9ea18`) —
   read the actual diff (not just the PR body): confirmed all 22 changes are single-line
   `<meta name="description">` trims, each landing in the stated 152–164 char range, with no body
