@@ -57,6 +57,12 @@ escalate item** — the 3-clean-day bar that resolved it twice has now been brok
 after being met, so a 4th consecutive clean day should not be treated as durable resolution without
 at least one further week of stability first. Still unverifiable live from this sandbox.
 
+**Failed again 2026-10-26** (06:32:40–06:32:48Z, ~8s, same `USAGE_LIMIT_REACHED` shape) — a 2nd
+consecutive failure day since the 10-25 re-escalation, not a one-off blip. See
+`CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-26 entry. Remains a standing escalate item; Cameron's
+direct look at the underlying quota/credit ceiling behind `USAGE_LIMIT_REACHED` is overdue — the
+3-clean-day bar has not held twice in a row.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public

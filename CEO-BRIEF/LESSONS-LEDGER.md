@@ -46,6 +46,60 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-26 · CEO (daily briefing #39) · **Pinterest's forward-scheduled runway declined a 12th
+  consecutive check, now a 9th consecutive day under the CEO brief's 14-day urgent line and the
+  first time under 3.5 days: ~4.5 days (10-25) → ~3.5 days (10-26, 18 items scheduled, running
+  through 2026-10-29T18:05Z),** measured via `blotato_list_posts(status=scheduled)`. Still losing
+  almost exactly 1 day of runway per day elapsed — the daily scheduler fired and completed clean
+  again this morning (06:12:18–06:19:06Z UTC), confirming the bottleneck remains the vault's
+  APPROVED-pin queue, not the scheduler. At this rate the queue could run dry within about 3 days —
+  the closest this has ever been to an actual missed Pinterest posting day. · confirmed (12th
+  same-direction reading, same metric/source) · not promoted further — same candidate rule as the
+  2026-10-18 entry (track run-over-run); this is now treated as imminent in this briefing's
+  Decisions Needed, not a trend to watch.
+
+- 2026-10-26 · CEO (daily briefing #39) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed a 2nd consecutive day since being re-escalated**
+  (2026-10-26T06:32:40–06:32:48Z, ~8s, `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`) — the same
+  short failure shape as 2026-10-25 and the 2026-10-18–21 streak. Confirmed via `list_triggers`.
+  This is now effectively a renewed failure streak, not an isolated re-failure — the 3-clean-day
+  resolution bar has now failed to hold twice, and a new failure the very next day after the first
+  re-escalation suggests the underlying `USAGE_LIMIT_REACHED` cause (likely a quota/credit ceiling
+  on an underlying API) has not actually been addressed by anything that happened between 10-24 and
+  10-25. · confirmed (2nd consecutive failure day in this renewed streak) · **candidate rule
+  refinement reinforced:** adds a 2nd data point to the 2026-10-25 entry's suggestion that the
+  3-clean-day bar is not a reliable resolution threshold for this specific failure mode; worth the
+  next consolidation pass requiring a longer bar (7+ days) and/or treating `USAGE_LIMIT_REACHED`
+  specifically as needing Cameron's direct intervention on the underlying quota, not a wait-and-see
+  demotion.
+
+- 2026-10-26 · CEO (daily briefing #39) · **Pinterest post-level analytics flat-zero pattern holds a
+  4th independent day of checking, and for the first time shows zero nonzero readings anywhere in
+  the 7-day lookback window** — of 35 published posts (2026-10-19→2026-10-26), every one shows
+  either `analytics: null` (the newest, not yet fetched) or a completely flat-zero snapshot across
+  clicks/impressions/saves/follows/profile-visits/reactions; unlike each of the prior 3 days
+  (10-23/24/25), which always showed exactly one post with `impressionsCount: 1` — always the
+  oldest post about to roll out of the window — this run finds no such outlier at all. This is
+  consistent with, not contradicting, the 2026-10-25 entry's own hypothesis (the lone "1" reading
+  tracks whichever post is oldest in the window, not a real engagement signal): now that the window
+  has moved far enough, even that artifact has rolled out, leaving a genuinely uniform zero. ·
+  confirmed (4th independent same-direction reading, now the starkest version yet) · not promoted —
+  still needs Cameron's direct Pinterest Business Hub/Blotato dashboard confirmation; this run's
+  version strengthens rather than changes the standing ask.
+
+- 2026-10-26 · CEO (daily briefing #39) · **"Calm oak weekly seo post" fired on its correct Monday
+  slot (2026-10-26T07:09:52–07:09:59Z) but completed in ~7 seconds** — far shorter than the one
+  confirmed full run of this trigger (2026-10-12, 17:54–18:00, ~6 minutes, which produced a real
+  deployed article per the 2026-10-13 ledger entry) and not plausibly enough time for the pipeline's
+  own sourcing/writing/image-generation steps to run. Device-bound (bypasses the GitHub review gate
+  by design, confirmed standing fact), so this session cannot see what, if anything, it produced
+  locally. Could be a legitimate early exit (e.g., STEP 0's capability check finding no local access
+  this particular morning, or STEP 1 finding no safe non-duplicate topic) rather than a failure —
+  `list_triggers` reports `SUCCEEDED`, not a crash. · raw (1st time this trigger's run duration has
+  been checked against the one known-good baseline) · not promoted — flagging so a future check
+  knows to compare duration, not just SUCCEEDED/FAILED, for this trigger; needs Cameron to confirm
+  locally what this run actually did, if anything.
+
 - 2026-10-25 · CONTENT-FACTORY (weekly cloud run) · **The degraded ASIN `B0DRHQ1FKP` (THKSHOUZ
   fluted-oak pedestal — Canada ship-block + 33 reviews) is live inside 3 downloadable PDF assets,
   not just HTML pages: `assets/the-edit/_pdf/issue-01-winter.pdf`, `issue-02-spring.pdf`, and
