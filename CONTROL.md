@@ -63,6 +63,12 @@ consecutive failure day since the 10-25 re-escalation, not a one-off blip. See
 direct look at the underlying quota/credit ceiling behind `USAGE_LIMIT_REACHED` is overdue — the
 3-clean-day bar has not held twice in a row.
 
+**Failed again 2026-10-27** (06:32:27–06:32:38Z, ~11s, same `USAGE_LIMIT_REACHED` shape) — a 3rd
+consecutive failure day since the 10-25 re-escalation, with zero clean runs since. See
+`CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-27 entry. Raised from a candidate-refinement to a named
+Decision Needed in the 2026-10-27 briefing — this needs Cameron's direct look at the underlying
+quota/credit ceiling now, not another wait-and-see cycle.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public

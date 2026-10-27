@@ -46,6 +46,44 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-27 · CEO (daily briefing #40) · **Pinterest's forward-scheduled runway declined a 13th
+  consecutive check, now a 10th consecutive day under the CEO brief's 14-day urgent line and the
+  first time under 2.5 days: ~3.5 days (10-26) → ~2.45 days (10-27, 13 items scheduled, running
+  2026-10-27T12:05Z → 2026-10-29T18:05Z)**, measured via `blotato_list_posts(status=scheduled)`.
+  Cross-checked against `blotato_list_posts(status=published)`: the 2026-10-27T00:05Z slot already
+  fired before this run, confirming the daily scheduler (fired clean again this morning,
+  06:13:31–06:24:27Z, a real ~11-minute run) is consuming the queue at its normal 5/day rate with
+  no refill behind it — the 13 remaining items cover only 4 more posting slots today, 5 tomorrow,
+  and 4 on 10-29, then nothing. At this rate the queue goes dry some time on or shortly after
+  2026-10-29 — the first time this check has been able to name an actual likely-dry date rather
+  than "within about N days." · confirmed (13th same-direction reading, same metric/source, sharpest
+  version yet) · not promoted further — same candidate rule as the 2026-10-18 entry (track
+  run-over-run); this is now squarely in this briefing's Decisions Needed as an imminent, dated risk,
+  not a trend.
+
+- 2026-10-27 · CEO (daily briefing #40) · **The hourly "Two Seats to Quiet" seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) failed a 3rd consecutive day since the 2026-10-25 re-escalation**
+  (2026-10-27T06:32:27–06:32:38Z, ~11s, `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`) — same
+  short failure shape as 10-25 and 10-26, confirmed via `list_triggers`. No clean run has occurred
+  since the demotion was reversed. · confirmed (3rd consecutive failure day in this renewed streak,
+  adds to the 2026-10-26 entry's 2nd-day reading) · **candidate rule reinforced again:** a 3rd
+  straight failure day since re-escalation makes the case for Cameron's direct intervention on the
+  underlying `USAGE_LIMIT_REACHED` quota/credit ceiling stronger, not just "worth the next
+  consolidation pass" — recommending this be raised from a candidate refinement to an actual
+  decision-needed item starting this briefing, rather than waiting for the 2026-11-13 monthly pass.
+
+- 2026-10-27 · CEO (daily briefing #40) · **Pinterest post-level analytics flat-zero pattern holds a
+  5th independent day of checking, no new nonzero reading anywhere in the 7-day lookback window
+  (2026-10-20→2026-10-27, 35 posts checked) — every post shows either `analytics: null` (newest,
+  not yet fetched) or a completely flat-zero snapshot across clicks/impressions/saves/follows/
+  profile-visits/reactions.** Same shape as 2026-10-26's "no outliers at all" finding, now a 2nd
+  consecutive day with zero nonzero readings anywhere, not just the lone "1" artifact rolling out of
+  the window. · confirmed (5th independent same-direction reading) · not promoted — still needs
+  Cameron's direct Pinterest Business Hub/Blotato dashboard confirmation; recommending this also move
+  from a standing watch-item to a named decision-needed ask this briefing, since 5 independent days
+  with zero exceptions is no longer distinguishable from a real engagement problem using only this
+  session's tools.
+
 - 2026-10-26 · CEO (daily briefing #39) · **Pinterest's forward-scheduled runway declined a 12th
   consecutive check, now a 9th consecutive day under the CEO brief's 14-day urgent line and the
   first time under 3.5 days: ~4.5 days (10-25) → ~3.5 days (10-26, 18 items scheduled, running
