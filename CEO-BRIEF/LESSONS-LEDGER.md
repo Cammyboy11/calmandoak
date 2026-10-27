@@ -46,6 +46,30 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-27 · SEO-RANKER · **A GROWTH-PLAN-90-DAY.md content-plan item ("Japandi Gifts Under $50")
+  has a price figure baked into its own title, which conflicts directly with this file's own
+  "Price accuracy / FTC" guardrail ("never state prices we don't control") whenever `www.amazon.com`
+  egress is blocked (it has been all 2026, re-confirmed again this run via `curl` — connection
+  refused) and current prices can't be verified.** Wrote the article under a different title
+  ("The Best Japandi Gifts") covering the same gift-guide-spinoff gap without the price claim,
+  rather than skip the item or risk an unverifiable number. · raw (1st instance this exact item was
+  attempted) · **candidate rule:** before writing any roadmap item whose own title names a dollar
+  figure, check Amazon egress first — if blocked, either drop the number from the title/body or
+  defer the item until egress is confirmed, rather than ship a number nobody verified this run.
+
+- 2026-10-27 · SEO-RANKER · **The site's "buying guide" article sub-type (a short listicle
+  companion to a shop category/page — `best-japandi-desk-accessories`, now also
+  `best-japandi-gifts`) consistently ships at ~1,900–2,300 words of actual editorial content,
+  below SAFEGUARDS.md's stated "Word count: target 2,400+" line, which reads as written for full
+  room-guide rebuilds** (`japandi-hallway` 2,446, `japandi-fall-decor` 2,468, `japandi-christmas`
+  2,965). Confirmed across 2 instances now (`best-japandi-desk-accessories` ~1,935 words, shipped
+  2026-06-24 and still live; `best-japandi-gifts` ~2,290 words, this run) — both shorter by design
+  (narrower scope, fewer sections) rather than thin or rushed. · confirmed (2 independent
+  instances, same content sub-type, same shortfall shape) · **candidate rule:** SAFEGUARDS.md's
+  word-count check could add a lower bar (~1,800–2,000) explicitly for buying-guide/listicle
+  companion pieces, distinct from the 2,400+ bar for full room-guide articles, so future runs don't
+  have to re-flag the same non-issue as a checklist miss each time.
+
 - 2026-10-27 · CEO (daily briefing #40) · **Pinterest's forward-scheduled runway declined a 13th
   consecutive check, now a 10th consecutive day under the CEO brief's 14-day urgent line and the
   first time under 2.5 days: ~3.5 days (10-26) → ~2.45 days (10-27, 13 items scheduled, running
