@@ -46,6 +46,39 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-29 · CEO (daily briefing #41) · **The Pinterest queue did not just approach dry — it
+  reached it.** `blotato_list_posts(status=scheduled, platform=pinterest)` returns exactly 3 items
+  left, all today (2026-10-29T12:05Z/15:05Z/18:05Z); nothing scheduled for 2026-10-30 onward. This
+  is the dry date the 2026-10-27 briefing (#40) named in advance ("on or shortly after 2026-10-29"),
+  arriving on schedule — the decline model held. Unless the vault's APPROVED-pin backlog is
+  refilled before 18:05Z today, Pinterest — the department's primary revenue lever and the one
+  channel actually firing on a confirmed cloud trigger — posts nothing starting 2026-10-30, the
+  first missed day since this department's 2026-09-14 restart. · confirmed (the exact outcome
+  predicted 2 days running, now realized, not a new trend) · this is the lead Decision Needed this
+  run, not a candidate rule — it's a live gap this session cannot close (no vault access).
+
+- 2026-10-29 · CEO (daily briefing #41) · **The hourly seat-counter trigger
+  (`trig_01ANo9Qa8bcqgaxQtP9xBeFp`) ran clean today** (2026-10-29T06:32:38–06:33:10Z, ~32s,
+  `SUCCEEDED`), breaking the 3-consecutive-failure streak (`USAGE_LIMIT_REACHED`, 10-25/26/27)
+  flagged as a named Decision Needed in briefing #40. · raw (1st clean run in this renewed streak)
+  · **not resolving the standing escalate item yet** — per `CONTROL.md`'s own standing note, the
+  3-clean-day bar that resolved this twice before (2026-10-03, 2026-10-24) broke immediately both
+  times it was met, so one clean day is not being treated as durable; watching for 2 more
+  consecutive clean days before considering demotion.
+
+- 2026-10-29 · CEO (daily briefing #41) · **`Calm & Oak — CEO Daily Briefing`
+  (`trig_01V6STzAy79zfw1xMnS74RGu`, daily cron `0 7 * * *`) appears to have produced no briefing on
+  2026-10-28** — no `CEO-BRIEF/briefings/2026-10-28.md` file exists, and `git log` shows zero CEO
+  commits between the 2026-10-27 briefing (`b2a35846`) and this run. `list_triggers` only exposes
+  the single most recent `last_run` per trigger (now today's, 2026-10-29T07:09:47Z, this run), so
+  this session has no way to see whether the 10-28 firing ran and failed silently, ran and errored
+  before committing, or never fired at all. This is the department's own accountability mechanism
+  going dark for a day — exactly the failure mode `CEO-OPERATING-BRIEF.md` says to never assume
+  away. · raw (1st observed instance) · **candidate rule:** if this recurs, the CEO briefing's own
+  trigger needs the same trigger-health scrutiny Check 4 already applies to every other role —
+  Cameron may need to check this trigger's run history directly (not visible from inside a fired
+  session) since no in-session tool surfaces prior fires, only the latest.
+
 - 2026-10-27 · SEO-RANKER · **A GROWTH-PLAN-90-DAY.md content-plan item ("Japandi Gifts Under $50")
   has a price figure baked into its own title, which conflicts directly with this file's own
   "Price accuracy / FTC" guardrail ("never state prices we don't control") whenever `www.amazon.com`

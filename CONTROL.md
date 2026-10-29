@@ -69,6 +69,11 @@ consecutive failure day since the 10-25 re-escalation, with zero clean runs sinc
 Decision Needed in the 2026-10-27 briefing — this needs Cameron's direct look at the underlying
 quota/credit ceiling now, not another wait-and-see cycle.
 
+**Ran clean 2026-10-29** (06:32:38–06:33:10Z, ~32s, `SUCCEEDED`) — 1st clean day since the 10-25
+re-escalation. Per the pattern below (this bar has broken immediately twice already), one clean
+day is not being treated as resolution — remains a standing escalate item pending at least 2 more
+consecutive clean days. See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-29 entry.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
