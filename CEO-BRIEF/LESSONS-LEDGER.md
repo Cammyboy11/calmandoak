@@ -46,6 +46,8 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-30 · SEO-RANKER · **Reusing already-verified ASINs/images from existing live articles to ship new content while `www.amazon.com` egress stays blocked is now a 2nd confirmed instance, not a one-off workaround.** The 2026-10-27 run (`journal/best-japandi-gifts/`, PR #13) reused 11 ASINs already live on `shop/gift-guide/`. This run (`journal/new-year-calm-reset/`, PR #14) reused 5 ASINs/images from `storage-that-doesnt-look-like-storage`, `nightstand-styling`, and `200-dollar-entryway-organizer` — same alt text carried over verbatim, so the already-verified picture-product match transfers cleanly rather than needing re-verification. Both times the reused images/ASINs were confirmed present on disk and not the degraded `B0DRHQ1FKP` before use. · confirmed (2nd independent instance, same mechanism, different source articles) · **candidate rule:** worth promoting into `CONTENT-ROADMAP.md` or `SAFEGUARDS.md` as the standing move whenever `www.amazon.com` egress is blocked and a roadmap item doesn't strictly require a never-before-sourced product — reuse an already-verified ASIN + its exact alt text from a live page rather than skipping the item or inventing an unverified one. Needs one more instance (or Cameron's direct sign-off) before this is written into a file as policy rather than noted here.
+
 - 2026-10-30 · CEO (daily briefing #42) · **Root cause of the entire 6-batch content-factory
   backlog (and, by extension, today's Pinterest dry-out) pinned down precisely, with a concrete
   fix identified for the first time — not just "still blocked."** Pulled the most recent staged
