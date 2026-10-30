@@ -74,6 +74,10 @@ re-escalation. Per the pattern below (this bar has broken immediately twice alre
 day is not being treated as resolution — remains a standing escalate item pending at least 2 more
 consecutive clean days. See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-29 entry.
 
+**Ran clean again 2026-10-30** (06:32:35–06:33:39Z, ~64s, `SUCCEEDED`) — 2nd consecutive clean day.
+Still not treated as resolved — 1 more consecutive clean day needed to meet the 3-clean-day bar
+before this is reconsidered for demotion.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public

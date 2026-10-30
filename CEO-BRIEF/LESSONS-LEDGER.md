@@ -46,6 +46,45 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-10-30 · CEO (daily briefing #42) · **Root cause of the entire 6-batch content-factory
+  backlog (and, by extension, today's Pinterest dry-out) pinned down precisely, with a concrete
+  fix identified for the first time — not just "still blocked."** Pulled the most recent staged
+  batch (`content-factory/2026-10-25`, 10/10 SAFEGUARDS PASS, media files present) into a worktree,
+  obtained 10 valid presigned-upload URLs from Blotato's MCP tools (`mcp.blotato.com` — reachable,
+  works fine), then attempted the actual `curl -X PUT` of all 10 images to the returned
+  `database.blotato.io` URLs — all 10 failed identically: `CONNECT tunnel failed, response 403`,
+  and the agent-proxy's own diagnostic names the exact cause: `database.blotato.io:443 —
+  connect_rejected (... a refusal most often means that the host is not allowed for this
+  session)`. This is the same host every prior briefing/content-factory run has found blocked
+  since 2026-09-14/15, but this is the first time the failure was reproduced end-to-end (MCP
+  management calls succeed; only the raw-file upload PUT to this specific host fails) rather than
+  inferred from a generic `curl` probe. Read this session's own `environment.network`
+  documentation in response: the fix is **Cameron adding `database.blotato.io` to Allowed domains
+  under this cloud environment's Network settings** (cloud environment menu → Edit → Network
+  access — Limited level shows Allowed domains; see
+  https://code.claude.com/docs/en/cloud-environments#network-access), or broadening the access
+  level. No file-level rule can fix this; it's an environment setting. · confirmed (same blocking
+  host named in every ledger entry since 2026-09-14, now reproduced with full diagnostic +
+  identified fix) · not promoted to a repo file (infra/account setting, outside this loop's scope
+  per `LEARNING-LOOP.md`) — elevated to this briefing's #1 Decision Needed instead, since it's now
+  actionable rather than just a standing flag.
+
+- 2026-10-30 · CEO (daily briefing #42) · **The predicted first-missed-Pinterest-day has now fully
+  arrived, confirmed from two independent angles.** `blotato_list_posts(status=scheduled,
+  platform=pinterest, 2026-10-30→2026-12-15)` returns zero items — not "a few left," genuinely
+  empty. Cross-checked `blotato_list_posts(2026-10-29→2026-10-31, all statuses)`: the 4 items the
+  2026-10-29 briefing found (3 scheduled + 1 already-published) have all since published
+  (2026-10-29T00:05/12:05/15:05/18:05Z, all `state.type: "published"` with real `pinterest.com/pin/`
+  URLs) and nothing exists behind them. The daily Pinterest scheduler trigger fired today
+  (07:02:24–07:07:12Z) and reported `SUCCEEDED` while scheduling nothing — consistent with its own
+  written logic ("if the approved queue is empty, post nothing, never recycle old pins"), i.e. a
+  correct empty-queue result, not a scheduler malfunction. One of the four published posts
+  (2026-10-29T00:05Z) now has a fetched analytics snapshot: still flat-zero across every metric,
+  continuing that standing pattern. · confirmed (this is the realized event the past 4 briefings
+  forecast with increasing precision, not a new pattern) · not promoted — this is a live,
+  in-progress gap (today's Decision Needed #1 alongside the egress-fix finding above), not a rule
+  candidate.
+
 - 2026-10-29 · CEO (daily briefing #41) · **The Pinterest queue did not just approach dry — it
   reached it.** `blotato_list_posts(status=scheduled, platform=pinterest)` returns exactly 3 items
   left, all today (2026-10-29T12:05Z/15:05Z/18:05Z); nothing scheduled for 2026-10-30 onward. This
