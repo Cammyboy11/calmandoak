@@ -78,6 +78,13 @@ consecutive clean days. See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-29 entry.
 Still not treated as resolved — 1 more consecutive clean day needed to meet the 3-clean-day bar
 before this is reconsidered for demotion.
 
+**Ran clean a 3rd consecutive day 2026-10-31** (06:32:29–06:33:04Z, ~35s, `SUCCEEDED`) — meets the
+exact 3-clean-day bar that resolved this twice before (2026-10-03, 2026-10-24) and that broke
+immediately both times. Given that history, NOT demoted from standing-escalate on this run alone —
+holding at standing-escalate pending a longer run of stability (targeting at least a full week, not
+just 3 days) before reconsidering. See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-31 entry. Cameron's
+direct look at the underlying `USAGE_LIMIT_REACHED` quota/credit ceiling remains the real fix.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
