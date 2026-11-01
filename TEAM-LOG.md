@@ -10,6 +10,26 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-01 · CONTENT-FACTORY (weekly cloud run) · **Built and staged batch `content-factory/2026-11-01`**
+  — 5 products, 15 posts (Pinterest stills + Instagram/TikTok reels), 5/5 SAFEGUARDS PASS, 0 FAIL. Live
+  Blotato check confirmed the queue is genuinely empty across all 3 platforms (not "already full" —
+  every channel needed this batch) and IG/TikTok are dark 26 days (last publish 2026-10-06), matching
+  today's CEO briefing #44. Sourced all 5 ASINs from already-live, already-verified journal pages
+  (`japandi-christmas`, `best-japandi-gifts`, `best-japandi-lighting`), checked against all 6 other open
+  content-factory branches first (34 ASINs excluded, zero overlap). Dropped 1 candidate (towel set
+  `B0118561IU`) pre-build on image-quality grounds — its tracked photo is visibly artifacted — and
+  substituted a clean replacement before writing any copy. Audio-bed presence verified via `ffprobe` +
+  `volumedetect` on all 5 reels, not assumed. Per `CONTROL.md`'s 2026-09-14 review gate, **no Blotato
+  post/schedule/upload tool was called** — manifest at
+  `final pins/batches/2026-11-01/manifest.md` on branch `content-factory/2026-11-01` (pushed, not
+  merged — same as every prior batch). Also opened PR #15 (`tooling/asin-to-pin-2026-11-01` → `main`),
+  a standalone, batch-content-free PR for `_asin-to-pin.js` — this script has been rebuilt out of a
+  prior unmerged batch branch 6 consecutive times because it never landed on `main`; this PR finally
+  lets it be merged once instead of re-copied again next week. Full detail in
+  `CEO-BRIEF/LESSONS-LEDGER.md`. · staged (`content-factory/2026-11-01`, needs-Cameron); needs-Cameron
+  (review/merge PR #15, review/schedule the batch manifest, still-blocked `database.blotato.io` egress
+  unchanged from every prior entry)
+
 - 2026-11-01 · CEO (daily briefing #44) · **No open PR to review** (only the long-standing, unrelated
   Cloudflare autoconfig PR #1 remains open); no new content-factory batch to review (its weekly run
   is due later today, 12:04 UTC, after this briefing). **Pinterest queue confirmed dry a 4th
