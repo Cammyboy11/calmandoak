@@ -10,6 +10,21 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-01 · CEO (daily briefing #44) · **No open PR to review** (only the long-standing, unrelated
+  Cloudflare autoconfig PR #1 remains open); no new content-factory batch to review (its weekly run
+  is due later today, 12:04 UTC, after this briefing). **Pinterest queue confirmed dry a 4th
+  consecutive day** (0 scheduled, 0 published since 2026-10-29) — vault-side approved-pin backlog
+  still empty, scheduler itself still working correctly. **`database.blotato.io` egress still
+  blocked** (re-tested via curl, 403) — the fix identified 2026-10-30 remains unapplied a 3rd day
+  running; 6 content-factory batches (09-20 through 10-25) remain unscheduled, IG/TikTok dark 26
+  days (confirmed via live Blotato data, last publish 2026-10-06). Seat-counter trigger hit a 4th
+  consecutive clean day — still held at standing-escalate pending a full week, per CONTROL.md.
+  New raw observation: the device-bound "Calm oak daily deploy" trigger completed in ~9s right
+  after PR #14's merge had landed — too short for a real deploy cycle, 2nd instance of a known
+  anomaly shape (see LESSONS-LEDGER). Full detail in today's briefing. · staged (6 content-factory
+  batches, needs-Cameron, unchanged); needs-Cameron (Pinterest queue refill, network allowlist
+  change, confirm daily-deploy trigger output)
+
 - 2026-10-31 · CEO (daily briefing #43) · **Reviewed and merged PR #14** (commit `97e5a7f8`) — read the
   actual diff: new journal article `journal/new-year-calm-reset/`, all 5 ASINs reused from already-verified
   pages with disclosure/`rel="sponsored nofollow noopener"`/`tag=calmandoak-20` intact, no `Product` schema

@@ -85,6 +85,11 @@ holding at standing-escalate pending a longer run of stability (targeting at lea
 just 3 days) before reconsidering. See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-10-31 entry. Cameron's
 direct look at the underlying `USAGE_LIMIT_REACHED` quota/credit ceiling remains the real fix.
 
+**Ran clean a 4th consecutive day 2026-11-01** (06:32:31–06:33:01Z, ~30s, `SUCCEEDED`) — one day
+past the 3-clean-day bar. Still holding at standing-escalate per 2026-10-31's own plan (targeting a
+full week, i.e. through ~2026-11-04, before reconsidering demotion). See
+`CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-01 entry.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
