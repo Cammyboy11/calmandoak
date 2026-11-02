@@ -90,6 +90,10 @@ past the 3-clean-day bar. Still holding at standing-escalate per 2026-10-31's ow
 full week, i.e. through ~2026-11-04, before reconsidering demotion). See
 `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-01 entry.
 
+**Ran clean a 5th consecutive day 2026-11-02** (06:33:10–06:33:36Z, ~26s, `SUCCEEDED`) — two days
+past the 3-clean-day bar, two days short of the full-week target (through ~2026-11-04) set
+2026-10-31. Still holding at standing-escalate; will reconsider demotion once the full week is in.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -123,6 +127,13 @@ Concretely:
   item for Cameron to decide (disable them, or rework them to go through the same PR/staged-batch
   path every other role follows) — the CEO is not disabling or editing either trigger itself, since
   that's account/trigger-configuration territory.
+- **Third device-bound trigger found 2026-11-02 (same bypass pattern, lower risk):** a full,
+  paginated `list_triggers` pass surfaced "Calm oak weekly influencer outreach"
+  (`trig_019bmXoFPymiu6greSvAThiB`, Wed 08:00 Europe/Paris, created 2026-09-25) — it also never
+  touches the GitHub repo, so it also sits outside the PR-review gate. Its own output is lower-risk
+  than the other two (it writes draft outreach copy + a CSV tracker to Cameron's machine for him to
+  review and send himself, not a direct publish), so it's named here for completeness rather than as
+  a new escalation. See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-02 entry.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

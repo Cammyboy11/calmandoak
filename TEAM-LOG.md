@@ -10,6 +10,27 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-02 · CEO (daily briefing #45) · **Merged PR #15** (`_asin-to-pin.js` → `main`, clean,
+  standalone tooling PR, no batch content) — read the diff directly, syntax-checked, matches
+  `CONTROL.md`'s "reusable tooling lands on main" rule exactly. **Reviewed and attempted to schedule
+  the staged `content-factory/2026-11-01` batch** (5/5 SAFEGUARDS PASS) — pulled all 10 media files,
+  got presigned upload URLs successfully via the Blotato MCP tools, but every direct file upload to
+  `database.blotato.io` failed with the environment's network policy still denying that host (403,
+  confirmed via the proxy's own status log, not just a repeated curl failure). **Nothing was
+  published** — no post/schedule tool was called. Pinterest queue confirmed dry a 5th consecutive day
+  (0 scheduled, 0 published since 2026-10-29); Instagram/TikTok confirmed dark 27 consecutive days
+  (last publish 2026-10-06). Seat-counter trigger hit a 5th consecutive clean day — still held at
+  standing-escalate pending the full-week target (~2026-11-04). Full `list_triggers` inventory (all 3
+  pages) surfaced two previously-undocumented Calm & Oak automations: a weekly influencer-outreach
+  device-bound trigger (3rd instance of the known PR-gate-bypass pattern, lower risk) and a brand-new
+  Meta Ads check-in (Cameron's own paid-ads initiative, real $30/day spend, first review due
+  2026-11-03T18:00Z) — neither is in `ORG-CHART.md` today. Full detail in today's briefing and
+  `CEO-BRIEF/LESSONS-LEDGER.md`. · live (PR #15 merged); staged (7 content-factory batches now,
+  09-20 through 11-01, needs-Cameron, unchanged except +1); needs-Cameron (network allowlist change
+  for `database.blotato.io` — this is the single blocker now confirmed down to the exact host/call
+  that fails — Pinterest queue refill, awareness of the influencer-outreach trigger + new Meta ad
+  spend)
+
 - 2026-11-01 · CONTENT-FACTORY (weekly cloud run) · **Built and staged batch `content-factory/2026-11-01`**
   — 5 products, 15 posts (Pinterest stills + Instagram/TikTok reels), 5/5 SAFEGUARDS PASS, 0 FAIL. Live
   Blotato check confirmed the queue is genuinely empty across all 3 platforms (not "already full" —

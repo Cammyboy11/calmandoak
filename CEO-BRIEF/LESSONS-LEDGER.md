@@ -46,6 +46,45 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-02 · CEO (daily briefing #45) · **Pinpointed the exact mechanism of the `database.blotato.io`
+  upload block, not just re-confirmed its existence.** Reviewed `content-factory/2026-11-01`'s staged
+  manifest (5/5 SAFEGUARDS PASS, clean sourcing, disclosures present) and attempted to actually
+  schedule it — pulled the 10 media files from the branch, got 10 presigned upload URLs via
+  `blotato_create_presigned_upload_url` (succeeded — this call doesn't route through this sandbox's
+  proxy), then tried the required `curl -X PUT` of each file to its presigned `database.blotato.io`
+  URL. All 10 failed identically: `curl: (56) CONNECT tunnel failed, response 403`. Cross-checked
+  against `$HTTPS_PROXY/__agentproxy/status`'s `recentRelayFailures`, which logged the exact same
+  rejection at 07:19:34Z: `{"kind":"connect_rejected","detail":"gateway answered 403 to CONNECT
+  (policy denial or upstream failure)","host":"database.blotato.io:443"}`. So the Blotato *MCP tool
+  calls* (list_accounts, get_credits, list_posts, list_pinterest_boards, create_presigned_upload_url)
+  all succeed because they run server-side on Blotato's own infrastructure, never touching this
+  sandbox's egress policy — only the actual media PUT, which this session must perform directly, hits
+  the blocked host. No post/schedule tool was called; nothing was published. · confirmed (this is the
+  same block named 2026-10-30/-31/11-01, now re-confirmed with exact proxy-log evidence rather than
+  just a repeated curl failure) · not promoted to a repo file (infra/account setting — the fix is
+  still: add `database.blotato.io` to this environment's Network access → Allowed domains) — remains
+  this briefing's #1 Decision Needed.
+- 2026-11-02 · CEO (daily briefing #45) · **Full `list_triggers` inventory (3 pages, paginated to
+  `has_more: false`) surfaced two Calm & Oak-relevant triggers not named anywhere in `CONTROL.md` or
+  `ORG-CHART.md`.** (1) `Calm oak weekly influencer outreach` (`trig_019bmXoFPymiu6greSvAThiB`,
+  Wed 08:00 Europe/Paris, created 2026-09-25, last ran clean 2026-10-28) — a device-bound local
+  routine that scouts micro-creator/blog outreach targets and writes drafts to a CSV + markdown file
+  on Cameron's machine for him to send himself. It never touches the GitHub repo, so — like "daily
+  deploy" and "weekly seo post" — it structurally bypasses the CEO's PR-review gate, though its own
+  output (draft outreach copy Cameron sends manually) is lower-risk than a straight-to-production
+  publish. This is also the closest thing Calm & Oak has today to filling the "Brand & Influencer
+  Partnerships" planned-gap role in `ORG-CHART.md` — worth Cameron knowing it already exists in some
+  form rather than treating that row as fully unstaffed. (2) `Calm & Oak Meta ad — 48h approval +
+  quality check` (`trig_018NJNbWvrWZG9MHHxr3iRAx`, one-shot, created 2026-11-01T23:56, fires
+  2026-11-03T18:00Z) — a brand-new, real-money paid-ads initiative (Meta Advantage+ Sales campaign,
+  catalog "Shop the Room", $30/day, US/CA/UK/AU) that Cameron set up himself outside this org's
+  documented six revenue streams and any agent's scope. Nothing for the CEO to approve here (Cameron's
+  own direct action with his own ad account), but it's new information this briefing format has never
+  surfaced before, and its first review is already scheduled. · raw (1st time trigger-inventory
+  paging has surfaced previously-undocumented Calm & Oak automations outside a targeted search) ·
+  **candidate rule:** the CEO's trigger-health check should treat a full paginated `list_triggers`
+  pass as an opportunity to reconcile the *entire* Calm & Oak trigger set against `ORG-CHART.md`, not
+  just check the already-named ones' health — this is how both of these were found.
 - 2026-11-01 · CONTENT-FACTORY (weekly cloud run) · **A tracked product photo can be
   picture-product-correct (right product type, alt text matches) and still fail the premium-editorial
   bar on image quality alone — SAFEGUARDS Check 1 as written doesn't catch this.** Sourcing for this
