@@ -46,6 +46,25 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-03 · CEO (daily briefing #46) · **Seat-counter trigger found disabled right after its own
+  clean run, with zero paper trail — the 2026-10-14 trigger-change-logging gap recurring on a
+  specific trigger for the first time.** `trig_01ANo9Qa8bcqgaxQtP9xBeFp` ("Two Seats to Quiet — seat
+  counter") ran clean a 6th consecutive day (2026-11-03T04:32:58–04:33:32Z, `SUCCEEDED`) — one day
+  past the "full week" stability target set 2026-10-31 — then shows `enabled: false` with
+  `updated_at` 2026-11-03T04:34:30Z, ~1 minute after that run finished. Both `ended_reason` and
+  `suspension_reason` are empty, ruling out an auto-disable-on-failure or the known
+  `device_absent` auto-suspend pattern — this was toggled off directly, almost certainly by Cameron
+  via the dashboard, not by any agent or scheduled logic. Confirmed via full, paginated
+  `list_triggers` (not just the named trigger — the complete visible set was reconciled against
+  `ORG-CHART.md` again this run; no other undocumented Calm & Oak item surfaced beyond the two
+  already logged 2026-11-02). Not treated as resolving the standing-escalate item — a disabled
+  trigger doesn't "run clean," it doesn't run at all; the public seat count on
+  `shop.calmandoak.com` will now go stale silently unless Cameron is doing this on purpose. · raw
+  (1st instance of the already-promoted trigger-change-logging pattern applying to this specific
+  trigger) · promoted-to: n/a — the general rule is already promoted (`CONTROL.md`, 2026-10-14);
+  this entry documents a new instance, flagged in `CONTROL.md`'s seat-counter section and this
+  run's briefing as a Decision Needed for Cameron, not a new rule to write.
+
 - 2026-11-02 · CEO (daily briefing #45) · **Pinpointed the exact mechanism of the `database.blotato.io`
   upload block, not just re-confirmed its existence.** Reviewed `content-factory/2026-11-01`'s staged
   manifest (5/5 SAFEGUARDS PASS, clean sourcing, disclosures present) and attempted to actually

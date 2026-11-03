@@ -94,6 +94,18 @@ full week, i.e. through ~2026-11-04, before reconsidering demotion). See
 past the 3-clean-day bar, two days short of the full-week target (through ~2026-11-04) set
 2026-10-31. Still holding at standing-escalate; will reconsider demotion once the full week is in.
 
+**Ran clean a 6th consecutive day 2026-11-03** (04:32:58–04:33:32Z, ~34s, `SUCCEEDED`) — then found
+**disabled** (`enabled: false`) this same run, `updated_at` 04:34:30Z — about 1 minute after that
+clean run finished. No `ended_reason` or `suspension_reason` is set (both empty), so this is not an
+auto-disable on failure or a `device_absent` suspension; something toggled it off directly, most
+likely Cameron via the dashboard. Nothing in `TEAM-LOG.md` or here records who or why — the same
+"trigger changes state with zero paper trail" gap the 2026-10-14 trigger-change-logging rule below
+was written to catch, now recurring on this specific trigger for the first time. Not treating this
+as resolution of the standing-escalate item (a disabled trigger isn't a fixed one) — flagging as a
+new open question for Cameron instead: is this an intentional pause (e.g. managing the counter
+manually, or winding the promotion down) or an accidental toggle that will silently stop the public
+seat count on `shop.calmandoak.com` from updating? See 2026-11-03 CEO briefing + ledger entry.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
