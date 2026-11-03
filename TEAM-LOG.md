@@ -10,6 +10,41 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-03 · SEO-RANKER · **New journal article, staged as a PR (public-facing review gate — not
+  pushed to main).** Read `CONTROL.md` first (`PAUSE: false`), then `SAFEGUARDS.md`,
+  `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`, and `CEO-BRIEF/LESSONS-LEDGER.md` for anything
+  ledger-relevant. Checked for a stale `.git/index.lock` before touching anything — none present.
+  Session started detached at `origin/main`'s tip; resolved with `git checkout main` (no
+  force/reset needed, already at the tip). **Checked the office cluster first** (GROWTH-PLAN's #1
+  priority): re-confirmed still fully built and cross-linked (`japandi-home-office`, `japandi-desk`,
+  `small-japandi-office`, `best-japandi-desks`, `best-japandi-office-chairs`,
+  `best-japandi-desk-accessories`, `400-dollar-home-office`) — no new gap, matching every prior
+  run's finding since 2026-09-22. Re-confirmed `www.amazon.com` egress still blocked (`curl` →
+  `CONNECT tunnel failed, response 403`, same as `database.blotato.io`), so sourced no new ASINs.
+  **Shipped:** `journal/japandi-balcony/` — GROWTH-PLAN Tier 3 ("Japandi Balcony Ideas for small
+  spaces"), a genuinely distinct small-footprint spin-off of the `japandi-outdoor` pillar (not a
+  cannibalizing rewrite of it, `300-dollar-sunday-porch`, or `400-dollar-patio-dining`, all three of
+  which assume more floor space). Considered a "Japandi Gifts for Him/the Home" spin-off first but
+  dropped it — too much direct overlap with the week-old `best-japandi-gifts` page, same
+  cannibalization risk the 2026-10-27 run flagged for a wall-colours article. Reused 8
+  already-verified ASINs/images (same alt text) from `japandi-outdoor`, `300-dollar-sunday-porch`,
+  and `400-dollar-patio-dining` per the pattern confirmed twice in the ledger (2026-10-27,
+  2026-10-30) — zero new Amazon sourcing. Deliberately excluded `B0118561IU` (flagged 2026-11-01 as
+  visually degraded) and the historic `B0DRHQ1FKP`. ~1,894 words (buying-guide sub-type bar). Added
+  to `journal/index.html` (card + ItemList + filter counts recomputed from live `data-category`
+  attributes, 69/14/26/13/8/8, reconciled 69=69 against the sitemap) and `sitemap.xml`, plus one
+  reciprocal cross-link from `japandi-outdoor`'s existing balcony mention. **PR:**
+  https://github.com/Cammyboy11/calmandoak/pull/16 (branch
+  `seo-ranker/japandi-balcony-2026-11-03`), staged only the 4 touched files (`git status` confirmed
+  no stray changes before commit), subscribed to PR activity. **SAFEGUARDS gate:** full detail
+  posted in the PR body — Checks 1/2/4 all MATCH (reused image+alt+link triples), Check 3 relies on
+  prior verification (no live Amazon check possible this run), Check 5 0 MISS, Check 7 disclosure
+  present, Check 8 sitewide resweep clean (neither degraded ASIN present), Check 9 hub reconciliation
+  69=69, all 6 TOC anchors resolve, all 3 JSON-LD blocks valid. **Needs-Cameron:** review/merge PR
+  #16. Separately (not this run's finding, just re-surfacing): the seat-counter trigger (now found
+  *disabled*, not just failing — see today's CEO briefing/ledger) and `database.blotato.io` egress
+  block remain open and outside this agent's access. · staged (PR #16 open, needs-Cameron review)
+
 - 2026-11-02 · CEO (daily briefing #45) · **Merged PR #15** (`_asin-to-pin.js` → `main`, clean,
   standalone tooling PR, no batch content) — read the diff directly, syntax-checked, matches
   `CONTROL.md`'s "reusable tooling lands on main" rule exactly. **Reviewed and attempted to schedule
