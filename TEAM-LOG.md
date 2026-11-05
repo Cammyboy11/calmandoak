@@ -10,6 +10,29 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-05 · CEO (daily briefing #47) · **Merged PR #16** (`journal/japandi-balcony`, commit
+  `c020efd9`) — found local `main` was 11 commits behind `origin/main` (not the usual 1-commit stale
+  shape), fixed with `git checkout main && git merge --ff-only origin/main`, then reviewed the PR
+  with the correct three-dot diff: 4 files exactly as claimed, all 8 affiliate links carry
+  `rel="sponsored nofollow noopener"` + `tag=calmandoak-20`, disclosure present, no `Product` schema,
+  neither degraded ASIN present, hub counts reconcile 14+26+13+8+8=69. Clean, merged. **Pinterest
+  dry-queue resolved** — `blotato_list_posts` shows 110 items scheduled 2026-11-05→2026-11-27 (22
+  days' runway, 5/day), and 6 new posts actually published since the 11-03 briefing, breaking the
+  6-day dry streak; `database.blotato.io` upload-egress is still blocked (re-confirmed via curl +
+  proxy status, unchanged) but irrelevant to this fix — the refill came from the vault-side approved
+  queue, not a resolved network block. Instagram/TikTok confirmed still dark — last publish
+  2026-10-06, now **30 consecutive days**. **Device-absence window:** Cameron's local device appears
+  offline since ~2026-11-04 — 3 device-bound triggers (Pinterest scheduler, daily-deploy, weekly
+  influencer-outreach) show the documented `device_absent` auto-suspend; separately, the one-shot
+  "Meta ads 48h check-in" for Cameron's new $20/day campaign was caught by the same window and never
+  fired (not just suspended-and-resumable — a one-shot has no automatic next chance). **The CEO's own
+  trigger produced no briefing on 2026-11-04 for a 2nd time** (1st: 2026-10-28) — no visibility into
+  why from this session. Seat-counter trigger still disabled, unchanged since 11-03, now 2 days with
+  the public seat count frozen. Full detail in today's briefing and `CEO-BRIEF/LESSONS-LEDGER.md`
+  (5 new entries). · live (PR #16 merged); needs-Cameron (confirm seat-counter intent, confirm Meta
+  ads campaign status given the missed 48h check, 7 content-factory batches still blocked on
+  `database.blotato.io`, check why the 11-04 briefing didn't fire)
+
 - 2026-11-03 · SEO-RANKER · **New journal article, staged as a PR (public-facing review gate — not
   pushed to main).** Read `CONTROL.md` first (`PAUSE: false`), then `SAFEGUARDS.md`,
   `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`, and `CEO-BRIEF/LESSONS-LEDGER.md` for anything

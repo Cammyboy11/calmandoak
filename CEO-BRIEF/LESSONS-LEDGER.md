@@ -46,6 +46,81 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-05 · CEO (daily briefing #47) · **The Pinterest dry-queue, standing #1 Decision Needed
+  for 6 straight briefings (10-29 through 11-03), is resolved — not by the `database.blotato.io`
+  fix landing, but by the vault-side approved-pin queue being refilled and the 2026-11-03 scheduler
+  run (its last run before device-absent suspension, 06:09:57–06:15:59Z, the long/real-work shape)
+  scheduling a large batch off the back of it.** `blotato_list_posts(platform=pinterest,
+  status=scheduled, 2026-11-05→2026-12-20)` returns **110 items** running 2026-11-05 through
+  2026-11-27 at a steady 4-5/day — 22 days of forward runway, up from 0 the day before. Confirmed
+  separately via `published`: 6 new Pinterest posts fired since the 11-03 briefing
+  (2026-11-04T00:05/12:05/15:05/18:05/21:05Z + 2026-11-05T00:05Z), breaking the dry streak. Analytics
+  on all of them still flat-zero, continuing that separate standing pattern. · confirmed (reverses a
+  6-briefing trend with direct evidence, not an inference) · not promoted to a repo file — removed
+  from this briefing's Decisions Needed; flagging only so tomorrow's run doesn't re-flag Pinterest as
+  dry out of habit without re-checking.
+- 2026-11-05 · CEO (daily briefing #47) · **The CEO's own daily-briefing trigger silently produced no
+  briefing on 2026-11-04 for a 2nd time** (1st: 2026-10-28, see that date's entry below) — no
+  `CEO-BRIEF/briefings/2026-11-04.md` exists, zero commits by any automation between the 2026-11-03
+  SEO-ranker run and this run, and `list_triggers` still only exposes the single most recent
+  `last_run` (today's, 2026-11-05T07:09:19Z), so this session again has no way to see whether 11-04
+  fired and failed, fired and errored pre-commit, or never fired. Two independent instances of the
+  exact same opaque gap in the org's own accountability mechanism now on record. · confirmed (2nd
+  independent instance, same trigger, same symptom) · **candidate rule, now due for promotion at next
+  consolidation:** the 2026-10-29 entry's candidate ("Cameron may need to check this trigger's run
+  history directly, since no in-session tool surfaces prior fires") should become a standing
+  Decision Needed every time this recurs, not just a raw note — recommend Cameron check
+  `trig_01V6STzAy79zfw1xMnS74RGu`'s run history directly in the dashboard to see what actually
+  happened 2026-11-04 before this happens a 3rd time.
+- 2026-11-05 · CEO (daily briefing #47) · **A real-money check-in was skipped by the same mechanism
+  that's supposed to make device-absence safe.** Cameron's local device appears to have gone offline
+  starting ~2026-11-04 (three device-bound triggers — daily Pinterest scheduler, "Calm oak daily
+  deploy," "Calm oak weekly influencer outreach" — all show `enabled: false` +
+  `suspension_reason: "device_absent"` dated 2026-11-04, the documented, expected auto-suspend shape).
+  But the one-shot "Calm & Oak Meta ads — 48h approval + quality check" (due 2026-11-04T15:00Z, built
+  specifically to catch wasted spend or a broken Pixel on Cameron's new $20/day Meta campaign) was
+  caught by the exact same window and never actually ran: `enabled: false`, `ended_reason` empty (not
+  `run_once_fired`), `suspension_reason: "device_absent"`. The device-absent auto-suspend/auto-resume
+  pattern is well-documented for *recurring* triggers (they just fire on the next good day), but this
+  is the first time it's been observed eating a one-shot trigger's only scheduled fire — there may be
+  no "next time" for this one unless Cameron notices and re-fires it himself. · raw (1st instance this
+  specific interaction — device-absence suspending a one-shot, not a recurring, trigger — has been
+  named) · **candidate rule:** a time-sensitive one-shot trigger (anything tied to live ad spend or a
+  real-money promotion) probably shouldn't be scheduled device-bound at all, or needs its own
+  "didn't fire, no automatic retry" escalation path distinct from the recurring-trigger
+  device_absent pattern. Needs Cameron's direct confirmation of what actually happened to the Meta
+  campaign's first 48h before this can be promoted further.
+- 2026-11-05 · CEO (daily briefing #47) · **The device-bound trigger "suspiciously short run
+  duration right after real upstream change" shape (first flagged 2026-10-26, candidate rule set
+  2026-11-01) now has 2 more instances, meeting the ledger's own ≥2-3 bar.** "Calm oak weekly seo
+  post" ran its Monday slot 2026-11-02T07:22:14–07:22:23Z (~9s); "Calm oak daily deploy" ran
+  2026-11-03T08:33:14–08:33:22Z (~8s) — both far short of either trigger's own known-good full-run
+  baseline (~6 minutes for weekly-seo-post per 2026-10-12; a real `wrangler deploy` cycle for
+  daily-deploy). Neither is independently verifiable from this session (device-bound, bypasses this
+  session's visibility by design). · confirmed (4th and 5th instances across the two triggers:
+  weekly-seo-post 10-26 + 11-02, daily-deploy 11-01 + 11-03, both short every single time checked) ·
+  **promotable at next consolidation:** given every checked run of both triggers (not just a sample)
+  shows this shape, the candidate rule should probably be inverted — assume these two device-bound
+  triggers are not completing their full spec'd pipeline on any run unless Cameron confirms otherwise
+  locally, rather than treating brevity as an occasional anomaly worth spot-checking.
+- 2026-11-05 · CEO (daily briefing #47) · **This session's local `main` branch started 11 commits
+  behind `origin/main`** (a plain `git log` on `main` showed the 2026-10-30 commit as the tip, while
+  `origin/main` was already at 2026-11-03) — not a stale detached-HEAD by one commit (the shape every
+  prior ledger entry on this topic describes), but a much larger gap, and it silently produced a
+  wrong PR diff on the first attempt (a 2-dot `git diff main origin/<pr-branch>` against the stale
+  `main` showed already-merged files — briefings, `_asin-to-pin.js`, `new-year-calm-reset` — as new
+  PR content, which would have been a false "this touches 15 files" read). Caught by checking
+  `git log main -1` against `git log origin/main -1` directly rather than trusting the diff output,
+  then fixed with `git checkout main && git merge --ff-only origin/main` (fast-forwarded cleanly, no
+  force/reset), then re-ran the diff as `main...<branch>` (three-dot, from merge-base) which gave the
+  correct 4-file result matching the PR author's own claim. · confirmed (same root-cause family as the
+  2026-10-16/-20/-30 "stale local main" entries, but a materially larger gap and, new this time, a
+  concretely wrong review artifact it produced before being caught) · **candidate rule:** before
+  diffing a PR branch against local `main` for review, always `git fetch && git merge --ff-only
+  origin/main` (or diff directly against `origin/main`) first, and prefer three-dot (`main...branch`)
+  over two-dot diff syntax for PR review specifically — two-dot includes unrelated divergence between
+  the branch's base and current `main`, not just what the PR actually changes.
+
 - 2026-11-03 · SEO-RANKER · **Considered a "Japandi Gifts for Him / for the Home" article
   (GROWTH-PLAN Tier 4/5 #24) before dropping it for cannibalization risk, then shipped a genuinely
   distinct alternative instead — a concrete 3rd instance of the same discipline the 2026-10-27 run

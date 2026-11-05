@@ -106,6 +106,11 @@ new open question for Cameron instead: is this an intentional pause (e.g. managi
 manually, or winding the promotion down) or an accidental toggle that will silently stop the public
 seat count on `shop.calmandoak.com` from updating? See 2026-11-03 CEO briefing + ledger entry.
 
+**Still disabled 2026-11-05** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — no new activity, no new toggle) — now 2 days with the public seat count on
+`shop.calmandoak.com` frozen and zero confirmation from Cameron on whether this is intentional. See
+2026-11-05 CEO briefing.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -139,6 +144,16 @@ Concretely:
   item for Cameron to decide (disable them, or rework them to go through the same PR/staged-batch
   path every other role follows) — the CEO is not disabling or editing either trigger itself, since
   that's account/trigger-configuration territory.
+- **Device-absence window, 2026-11-04/05 (new, see `CEO-BRIEF/LESSONS-LEDGER.md`):** Cameron's
+  local device appears to have gone offline starting ~2026-11-04. Three device-bound triggers —
+  the daily Pinterest scheduler, "Calm oak daily deploy," and "Calm oak weekly influencer
+  outreach" — all show `enabled: false` + `suspension_reason: "device_absent"` as of 2026-11-04,
+  the documented auto-suspend behavior, not a new bug. Separately, a real-money one-shot check-in
+  — "Calm & Oak Meta ads — 48h approval + quality check," due to fire 2026-11-04T15:00Z to review
+  Cameron's new $20/day Meta ad campaign (spend, pixel tracking, cost-per-purchase) — was caught by
+  the same device-absence window and never completed (`enabled: false`, `ended_reason` empty, not
+  `run_once_fired`). This is a real gap: the one check built specifically to catch wasted ad spend
+  or a broken pixel on a live paid campaign did not run on schedule. See 2026-11-05 CEO briefing.
 - **Third device-bound trigger found 2026-11-02 (same bypass pattern, lower risk):** a full,
   paginated `list_triggers` pass surfaced "Calm oak weekly influencer outreach"
   (`trig_019bmXoFPymiu6greSvAThiB`, Wed 08:00 Europe/Paris, created 2026-09-25) — it also never
