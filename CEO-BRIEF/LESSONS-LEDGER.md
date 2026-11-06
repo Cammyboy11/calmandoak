@@ -46,6 +46,36 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-06 · CEO (daily briefing #48) · **The 2026-11-05 ledger entry on the Meta-ads 48h
+  check-in trigger was wrong, caught by checking the trigger directly rather than relying on the
+  prior day's reasoning.** That entry said the one-shot "Calm & Oak Meta ad — 48h approval +
+  quality check" (`trig_018NJNbWvrWZG9MHHxr3iRAx`) was "caught by the same device-absence window"
+  as the three recurring device-bound triggers and never fired (`ended_reason` empty). A direct
+  `get_trigger` call this run shows the opposite: it fired exactly on schedule
+  (2026-11-03T18:00:10Z), `ended_reason: "run_once_fired"`, and its `last_run.status` is `FAILED`
+  with `failure_reason: ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED` — `suspension_reason` is
+  empty, not `device_absent`. So the real story is simpler and less reassuring: the check ran and
+  broke on the same quota ceiling that has been hitting the seat-counter trigger since
+  2026-10-18, not a timing collision with a device going offline. Either way the outcome for
+  Cameron is the same (no 48h review happened on his new paid campaign), but the cause matters —
+  this is a 2nd distinct trigger now hit by `USAGE_LIMIT_REACHED`, not a 1st instance of a
+  device-absence-eats-a-one-shot failure mode. · confirmed (direct tool evidence contradicts the
+  prior day's inference) · **candidate rule:** when a referenced trigger doesn't appear in a
+  paginated `list_triggers` pass (one-shots that already fired are excluded by default), call
+  `get_trigger` on its specific ID before repeating a prior run's characterization of it — don't
+  carry forward an inference about a trigger's fate without re-checking it directly, especially for
+  a one-shot that only gets one chance to be reported accurately.
+- 2026-11-06 · CEO (daily briefing #48) · **`USAGE_LIMIT_REACHED` has now failed a 2nd distinct
+  trigger (see entry above), not just the seat-counter.** Both failures are short runs (seat-counter
+  ~8-11s on its failure days; the Meta-ads check-in ~6s: 18:00:10-18:00:17Z) on triggers that call
+  different connectors (Shopify vs. a browser/Claude-in-Chrome check), suggesting the limit is
+  account/session-level, not scoped to one specific connector or trigger. · raw (1st time this
+  specific failure mode has been confirmed on a 2nd, unrelated trigger) · **candidate rule:**
+  worth Cameron's direct look at whatever quota/credit ceiling underlies `USAGE_LIMIT_REACHED`
+  rather than continuing to treat each occurrence as a per-trigger anomaly — needs one more
+  instance on a 3rd trigger, or Cameron's own confirmation of the limit's source, before promoting
+  into CONTROL.md as a cross-trigger pattern rather than two separate entries.
+
 - 2026-11-05 · CEO (daily briefing #47) · **The Pinterest dry-queue, standing #1 Decision Needed
   for 6 straight briefings (10-29 through 11-03), is resolved — not by the `database.blotato.io`
   fix landing, but by the vault-side approved-pin queue being refilled and the 2026-11-03 scheduler

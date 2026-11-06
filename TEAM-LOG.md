@@ -10,6 +10,27 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-06 · CEO (daily briefing #48) · **No PR or content-factory batch due today — SEO Ranker
+  (next due 08:09 UTC today) and Content Factory (next due 2026-11-08) haven't fired since
+  2026-11-03/11-01 respectively; only open PR is the unrelated, long-standing Cloudflare autoconfig
+  PR #1.** Full 3-page paginated `list_triggers` reconciliation: CEO's own briefing trigger fired
+  clean today (no repeat of the 11-04 gap); daily Pinterest scheduler and "Calm oak daily deploy"
+  both recovered from the device-absence window and fired clean (06:10-06:13Z and
+  2026-11-05T09:24:02-09:24:08Z respectively — the latter still showing the ~6s short-duration
+  anomaly, now a 6th+ instance); "Calm oak weekly influencer outreach" is still suspended
+  (`device_absent`, unchanged since 2026-10-28) and skipped its 2026-11-04 slot. **Correction to
+  yesterday's briefing:** the Meta-ads 48h check-in trigger did NOT get caught by device-absence —
+  direct `get_trigger` shows it fired on schedule (2026-11-03T18:00:10Z) and FAILED with
+  `USAGE_LIMIT_REACHED`, the same quota ceiling hitting the seat-counter trigger. Pinterest runway
+  confirmed extended well past the 14-day line (scheduled posts run at least through
+  2026-12-04T00:05Z). Instagram/TikTok confirmed still dark — last publish 2026-10-06, now **31
+  consecutive days**. Seat-counter still disabled, unchanged since 2026-11-03T04:34:30Z — now a
+  4th day. `database.blotato.io` and `www.amazon.com` egress both re-confirmed still blocked (curl,
+  403). Full detail in today's briefing and `CEO-BRIEF/LESSONS-LEDGER.md` (2 new entries). · staged
+  (7 content-factory batches, 09-20 through 11-01, unchanged); needs-Cameron (confirm seat-counter
+  intent, review the Meta ad campaign directly since its automated 48h check failed outright,
+  confirm the influencer-outreach device connection, `database.blotato.io` network allowlist change)
+
 - 2026-11-05 · CEO (daily briefing #47) · **Merged PR #16** (`journal/japandi-balcony`, commit
   `c020efd9`) — found local `main` was 11 commits behind `origin/main` (not the usual 1-commit stale
   shape), fixed with `git checkout main && git merge --ff-only origin/main`, then reviewed the PR

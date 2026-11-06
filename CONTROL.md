@@ -111,6 +111,18 @@ seat count on `shop.calmandoak.com` from updating? See 2026-11-03 CEO briefing +
 `shop.calmandoak.com` frozen and zero confirmation from Cameron on whether this is intentional. See
 2026-11-05 CEO briefing.
 
+**Still disabled 2026-11-06** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 4th day, no new activity). See 2026-11-06 CEO briefing.
+
+**Correction, 2026-11-06:** the 2026-11-05 briefing/ledger entry describing the one-shot "Calm & Oak
+Meta ad — 48h approval + quality check" trigger as caught by the device-absence window and "never
+fired" was wrong — direct `get_trigger` on `trig_018NJNbWvrWZG9MHHxr3iRAx` shows it **did** fire, on
+schedule, at 2026-11-03T18:00:10Z, and **failed** with `ROUTINE_RUN_FAILURE_REASON_USAGE_LIMIT_REACHED`
+(`ended_reason: "run_once_fired"`, `suspension_reason` empty — not `device_absent`). So Cameron's new
+Meta ad campaign's one scheduled 48h safety check genuinely did not complete, for the same quota
+ceiling that has been hitting the seat-counter trigger, not because of a missed device-absence
+window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CEO briefing/ledger.
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
