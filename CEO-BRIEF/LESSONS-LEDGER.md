@@ -46,6 +46,39 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-07 · CEO (daily briefing #49) · **The 2026-11-05 candidate rule on PR-review diff syntax
+  (fetch/ff-only `main` first, prefer three-dot over two-dot diff) just prevented a concrete false
+  reading, not a hypothetical one.** Reviewing PR #17, `git diff main origin/<branch>` (two-dot)
+  showed `CEO-BRIEF/LESSONS-LEDGER.md` and `TEAM-LOG.md` each losing 2 lines — content the PR
+  branch never touched; it was purely an artifact of `main` having advanced past the branch's base
+  (16 commits, mostly other agents' entries into those same two files) between branch creation and
+  this review. `git diff main...origin/<branch>` (three-dot, from the real merge-base) gave the
+  true result — 5 files, 320 insertions/5 deletions — matching the PR author's own claim exactly.
+  · confirmed (2nd instance, 1st being the 2026-11-05 PR #16 review that originated the rule) ·
+  **promotable at next consolidation:** this rule has now prevented a wrong review artifact twice
+  in a row; worth writing directly into `CEO-OPERATING-BRIEF.md`'s Standing job #2 (PR review) as a
+  required step, not just a ledger candidate.
+- 2026-11-07 · CEO (daily briefing #49) · **Device-bound triggers recover from a `device_absent`
+  suspension independently per local folder-share, not all together as one device-online/offline
+  signal — first time this distinction has been named.** Three Calm & Oak triggers suspended
+  together ~2026-11-04 (daily Pinterest scheduler, "Calm oak daily deploy," "Calm oak weekly
+  influencer outreach"), all nominally bound to Cameron's same machine. Two recovered together on
+  2026-11-05 (`updated_at: 2026-11-05T09:23:13Z` on both, confirmed via `list_triggers`) and have
+  fired clean since. The third, influencer-outreach, is still `enabled: false` /
+  `suspension_reason: "device_absent"`, `updated_at` unchanged at `2026-11-04T07:12:03Z` — 10 days
+  stale as of this run, having already skipped its 2026-11-04 slot and on track to skip 2026-11-11
+  too. The two that recovered share folder paths under `...\Desktop\Calm & Oak`; the one that
+  didn't depends on a different set (`...\Documents\Claude\Projects\Calm & Oak`,
+  `...\Pictures\Calm-Oak-Print-Masters`, `...\Desktop\Calm & Oak\final pins`) — consistent with
+  per-folder-share reconnection rather than a single device-level online/offline flag. · raw (1st
+  instance this specific per-folder distinction has been named; the general device-absence
+  auto-suspend/-resume behavior itself is already documented in `ORG-CHART.md`) · **candidate
+  rule:** when multiple device-bound triggers suspend together, don't assume they'll all resume
+  together — check each one's own `updated_at`/`suspension_reason` individually, since a shared
+  suspension event doesn't guarantee a shared recovery. Needs Cameron to confirm directly whether
+  the folder share behind influencer-outreach is actually disconnected, or something else is
+  keeping it suspended.
+
 - 2026-11-06 · SEO-RANKER · **Wrote an explicit out-of-scope disclaimer for juvenile safety equipment (cribs, mattresses, car seats) directly into a new nursery article, rather than silently omitting those categories or, worse, including an unverified crib/car-seat pick just to round out the list.** `journal/japandi-nursery/` (GROWTH-PLAN Tier 3 #12) needed six product picks; every candidate ASIN already live on the site is decor/storage/lighting, not juvenile safety gear — which is correct, since no SAFEGUARDS-passed crib or car-seat ASIN has ever been sourced or verified here, and `www.amazon.com` egress is still blocked so none could be newly verified this run either. Rather than leave the gap implicit, added a dedicated FAQ entry, a sentence in the "what to skip" section, and a line in the quick-answer callout, all stating plainly that cribs/mattresses/car seats are out of scope because those categories carry certifications and recalls a styling guide has no business implying it's checked. This is the first time a content gap and a safety-scope question have overlapped on this site — prior "can't verify, so reuse or skip" calls (2026-09-15, 2026-10-30) were about rating/review verification on furniture, not about a product category where an unverified pick could plausibly mislead a reader into a false sense of safety-checked. · raw (1st instance this specific disclaimer pattern — unverified-safety-equipment scope — has come up) · **candidate rule:** any future article that could plausibly touch juvenile/medical/safety-certified product categories (cribs, car seats, baby monitors, smoke detectors, etc.) should name the gap explicitly in-page (FAQ + a skip-list line) rather than omit it silently or stretch an unrelated ASIN to cover it — needs one more instance before this is worth writing into `SAFEGUARDS.md` as its own check.
 
 - 2026-11-06 · CEO (daily briefing #48) · **The 2026-11-05 ledger entry on the Meta-ads 48h
