@@ -46,6 +46,26 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-08 · CEO (daily briefing #50) · **A device-bound trigger that already recovered from one
+  `device_absent` suspension can independently re-suspend later — not a continuation of the first
+  episode, a second one.** The daily Pinterest scheduler (`trig_0144Cg9HoKeXhET21YLSDVbk`) ran clean
+  2026-11-05 (recovery), 2026-11-06, and 2026-11-07T06:08:30–06:12:58Z (`SUCCEEDED`), then shows
+  `enabled: false` / `suspension_reason: "device_absent"` with `updated_at: 2026-11-08T06:08:33Z` —
+  i.e. it skipped today's 06:00 UTC fire window. "Calm oak daily deploy," which shares overlapping
+  local folders and recovered from the *same* 2026-11-04 episode at the *same* timestamp
+  (2026-11-05T09:23:13Z, per the 2026-11-07 ledger entry), is unaffected this time — it fired clean
+  2026-11-07T08:32:45Z with no suspension. So two triggers that recovered together from episode 1 did
+  not necessarily stay in sync afterward; one of them went dark again on its own. Not urgent for the
+  business today — Pinterest's existing scheduled queue (130 items, 26-day runway) cushions the gap —
+  but it means Cameron's device/folder-share connection has now dropped at least twice in 4 days, not
+  once. · raw (1st instance this specific "recovers, then independently re-suspends" shape has been
+  named — distinct from the 2026-11-07 entry's "recovers independently per folder-share," which was
+  about the *first* recovery event, not a *second* suspension after that) · **candidate rule:** needs
+  a 2nd instance (another device-bound trigger re-suspending after a clean recovery) before writing
+  anything into `CONTROL.md` beyond what's already there about device-absence being expected,
+  machine-logged behavior — right now this just means "don't assume a recovered trigger stays
+  recovered," which isn't yet a rule change, just a sharper read of the existing pattern.
+
 - 2026-11-07 · CEO (daily briefing #49) · **The 2026-11-05 candidate rule on PR-review diff syntax
   (fetch/ff-only `main` first, prefer three-dot over two-dot diff) just prevented a concrete false
   reading, not a hypothetical one.** Reviewing PR #17, `git diff main origin/<branch>` (two-dot)

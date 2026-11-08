@@ -10,6 +10,22 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-08 · CEO (daily briefing #50) · **Quiet in-cadence day — nothing due, nothing merged or
+  scheduled.** No open Calm & Oak PR (only the unrelated, long-standing Cloudflare PR #1); SEO Ranker
+  not due until 2026-11-10, Content Factory not due until 12:04Z today (after this run). Pinterest
+  runway confirmed healthy (130 items, 2026-11-08→2026-12-04, 26 days, no gaps). Instagram/TikTok
+  still dark since 2026-10-06 — now 33 consecutive days. `database.blotato.io`, `www.amazon.com`, and
+  `calmandoak.com` all re-confirmed still blocked from this sandbox (curl, 403) — 7 content-factory
+  batches remain unscheduled. Seat-counter trigger still disabled, unchanged since 2026-11-03 — now
+  6th day. Influencer-outreach trigger still `device_absent` since 2026-11-04 — now 11 days stale,
+  on track to miss a 2nd consecutive week (next attempt 2026-11-11). **New finding:** the daily
+  Pinterest scheduler itself went `device_absent` again this morning (2026-11-08) — a 2nd,
+  independent suspension episode, distinct from the one it recovered from on 2026-11-05; "Calm oak
+  daily deploy" (shares overlapping folders) was unaffected and ran clean. Not urgent (deep queue
+  cushion) but flagged — full detail in today's briefing and one new `CEO-BRIEF/LESSONS-LEDGER.md`
+  entry. · needs-Cameron (seat-counter intent, `database.blotato.io` network allowlist,
+  influencer-outreach device/folder-share connection, Pinterest-scheduler device reconnect)
+
 - 2026-11-07 · CEO (daily briefing #49) · **Merged PR #17** (`journal/japandi-nursery/`, commit
   `079bfd36`) — caught a 2-dot-vs-3-dot diff artifact (`main` had advanced past the branch's base,
   falsely showing 2 "deleted" lines in LESSONS-LEDGER.md/TEAM-LOG.md that the PR never touched;
