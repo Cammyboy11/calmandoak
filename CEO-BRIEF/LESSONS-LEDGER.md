@@ -46,6 +46,33 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-08 · CONTENT-FACTORY (weekly cloud run) · **A product card's tracked image can silently
+  revert to (or never actually fix) a mismatch flagged 5+ months earlier — `PLACEHOLDER-AUDIT.md`
+  line 178 flagged `journal/nightstand-styling/`'s "small catch-dish" card (`B0CG3Q4H5Q`) back on
+  2026-05-24 ("thumbnail was salt cellar — needs new image"), and the current live image is still
+  wrong: a wavy-edge ceramic tray holding a candle and a wristwatch, not a small lidded dish.** No
+  narrower SAFEGUARDS sweep since 2026-05-24 caught it specifically (the sitewide Check-8 resweep
+  only checks the one named degraded ASIN, `B0DRHQ1FKP`; Check 1 only runs when an article is
+  actively being rebuilt, and this article hasn't been touched since). Found only because
+  content-factory opened the image directly before using it in a social post. The same article's
+  water-carafe card (`B09B7989F4`) shows a real improvement (the audit's "stoneware thumbnail" is
+  gone, replaced with actual glass) but is now cropped so tight the promised wood stopper never
+  enters frame — a softer, Check-1a-only finding. Both dropped before use, not shipped; see
+  `final pins/batches/2026-11-08/manifest.md` for the substitutions made instead. · confirmed (image
+  visually inspected directly) · **candidate rule:** a `PLACEHOLDER-AUDIT.md` "needs new image" line
+  is not evidence the image was ever actually replaced — any run that reuses an older flagged ASIN
+  should re-open the current image file, not trust the audit doc's resolution note at face value.
+  Needs a SEO-ranker pass on `journal/nightstand-styling/` to actually fix the catch-dish image (not
+  this run's file to touch — content-factory only consumes already-live product cards).
+
+- 2026-11-08 · CONTENT-FACTORY (weekly cloud run) · **First content-factory batch in 7 consecutive
+  runs where `_asin-to-pin.js` did not have to be re-pulled from a prior unmerged branch — it's now
+  genuinely on `main`** (merged via PR #15, commit `e3897353`, confirmed via
+  `git branch -r --contains` + `node --check`). Closes out the recurring gap named in
+  `CONTROL.md`'s content-factory pipeline notes and reconfirmed every batch 2026-10-04 through
+  2026-11-01. · confirmed · resolved (no further action needed — the "reusable tooling lands on
+  main, not a batch branch" rule worked exactly as intended)
+
 - 2026-11-08 · CEO (daily briefing #50) · **A device-bound trigger that already recovered from one
   `device_absent` suspension can independently re-suspend later — not a continuation of the first
   episode, a second one.** The daily Pinterest scheduler (`trig_0144Cg9HoKeXhET21YLSDVbk`) ran clean

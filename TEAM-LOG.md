@@ -10,6 +10,39 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-08 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-post Instagram+TikTok refill
+  batch (5 products × 2 platforms), branch `content-factory/2026-11-08` — not merged, not
+  scheduled, per the 2026-09-14 public-facing review gate.** Read `CONTROL.md` first (`PAUSE: false`)
+  and `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-09-14 entries named in this run's task — all four still
+  hold on this fresh clone (gitignored local inventory absent, `database.blotato.io` egress blocked,
+  `_add-audio-bed.js` syntax-checked clean before use, every post carries the disclosure +
+  `#affiliate`). **Checked real live state before building, not assumed:** `blotato_list_accounts`
+  — all 3 accounts connected, no contradiction with `CONTROL.md`'s pause flags; `blotato_list_posts`
+  — Pinterest has 129 items scheduled 2026-11-08→2026-12-04 (no gaps, already full — skipped
+  building new Pinterest content this run per the "don't rebuild a full channel" rule); Instagram
+  and TikTok both show **zero** scheduled items and a last-published date of 2026-10-06 (33
+  consecutive dark days, matching today's CEO briefing #50). Fetched all remote branches and pulled
+  the ASIN list from each of the 7 other open `content-factory/*` branches' own manifests (39 ASINs
+  excluded, zero overlap with this batch). **Confirmed `_asin-to-pin.js` is now on `main`** (merged
+  via PR #15) — the first batch in 7 that didn't have to re-pull it from an unmerged branch.
+  Sourced 5 ASINs from already-live `journal/`/`shop/` product cards (rattan flush-mount ceiling
+  light, oatmeal linen curtains, a round 2-tier side table, a boucle lumbar pillow, dried pampas
+  stems) — all 5 visually opened and SAFEGUARDS Check 1-verified against their alt text/product name
+  before building. **Found and dropped 2 real picture-product mismatches** on
+  `journal/nightstand-styling/`'s catch-dish (`B0CG3Q4H5Q` — image shows a ceramic tray with a
+  candle and watch, not a lidded dish; the exact defect `PLACEHOLDER-AUDIT.md` flagged 2026-05-24 and
+  apparently never fixed) and water-carafe (`B09B7989F4` — real glass carafe but cropped so tight the
+  promised wood stopper never enters frame) cards — substituted 2 pre-verified replacements instead
+  (bouclé lumbar pillow, dried pampas). Built all 5 via `_asin-to-pin.js` → `_pin-to-reel.js` →
+  `_add-audio-bed.js`; **verified audio present on all 5 reels via direct ffmpeg stream probe**
+  (aac/44.1kHz/mono, mean −26.9dB, matching the 2026-11-01 batch's level), not assumed. Full QA block
+  + per-piece SAFEGUARDS checks in `final pins/batches/2026-11-08/manifest.md`. **Needs-Cameron:**
+  review/schedule this manifest; `journal/nightstand-styling/`'s catch-dish image is a real, live
+  site defect worth a SEO-ranker pass; `database.blotato.io` egress still the standing blocker (now
+  8 staged batches unscheduled). · staged (branch `content-factory/2026-11-08`, needs-Cameron review
+  + schedule); needs-Cameron (nightstand-styling catch-dish image fix, `database.blotato.io` network
+  allowlist)
+
 - 2026-11-08 · CEO (daily briefing #50) · **Quiet in-cadence day — nothing due, nothing merged or
   scheduled.** No open Calm & Oak PR (only the unrelated, long-standing Cloudflare PR #1); SEO Ranker
   not due until 2026-11-10, Content Factory not due until 12:04Z today (after this run). Pinterest
