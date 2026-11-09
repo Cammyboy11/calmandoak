@@ -46,6 +46,44 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-09 · CEO (daily briefing #51) · **The device-absence pattern has escalated from "one
+  trigger re-suspends after recovering" (named as a 1st instance yesterday) to 3 of this org's 4
+  device-bound local triggers being suspended simultaneously, for the first time.** As of this run:
+  the daily Pinterest scheduler (`trig_0144Cg9HoKeXhET21YLSDVbk`) shows `suspension_reason:
+  "device_absent"`, `updated_at: 2026-11-09T06:15:43Z` — despite having run clean 2026-11-06 and
+  2026-11-08 (08:26–08:32Z, a full 6-minute real-work run, not the short-duration anomaly shape), it
+  went dark again overnight and missed today's 06:00 UTC slot. "Calm oak weekly seo post"
+  (`trig_01CNcERne3Eztr7hDwqYus7L`) is newly suspended too — `updated_at: 2026-11-09T07:10:01Z`,
+  missing its own Monday 2026-11-09 run for the first time since this trigger began being tracked;
+  `next_run_at` has already rolled to 2026-11-16, meaning it will skip the entire week if not
+  resolved, the same shape "weekly influencer outreach" has been stuck in since 2026-11-04. Only
+  "Calm oak daily deploy" remains active and firing clean. Confirmed via a full paginated
+  `list_triggers` pass (3 pages, `has_more: false`, no new undocumented Calm & Oak trigger). ·
+  confirmed (the specific "recovers, then independently re-suspends" shape named 2026-11-08 now has
+  its 2nd instance on the same trigger, Pinterest scheduler, plus a 3rd distinct trigger newly
+  caught the same way) · **candidate rule, ready for next consolidation:** when more than one
+  device-bound trigger is suspended at the same time, treat it as a signal about Cameron's local
+  connectivity generally (worth him checking the machine directly) rather than evaluating each
+  trigger's recovery independently — write this into `CONTROL.md`'s device-absence section instead
+  of only logging each occurrence here.
+
+- 2026-11-09 · CEO (daily briefing #51) · **`blotato_list_posts`'s real date-filter parameters are
+  `since`/`until`, not `startDate`/`endDate` — passing the wrong names is not rejected, it silently
+  falls back to the tool's own defaults (`since` = 7 days ago, `until` = 7 days from now), which can
+  produce a materially wrong "queue is nearly dry" reading.** Querying Pinterest scheduled posts
+  with `startDate`/`endDate` set to three different, non-overlapping ranges (2026-11-09→12-25,
+  2026-11-16→12-25, 2026-12-01→12-25) returned the identical 37-item result every time — a dead
+  giveaway the filter wasn't being applied. Re-run with the correct `since`/`until` params (plus
+  `limit: 250`, since the untruncated default is `limit: 50`) returned the true figure: 125 Pinterest
+  posts scheduled 2026-11-09→2026-12-04, steady 5/day, 26 days' runway — consistent with yesterday's
+  briefing, not the false ~7-day reading the wrong param names would have produced. · raw (1st time
+  this specific parameter-name trap has been caught and named; no prior ledger entry flags it, so
+  it's unclear whether any past runway figure was ever computed off the wrong params without
+  noticing) · **candidate rule:** any future run calling `blotato_list_posts` to measure queue
+  runway should confirm the tool's actual schema (via `ToolSearch`) before trusting a filtered
+  result, especially when the filtered count looks surprisingly low — a silent default fallback
+  looks exactly like a real result, not an error.
+
 - 2026-11-08 · CEO (daily briefing #50) · **A device-bound trigger that already recovered from one
   `device_absent` suspension can independently re-suspend later — not a continuation of the first
   episode, a second one.** The daily Pinterest scheduler (`trig_0144Cg9HoKeXhET21YLSDVbk`) ran clean

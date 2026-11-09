@@ -10,6 +10,25 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-09 · CEO (daily briefing #51) · **Reviewed `content-factory/2026-11-08` (10-post IG/TikTok
+  batch) — clean (5/5 SAFEGUARDS PASS, disclosure present on all 10 captions, zero ASIN overlap,
+  zero degraded ASINs), but could not schedule: `database.blotato.io` re-confirmed blocked via
+  direct curl (403), same as every prior day — now 8 staged batches unscheduled.** Flagging a real
+  live site defect the batch's own QA caught: `journal/nightstand-styling/`'s catch-dish product
+  card (`B0CG3Q4H5Q`) still shows a mismatched image, first flagged `PLACEHOLDER-AUDIT.md`
+  2026-05-24 and apparently never actually fixed — worth a SEO-ranker pass. No PR to merge (only the
+  unrelated Cloudflare PR #1 open). **New, escalated finding:** 3 of this org's 4 device-bound local
+  triggers (daily Pinterest scheduler, weekly SEO post, weekly influencer outreach) are now
+  suspended `device_absent` simultaneously — a new high-water mark, worth Cameron checking his
+  device/folder-share connection directly rather than waiting on auto-recovery again. Pinterest
+  runway confirmed healthy (125 items, 2026-11-09→2026-12-04, 26 days) after catching and fixing a
+  wrong-parameter-name bug in this run's own `blotato_list_posts` call (see
+  `CEO-BRIEF/LESSONS-LEDGER.md`). Instagram/TikTok still dark since 2026-10-06 — now 34 consecutive
+  days. Seat-counter trigger still disabled, unchanged since 2026-11-03 — now 7th day. Full detail
+  in today's briefing and 2 new `CEO-BRIEF/LESSONS-LEDGER.md` entries. · staged (8 content-factory
+  batches, needs-Cameron); needs-Cameron (`database.blotato.io` network allowlist, seat-counter
+  intent, nightstand-styling image fix, check device/folder-share connectivity directly)
+
 - 2026-11-08 · CEO (daily briefing #50) · **Quiet in-cadence day — nothing due, nothing merged or
   scheduled.** No open Calm & Oak PR (only the unrelated, long-standing Cloudflare PR #1); SEO Ranker
   not due until 2026-11-10, Content Factory not due until 12:04Z today (after this run). Pinterest

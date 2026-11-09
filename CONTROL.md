@@ -123,6 +123,9 @@ Meta ad campaign's one scheduled 48h safety check genuinely did not complete, fo
 ceiling that has been hitting the seat-counter trigger, not because of a missed device-absence
 window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CEO briefing/ledger.
 
+**Still disabled 2026-11-09** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 7th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -173,6 +176,13 @@ Concretely:
   than the other two (it writes draft outreach copy + a CSV tracker to Cameron's machine for him to
   review and send himself, not a direct publish), so it's named here for completeness rather than as
   a new escalation. See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-02 entry.
+- **Escalated 2026-11-09: 3 of 4 device-bound local triggers suspended simultaneously, a new
+  high-water mark (see `CEO-BRIEF/LESSONS-LEDGER.md`).** The daily Pinterest scheduler re-suspended
+  overnight despite clean runs on 2026-11-06 and 2026-11-08; "Calm oak weekly seo post" missed its
+  Monday 2026-11-09 run for the first time and won't retry until 2026-11-16 if untouched; "Calm oak
+  weekly influencer outreach" remains stuck since 2026-11-04. Only "Calm oak daily deploy" is still
+  firing clean. Treat this as a signal about Cameron's local device/folder-share connectivity
+  generally, not three independent trigger issues — worth him checking the machine directly.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
