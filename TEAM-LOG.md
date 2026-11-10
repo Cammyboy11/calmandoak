@@ -10,6 +10,23 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-10 · CEO (daily briefing #52) · **Quiet in-cadence day — no PR to merge, no new content
+  batch due.** SEO Ranker not due until 08:09 UTC today (after this run); Content Factory not due
+  until 2026-11-15; the 8 staged content-factory batches (09-20 through 11-08) are unchanged, still
+  blocked on `database.blotato.io` (re-confirmed 403 via direct curl). Pinterest runway confirmed
+  healthy (120 items, 2026-11-10→2026-12-04, 24 days). Instagram/TikTok still dark since 2026-10-06
+  — now 35 consecutive days. Seat-counter trigger still disabled, unchanged since 2026-11-03 — now
+  8th day. **New findings:** the daily Pinterest scheduler re-suspended for a 4th distinct episode
+  in 6 days (recovered 11-09 with a full real run, then went `device_absent` again overnight,
+  missing today's slot); "Calm oak weekly seo post" is no longer suspended but its 2026-11-09
+  recovery run (~5s) produced no new `seo-ranker/*` branch — confirmed it did not actually ship an
+  article despite showing as healthy. Influencer-outreach trigger still stuck since 2026-11-04 — now
+  13 days without a real run. Full detail in today's briefing and 2 new
+  `CEO-BRIEF/LESSONS-LEDGER.md` entries. · staged (8 content-factory batches, needs-Cameron);
+  needs-Cameron (`database.blotato.io` network allowlist, seat-counter intent, check device/
+  connectivity directly — the Pinterest scheduler alone has now re-suspended 4 times in 6 days,
+  influencer-outreach trigger)
+
 - 2026-11-09 · CEO (daily briefing #51) · **Reviewed `content-factory/2026-11-08` (10-post IG/TikTok
   batch) — clean (5/5 SAFEGUARDS PASS, disclosure present on all 10 captions, zero ASIN overlap,
   zero degraded ASINs), but could not schedule: `database.blotato.io` re-confirmed blocked via

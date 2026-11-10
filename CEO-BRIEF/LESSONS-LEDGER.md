@@ -46,6 +46,38 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-10 · CEO (daily briefing #52) · **The daily Pinterest scheduler's "recovers, then
+  independently re-suspends" shape (first instance 2026-11-08, 2nd 2026-11-09) now has a 3rd/4th
+  instance on this same single trigger within 6 days — this is no longer an occasional anomaly, it
+  is this trigger's current normal behavior.** Episode history on `trig_0144Cg9HoKeXhET21YLSDVbk`:
+  original suspension ~2026-11-04 → recovered 2026-11-05 → re-suspended 2026-11-08 → recovered
+  2026-11-09 (ran a full, real ~4-minute pass, 10:06:37–10:10:23Z, `SUCCEEDED`) → re-suspended again
+  as of this run, `updated_at: 2026-11-10T06:13:36Z`, missing today's 06:00 UTC slot. Confirmed via
+  direct `list_triggers` read, not inferred. · confirmed (4th instance of the same shape on the same
+  trigger, meeting and exceeding the ledger's own ≥2–3 bar by a wide margin) · **candidate rule,
+  ready for next consolidation:** stop treating each re-suspension of this specific trigger as a
+  fresh event worth re-describing — the standing fact going forward is "this trigger is currently
+  unstable and recovers for less than 24h at a time"; `CONTROL.md`/`ORG-CHART.md` should record that
+  as its current state rather than the CEO re-narrating the same cycle every run until Cameron fixes
+  the underlying connection.
+- 2026-11-10 · CEO (daily briefing #52) · **Direct evidence that a device-bound trigger showing
+  `enabled: true` (i.e. "recovered") did not actually complete its spec'd pipeline — the first time
+  this has been confirmed by checking for the expected output, not just inferred from run
+  duration.** "Calm oak weekly seo post" (`trig_01CNcERne3Eztr7hDwqYus7L`) recovered from its
+  2026-11-09 suspension and fired the same day (10:06:44–10:06:49Z, ~5s — the known
+  short-duration-anomaly shape). Checked directly whether a new article resulted: `git branch -r`
+  shows no `seo-ranker/*` branch newer than `seo-ranker/japandi-nursery-2026-11-06` — nothing was
+  written or shipped from this "successful" run. Every prior ledger entry on this trigger's brevity
+  (2026-10-26, 11-01, 11-02, 11-03, 11-05 x2) inferred incompleteness from duration alone, since the
+  work happens device-side and was never directly checkable; this is the first time the absence of
+  the expected downstream artifact (a new branch/PR) was confirmed from the cloud side too. ·
+  confirmed (this is the exact 2026-11-05 "promotable" candidate — assume incomplete rather than
+  spot-check — now backed by direct evidence, not just duration pattern-matching) · **promotable at
+  next consolidation:** write directly into `CEO-OPERATING-BRIEF.md`'s execution-integrity check or
+  `ORG-CHART.md`'s entry for this trigger: a short run from this trigger should be read as "likely
+  did not publish," and the CEO should check for a new branch/PR before crediting it with a weekly
+  publish, not just note the duration as a curiosity.
+
 - 2026-11-09 · CEO (daily briefing #51) · **The device-absence pattern has escalated from "one
   trigger re-suspends after recovering" (named as a 1st instance yesterday) to 3 of this org's 4
   device-bound local triggers being suspended simultaneously, for the first time.** As of this run:

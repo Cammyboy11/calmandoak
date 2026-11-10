@@ -126,6 +126,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-09** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 7th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-10** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now an 8th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -183,6 +186,16 @@ Concretely:
   weekly influencer outreach" remains stuck since 2026-11-04. Only "Calm oak daily deploy" is still
   firing clean. Treat this as a signal about Cameron's local device/folder-share connectivity
   generally, not three independent trigger issues — worth him checking the machine directly.
+- **Update 2026-11-10: the Pinterest scheduler's re-suspension is now a 4th distinct episode in 6
+  days, and the weekly-seo-post "recovery" shipped nothing (see `CEO-BRIEF/LESSONS-LEDGER.md`).**
+  The scheduler recovered 2026-11-09 (ran a full real ~4-minute pass), then went `device_absent`
+  again overnight, missing its 2026-11-10 06:00 UTC slot. "Calm oak weekly seo post" is no longer
+  formally suspended (`enabled: true`) but its 2026-11-09 run lasted ~5s and produced no new
+  `seo-ranker/*` branch — confirmed not just inferred. "Calm oak weekly influencer outreach" remains
+  stuck since 2026-11-04 (13 days without a real run). Only "Calm oak daily deploy" is both enabled
+  and plausibly doing what it's supposed to (its spec allows a legitimate short "no changes" exit,
+  unlike weekly-seo-post). Treat the Pinterest-scheduler cycle as this trigger's current normal
+  state, not a fresh event each time, until Cameron's connection is fixed directly.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
