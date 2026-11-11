@@ -129,6 +129,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-10** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now an 8th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-11** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 9th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -196,6 +199,15 @@ Concretely:
   and plausibly doing what it's supposed to (its spec allows a legitimate short "no changes" exit,
   unlike weekly-seo-post). Treat the Pinterest-scheduler cycle as this trigger's current normal
   state, not a fresh event each time, until Cameron's connection is fixed directly.
+- **Update 2026-11-11: Pinterest scheduler held 2 consecutive clean days before re-suspending a 5th
+  time (its longest stretch yet); "weekly influencer outreach" has now actually missed 2 consecutive
+  Wednesday runs (`next_run_at` rolled to 2026-11-18), not just forecast to.** Pinterest ran clean
+  2026-11-09 and 2026-11-10 (both full ~4-minute passes), then went `device_absent` again overnight,
+  missing today's 06:00 UTC slot — queue runway still healthy (23 days) so no same-day business
+  impact. Influencer-outreach's pipeline has now produced nothing new in 14 days (last real run
+  2026-10-28); see `CEO-BRIEF/LESSONS-LEDGER.md` for both. "Calm oak daily deploy" fires again today
+  at 08:30 UTC with real content to deploy for the first time in several days (PR #18 just merged) —
+  worth checking tomorrow whether it actually picked that up.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

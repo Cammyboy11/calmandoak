@@ -10,6 +10,25 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-11 · CEO (daily briefing #53) · **Merged PR #18 (Japandi executive desk) after
+  independently re-verifying its SAFEGUARDS claims, not just reading the PR body.** Fast-forwarded
+  local `main` to `origin/main` (5 commits behind), confirmed via `grep` that all 6 product ASINs
+  used in the new article are genuinely present in `best-japandi-desks`/`best-japandi-desk-
+  accessories` (the "inherited-verified" claim), confirmed the disclosure banner is present (2
+  occurrences) and the degraded ASIN `B0DRHQ1FKP` has 0 repo-wide hits, then merged
+  (`d6cfe4a2`) — the office cluster from GROWTH-PLAN-90-DAY.md is now fully built with no known open
+  item. No other PR to review (only the unrelated, long-standing Cloudflare PR #1 remains open).
+  Pinterest runway re-confirmed healthy (23 days, 2026-11-11→2026-12-04, via corrected `since`/
+  `until` params). Instagram/TikTok still dark since 2026-10-06 — now 36 consecutive days.
+  Seat-counter trigger still disabled, unchanged since 2026-11-03 — now 9th day. **New findings:**
+  the daily Pinterest scheduler held 2 consecutive clean days (11-09, 11-10) before re-suspending a
+  5th time, missing today's slot — its longest clean stretch yet, still unresolved; "Calm oak weekly
+  influencer outreach" has now actually missed 2 consecutive Wednesday runs (not just forecast to),
+  14 days with no new outreach pipeline. Full detail in today's briefing and 2 new
+  `CEO-BRIEF/LESSONS-LEDGER.md` entries. · live (PR #18 merged); staged (8 content-factory batches,
+  needs-Cameron); needs-Cameron (`database.blotato.io` network allowlist, seat-counter intent, check
+  device/connectivity directly — influencer-outreach pipeline now dark 2 full weeks)
+
 - 2026-11-10 · SEO-RANKER · **New journal article, staged as a PR (public-facing review gate — not pushed to main).** Read `CONTROL.md` first (`PAUSE: false`; re-read the 2026-09-14 review-gate section), then `SAFEGUARDS.md`, `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`, and `CEO-BRIEF/LESSONS-LEDGER.md` for prior-mistake context. Checked for a stale `.git/index.lock` before touching anything (per the ledger lesson) — none present; session started detached-HEAD one commit behind `origin/main`, resolved with `git checkout main` (no force/reset needed, already fast-forward clean). **Checked the office cluster first** (GROWTH-PLAN's #1 priority) per TEAM-LOG/journal: confirmed `japandi-home-office`, `japandi-desk`, `small-japandi-office`, `best-japandi-desks`, `best-japandi-office-chairs`, `best-japandi-desk-accessories`, `400-dollar-home-office` all still live and cross-linked — the only gap was "Japandi Executive Desk," flagged open by the 2026-11-06 run. **Shipped:** `journal/japandi-executive-desk/` targeting *japandi executive desk* / *japandi desk* (GROWTH-PLAN Tier 1, 34 impr/pos 25.1). `www.amazon.com` egress re-confirmed still blocked (`curl`, `CONNECT tunnel failed, response 403`), so no new ASIN was sourced — all 6 product links reuse already-verified ASINs from `best-japandi-desks` and `best-japandi-desk-accessories` (inherited-verified, per the nursery-article precedent). To avoid thin-content overlap with `best-japandi-desks` (same desks, different intent), wrote original decision-framework content instead of a re-ranked picks list: three honest routes to more desk (size up the same wood desk to 47", build an L from two matching desks, pair a mid desk with closed storage) plus what specifically breaks at larger scale. ~2,420 words. Updated `journal/index.html` (ItemList 70→71, Room Guides chip 27→28, every count recomputed from markup via `grep`, not incremented) and `sitemap.xml`, plus one reciprocal cross-link sentence each in `best-japandi-desks` and `japandi-home-office`. Ran the full sitewide degraded-ASIN resweep (`B0DRHQ1FKP`) — 0 hits repo-wide; image-resolution check on the new file — 25/25 OK, 0 MISS. **PR:** https://github.com/Cammyboy11/calmandoak/pull/18 (branch `seo-ranker/japandi-executive-desk-2026-11-10`), staged only the 5 touched files (`git status` confirmed clean before/after staging, no blanket `git add`), subscribed to PR activity. **SAFEGUARDS gate:** full verification block run and posted in the PR body — all PASS (6/6 picture-product MATCH inherited-verified; 6/6 ASIN inherited-verified; 0 image MISS; word count 2,421/2,400+; all 7 TOC anchors resolve; Check 8 0 hits; Check 9 71=71=71=71, room-guides 28=28). **Needs-Cameron:** review/merge PR #18. Separately (not new, re-surfacing only): `www.amazon.com` egress still blocked. With this, the office cluster from GROWTH-PLAN is now fully built with no known open item. · staged (PR #18 open, needs-Cameron review)
 
 - 2026-11-10 · CEO (daily briefing #52) · **Quiet in-cadence day — no PR to merge, no new content
