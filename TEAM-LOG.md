@@ -10,6 +10,25 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-12 · CEO (daily briefing #54) · **Quiet in-cadence day — nothing due, nothing to merge or
+  schedule.** No open Calm & Oak PR (only the unrelated, long-standing Cloudflare PR #1); SEO Ranker
+  not due until 2026-11-13, Content Factory not due until 2026-11-15. Pinterest runway confirmed
+  healthy (22 days, 2026-11-12→2026-12-04). Instagram/TikTok still dark since 2026-10-06 — now 37
+  consecutive days. `database.blotato.io`, `www.amazon.com`, `calmandoak.com` all re-confirmed still
+  blocked (curl, 403). Seat-counter trigger still disabled, unchanged since 2026-11-03 — now 10th
+  day. **Correction + new finding:** yesterday's briefing wrongly read "weekly influencer outreach"
+  as having missed its 2026-11-11 run — it actually fired later that day but lasted only ~5 seconds,
+  the same too-short-to-have-done-real-work shape already confirmed on "weekly seo post," so the
+  real-world outcome (15 days with no confirmed new outreach pipeline) is unchanged either way.
+  Separately flagged a genuine, unresolved ambiguity in "Calm oak daily deploy"'s short 2026-11-11
+  run (fired ~6s after PR #18 merged) — its own spec has a legitimate instant fast-exit for an
+  unattended cloud firing with no computer-use access, so the short duration isn't on its own
+  evidence of a missed deploy the way it would be for the other two device-bound triggers. Pinterest
+  scheduler recovered same-day and ran a full clean pass again this morning. Full detail in today's
+  briefing and 2 new `CEO-BRIEF/LESSONS-LEDGER.md` entries. · staged (8 content-factory batches,
+  needs-Cameron); needs-Cameron (`database.blotato.io` network allowlist, seat-counter intent, check
+  whether `calmandoak.com/journal/japandi-executive-desk/` is actually live, device/connectivity)
+
 - 2026-11-11 · CEO (daily briefing #53) · **Merged PR #18 (Japandi executive desk) after
   independently re-verifying its SAFEGUARDS claims, not just reading the PR body.** Fast-forwarded
   local `main` to `origin/main` (5 commits behind), confirmed via `grep` that all 6 product ASINs

@@ -132,6 +132,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-11** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 9th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-12** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 10th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -208,6 +211,20 @@ Concretely:
   2026-10-28); see `CEO-BRIEF/LESSONS-LEDGER.md` for both. "Calm oak daily deploy" fires again today
   at 08:30 UTC with real content to deploy for the first time in several days (PR #18 just merged) —
   worth checking tomorrow whether it actually picked that up.
+- **Correction, 2026-11-12:** the above "missed 2 consecutive Wednesday runs" read was wrong —
+  influencer-outreach actually recovered and fired later on 2026-11-11 (`last_fired_at: 09:20:40Z`,
+  ~2h20m late), but only lasted **~5 seconds**, the same too-short-to-have-done-real-work shape
+  already confirmed twice on "Calm oak weekly seo post." Net effect on Cameron's actual outreach
+  pipeline is unchanged (still 15 days with no confirmed new output), but the mechanism is "fired
+  and probably did nothing," not "didn't fire." Separately, "Calm oak daily deploy"'s ~6s run right
+  after PR #18 merged is genuinely ambiguous, not a confirmed failure like the other two — its own
+  spec has a legitimate instant fast-exit for exactly this unattended-cloud-firing case
+  ("computer-use approval unavailable — report needs a click, don't attempt deploy"), which produces
+  the identical short duration as an incomplete run. Cameron should check
+  `calmandoak.com/journal/japandi-executive-desk/` directly to tell which happened. Pinterest
+  scheduler recovered same-day (2026-11-11T09:19:39Z) and ran a full clean ~4-minute pass again this
+  morning (2026-11-12T06:13:32–06:17:31Z). See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-12 entries
+  for full detail.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

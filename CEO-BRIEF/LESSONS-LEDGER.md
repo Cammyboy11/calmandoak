@@ -46,6 +46,46 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-12 · CEO (daily briefing #54) · **Correction to the 2026-11-11 briefing's "weekly
+  influencer outreach has missed 2 consecutive Wednesday runs" claim, plus a 3rd confirmed instance
+  of the "device-bound trigger fires but in a few seconds, which is too short to have done real
+  work" pattern — now on a 2nd distinct trigger.** Yesterday's check read `trig_019bmXoFPymiu6greSvAThiB`
+  as having not fired on its 2026-11-11 Wednesday slot (still `device_absent` at check time,
+  `next_run_at` already rolled to 2026-11-18). Today's direct read shows it actually recovered and
+  fired later the same day: `updated_at`/`last_fired_at: 2026-11-11T09:20:40Z`, finished
+  `09:20:45Z` — about 2h20m late and only **~5 seconds** long. The trigger's own job (web research +
+  scoring 10-15 targets + drafted outreach messages) cannot plausibly complete in 5s — this is the
+  exact shape already confirmed twice on "Calm oak weekly seo post" (2026-11-02, 2026-11-09), now a
+  1st instance on influencer-outreach. So the correct read isn't "missed a 2nd week" (wrong) or
+  "recovered, problem solved" (also wrong) — it's "fired, but almost certainly produced nothing,"
+  which keeps the real-world outcome (15 days with no confirmed new outreach pipeline) effectively
+  unchanged despite the trigger showing `SUCCEEDED`. · confirmed (this specific pattern — short
+  device-bound run after a late recovery — now has 3 instances across 2 triggers, exceeding the
+  ledger's own ≥2-3 bar) · **promotable at next consolidation:** the existing promotable rule from
+  2026-11-10 ("a short run from this trigger should be read as likely-did-not-publish, check for the
+  expected artifact before crediting it") should be generalized from "this trigger" (weekly-seo-post)
+  to all device-bound weekly/one-shot triggers in this org, not written narrowly.
+- 2026-11-12 · CEO (daily briefing #54) · **"Calm oak daily deploy"'s own spec has a second
+  legitimate fast-exit this ledger had not previously weighed, which means a short run duration
+  alone — even right after genuinely new content merged — is not reliable evidence of an incomplete
+  deploy for this specific trigger.** Its prompt reads: "If computer-use approval is unavailable
+  (unattended run), report that the deploy needs a click and list the pending commits instead — do
+  not attempt any other deploy method." This run fired 2026-11-11T08:39:14Z, ~6s after PR #18
+  (a real new journal article + index/sitemap edits) had merged at 07:13:51Z the same day — so,
+  unlike most of this trigger's recent short runs, there WAS genuine new content pending. A ~6s
+  duration here could be either (a) the same "didn't do the work" shape flagged on the other two
+  weekly device-bound triggers, or (b) this trigger correctly and quickly recognizing an unattended
+  cloud firing has no computer-use approval available and reporting that rather than attempting
+  anything — its own spec's *correct* behavior, not a failure. Both produce an identical short
+  duration from this session's vantage point, and `calmandoak.com` remains unreachable from this
+  sandbox to check directly which happened. · raw (1st time this specific ambiguity — two different
+  legitimate-vs-failure explanations for the same short-duration signature — has been named for this
+  trigger) · **candidate rule:** before reading a short "Calm oak daily deploy" run as a likely
+  failure (unlike the other two device-bound weekly triggers, which have no such legitimate
+  fast-exit), Cameron should confirm directly whether the live site actually changed — this trigger
+  needs a different evidentiary bar than weekly-seo-post/weekly-influencer-outreach, not the same
+  one applied uniformly.
+
 - 2026-11-11 · CEO (daily briefing #53) · **The daily Pinterest scheduler's re-suspension pattern now has a 5th distinct episode, and this time it re-suspended after TWO consecutive clean days, not just one.** Episode history on `trig_0144Cg9HoKeXhET21YLSDVbk`: recovered 2026-11-09 (full ~4min real run), ran clean again 2026-11-10 (08:16:53–08:20:37Z, also a full ~4min pass, `SUCCEEDED`) — then suspended again overnight, `updated_at: 2026-11-11T06:14:00Z`, missing today's 06:00 UTC slot. Two consecutive clean days is the longest stretch this trigger has held before re-suspending since the pattern started 2026-11-04. Confirmed via direct `list_triggers` read. Not a business-risk this run — Pinterest's own queue runway is still healthy (23 days, 2026-11-11→2026-12-04, confirmed via corrected `since`/`until` params) — but the underlying connectivity issue is unresolved and, per the already-standing rule, not re-described as a fresh mystery each time. · confirmed (5th instance of the already-confirmed pattern; same standing rule applies — `ORG-CHART.md`/`CONTROL.md` already record this as current-state, no new promotion needed) · not a new rule — logged for the episode count only.
 - 2026-11-11 · CEO (daily briefing #53) · **"Calm oak weekly influencer outreach" has now missed 2 consecutive weekly (Wednesday) runs, not just been "on track to miss" one.** `trig_019bmXoFPymiu6greSvAThiB` has been `enabled: false` / `suspension_reason: "device_absent"` since `updated_at: 2026-11-04T07:12:03Z` (its last real run was 2026-10-28). Today, 2026-11-11, is this trigger's cron day (Wed 08:00 Europe/Paris) and it did not fire — `next_run_at` has rolled forward to 2026-11-18. This confirms the 2026-11-09 ledger entry's forecast ("on track to skip the entire week if not resolved") as now realized, and extends it: the outreach pipeline (fresh creator/blog targets + drafted messages for Cameron to send) has now produced nothing new in 14 days. · confirmed (the forecast in the 2026-11-09 entry is now a realized 2nd missed week, not a projection) · **candidate rule, ready for next consolidation:** a device-bound trigger that has missed 2 consecutive scheduled runs (not just 1) should be named as its own Decision Needed line, not folded into the general device-absence paragraph — the business impact (zero outreach pipeline for 2 full weeks) is distinct from a same-day missed Pinterest post, which the existing queue depth cushions.
 
