@@ -10,6 +10,45 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-13 · SEO-RANKER · **On-page fix, staged as a PR (public-facing review gate — not pushed
+  to main), not a new article this run.** Read `CONTROL.md` first (`PAUSE: false`; re-read the
+  2026-09-14 review-gate section), then `SAFEGUARDS.md`, `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`,
+  and `CEO-BRIEF/LESSONS-LEDGER.md` for prior-mistake context. No stale `.git/index.lock` present
+  (checked per the ledger lesson). **Checked the office cluster first** (GROWTH-PLAN's #1 priority)
+  per TEAM-LOG/journal, as instructed: confirmed every Tier-1/Tier-2 office-cluster item from
+  `GROWTH-PLAN-90-DAY.md` already ships (`japandi-desk`, `best-japandi-office-chairs`,
+  `japandi-executive-desk`, `six-object-rule`, `best-japandi-desk-accessories`,
+  `small-japandi-office`, `japandi-home-office`, `400-dollar-home-office`) — PR #18 closed the last
+  open item (executive desk) on 2026-11-10/11, so there was no new office article to write.
+  **Instead, audited and fixed a real, live defect the CEO's own daily briefings had flagged 4
+  times running (2026-11-09, -10, -11, -12) but that no run had yet acted on:** the cloud-shaped
+  ceramic ring/catch dish (ASIN `B0CG3Q4H5Q`) was described with a fabricated "wood lid" — in alt
+  text, product-name label, and (in 2 of 3 cases) full sentences of body prose built entirely
+  around open/closed lid behaviour — in `journal/nightstand-styling/`, `journal/new-year-calm-reset/`,
+  and `journal/six-object-rule/`, even though the actual photographed product is an open, lidless
+  dish (confirmed by viewing `assets/img/products-cropped/p-B0CG3Q4H5Q.jpg` directly, and by every
+  *other* page using this ASIN — `250-dollar-bedside-refresh`, `wabi-sabi-ceramics`, `shop/bedroom`,
+  `shop/looks/the-calm-nightstand` — already describing it correctly). This is a genuine SAFEGUARDS
+  Check 1 (picture-product match) / Check 4 (caption-image match) / Check 6 (cross-article ASIN
+  consistency) violation, originally flagged in `PLACEHOLDER-AUDIT.md` on 2026-05-24 and never
+  fixed. **Fixed:** rewrote the alt text, product-name labels, and every lid-dependent sentence in
+  all 3 files to describe the dish as it actually appears (open, shallow, cloud-shaped); also
+  aligned 3 "ceramic vessel" → "ceramic catch-dish" references in `six-object-rule`'s FAQ/summary
+  copy for internal consistency with the corrected section heading. Confirmed the unrelated,
+  genuinely-lidded salt-cellar ASIN (`B0GH7FV6GJ`, used in `why-your-kitchen-needs-a-tray` /
+  `500-dollar-dining-table-set`) was untouched and is a different product before editing anything
+  nearby. **SAFEGUARDS gate:** image-resolution check on all 3 touched files (19/19, 23/23, 25/25
+  OK, 0 MISS); sitewide degraded-ASIN resweep (`B0DRHQ1FKP`) — 0 hits; disclosure banner confirmed
+  present (2 occurrences each) in all 3 files, unchanged; full verification block posted in the PR
+  body — all PASS. Copy-only fix, no word-count-affecting rewrite, no new ASIN sourced (so the
+  still-standing `www.amazon.com` egress block wasn't a blocker here). **PR:**
+  https://github.com/Cammyboy11/calmandoak/pull/19 (branch `seo-ranker/catch-dish-lid-fix-2026-11-13`),
+  staged only the 3 touched files (`git status` confirmed clean before/after staging, no blanket
+  `git add`), subscribed to PR activity. **Needs-Cameron:** review/merge PR #19. Logged one
+  ledger-worthy observation to `CEO-BRIEF/LESSONS-LEDGER.md` (a defect surfaced repeatedly in CEO
+  briefings doesn't get fixed on its own — it needs a run whose job is editing the site, not just
+  reporting on it, to actually act on the finding). · staged (PR #19 open, needs-Cameron review)
+
 - 2026-11-13 · CEO (daily briefing #55) · **Due monthly learning-loop consolidation — promoted 5
   confirmed patterns into `CEO-OPERATING-BRIEF.md`, `CONTROL.md`, and `SAFEGUARDS.md` (Check 10);
   otherwise a quiet in-cadence day.** No Calm & Oak PR to review (only the unrelated Cloudflare
@@ -756,6 +795,5 @@ Why it lands: answers a high-volume small-space angle; ties to /shop/looks/the-j
 8. **is japandi still in style 2026** → "Is Japandi Still in Style for 2026?" trend report — link-magnet, very linkable, refresh yearly; arms outreach pitches. (Tier-4 #17)
 9. **japandi office desk lighting / japandi desk lamp** → section or short post on warm task lighting for the workspace — fills a cluster gap, pairs with /journal/lighting-the-five-pm-room/. (new gap)
 10. **wabi-sabi decor** → "Wabi-Sabi Decor: 12 Imperfect Pieces for a Calm Home" — broadens wabi-sabi ceramics (47 impr); ties cluster to existing /journal/wabi-sabi-ceramics/. (Tier-1 #6)
-
 
 - 2026-06-22 · GEO · Baseline 0/5 in AI answers; ticke
