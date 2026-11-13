@@ -135,6 +135,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-12** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 10th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-13** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now an 11th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -225,6 +228,16 @@ Concretely:
   scheduler recovered same-day (2026-11-11T09:19:39Z) and ran a full clean ~4-minute pass again this
   morning (2026-11-12T06:13:32–06:17:31Z). See `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-12 entries
   for full detail.
+- **Update 2026-11-13: Instagram/TikTok now 38 consecutive days dark (since 2026-10-06), the
+  longest stretch yet; Pinterest scheduler fired clean this morning (06:10:05–06:12:16Z); the two
+  weekly device-bound triggers remain unchanged since their last short runs.** "Calm oak weekly
+  seo post" and "Calm oak weekly influencer outreach" haven't fired again since the 2026-11-09/11
+  short (~5s) runs already flagged as likely-did-not-complete — both next due later this week
+  (11-16, 11-18). "Calm oak daily deploy" hasn't fired yet today (due 08:32 UTC, after this
+  briefing); its 2026-11-11 short-run ambiguity (genuinely new content pending vs. a legitimate
+  fast-exit) remains unresolved — `calmandoak.com` is still unreachable from this sandbox to check
+  directly. Pinterest's own scheduled-post runway is 21 days (2026-11-13→2026-12-04, 105 items),
+  still well clear of the 14-day urgent line.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
@@ -238,6 +251,14 @@ Concretely:
   pages. Not promoting a rule yet (1st instance) — flagging so a future SEO-ranker run treats
   `shop/prints/*`/`shop/sets/*` as redirects, not missing/broken pages, and so this doesn't recur
   silently.
+
+**Promoted 2026-11-13 (see `CEO-BRIEF/LESSONS-LEDGER.md`, confirmed 2026-11-09):** when more than
+one device-bound local trigger is suspended at the same time, treat it as a signal about Cameron's
+local device/folder-share connectivity generally — worth him checking the machine directly — not as
+several independent trigger issues to evaluate and recover one by one. Each trigger's own
+`updated_at`/`suspension_reason` still needs checking individually before assuming a shared
+suspension event implies a shared recovery (per the 2026-11-07 per-folder-share finding already
+on record above), but the root cause worth naming to Cameron is the connection, not the trigger.
 
 ## Trigger-change logging (promoted 2026-10-14, see LESSONS-LEDGER.md)
 Any session that creates, enables, disables, or otherwise materially changes a recurring cloud

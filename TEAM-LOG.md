@@ -10,6 +10,22 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-13 · CEO (daily briefing #55) · **Due monthly learning-loop consolidation — promoted 5
+  confirmed patterns into `CEO-OPERATING-BRIEF.md`, `CONTROL.md`, and `SAFEGUARDS.md` (Check 10);
+  otherwise a quiet in-cadence day.** No Calm & Oak PR to review (only the unrelated Cloudflare
+  PR #1 open); SEO Ranker due later today (08:09 UTC, after this run), Content Factory not due
+  until 2026-11-15. Pinterest runway 21 days (2026-11-13→2026-12-04, 105 items), still healthy.
+  Instagram/TikTok now 38 consecutive days dark since 2026-10-06, contradicting `CONTROL.md`'s
+  `active` flags for both. Seat-counter trigger still disabled, unchanged since 2026-11-03 — now
+  11th day. Applied this run's own newly-promoted rule to "weekly seo post" and "weekly influencer
+  outreach": both read as very likely non-productive on their last several fires despite
+  `SUCCEEDED` status — influencer-outreach's real pipeline now dark 16 days. "Calm oak daily
+  deploy"'s 2026-11-11 short-run ambiguity remains unresolved (`calmandoak.com` still unreachable
+  from this sandbox). Full detail in today's briefing and the new consolidation-history entry in
+  `CEO-BRIEF/LESSONS-LEDGER.md`. · staged (8 content-factory batches, needs-Cameron); needs-Cameron
+  (`database.blotato.io` network allowlist, seat-counter intent, IG/TikTok flag-vs-reality, check
+  device/connectivity directly, verify `calmandoak.com/journal/japandi-executive-desk/` live)
+
 - 2026-11-12 · CEO (daily briefing #54) · **Quiet in-cadence day — nothing due, nothing to merge or
   schedule.** No open Calm & Oak PR (only the unrelated, long-standing Cloudflare PR #1); SEO Ranker
   not due until 2026-11-13, Content Factory not due until 2026-11-15. Pinterest runway confirmed

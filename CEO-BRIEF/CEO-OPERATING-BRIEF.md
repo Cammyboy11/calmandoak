@@ -74,6 +74,27 @@ evidence, and report the check even when everything is fine:
   `TEAM-LOG.md` directly for that specific date — a stale local fetch or a check against the wrong
   branch produces a confident-looking false negative (happened once, 2026-09-19, self-corrected
   2026-09-22).
+- **Promoted 2026-11-13 (see LESSONS-LEDGER.md, confirmed across weekly-seo-post and weekly-
+  influencer-outreach):** a short run (a few seconds) from any device-bound weekly or one-shot
+  trigger whose own spec requires real work (web research, image generation, a full write-and-
+  publish pipeline) should be read as "likely did not complete," not credited as healthy just
+  because `list_triggers` shows `SUCCEEDED` — these triggers bypass this session's visibility by
+  design, and `SUCCEEDED` only means the session didn't crash, not that the spec'd pipeline ran.
+  Check for the expected downstream artifact (a new `seo-ranker/*` branch, an updated tracker/CSV,
+  a live URL change) before crediting a weekly publish or outreach batch to it. "Calm oak daily
+  deploy" is a partial exception — its own spec has a legitimate instant fast-exit for an
+  unattended cloud firing with no computer-use access — so a short run there is genuinely
+  ambiguous, not a confirmed miss, unless there was no new content pending either.
+- **Promoted 2026-11-13:** a device-bound trigger that has missed 2 or more consecutive scheduled
+  runs gets its own named Decision Needed line in that day's briefing, not folded into the general
+  device-absence paragraph — the business impact of a channel going dark for two full cycles is
+  distinct from a single missed day the existing queue/runway can absorb.
+- **Promoted 2026-11-13:** if this session's own daily-briefing trigger produced no
+  `CEO-BRIEF/briefings/<date>.md` for a prior day (confirmed via `git log` — zero CEO commits
+  between two known-good briefing dates), name it plainly as a Decision Needed and recommend
+  Cameron check `trig_01V6STzAy79zfw1xMnS74RGu`'s run history directly in the dashboard — `list_
+  triggers`/`get_trigger` only expose the single most recent `last_run`, so this session has no
+  way to see whether a missing day fired and failed, errored pre-commit, or never fired at all.
 
 If any check shows a role, a platform, or the whole department has gone dark, that finding leads
 your output, ahead of any scoreboard or strategy content. A report nobody reads because the real
@@ -99,11 +120,16 @@ dedicated agents.
 Nothing public-facing ships without you looking at it first — see `CONTROL.md`'s "Public-facing
 review gate." Every run, after the execution-integrity check:
 1. **Open pull requests against `main`** — `git fetch && git log main..origin/<branch> --all` or
-   check GitHub directly for open PRs from seo-ranker/cro/merchandiser. For each: read the actual
-   diff, not just the PR description. Check it against `SAFEGUARDS.md` (picture↔product identity,
-   ASIN bar, disclosure, no `Product` schema on affiliate pages) and against `CONTENT-ROADMAP.md` /
-   `GROWTH-PLAN-90-DAY.md` priorities. **Merge it** if it's clean — that's what ships it live. If
-   not, leave a specific comment on the PR (what's wrong, not just "needs work") and leave it open.
+   check GitHub directly for open PRs from seo-ranker/cro/merchandiser. **Before diffing a PR branch,
+   `git fetch && git checkout main && git merge --ff-only origin/main` (or diff directly against
+   `origin/main`), then use three-dot diff (`git diff main...origin/<branch>`), never two-dot** —
+   a stale local `main` or a two-dot diff can silently show already-merged, unrelated content as if
+   it were part of the PR, producing a confident-looking wrong review (confirmed twice, PR #16 and
+   PR #17, promoted 2026-11-13). For each PR: read the actual diff, not just the PR description.
+   Check it against `SAFEGUARDS.md` (picture↔product identity, ASIN bar, disclosure, no `Product`
+   schema on affiliate pages) and against `CONTENT-ROADMAP.md` / `GROWTH-PLAN-90-DAY.md` priorities.
+   **Merge it** if it's clean — that's what ships it live. If not, leave a specific comment on the
+   PR (what's wrong, not just "needs work") and leave it open.
    **Known quirk (confirmed 2026-10-13/14):** `list_pull_requests`'s own `merged` boolean reads
    `false` for PRs that are genuinely merged on this repo — verify a PR actually shipped via its
    `merged_at` timestamp or `git log main` for a real "Merge pull request #N" commit, not the

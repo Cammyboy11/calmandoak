@@ -82,6 +82,19 @@ page can be live, in the sitemap, and still be orphaned from on-site navigation 
 attributes in the grid**, never incremented by the delta of just this run's own change — a stale
 count can drift silently for weeks (found at a 14-card gap, 2026-09-22).
 
+### 10. ASIN reuse when `www.amazon.com` egress is blocked (promoted 2026-11-13, see LESSONS-LEDGER.md)
+When Amazon egress is blocked (it has been for most of this org's life) and a roadmap item doesn't
+strictly require a never-before-sourced product, reuse an already-verified ASIN + its exact alt
+text from a live page rather than skipping the item or inventing an unverified one. Confirmed 4
+independent times (`best-japandi-gifts` 2026-10-27, `new-year-calm-reset` 2026-10-30,
+`japandi-nursery` 2026-11-06, `japandi-executive-desk` 2026-11-10) — every time, the reused
+image/ASIN was confirmed present on disk and not the degraded `B0DRHQ1FKP` before use, and the
+inherited picture-product match was noted explicitly in the PR body as "inherited-verified," not
+re-asserted as freshly verified. If a whole category genuinely has no live verified ASIN that fits
+(e.g. juvenile safety gear, a genuinely larger product tier), name that gap explicitly in the
+article (FAQ + a skip-list line) rather than stretch a mismatched ASIN into it — don't silently
+omit the keyword either.
+
 ---
 
 ## The verification block (paste into the article work before every commit)
@@ -139,3 +152,4 @@ This protocol is the cheapest insurance against that failure. Five checks. Five 
   - **Check 1a (sub-class):** When the linked product has a distinguishing feature (material, finish, type), verify the image depicts that *specific* feature. "Headboard" is not enough — "upholstered headboard" vs "oak headboard" must match.
   - **Check 6 (cross-article ASIN consistency):** When the same ASIN appears in multiple articles, the image-product match must hold in each. Don't assume a verified pairing transfers from one article to another.
 - 2026-10-14 — First monthly learning-loop consolidation (see `CEO-BRIEF/LESSONS-LEDGER.md` and `CEO-BRIEF/LEARNING-LOOP.md`). Added Checks 7-9 above (disclosure presence, sitewide degraded-ASIN resweep, hub reconciliation/filter-chip counts) — each already practiced ad hoc by SEO-ranker for 3-6+ runs; this pass makes them the written gate instead of tribal knowledge.
+- 2026-11-13 — Second monthly consolidation. Added Check 10 (ASIN reuse when Amazon egress is blocked) — confirmed 4 independent times since 2026-10-27, already practiced ad hoc by SEO-ranker every time the gate came up.

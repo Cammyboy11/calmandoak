@@ -28,6 +28,49 @@ triggers, the IG/TikTok content-batch backlog) are infrastructure/account-level 
 rules this loop can fix — they stay as standing flags in `CONTROL.md` and this file, re-confirmed
 each run, until Cameron acts on them directly.
 
+**2026-11-13 — second monthly pass (CEO, due per `LEARNING-LOOP.md`'s ~30-day trigger, 30 days
+since 2026-10-14).** Read every entry logged since the last pass (2026-10-14 → 2026-11-12, ~190
+entries). Promoted 5 confirmed patterns into the files that actually govern behavior:
+- `CEO-BRIEF/CEO-OPERATING-BRIEF.md` Standing job #2 — git fetch + `--ff-only` + three-dot diff
+  before reviewing any PR (confirmed twice: PR #16 2026-11-05, PR #17 2026-11-07).
+- `CEO-BRIEF/CEO-OPERATING-BRIEF.md` Standing job #1 — a short run from any device-bound weekly/
+  one-shot trigger reads as "likely did not complete" until the expected artifact is checked,
+  generalized from weekly-seo-post alone (confirmed 2026-11-10 via direct branch-absence evidence)
+  to all such triggers including weekly-influencer-outreach (3rd instance, 2026-11-11/12) — "daily
+  deploy" named as a partial exception given its own legitimate fast-exit.
+- `CEO-BRIEF/CEO-OPERATING-BRIEF.md` Standing job #1 — a device-bound trigger missing 2+
+  consecutive scheduled runs gets its own named Decision Needed line (confirmed 2026-11-11,
+  influencer-outreach).
+- `CEO-BRIEF/CEO-OPERATING-BRIEF.md` Standing job #1 — a missing daily-briefing file for a prior
+  date is named as a Decision Needed with the specific recommendation to check that trigger's run
+  history directly (confirmed 2 instances: 2026-10-28, 2026-11-04).
+- `CONTROL.md` device-absence section — multiple simultaneous device-bound suspensions read as a
+  signal about Cameron's connectivity generally, not independent per-trigger issues (confirmed
+  2026-11-09, 3-of-4 triggers down at once).
+- `SAFEGUARDS.md` Check 10 — reuse an already-verified ASIN (not a new unverified one, not a
+  silent skip) when Amazon egress is blocked and the roadmap item doesn't strictly need a new
+  product; name the gap explicitly in-page when no verified ASIN fits at all (confirmed 4
+  instances: 2026-10-27, -30, 2026-11-06, -10).
+
+**Not promoted, still open (needs more evidence or Cameron's direct input):** the daily-deploy
+short-run ambiguity (its own legitimate fast-exit vs. a real miss — 1 instance, needs Cameron to
+check the live site directly); the juvenile/safety-equipment scope-disclaimer pattern (1 instance,
+`japandi-nursery`); the "no verifiable product for a content gap → write decision-framework
+content instead" pattern (1 instance, `japandi-executive-desk`); cannibalization-avoidance before
+writing a close-variant roadmap item (2 instances, needs 1 more); `CONTENT-ROADMAP.md`'s
+checkboxes lagging real site state (1 instance); the `git fetch` default-only-pulls-`main`
+gotcha (1 instance). All stay in this file as `raw`/`confirmed`, re-checked for a 3rd instance
+rather than promoted on partial evidence.
+
+**Dropped as superseded, not promoted:** the "`USAGE_LIMIT_REACHED` needs a longer clean-run bar /
+Cameron's direct look at the quota" candidate (2026-10-25 through -27) — moot now that Cameron
+disabled the seat-counter trigger directly 2026-11-03 rather than fixing the quota; if he
+re-enables it and the same failure mode recurs, re-open rather than reuse this stale candidate.
+The Pinterest post-level analytics flat-zero pattern (5+ instances, 2026-10-23 through -27) never
+got Cameron's direct Business-Hub confirmation and the underlying queue dynamics have since
+changed (dry-out and refill, 2026-10-29 → 11-05) — keeping as informational history, not writing a
+rule off data this session could never independently confirm was real vs. a reporting lag.
+
 ## How to use this file
 **Any agent, any run:** if you observe something real — a mistake, a pattern, a fix that worked —
 append an entry below in the schema. Don't promote it yourself; that's the CEO's job during its
