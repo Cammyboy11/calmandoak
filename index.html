@@ -76,6 +76,45 @@
 
 
 <script src="/assets/js/co-shop.js?v=1" defer></script>
+
+    <style>
+    /* 4C blocks: proof, sale, beliefs (added 2026-11) */
+    .hproof{background:var(--panel);border-bottom:1px solid var(--line-soft)}
+    .hproof .wrap{display:grid;grid-template-columns:auto repeat(3,1fr);gap:clamp(18px,3vw,40px);align-items:center;padding-block:22px}
+    .hproof__r{font-family:var(--f-display);font-size:1.5rem;line-height:1.1;white-space:nowrap;text-decoration:none;color:var(--ink)}
+    .hproof__r b{display:block;font-family:Inter,sans-serif;font-size:.7rem;letter-spacing:.22em;color:var(--accent);font-weight:600;margin-bottom:.35em}
+    .hproof__r small{display:block;font-family:Inter,sans-serif;font-size:.72rem;color:var(--muted);margin-top:.3em;letter-spacing:.02em}
+    .hproof q{display:block;quotes:none;font-size:.9rem;line-height:1.5;color:var(--ink);font-style:italic}
+    .hproof cite{display:block;font-style:normal;font-size:.74rem;color:var(--muted);margin-top:.4em;letter-spacing:.04em}
+    .hsale{background:#1C1A17;color:#F4F1EA}
+    .hsale .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding-block:clamp(36px,5vw,60px)}
+    .hsale__imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .hsale__imgs a{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;border-radius:3px;color:#FBF8F2;text-decoration:none}
+    .hsale__imgs img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+    .hsale__imgs a:hover img{transform:scale(1.04)}
+    .hsale__imgs span{position:absolute;left:0;right:0;bottom:0;padding:2em .8em .7em;font-size:.72rem;letter-spacing:.06em;background:linear-gradient(180deg,rgba(28,26,23,0),rgba(28,26,23,.75))}
+    .hsale .eyebrow{color:#E6C9A9}
+    .hsale h2{font-family:var(--f-display);font-weight:300;font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.06;color:#FBF8F2;margin:.5rem 0 .8rem}
+    .hsale p{color:rgba(244,241,234,.82);line-height:1.65;max-width:46ch}
+    .hsale__cta{display:flex;gap:14px 18px;flex-wrap:wrap;align-items:center;margin-top:1.4rem}
+    .hsale__cta .lnk{color:#F4F1EA;font-size:.9rem;text-decoration:none;border-bottom:1px solid rgba(244,241,234,.5);padding-bottom:1px}
+    .hsale p.hsale__fine{font-size:.76rem;color:rgba(244,241,234,.6);margin-top:1.1rem}
+    .hpromise{margin-top:1.1rem;font-size:.86rem;color:var(--muted)}
+    .hbel .wrap{max-width:1040px}
+    .hbel__vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:var(--s4)}
+    .hbel__col{border:1px solid var(--line-soft);border-radius:3px;padding:1.5rem 1.6rem;background:var(--panel)}
+    .hbel__col.is-us{border-color:var(--accent);background:var(--accent-tint)}
+    .hbel__col h3{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;font-family:Inter,sans-serif;font-weight:600;color:var(--muted);margin-bottom:.9rem}
+    .hbel__col.is-us h3{color:var(--accent)}
+    .hbel__col ul{list-style:none;margin:0;padding:0}
+    .hbel__col li{padding:.5rem 0;border-top:1px solid var(--line-soft);font-size:.95rem;line-height:1.5;color:var(--ink)}
+    .hbel__col:not(.is-us) li{color:var(--muted)}
+    .hbel__three{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,36px);margin-top:var(--s5)}
+    .hbel__three h3{font-family:var(--f-display);font-weight:400;font-size:1.45rem;line-height:1.1}
+    .hbel__three p{color:var(--muted);font-size:.93rem;line-height:1.6;margin-top:.5rem}
+    .hbel__cta{margin-top:var(--s4)}
+    @media(max-width:820px){.hproof .wrap{grid-template-columns:1fr;gap:16px}.hsale .wrap{grid-template-columns:1fr}.hbel__vs,.hbel__three{grid-template-columns:1fr}}
+    </style>
 </head>
 <body>
 <div class="disclosure">As an Amazon Associate, Calm &amp; Oak earns from qualifying purchases. <a href="/disclosures/">Read our disclosures</a>.</div>
@@ -114,6 +153,31 @@
     </div></div>
   </section>
 
+
+  <!-- PROOF (real Etsy reviews) -->
+  <section class="hproof" aria-label="Customer reviews"><div class="wrap">
+    <a class="hproof__r" href="https://www.etsy.com/shop/CalmandOak#reviews" target="_blank" rel="noopener"><b>★★★★★</b>5.0 on Etsy<small>Read the reviews →</small></a>
+    <div><q>“Really beautiful quality — definitely exceeded my expectations. Will be purchasing more.”</q><cite>Zohra, Etsy</cite></div>
+    <div><q>“Beautiful product and a wonderful seller — quick and responsive.”</q><cite>Verified buyer, Etsy</cite></div>
+    <div><q>“Such a lovely print. Thank you!”</q><cite>Kerrie, Etsy</cite></div>
+  </div></section>
+
+  <!-- CHRISTMAS SALE (removes itself after 1 December 2026) -->
+  <section class="hsale" id="christmas" data-until="2026-12-01T23:59:00Z"><div class="wrap">
+    <div class="hsale__imgs">
+      <a href="https://shop.calmandoak.com/products/skov-tablecloth-scandinavian-christmas-woodblock-print-cotton?utm_source=calmandoak&amp;utm_medium=home&amp;utm_campaign=bf-2026"><img src="https://cdn.shopify.com/s/files/1/0809/2555/6772/files/20261112170738-1f1debb9-080d-6c66-93b9-26fb44657a29.jpg?v=1794503366&amp;width=700" alt="Skov tablecloth by Calm &amp; Oak, a green woodblock tree print on a set table" loading="lazy" width="700" height="700" /><span>Skov Tablecloth</span></a>
+      <a href="https://shop.calmandoak.com/products/midnight-pine-christmas-tree-skirt?utm_source=calmandoak&amp;utm_medium=home&amp;utm_campaign=bf-2026"><img src="https://cdn.shopify.com/s/files/1/0809/2555/6772/files/il_fullxfull.8907019935_obr9.jpg?v=1794689103&amp;width=700" alt="Midnight Pine tree skirt by Calm &amp; Oak under a decorated tree" loading="lazy" width="700" height="700" /><span>Midnight Pine Tree Skirt</span></a>
+    </div>
+    <div>
+      <span class="eyebrow">30% off the Christmas collection · ends 1 December</span>
+      <h2>A quiet Christmas, in place of a loud one.</h2>
+      <p>Our own Christmas table linens and tree skirts. One calm design runs across the tablecloth, runner, napkins and cushion, so the whole room looks planned. Made to order, delivered free worldwide.</p>
+      <div class="hsale__cta"><a class="btn btn--light" href="https://shop.calmandoak.com/collections/christmas?utm_source=calmandoak&amp;utm_medium=home&amp;utm_campaign=bf-2026">Shop the Christmas collection <span class="arw">→</span></a><a class="lnk" href="https://shop.calmandoak.com/?utm_source=calmandoak&amp;utm_medium=home&amp;utm_campaign=bf-2026#hm-sets">Add a whole table in one click →</a></div>
+      <p class="hsale__fine">The discount applies in the cart until 1 December. Arrives damaged or misprinted? We replace it or refund you.</p>
+    </div>
+  </div></section>
+  <script>(function(){var e=document.getElementById('christmas');if(e&&Date.now()>Date.parse(e.getAttribute('data-until')))e.remove();})();</script>
+
     <!-- SHOP DOORS -->
   <section class="section section--tight shopdoors" id="shop"><div class="wrap">
     <div class="valuehead">
@@ -130,6 +194,7 @@
       <a class="door" href="https://shop.calmandoak.com/collections/art"><span class="door__img"><img src="/assets/img/shop/door-art.jpg" alt="Art & Prints" loading="lazy" width="1200" height="1500" /></span><span class="door__t">Art &amp; Prints</span><span class="door__s">Sumi-e, botanical, landscape</span></a>
     </div>
     <p class="doors__cta"><a class="btn btn--primary" href="https://shop.calmandoak.com/">Shop everything <span class="arw">→</span></a> <a class="doors__link" href="https://shop.calmandoak.com/pages/looks">Browse by look →</a></p>
+    <p class="hpromise">Made to order · free worldwide delivery · arrives damaged or misprinted? We replace it or refund you.</p>
   </div></section>
 
   <!-- WHAT YOU GET -->
@@ -155,16 +220,36 @@
     </div>
   </div></section>
 
+
+  <!-- BELIEFS -->
+  <section class="section section--tight hbel" id="why"><div class="wrap">
+    <div class="valuehead">
+      <span class="eyebrow">Why Calm &amp; Oak</span>
+      <h2>For the quiet in a room, not the noise.</h2>
+      <p class="lede">Most homes are furnished one loud piece at a time. We work the other way round.</p>
+    </div>
+    <div class="hbel__vs">
+      <div class="hbel__col"><h3>The usual way</h3><ul><li>A different pattern on every surface</li><li>Slogans, glitter and trend colours</li><li>Stock made in bulk and stored in a warehouse</li><li>Replaced when the season changes</li></ul></div>
+      <div class="hbel__col is-us"><h3>The Calm &amp; Oak way</h3><ul><li>One design carried across the whole room</li><li>A quiet palette: cream, oak, ink, terracotta</li><li>Nothing made until you order it</li><li>Made to come out again next year</li></ul></div>
+    </div>
+    <div class="hbel__three">
+      <div><h3>Quiet over noise.</h3><p>If a piece shouts, we do not make it. The room should still feel like yours.</p></div>
+      <div><h3>Made to order.</h3><p>Each piece is printed and sewn after you order, then delivered free, worldwide.</p></div>
+      <div><h3>One design, the whole room.</h3><p>The same artwork runs across bed, bath, table and wall, so nothing has to be matched by hand.</p></div>
+    </div>
+    <p class="hbel__cta"><a class="btn btn--primary" href="https://shop.calmandoak.com/?utm_source=calmandoak&amp;utm_medium=home&amp;utm_campaign=shop">Shop the collection <span class="arw">→</span></a></p>
+  </div></section>
+
   <!-- LOOKS -->
   <section class="section" id="looks"><div class="wrap">
     <div class="section-head"><span class="eyebrow">The shop · rooms &amp; picks</span><h2>Whole rooms, every piece linked.</h2><p class="lede">Each room is designed and hand-picked by our Copenhagen team — every item linked on Amazon, so you can recreate the whole look or just grab the one piece you came for.</p></div>
     <div class="grid3">
-      <a class="card" href="/shop/looks/"><div class="card__img"><img src="/assets/img/looks/the-layered-living-room-card.jpg" alt="A layered Japandi living room" /><span class="card__cap">The Layered Living Room</span></div><div class="card__b"><div class="card__t">Warmth in a few weights</div><span class="card__cta">Shop the look →</span></div></a>
-      <a class="card" href="/shop/looks/"><div class="card__img"><img src="/assets/img/looks/quiet-japandi-bedroom-card.jpg" alt="A sage Japandi bedroom" /><span class="card__cap">The Sage Bedroom</span></div><div class="card__b"><div class="card__t">Where Japandi works fastest</div><span class="card__cta">Shop the look →</span></div></a>
-      <a class="card" href="/shop/looks/"><div class="card__img"><img src="/assets/img/looks/the-japandi-workspace-card.jpg" alt="A Japandi workspace" /><span class="card__cap">The Japandi Workspace</span></div><div class="card__b"><div class="card__t">A calm office in five picks</div><span class="card__cta">Shop the look →</span></div></a>
-      <a class="card" href="/shop/looks/"><div class="card__img"><img src="/assets/img/looks/the-sunday-kitchen-card.jpg" alt="A Sunday kitchen" /><span class="card__cap">The Sunday Kitchen</span></div><div class="card__b"><div class="card__t">The slow-morning counter</div><span class="card__cta">Shop the look →</span></div></a>
-      <a class="card" href="/shop/looks/"><div class="card__img"><img src="/assets/img/looks/the-evening-dining-table-card.jpg" alt="An evening dining table" /><span class="card__cap">The Evening Dining Table</span></div><div class="card__b"><div class="card__t">Bamboo, oak, stoneware</div><span class="card__cta">Shop the look →</span></div></a>
-      <a class="card" href="/shop/looks/"><div class="card__img"><img src="/assets/img/looks/the-lit-entryway-card.jpg" alt="A lit entryway" /><span class="card__cap">The Entryway, Lit</span></div><div class="card__b"><div class="card__t">A calm first impression</div><span class="card__cta">Shop the look →</span></div></a>
+      <a class="card" href="/shop/looks/the-layered-living-room/"><div class="card__img"><img src="/assets/img/looks/the-layered-living-room-card.jpg" alt="A layered Japandi living room" /><span class="card__cap">The Layered Living Room</span></div><div class="card__b"><div class="card__t">Warmth in a few weights</div><span class="card__cta">Shop the look →</span></div></a>
+      <a class="card" href="/shop/looks/quiet-japandi-bedroom/"><div class="card__img"><img src="/assets/img/looks/quiet-japandi-bedroom-card.jpg" alt="A sage Japandi bedroom" /><span class="card__cap">The Sage Bedroom</span></div><div class="card__b"><div class="card__t">Where Japandi works fastest</div><span class="card__cta">Shop the look →</span></div></a>
+      <a class="card" href="/shop/looks/the-japandi-workspace/"><div class="card__img"><img src="/assets/img/looks/the-japandi-workspace-card.jpg" alt="A Japandi workspace" /><span class="card__cap">The Japandi Workspace</span></div><div class="card__b"><div class="card__t">A calm office in five picks</div><span class="card__cta">Shop the look →</span></div></a>
+      <a class="card" href="/shop/looks/the-sunday-kitchen/"><div class="card__img"><img src="/assets/img/looks/the-sunday-kitchen-card.jpg" alt="A Sunday kitchen" /><span class="card__cap">The Sunday Kitchen</span></div><div class="card__b"><div class="card__t">The slow-morning counter</div><span class="card__cta">Shop the look →</span></div></a>
+      <a class="card" href="/shop/looks/the-evening-dining-table/"><div class="card__img"><img src="/assets/img/looks/the-evening-dining-table-card.jpg" alt="An evening dining table" /><span class="card__cap">The Evening Dining Table</span></div><div class="card__b"><div class="card__t">Bamboo, oak, stoneware</div><span class="card__cta">Shop the look →</span></div></a>
+      <a class="card" href="/shop/looks/the-lit-entryway/"><div class="card__img"><img src="/assets/img/looks/the-lit-entryway-card.jpg" alt="A lit entryway" /><span class="card__cap">The Entryway, Lit</span></div><div class="card__b"><div class="card__t">A calm first impression</div><span class="card__cta">Shop the look →</span></div></a>
     </div>
     <div class="storeband">
       <div><h3>Not after a whole room? Browse every pick.</h3><p>Every piece we recommend — furniture, lighting, ceramics, textiles — hand-picked and gathered in one place.</p></div>
