@@ -138,6 +138,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-13** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now an 11th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-15** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 13th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -238,6 +241,17 @@ Concretely:
   fast-exit) remains unresolved — `calmandoak.com` is still unreachable from this sandbox to check
   directly. Pinterest's own scheduled-post runway is 21 days (2026-11-13→2026-12-04, 105 items),
   still well clear of the 14-day urgent line.
+- **Update 2026-11-15: "Calm oak daily deploy" fired its 2026-11-14 08:32 UTC slot — the one with
+  genuinely new merged content pending (PR #19) that 2026-11-13/14's notes were watching for — and
+  it was still short, ~6s (08:32:40–08:32:47Z).** Same short-duration shape as every prior firing
+  of this trigger, now observed once with a "no changes" excuse available (most firings) and once
+  with real content pending and no excuse available (this one) — leaning the evidence toward "this
+  trigger is not completing its deploy pipeline on any run" rather than the legitimate-fast-exit
+  reading, though `calmandoak.com` is still unreachable from this sandbox to confirm directly
+  whether the catch-dish fix / executive-desk article are actually live. Instagram/TikTok now 40
+  consecutive days dark. Pinterest scheduler fired clean again this morning (06:08:57–06:13:48Z,
+  ~4m51s, real work); queue runway 19 days (2026-11-15→2026-12-04). See
+  `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-15 entry.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
