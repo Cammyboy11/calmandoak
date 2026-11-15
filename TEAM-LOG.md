@@ -10,6 +10,17 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-15 · CAMERON (via Claude Code session, at Cameron's direct request) · **Sitewide shop
+  pointers to shop.calmandoak.com are live.** New `assets/js/co-shop.js` (loaded from `<head>` on
+  225 pages as `co-shop.js?v=1`) adds: a sale bar above the header, a "30% off" tag on the Shop nav
+  link, a shop card a third of the way down every journal article, an Etsy review + replace-or-refund
+  line in each "From our studio" block, and a dismissible bottom bar on phones. All sale wording
+  (30% off the Christmas collection, ends 1 December) switches itself to evergreen wording after
+  2026-12-01 23:59 UTC — no edit needed then. **If you change the file, bump `?v=` in every page**
+  (`/assets/*` is cached immutable for a year). Links carry `utm_source=calmandoak` with
+  `utm_medium` = bar / nav / article / journal / mobile-bar; clicks fire the GA4 event `shop_click`.
+  Only the three real Etsy quotes may be used; no faces. · live
+
 - 2026-11-15 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-post Instagram+TikTok refill
   batch (5 products × 2 platforms), branch `content-factory/2026-11-15` — not merged, not
   scheduled, per the 2026-09-14 public-facing review gate.** Read `CONTROL.md` first (`PAUSE: false`)
