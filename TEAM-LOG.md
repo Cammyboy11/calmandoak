@@ -10,6 +10,42 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-15 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-post Instagram+TikTok refill
+  batch (5 products × 2 platforms), branch `content-factory/2026-11-15` — not merged, not
+  scheduled, per the 2026-09-14 public-facing review gate.** Read `CONTROL.md` first (`PAUSE: false`)
+  and `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-09-14 entries named in this run's task — all four still
+  hold on this fresh clone (gitignored local inventory absent, `database.blotato.io` egress not
+  re-tested this run per this week's explicit no-upload-tool instruction, `_add-audio-bed.js`/
+  `_pin-to-reel.js`/`_asin-to-pin.js` all syntax-checked clean before use, every post carries the
+  disclosure + `#affiliate`). **Checked real live state before building, not assumed:**
+  `blotato_list_accounts` — all 3 accounts connected, no contradiction with `CONTROL.md`'s pause
+  flags; `blotato_list_posts` — Pinterest has 105 items scheduled 2026-11-15→2026-12-04 (no gaps,
+  19-day runway, already full — skipped building new Pinterest content this run per the "don't
+  rebuild a full channel" rule); Instagram and TikTok both show **zero** scheduled items and a
+  last-published date of 2026-10-06 (40 consecutive dark days, matching today's CEO briefing #58).
+  Fetched all remote branches and pulled the cumulative ASIN exclusion list from the 2026-11-08
+  branch's own manifest (47 ASINs excluded across 8 open branches, zero overlap with this batch).
+  Confirmed `_asin-to-pin.js` still on `main` — no re-pull needed. Sourced 5 ASINs from already-live
+  `journal/`/`shop/` product cards (a stoneware bud vase with eucalyptus, a rattan-and-oak
+  nightstand, a 5-tier oak open bookcase, linen napkins set of 6, a stoneware utensil crock) across
+  five different rooms for feed variety — all 5 visually opened and SAFEGUARDS Check 1-verified
+  against their actual product class before building. **One sub-detail flagged, not a mismatch:**
+  `journal/single-stem-rule/`'s on-page alt text for `B0DYNB5K2V` calls it "one slim dried stem" but
+  the tracked photo shows a full eucalyptus bunch — not reused as a caption (wrote fresh copy
+  against what the image actually shows), but worth a direct look by whoever next touches that
+  article. Built all 5 via `_asin-to-pin.js` → `_pin-to-reel.js` → `_add-audio-bed.js`; **verified
+  audio present on all 5 reels via direct ffmpeg stream probe** (aac/44.1kHz/mono, mean −26.9dB,
+  identical to the 2026-11-08 and 2026-11-01 batches' levels), not assumed; spot-checked one reel's
+  mid-clip frame directly to confirm the Ken Burns pass doesn't break the picture-product match.
+  10/10 pieces passed all four applicable SAFEGUARDS checks (1, 3, 4, 7) — 100% pass rate, nothing
+  dropped this run. Full QA block + per-piece detail in
+  `final pins/batches/2026-11-15/manifest.md`. **Needs-Cameron:** review/schedule this manifest;
+  `database.blotato.io` egress still the standing blocker (now 9 staged batches unscheduled);
+  `journal/single-stem-rule/` alt-text/image mismatch worth a SEO-ranker pass; IG/TikTok's 40-day
+  dark streak is now large enough that a bigger batch or faster cadence than 2/day may be worth
+  considering. · staged (branch `content-factory/2026-11-15`, needs-Cameron review + schedule);
+  needs-Cameron (single-stem-rule alt-text mismatch, `database.blotato.io` network allowlist)
+
 - 2026-11-13 · SEO-RANKER · **On-page fix, staged as a PR (public-facing review gate — not pushed
   to main), not a new article this run.** Read `CONTROL.md` first (`PAUSE: false`; re-read the
   2026-09-14 review-gate section), then `SAFEGUARDS.md`, `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`,

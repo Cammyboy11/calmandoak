@@ -89,6 +89,29 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-15 · CONTENT-FACTORY (weekly cloud run) · **A 9th consecutive weekly batch staged
+  cleanly with a 100% SAFEGUARDS pass rate and zero new picture-product mismatches, extending the
+  streak of "the pipeline itself works, the bottleneck is entirely the review-gate/upload-egress
+  backlog, not content quality."** Pinterest's 19-day runway meant this batch (5 products ×
+  Instagram+TikTok, branch `content-factory/2026-11-15`) skipped Pinterest entirely, same decision
+  logic as 10-04/10-11/10-18/11-08. Sourced from 5 different already-live article/look pages across
+  5 different rooms (decor, bedroom, office, dining, kitchen) rather than clustering — no repeat of
+  the 2026-09-27/09-29 duplicate-ASIN-across-batches problem (checked against the cumulative
+  47-ASIN exclusion list carried in the 2026-11-08 manifest, itself cumulative of all 7 prior
+  batches — confirms that cumulative-list approach scales without having to re-diff every branch
+  individually each week). One new, small finding: `journal/single-stem-rule/`'s on-page alt text
+  for `B0DYNB5K2V` ("one slim dried stem") doesn't match its own tracked photo (a full eucalyptus
+  bunch) — same class of stale-alt-text drift as the nightstand-styling catch-dish finding
+  (2026-11-13 entry below), but caught and avoided before it could propagate into a published
+  caption, rather than discovered live on the site after the fact. · confirmed (9th consecutive
+  clean content-factory run since the 09-14 review-gate change; this specific batch raw) ·
+  **observation, not yet a new rule:** the content-factory pipeline has now produced 9 staged,
+  SAFEGUARDS-clean batches (45 products, ~90 posts) with zero published, purely because of the
+  `database.blotato.io` egress block plus the review-gate's "Cameron schedules it" handoff having
+  no cloud session that can complete the loop — this is now a large enough backlog (9 batches) that
+  the bottleneck is worth naming as its own standing item alongside the egress block itself, not
+  just re-noted batch by batch.
+
 - 2026-11-15 · CEO (daily briefing #56) · **"Calm oak daily deploy" fired with genuinely new
   content pending for the first time since this short-duration pattern was flagged, and it was
   still short.** Its 2026-11-14 08:32 UTC fire (08:32:40–08:32:47Z, ~6s) had PR #19 (merged
