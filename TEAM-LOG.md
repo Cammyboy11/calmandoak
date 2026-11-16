@@ -10,6 +10,26 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Amazon link audit
+  and fix, sitewide.** All 164 Amazon ASINs on the site were checked on their live Amazon pages.
+  90 were healthy. 16 were dead (unavailable, used-only or 404) and are replaced on every page with a
+  live product that matches the pictured item; 28 more that were live but under the bar (rating 4.3 or
+  lower, or 200 reviews or fewer) are swapped like-for-like. Every replacement was re-checked: live,
+  buyable new, above 4.3 stars, more than 200 reviews, no "Frequently returned" flag. Where the copy
+  named the old brand it now names the new one (for example Zinus Tosha → Mellow Naturalista,
+  CADUKE → TRLIFE, GIB → La Jolie Muse). The 11 Amazon *search* links on `/shop/frames/` now go to
+  specific frames. 53 look pages that carried a copy of The Rattan Hour's JSON-LD now have their own
+  (built from each page's own cards). 109 pages changed; the map is in the session's `fix-links.js`.
+  **Left alone, for a human call:** 13 products that meet the rating bar but carry Amazon's
+  "Frequently returned" flag; about 14 below-bar products in brand-specific reviews where a swap
+  would need the paragraph rewritten (DAPU linen sheets, Modway Anya bed, Nathan James and Bme
+  nightstands, Serta chair, Yunaking sconces, Adesso lantern, the donabe, two salt cellars, the
+  eucalyptus diffuser, the waffle towel set, Christopher Knight patio chairs, Novilla sofa, framed
+  botanical art); 8 search links in the journal "what we ruled out" lists (they name things readers
+  are told not to buy); and `B091MJ3CMM`, labelled as a linen sofa but really a stretch sofa cover.
+  The $140 heading for the porch side table in `/journal/300-dollar-sunday-porch/` now sits above a
+  cheaper table, so that article's budget total wants a re-add. · live
+
 - 2026-11-15 · CAMERON (via Claude Code session, at Cameron's direct request) · **Sitewide shop
   pointers to shop.calmandoak.com are live.** New `assets/js/co-shop.js` (loaded from `<head>` on
   225 pages as `co-shop.js?v=1`) adds: a sale bar above the header, a "30% off" tag on the Shop nav
