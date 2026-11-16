@@ -77,3 +77,13 @@ _audit-tmp/
 
 # Working folders (2026-09-24)
 Digital Art Test/
+
+# Internal pages and data files, not for public serving (2026-11-16 audit)
+ops/
+home-preview/
+home-preview2/
+_*.json
+_*.csv
+_*.py
+_*.sh
+assets/the-edit/issue-01-winter.html

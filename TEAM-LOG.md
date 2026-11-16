@@ -10,6 +10,15 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Premium audit, section 1
+  site fixes.** (1) 404 page wired (`not_found_handling: 404-page` in wrangler.jsonc). (2) Internal material
+  removed from the public deploy via `.assetsignore`: `/ops/`, `/home-preview/`, `/home-preview2/`, root
+  `_*.json/.csv/.py/.sh`, `assets/the-edit/issue-01-winter.html`. Files stay in the repo; `/ops/` is now
+  local-only. robots.txt no longer names `/ops/`. (3) Footers repaired on eight journal pages that were cut
+  off mid-tag; dead header button fixed on `journal/small-japandi-office`. (4) `/shop/looks/` gained the
+  Amazon Associate disclosure line; `rel="sponsored"` added to 14 storefront links on 11 pages. Full audit:
+  `Desktop/Claude Skills/calm-and-oak-premium-audit.md`. · live
+
 - 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Room images for the other
   56 restored shop products.** 28 new photoreal room scenes (Gemini in Chrome, each built from the product's
   own shop photo and checked against it) cut into 44 square crops in `assets/img/gallery/g-*.jpg`. Every one
