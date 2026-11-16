@@ -10,6 +10,15 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Shop home page calmed
+  ("Quiet over noise").** Live shop theme is now "Japandi v19 — calm home (preview)" (id 189359652900);
+  "Japandi v18 — promo-style home (preview)" stays in the theme library as the fallback. Only
+  `sections/co-home.liquid` differs: the seven "30% off" sticker tags, the countdown, the scrolling sale
+  strip, the "30% off" badges on product and set cards, the nav "30% OFF" tag and every "Black Friday Sale"
+  label are gone. Hero is "A quiet Christmas table" in Cormorant Garamond with the sale stated once. Sale
+  prices still show struck through; the header announcement bar and Etsy review strip are unchanged. Do not
+  re-add stickers, countdowns or "Black Friday" wording without Cameron's OK. · live
+
 - 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Site promotion quietened
   ("Quiet over noise").** The "Two Seats to Quiet" pop-up script tag is removed from all 274 pages (the file
   `assets/js/co-seats-popup.js` stays in the repo; the draw still runs on the shop). `co-shop.js` is now
