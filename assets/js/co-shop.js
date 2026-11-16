@@ -1,4 +1,5 @@
-/* Calm & Oak — shop pointers for calmandoak.com (sale bar, in-article card, mobile bar, proof line).
+/* Calm & Oak — shop pointers for calmandoak.com (one quiet bar, in-article card, proof line; mobile bar outside sales).
+   2026-11-16: quietened after the premium audit: no badge, no nav tag, no sticky sale bar.
    Everything here sends readers to shop.calmandoak.com. The sale wording switches itself off
    when the sale ends (SALE_END); after that the evergreen wording shows. No page edits needed. */
 (function () {
@@ -88,7 +89,7 @@
       bar.setAttribute('data-cos', 'bar');
       if (sale) {
         bar.href = u('/', 'bar');
-        bar.innerHTML = '<b>30% off</b><span class="l">The Calm &amp; Oak Christmas collection &middot; sale ends 1 December &middot; free worldwide delivery</span><span class="s">Christmas collection &middot; ends 1 Dec</span><u>Shop the sale &rarr;</u>';
+        bar.innerHTML = '<span class="l">The Calm &amp; Oak Christmas collection is 30% off until 1 December &middot; free worldwide delivery</span><span class="s">Christmas collection, 30% off until 1 Dec</span><u>Visit the shop &rarr;</u>';
       } else {
         bar.href = u('/', 'bar');
         bar.innerHTML = '<span class="l">Calm &amp; Oak makes its own Japandi textiles and art prints &middot; made to order &middot; free worldwide delivery</span><span class="s">Our own textiles and art &middot; free delivery</span><u>Visit the shop &rarr;</u>';
@@ -100,8 +101,6 @@
     document.querySelectorAll('.topbar a[href="https://shop.calmandoak.com/"], .site-footer a[href="https://shop.calmandoak.com/"]').forEach(function (a) {
       a.href = u('/', 'nav');
       a.setAttribute('data-cos', 'nav');
-      if (sale && a.classList.contains('nav__shop') && !a.querySelector('.cosb-tag')) a.appendChild(el('span', 'cosb-tag', '30% off'));
-      if (sale && a.classList.contains('btn')) a.textContent = 'Shop 30% off';
     });
 
     // ---- 3. Card inside journal articles, a third of the way down ----
@@ -159,7 +158,7 @@
     var KEY = 'co_shop_bar_closed';
     var closed = false;
     try { closed = sessionStorage.getItem(KEY) === '1'; } catch (e) {}
-    if (!closed && !document.querySelector('.cosm') && path !== '/') {
+    if (!sale && !closed && !document.querySelector('.cosm') && path !== '/') {
       var m = el('div', 'cosm');
       m.innerHTML = '<div class="cosm__t">' +
           (sale ? '<strong>30% off Christmas</strong><span>Ends 1 December &middot; free delivery</span>'

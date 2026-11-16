@@ -10,6 +10,13 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Site promotion quietened
+  ("Quiet over noise").** The "Two Seats to Quiet" pop-up script tag is removed from all 274 pages (the file
+  `assets/js/co-seats-popup.js` stays in the repo; the draw still runs on the shop). `co-shop.js` is now
+  `?v=2`: the top bar is one plain line with no terracotta badge, the "30% off" nav tag and "Shop 30% off"
+  button text are gone, and the sticky bottom bar on phones is off while a sale is running. The in-article
+  shop card and the studio proof line are unchanged. Do not re-add the pop-up without Cameron's OK. · live
+
 - 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Premium audit, section 1
   site fixes.** (1) 404 page wired (`not_found_handling: 404-page` in wrangler.jsonc). (2) Internal material
   removed from the public deploy via `.assetsignore`: `/ops/`, `/home-preview/`, `/home-preview2/`, root
