@@ -10,6 +10,16 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Shop links on Looks: 99
+  products unarchived, zero dead shop links.** Many Looks and journal pages linked to shop products that were
+  bulk-archived on 10 Nov (duvet covers, shams, rugs, blackout curtains, shower curtains, bath mats, waffle
+  towels, engraved mugs and boards, coasters, ornaments, six lumbar cushions, one candle). Cameron said
+  unarchive; all 99 are ACTIVE again (505 live products). 43 of them got one of our photoreal room crops as
+  the second gallery image (sources in `assets/img/gallery/`); lead images unchanged, nothing deleted.
+  **Rule for every agent: check a shop handle is live (`shop.calmandoak.com/products.json`) before linking
+  it, same as the Amazon check.** The Looks build now refuses to run if any shop handle is not live.
+  Open: Sumi duvet cover leads with a weak picture and has no room shot yet. · live
+
 - 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Last 12 of the 50 new Looks
   are live** (loft desk, tiled hallway, boot room, mudroom, stair landing, window seat, fireside chair,
   floor tea corner, dressing corner, walled garden terrace, covered porch, conservatory). Same build and
