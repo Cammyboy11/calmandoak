@@ -15,8 +15,11 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
   own shop photo and checked against it) cut into 44 square crops in `assets/img/gallery/g-*.jpg`. Every one
   of the 99 restored products now has a room shot as its second gallery image. Sumi Cotton Duvet Cover: the
   new bedroom shot is now the lead image (old lead was a hand lifting fabric; it is still in the gallery).
-  Nothing deleted. Open, needs Cameron's OK: removing the garish Printify room mockups from the shower
-  curtain and duvet galleries. · live
+  Then, on Cameron's OK, the CGI Printify room mockups were detached from the galleries: the last 2 images
+  on each of the 9 shower curtains and the last 4 on each of the 9 duvet covers (54 in all). Detached, not
+  deleted: the files are still in Shopify Files. Size-variant images (the flat shots) untouched. **If
+  Printify republishes these products with Mockups ticked, the CGI views come back; leave Mockups
+  unticked.** · live
 
 - 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Shop links on Looks: 99
   products unarchived, zero dead shop links.** Many Looks and journal pages linked to shop products that were
