@@ -10,6 +10,11 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Last 12 of the 50 new Looks
+  are live** (loft desk, tiled hallway, boot room, mudroom, stair landing, window seat, fireside chair,
+  floor tea corner, dressing corner, walled garden terrace, covered porch, conservatory). Same build and
+  checks as the first 38. Index now lists 118 looks; sitemap has all 50 new URLs. · live
+
 - 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **38 new Looks under
   `/shop/looks/` (first batch of 50).** Each page is built around one new room image (British and
   American houses, Japandi styling) that shows three Calm & Oak pieces and four Amazon finds; every
