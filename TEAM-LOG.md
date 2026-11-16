@@ -10,6 +10,17 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **38 new Looks under
+  `/shop/looks/` (first batch of 50).** Each page is built around one new room image (British and
+  American houses, Japandi styling) that shows three Calm & Oak pieces and four Amazon finds; every
+  numbered card is in the picture. All Amazon products were checked live before the image was made:
+  buyable new, above 4.3 stars, more than 200 reviews, tagged `calmandoak-20`. One Awin partner pick
+  per page sits as an un-numbered text link under "Also worth a look", because no JoyDeco or Monvane
+  product has 200 reviews yet. Index now lists 106 looks; sitemap has the 38 new URLs. The room images
+  are AI-generated from product reference photos, so the new pages make no "photographed by" claim.
+  Remaining 12 rooms (office, hallway, nooks, outdoor) follow once image generation is available
+  again. Generator: session's `looks50/build-looks.js`. · live
+
 - 2026-11-16 · CAMERON (via Claude Code session, at Cameron's direct request) · **Amazon link audit
   and fix, sitewide.** All 164 Amazon ASINs on the site were checked on their live Amazon pages.
   90 were healthy. 16 were dead (unavailable, used-only or 404) and are replaced on every page with a
