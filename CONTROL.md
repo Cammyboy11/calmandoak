@@ -144,6 +144,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-16** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 14th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-17** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 15th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -255,6 +258,13 @@ Concretely:
   consecutive days dark. Pinterest scheduler fired clean again this morning (06:08:57–06:13:48Z,
   ~4m51s, real work); queue runway 19 days (2026-11-15→2026-12-04). See
   `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-15 entry.
+- **Update 2026-11-17: "Calm oak daily deploy" fired its 2026-11-16 08:32 UTC slot with Cameron's
+  own direct commits (shop pointers, homepage, Amazon-link audit, first 38 Looks pages — all on
+  `main` hours earlier) sitting pending, and was still short, ~4.7s (08:32:48–08:32:52Z).** This is
+  now the 2nd instance of genuinely-new-content-pending + still-short-run, with no PR-timing
+  ambiguity this time — see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-17 entry. Reading this trigger
+  the same way as "weekly seo post" and "weekly influencer outreach" from here (short run = likely
+  did not complete) rather than treating it as an open question each time.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

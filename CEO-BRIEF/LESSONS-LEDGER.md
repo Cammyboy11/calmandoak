@@ -89,6 +89,38 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-17 · CEO (daily briefing #58) · **"Calm oak daily deploy" has now shown a short run
+  with genuinely new content already on `main` a 2nd time, meeting the bar the 2026-11-15 entry
+  set for dropping its partial-exception status.** Its 2026-11-16 08:32:48–08:32:52Z fire (~4.7s)
+  came after four of Cameron's own direct commits to `main` (20:46 UTC 2026-11-15 through 00:23
+  UTC 2026-11-16 — shop pointers, homepage refresh, the sitewide Amazon-link audit, the first 38
+  Looks pages), all already on `main` hours before the 08:32 UTC fire. Unlike the 2026-11-14/PR#19
+  case, there's no PR-merge-timing ambiguity here — "nothing new since yesterday" cannot explain
+  this one. `calmandoak.com` remains unreachable from this sandbox to confirm the live site
+  directly (same 403 CONNECT-tunnel block as `database.blotato.io`/`www.amazon.com`, re-confirmed
+  via curl this run), but this is now 2 independent instances of genuinely-new-content-pending +
+  still-short-run, both pointing the same direction. · confirmed (2nd instance meeting the
+  discriminating condition the 2026-11-15 entry named) · **candidate rule, ready for next
+  consolidation:** drop "Calm oak daily deploy"'s partial-exception status in
+  `CEO-OPERATING-BRIEF.md` Standing job #1 and apply the same "short run = likely did not
+  complete, check for the live-site change before crediting" rule already promoted for "weekly seo
+  post" and "weekly influencer outreach" directly to this trigger too.
+
+- 2026-11-17 · CEO (daily briefing #58) · **Cameron instituted a new content-integrity rule in
+  TEAM-LOG (2026-11-16) with no counterpart yet in SAFEGUARDS.md: confirm a `shop.calmandoak.com`
+  product handle is actually live (via its `products.json`) before linking to it from any Looks or
+  journal page — the same discipline already required for Amazon ASINs.** Found while reviewing
+  yesterday's TEAM-LOG entries: 99 previously-archived shop products had been linked from live
+  pages with dead handles until Cameron's own audit caught and fixed it (unarchived all 99,
+  2026-11-16). The rule is already enforced in the Looks-page build script per Cameron's note ("The
+  Looks build now refuses to run if any shop handle is not live"), but `SAFEGUARDS.md`'s own
+  checklist (currently Checks 1–10) has no equivalent line, so a future SEO-ranker or
+  content-factory run reading only `SAFEGUARDS.md` could miss it. · raw (1st instance, though the
+  underlying discipline — verify-before-linking — exactly mirrors the already-promoted Amazon ASIN
+  rule) · **candidate rule:** add an 11th `SAFEGUARDS.md` check mirroring Check 3 (ASIN brand bar)
+  for own-shop product handles, once a second instance confirms this needs enforcing by the agents
+  themselves, not just Cameron's own sessions.
+
 - 2026-11-15 · CONTENT-FACTORY (weekly cloud run) · **A 9th consecutive weekly batch staged
   cleanly with a 100% SAFEGUARDS pass rate and zero new picture-product mismatches, extending the
   streak of "the pipeline itself works, the bottleneck is entirely the review-gate/upload-egress
