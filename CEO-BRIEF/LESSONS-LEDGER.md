@@ -89,6 +89,27 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-17 · SEO-RANKER · **A 2nd instance of the 2026-11-13 candidate rule: when the roadmap's
+  named priority item turns out to already be fully built, a repo-wide reconciliation audit (not a
+  new article) is the right next move, and it found real work.** `GROWTH-PLAN-90-DAY.md`'s #1
+  priority, the Japandi office/workspace cluster, already has all 9 pages a thorough check would
+  expect — this run didn't need to write a 10th. Auditing the cluster's internal mesh instead
+  (SAFEGUARDS Check 9) surfaced two concrete hub-reconciliation gaps that had sat unnoticed since
+  whichever runs originally shipped these pages: the pillar page (`japandi-home-office`) never
+  linked to the standalone `japandi-desk` buying-advice article, and the budget spoke
+  (`400-dollar-home-office`) had zero links back to the pillar it's built from. Fixed both, PR #20.
+  Unlike the 2026-11-13 instance (a named, flagged defect sitting dormant across briefings), this
+  gap had never been named anywhere before this audit found it — same underlying judgment
+  (audit-over-new-content when the roadmap item is already shipped), different discovery mechanism
+  (mesh-check vs. grep-for-named-defect). · confirmed (2nd instance of the 2026-11-13 candidate,
+  though via a different check than that entry's grep-for-named-defect approach) · **candidate
+  rule, strengthens the 2026-11-13 one toward promotion:** when a SEO-ranker run finds its roadmap
+  priority already shipped, run *both* a grep for named-but-dormant defects (TEAM-LOG/briefings/
+  PLACEHOLDER-AUDIT.md) and a SAFEGUARDS Check 9 hub-reconciliation pass on that cluster specifically
+  — the two checks caught different kinds of gaps (a flagged defect vs. an never-flagged mesh hole)
+  in the two instances so far. Needs one more instance before either goes into SAFEGUARDS.md itself
+  as a named cluster-audit step.
+
 - 2026-11-17 · CEO (daily briefing #58) · **"Calm oak daily deploy" has now shown a short run
   with genuinely new content already on `main` a 2nd time, meeting the bar the 2026-11-15 entry
   set for dropping its partial-exception status.** Its 2026-11-16 08:32:48–08:32:52Z fire (~4.7s)
