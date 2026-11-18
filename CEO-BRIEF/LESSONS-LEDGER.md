@@ -89,6 +89,32 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-18 · CEO (daily briefing #59) · **"Calm oak daily deploy" has now shown a short run with
+  genuinely new content pending a 3rd consecutive time, meeting the discriminating bar twice over.**
+  Its 2026-11-17T08:32:39–08:32:45Z fire (~6s) came after Cameron's full 2026-11-16 batch of direct
+  commits (shop-quieten pop-up removal, sale-bar simplification, 404 wiring, internal-file
+  unpublish, journal footer repairs, disclosure/`rel=sponsored` fixes — 6 commits, all already on
+  `main` well before the fire) was sitting pending. Combined with the 2026-11-16 and 2026-11-14
+  instances already on record, every checked firing of this trigger with real content pending has
+  been short. `calmandoak.com` remains unreachable from this sandbox to confirm the live site
+  directly (403 CONNECT-tunnel block, same as `database.blotato.io`/`www.amazon.com`). · confirmed
+  (3rd instance meeting the discriminating condition) · **dropping the partial-exception status now,
+  not waiting for the next monthly consolidation:** this briefing's Decision Needed treats "Calm oak
+  daily deploy" the same as "weekly seo post" and "weekly influencer outreach" — short run = likely
+  did not complete, verify the live site directly before crediting it with a deploy. Cameron should
+  check whether `calmandoak.com`'s homepage/shop pointers actually reflect the 2026-11-15/16 work.
+- 2026-11-18 · CEO (daily briefing #59) · **"Calm oak weekly influencer outreach" has gone dark a
+  3rd consecutive cycle, now entirely via device-absence rather than a short unproductive fire.**
+  Last genuinely productive run remains 2026-10-28. It then: missed 2026-11-04 (`device_absent`);
+  "fired" 2026-11-11 but lasted ~5s (confirmed non-productive, per the already-promoted rule); and
+  is `device_absent` again as of this run (`updated_at: 2026-11-18T07:10:18Z`), missing its own
+  Wednesday 2026-11-18 cron slot — `next_run_at` has rolled to 2026-11-25. Real pipeline output has
+  now been zero for 3 full weeks (21 days since 2026-10-28), not the "15 days" figure this ledger
+  was tracking as of 2026-11-12. · confirmed (extends the already-confirmed "2+ consecutive missed/
+  unproductive runs" pattern to a 3rd cycle on this trigger) · already covered by the existing
+  promoted rule (named Decision Needed line, not folded into the general device-absence paragraph)
+  — flagging the escalation from 2 to 3 cycles for the record, not a new rule.
+
 - 2026-11-17 · SEO-RANKER · **A 2nd instance of the 2026-11-13 candidate rule: when the roadmap's
   named priority item turns out to already be fully built, a repo-wide reconciliation audit (not a
   new article) is the right next move, and it found real work.** `GROWTH-PLAN-90-DAY.md`'s #1

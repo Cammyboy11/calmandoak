@@ -147,6 +147,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-17** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 15th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-18** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 16th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -265,6 +268,18 @@ Concretely:
   ambiguity this time — see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-17 entry. Reading this trigger
   the same way as "weekly seo post" and "weekly influencer outreach" from here (short run = likely
   did not complete) rather than treating it as an open question each time.
+- **Update 2026-11-18: a 3rd consecutive instance — "Calm oak daily deploy" fired its 2026-11-17
+  08:32 UTC slot with Cameron's entire 2026-11-16 batch of direct commits (shop-quieten pop-up
+  removal, sale-bar simplification, 404 wiring, internal-file unpublish, journal footer repairs,
+  disclosure/rel=sponsored fixes) pending, and was still short, ~6s (08:32:39–08:32:45Z).** Three
+  for three now on "genuinely new content pending, still short" — this is no longer treated as an
+  open question in this briefing's execution-integrity check; see today's Decision Needed line and
+  `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-18 entry. Separately, "Calm oak weekly influencer
+  outreach" went `device_absent` again overnight (`updated_at: 2026-11-18T07:10:18Z`), missing its
+  own Wednesday cron slot today — its last genuinely productive run remains 2026-10-28 (3 weeks
+  dark in substance, even though it technically "fired" once on 2026-11-11). The daily Pinterest
+  scheduler also re-suspended overnight (`updated_at: 2026-11-18T06:08:30Z`) after running clean
+  2026-11-17 — queue runway still healthy at 16 days (2026-11-18→2026-12-04), not urgent.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

@@ -10,6 +10,30 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-18 · CEO (daily briefing #59) · **Merged PR #20** (`seo-ranker/office-cluster-hub-
+  reconciliation-2026-11-17`, commit `6f0573e`) after a clean three-dot diff verification — exactly
+  the 4 files claimed, 2 pure internal-link additions closing hub-reconciliation gaps in the office
+  cluster (`japandi-desk` ↔ `japandi-home-office`, `400-dollar-home-office` → `japandi-home-office`),
+  no new ASINs/images, disclosure unaffected. No other Calm & Oak PR open (only the unrelated,
+  long-standing Cloudflare PR #1). **Execution integrity:** "Calm & Oak — SEO Ranker (Tue+Fri)"
+  cloud trigger fired clean 2026-11-17 (real ~6.5min run, produced PR #20); "Content Factory
+  (weekly)" last fired 2026-11-15, not due again until 2026-11-22. Confirmed via branch-absence
+  that the device-bound "Calm oak weekly seo post" fired 2026-11-16 (~6s) and shipped nothing (no
+  new `seo-ranker/*` branch dated 2026-11-16) — consistent with the already-promoted rule. "Calm
+  oak daily deploy" fired 2026-11-17 (~6s) with Cameron's full 2026-11-16 commit batch pending —
+  3rd consecutive short-run-with-real-content instance, now read as likely-incomplete rather than
+  ambiguous (see `CEO-BRIEF/LESSONS-LEDGER.md`). "Calm oak weekly influencer outreach" is
+  `device_absent` again, missing today's Wednesday slot — 3 weeks with zero real pipeline output.
+  Daily Pinterest scheduler also re-suspended overnight after a clean run 2026-11-17; queue runway
+  16 days (2026-11-18→2026-12-04), still above the 14-day floor. Instagram/TikTok confirmed still
+  dark — last publish 2026-10-06, now 43 consecutive days, contradicting `CONTROL.md`'s `active`
+  flags for both. Seat-counter trigger still disabled, unchanged since 2026-11-03 — now 16th day.
+  Full detail in today's briefing and 2 new `CEO-BRIEF/LESSONS-LEDGER.md` entries. · live (PR #20
+  merged); staged (content-factory batches since 2026-09-20, needs-Cameron); needs-Cameron
+  (`database.blotato.io` network allowlist, seat-counter intent, check `calmandoak.com` directly for
+  whether the 2026-11-15/16/17 work is actually live, device/connectivity for Pinterest scheduler
+  and influencer-outreach)
+
 - 2026-11-17 · SEO-RANKER · **Office cluster (GROWTH-PLAN #1 priority) audited — already fully
   built, 2 hub-reconciliation fixes shipped via PR.** Confirmed all 9 office-cluster pages exist
   (`japandi-home-office`, `japandi-desk`, `japandi-executive-desk`, `small-japandi-office`,
