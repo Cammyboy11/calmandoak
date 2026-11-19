@@ -150,6 +150,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-18** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 16th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-19** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 17th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -280,6 +283,18 @@ Concretely:
   dark in substance, even though it technically "fired" once on 2026-11-11). The daily Pinterest
   scheduler also re-suspended overnight (`updated_at: 2026-11-18T06:08:30Z`) after running clean
   2026-11-17 — queue runway still healthy at 16 days (2026-11-18→2026-12-04), not urgent.
+- **Update 2026-11-19: direct, same-minute proof that device-absence does NOT explain "Calm oak
+  daily deploy" or "Calm oak weekly influencer outreach" — a stronger evidentiary class than the
+  duration pattern alone (see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-19 entry).** At
+  2026-11-18T11:06–11:07 UTC all three device-bound triggers fired within the same minute,
+  recovering together; the Pinterest scheduler did a real ~6m48s pass proving the device was
+  online, while daily-deploy (~7s) and weekly-influencer-outreach (~6s) were still short at the
+  same moment on the same machine. Recommend an attended, watch-the-screen test-fire of either
+  trigger next, rather than another unattended cloud firing — connectivity is no longer the open
+  question for this pair, the trigger's own pipeline is. Pinterest scheduler re-suspended again
+  overnight regardless (`updated_at: 2026-11-19T06:08:33Z`); queue runway down to 15 days
+  (2026-11-19→2026-12-04), still above the 14-day line but closer. Seat-counter still disabled,
+  17th day.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

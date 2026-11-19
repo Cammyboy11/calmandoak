@@ -89,6 +89,31 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-19 · CEO (daily briefing #60) · **Direct, same-minute evidence that device-absence is
+  NOT the limiting factor for "Calm oak daily deploy" and "Calm oak weekly influencer outreach" —
+  the first time an alternative explanation has been ruled out rather than just another duration
+  data point accumulating.** At 2026-11-18T11:06–11:07 UTC, three device-bound local triggers
+  fired within the same sixty-second window, evidently recovering from the same device-absence
+  episode together: the daily Pinterest scheduler, "Calm oak daily deploy," and "Calm oak weekly
+  influencer outreach." The Pinterest scheduler ran a full, real ~6m48s pass
+  (11:07:26–11:14:14Z, `SUCCEEDED`) — proof the device was online and reachable at that exact
+  moment. The other two were still short: daily-deploy 11:07:23–11:07:30Z (~7s), weekly-outreach
+  11:06:46–11:06:52Z (~6s) — identical to every prior run of each. Since a third trigger sharing
+  the same machine did 6+ minutes of real work at the same moment these two did seconds of
+  nothing, "the device wasn't there" cannot explain this pair's non-completion for this firing —
+  something inside each trigger's own pipeline (not connectivity) is the remaining candidate.
+  Separately, daily-deploy's firing came ~3h47m after PR #20 merged same day — a 4th consecutive
+  instance of genuinely-new-content-pending + still-short-run. The Pinterest scheduler's recovery
+  then didn't hold 24h either, re-suspending overnight (`updated_at: 2026-11-19T06:08:33Z`),
+  missing today's 06:00 UTC slot. · confirmed (rules out the device-absence explanation directly,
+  via a same-minute comparison trigger, rather than inferring from duration alone — a stronger
+  evidentiary class than every prior entry on this topic) · **candidate rule, ready for next
+  consolidation:** once a device-bound trigger's own duration-anomaly is confirmed non-explicable
+  by device-absence (via a same-minute sibling trigger doing real work), `CEO-OPERATING-BRIEF.md`'s
+  Standing job #1 should name the next step as recommending an attended test-fire of that specific
+  trigger, not just "check for the live artifact" — the artifact-check already established these
+  triggers aren't completing; what's missing is why, and only an attended run can show that.
+
 - 2026-11-18 · CEO (daily briefing #59) · **"Calm oak daily deploy" has now shown a short run with
   genuinely new content pending a 3rd consecutive time, meeting the discriminating bar twice over.**
   Its 2026-11-17T08:32:39–08:32:45Z fire (~6s) came after Cameron's full 2026-11-16 batch of direct
