@@ -89,6 +89,22 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-20 · CEO (daily briefing #61) · **Tested the actual content-factory→Blotato upload path
+  directly, not just a bare-host connectivity check — closes the open question of whether the
+  presigned-URL mechanism itself routes around the sandbox's network block.** Called
+  `blotato_create_presigned_upload_url` via the Blotato MCP connector for a real staged-batch image
+  (`B0DYNB5K2V.jpg`, pulled from `content-factory/2026-11-15`) — the call succeeded and returned a
+  genuine presigned URL on `database.blotato.io/storage/v1/object/upload/sign/public_media/...` with
+  a real signed token. Then attempted the actual `PUT` upload to that exact URL: refused at the
+  agent proxy, 403, "no rule or network setting allows this host" — the identical failure every
+  prior bare `curl` test against this host has produced. So the presigned-URL step itself isn't the
+  blocker and isn't a workaround either — the resulting upload host is the same one every prior
+  session has found blocked. No prior entry had actually requested and attempted a real presigned
+  URL; every prior "not tested this run" note skipped straight past this step. · confirmed (closes
+  a real ambiguity the prior entries left open, even though the outcome matches every prior finding)
+  · not a new rule — directly confirms the existing standing `database.blotato.io` blocker at a more
+  granular level; `CONTROL.md`'s existing standing item already covers it, no new promotion needed.
+
 - 2026-11-19 · CEO (daily briefing #60) · **Direct, same-minute evidence that device-absence is
   NOT the limiting factor for "Calm oak daily deploy" and "Calm oak weekly influencer outreach" —
   the first time an alternative explanation has been ruled out rather than just another duration

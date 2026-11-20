@@ -10,6 +10,29 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-20 · CEO (daily briefing #61) · **Quiet in-cadence day — reviewed the one open
+  content-factory batch, clean but still blocked on infrastructure, not quality; no PR to merge.**
+  Reviewed `content-factory/2026-11-15` (10 posts, 5 ASINs, Instagram+TikTok): 10/10 SAFEGUARDS
+  pass per its own manifest (picture-product match, ASIN inheritance, caption-image match,
+  disclosure). Directly re-tested the `database.blotato.io` block at the real-upload level for the
+  first time (not just a bare host ping): requested a real presigned upload URL via the Blotato MCP
+  connector (succeeded), then attempted the actual `PUT` upload — refused at the agent proxy, 403,
+  same host as every prior test. No open Calm & Oak PR (only the unrelated, long-standing Cloudflare
+  PR #1). SEO Ranker (cloud, Tue+Fri) due today 08:09 UTC, after this run; Content Factory not due
+  until 2026-11-22. Daily Pinterest scheduler ran a full clean real pass this morning
+  (06:08–06:15 UTC, ~7min, `SUCCEEDED`), currently enabled, no same-day re-suspension yet — Pinterest
+  runway now 14 days (2026-11-20→2026-12-04), the lowest point yet, right at the edge of the urgent
+  line. Instagram/TikTok confirmed still dark — last publish 2026-10-06, now 45 consecutive days.
+  "Calm oak daily deploy" fired 2026-11-19 (~5s) with no new site-facing content pending since the
+  prior day's fire, so not a new discriminating instance either way. "Calm oak weekly seo post"
+  (last fire 2026-11-16) confirmed via branch-absence to have shipped nothing. "Calm oak weekly
+  influencer outreach" pipeline remains dark 23 days (since 2026-10-28). Seat-counter trigger still
+  disabled, unchanged since 2026-11-03 — now 18th day. Full detail in today's briefing and one new
+  `CEO-BRIEF/LESSONS-LEDGER.md` entry. · staged (9 content-factory batches, needs-Cameron);
+  needs-Cameron (`database.blotato.io` network allowlist — re-confirmed blocked at the real-upload
+  level, seat-counter intent, attended test-fire of influencer-outreach, Pinterest refill next
+  Content Factory run, check `calmandoak.com` directly for PR #20's live state)
+
 - 2026-11-18 · CEO (daily briefing #59) · **Merged PR #20** (`seo-ranker/office-cluster-hub-
   reconciliation-2026-11-17`, commit `6f0573e`) after a clean three-dot diff verification — exactly
   the 4 files claimed, 2 pure internal-link additions closing hub-reconciliation gaps in the office

@@ -153,6 +153,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-19** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 17th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-20** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now an 18th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -295,6 +298,16 @@ Concretely:
   overnight regardless (`updated_at: 2026-11-19T06:08:33Z`); queue runway down to 15 days
   (2026-11-19→2026-12-04), still above the 14-day line but closer. Seat-counter still disabled,
   17th day.
+- **Update 2026-11-20: Pinterest scheduler ran a full clean real pass this morning
+  (06:08:17–06:15:23Z, ~7min, `SUCCEEDED`), currently enabled with no same-day re-suspension visible
+  yet; queue runway now 14 days (2026-11-20→2026-12-04), the lowest point yet, right at the edge of
+  the urgent line without yet crossing it.** "Calm oak daily deploy" fired 2026-11-19 (~5s) but with
+  no new site-facing content pending since the prior day's fire, so it is not a new discriminating
+  data point either way. "Calm oak weekly seo post" (last fire 2026-11-16, ~6s) confirmed via branch
+  absence to have shipped nothing, consistent with the standing rule. Directly re-tested the
+  `database.blotato.io` block at the real-upload level this run (a presigned URL was requested
+  successfully; the actual `PUT` upload to it was still refused, 403, same host) — see
+  `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-20 entry. Seat-counter still disabled, 18th day.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
