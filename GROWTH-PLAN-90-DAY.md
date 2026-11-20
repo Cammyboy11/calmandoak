@@ -35,40 +35,49 @@ Six of your top ten queries are office-related, and you only have two pages serv
 
 Write **2 per week**. Weeks 1–4 are deliberately front-loaded with the office cluster and colours, because those already have live impressions = fastest payoff. Each new article should link up to its hub and across to siblings (the mesh you just built for prints).
 
+**Status column added 2026-11-20 (SEO-ranker), promoting the 2026-10-02 ledger candidate rule** —
+every item below was checked directly against the live repo (word count, title, links), not
+assumed. **19 of 25 are written and live; 4 are substantively covered under a different title
+(cannibalization risk — not written separately on purpose); 2 remain genuinely open** (#13, #23),
+both blocked the same way as most other still-open content on this site: `www.amazon.com` egress
+has been blocked from every cloud sandbox session since 2026-09-15, so neither a new product
+category nor a price-specific pick can be sourced or verified right now. Re-check this status
+whenever egress is confirmed open again, not on a fixed schedule.
+
 ### Tier 1 — Quick wins (write first; you already get impressions)
-1. **Japandi Desk: 9 Solid-Wood Picks for a Calm Workspace** → targets *japandi desk*, *japandi executive desk* → link to /shop/office/ + /journal/japandi-home-office/
-2. **The Best Japandi Office Chairs (Comfort Without the Clutter)** → *japandi office chair*, *japandi desk chair* (both already pos 12)
-3. **Japandi Executive Desk: Statement Desks That Stay Calm** → *japandi executive desk*
-4. **Japandi Wall Colours: 8 Paint Picks (with Hex Codes)** → *japandi wall colours*, *japandi colours* → link /journal/japandi-color-palette/
-5. **Japandi Outdoor Furniture: 10 Weather-Ready Picks** → *japandi outdoor furniture* → link /journal/japandi-outdoor/
-6. **Wabi-Sabi Decor: 12 Imperfect Pieces for a Calm Home** → broadens *wabi sabi ceramics* (47 impressions) → link /journal/wabi-sabi-ceramics/ + prints
+1. **Japandi Desk: 9 Solid-Wood Picks for a Calm Workspace** — DONE → `journal/japandi-desk/` + `journal/best-japandi-desks/`
+2. **The Best Japandi Office Chairs (Comfort Without the Clutter)** — DONE → `journal/best-japandi-office-chairs/`
+3. **Japandi Executive Desk: Statement Desks That Stay Calm** — DONE → `journal/japandi-executive-desk/`
+4. **Japandi Wall Colours: 8 Paint Picks (with Hex Codes)** — CANNIBALIZED by existing page: `journal/japandi-color-palette/` already has a full "Wall & paint colours: the exact shades" section with 4 named hex-coded paint picks + finish guidance. A standalone page targeting the same query would compete with, not complement, a page that already ranks for it — not writing a duplicate.
+5. **Japandi Outdoor Furniture: 10 Weather-Ready Picks** — DONE → `journal/japandi-outdoor/` ("The Japandi Outdoor Space — Complete Guide")
+6. **Wabi-Sabi Decor: 12 Imperfect Pieces for a Calm Home** — DONE → `journal/wabi-sabi-decor/`
 
 ### Tier 2 — Deepen the office + colour clusters (build topical authority)
-7. How to Set Up a Japandi Desk — the 6-object rule (styling)
-8. Japandi Desk Accessories: 10 pieces that earn their place
-9. Small Japandi Office Ideas for a corner or closet
-10. Japandi Paint Colors: the calm neutrals that actually work
-11. Sage Green in Japandi: how to use it without going cold
+7. How to Set Up a Japandi Desk — the 6-object rule (styling) — DONE → `journal/six-object-rule/`
+8. Japandi Desk Accessories: 10 pieces that earn their place — DONE → `journal/best-japandi-desk-accessories/`
+9. Small Japandi Office Ideas for a corner or closet — DONE → `journal/small-japandi-office/`
+10. Japandi Paint Colors: the calm neutrals that actually work — CANNIBALIZED, same page/section as #4 above.
+11. Sage Green in Japandi: how to use it without going cold — CANNIBALIZED by existing page: `journal/japandi-color-palette/`'s "Stone & sage" palette section covers the warm-vs-cool-sage distinction this item targets, plus a dedicated "Pinterest sage instead of real sage" mistake entry. Confirmed as cannibalized 2026-10-02; re-confirmed 2026-11-20.
 
 ### Tier 3 — Rooms & topics with strong search demand you don't cover yet
-12. Japandi Nursery / calm kids' room
-13. Japandi Kitchen Ideas: small-kitchen edition
-14. Japandi Bathroom on a Budget
-15. Japandi Hallway: lighting + storage
-16. Japandi Balcony Ideas for small spaces
+12. Japandi Nursery / calm kids' room — DONE → `journal/japandi-nursery/` (shipped 2026-11-06; explicitly scopes out juvenile safety gear it can't verify — see `SAFEGUARDS.md` Check 10 history)
+13. Japandi Kitchen Ideas: small-kitchen edition — OPEN, blocked on new ASIN sourcing (small-kitchen storage/cart products not yet verified on this site; `www.amazon.com` egress still blocked as of 2026-11-20) — `journal/sunday-morning-kitchen/` and `journal/why-your-kitchen-needs-a-tray/` cover budget/styling angles but not the small-space angle this item targets, so it is not cannibalized, just not yet writable.
+14. Japandi Bathroom on a Budget — DONE → `journal/250-dollar-bathroom/` (+ `journal/japandi-bathroom/` as the room pillar)
+15. Japandi Hallway: lighting + storage — DONE → `journal/japandi-hallway/`
+16. Japandi Balcony Ideas for small spaces — DONE → `journal/japandi-balcony/` (a variation section also lives in `journal/300-dollar-sunday-porch/`)
 
 ### Tier 4 — Link magnets & top-of-funnel (these attract backlinks)
-17. **Is Japandi Still in Style for 2026?** — trend report, refresh yearly (very linkable)
-18. Japandi vs Minimalism: what's the difference? (pairs with your vs-Scandinavian piece)
-19. **Japandi Colour Palette cheat-sheet / generator** — a free resource/tool page; the kind of asset other blogs link to
-20. The 12 Best Japandi Furniture Brands (beyond Amazon) — also opens higher-commission affiliate programs
+17. **Is Japandi Still in Style for 2026?** — DONE → `journal/is-japandi-still-in-style-2026/`
+18. Japandi vs Minimalism: what's the difference? — DONE → `journal/japandi-vs-minimalism-wabi-sabi/` (+ `journal/japandi-vs-scandinavian/`, `journal/japandi-vs-scandinavian-vs-wabi-sabi/`)
+19. **Japandi Colour Palette cheat-sheet / generator** — DONE → `/palette/` + `/palette-cheat-sheet/` (free tool + lead magnet, live since 2026-06-24)
+20. The 12 Best Japandi Furniture Brands (beyond Amazon) — DONE → `journal/best-japandi-furniture-brands/`
 
 ### Tier 5 — Seasonal (publish 6–8 weeks ahead; Pinterest loves these)
-21. Japandi Fall Decor: warm minimal textures
-22. Japandi Christmas / quiet holiday styling
-23. Japandi Gifts Under $50 (expand your gift guide)
-24. Japandi Gifts for Him / for the Home (gift-guide spin-offs)
-25. New Year Calm Reset: the 30-minute declutter
+21. Japandi Fall Decor: warm minimal textures — DONE → `journal/japandi-fall-decor/`
+22. Japandi Christmas / quiet holiday styling — DONE → `journal/japandi-christmas/`
+23. Japandi Gifts Under $50 (expand your gift guide) — **OPEN.** `journal/best-japandi-gifts/` exists but is a general "how to choose" guide with no price-point angle — a true "$50" guide needs current, verifiable prices per pick, and `www.amazon.com` egress has been blocked from this sandbox since 2026-09-15 (confirmed still blocked as of 2026-11-20's re-test, see `CEO-BRIEF/LESSONS-LEDGER.md`). Writing it with stale or invented prices would violate the "never state prices we don't control" guardrail below. Ready to write the day egress opens or Cameron supplies verified current prices for the gift-guide ASINs already live on `shop/gift-guide/`.
+24. Japandi Gifts for Him / for the Home (gift-guide spin-offs) — CANNIBALIZED by existing page: `journal/best-japandi-gifts/` already segments by recipient/occasion ("For the quiet host," "For the homebody," "For the small gesture"), covering the audience-split angle this item targets without needing new prices or ASINs.
+25. New Year Calm Reset: the 30-minute declutter — DONE → `journal/new-year-calm-reset/`
 
 ---
 
