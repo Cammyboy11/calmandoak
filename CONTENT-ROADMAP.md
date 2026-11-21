@@ -31,27 +31,31 @@ Rooms map onto that: **Living Room (furniture)** and **Bedroom** first, then **K
 
 ## Phase 1 — Authority + audience (next ~8 weeks)
 
+**Status check 2026-11-20 (SEO-ranker):** every box below was re-verified directly against the live
+repo (word counts, internal links, schema) rather than assumed from the checklist's own state —
+the checklist had drifted well behind actual site state. All of Sprint 1–3 is done. Nothing in this
+phase is open.
+
 ### Sprint 1 — Foundation (this is where we are)
 - [x] P0 SEO fixes: invalid Product schema removed; Looks in sitemap.
-- [ ] **Mega-pillar: "What is Japandi? The Complete Guide"** — upgrade `journal/japandi-101/` into the definitive 1,800–2,500-word hub: definition, origins (Japanese + Scandinavian), the core principles, palette, materials, Japandi vs Scandinavian vs minimalism, and a room-by-room section that links out to every room pillar + Look. This page targets the head term and becomes the spine of the site.
-- [ ] **Named author + E-E-A-T** (blocked on owner input — see below). Add byline + bio + Person schema. Do this before pushing traffic.
-- [ ] **Category buying guides** — add 150–300 words of original how-to-choose / what-to-avoid / sizing to each of the 10 shop category pages (kills the thin-content risk). Order by demand.
+- [x] **Mega-pillar: "What is Japandi? The Complete Guide"** — `journal/japandi-101/` is a 3,861-word hub: definition, origins, principles, palette, materials, Japandi-vs-Scandinavian-vs-minimalism, room-by-room links out. Exceeds the original 1,800–2,500-word target.
+- [x] **Named author + E-E-A-T** — byline ("By Cameron Hayes", `rel="author"`) + `/about/` bio + Person schema confirmed live across articles (spot-checked `japandi-color-palette`, `japandi-101`).
+- [x] **Category buying guides** — all 10 shop category pages carry original how-to-choose prose (e.g. `/shop/office/` has an "How to choose a Japandi workspace" H2), 1,600–2,400 words each. The two near-empty word counts found (`/shop/dining/`, `/shop/living-room/`, 187 words) are intentional `noindex` redirect stubs to `/shop/ceramics-tableware/` and the merged room category, not thin content — correctly excluded.
 
 ### Sprint 2 — Room pillars (highest commercial intent)
-Build/upgrade these as comprehensive guides, each linking to its Looks + shop category + budget build-guides:
-- [ ] **Japandi Living Room** → links to "A Quiet Living Room" + "Soft-Lit Reading Nook" Looks, /shop/furniture, /shop/lighting, the $300 textile refresh.
-- [ ] **Japandi Bedroom** → "A Quiet Japandi Bedroom" Look, /shop/bedroom, the $400 small-bedroom + $250 bedside guides.
-- [ ] **Japandi Kitchen & Dining** → "The Evening Dining Table" Look, /shop/japandi-kitchen, /shop/ceramics-tableware, the $500 dining + Sunday-kitchen guides.
-- [ ] **Japandi Entryway** → "The Entryway, Lit" Look, the $300 + $200 entryway guides.
+- [x] **Japandi Living Room** (`journal/japandi-living-room/`, 4,009 words) → links to `/shop/furniture/`, `/shop/lighting/`, `/journal/300-dollar-living-room-textile-refresh/`.
+- [x] **Japandi Bedroom** (`journal/japandi-bedroom/`, 3,969 words) → links to `/shop/bedroom/`, `/journal/400-dollar-small-bedroom/`.
+- [x] **Japandi Kitchen & Dining** (`journal/japandi-dining-room/`, 3,998 words) → links to `/shop/japandi-kitchen/`, `/shop/ceramics-tableware/`, `/journal/500-dollar-dining-table-set/`, `/journal/sunday-morning-kitchen/`.
+- [x] **Japandi Entryway** (`journal/japandi-entryway/`, 4,918 words) → links to `/journal/200-dollar-entryway-organizer/`, `/journal/300-dollar-entryway/`.
 
 ### Sprint 3 — Concept clusters + remaining rooms
-- [ ] **Materials & palette cluster** pillar — absorbs honest-materials, two-woods-rule, japandi-color-palette, linen-vs-cotton-vs-wool, wabi-sabi-ceramics.
-- [ ] **Styling-rules cluster** pillar — absorbs art-of-negative-space, single-stem-rule, the-30-30-30-rule, nightstand-styling, warmth-without-clutter.
-- [ ] Room pillars: **Bathroom**, **Home Office**, **Outdoor/Porch** (link existing budget guides).
-- [ ] Keep shipping **Looks** (1/week) from approved products + existing pins — they out-perform single-product pins on SEO, Pinterest, and affiliate value.
+- [x] **Materials & palette cluster** pillar (`journal/japandi-materials-palette/`, 4,165 words) — confirmed links to all 5 named spokes (honest-materials, two-woods-rule, japandi-color-palette, linen-vs-cotton-vs-wool, wabi-sabi-ceramics).
+- [x] **Styling-rules cluster** pillar (`journal/japandi-styling-rules/`, 3,944 words) — confirmed links to all 5 named spokes (art-of-negative-space, single-stem-rule, the-30-30-30-rule, nightstand-styling, warmth-without-clutter).
+- [x] Room pillars: **Bathroom** (`japandi-bathroom` + `250-dollar-bathroom`), **Home Office** (full cluster, see `GROWTH-PLAN-90-DAY.md`), **Outdoor/Porch** (`japandi-outdoor`, `300-dollar-sunday-porch`, `japandi-balcony`) — all live.
+- [x] **Looks** — 119 live `shop/looks/*` pages as of 2026-11-20, well ahead of the 1/week pace since this plan started; ongoing, no action needed.
 
 ### Always-on (audience)
-- [ ] Email: welcome automation + recurring "one quiet room" send wired to the Starter Guide lead magnet. I draft; owner approves before any send.
+- [x] Email capture + welcome automation to the Starter Guide is wired and live (MailerLite, confirmed 2026-06-24). The recurring "one quiet room" send stays a manual, owner-approved action per `CONTROL.md`'s rate ceiling (max 1 newsletter / 1–2 week cycle) — I draft, owner sends.
 
 ---
 

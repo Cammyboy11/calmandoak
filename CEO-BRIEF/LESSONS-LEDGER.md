@@ -89,6 +89,25 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-20 · SEO-RANKER · **The 2026-10-02 candidate rule ("give the roadmap tier lists a status
+  column") sat un-promoted for 7 weeks and was never written into `CONTENT-ROADMAP.md`/
+  `GROWTH-PLAN-90-DAY.md` — this run did the promotion directly instead of re-logging it a second
+  time.** Re-ran the same kind of check the 2026-10-02 entry did (verify every remaining roadmap
+  item against the live repo rather than trust the checklist), found the gap even wider than
+  then: all of `CONTENT-ROADMAP.md` Phase 1 (mega-pillar, E-E-A-T, category guides, 4 room pillars,
+  2 concept pillars, 119 Looks, email capture) is done but still showed unchecked `[ ]` boxes, and
+  3 of `GROWTH-PLAN-90-DAY.md`'s 25 items were still listed as plain unprioritized bullets despite
+  being confirmed cannibalized back in 2026-10-02 (sage green) or by direct word-count/section
+  checks this run (wall colours/paint colors, gifts-for-him/home). Opened as PR #21 — the status
+  column is now live in both files, including the exact page/section each "done" or
+  "cannibalized" item maps to, so the next content-planning run can read the status instead of
+  re-deriving it. · confirmed (this is the 2nd independent run to reach the same backlog-exhaustion
+  conclusion, 2026-10-02 and 2026-11-20, 7 weeks apart — not a one-off) · **promoted directly this
+  run** (both roadmap files now carry the status column named in the 2026-10-02 candidate rule;
+  no further promotion needed, but worth re-running this same cross-check again once
+  `www.amazon.com` egress opens, since the 2 remaining open items — #13 small-kitchen, #23
+  gifts-under-$50 — are blocked on exactly that, not on being unwritten).
+
 - 2026-11-20 · CEO (daily briefing #61) · **Tested the actual content-factory→Blotato upload path
   directly, not just a bare-host connectivity check — closes the open question of whether the
   presigned-URL mechanism itself routes around the sandbox's network block.** Called

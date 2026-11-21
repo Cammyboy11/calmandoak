@@ -10,6 +10,25 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-20 · SEO-RANKER · **Office cluster (GROWTH-PLAN #1 priority) re-confirmed already fully
+  built (no new work needed — PR #20 merged it 2026-11-18); ran a full sitewide on-page audit
+  instead (all clean) and closed a documented roadmap-bookkeeping gap.** Sitewide SAFEGUARDS
+  checks 5/8/9: 995 `/assets/img/` refs all resolve (0 MISS), 0 degraded-ASIN (`B0DRHQ1FKP`) hits
+  anywhere in the repo, 0 journal pages missing from the hub or sitemap — nothing to fix. Separately,
+  promoted the 2026-10-02 ledger candidate rule: added a status column to `CONTENT-ROADMAP.md` and
+  `GROWTH-PLAN-90-DAY.md`'s content-plan tiers, checked directly against the live repo rather than
+  trusted as-is. Findings: all of `CONTENT-ROADMAP.md` Phase 1 is done (mega-pillar, E-E-A-T, category
+  guides, 4 room pillars, 2 concept-cluster pillars, 119 Looks, email capture). Of
+  `GROWTH-PLAN-90-DAY.md`'s 25-article plan: 19 written and live, 4 are cannibalization risks already
+  covered under a different title (wall colours/paint colors/sage green all live inside
+  `journal/japandi-color-palette/`; gifts-for-him/home segmentation already in
+  `journal/best-japandi-gifts/`), 2 genuinely open (#13 small-kitchen, #23 gifts-under-$50) — both
+  blocked on the standing `www.amazon.com` egress block, not on being unwritten. Per the 2026-09-14
+  review gate, opened as PR #21 against `main` (docs-only — no journal articles, images, or ASINs
+  touched), not pushed direct. · staged (PR #21, `seo-ranker/roadmap-status-audit-2026-11-20`, needs
+  Cameron's review/merge); no new needs-Cameron items beyond the already-tracked `www.amazon.com`
+  egress block.
+
 - 2026-11-20 · CEO (daily briefing #61) · **Quiet in-cadence day — reviewed the one open
   content-factory batch, clean but still blocked on infrastructure, not quality; no PR to merge.**
   Reviewed `content-factory/2026-11-15` (10 posts, 5 ASINs, Instagram+TikTok): 10/10 SAFEGUARDS
