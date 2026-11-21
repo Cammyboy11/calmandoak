@@ -108,6 +108,43 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
   `www.amazon.com` egress opens, since the 2 remaining open items — #13 small-kitchen, #23
   gifts-under-$50 — are blocked on exactly that, not on being unwritten).
 
+- 2026-11-21 · CEO (daily briefing #62) · **Instagram resumed posting after 45 consecutive dark
+  days with zero paper trail anywhere — the 2nd instance of "Cameron's own direct action, no
+  TEAM-LOG/ledger entry," now on a different channel than the 1st (Blotato publishing vs. the
+  2026-10-16 entry's direct git pushes).** Two Instagram posts went live 2026-11-20 (17:31 and
+  12:00 UTC) — a Crane at Dawn tapestry post (own DTC product, no affiliate link, needs no
+  disclosure) and an Amazon-affiliate "contrast" post that does carry the full FTC disclosure
+  sentence. A full paginated `list_triggers` pass (both pages, `has_more: false`) found no Calm &
+  Oak trigger that publishes to Instagram at all — the only device-bound/cloud triggers touching
+  Blotato are the daily Pinterest scheduler (Pinterest only, by its own prompt's hard constraint)
+  and the weekly content-factory/seo-post pipelines (which stage, don't publish, per the 2026-09-14
+  review gate). Neither post's content matches any open content-factory batch manifest. Most
+  likely explanation: Cameron scheduled these directly via the Blotato dashboard himself — his own
+  prerogative, not an agent bypassing the review gate — but exactly the kind of action the
+  2026-10-14 trigger-change-logging rule and the 2026-10-16 ledger entry were written to catch
+  going forward, now recurring on a 2nd channel. · confirmed (2nd independent instance of the same
+  underlying shape — real-world action, zero paper trail — across two different channels, 5 weeks
+  apart) · **candidate rule, needs one more instance before promotion:** when the CEO finds
+  real-world published/shipped content with no matching trigger, batch, or TEAM-LOG entry, name it
+  explicitly as likely-Cameron-direct rather than investigating it as an agent malfunction — but
+  still flag it every time, since the alternative (an unexplained/unauthorized posting channel)
+  would be a real risk if the pattern ever doesn't trace back to Cameron.
+
+- 2026-11-21 · CEO (daily briefing #62) · **Pinterest queue runway crossed under the
+  `CEO-OPERATING-BRIEF.md`-defined 14-day urgent line for the first time since tracking began.**
+  13 days (2026-11-21→2026-12-04, scheduled posts confirmed via `blotato_list_posts` with the
+  correct `since`/`until` params per the 2026-11-09 ledger entry), down from 14 yesterday and 26 at
+  the high-water mark (2026-11-11). The daily Pinterest scheduler itself fired clean today
+  (06:08:24–06:16:22Z, ~8min, real work, `SUCCEEDED`, no suspension) — the shrinking runway is a
+  genuine supply problem (the local vault's approved-pin queue running low), not a trigger-health
+  problem. Content-factory's own spec checks real per-platform runway before deciding what to build
+  and has skipped Pinterest in every batch since 2026-09-20 because runway looked healthy; tomorrow's
+  run (due 2026-11-22T12:00 UTC) should see the new 13-day figure and build Pinterest content
+  instead of skipping it again. · confirmed (first time this specific threshold has been crossed,
+  not a repeat of an existing pattern) · not yet a rule — a one-time threshold crossing to watch,
+  not a process gap; re-check tomorrow whether content-factory's own runway check actually reacts
+  to it.
+
 - 2026-11-20 · CEO (daily briefing #61) · **Tested the actual content-factory→Blotato upload path
   directly, not just a bare-host connectivity check — closes the open question of whether the
   presigned-URL mechanism itself routes around the sandbox's network block.** Called

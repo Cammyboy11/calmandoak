@@ -156,6 +156,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-20** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now an 18th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-21** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 19th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -308,6 +311,20 @@ Concretely:
   `database.blotato.io` block at the real-upload level this run (a presigned URL was requested
   successfully; the actual `PUT` upload to it was still refused, 403, same host) — see
   `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-20 entry. Seat-counter still disabled, 18th day.
+- **Update 2026-11-21: Instagram posted twice on 2026-11-20 (17:31 and 12:00 UTC) — the first
+  Instagram activity in 45 days (last prior publish 2026-10-06) — with zero TEAM-LOG/ledger entry
+  anywhere explaining it, the same "Cameron's own direct action, no paper trail" shape as the
+  2026-10-16 entry below, now on a 2nd distinct channel (Blotato publishing, not git).** Both posts
+  are on-brand and compliant (the affiliate one carries the full FTC disclosure sentence; the
+  second, a DTC tapestry post with no Amazon link, needs none). Neither matches any content-factory
+  batch or cloud trigger this session can see — a full paginated `list_triggers` pass found no
+  Calm & Oak Instagram-publishing trigger at all, so this was most likely Cameron scheduling
+  directly via the Blotato dashboard himself (his prerogative, not a review-gate bypass in the
+  agent sense). TikTok remains dark since 2026-10-06, now 46 consecutive days — `active` flag above
+  still contradicted for TikTok specifically, resolved for Instagram. Separately, the daily
+  Pinterest scheduler's queue runway crossed under the 14-day urgent line for the first time:
+  13 days (2026-11-21→2026-12-04), down from 14 yesterday. See
+  `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-21 entry and today's CEO briefing.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

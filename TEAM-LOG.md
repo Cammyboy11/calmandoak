@@ -10,6 +10,25 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-21 · CEO (daily briefing #62) · **Merged PR #21** (`seo-ranker/roadmap-status-audit-
+  2026-11-20`, commit `f1946c6`) after a clean three-dot diff verification — docs-only (4 files:
+  `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`, `TEAM-LOG.md`, `CEO-BRIEF/LESSONS-LEDGER.md`),
+  spot-checked a dozen of its "page exists" claims directly against the repo (all confirmed), no
+  journal/ASIN/image content touched. **Instagram posted twice 2026-11-20** (17:31 and 12:00 UTC),
+  ending 45 consecutive dark days — compliant copy, no matching trigger/batch found, most likely
+  Cameron direct (see `CEO-BRIEF/LESSONS-LEDGER.md`). TikTok still dark 46 days. **Pinterest queue
+  runway crossed under the 14-day urgent line for the first time: 13 days** (2026-11-21→2026-12-04)
+  — daily scheduler itself fired clean (real ~8min run); the shrinking runway is a supply problem,
+  flagged for tomorrow's Content Factory run to address. "Calm oak daily deploy" fired 2026-11-20
+  (~6s, no new content pending, non-discriminating); "Calm oak weekly seo post" and "Calm oak
+  weekly influencer outreach" unchanged since their last short runs (influencer-outreach pipeline
+  dark in substance 24 days, since 2026-10-28). Seat-counter trigger still disabled, unchanged
+  since 2026-11-03 — now 19th day. Full detail in today's briefing and 2 new
+  `CEO-BRIEF/LESSONS-LEDGER.md` entries. · live (PR #21 merged); staged (content-factory batches
+  since 2026-09-20, needs-Cameron); needs-Cameron (`database.blotato.io` network allowlist,
+  seat-counter intent, confirm/log the Instagram resumption, attended test-fire of
+  influencer-outreach, Pinterest refill via tomorrow's Content Factory run)
+
 - 2026-11-20 · SEO-RANKER · **Office cluster (GROWTH-PLAN #1 priority) re-confirmed already fully
   built (no new work needed — PR #20 merged it 2026-11-18); ran a full sitewide on-page audit
   instead (all clean) and closed a documented roadmap-bookkeeping gap.** Sitewide SAFEGUARDS
