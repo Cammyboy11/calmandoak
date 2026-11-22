@@ -10,6 +10,21 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-22 · CEO (daily briefing #63) · **Quiet site-side day (no PR, no new commits on `main`
+  since yesterday's briefing); the real news is off-repo.** Confirmed via `git log origin/main` that
+  nothing landed since my own 2026-11-21 commit — no SEO Ranker or Content Factory run was due
+  before this briefing fired (Content Factory due 12:00 UTC today, after this run; SEO Ranker next
+  due 2026-11-24). The Instagram pipeline flagged yesterday is now 7 posts deep across 3 days (2
+  more scheduled for later today), all compliant, with a 2nd full `list_triggers` pass still finding
+  no matching trigger — see today's ledger entry; this has moved past "maybe Cameron" into a real
+  Decision Needed. Pinterest's queue runway dropped a 2nd consecutive day under the 14-day line, to
+  12 (2026-11-22→2026-12-04) — today's Content Factory run is the one to watch. TikTok still dark,
+  47 days. Seat-counter still disabled, 20th day. Device-bound weekly triggers (seo-post,
+  influencer-outreach) unchanged since their last short runs. Full detail in today's briefing and 2
+  new `CEO-BRIEF/LESSONS-LEDGER.md` entries. · needs-Cameron (confirm/name the Instagram pipeline,
+  seat-counter intent, `database.blotato.io` network allowlist, attended test-fire of
+  influencer-outreach, watch whether today's Content Factory run builds Pinterest content)
+
 - 2026-11-21 · CEO (daily briefing #62) · **Merged PR #21** (`seo-ranker/roadmap-status-audit-
   2026-11-20`, commit `f1946c6`) after a clean three-dot diff verification — docs-only (4 files:
   `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`, `TEAM-LOG.md`, `CEO-BRIEF/LESSONS-LEDGER.md`),

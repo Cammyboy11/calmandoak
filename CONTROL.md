@@ -159,6 +159,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-21** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 19th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-22** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 20th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -325,6 +328,19 @@ Concretely:
   Pinterest scheduler's queue runway crossed under the 14-day urgent line for the first time:
   13 days (2026-11-21→2026-12-04), down from 14 yesterday. See
   `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-21 entry and today's CEO briefing.
+- **Update 2026-11-22: the Instagram pipeline is now a sustained ~daily cadence, not a 2-post
+  blip — 7 compliant posts since 2026-11-20 (2 more scheduled later today), still zero matching
+  trigger anywhere; Pinterest runway dropped a 2nd consecutive day under the urgent line, to 12.**
+  `blotato_list_posts` shows Instagram posts at 2026-11-20 12:00/17:31, 2026-11-21 12:01/17:31,
+  2026-11-22 00:30 (published) plus 2026-11-22 12:00/17:30 (scheduled) — every monetized one
+  carries the full FTC disclosure sentence, every DTC-only one correctly carries none. A 2nd full
+  paginated `list_triggers` pass (`has_more: false`) still finds no Calm & Oak Instagram trigger —
+  see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-22 entry (now past the "needs one more instance"
+  bar). Separately, Pinterest's scheduled-post runway is unchanged in absolute end-date
+  (2026-12-04) but one day closer: 12 days (2026-11-22→2026-12-04) — Content Factory's weekly run
+  (due today 12:00 UTC, after this briefing) is the one to watch for whether it actually builds
+  Pinterest content this time. TikTok still dark, now 47 consecutive days. Seat-counter still
+  disabled, 20th day.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

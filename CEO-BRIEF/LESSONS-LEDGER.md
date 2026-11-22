@@ -89,6 +89,43 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-22 · CEO (daily briefing #63) · **The 2026-11-21 candidate rule ("real-world published
+  content with no matching trigger/batch — name as likely-Cameron-direct, needs one more instance")
+  is now confirmed well past the needed bar: Instagram has posted on an almost-daily cadence for 3
+  consecutive days with zero paper trail throughout, not just the original 2 posts.** Since the
+  2026-11-21 entry, 5 more Instagram items appeared in `blotato_list_posts`: a published microseason
+  post (2026-11-22T00:30, "Kinsenka saku — the daffodils bloom"), two more scheduled for later today
+  (2026-11-22T12:00 and 17:30), and 2 more published 2026-11-21 (12:01 table-runner post, 17:31
+  Crane-tapestry reel) — 7 total since 2026-11-20, all on-brand and compliant (every monetized post
+  carries the full FTC disclosure sentence; the DTC-only posts, which carry no Amazon link, correctly
+  carry none). A 2nd full paginated `list_triggers` pass (both pages, `has_more: false`) still finds
+  no Calm & Oak Instagram-publishing trigger of any kind. The content itself (named Japanese
+  microseasons, specific product/material detail, a consistent and distinctive voice) reads as a
+  genuinely maintained pipeline, not a one-off dashboard session — which makes "most likely Cameron
+  direct" a weaker default explanation than it was at 1-2 posts; it could equally be a recurring job
+  outside this account's trigger list entirely (a native Blotato automation, a session on another
+  device, something else). · confirmed (far exceeds the ≥2-3 instance bar — 7 posts across 3 days,
+  same zero-paper-trail shape as the 2026-11-21 entry and, before that, the 2026-10-16 direct-git-push
+  entry) · **Decision Needed this run, not deferred to next consolidation:** ask Cameron directly
+  what this pipeline is and get it named/documented (`ORG-CHART.md` if it's a real role) — the risk
+  calculus changes once it's a sustained cadence rather than a single session's dashboard action.
+
+- 2026-11-22 · CEO (daily briefing #63) · **Pinterest queue runway dropped a 2nd consecutive day
+  under the 14-day urgent line, to 12 days, with Content Factory's own refill run not yet fired.**
+  `blotato_list_posts(status=scheduled, platform=pinterest, 2026-11-22→2026-12-10)` returns the same
+  last `postTime` as yesterday's check, 2026-12-04T00:05Z — one full day of runway consumed with
+  nothing added, confirming yesterday's read that this is a supply problem, not a trigger-health one.
+  The daily Pinterest scheduler itself re-suspended overnight (`device_absent`,
+  `updated_at: 2026-11-22T06:08:38Z`) after a clean real ~8min run yesterday, missing today's 06:00
+  UTC slot — expected device-bound behavior, not a new issue. Content Factory (weekly, Sun 12:00
+  UTC) is due today, after this briefing — the 2026-11-21 entry flagged that its own spec should
+  react to the sub-14-day runway by building Pinterest content instead of skipping it again (it has
+  skipped Pinterest in every batch since 2026-09-20, each time because runway looked healthy). ·
+  confirmed (2nd consecutive day under the line, continuing the exact trend named 2026-11-21) · not
+  yet a rule — re-check tomorrow whether today's Content Factory run actually built Pinterest
+  content; if it skips Pinterest again with runway this low, that gap (the spec's own runway check
+  not actually triggering a build) is worth a named rule at the next consolidation.
+
 - 2026-11-20 · SEO-RANKER · **The 2026-10-02 candidate rule ("give the roadmap tier lists a status
   column") sat un-promoted for 7 weeks and was never written into `CONTENT-ROADMAP.md`/
   `GROWTH-PLAN-90-DAY.md` — this run did the promotion directly instead of re-logging it a second
