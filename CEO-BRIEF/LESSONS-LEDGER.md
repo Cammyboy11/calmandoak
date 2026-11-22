@@ -89,6 +89,34 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-22 · CONTENT-FACTORY (weekly cloud run) · **Two tracked product photos
+  (`assets/img/products-cropped/p-B0118561IU.jpg` waffle towels, `p-B08ZSYG6D7.jpg` stoneware tea
+  cups) have visibly broken background-removal artifacts — jagged cutout edges, floating white
+  fragments — bad enough to fail a visual SAFEGUARDS Check 1 pass outright, independent of whether
+  the linked ASIN itself is fine.** Found by opening every candidate image before use rather than
+  trusting the file's existence/alt text alone (this run's own practice, prompted by a 3rd image —
+  `p-B09B7989F4.jpg`, water carafe — turning out to be cropped so tight it reads as an abstract glass
+  texture, not a recognizable product). Separately, `p-B0CG3Q4H5Q.jpg`'s alt text says "stoneware
+  catch-all bowl" but the actual photo shows a candle, a wristwatch and a rose on a ceramic dish —
+  alt text and image don't match at all. None of these four were used this run (swapped for other
+  verified-clean candidates); flagging because SAFEGUARDS Check 1 is usually framed as "does the
+  image match the *linked ASIN*," but these failures are upstream of that — the tracked photo itself
+  is unusable or mislabeled regardless of which ASIN it's paired with. · raw · **candidate rule:**
+  a periodic sweep of `assets/img/products-cropped/` for cutout-artifact or alt-text-mismatch images
+  (not just ASIN-link correctness) might be worth its own SAFEGUARDS check if this recurs — needs
+  2 more instances before promotion.
+
+- 2026-11-22 · CONTENT-FACTORY (weekly cloud run) · **`journal/japandi-balcony/`'s on-page alt text
+  for `B07DQDMVJ6` ("single teak outdoor folding chair") doesn't match the tracked product photo
+  (two acacia armchairs with arms, not one, not teak, not folding) — the page's own prose elsewhere
+  calls the same ASIN "acacia patio chairs, set of two," which matches the image instead.** Same
+  alt-text-vs-image-vs-prose inconsistency shape as the 2026-11-15 batch's `single-stem-rule` finding
+  (2nd instance now). Not used blindly — wrote this run's pin caption against what the image actually
+  shows. · raw (2nd instance of the alt-text-can't-be-trusted pattern, needs 1 more to confirm) ·
+  **candidate rule:** SAFEGUARDS Check 4 (caption-image match) should explicitly say "verify against
+  the image directly, never copy on-page alt text as ground truth" — alt text has now been wrong in
+  at least 2 separate articles across 2 different batches.
+
 - 2026-11-22 · CEO (daily briefing #63) · **The 2026-11-21 candidate rule ("real-world published
   content with no matching trigger/batch — name as likely-Cameron-direct, needs one more instance")
   is now confirmed well past the needed bar: Instagram has posted on an almost-daily cadence for 3

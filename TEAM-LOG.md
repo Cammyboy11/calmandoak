@@ -10,6 +10,43 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-22 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-pin Pinterest refill batch,
+  branch `content-factory/2026-11-22` — not merged, not scheduled, per the 2026-09-14 public-facing
+  review gate.** Read `CONTROL.md` first (`PAUSE: false`) and `CEO-BRIEF/LESSONS-LEDGER.md` in full —
+  confirmed `final pins/`, `01-brand-assets/` through `05-products-by-day/`, and `Pin Copy Library*.md`
+  are all gitignored/local-only and absent on this fresh clone; fell back to tracked
+  `assets/img/products-cropped/` and reconstructed voice from `CONTROL.md` + the live queue's own
+  caption style. **Checked real state before building:** `blotato_list_accounts` — 3 accounts
+  connected, no contradiction with CONTROL.md's pause flags. `blotato_list_posts` — Pinterest's
+  queue ends 2026-12-04T00:05Z (the 12-day-runway gap CONTROL.md flagged today); Instagram has 7
+  posts scheduled through 2026-11-27 via a pipeline with no matching trigger (already a named
+  Decision Needed, not this run's to resolve — skipped building new IG content since that channel
+  isn't short); TikTok has **zero** scheduled items despite CONTROL.md's `TIKTOK: active` flag —
+  flagged as a live contradiction, not resolved, per this run's instructions. Pulled all 9 open
+  `content-factory/*` branches' manifests for their cumulative 47-ASIN exclusion list (incl. the
+  degraded `B0DRHQ1FKP`) — zero overlap with this batch. Sourced 10 ASINs from already-live
+  `journal/`/`shop/` product cards (brass cordless lantern, cream ceramic planter set, marble vanity
+  tray, linen euro shams, seagrass storage boxes, cotton-rope basket, acacia patio chairs, stoneware
+  salt cellar, round black-framed mirror, outdoor seat cushions) — all 10 visually opened and
+  SAFEGUARDS Check 1-verified against their actual product class before building; 3 other candidates
+  (water carafe, waffle towels, stoneware tea cups) rejected for bad crops/cutout artifacts or
+  alt-text/image mismatch, not used. One stale-alt-text flag for whoever next touches
+  `journal/japandi-balcony/`: `B07DQDMVJ6`'s alt calls it a single teak folding chair; the tracked
+  photo is two acacia armchairs, matching the page's own prose instead — wrote the caption against
+  the image, not the alt text. Built all 10 via `_asin-to-pin.js` (4:5 product crop → proper 2:3 pin
+  canvas, confirmed still on `main`, `npm install ffmpeg-static --no-save` run first). 10/10 pieces
+  passed all applicable SAFEGUARDS checks (1, 3, 4, 5, 7) — every caption ends with the exact
+  disclosure phrase already used on live queued posts (`#ad · As an Amazon Associate we earn from
+  qualifying purchases.`). Proposed schedule continues the live queue's exact 5/day cadence
+  starting at the next open slot (2026-12-04T12:05Z) through 2026-12-06T00:05Z — would extend
+  Pinterest's runway from 12 days back to ~15, above the urgent line. Full detail, QA blocks and
+  captions in `final pins/batches/2026-11-22/manifest.md`. **Needs-Cameron:** review/schedule this
+  manifest; `database.blotato.io` egress remains the standing blocker for scheduling from this
+  session (now 10 staged batches unscheduled); the TikTok `active`-flag-vs.-47-days-dark
+  contradiction needs a direct decision (pause the flag or fix the pipeline). · staged (branch
+  `content-factory/2026-11-22`, needs-Cameron review + schedule); needs-Cameron (TikTok
+  active-flag contradiction, `database.blotato.io` network allowlist)
+
 - 2026-11-22 · CEO (daily briefing #63) · **Quiet site-side day (no PR, no new commits on `main`
   since yesterday's briefing); the real news is off-repo.** Confirmed via `git log origin/main` that
   nothing landed since my own 2026-11-21 commit — no SEO Ranker or Content Factory run was due
