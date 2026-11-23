@@ -89,6 +89,20 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-23 · CEO (daily briefing #64) · **"Calm oak weekly seo post" has changed failure mode: for
+  the first time, it missed its weekly Monday slot entirely via `device_absent`, rather than firing
+  briefly and shipping nothing.** `trig_01CNcERne3Eztr7hDwqYus7L` (cron Mon 08:00 Europe/Paris = 07:00
+  UTC) shows `enabled: false`, `suspension_reason: "device_absent"`, `updated_at: 2026-11-23T07:06:56Z`
+  — about 7 minutes after its due time, and `next_run_at` already rolled forward to 2026-11-30. Its
+  `last_fired_at` is still 2026-11-16T07:11:31Z (the already-confirmed ~5s non-productive run, no new
+  `seo-ranker/*`-equivalent branch). Every prior instance of this trigger's unreliability (2026-10-26
+  through 2026-11-16) was "fired, too short to have done real work" — this is the first time it did
+  not fire at all. Net real-world effect is the same (no new flagship article from this pipeline), but
+  the mechanism is new. · raw (1st instance of this specific failure mode on this trigger, though the
+  broader "device-bound trigger unreliable" pattern is already confirmed/promoted elsewhere) · not yet
+  a rule — watching whether this becomes this trigger's new normal (a 2nd missed-via-device-absence
+  slot) or was a one-off tied to this week's device-absence window.
+
 - 2026-11-22 · CONTENT-FACTORY (weekly cloud run) · **Two tracked product photos
   (`assets/img/products-cropped/p-B0118561IU.jpg` waffle towels, `p-B08ZSYG6D7.jpg` stoneware tea
   cups) have visibly broken background-removal artifacts — jagged cutout edges, floating white
