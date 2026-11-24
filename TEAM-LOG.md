@@ -80,8 +80,10 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
   path) on Cameron's own machine. Either path, the target output is simple to verify: 0 hits for
   `B0DRHQ1FKP`, file sizes in the same ballpark as today's (5.7MB / ~6MB / ~13MB), "VASAGLE MAEZO
   round side table" visible on the product-grid page of both issues. Logged in full to
-  `CEO-BRIEF/LESSONS-LEDGER.md`. · needs-Cameron (PDF-rebuild tooling gap — see above; nothing
-  shipped, nothing broken, repo unchanged from `main`)
+  `CEO-BRIEF/LESSONS-LEDGER.md`. **PR:** https://github.com/Cammyboy11/calmandoak/pull/22 (branch
+  `seo-ranker/audit-log-2026-11-24`, log-only — no site content touched, subscribed to PR activity).
+  · staged (PR #22 open, needs-Cameron review); needs-Cameron (PDF-rebuild tooling gap — see above;
+  nothing shipped to the live site, nothing broken, repo unchanged from `main`)
 
 - 2026-11-24 · CEO (daily briefing #65) · **Quiet in-cadence day on the repo side; Pinterest runway
   hit a new all-time low.** No new Calm & Oak PR (confirmed via GitHub API — only the unrelated
