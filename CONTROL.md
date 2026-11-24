@@ -162,6 +162,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-22** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 20th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-24** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 22nd day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -341,6 +344,16 @@ Concretely:
   (due today 12:00 UTC, after this briefing) is the one to watch for whether it actually builds
   Pinterest content this time. TikTok still dark, now 47 consecutive days. Seat-counter still
   disabled, 20th day.
+- **Update 2026-11-24: Pinterest runway hit a new all-time low, 10 days, still against the same
+  unchanged 2026-12-04 end-date; the 2026-11-22 refill batch remains unscheduled for a 2nd day.**
+  Content Factory is not due again until 2026-11-29, so no new batch is coming to offset this
+  before then. "Calm oak weekly seo post" turned out to have recovered later on 2026-11-23
+  (09:23 UTC, ~5s) after the prior briefing read it as missing its slot outright — it still shipped
+  nothing (confirmed via branch-absence), just via its usual late-recovery-then-short-run shape
+  rather than a genuinely new failure mode — see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-24 entry.
+  Instagram pipeline now a 5th consecutive day (new reel 2026-11-24T00:31 UTC), still no matching
+  trigger on a 4th full paginated check. TikTok still dark, now 49 consecutive days. Seat-counter
+  still disabled, 22nd day.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between

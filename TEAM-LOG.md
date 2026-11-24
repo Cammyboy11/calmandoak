@@ -10,6 +10,23 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-24 · CEO (daily briefing #65) · **Quiet in-cadence day on the repo side; Pinterest runway
+  hit a new all-time low.** No new Calm & Oak PR (confirmed via GitHub API — only the unrelated
+  Cloudflare PR #1 open); SEO Ranker due later today (08:09 UTC, after this run), Content Factory
+  not due until 2026-11-29. Pinterest's scheduled-post runway is now **10 days**
+  (2026-11-24→2026-12-04, confirmed with explicit since/until params) — a new low, 5th consecutive
+  day under the 14-day urgent line — with the 2026-11-22 10-pin refill batch still staged,
+  unscheduled, needs-Cameron. Daily Pinterest scheduler itself fired clean this morning
+  (06:08–06:15 UTC, ~7min, real work). "Calm oak weekly seo post" turned out to have recovered
+  late on 2026-11-23 (09:23 UTC, ~5s) after yesterday's briefing read it as missed outright — still
+  shipped nothing (confirmed via branch-absence), correcting but not changing the real-world
+  outcome. Instagram pipeline continues (5th consecutive day, new reel 2026-11-24T00:31 UTC),
+  still zero matching trigger on a 4th full paginated check. TikTok now 49 days dark. Seat-counter
+  still disabled, 22nd day. Full detail in today's briefing and one new
+  `CEO-BRIEF/LESSONS-LEDGER.md` entry. · staged (`content-factory/2026-11-22`, needs-Cameron);
+  needs-Cameron (`database.blotato.io` network allowlist, confirm/name the Instagram pipeline,
+  TikTok active-flag contradiction, seat-counter intent, attended test-fire of influencer-outreach)
+
 - 2026-11-22 · CONTENT-FACTORY (weekly cloud run) · **Staged a 10-pin Pinterest refill batch,
   branch `content-factory/2026-11-22` — not merged, not scheduled, per the 2026-09-14 public-facing
   review gate.** Read `CONTROL.md` first (`PAUSE: false`) and `CEO-BRIEF/LESSONS-LEDGER.md` in full —

@@ -89,6 +89,25 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-24 · CEO (daily briefing #65) · **Correction to the 2026-11-23 entry: "Calm oak weekly
+  seo post" did not miss its Monday slot outright — it recovered later the same day and fired, just
+  still too short to have done real work.** Yesterday's check (at 07:09 UTC) found it
+  `enabled: false`, `suspension_reason: "device_absent"`, having missed its 07:00 UTC due time. A
+  fresh `list_triggers` read this run shows it actually fired later that same day:
+  `last_fired_at: 2026-11-23T09:23:35Z`, finished `09:23:40Z` (~5s), `enabled: true`,
+  `suspension_reason` now empty — ~2h23m late. Confirmed via the branch list that no
+  `seo-ranker/*` branch dated 2026-11-23 exists, so despite firing and `SUCCEEDED`-ing, it shipped
+  nothing — the same already-confirmed/promoted shape as every other short run of this trigger. Net
+  real-world effect is identical either way (no new article from this pipeline this week), but the
+  mechanism was "fired late, did nothing" (the trigger's already-documented normal failure mode),
+  not "missed entirely" (the new mode the 2026-11-23 entry flagged as a 1st instance). · raw
+  (narrows the 2026-11-23 entry's open question — this was NOT a 2nd distinct failure mode, the
+  2026-11-23 reading was simply taken before the same-day recovery happened) · not yet a rule —
+  the 2026-11-23 entry's "watching whether this becomes the new normal" question is now answered
+  for this specific occurrence (it didn't — this was the familiar recovers-late-and-ships-nothing
+  pattern), but a genuine same-day-miss-with-no-later-recovery would still be worth tracking as a
+  new mode if it happens again.
+
 - 2026-11-23 · CEO (daily briefing #64) · **"Calm oak weekly seo post" has changed failure mode: for
   the first time, it missed its weekly Monday slot entirely via `device_absent`, rather than firing
   briefly and shipping nothing.** `trig_01CNcERne3Eztr7hDwqYus7L` (cron Mon 08:00 Europe/Paris = 07:00
