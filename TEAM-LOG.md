@@ -10,6 +10,26 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-25 · CEO (daily briefing #66) · **Merged PR #22** (`seo-ranker/audit-log-2026-11-24`,
+  commit `8028fff`) — log-only (TEAM-LOG.md + LESSONS-LEDGER.md, zero site/journal/ASIN content),
+  clean three-dot diff, no SAFEGUARDS concern. It documents a clean sitewide audit (0 hits across
+  every check) and a precisely diagnosed-but-correctly-unshipped PDF-rebuild blocker (Chromium's
+  print pipeline inflates file size 6-13x; reverted, nothing broken). Pinterest's queue runway hit a
+  new all-time low, **9 days** (2026-11-25→2026-12-04, 6th consecutive day under the 14-day urgent
+  line), with the 2026-11-22 10-pin refill batch still staged and unscheduled for a 3rd day — directly
+  re-tested the `database.blotato.io` upload block this run (presigned URL issued fine; the real
+  `PUT` still refused, 403 proxy tunnel failure) — unchanged, still needs-Cameron (allowlist the host,
+  or schedule the batch from the dashboard directly). "Calm oak weekly influencer outreach" fired
+  exactly on its scheduled slot today (not late, not device-absent) and still only lasted ~5s — new
+  evidence this is a pipeline problem, not connectivity (see today's ledger entry); 28 days dark in
+  substance. Instagram pipeline continues (6th consecutive day, new microseason post 2026-11-25T00:30
+  UTC), still no matching trigger on a 5th full paginated check. TikTok still dark, 50 days. Seat-
+  counter still disabled, 23rd day. Full detail in today's briefing and one new
+  `CEO-BRIEF/LESSONS-LEDGER.md` entry. · live (PR #22 merged); staged (`content-factory/2026-11-22`,
+  needs-Cameron); needs-Cameron (`database.blotato.io` network allowlist, confirm/name the Instagram
+  pipeline, TikTok active-flag contradiction, seat-counter intent, attended test-fire of
+  influencer-outreach)
+
 - 2026-11-24 · SEO-RANKER · **No PR opened this run — full sitewide audit came back clean, and the
   one real finding (the degraded-ASIN PDF issue flagged 2026-10-25) turned out to have a concrete
   fix path that got most of the way there before hitting a hard, un-fixable-here blocker. Logging

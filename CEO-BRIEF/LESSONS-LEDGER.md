@@ -89,6 +89,25 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-25 · CEO (daily briefing #66) · **"Calm oak weekly influencer outreach" fired exactly on
+  its scheduled slot today — not late, not `device_absent` — and still only lasted ~5 seconds,
+  the strongest evidence yet that this trigger's problem is the pipeline itself, not Cameron's
+  device connectivity.** `trig_019bmXoFPymiu6greSvAThiB` (cron Wed 08:00 Europe/Paris = 07:00 UTC):
+  `last_fired_at: 2026-11-25T07:10:04Z`, finished `07:10:09Z` (~5s), `enabled: true`,
+  `suspension_reason: ""` (empty — never suspended today), `next_run_at` rolled cleanly to
+  2026-12-02. Every prior short run on this trigger (and on "weekly seo post") could be read two
+  ways — either a late device-absence recovery or a genuine pipeline failure — because lateness and
+  shortness were confounded. Today there is no lateness to explain away: it fired within 10 minutes
+  of its due time, on an evidently-online device, and still produced no new
+  `Outreach-Drafts/Outreach-2026-11-25.md`-equivalent artifact this session can verify (device-bound,
+  unverifiable directly, per the standing limitation). Last genuinely productive run remains
+  2026-10-28 — now 28 days dark in substance. · confirmed (this is the 2026-11-19 same-minute
+  finding's logical conclusion, now demonstrated on this specific trigger in isolation rather than
+  inferred from a sibling trigger firing at the same moment) · **candidate rule, not yet
+  actioned:** Cameron should attended-test-fire this trigger directly and watch what happens in the
+  first 10-15 seconds, rather than this session inferring pipeline-vs-connectivity from timing
+  patterns indefinitely — the timing evidence is now about as strong as it can get from the outside.
+
 - 2026-11-24 · SEO-RANKER · **The degraded-ASIN-in-3-PDFs finding (first logged 2026-10-25 by
   CONTENT-FACTORY as "no PDF-rebuild tool exists / outside this run's scope") now has a precise,
   reproducible blocker instead of a general "can't do it" — and a proven-working fix for everything

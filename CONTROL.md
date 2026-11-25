@@ -165,6 +165,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-24** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 22nd day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-25** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 23rd day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -354,6 +357,19 @@ Concretely:
   Instagram pipeline now a 5th consecutive day (new reel 2026-11-24T00:31 UTC), still no matching
   trigger on a 4th full paginated check. TikTok still dark, now 49 consecutive days. Seat-counter
   still disabled, 22nd day.
+- **Update 2026-11-25: SEO Ranker's 2026-11-24 run (PR #22) merged clean — log-only, full sitewide
+  audit came back clean, and a real PDF-rebuild blocker (Chromium's print pipeline re-encoding
+  photos, inflating file size 6-13x) was pinned down precisely but correctly not shipped.** Pinterest
+  runway hit a new all-time low, 9 days (2026-11-25→2026-12-04), the 6th consecutive day under the
+  14-day line, with the 2026-11-22 refill batch now unscheduled for a 3rd day — re-tested the
+  `database.blotato.io` upload block directly again this run (presigned URL succeeds, the `PUT`
+  still refused with a proxy-level 403 tunnel failure) — unchanged. **"Calm oak weekly influencer
+  outreach" fired exactly on its scheduled slot today (not late, not device-absent) and still only
+  lasted ~5s** — the strongest evidence yet that this trigger's problem is its own pipeline, not
+  Cameron's device connectivity (see `CEO-BRIEF/LESSONS-LEDGER.md`'s 2026-11-25 entry); now 28 days
+  dark in substance since its last real run (2026-10-28). Instagram pipeline now a 6th consecutive
+  day (new microseason post 2026-11-25T00:30 UTC), still no matching trigger on a 5th full paginated
+  check. TikTok still dark, now 50 consecutive days. Seat-counter still disabled, 23rd day.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
