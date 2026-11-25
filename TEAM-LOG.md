@@ -10,6 +10,81 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-24 · SEO-RANKER · **No PR opened this run — full sitewide audit came back clean, and the
+  one real finding (the degraded-ASIN PDF issue flagged 2026-10-25) turned out to have a concrete
+  fix path that got most of the way there before hitting a hard, un-fixable-here blocker. Logging
+  the precise blocker so the next run (or Cameron) doesn't have to re-derive it.** Read `CONTROL.md`
+  (`PAUSE: false`) including the 2026-09-14 review-gate section, `CEO-BRIEF/LESSONS-LEDGER.md` in
+  full, `SAFEGUARDS.md`, `CONTENT-ROADMAP.md`, `GROWTH-PLAN-90-DAY.md`. Checked for a stale
+  `.git/index.lock` before anything — none present. **Roadmap check:** the office cluster
+  (`GROWTH-PLAN-90-DAY.md`'s #1 priority) is fully built — 8 live articles, confirmed via directory
+  listing (`journal/400-dollar-home-office`, `best-japandi-office-chairs`, `japandi-home-office`,
+  `small-japandi-office`, `japandi-desk`, `best-japandi-desks`, `japandi-executive-desk`,
+  `six-object-rule`, `best-japandi-desk-accessories`) — nothing left to write there. Both remaining
+  genuinely-open `CONTENT-ROADMAP.md` items (#13 kitchen small-space, #23 gifts-under-$50) are still
+  blocked on new-ASIN sourcing — re-tested `www.amazon.com` directly this run, still refused
+  (`CONNECT tunnel failed, response 403`), same as every prior check since 2026-09-15. No new
+  article written this run as a result (writing one would mean inventing unverified prices/products,
+  against the roadmap's own guardrail). **Full site audit (safe-fix sweep):** broken `/assets/img/`
+  refs across all 982 references in `journal/`+`shop/` — 0 MISS; sitewide degraded-ASIN (`B0DRHQ1FKP`)
+  resweep across every `.html` file — 0 hits; journal-hub reconciliation (71 journal dirs, all 71
+  linked from `journal/index.html`, 0 orphans) and filter-chip counts (no numeric badges exist to
+  drift); `shop/looks/` hub, same check, clean; duplicate `<title>` tags across all 71 journal
+  pages — 0; missing meta descriptions across `journal/`+`shop/` — 0; sitewide internal-link
+  resolution check (all `href="/...">` across all 295 HTML files resolve to a real file) — 0 broken;
+  `sitemap.xml` vs. disk (221 URLs, 71 journal entries match the 71 live dirs) — consistent;
+  `robots.txt` — fine. All of this matches "already clean" per several recent prior runs' own
+  audits — the site's on-page SEO hygiene is in good shape; no new safe fix was available in that
+  surface this run. **The one real finding, investigated further than the 2026-10-25/
+  CONTENT-FACTORY entry that first caught it:** the degraded ASIN `B0DRHQ1FKP` is still live in 3
+  downloadable PDF lead-magnet assets (`assets/the-edit/_pdf/issue-01-winter.pdf`,
+  `issue-02-spring.pdf`, `the-calm-and-oak-edit-volume-one.pdf`) via an embedded clickable `/URI`
+  annotation, confirmed again via `strings | grep`. The underlying HTML sources
+  (`assets/the-edit/issue-01-winter.html`, `issue-02-spring.html`) were already fixed back on
+  2026-09-29 (now correctly show the VASAGLE MAEZO round side table, `B0B18NB7ZF`, an
+  already-verified ASIN reused elsewhere per SAFEGUARDS Check 10) — the PDFs were simply never
+  regenerated from the fixed source, almost 2 months of drift. **Attempted a full rebuild this run,
+  using this environment's pre-installed Chromium/Playwright** (`page.pdf()` printing the HTML
+  sources directly, matching their own `@media print`/`@page` CSS) **and got further than either
+  prior attempt** (both previously said "no PDF-rebuild tool exists / outside this run's
+  tooling/scope"): (1) found + fixed a real sub-bug along the way — every photo in both issues uses
+  a `<picture><source type="image/webp">` whose `.webp` file is absent from the repo entirely (never
+  committed, not gitignored, just never generated), and per spec a browser does not fall back to the
+  `<img>`'s own `.jpg` once it has committed to a matching `<source>` that then 404s — so a naive
+  render silently ships every photo as blank/broken with alt text standing in. Generated all 60
+  needed `.webp` files locally from the already-tracked `.jpg` originals (ImageMagick `convert`,
+  same pixels, different container — zero content risk) to unblock the render; confirmed via
+  `page.evaluate()` that images then loaded correctly (`naturalWidth` > 0). (2) Re-rendered both
+  issues clean — page counts matched exactly (34/34, Letter size), the degraded ASIN was gone, the
+  replacement ASIN was present and correctly placed (visually confirmed via `pdftoppm` renders of
+  the cover + both "the room, in seven pieces" product-grid pages — reads "VASAGLE MAEZO round side
+  table," item 6/12 and 3/12 respectively, matching the already-fixed HTML). Rebuilt
+  `the-calm-and-oak-edit-volume-one.pdf` via `pdfunite` (confirmed it's a straight 34+34+34+34-page
+  concatenation of all 4 issues in order, verified via page-text fingerprinting) — 136 pages,
+  matching original, 0 remaining hits on a full repo-wide PDF resweep. **Blocked at the last step and
+  reverted everything (tree is clean, nothing shipped):** the regenerated PDFs were 6–13× larger
+  than the originals (issue-01 36MB vs. 5.7MB original; `the-calm-and-oak-edit-volume-one.pdf` would
+  have shipped at ~74MB) — confirmed via `pdfimages -list` that headless Chromium's print pipeline
+  decodes every photo and re-embeds it as lossless Flate-compressed raster, not the original's JPEG
+  DCT compression (same pixel dimensions both versions; encoding changed from `jpeg`/4–7% ratio to
+  `image`/30–50% ratio). That's not shippable as a customer-facing lead-magnet download. No
+  Ghostscript, `pypdf`, or `PyMuPDF` is available in this sandbox to recompress the result, and a
+  `pip install` to add one was blocked by this session's own permission classifier (reason:
+  "Undermining Oversight") — did not attempt to work around that. Reverted the 3 PDFs
+  (`git checkout --`) and removed the 60 generated `.webp` files (`git clean -f`) — confirmed
+  `git status` clean before stopping. **Needs-Cameron / concrete unblock for next time:** either (a)
+  add Ghostscript (or any PDF image-recompression tool) to this cloud environment's setup script so
+  a future run can finish this exact rebuild — the content-side fix (webp generation + print
+  pipeline) is fully proven and ready to redo in minutes once that exists, or (b) regenerate these 3
+  PDFs from whatever tool originally built them (most likely a local export, not this HTML+Chromium
+  path) on Cameron's own machine. Either path, the target output is simple to verify: 0 hits for
+  `B0DRHQ1FKP`, file sizes in the same ballpark as today's (5.7MB / ~6MB / ~13MB), "VASAGLE MAEZO
+  round side table" visible on the product-grid page of both issues. Logged in full to
+  `CEO-BRIEF/LESSONS-LEDGER.md`. **PR:** https://github.com/Cammyboy11/calmandoak/pull/22 (branch
+  `seo-ranker/audit-log-2026-11-24`, log-only — no site content touched, subscribed to PR activity).
+  · staged (PR #22 open, needs-Cameron review); needs-Cameron (PDF-rebuild tooling gap — see above;
+  nothing shipped to the live site, nothing broken, repo unchanged from `main`)
+
 - 2026-11-24 · CEO (daily briefing #65) · **Quiet in-cadence day on the repo side; Pinterest runway
   hit a new all-time low.** No new Calm & Oak PR (confirmed via GitHub API — only the unrelated
   Cloudflare PR #1 open); SEO Ranker due later today (08:09 UTC, after this run), Content Factory

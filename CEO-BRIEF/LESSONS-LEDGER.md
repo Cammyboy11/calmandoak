@@ -89,6 +89,39 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-24 · SEO-RANKER · **The degraded-ASIN-in-3-PDFs finding (first logged 2026-10-25 by
+  CONTENT-FACTORY as "no PDF-rebuild tool exists / outside this run's scope") now has a precise,
+  reproducible blocker instead of a general "can't do it" — and a proven-working fix for everything
+  except the last step.** Using this cloud environment's pre-installed Chromium/Playwright to print
+  `assets/the-edit/issue-0{1,2}-*.html` (already-fixed sources, since 2026-09-29) back to PDF: (1)
+  found a real sub-bug first — every photo's `<picture><source type="image/webp">` points at a
+  `.webp` file that doesn't exist anywhere in the repo (never committed, not gitignored, just never
+  generated), and per the HTML spec the browser does NOT fall back to the sibling `<img src=".jpg">`
+  once it has committed to a matching `<source>` that then 404s — so any naive rebuild of these PDFs
+  would silently ship every photo blank. Fixed by generating the 60 missing `.webp` files from the
+  already-tracked `.jpg` sources via ImageMagick (same pixels, zero content risk). (2) Re-rendered
+  both issues clean, degraded ASIN gone, correct replacement ASIN visually confirmed in place on the
+  product-grid page of each. (3) Rebuilt `the-calm-and-oak-edit-volume-one.pdf` via `pdfunite`
+  (confirmed it's a plain 34+34+34+34-page concatenation of all 4 issues) — 136 pages, matching
+  original. **Then hit a hard blocker at the very last step:** headless Chromium's print-to-PDF
+  pipeline decodes every embedded photo and re-stores it as lossless Flate-compressed raster instead
+  of preserving the original's JPEG DCT compression (confirmed via `pdfimages -list`: identical pixel
+  dimensions, encoding changed from `jpeg` @ 4–7% ratio to `image` @ 30–50% ratio) — inflating the 3
+  files 6–13× (issue-01 36MB vs. 5.7MB original; volume-one would have shipped at ~74MB). Not
+  shippable as a customer lead-magnet at that size. No Ghostscript/`pypdf`/`PyMuPDF` is available in
+  this sandbox to recompress it back down, and installing one (`pip install`) was blocked by this
+  session's own permission classifier — didn't try to work around that, reverted all 3 PDFs + the 60
+  generated `.webp` files, confirmed `git status` clean. · raw (1st instance this specific
+  Chromium-print-inflation mechanism has been identified and isolated — narrows, rather than
+  duplicates, the 2026-10-25 "no tool exists" entry, since the webp-generation half of the fix is now
+  proven and ready to redo in minutes once a recompression tool is available) · **candidate rule /
+  concrete unblock, not yet actioned:** either add Ghostscript (or any PDF image-recompression tool)
+  to this cloud environment's setup script, or have Cameron regenerate these 3 PDFs from whatever
+  tool originally built them (most likely not this HTML+Chromium path, given the original files carry
+  proper JPEG-compressed images) on his own machine. Verification target either way: 0 hits for
+  `B0DRHQ1FKP`, file sizes back in the original ballpark (~5.7MB / ~6MB / ~13MB combined ~25MB not
+  ~74MB), "VASAGLE MAEZO round side table" visible on both issues' product-grid page.
+
 - 2026-11-24 · CEO (daily briefing #65) · **Correction to the 2026-11-23 entry: "Calm oak weekly
   seo post" did not miss its Monday slot outright — it recovered later the same day and fired, just
   still too short to have done real work.** Yesterday's check (at 07:09 UTC) found it
