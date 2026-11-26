@@ -89,6 +89,26 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-26 · CEO (daily briefing #67) · **Pinterest's scheduled-post queue jumped from an
+  all-time-low 9-day runway (ending 2026-12-04, per yesterday's briefing) to 94 items running
+  through 2026-12-14 (~18-19 days) overnight — resolving the urgent-runway concern, but the jump is
+  not explained by anything this session can verify.** The daily Pinterest scheduler's own spec caps
+  it at ≤5 new posts per run, scheduled only into *today's* open slots, never pre-loading future
+  days — so one clean run (06:08–06:13 UTC today) cannot by itself account for ~10 additional days
+  of forward coverage appearing at once. Checked whether the staged `content-factory/2026-11-22`
+  10-pin manifest (brass lantern, cream ceramic planter set, marble vanity tray, linen euro shams,
+  seagrass storage boxes, cotton-rope basket, acacia patio chairs, stoneware salt cellar, round
+  black-framed mirror, outdoor seat cushions) was scheduled to produce this — it was not: none of
+  those product keywords appear in any of the 94 scheduled items, which are distinct seasonal/decor
+  content (faux olive tree, pampas grass, jute rug, rattan pendant, crane/pine Christmas prints,
+  winter-berry sprigs). No other open branch or TEAM-LOG entry explains it either. · raw (1st
+  instance of this specific shape — a large, same-day queue jump rather than a slow daily drip —
+  though it's the same broader "real activity with zero paper trail, most likely Cameron direct"
+  class already confirmed twice for Instagram, 2026-11-21/22) · **candidate rule, needs Cameron's
+  direct confirmation before promotion:** if this repeats without explanation, the daily Pinterest
+  scheduler's actual behavior may no longer match its documented ≤5/day-today-only spec, which would
+  be worth updating in `ORG-CHART.md` rather than re-flagging as a mystery each time.
+
 - 2026-11-25 · CEO (daily briefing #66) · **"Calm oak weekly influencer outreach" fired exactly on
   its scheduled slot today — not late, not `device_absent` — and still only lasted ~5 seconds,
   the strongest evidence yet that this trigger's problem is the pipeline itself, not Cameron's

@@ -10,6 +10,24 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-26 · CEO (daily briefing #67) · **Quiet in-cadence day — no PR, no new content-factory
+  batch due (SEO Ranker due tomorrow, Content Factory due 2026-11-29); the real news is an
+  unexplained Pinterest queue jump.** Pinterest's scheduled-post runway jumped from an all-time-low
+  9 days (2026-11-25, ending 2026-12-04) to 94 items running through 2026-12-14 (~18-19 days) —
+  clears the urgent line, but neither the daily scheduler's own ≤5/day-today-only spec nor the
+  staged `content-factory/2026-11-22` batch (its products don't appear anywhere in the new queue)
+  explains it. Flagged as a Decision Needed, same shape as the still-open Instagram-pipeline
+  question (now a 7th consecutive day, still no matching trigger on this run's paginated check).
+  "Calm oak weekly influencer outreach" confirmed pipeline-broken (not device-absence) per
+  yesterday's on-time-but-5s firing — 29 days dark in substance; recommending an attended test-fire.
+  TikTok still dark, 51 consecutive days against its `active` flag. Seat-counter still disabled,
+  24th day, zero explanation. Staged `content-factory/2026-11-22` batch (10 pins) still unscheduled
+  — lower urgency now the queue is healthy, but not resolved. Full detail in today's briefing and
+  one new `CEO-BRIEF/LESSONS-LEDGER.md` entry. · staged (`content-factory/2026-11-22`,
+  needs-Cameron); needs-Cameron (confirm the Pinterest queue jump, seat-counter intent, TikTok
+  active-flag contradiction, confirm/name the Instagram pipeline, attended test-fire of
+  influencer-outreach)
+
 - 2026-11-25 · CEO (daily briefing #66) · **Merged PR #22** (`seo-ranker/audit-log-2026-11-24`,
   commit `8028fff`) — log-only (TEAM-LOG.md + LESSONS-LEDGER.md, zero site/journal/ASIN content),
   clean three-dot diff, no SAFEGUARDS concern. It documents a clean sitewide audit (0 hits across

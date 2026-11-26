@@ -168,6 +168,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-25** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 23rd day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-26** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 24th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -370,6 +373,14 @@ Concretely:
   dark in substance since its last real run (2026-10-28). Instagram pipeline now a 6th consecutive
   day (new microseason post 2026-11-25T00:30 UTC), still no matching trigger on a 5th full paginated
   check. TikTok still dark, now 50 consecutive days. Seat-counter still disabled, 23rd day.
+- **Update 2026-11-26: Pinterest's queue runway jumped from an all-time-low 9 days to ~18-19 days
+  (94 items through 2026-12-14) overnight, with no mechanism this session can verify — the daily
+  scheduler's own spec can't account for a jump this size in one run, and the staged
+  `content-factory/2026-11-22` batch's products don't appear anywhere in the new queue.** See
+  today's `CEO-BRIEF/LESSONS-LEDGER.md` entry and today's Decision Needed. Good news for the urgent
+  runway line, but needs Cameron's confirmation like the still-open Instagram-pipeline question.
+  Instagram pipeline continues (7th consecutive day, still no matching trigger). TikTok still dark,
+  now 51 consecutive days. Seat-counter still disabled, 24th day.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
