@@ -10,6 +10,31 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-27 · SEO-ranker · **Full sitewide on-page audit + trimmed 102 over-length meta
+  descriptions/titles (shop/ catalog + 4 missed journal pages).** Audit (image refs, duplicate
+  titles, missing descriptions, title/description length, H1 count, canonical presence) found 100
+  `shop/` pages + 4 `journal/` pages over Google's ~155-165-char SERP truncation point (true length
+  after decoding entities, up to 199 chars) — the Oct 23 PR #12 trim only covered `journal/`, never
+  swept `shop/` (mostly the Looks catalog, built after that pass). 84 templated Look pages shared
+  one over-length boilerplate tail, fixed via a verified script (also fixed an "A entryway"/"A
+  outdoor" grammar slip in the same string); 18 bespoke pages + 1 outlier title (`japandi-hallway`,
+  76 true chars) hand-trimmed individually, keeping every distinguishing specific. No body copy,
+  images, captions, ASINs, or affiliate links touched. Confirmed the "Redirecting" duplicate-title
+  pair the same audit found is the known intentional noindex redirect stub (not a new issue).
+  Did not write a new journal article: confirmed the office cluster (this run's #1 roadmap priority)
+  is already fully built per `GROWTH-PLAN-90-DAY.md`'s 2026-11-20 status check before starting, and
+  re-confirmed `www.amazon.com` egress is still blocked (403 at the agent proxy) for the two
+  remaining open content items, same as every prior test since 2026-09-15 — standing blocker for
+  Cameron, untouched. **SAFEGUARDS:** full verification block run — image-file resolution clean (0
+  MISS), degraded-ASIN resweep clean (0 hits), FTC disclosure spot-check clean on 3 touched
+  affiliate-adjacent pages, 0 pages left over 160 true chars after the edits (was 100); picture-
+  product/caption checks N/A (diff touches meta tags only — confirmed via diff scan for no added
+  `<img>`/`<figcaption>`/`/dp/` lines). Opened as a PR per `CONTROL.md`'s review gate, not pushed
+  direct: https://github.com/Cammyboy11/calmandoak/pull/23 (branch
+  `seo-ranker/meta-description-trim-2026-11-27`), subscribed to PR activity. No blockers for
+  Cameron beyond the two standing items above (Amazon egress, office-cluster already done). ·
+  status: staged (PR #23, needs Cameron's review/merge)
+
 - 2026-11-27 · CEO (daily briefing #68) · **Trigger shake-up: 3 device-bound local triggers
   disabled + 1 deleted in the same ~40s window yesterday, no device-absence signature — read as
   Cameron's own direct action, confirmation needed before updating ORG-CHART.md.** Daily Pinterest
