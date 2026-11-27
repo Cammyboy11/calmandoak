@@ -89,6 +89,41 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-27 · CEO (daily briefing #68) · **Three device-bound local triggers were disabled, and a
+  fourth deleted outright, within the same ~40-second window — the first time this specific shape
+  (simultaneous timing, empty `suspension_reason`, one trigger gone entirely) has appeared, distinct
+  from the ~2-month-old device-absence cycle.** Via `list_triggers` (both pages, `has_more: false`):
+  the daily Pinterest scheduler (`trig_0144Cg9HoKeXhET21YLSDVbk`), "Calm oak weekly seo post"
+  (`trig_01CNcERne3Eztr7hDwqYus7L`), and "Calm oak weekly influencer outreach"
+  (`trig_019bmXoFPymiu6greSvAThiB`) all show `enabled: false` with `suspension_reason: ""` (empty —
+  every single prior suspension of these three carried `suspension_reason: "device_absent"`, with no
+  exception since 2026-09-27) and `updated_at` clustered at 2026-11-26T13:19:00Z / 13:19:38Z /
+  13:19:18Z respectively. "Calm oak daily deploy" (`trig_01V3tLwPWo2k4HeJf5mZL65P`) no longer exists
+  at all — `get_trigger` on it returns "the requested resource was not found," confirmed directly
+  this run, not inferred from absence in a list. Zero TEAM-LOG/ledger entry anywhere explains any of
+  it. · raw (1st instance of this exact shape, though it's a new variant of the already-confirmed
+  "Cameron's own direct action, zero paper trail" class — now extended from publishing/git-push
+  surfaces to trigger management itself) · **candidate rule, needs Cameron's direct confirmation
+  before promotion:** if confirmed as an intentional retirement of the local-device automation stack,
+  `ORG-CHART.md`'s "real automation inventory" section should be updated to drop these four from the
+  active roster rather than keep re-flagging their old failure modes (short runs, dark pipelines)
+  every day going forward — the problem has changed from "broken" to "turned off," which is a
+  different thing to report. Not edited this run on the inference alone.
+
+- 2026-11-27 · CEO (daily briefing #68) · **The 2026-11-26 "unexplained Pinterest queue jump" entry
+  now has readable content, narrowing (not yet confirming) the likely explanation toward Cameron's
+  own direct seasonal DTC campaign rather than any agent or mystery pipeline.** The queue grew again
+  overnight (94→114 items, 18-19→22 days runway, now running through 2026-12-19T21:05Z). This run
+  read the actual post text of the new items rather than just counting them: a consistent, well-voiced
+  set of named fabric "palettes" — Skov, Snow Crane, Winter Berry, Midnight Pine, Hearth Plaid — on
+  tablecloths, table runners, and tea towels, clearly built as a coherent Christmas/holiday table-linen
+  push, timed correctly for December. Re-confirmed zero overlap with the still-unscheduled
+  `content-factory/2026-11-22` batch (all 10 ASINs checked against the full dump, no hits). · raw
+  (narrows the 2026-11-26 entry; still not independently confirmed as Cameron's action, same as that
+  entry) · not yet a rule — if confirmed, this also plausibly explains the same-day trigger disables
+  above (an automated 5/day top-up could otherwise collide with a hand-loaded seasonal batch),
+  worth connecting explicitly once Cameron confirms either one.
+
 - 2026-11-26 · CEO (daily briefing #67) · **Pinterest's scheduled-post queue jumped from an
   all-time-low 9-day runway (ending 2026-12-04, per yesterday's briefing) to 94 items running
   through 2026-12-14 (~18-19 days) overnight — resolving the urgent-runway concern, but the jump is

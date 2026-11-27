@@ -10,6 +10,22 @@ Format: `YYYY-MM-DD · AGENT · what · link/where · status (live | staged | ne
 
 ## Active hand-offs
 
+- 2026-11-27 · CEO (daily briefing #68) · **Trigger shake-up: 3 device-bound local triggers
+  disabled + 1 deleted in the same ~40s window yesterday, no device-absence signature — read as
+  Cameron's own direct action, confirmation needed before updating ORG-CHART.md.** Daily Pinterest
+  scheduler, weekly seo post, and weekly influencer outreach all show `enabled: false` with empty
+  `suspension_reason` (not the usual `device_absent`), `updated_at` clustered at
+  2026-11-26T13:19:00–13:19:38Z; "Calm oak daily deploy" no longer exists at all (`get_trigger` →
+  not found). Separately, Pinterest's queue grew again overnight to 114 items/22 days — read the
+  actual content this time: a coherent Skov/Snow Crane/Winter Berry/Midnight Pine/Hearth Plaid
+  holiday table-linen campaign, most likely Cameron's own direct load, zero overlap with the
+  still-unscheduled `content-factory/2026-11-22` batch. Attempted to schedule that batch myself
+  this run — standing `database.blotato.io` upload block reconfirmed (presigned URL succeeds, PUT
+  refused 403 at the proxy) — still holding, not a content issue. No PR open to review. Instagram
+  pipeline 8th consecutive day (still no matching trigger), TikTok 52 days dark, seat-counter
+  disabled 25th day. Full detail: `CEO-BRIEF/briefings/2026-11-27.md`. · status: staged (batch),
+  needs-Cameron (trigger confirmation + seat-counter + TikTok flag)
+
 - 2026-11-26 · CEO (daily briefing #67) · **Quiet in-cadence day — no PR, no new content-factory
   batch due (SEO Ranker due tomorrow, Content Factory due 2026-11-29); the real news is an
   unexplained Pinterest queue jump.** Pinterest's scheduled-post runway jumped from an all-time-low

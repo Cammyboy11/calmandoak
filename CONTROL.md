@@ -171,6 +171,9 @@ window. It has no automatic retry (one-shot, already "fired"). See 2026-11-06 CE
 **Still disabled 2026-11-26** (confirmed via `list_triggers`, `updated_at` unchanged at
 2026-11-03T04:34:30Z — now a 24th day, no new activity, no explanation anywhere).
 
+**Still disabled 2026-11-27** (confirmed via `list_triggers`, `updated_at` unchanged at
+2026-11-03T04:34:30Z — now a 25th day, no new activity, no explanation anywhere).
+
 ## Public-facing review gate (added 2026-09-14)
 **Nothing public-facing ships without the CEO reviewing it first.** This supersedes the earlier
 "full autonomy, ship without per-action approval" model for anything a customer or the public
@@ -381,6 +384,22 @@ Concretely:
   runway line, but needs Cameron's confirmation like the still-open Instagram-pipeline question.
   Instagram pipeline continues (7th consecutive day, still no matching trigger). TikTok still dark,
   now 51 consecutive days. Seat-counter still disabled, 24th day.
+- **Update 2026-11-27: three device-bound local triggers disabled, a fourth deleted, in the same
+  ~40-second window yesterday afternoon — a new and categorically different event from the
+  device-absence cycle tracked above since 2026-09-27.** Via `list_triggers`: the daily Pinterest
+  scheduler, "Calm oak weekly seo post," and "Calm oak weekly influencer outreach" all show
+  `enabled: false` with `suspension_reason: ""` (empty — NOT the usual `device_absent`) and
+  `updated_at` within 2026-11-26T13:19:00–13:19:38Z of each other; "Calm oak daily deploy"
+  (`trig_01V3tLwPWo2k4HeJf5mZL65P`) is gone outright — `get_trigger` returns "not found." No
+  TEAM-LOG/ledger entry explains it. Read as a deliberate, coordinated action (most likely Cameron
+  retiring the local-device automation stack via the dashboard), not a connectivity blip — but
+  named as a Decision Needed for confirmation, not asserted as fact; see 2026-11-27 CEO
+  briefing/ledger. Separately, Pinterest's queue grew again overnight to 114 items / 22 days
+  (through 2026-12-19), and this run read the actual new content: a coherent Skov/Snow Crane/
+  Winter Berry/Midnight Pine/Hearth Plaid table-linen holiday campaign — most likely Cameron's own
+  direct seasonal push, which would also explain disabling the scheduler that fed the same queue.
+  Instagram pipeline continues (8th consecutive day, still no matching trigger). TikTok still dark,
+  now 52 consecutive days. Seat-counter still disabled, 25th day.
 - **New, distinct pattern observed 2026-10-16 (raw, 1st instance — see `CEO-BRIEF/LESSONS-LEDGER.md`
   2026-10-17 entry):** a separate, non-trigger local/interactive session (co-authored "Claude Fable
   5.1," session `01AjRB6YBz4AZqsgwH1uX7PB`) pushed 5 commits **directly to `main` via git** between
