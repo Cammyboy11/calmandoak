@@ -6,6 +6,65 @@ note: Structured, append-only record of things the org has learned. Not a narrat
 # Lessons Ledger
 
 ## Consolidation history
+**2026-11-28 — third monthly pass (CEO, due per `LEARNING-LOOP.md`'s ~30-day trigger — 45 days
+since the 2026-11-13 second pass, overdue).** Read every entry logged since 2026-11-13 (~45 entries,
+2026-11-13 → 2026-11-27), cross-referenced against `CONTROL.md`'s own running log and `TEAM-LOG.md`.
+Promoted 4 confirmed patterns into the files that actually govern behavior:
+- `SAFEGUARDS.md` Check 4 (caption-image match) — extended to on-page alt text explicitly, not just
+  `<figcaption>`: alt text has now been wrong while the figcaption/body copy was correct in 3
+  independent articles (nightstand-styling `B0CG3Q4H5Q`, single-stem-rule `B0DYNB5K2V`,
+  japandi-balcony `B07DQDMVJ6`, 2026-11-09 through -22) — "copy the existing alt text" is no longer
+  a safe shortcut during this check.
+- `CEO-BRIEF/CEO-OPERATING-BRIEF.md` Standing job #1 — dropped "Calm oak daily deploy"'s
+  partial-exception status: 3 independent instances (2026-11-14/15, -16/17, -17/18) showed a short
+  run immediately after genuinely new content was already merged to `main`, which its own legitimate
+  fast-exit cannot explain. Now reads the same as "weekly seo post"/"weekly influencer outreach" —
+  short run = likely did not complete.
+- `CEO-BRIEF/CEO-OPERATING-BRIEF.md` Standing job #1 — new CEO-side detection step: diff the full
+  current trigger set (ids, `enabled`, `suspension_reason`, existence) against yesterday's
+  briefing's own readout, every run. The existing `CONTROL.md` trigger-change-logging rule only
+  catches a change made by a session that itself edits a trigger; it had nothing to say about
+  Cameron's own direct dashboard changes, which recurred with zero paper trail on 2026-11-03 (seat-
+  counter) and 2026-11-26 (3 disabled + 1 deleted) — both discovered cold rather than flagged, which
+  is exactly the gap this closes going forward.
+- `CEO-BRIEF/LESSONS-LEDGER.md` (this pass) — retired the stale "Calm oak daily deploy" partial-
+  exception framing from several still-open candidate-rule notes below now that it's been promoted
+  (see individually marked entries).
+
+**Not promoted, still open (needs more evidence or Cameron's direct input, per each entry's own
+stated bar — not re-promoted on partial evidence):** SAFEGUARDS Check 11 candidate for own-shop
+product-handle verification (1 instance, 2026-11-17, needs a 2nd); the named-but-dormant-defect →
+grep-sweep-+-hub-reconciliation audit pattern (2 instances, 2026-11-13/-17, needs a 3rd before
+SAFEGUARDS.md); content-factory image-quality defects beyond ASIN-link correctness — cutout
+artifacts, alt-text/image mismatch upstream of any specific article (1 instance, 2026-11-22, needs
+2 more); cannibalization-avoidance before writing a close-variant roadmap item (2 instances,
+2026-10-27/2026-11-03, needs 1 more); the juvenile/safety-equipment scope-disclaimer pattern (1
+instance, 2026-11-06); "no verifiable product for a content gap → decision-framework content
+instead" (1 instance, 2026-11-10); the `blotato_list_posts` `since`/`until`-not-`startDate`/
+`endDate` parameter trap (1 verified instance, 2026-11-09 — a concrete tool-API fact rather than a
+behavioral pattern, but still only checked once; worth a 2nd confirmation before writing into any
+spec). The Instagram-publishing-with-zero-matching-trigger pattern (now 8+ consecutive days,
+confirmed far past the evidence bar as of 2026-11-22) is correctly NOT a file-level promotion
+candidate — every entry on it already escalates as a same-run Decision Needed per
+`LEARNING-LOOP.md`'s own design (ask Cameron directly, don't write a rule standing in for his
+answer); no change made.
+
+**Dropped as superseded, not promoted:** none this pass — no entry reached a point where its own
+underlying question became moot the way the 2026-10-25 `USAGE_LIMIT_REACHED` candidate did at the
+2026-11-13 pass.
+
+**Deferred as infrastructure/account-level facts, not file-level rules (re-confirmed this pass,
+consistent with every prior pass's own assessment — `LEARNING-LOOP.md` excludes these from this
+loop):** the `database.blotato.io` upload-PUT 403 block (re-confirmed at the real-upload level
+2026-11-20 and again 2026-11-25 — same host, same failure, already extensively documented in
+`CONTROL.md`'s running log; no new file-level action available, the fix is Cameron adding the host
+to this environment's Network → Allowed domains); the device-bound local-trigger stack's
+2026-11-26/27 disable-or-delete event (still awaiting Cameron's direct confirmation of whether it's
+an intentional retirement before `ORG-CHART.md`'s roster is updated — not asserted as fact on
+inference alone, per the 2026-11-27 entry's own caution); the Pinterest queue's unexplained
+2026-11-25→27 runway jump (9→22 days, likely Cameron's own seasonal batch per the 2026-11-27 entry's
+read of the actual content, but still not independently confirmed).
+
 **2026-10-14 — first monthly pass (CEO, due per `LEARNING-LOOP.md`'s ~30-day trigger, created 2026-09-14).**
 Read every entry since creation (36 days of raw/confirmed entries, none previously consolidated).
 Promoted 7 confirmed patterns into the files that actually govern behavior:
@@ -88,6 +147,34 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 ---
 
 ## Entries
+
+- 2026-11-28 · CEO (daily briefing #69) · **The 2026-11-26 13:19 disable window actually touched a
+  4th trigger the 2026-11-27 entry didn't name — "Gingernomics weekly hub linking"
+  (`trig_01WvWNabgFnhxzPk7JZuCY9x`) — on Cameron's *other* brand, disabled at `13:19:28Z`, inside
+  the same 38-second span as the three Calm & Oak triggers (`13:19:00Z` Pinterest scheduler,
+  `13:19:18Z` weekly influencer outreach, `13:19:38Z` weekly seo post).** Confirmed via a full
+  `recurring: true` `list_triggers` pass (`has_more: false`, all entries read directly, not
+  inferred). This cross-brand timing is stronger evidence for "Cameron personally cleared a batch of
+  device-bound automations across both businesses in one dashboard sweep" than for a Calm-&-Oak-
+  specific pipeline failure — a bug in this fleet's own triggers would not also disable an unrelated
+  Gingernomics routine in the same 40-second window. Still not confirmed by Cameron directly, so
+  still named as a Decision Needed rather than asserted as fact. Separately, re-verified today:
+  "Calm oak daily deploy" remains absent from the full recurring-trigger list (deleted, not just
+  disabled — consistent with the 2026-11-27 finding). · confirmed (new corroborating evidence for
+  the 2026-11-27 raw entry below, same underlying event) · —
+
+- 2026-11-28 · CEO (daily briefing #69) · **Instagram's unexplained daily-posting pipeline (8
+  consecutive days, 2026-11-20→27, zero matching trigger across 5+ prior checks) has nothing
+  scheduled from 2026-11-28 onward and had not posted yet as of this run, breaking what had looked
+  like a fixed ~00:30/12:00/17:30 UTC daily cadence.** Confirmed via `blotato_list_posts` with
+  `status:["scheduled"]` for Instagram/TikTok, 2026-11-28→2026-12-15 — zero items returned. The
+  published-post history (same tool, `status:["published","scheduled"]`, 2026-11-20→29) shows the
+  last Instagram post at 2026-11-27T00:30:49Z with nothing queued after it. This could mean the
+  pipeline already stopped (same day as the device-bound trigger disable event, though Instagram's
+  own posting mechanism was never identified as device-bound or found in any trigger list, so the
+  two are not yet linked) or that whatever process queues it one day at a time simply hasn't run yet
+  today. Worth a same-day check later to see whether Instagram posts at all on 2026-11-28 — if not,
+  this 8-day-old open question becomes a confirmed stop, not just an unexplained pipeline. · raw · —
 
 - 2026-11-27 · SEO-RANKER · **A prior meta-description-length trim (PR #12, 2026-10-23) scoped
   itself to `journal/` only and never swept `shop/`, which went on to grow a 100-page backlog of
@@ -267,10 +354,10 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
   calls the same ASIN "acacia patio chairs, set of two," which matches the image instead.** Same
   alt-text-vs-image-vs-prose inconsistency shape as the 2026-11-15 batch's `single-stem-rule` finding
   (2nd instance now). Not used blindly — wrote this run's pin caption against what the image actually
-  shows. · raw (2nd instance of the alt-text-can't-be-trusted pattern, needs 1 more to confirm) ·
-  **candidate rule:** SAFEGUARDS Check 4 (caption-image match) should explicitly say "verify against
-  the image directly, never copy on-page alt text as ground truth" — alt text has now been wrong in
-  at least 2 separate articles across 2 different batches.
+  shows. · confirmed (2nd instance; the nightstand-styling catch-dish defect, named repeatedly
+  2026-11-09 through -13, is the 3rd independent instance of the same alt-text-can't-be-trusted
+  shape, meeting the bar) · **promoted 2026-11-28** — `SAFEGUARDS.md` Check 4 now explicitly
+  requires verifying alt text against the image directly, not just the figcaption.
 
 - 2026-11-22 · CEO (daily briefing #63) · **The 2026-11-21 candidate rule ("real-world published
   content with no matching trigger/batch — name as likely-Cameron-direct, needs one more instance")
@@ -415,11 +502,10 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
   instances already on record, every checked firing of this trigger with real content pending has
   been short. `calmandoak.com` remains unreachable from this sandbox to confirm the live site
   directly (403 CONNECT-tunnel block, same as `database.blotato.io`/`www.amazon.com`). · confirmed
-  (3rd instance meeting the discriminating condition) · **dropping the partial-exception status now,
-  not waiting for the next monthly consolidation:** this briefing's Decision Needed treats "Calm oak
-  daily deploy" the same as "weekly seo post" and "weekly influencer outreach" — short run = likely
-  did not complete, verify the live site directly before crediting it with a deploy. Cameron should
-  check whether `calmandoak.com`'s homepage/shop pointers actually reflect the 2026-11-15/16 work.
+  (3rd instance meeting the discriminating condition) · **promoted 2026-11-28** — `CEO-BRIEF/
+  CEO-OPERATING-BRIEF.md` Standing job #1 now drops "Calm oak daily deploy"'s partial-exception
+  status permanently (not just for that day's briefing); reads it the same as "weekly seo post" and
+  "weekly influencer outreach" going forward.
 - 2026-11-18 · CEO (daily briefing #59) · **"Calm oak weekly influencer outreach" has gone dark a
   3rd consecutive cycle, now entirely via device-absence rather than a short unproductive fire.**
   Last genuinely productive run remains 2026-10-28. It then: missed 2026-11-04 (`device_absent`);
@@ -464,11 +550,9 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
   directly (same 403 CONNECT-tunnel block as `database.blotato.io`/`www.amazon.com`, re-confirmed
   via curl this run), but this is now 2 independent instances of genuinely-new-content-pending +
   still-short-run, both pointing the same direction. · confirmed (2nd instance meeting the
-  discriminating condition the 2026-11-15 entry named) · **candidate rule, ready for next
-  consolidation:** drop "Calm oak daily deploy"'s partial-exception status in
-  `CEO-OPERATING-BRIEF.md` Standing job #1 and apply the same "short run = likely did not
-  complete, check for the live-site change before crediting" rule already promoted for "weekly seo
-  post" and "weekly influencer outreach" directly to this trigger too.
+  discriminating condition the 2026-11-15 entry named) · **promoted 2026-11-28** — see the
+  2026-11-18 entry below and `CEO-BRIEF/CEO-OPERATING-BRIEF.md` Standing job #1; this entry's
+  recommendation is what got written in once the 3rd instance (2026-11-18) confirmed it.
 
 - 2026-11-17 · CEO (daily briefing #58) · **Cameron instituted a new content-integrity rule in
   TEAM-LOG (2026-11-16) with no counterpart yet in SAFEGUARDS.md: confirm a `shop.calmandoak.com`
@@ -521,11 +605,9 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
   discriminates between the two explanations, and it points toward "not completing," not toward
   the legitimate-fast-exit reading this ledger held open since 2026-11-12. · confirmed (1st
   instance where the ambiguity-resolving condition named 2026-11-12 was actually met, pointing one
-  direction) · **candidate rule:** if the next genuinely-new-content firing of this trigger is
-  also short, stop treating its short duration as ambiguous at all — apply the same
-  "likely-did-not-complete, check for the live-site change before crediting" rule already promoted
-  for "weekly seo post" and "weekly influencer outreach" directly to "daily deploy" too, dropping
-  its partial-exception status in `CEO-OPERATING-BRIEF.md`'s Standing job #1.
+  direction) · **promoted 2026-11-28** — this is what happened: 2 more instances (2026-11-16/17,
+  2026-11-17/18) met the same condition, and `CEO-BRIEF/CEO-OPERATING-BRIEF.md` Standing job #1 now
+  drops "daily deploy"'s partial-exception status for good.
 
 - 2026-11-13 · SEO-RANKER · **A defect named repeatedly in CEO daily briefings does not get fixed by the briefings naming it — it needs a run whose job is editing the site, not reporting on it, to actually close the loop.** The `journal/nightstand-styling/` catch-dish image/caption mismatch (ASIN `B0CG3Q4H5Q` described with a fabricated "wood lid" it doesn't have) was flagged live in four consecutive CEO briefings (2026-11-09 through -12) and originally in `PLACEHOLDER-AUDIT.md` on 2026-05-24 — roughly 6 months of standing visibility — but remained unfixed because the CEO's own role is read-only triage (merge/review/escalate), not direct edits, and no SEO-ranker run had happened to pick this specific item over a new-article task in that window. This run checked the office cluster first per instructions, found it fully built (PR #18), and used the freed-up cycle to audit for exactly this kind of flagged-but-dormant item instead of defaulting straight to a new article — fixed in PR #19, plus 2 more instances of the identical false-lid claim on the same ASIN in `new-year-calm-reset` and `six-object-rule` that no prior briefing had named at all (found via repo-wide grep for the ASIN, not narrower per-file checking). · raw (1st instance this specific "named-but-dormant-until-an-editing-run-picks-it-up" gap has been written down, though the general shape — a finding sitting unactioned across multiple runs — echoes the repeated device-bound-trigger pattern already tracked elsewhere in this file) · **candidate rule:** when a SEO-ranker run finds the content-roadmap priority item already fully shipped, default next to a repo-wide grep sweep for any defect already named in `TEAM-LOG.md`/CEO briefings/`PLACEHOLDER-AUDIT.md` that's still unfixed, before reaching for a brand-new article — a known, named, live SAFEGUARDS violation should outrank a new Tier-3+ roadmap item every time. Needs 1-2 more instances before this is worth writing into `SAFEGUARDS.md` or `CONTENT-ROADMAP.md` directly.
 

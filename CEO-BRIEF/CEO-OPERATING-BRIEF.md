@@ -81,10 +81,12 @@ evidence, and report the check even when everything is fine:
   because `list_triggers` shows `SUCCEEDED` — these triggers bypass this session's visibility by
   design, and `SUCCEEDED` only means the session didn't crash, not that the spec'd pipeline ran.
   Check for the expected downstream artifact (a new `seo-ranker/*` branch, an updated tracker/CSV,
-  a live URL change) before crediting a weekly publish or outreach batch to it. "Calm oak daily
-  deploy" is a partial exception — its own spec has a legitimate instant fast-exit for an
-  unattended cloud firing with no computer-use access — so a short run there is genuinely
-  ambiguous, not a confirmed miss, unless there was no new content pending either.
+  a live URL change) before crediting a weekly publish or outreach batch to it. **"Calm oak daily
+  deploy" is no longer treated as a partial exception (promoted 2026-11-28, confirmed 3 independent
+  instances — 2026-11-14/15, -16/17, -17/18 — of a short run immediately after genuinely new content
+  was already merged to `main`, which its own legitimate fast-exit cannot explain):** read a short
+  run from this trigger the same way as every other device-bound trigger — likely did not complete —
+  and recommend Cameron check the live site directly before crediting it with a deploy.
 - **Promoted 2026-11-13:** a device-bound trigger that has missed 2 or more consecutive scheduled
   runs gets its own named Decision Needed line in that day's briefing, not folded into the general
   device-absence paragraph — the business impact of a channel going dark for two full cycles is
@@ -95,6 +97,19 @@ evidence, and report the check even when everything is fine:
   Cameron check `trig_01V6STzAy79zfw1xMnS74RGu`'s run history directly in the dashboard — `list_
   triggers`/`get_trigger` only expose the single most recent `last_run`, so this session has no
   way to see whether a missing day fired and failed, errored pre-commit, or never fired at all.
+- **Promoted 2026-11-28 (third monthly consolidation):** the existing trigger-change-logging rule
+  (`CONTROL.md`) only catches a change made *by a session that itself edits the trigger* — it says
+  nothing about a change Cameron makes directly via the dashboard, which is exactly what happened
+  2026-11-03 (seat-counter disabled right after a clean run) and again 2026-11-26 (three triggers
+  disabled + one deleted in the same ~40-second window), both with zero paper trail and both
+  discovered cold by the next day's check rather than flagged in advance. Closing that gap needs a
+  CEO-side detection step, not just a logging requirement on other sessions: **every run, after the
+  paginated `list_triggers` pass, diff the full current trigger set (ids, `enabled`,
+  `suspension_reason`, existence) against yesterday's briefing's own trigger readout.** Any trigger
+  that newly exists, newly doesn't exist, or changed `enabled`/`suspension_reason` state with
+  `suspension_reason` empty (i.e. not the documented `device_absent` auto-suspend) since yesterday's
+  briefing is a same-run flag, named as a Decision Needed, not re-derived from scratch as a fresh
+  mystery each day.
 
 If any check shows a role, a platform, or the whole department has gone dark, that finding leads
 your output, ahead of any scoreboard or strategy content. A report nobody reads because the real

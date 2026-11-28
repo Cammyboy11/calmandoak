@@ -121,9 +121,15 @@ PRE-COMMIT VERIFICATION — [article slug]
     (every ASIN must be PASS, or explicitly flagged ≥100 reviews exception)
 
 [ ] Check 4: Caption-image match
-    For each <figcaption>:
+    For each <figcaption> AND each image's on-page alt text:
     - Section X caption "[caption text]" vs image content — MATCH / MISMATCH
-    (every must be MATCH)
+    - Section X alt text "[alt text]" vs image content — MATCH / MISMATCH
+    (every must be MATCH — verify against the image file directly in both cases;
+    never copy existing on-page alt text as ground truth, it has been wrong at
+    least 3 times across 3 separate articles: nightstand-styling B0CG3Q4H5Q
+    "wood lid" that doesn't exist, single-stem-rule B0DYNB5K2V "one slim dried
+    stem" vs. a full eucalyptus bunch, japandi-balcony B07DQDMVJ6 "single teak
+    folding chair" vs. two acacia armchairs)
 
 [ ] Check 5: Image file resolution
     Run the grep verification command above.
@@ -153,3 +159,4 @@ This protocol is the cheapest insurance against that failure. Five checks. Five 
   - **Check 6 (cross-article ASIN consistency):** When the same ASIN appears in multiple articles, the image-product match must hold in each. Don't assume a verified pairing transfers from one article to another.
 - 2026-10-14 — First monthly learning-loop consolidation (see `CEO-BRIEF/LESSONS-LEDGER.md` and `CEO-BRIEF/LEARNING-LOOP.md`). Added Checks 7-9 above (disclosure presence, sitewide degraded-ASIN resweep, hub reconciliation/filter-chip counts) — each already practiced ad hoc by SEO-ranker for 3-6+ runs; this pass makes them the written gate instead of tribal knowledge.
 - 2026-11-13 — Second monthly consolidation. Added Check 10 (ASIN reuse when Amazon egress is blocked) — confirmed 4 independent times since 2026-10-27, already practiced ad hoc by SEO-ranker every time the gate came up.
+- 2026-11-28 — Third monthly consolidation (see `CEO-BRIEF/LESSONS-LEDGER.md`). Extended Check 4 to on-page alt text, not just `<figcaption>` — confirmed 3 independent instances of alt text being wrong while the figcaption/body copy was correct (nightstand-styling, single-stem-rule, japandi-balcony, 2026-11-09 through -22), so "copy the existing alt text" can no longer be treated as a safe shortcut during this check.
