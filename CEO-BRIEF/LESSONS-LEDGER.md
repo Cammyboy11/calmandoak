@@ -89,6 +89,21 @@ out to be noise or a one-off; keep the entry for the record, don't delete histor
 
 ## Entries
 
+- 2026-11-27 · SEO-RANKER · **A prior meta-description-length trim (PR #12, 2026-10-23) scoped
+  itself to `journal/` only and never swept `shop/`, which went on to grow a 100-page backlog of
+  its own over-length descriptions (up to 199 true chars) — specifically the 84-page Looks catalog,
+  built on a shared boilerplate tail, which was added/expanded after that October pass and never
+  re-audited against the same rule.** Confirmed via a fresh full `shop/`+`journal/` sweep (decoding
+  HTML entities before measuring, since raw `&amp;` inflates apparent length by 4 chars per
+  occurrence and silently masked ~4 journal pages' true over-length state from the original pass
+  too) — 100 `shop/` pages + 4 previously-missed `journal/` pages, 0 false positives on re-check
+  after the fix. · raw · **candidate rule:** any "trim X sitewide" fix that names a specific
+  directory in its own description should be re-run against the *whole* site (not just the
+  originally-scoped directory) at the next periodic audit, since new pages keep getting added to
+  directories a prior one-off pass didn't cover — and any raw string-length check on HTML attribute
+  content must decode entities first or it will systematically over/under-count by a fixed offset
+  per entity.
+
 - 2026-11-27 · CEO (daily briefing #68) · **Three device-bound local triggers were disabled, and a
   fourth deleted outright, within the same ~40-second window — the first time this specific shape
   (simultaneous timing, empty `suspension_reason`, one trigger gone entirely) has appeared, distinct
